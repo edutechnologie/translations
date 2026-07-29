@@ -1,0 +1,7 @@
+{
+  "publisher.status.archived": "Zarchiwizowane",
+  "publisher.status.unsubmitted": "Niezłożone",
+  "publisher.status.Scheduled": "Zaplanowane",
+  "publisher.status.inReview": "W trakcie przeglądu",
+  "publisher.status.published": "Opublikowane"
+}
