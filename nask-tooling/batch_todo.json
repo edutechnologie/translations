@@ -1,0 +1,793 @@
+[
+  {
+    "resource": "credentials",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/credentials/credentials/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%(num_hours)s hour",
+    "source": "%(num_hours)s hour",
+    "source_plural": "%(num_hours)s hours"
+  },
+  {
+    "resource": "edx-enterprise",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-enterprise/enterprise/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{count} new learner was added to {enterprise_customer_name}.",
+    "source": "{count} new learner was added to {enterprise_customer_name}.",
+    "source_plural": "{count} new learners were added to {enterprise_customer_name}."
+  },
+  {
+    "resource": "edx-enterprise",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-enterprise/enterprise/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{enrolled_count} learner was enrolled in {enrolled_in}.",
+    "source": "{enrolled_count} learner was enrolled in {enrolled_in}.",
+    "source_plural": "{enrolled_count} learners were enrolled in {enrolled_in}."
+  },
+  {
+    "resource": "edx-enterprise",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-enterprise/enterprise/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{} week",
+    "source": "{} week",
+    "source_plural": "{} weeks"
+  },
+  {
+    "resource": "edx-enterprise",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-enterprise/enterprise/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{count} Course",
+    "source": "{count} Course",
+    "source_plural": "{count} Courses"
+  },
+  {
+    "resource": "edx-ora2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-ora2/openassessment/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "\n                      %(assessment_title)s - %(points)s point\n                  ",
+    "source": "\n                      %(assessment_title)s - %(points)s point\n                  ",
+    "source_plural": "\n                      %(assessment_title)s - %(points)s points\n                  "
+  },
+  {
+    "resource": "edx-ora2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-ora2/openassessment/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "\n                                        %(assessment_label)s - %(points)s point\n                                    ",
+    "source": "\n                                        %(assessment_label)s - %(points)s point\n                                    ",
+    "source_plural": "\n                                        %(assessment_label)s - %(points)s points\n                                    "
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%(count)d student account was unlocked.",
+    "source": "%(count)d student account was unlocked.",
+    "source_plural": "%(count)d student accounts were unlocked."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "The file must end with the extension '{file_types}'.",
+    "source": "The file must end with the extension '{file_types}'.",
+    "source_plural": "The file must end with one of the following extensions: '{file_types}'."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "at least %(min_length)d character",
+    "source": "at least %(min_length)d character",
+    "source_plural": "at least %(min_length)d characters"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "This password is too long. It must contain no more than %(max_length)d character.",
+    "source": "This password is too long. It must contain no more than %(max_length)d character.",
+    "source_plural": "This password is too long. It must contain no more than %(max_length)d characters."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Your password must contain no more than %(max_length)d character.",
+    "source": "Your password must contain no more than %(max_length)d character.",
+    "source_plural": "Your password must contain no more than %(max_length)d characters."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "This password must contain at least %(min_alphabetic)d letter.",
+    "source": "This password must contain at least %(min_alphabetic)d letter.",
+    "source_plural": "This password must contain at least %(min_alphabetic)d letters."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Your password must contain at least %(min_alphabetic)d letter.",
+    "source": "Your password must contain at least %(min_alphabetic)d letter.",
+    "source_plural": "Your password must contain at least %(min_alphabetic)d letters."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%(num)d letter",
+    "source": "%(num)d letter",
+    "source_plural": "%(num)d letters"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "This password must contain at least %(min_numeric)d number.",
+    "source": "This password must contain at least %(min_numeric)d number.",
+    "source_plural": "This password must contain at least %(min_numeric)d numbers."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Your password must contain at least %(min_numeric)d number.",
+    "source": "Your password must contain at least %(min_numeric)d number.",
+    "source_plural": "Your password must contain at least %(min_numeric)d numbers."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%(num)d number",
+    "source": "%(num)d number",
+    "source_plural": "%(num)d numbers"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "This password must contain at least %(min_upper)d uppercase letter.",
+    "source": "This password must contain at least %(min_upper)d uppercase letter.",
+    "source_plural": "This password must contain at least %(min_upper)d uppercase letters."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Your password must contain at least %(min_upper)d uppercase letter.",
+    "source": "Your password must contain at least %(min_upper)d uppercase letter.",
+    "source_plural": "Your password must contain at least %(min_upper)d uppercase letters."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%(num)d uppercase letter",
+    "source": "%(num)d uppercase letter",
+    "source_plural": "%(num)d uppercase letters"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "This password must contain at least %(min_lower)d lowercase letter.",
+    "source": "This password must contain at least %(min_lower)d lowercase letter.",
+    "source_plural": "This password must contain at least %(min_lower)d lowercase letters."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Your password must contain at least %(min_lower)d lowercase letter.",
+    "source": "Your password must contain at least %(min_lower)d lowercase letter.",
+    "source_plural": "Your password must contain at least %(min_lower)d lowercase letters."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%(num)d lowercase letter",
+    "source": "%(num)d lowercase letter",
+    "source_plural": "%(num)d lowercase letters"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "This password must contain at least %(min_punctuation)d punctuation mark.",
+    "source": "This password must contain at least %(min_punctuation)d punctuation mark.",
+    "source_plural": "This password must contain at least %(min_punctuation)d punctuation marks."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Your password must contain at least %(min_punctuation)d punctuation mark.",
+    "source": "Your password must contain at least %(min_punctuation)d punctuation mark.",
+    "source_plural": "Your password must contain at least %(min_punctuation)d punctuation marks."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%(num)d punctuation mark",
+    "source": "%(num)d punctuation mark",
+    "source_plural": "%(num)d punctuation marks"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "This password must contain at least %(min_symbol)d symbol.",
+    "source": "This password must contain at least %(min_symbol)d symbol.",
+    "source_plural": "This password must contain at least %(min_symbol)d symbols."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Your password must contain at least %(min_symbol)d symbol.",
+    "source": "Your password must contain at least %(min_symbol)d symbol.",
+    "source_plural": "Your password must contain at least %(min_symbol)d symbols."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%(num)d symbol",
+    "source": "%(num)d symbol",
+    "source_plural": "%(num)d symbols"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "\n                                You set a goal of learning {start_bold}%(days_per_week)s time a week in %(course_name)s{end_bold}. You’re not quite there, but there's still time to reach that goal!\n                                ",
+    "source": "\n                                You set a goal of learning {start_bold}%(days_per_week)s time a week in %(course_name)s{end_bold}. You’re not quite there, but there's still time to reach that goal!\n                                ",
+    "source_plural": "\n                                You set a goal of learning {start_bold}%(days_per_week)s times a week in %(course_name)s{end_bold}. You're not quite there, but there's still time to reach that goal!\n                            "
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "({number} Question)",
+    "source": "({number} Question)",
+    "source_plural": "({number} Questions)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{num_emails} sent",
+    "source": "{num_emails} sent",
+    "source_plural": "{num_emails} sent"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{num_emails} failed",
+    "source": "{num_emails} failed",
+    "source_plural": "{num_emails} failed"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Try again ({attempts} attempt remaining)",
+    "source": "Try again ({attempts} attempt remaining)",
+    "source_plural": "Try again ({attempts} attempts remaining)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Incorrect ({progress} point)",
+    "source": "Incorrect ({progress} point)",
+    "source_plural": "Incorrect ({progress} points)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Correct ({progress} point)",
+    "source": "Correct ({progress} point)",
+    "source_plural": "Correct ({progress} points)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Partially correct ({progress} point)",
+    "source": "Partially correct ({progress} point)",
+    "source_plural": "Partially correct ({progress} points)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{num_hour} hour",
+    "source": "{num_hour} hour",
+    "source_plural": "{num_hour} hours"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{num_minute} minute",
+    "source": "{num_minute} minute",
+    "source_plural": "{num_minute} minutes"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{num_second} second",
+    "source": "{num_second} second",
+    "source_plural": "{num_second} seconds"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "The specified library is configured to fetch {count} problem, ",
+    "source": "The specified library is configured to fetch {count} problem, ",
+    "source_plural": "The specified library is configured to fetch {count} problems, "
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "but there is only {actual} matching problem.",
+    "source": "but there is only {actual} matching problem.",
+    "source_plural": "but there are only {actual} matching problems."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "\n                Learners will see the selected component:\n                ",
+    "source": "\n                Learners will see the selected component:\n                ",
+    "source_plural": "\n                Learners will see all of the %(num_selected)s selected components, in random order:\n                "
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "There is no transcript file associated with the {lang} language.",
+    "source": "There is no transcript file associated with the {lang} language.",
+    "source_plural": "There are no transcript files associated with the {lang} languages."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Showing all matching content eligible to be added into {display_name}. Each student will be assigned {max_count} component drawn randomly from this list.",
+    "source": "Showing all matching content eligible to be added into {display_name}. Each student will be assigned {max_count} component drawn randomly from this list.",
+    "source_plural": "Showing all matching content eligible to be added into {display_name}. Each student will be assigned {max_count} components drawn randomly from this list."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%s discussion started",
+    "source": "%s discussion started",
+    "source_plural": "%s discussions started"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "%s comment",
+    "source": "%s comment",
+    "source_plural": "%s comments"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "You have used {num_used} of {num_total} attempt",
+    "source": "You have used {num_used} of {num_total} attempt",
+    "source_plural": "You have used {num_used} of {num_total} attempts"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Transcripts",
+    "source": "Transcripts"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "Contains {count} group",
+    "source": "Contains {count} group",
+    "source_plural": "Contains {count} groups"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "Used in {count} location",
+    "source": "Used in {count} location",
+    "source_plural": "Used in {count} locations"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "there is currently {numVotes} vote",
+    "source": "there is currently {numVotes} vote",
+    "source_plural": "there are currently {numVotes} votes"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{numVotes} Vote",
+    "source": "{numVotes} Vote",
+    "source_plural": "{numVotes} Votes"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{numResponses} other response",
+    "source": "{numResponses} other response",
+    "source_plural": "{numResponses} other responses"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{numResponses} response",
+    "source": "{numResponses} response",
+    "source_plural": "{numResponses} responses"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "Showing first response",
+    "source": "Showing first response",
+    "source_plural": "Showing first {numResponses} responses"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "%d minute",
+    "source": "%d minute",
+    "source_plural": "%d minutes"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "about %d hour",
+    "source": "about %d hour",
+    "source_plural": "about %d hours"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "%d day",
+    "source": "%d day",
+    "source_plural": "%d days"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "%d month",
+    "source": "%d month",
+    "source_plural": "%d months"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "%d year",
+    "source": "%d year",
+    "source_plural": "%d years"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": " Member",
+    "source": " Member",
+    "source_plural": " Members"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{team_count} Team",
+    "source": "{team_count} Team",
+    "source_plural": "{team_count} Teams"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "%(errorCount)s error found in form.",
+    "source": "%(errorCount)s error found in form.",
+    "source_plural": "%(errorCount)s errors found in form."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "Viewing %s course",
+    "source": "Viewing %s course",
+    "source_plural": "Viewing %s courses"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{numUsersAdded} learner has been added to this cohort. ",
+    "source": "{numUsersAdded} learner has been added to this cohort. ",
+    "source_plural": "{numUsersAdded} learners have been added to this cohort. "
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{numMoved} learner was moved from {prevCohort}",
+    "source": "{numMoved} learner was moved from {prevCohort}",
+    "source_plural": "{numMoved} learners were moved from {prevCohort}"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{numPresent} learner was already in the cohort",
+    "source": "{numPresent} learner was already in the cohort",
+    "source_plural": "{numPresent} learners were already in the cohort"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{numPreassigned} learner was pre-assigned for this cohort. This learner will automatically be added to the cohort when they enroll in the course.",
+    "source": "{numPreassigned} learner was pre-assigned for this cohort. This learner will automatically be added to the cohort when they enroll in the course.",
+    "source_plural": "{numPreassigned} learners were pre-assigned for this cohort. These learners will automatically be added to the cohort when they enroll in the course."
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "There was an error when trying to add learners:",
+    "source": "There was an error when trying to add learners:",
+    "source_plural": "{numErrors} learners could not be added to this cohort:"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{total_results} result found for \"{search_term}\"",
+    "source": "{total_results} result found for \"{search_term}\"",
+    "source_plural": "{total_results} results found for \"{search_term}\""
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{num_points} point possible (graded, results hidden)",
+    "source": "{num_points} point possible (graded, results hidden)",
+    "source_plural": "{num_points} points possible (graded, results hidden)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{num_points} point possible (ungraded, results hidden)",
+    "source": "{num_points} point possible (ungraded, results hidden)",
+    "source_plural": "{num_points} points possible (ungraded, results hidden)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{num_points} point possible (graded)",
+    "source": "{num_points} point possible (graded)",
+    "source_plural": "{num_points} points possible (graded)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{num_points} point possible (ungraded)",
+    "source": "{num_points} point possible (ungraded)",
+    "source_plural": "{num_points} points possible (ungraded)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{earned}/{possible} point (graded)",
+    "source": "{earned}/{possible} point (graded)",
+    "source_plural": "{earned}/{possible} points (graded)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "{earned}/{possible} point (ungraded)",
+    "source": "{earned}/{possible} point (ungraded)",
+    "source_plural": "{earned}/{possible} points (ungraded)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "%(value)s hour",
+    "source": "%(value)s hour",
+    "source_plural": "%(value)s hours"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "%(value)s minute",
+    "source": "%(value)s minute",
+    "source_plural": "%(value)s minutes"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "%(value)s second",
+    "source": "%(value)s second",
+    "source_plural": "%(value)s seconds"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "Show Comment (%(num_comments)s)",
+    "source": "Show Comment (%(num_comments)s)",
+    "source_plural": "Show Comments (%(num_comments)s)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "(contains %(student_count)s student)",
+    "source": "(contains %(student_count)s student)",
+    "source_plural": "(contains %(student_count)s students)"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "Course",
+    "source": "Course",
+    "source_plural": "Courses"
+  },
+  {
+    "resource": "edx-platform",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/edx-platform/conf/locale/pl/LC_MESSAGES/djangojs.po",
+    "key": "Load next {num_items} result",
+    "source": "Load next {num_items} result",
+    "source_plural": "Load next {num_items} results"
+  },
+  {
+    "resource": "xblock-drag-and-drop-v2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-drag-and-drop-v2/drag_and_drop_v2/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Correctly placed {correct_count} item",
+    "source": "Correctly placed {correct_count} item",
+    "source_plural": "Correctly placed {correct_count} items"
+  },
+  {
+    "resource": "xblock-drag-and-drop-v2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-drag-and-drop-v2/drag_and_drop_v2/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Misplaced {misplaced_count} item",
+    "source": "Misplaced {misplaced_count} item",
+    "source_plural": "Misplaced {misplaced_count} items"
+  },
+  {
+    "resource": "xblock-drag-and-drop-v2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-drag-and-drop-v2/drag_and_drop_v2/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Misplaced {misplaced_count} item (misplaced item was returned to the item bank)",
+    "source": "Misplaced {misplaced_count} item (misplaced item was returned to the item bank)",
+    "source_plural": "Misplaced {misplaced_count} items (misplaced items were returned to the item bank)"
+  },
+  {
+    "resource": "xblock-drag-and-drop-v2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-drag-and-drop-v2/drag_and_drop_v2/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Did not place {missing_count} required item",
+    "source": "Did not place {missing_count} required item",
+    "source_plural": "Did not place {missing_count} required items"
+  },
+  {
+    "resource": "xblock-drag-and-drop-v2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-drag-and-drop-v2/drag_and_drop_v2/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{earned}/{possible} point (graded)",
+    "source": "{earned}/{possible} point (graded)",
+    "source_plural": "{earned}/{possible} points (graded)"
+  },
+  {
+    "resource": "xblock-drag-and-drop-v2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-drag-and-drop-v2/drag_and_drop_v2/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{earned}/{possible} point (ungraded)",
+    "source": "{earned}/{possible} point (ungraded)",
+    "source_plural": "{earned}/{possible} points (ungraded)"
+  },
+  {
+    "resource": "xblock-drag-and-drop-v2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-drag-and-drop-v2/drag_and_drop_v2/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{possible} point possible (graded)",
+    "source": "{possible} point possible (graded)",
+    "source_plural": "{possible} points possible (graded)"
+  },
+  {
+    "resource": "xblock-drag-and-drop-v2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-drag-and-drop-v2/drag_and_drop_v2/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{possible} point possible (ungraded)",
+    "source": "{possible} point possible (ungraded)",
+    "source_plural": "{possible} points possible (ungraded)"
+  },
+  {
+    "resource": "xblock-drag-and-drop-v2",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-drag-and-drop-v2/drag_and_drop_v2/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Zone {num}",
+    "source": "Zone {num}",
+    "source_plural": "Zone {num}"
+  },
+  {
+    "resource": "xblock-free-text-response",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-free-text-response/freetextresponse/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{weight} point possible",
+    "source": "{weight} point possible",
+    "source_plural": "{weight} points possible"
+  },
+  {
+    "resource": "xblock-free-text-response",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-free-text-response/freetextresponse/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "{score_string}/{weight} point",
+    "source": "{score_string}/{weight} point",
+    "source_plural": "{score_string}/{weight} points"
+  },
+  {
+    "resource": "xblock-free-text-response",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-free-text-response/freetextresponse/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "You have used {count_attempts} of {max_attempts} submission",
+    "source": "You have used {count_attempts} of {max_attempts} submission",
+    "source_plural": "You have used {count_attempts} of {max_attempts} submissions"
+  },
+  {
+    "resource": "xblock-free-text-response",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-free-text-response/freetextresponse/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "Your response must be between {min} and {max} word.",
+    "source": "Your response must be between {min} and {max} word.",
+    "source_plural": "Your response must be between {min} and {max} words."
+  },
+  {
+    "resource": "xblock-sql-grader",
+    "format": "PO_PLURAL",
+    "staging_path": "../nask-tooling/staging/translations/xblock-sql-grader/sql_grader/conf/locale/pl/LC_MESSAGES/django.po",
+    "key": "\n            %(score_weighted)s/%(max_score)s point (graded)\n        ",
+    "source": "\n            %(score_weighted)s/%(max_score)s point (graded)\n        ",
+    "source_plural": "\n            %(score_weighted)s/%(max_score)s points (graded)\n        "
+  }
+]

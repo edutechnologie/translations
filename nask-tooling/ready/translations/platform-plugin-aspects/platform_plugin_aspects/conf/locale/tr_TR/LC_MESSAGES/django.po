@@ -1,0 +1,143 @@
+# edX translation file.
+# Copyright (C) 2024 EdX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2024.
+# 
+# Translators:
+# Ali Işıngör <ali@artistanbul.io>, 2025
+# Brian Smith, 2025
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-25 00:40+0000\n"
+"PO-Revision-Date: 2025-07-23 17:31+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: extensions/filters.py:58
+msgid "Reports"
+msgstr "Raporlar"
+
+#: settings/common.py:31
+msgid "Course Dashboard"
+msgstr "Ders Anapaneli"
+
+#: settings/common.py:37
+msgid "Individual Learner Dashboard"
+msgstr "Bireysel Öğrenci Paneli"
+
+#: settings/common.py:43
+msgid "At-Risk Learners Dashboard"
+msgstr "Risk Altındaki Öğrenciler Paneli"
+
+#: settings/common.py:110
+msgid "Course"
+msgstr "Ders"
+
+#: settings/common.py:118
+msgid "Graded Subsection"
+msgstr "Notlandırılan Altbölüm"
+
+#: settings/common.py:126
+msgid "Problem"
+msgstr "Problem"
+
+#: settings/common.py:134
+msgid "Video"
+msgstr "Video"
+
+#: static/html/superset.html:9
+msgid ""
+"Superset is not configured properly. Please contact your system "
+"administrator."
+msgstr ""
+"Superset doğru şekilde yapılandırılmamış. Lütfen sistem yöneticinizle "
+"iletişime geçin."
+
+#: static/html/superset_student.html:4
+msgid ""
+"Superset is only visible to course staff and instructors. Please contact "
+"your system administrator."
+msgstr ""
+"Superset yalnızca ders personeli ve eğitmenler tarafından görülebilir. "
+"Lütfen sistem yöneticinizle iletişime geçin."
+
+#: utils.py:165
+#, python-brace-format
+msgid ""
+"Unable to fetch Superset guest token, Superset server error "
+"{server_response}"
+msgstr ""
+"Superset misafir token'ı getirilemiyor, Superset sunucu hatası "
+"{server_response}"
+
+#: utils.py:174
+msgid ""
+"Unable to fetch Superset guest token, mostly likely due to invalid "
+"settings.SUPERSET_CONFIG"
+msgstr ""
+"Büyük olasılıkla geçersiz ayarlar nedeniyle Superset misafir token'ı "
+"getirilemiyor.SUPERSET_CONFIG"
+
+#: views.py:87
+#, python-brace-format
+msgid "Course not found: '{course_id}'"
+msgstr "Ders bulunamadı: '{course_id}'"
+
+#: views.py:114
+#, python-brace-format
+msgid "Invalid course id: '{course_id}'"
+msgstr "Geçersiz ders kimliği: '{course_id}'"
+
+#: views.py:172
+#, python-brace-format
+msgid "Invalid usage id: '{usage_id}'"
+msgstr "Geçersiz kullanım kimliği: '{usage_id}'"
+
+#: views.py:201
+#, python-brace-format
+msgid "No dashboard for block type: '{block_type}'"
+msgstr "Bu block türü için gösterge paneli bulunamadı: '{block_type}'"
+
+#: xblock.py:48 xblock.py:49
+msgid "Display name"
+msgstr "Görünen ad"
+
+#: xblock.py:50
+msgid "Superset Dashboard"
+msgstr "Superset Anapaneli"
+
+#: xblock.py:55
+msgid "Dashboard UUID"
+msgstr "Dashboard UUID"
+
+#: xblock.py:57
+msgid ""
+"The ID of the dashboard to embed. Available in the Superset embed dashboard "
+"UI."
+msgstr ""
+"Gömülecek gösterge tablosunun kimliği. Superset gömülü anapaneli kullanıcı "
+"arayüzünde mevcuttur."
+
+#: xblock.py:64
+msgid "Filters"
+msgstr "Filtreler"
+
+#: xblock.py:66
+msgid ""
+"List of SQL filters to apply to the\n"
+"               dashboard. E.g: [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               The fields used here must be available on every dataset used by the dashboard.\n"
+"               "
+msgstr ""
+"Panele uygulanacak SQL filtrelerinin listesi. \n"
+"               Örn: [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               Burada kullanılan alanlar, panel tarafından kullanılan her veri kümesinde mevcut olmalıdır.\n"
+"               "

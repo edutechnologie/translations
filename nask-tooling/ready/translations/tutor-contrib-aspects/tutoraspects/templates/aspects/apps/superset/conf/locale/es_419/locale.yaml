@@ -1,0 +1,125 @@
+en:
+  '% Correct': '% Correcto'
+  '% Incorrect': '% incorrecto'
+  '% Video Seconds Rewatched': '% de segundos de video vistos nuevamente'
+  '% Video Seconds Watched': '% de segundos de video vistos'
+  ? '<dl>
+
+    <dt>Avg % Correct on 1st Attempt </dt>
+
+    <dd> The average percentage of correct answers on the first attempt of the learners who attempted the problem. </dd>
+
+    </dl>'
+  : |-
+    <dl>
+    <dt>Porcentaje promedio correcto en el primer intento</dt>
+    <dd> El porcentaje promedio de respuestas correctas en el primer intento de los estudiantes que intentaron resolver el problema.</dd>
+    </dl>
+  Action: Acción
+  Action Count: Recuento de acciones
+  Action Date: Fecha de acción
+  Active: Activo
+  Active Courses: Cursos activos
+  Active Learner: Aprendiz activo
+  Active Learners: Estudiantes activos
+  Active Users Per Organization: Usuarios activos por organización
+  Active Within Last 7 Days: Activo en los últimos 7 días
+  Actor ID: Identificación del actor
+  Actor Id: Identificación del actor
+  Actors Count: Número de actores
+  Approving State: Estado que aprueba
+  At Risk: En riesgo
+  At-Risk Learners: Estudiantes en riesgo
+  Attempted All Problems: Intentó todos los problemas
+  Attempted At Least One Problem: Intentó al menos un problema
+  Attempts: Intentos
+  Avg % Correct on 1st Attempt: Porcentaje promedio correcto en el primer intento
+  Avg Attempts: Intentos promedio
+  Avg Correct Attempts Coursewide: Promedio de intentos correctos en todo el curso
+  Avg Correct Attempts by Selected Learners: Promedio de intentos correctos por parte de estudiantes seleccionados
+  Avg Course Grade: Calificación promedio del curso
+  Avg Incorrect Attempts Coursewide: Promedio de intentos incorrectos en todo el curso
+  Avg Incorrect Attempts by Selected Learners: Promedio de intentos incorrectos por parte de estudiantes seleccionados
+  Avg Video Length (seconds): Duración media del vídeo (segundos)
+  Block ID: Identificación de Bloque
+  Block Id: ID de bloque
+  COUNT(*): CONTAR(*)
+  Changed By Fk: cambiado por Fk
+  Changed On: Cambiado en
+  Chart showing the number of Superset actions taken on each chart in the selected time period.: Gráfico que muestra la cantidad de acciones de Superconjunto realizadas en cada gráfico en el período de tiempo seleccionado.
+  Chart showing the number of Superset actions taken on each dashboard in the selected time period.: Gráfico que muestra la cantidad de acciones de Superconjunto realizadas en cada panel en el período de tiempo seleccionado.
+  Chart showing the number of registered users over the selected time period.: Gráfico que muestra el número de usuarios registrados durante el período de tiempo seleccionado.
+  ClickHouse: ClickHouse
+  ClickHouse metrics: Métricas de ClickHouse
+  Content Level: Nivel de contenido
+  Correct Attempts: Intentos correctos
+  Correct Attempts By Learner: Intentos correctos por parte del alumno
+  Correct Attempts by Selected Learner: Intentos correctos por parte del alumno seleccionado
+  Count: Recuento
+  Count of Passing Grades: Recuento de calificaciones aprobatorias
+  Count of unique users who performed an action in Superset over the selected time period.: Recuento de usuarios únicos que realizaron una acción en Superset durante el período de tiempo seleccionado.
+  Count over time of unique users who performed an action in Superset over the selected time period.: Cuente a lo largo del tiempo de usuarios únicos que realizaron una acción en Superset durante el período de tiempo seleccionado.
+  Course Comparison Dashboard: Panel de comparación de cursos
+  Course Dashboard: Panel del curso
+  Course Data JSON: Datos del curso JSON
+  Course End: Finalización del curso
+  Course Enrollment Mode Status Cnt: Estado del modo de inscripción al curso Cnt
+  Course Enrollments Over Time: Inscripciones a cursos a lo largo del tiempo
+  Course Grade: Calificación del curso
+  Course Grade %: '% de calificación del curso'
+  Course ID: Id de Curso
+  Course Info: Información del curso
+  Course Information: Información del curso
+  Course Key: Llave del curso
+  Course Key Short: Clave del curso corta
+  Course Metrics: Métricas del curso
+  Course Name: Nombre del curso
+  Course Order: Orden del curso
+  Course Run: Versión del curso
+  Course Start: Inicio del Curso
+  Course Tag: Etiqueta del curso
+  Course grade: Calificación del curso
+  Course name: Nombre del curso
+  Course run: ejecución del curso
+  Courses: Cursos
+  Courses Cnt: Cursos Cnt
+  Courses Per Organization: Cursos por organización
+  Coursewide % Correct: '% correcto en todo el curso'
+  Coursewide Percent Correct: Porcentaje correcto de todo el curso
+  Coursewide averages are based on learners who attempted the problem.: Los promedios de todo el curso se basan en los estudiantes que intentaron resolver el problema.
+  Coursewide percentages are based on learners who attempted the problem.: Los porcentajes de todo el curso se basan en los estudiantes que intentaron resolver el problema.
+  Created: Creado
+  Created By Fk: Creado por fk
+  Created On: Creado en
+  Cumulative Enrollments by Track: Inscripciones acumuladas por modalidad
+  Cumulative Interactions: Interacciones acumulativas
+  Current Active Enrollments By Mode: Inscripciones activas actuales por modo
+  Current Enrollees: Inscritos actuales
+  Currently Enrolled Users: Usuarios actualmente inscritos
+  Dashboard ID: ID del panel
+  Dashboard Status: Estado del panel
+  Dashboard Title: Título del panel
+  Datasource ID: ID de fuente de datos
+  Datasource Name: Nombre de fuente de datos
+  Datasource Type: Tipo de fuente de datos
+  Date: Fecha
+  Description: Descripción
+  Display Name: Nombre a mostrar
+  Displays the top 10 highest enrollment courses. Selecting different courses in the filter will display those courses.: Muestra los 10 cursos con mayor número de inscripciones. Si seleccionas diferentes cursos en el filtro, se mostrarán esos cursos.
+  Distribution of Course Grades: Distribución de calificaciones del curso
+  Distribution of Current Course Grade: Distribución de la calificación del curso actual
+  Dump ID: ID de volcado
+  Duration (Seconds): Duración (segundos)
+  Email: Correo electrónico
+  Emission Day: Día de la emisión
+  Emission Hour: Hora de emisión
+  Emission Time: Tiempo de emisión
+  Engagement: Compromiso
+  Enrolled At: Inscrito en
+  Enrollees by Enrollment Track: Inscritos por vía de inscripción
+  Enrollees per Enrollment Track: Inscritos por vía de inscripción
+  Enrollment: Inscripciones
+  Enrollment Counts: Total de inscritos
+  Enrollment Date: Fecha de inscripción
+  Enrollment Dates: Fechas de inscripción
+  Learner Performance: Rendimiento del alumno

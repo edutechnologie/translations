@@ -1,0 +1,6 @@
+messages.mo
+.env
+ai-outputs/
+staging/
+batch_todo.json
+__pycache__

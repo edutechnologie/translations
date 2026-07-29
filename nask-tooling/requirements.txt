@@ -1,0 +1,5 @@
+google-genai
+dotenv
+polib
+edx-i18n-tools
+lxml-html-clean

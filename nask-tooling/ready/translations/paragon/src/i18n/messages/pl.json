@@ -1,0 +1,144 @@
+{
+  "Hyperlink.externalLinkAltText": {
+    "string": "w nowej karcie"
+  },
+  "Hyperlink.externalLinkTitle": {
+    "string": "Otwiera się w nowej karcie"
+  },
+  "dropzone.Dropzone.invalidSizeLessError": {
+    "developer_comment": "Komunikat wyświetlany, gdy w Dropzone jest przesyłany plik o rozmiarze mniejszym niż minimalny dozwolony.",
+    "string": "Plik musi być większy niż {size}."
+  },
+  "dropzone.Dropzone.invalidSizeMoreError": {
+    "developer_comment": "Komunikat wyświetlany, gdy w Dropzone jest przesyłany plik o rozmiarze większym niż maksymalny dozwolony.",
+    "string": "Plik musi być mniejszy niż {size}."
+  },
+  "dropzone.Dropzone.invalidType": {
+    "developer_comment": "Komunikat wyświetlany, gdy w Dropzone jest przesyłany plik o nieprawidłowym typie MIME.",
+    "string": "Typ pliku musi być {count, plural, one {{typeString} plik} other {jeden z {typeString} plików}}."
+  },
+  "dropzone.Dropzone.multipleDraggedError": {
+    "developer_comment": "Komunikat wyświetlany, gdy wiele plików jest przeciąganych nad Dropzone.",
+    "string": "Dozwolony jest tylko jeden plik do przesłania."
+  },
+  "dropzone.Dropzone.unexpectedValidationError": {
+    "developer_comment": "Komunikat wyświetlany w przypadku błędu walidacji pliku w komponencie Dropzone z nieznanego powodu.",
+    "string": "Wystąpił nieoczekiwany problem podczas walidacji pliku. Spróbuj ponownie."
+  },
+  "dropzone.Dropzone.uploadError": {
+    "developer_comment": "Komunikat wyświetlany w przypadku błędu podczas przesyłania pliku w komponencie Dropzone.",
+    "string": "Wystąpił problem podczas przesyłania pliku. Spróbuj ponownie."
+  },
+  "pgn.Alert.closeLabel": {
+    "developer_comment": "Etykieta przycisku zamykania w komponencie Alert.",
+    "string": "Odrzuć"
+  },
+  "pgn.CardCarousel.scrollToNext": {
+    "developer_comment": "Tekst ułatwień dostępu opisujący akcję nawigacji karuzeli z możliwością przewijania do następnego elementu",
+    "string": "Przewiń do następnego"
+  },
+  "pgn.CardCarousel.scrollToPrevious": {
+    "developer_comment": "Tekst ułatwień dostępu opisujący akcję nawigacji karuzeli z możliwością przewijania do poprzedniego elementu",
+    "string": "Przewiń do poprzedniego"
+  },
+  "pgn.ChipCarousel.scrollToNext": {
+    "developer_comment": "Tekst ułatwień dostępu opisujący akcję nawigacji karuzeli z możliwością przewijania do następnego elementu",
+    "string": "Przewiń do następnego"
+  },
+  "pgn.ChipCarousel.scrollToPrevious": {
+    "developer_comment": "Tekst ułatwień dostępu opisujący akcję nawigacji karuzeli z możliwością przewijania do poprzedniego elementu",
+    "string": "Przewiń do poprzedniego"
+  },
+  "pgn.DataTable.BaseSelectionStatus.allSelectedText": {
+    "developer_comment": "Tekst dla wszystkich zaznaczonych",
+    "string": "Wszystkie {numSelectedRows} zaznaczone"
+  },
+  "pgn.DataTable.BaseSelectionStatus.clearSelectionText": {
+    "developer_comment": "Etykieta przycisku wyczyść wszystkie zaznaczenia.",
+    "string": "Wyczyść zaznaczenie"
+  },
+  "pgn.DataTable.BaseSelectionStatus.selectAllText": {
+    "developer_comment": "Etykieta przycisku zaznacz wszystkie.",
+    "string": "Zaznacz wszystkie {itemCount}"
+  },
+  "pgn.DataTable.BaseSelectionStatus.selectedText": {
+    "developer_comment": "Tekst dla zaznaczonych",
+    "string": "{numSelectedRows} zaznaczone"
+  },
+  "pgn.DataTable.BaseSelectionStatus.selectedTextPaginated": {
+    "developer_comment": "Tekst dla zaznaczonych, gdy tabela jest stronicowana",
+    "string": "{numSelectedRows} zaznaczone ({numSelectedRowsOnPage} pokazane poniżej)"
+  },
+  "pgn.DataTable.ExpandAll.collapseAllLabel": {
+    "developer_comment": "Etykieta przycisku akcji, który zwija wszystkie rozwijane wiersze DataTable.",
+    "string": "Zwiń wszystko"
+  },
+  "pgn.DataTable.ExpandAll.expandAllLabel": {
+    "developer_comment": "Etykieta przycisku akcji, który rozwija wszystkie rozwijane wiersze DataTable.",
+    "string": "Rozwiń wszystko"
+  },
+  "pgn.DataTable.FilterStatus.clearFiltersText": {
+    "developer_comment": "Tekst, który pojawia się na przycisku `Wyczyść filtry`",
+    "string": "Wyczyść filtry"
+  },
+  "pgn.DataTable.RowStatus.statusText": {
+    "developer_comment": "Tekst opisujący, ile wierszy jest wyświetlanych w tabeli",
+    "string": "Wyświetlanie {firstRow} - {lastRow} z {itemCount}."
+  },
+  "pgn.DataTable.SidebarFilters.title": {
+    "developer_comment": "Tytuł komponentu filtrów bocznych",
+    "string": "Filtry"
+  },
+  "pgn.DataTable.paginationLabel": {
+    "developer_comment": "Nazwa dostępna dla elementu nawigacyjnego komponentu paginacji",
+    "string": "stronicowanie tabeli"
+  },
+  "pgn.Dropzone.DefaultContent.fileSizeBetween": {
+    "developer_comment": "Komunikat wyświetlany, gdy rozmiar przesłanego pliku musi mieścić się w podanym zakresie.",
+    "string": "Między {sizeMin} a {sizeMax}"
+  },
+  "pgn.Dropzone.DefaultContent.fileSizeMax": {
+    "developer_comment": "Komunikat wyświetlany, gdy rozmiar przesłanego pliku musi być większy niż pewna wartość.",
+    "string": "Maks. {sizeMax}"
+  },
+  "pgn.Dropzone.DefaultContent.fileSizeMin": {
+    "developer_comment": "Komunikat wyświetlany, gdy rozmiar przesłanego pliku musi być większy niż pewna wartość.",
+    "string": "Min. {sizeMin}"
+  },
+  "pgn.Dropzone.DefaultContent.fileTypeRestriction": {
+    "developer_comment": "Komunikat wyświetlany, gdy przesłany plik musi być określonego typu.",
+    "string": "Prześlij {count, plural, one {{firstPart} pliki} other {{firstPart} lub {secondPart} pliki}}"
+  },
+  "pgn.Dropzone.DefaultContent.label": {
+    "developer_comment": "Tekst pojawiający się jako etykieta dla pola wejściowego komponentu Dropzone.",
+    "string": "Przeciągnij i upuść plik tutaj lub kliknij, aby przesłać."
+  },
+  "pgn.Dropzone.UploadProgress.cancelLabel": {
+    "developer_comment": "Etykieta przycisku anulowania, który jest wyświetlany podczas przesyłania pliku w komponencie Dropzone.",
+    "string": "Anuluj"
+  },
+  "pgn.Dropzone.UploadProgress.uploadLabel": {
+    "developer_comment": "Tekst wyświetlany obok paska postępu podczas przesyłania pliku w komponencie Dropzone.",
+    "string": "Przesyłanie {filename}."
+  },
+  "pgn.FormAutosuggest.iconButtonClosed": {
+    "developer_comment": "Komunikat wyświetlany w przypadku otwarcia menu autosugestii.",
+    "string": "Zamknij menu opcji"
+  },
+  "pgn.FormAutosuggest.iconButtonOpened": {
+    "developer_comment": "Komunikat wyświetlany w przypadku zamknięcia menu autosugestii.",
+    "string": "Otwórz menu opcji"
+  },
+  "pgn.ProductTour.Checkpoint.bottom-position-text": {
+    "developer_comment": "Komunikat dla czytnika ekranu informujący użytkownika, że znajduje się na dole kroku samouczka produktu.",
+    "string": "Dół kroku {step}"
+  },
+  "pgn.ProductTour.Checkpoint.top-position-text": {
+    "developer_comment": "Komunikat dla czytnika ekranu informujący użytkownika, że znajduje się na dole kroku samouczka produktu.",
+    "string": "Góra kroku {step}"
+  },
+  "pgn.Toast.closeLabel": {
+    "developer_comment": "Etykieta zamykania dla komponentu Toast",
+    "string": "Zamknij"
+  }
+}

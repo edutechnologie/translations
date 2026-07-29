@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"POT-Creation-Date: 2023-06-13 08:00+0000\n"
+"PO-Revision-Date: 2023-06-13 09:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: done.py:39
+msgid "Is the student done?"
+msgstr "Czy student ukończył?"
+
+#: done.py:45
+msgid "Align left/right/center"
+msgstr "Wyrównaj do lewej/prawej/środka"
+
+#: done.py:132
+msgid "Display name"
+msgstr "Wyświetlana nazwa"
+
+#: done.py:137
+msgid ""
+"ISO-8601 formatted string representing the start date of this assignment. We"
+" ignore this."
+msgstr ""
+"Ciąg znaków w formacie ISO-8601 reprezentujący datę rozpoczęcia tego "
+"zadania. Ignorujemy to."
+
+#: done.py:142
+msgid ""
+"ISO-8601 formatted string representing the due date of this assignment. We "
+"ignore this."
+msgstr ""
+"Ciąg znaków w formacie ISO-8601 reprezentujący termin wykonania tego "
+"zadania. Ignorujemy to."
+
+#: done.py:146
+msgid "Problem Weight"
+msgstr "Waga zadania"
+
+#: done.py:148
+msgid ""
+"Defines the number of points each problem is worth. If the value is not set,"
+" the problem is worth the sum of the option point values."
+msgstr ""
+"Określa liczbę punktów, jaką jest warta każda część. Jeśli wartość nie jest "
+"ustawiona, część jest warta sumę punktów opcji."
+
+#: templates/done.html:8
+msgid "X"
+msgstr "X"
+
+#: templates/done.html:9
+msgid "I have completed this"
+msgstr "Ukończyłem to"
+
+#: templates/done.html:11
+msgid "Unmark"
+msgstr "Cofnij zaznaczenie"
+
+#: templates/done.html:12
+msgid "Mark as complete"
+msgstr "Zaznacz jako ukończone"
+
+#: templates/studioview.html:4
+msgid ""
+"This is a very simple component with no configuration options. It is used "
+"for helping student keep track of what portion of a course they've "
+"completed. For example, you might place this underneath each text and video "
+"component, and students can see in their progress page which portions are "
+"completed and  which still need to be watched or read."
+msgstr ""
+"To bardzo prosty komponent bez opcji konfiguracji. Służy do pomocy studentom"
+" w śledzeniu, jaką część kursu ukończyli. Na przykład, można umieścić go pod"
+" każdym tekstem i komponentem wideo, a studenci będą widzieć na swojej "
+"stronie postępu, które części zostały ukończone, a które nadal wymagają "
+"obejrzenia lub przeczytania."
+
+#: templates/studioview.html:6
+msgid ""
+"It is also helpful to give students a way to sign off on having completed "
+"something. They are less likely to skip material that way."
+msgstr ""
+"Pomocne jest również danie studentom sposobu na potwierdzenie ukończenia "
+"czegoś. Wtedy mniej prawdopodobne jest, że pominą materiał."
+
+#: templates/studioview.html:8
+msgid ""
+"(If you're a real power-user, in OLX, we do allow you to add an align tag, "
+"which can left-, center-, or right-justify the XBlock)"
+msgstr ""
+"(Jeśli jesteś prawdziwym zaawansowanym użytkownikiem, w OLX dopuszczamy "
+"dodanie znacznika wyrównania, który może wyrównać XBlock do lewej, do środka"
+" lub do prawej)"
