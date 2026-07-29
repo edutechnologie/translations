@@ -1,5 +1,7 @@
 """
-rm_pl.py — deletes all resolved PL files from translations/ after a pull.
+Step 2 — Remove existing target language files after a pull.
+
+Deletes all resolved PL files from translations/ after a pull.
 Safe because ready/ (not translations/) is the durable store,
 and translations/ is git-tracked (recoverable via git checkout if needed).
 """

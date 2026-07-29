@@ -1,7 +1,9 @@
 """
-prepare_translation_batch.py — diffs current EN (translations/) against previous PL
-(translations_ready/), writes translations_staging/ with what's unchanged
-carried over, and a batch list of what needs (re)translation.
+Step 3 — Prepare translation batch.
+
+Diffs current EN (translations/) against previous PL (ready/), writes
+staging/ with what's unchanged carried over, and a batch list of what
+needs (re)translation.
 """
 
 from .config import (

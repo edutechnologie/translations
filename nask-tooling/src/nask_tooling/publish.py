@@ -1,3 +1,10 @@
+"""
+Step 7 — Publish validated staging files.
+
+Copies validated staging files into ready/ (durable store) and
+translations/ (source tree consumed by Dockerfiles).
+"""
+
 import shutil
 
 from .config import (
