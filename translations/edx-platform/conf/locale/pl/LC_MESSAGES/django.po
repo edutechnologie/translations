@@ -1,28 +1,4 @@
-# #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
-# edX translation file.
-# Copyright (C) 2025 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
 #
-# #-#-#-#-#  wiki.po (0.1a)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2025 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-#
-# #-#-#-#-#  edx_proctoring_proctortrack.po (0.1a)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2025 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-#
-# #-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#
-# Translations template for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
@@ -31,11 +7,11 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pl\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: cms/djangoapps/api/v1/serializers/course_runs.py:49
@@ -1542,8 +1518,9 @@ msgstr ""
 #, python-format
 msgid "%(count)d student account was unlocked."
 msgid_plural "%(count)d student accounts were unlocked."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Odblokowano %(count)d konto studenta."
+msgstr[1] "Odblokowano %(count)d konta studentów."
+msgstr[2] "Odblokowano %(count)d kont studentów."
 
 #: common/djangoapps/student/admin.py:498
 #, python-brace-format
@@ -2467,8 +2444,11 @@ msgstr "Grudzień"
 msgid "The file must end with the extension '{file_types}'."
 msgid_plural ""
 "The file must end with one of the following extensions: '{file_types}'."
-msgstr[0] ""
+msgstr[0] "Plik musi kończyć się rozszerzeniem '{file_types}'."
 msgstr[1] ""
+"Plik musi kończyć się jednym z następujących rozszerzeń: '{file_types}'."
+msgstr[2] ""
+"Plik musi kończyć się jednym z następujących rozszerzeń: '{file_types}'."
 
 #: common/djangoapps/util/file.py:73
 #, python-brace-format
@@ -2507,8 +2487,9 @@ msgstr "Nieprawidłowe hasło."
 #, python-format
 msgid "at least %(min_length)d character"
 msgid_plural "at least %(min_length)d characters"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "co najmniej %(min_length)d znak"
+msgstr[1] "co najmniej %(min_length)d znaki"
+msgstr[2] "co najmniej %(min_length)d znaków"
 
 #: common/djangoapps/util/password_policy_validators.py:175
 #, python-format
@@ -2519,103 +2500,122 @@ msgid_plural ""
 "This password is too long. It must contain no more than %(max_length)d "
 "characters."
 msgstr[0] ""
+"Hasło jest za długie. Musi zawierać nie więcej niż %(max_length)d znak."
 msgstr[1] ""
+"Hasło jest za długie. Musi zawierać nie więcej niż %(max_length)d znaki."
+msgstr[2] ""
+"Hasło jest za długie. Musi zawierać nie więcej niż %(max_length)d znaków."
 
 #: common/djangoapps/util/password_policy_validators.py:185
 #, python-format
 msgid "Your password must contain no more than %(max_length)d character."
 msgid_plural ""
 "Your password must contain no more than %(max_length)d characters."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Twoje hasło musi zawierać nie więcej niż %(max_length)d znak."
+msgstr[1] "Twoje hasło musi zawierać nie więcej niż %(max_length)d znaki."
+msgstr[2] "Twoje hasło musi zawierać nie więcej niż %(max_length)d znaków."
 
 #: common/djangoapps/util/password_policy_validators.py:213
 #, python-format
 msgid "This password must contain at least %(min_alphabetic)d letter."
 msgid_plural "This password must contain at least %(min_alphabetic)d letters."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hasło musi zawierać co najmniej %(min_alphabetic)d literę."
+msgstr[1] "Hasło musi zawierać co najmniej %(min_alphabetic)d litery."
+msgstr[2] "Hasło musi zawierać co najmniej %(min_alphabetic)d liter."
 
 #: common/djangoapps/util/password_policy_validators.py:223
 #, python-format
 msgid "Your password must contain at least %(min_alphabetic)d letter."
 msgid_plural "Your password must contain at least %(min_alphabetic)d letters."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Twoje hasło musi zawierać co najmniej %(min_alphabetic)d literę."
+msgstr[1] "Twoje hasło musi zawierać co najmniej %(min_alphabetic)d litery."
+msgstr[2] "Twoje hasło musi zawierać co najmniej %(min_alphabetic)d liter."
 
 #: common/djangoapps/util/password_policy_validators.py:231
 #, python-format
 msgid "%(num)d letter"
 msgid_plural "%(num)d letters"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d litera"
+msgstr[1] "%(num)d litery"
+msgstr[2] "%(num)d liter"
 
 #: common/djangoapps/util/password_policy_validators.py:261
 #, python-format
 msgid "This password must contain at least %(min_numeric)d number."
 msgid_plural "This password must contain at least %(min_numeric)d numbers."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hasło musi zawierać co najmniej %(min_numeric)d cyfrę."
+msgstr[1] "Hasło musi zawierać co najmniej %(min_numeric)d cyfry."
+msgstr[2] "Hasło musi zawierać co najmniej %(min_numeric)d cyfr."
 
 #: common/djangoapps/util/password_policy_validators.py:271
 #, python-format
 msgid "Your password must contain at least %(min_numeric)d number."
 msgid_plural "Your password must contain at least %(min_numeric)d numbers."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Twoje hasło musi zawierać co najmniej %(min_numeric)d cyfrę."
+msgstr[1] "Twoje hasło musi zawierać co najmniej %(min_numeric)d cyfry."
+msgstr[2] "Twoje hasło musi zawierać co najmniej %(min_numeric)d cyfr."
 
 #: common/djangoapps/util/password_policy_validators.py:279
 #, python-format
 msgid "%(num)d number"
 msgid_plural "%(num)d numbers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d cyfra"
+msgstr[1] "%(num)d cyfry"
+msgstr[2] "%(num)d cyfr"
 
 #: common/djangoapps/util/password_policy_validators.py:309
 #, python-format
 msgid "This password must contain at least %(min_upper)d uppercase letter."
 msgid_plural ""
 "This password must contain at least %(min_upper)d uppercase letters."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hasło musi zawierać co najmniej %(min_upper)d wielką literę."
+msgstr[1] "Hasło musi zawierać co najmniej %(min_upper)d wielkie litery."
+msgstr[2] "Hasło musi zawierać co najmniej %(min_upper)d wielkich liter."
 
 #: common/djangoapps/util/password_policy_validators.py:319
 #, python-format
 msgid "Your password must contain at least %(min_upper)d uppercase letter."
 msgid_plural ""
 "Your password must contain at least %(min_upper)d uppercase letters."
-msgstr[0] ""
+msgstr[0] "Twoje hasło musi zawierać co najmniej %(min_upper)d wielką literę."
 msgstr[1] ""
+"Twoje hasło musi zawierać co najmniej %(min_upper)d wielkie litery."
+msgstr[2] ""
+"Twoje hasło musi zawierać co najmniej %(min_upper)d wielkich liter."
 
 #: common/djangoapps/util/password_policy_validators.py:327
 #, python-format
 msgid "%(num)d uppercase letter"
 msgid_plural "%(num)d uppercase letters"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d wielka litera"
+msgstr[1] "%(num)d wielkie litery"
+msgstr[2] "%(num)d wielkich liter"
 
 #: common/djangoapps/util/password_policy_validators.py:357
 #, python-format
 msgid "This password must contain at least %(min_lower)d lowercase letter."
 msgid_plural ""
 "This password must contain at least %(min_lower)d lowercase letters."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hasło musi zawierać co najmniej %(min_lower)d małą literę."
+msgstr[1] "Hasło musi zawierać co najmniej %(min_lower)d małe litery."
+msgstr[2] "Hasło musi zawierać co najmniej %(min_lower)d małych liter."
 
 #: common/djangoapps/util/password_policy_validators.py:367
 #, python-format
 msgid "Your password must contain at least %(min_lower)d lowercase letter."
 msgid_plural ""
 "Your password must contain at least %(min_lower)d lowercase letters."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Twoje hasło musi zawierać co najmniej %(min_lower)d małą literę."
+msgstr[1] "Twoje hasło musi zawierać co najmniej %(min_lower)d małe litery."
+msgstr[2] "Twoje hasło musi zawierać co najmniej %(min_lower)d małych liter."
 
 #: common/djangoapps/util/password_policy_validators.py:375
 #, python-format
 msgid "%(num)d lowercase letter"
 msgid_plural "%(num)d lowercase letters"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d mała litera"
+msgstr[1] "%(num)d małe litery"
+msgstr[2] "%(num)d małych liter"
 
 #: common/djangoapps/util/password_policy_validators.py:406
 #, python-format
@@ -2624,7 +2624,11 @@ msgid ""
 msgid_plural ""
 "This password must contain at least %(min_punctuation)d punctuation marks."
 msgstr[0] ""
+"Hasło musi zawierać co najmniej %(min_punctuation)d znak interpunkcyjny."
 msgstr[1] ""
+"Hasło musi zawierać co najmniej %(min_punctuation)d znaki interpunkcyjne."
+msgstr[2] ""
+"Hasło musi zawierać co najmniej %(min_punctuation)d znaków interpunkcyjnych."
 
 #: common/djangoapps/util/password_policy_validators.py:416
 #, python-format
@@ -2633,35 +2637,46 @@ msgid ""
 msgid_plural ""
 "Your password must contain at least %(min_punctuation)d punctuation marks."
 msgstr[0] ""
+"Twoje hasło musi zawierać co najmniej %(min_punctuation)d znak "
+"interpunkcyjny."
 msgstr[1] ""
+"Twoje hasło musi zawierać co najmniej %(min_punctuation)d znaki "
+"interpunkcyjne."
+msgstr[2] ""
+"Twoje hasło musi zawierać co najmniej %(min_punctuation)d znaków "
+"interpunkcyjnych."
 
 #: common/djangoapps/util/password_policy_validators.py:424
 #, python-format
 msgid "%(num)d punctuation mark"
 msgid_plural "%(num)d punctuation marks"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d znak interpunkcyjny"
+msgstr[1] "%(num)d znaki interpunkcyjne"
+msgstr[2] "%(num)d znaków interpunkcyjnych"
 
 #: common/djangoapps/util/password_policy_validators.py:454
 #, python-format
 msgid "This password must contain at least %(min_symbol)d symbol."
 msgid_plural "This password must contain at least %(min_symbol)d symbols."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hasło musi zawierać co najmniej %(min_symbol)d symbol."
+msgstr[1] "Hasło musi zawierać co najmniej %(min_symbol)d symbole."
+msgstr[2] "Hasło musi zawierać co najmniej %(min_symbol)d symboli."
 
 #: common/djangoapps/util/password_policy_validators.py:464
 #, python-format
 msgid "Your password must contain at least %(min_symbol)d symbol."
 msgid_plural "Your password must contain at least %(min_symbol)d symbols."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Twoje hasło musi zawierać co najmniej %(min_symbol)d symbol."
+msgstr[1] "Twoje hasło musi zawierać co najmniej %(min_symbol)d symbole."
+msgstr[2] "Twoje hasło musi zawierać co najmniej %(min_symbol)d symboli."
 
 #: common/djangoapps/util/password_policy_validators.py:472
 #, python-format
 msgid "%(num)d symbol"
 msgid_plural "%(num)d symbols"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d symbol"
+msgstr[1] "%(num)d symbole"
+msgstr[2] "%(num)d symboli"
 
 #: common/djangoapps/xblock_django/admin.py:22
 msgid ""
@@ -3903,7 +3918,17 @@ msgid_plural ""
 "                                You set a goal of learning {start_bold}%(days_per_week)s times a week in %(course_name)s{end_bold}. You're not quite there, but there's still time to reach that goal!\n"
 "                            "
 msgstr[0] ""
+"\n"
+"                                Ustanowiono cel nauki {start_bold}%(days_per_week)s raz w tygodniu w kursie %(course_name)s{end_bold}. Jeszcze trochę, ale wciąż masz czas na osiągnięcie tego celu!\n"
+"                                "
 msgstr[1] ""
+"\n"
+"                                Ustanowiono cel nauki {start_bold}%(days_per_week)s razy w tygodniu w kursie %(course_name)s{end_bold}. Jeszcze trochę, ale wciąż masz czas na osiągnięcie tego celu!\n"
+"                            "
+msgstr[2] ""
+"\n"
+"                                Ustanowiono cel nauki {start_bold}%(days_per_week)s razy w tygodniu w kursie %(course_name)s{end_bold}. Jeszcze trochę, ale wciąż masz czas na osiągnięcie tego celu!\n"
+"                            "
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:80
 msgid ""
@@ -4020,8 +4045,9 @@ msgstr "Wyłączone"
 #, python-brace-format
 msgid "({number} Question)"
 msgid_plural "({number} Questions)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "({number} pytanie)"
+msgstr[1] "({number} pytania)"
+msgstr[2] "({number} pytań)"
 
 #: lms/djangoapps/course_home_api/outline/views.py:291
 #, python-brace-format
@@ -5651,15 +5677,17 @@ msgstr "0 wysłano"
 #, python-brace-format
 msgid "{num_emails} sent"
 msgid_plural "{num_emails} sent"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Wysłano {num_emails}"
+msgstr[1] "Wysłano {num_emails}"
+msgstr[2] "Wysłano {num_emails}"
 
 #: lms/djangoapps/instructor/views/instructor_task_helpers.py:99
 #, python-brace-format
 msgid "{num_emails} failed"
 msgid_plural "{num_emails} failed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Nie powiodło się: {num_emails}"
+msgstr[1] "Nie powiodło się: {num_emails}"
+msgstr[2] "Nie powiodło się: {num_emails}"
 
 #: lms/djangoapps/instructor/views/instructor_task_helpers.py:140
 msgid "Complete"
@@ -10933,8 +10961,9 @@ msgstr ""
 #, python-brace-format
 msgid "Try again ({attempts} attempt remaining)"
 msgid_plural "Try again ({attempts} attempts remaining)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Spróbuj ponownie (pozostała {attempts} próba)"
+msgstr[1] "Spróbuj ponownie (pozostały {attempts} próby)"
+msgstr[2] "Spróbuj ponownie (pozostało {attempts} prób)"
 
 #: openedx/features/personalized_learner_schedules/call_to_action.py:150
 #, python-brace-format
@@ -11807,22 +11836,25 @@ msgstr ""
 #, python-brace-format
 msgid "Incorrect ({progress} point)"
 msgid_plural "Incorrect ({progress} points)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Niepoprawnie ({progress} punkt)"
+msgstr[1] "Niepoprawnie ({progress} punkty)"
+msgstr[2] "Niepoprawnie ({progress} punktów)"
 
 #: xmodule/capa_block.py:1402
 #, python-brace-format
 msgid "Correct ({progress} point)"
 msgid_plural "Correct ({progress} points)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Poprawnie ({progress} punkt)"
+msgstr[1] "Poprawnie ({progress} punkty)"
+msgstr[2] "Poprawnie ({progress} punktów)"
 
 #: xmodule/capa_block.py:1411
 #, python-brace-format
 msgid "Partially correct ({progress} point)"
 msgid_plural "Partially correct ({progress} points)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Częściowo poprawnie ({progress} punkt)"
+msgstr[1] "Częściowo poprawnie ({progress} punkty)"
+msgstr[2] "Częściowo poprawnie ({progress} punktów)"
 
 #: xmodule/capa_block.py:1416
 msgid "Partially Correct"
@@ -11860,22 +11892,25 @@ msgstr ""
 #, python-brace-format
 msgid "{num_hour} hour"
 msgid_plural "{num_hour} hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num_hour} godzina"
+msgstr[1] "{num_hour} godziny"
+msgstr[2] "{num_hour} godzin"
 
 #: xmodule/capa_block.py:2015
 #, python-brace-format
 msgid "{num_minute} minute"
 msgid_plural "{num_minute} minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num_minute} minuta"
+msgstr[1] "{num_minute} minuty"
+msgstr[2] "{num_minute} minut"
 
 #: xmodule/capa_block.py:2021
 #, python-brace-format
 msgid "{num_second} second"
 msgid_plural "{num_second} seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num_second} sekunda"
+msgstr[1] "{num_second} sekundy"
+msgstr[2] "{num_second} sekund"
 
 #: xmodule/capa_block.py:2141
 msgid "Problem needs to be reset prior to save."
@@ -12162,8 +12197,8 @@ msgid ""
 "\"i4x-UniversityX-MUS101-course-2015_T1\", \"default\": true}."
 msgstr ""
 "Wprowadź kategorie dyskusji w następującym formacie: „NazwaKategorii”: "
-"{\"id\": \"i4x-InstitutionName-CourseNumber-course-CourseRun\"}. Na"
-" przykład, jedna kategoria dyskusji może być „Moduł Lidyjski”: {\"id\": "
+"{\"id\": \"i4x-InstitutionName-CourseNumber-course-CourseRun\"}. Na "
+"przykład, jedna kategoria dyskusji może być „Moduł Lidyjski”: {\"id\": "
 "\"i4x-UniversityX-MUS101-course-2015_T1\"}. Wartość „id” dla każdej "
 "kategorii musi być unikalna. W wartościach „id” obsługiwane są tylko znaki "
 "podkreślenia, łącznika i kropki. Możesz również określić kategorię jako "
@@ -13268,14 +13303,19 @@ msgstr "Wybierz inny typ problemu."
 msgid "The specified library is configured to fetch {count} problem, "
 msgid_plural "The specified library is configured to fetch {count} problems, "
 msgstr[0] ""
+"Określona biblioteka jest skonfigurowana do pobrania {count} zadania, "
 msgstr[1] ""
+"Określona biblioteka jest skonfigurowana do pobrania {count} zadań, "
+msgstr[2] ""
+"Określona biblioteka jest skonfigurowana do pobrania {count} zadań, "
 
 #: xmodule/library_content_block.py:360
 #, python-brace-format
 msgid "but there is only {actual} matching problem."
 msgid_plural "but there are only {actual} matching problems."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ale istnieje tylko {actual} pasujące zadanie."
+msgstr[1] "ale istnieją tylko {actual} pasujące zadania."
+msgstr[2] "ale istnieje tylko {actual} pasujących zadań."
 
 #: xmodule/library_content_block.py:366
 msgid "Edit the library configuration."
@@ -13579,8 +13619,8 @@ msgstr ""
 "Określ domyślną częstotliwość losowania wartości zmiennych w problemie. To "
 "ustawienie powinno być ustawione na \"nigdy\", chyba że planujesz dostarczyć"
 " skrypt Pythona do identyfikacji i losowania wartości w większości problemów"
-" w kursie. Prawidłowe wartości to \"always\", \"onreset\", "
-"\"never\" i \"per_student\"."
+" w kursie. Prawidłowe wartości to \"always\", \"onreset\", \"never\" i "
+"\"per_student\"."
 
 #: xmodule/modulestore/inheritance.py:128
 msgid "Days Early for Beta Users"
@@ -14035,7 +14075,17 @@ msgid_plural ""
 "                Learners will see all of the %(num_selected)s selected components, in random order:\n"
 "                "
 msgstr[0] ""
+"\n"
+"                Uczniowie zobaczą wybrany komponent:\n"
+"                "
 msgstr[1] ""
+"\n"
+"                Uczniowie zobaczą wszystkie %(num_selected)s wybrane komponenty, w losowej kolejności:\n"
+"                "
+msgstr[2] ""
+"\n"
+"                Uczniowie zobaczą wszystkie %(num_selected)s wybranych komponentów, w losowej kolejności:\n"
+"                "
 
 #: xmodule/templates/item_bank/author_view.html:32
 #, python-brace-format
@@ -14159,8 +14209,9 @@ msgstr "Podstawowy"
 msgid "There is no transcript file associated with the {lang} language."
 msgid_plural ""
 "There are no transcript files associated with the {lang} languages."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Brak pliku transkrypcji powiązanego z językiem {lang}."
+msgstr[1] "Brak plików transkrypcji powiązanych z językiem {lang}."
+msgstr[2] "Brak plików transkrypcji powiązanych z językiem {lang}."
 
 #: xmodule/video_block/video_block.py:936
 msgid ""
@@ -18163,7 +18214,17 @@ msgid_plural ""
 "student will be assigned {max_count} components drawn randomly from this "
 "list."
 msgstr[0] ""
+"Wyświetlanie całej pasującej zawartości kwalifikującej się do dodania do "
+"{display_name}. Każdemu studentowi zostanie przydzielony {max_count} "
+"komponent wylosowany z tej listy."
 msgstr[1] ""
+"Wyświetlanie całej pasującej zawartości kwalifikującej się do dodania do "
+"{display_name}. Każdemu studentowi zostaną przydzielone {max_count} "
+"komponenty wylosowane z tej listy."
+msgstr[2] ""
+"Wyświetlanie całej pasującej zawartości kwalifikującej się do dodania do "
+"{display_name}. Każdemu studentowi zostanie przydzielonych {max_count} "
+"komponentów wylosowanych z tej listy."
 
 #: cms/templates/library.html:49
 msgid "Content Library"
@@ -19932,16 +19993,18 @@ msgstr ""
 #, python-format
 msgid "%s discussion started"
 msgid_plural "%s discussions started"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Rozpoczęto %s dyskusję"
+msgstr[1] "Rozpoczęto %s dyskusje"
+msgstr[2] "Rozpoczęto %s dyskusji"
 
 #: lms/djangoapps/discussion/templates/discussion/discussion_profile_page.html:56
 #: lms/templates/discussion/_user_profile.html:9
 #, python-format
 msgid "%s comment"
 msgid_plural "%s comments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s komentarz"
+msgstr[1] "%s komentarze"
+msgstr[2] "%s komentarzy"
 
 #: lms/djangoapps/discussion/templates/discussion/maintenance_fragment.html:10
 msgid "Discussion unavailable"
@@ -20479,8 +20542,9 @@ msgstr "Pokaż odpowiedź"
 #, python-brace-format
 msgid "You have used {num_used} of {num_total} attempt"
 msgid_plural "You have used {num_used} of {num_total} attempts"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Wykorzystano {num_used} z {num_total} próby"
+msgstr[1] "Wykorzystano {num_used} z {num_total} próby"
+msgstr[2] "Wykorzystano {num_used} z {num_total} prób"
 
 #: lms/templates/problem.html:96
 #, python-brace-format
@@ -20983,7 +21047,7 @@ msgstr "Kopiuj"
 
 #: lms/templates/video.html:138
 msgid "Transcripts"
-msgstr ""
+msgstr "Transkrypcje"
 
 #: lms/templates/video.html:144
 #, python-brace-format

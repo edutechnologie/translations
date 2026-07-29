@@ -1,7 +1,3 @@
-# edX translation file.
-# Copyright (C) 2025 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
 #
 msgid ""
 msgstr ""
@@ -11,11 +7,11 @@ msgstr ""
 "PO-Revision-Date: 2023-06-13 09:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: pl\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: models.py:39
 msgid "Display Correctness?"
@@ -185,29 +181,33 @@ msgstr "Brak odpowiedzi do wyświetlenia w tej chwili"
 #, python-brace-format
 msgid "{weight} point possible"
 msgid_plural "{weight} points possible"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{weight} punkt możliwy do zdobycia"
+msgstr[1] "{weight} punkty możliwe do zdobycia"
+msgstr[2] "{weight} punktów możliwych do zdobycia"
 
 #: views.py:134
 #, python-brace-format
 msgid "{score_string}/{weight} point"
 msgid_plural "{score_string}/{weight} points"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{score_string}/{weight} punkt"
+msgstr[1] "{score_string}/{weight} punkty"
+msgstr[2] "{score_string}/{weight} punktów"
 
 #: views.py:147
 #, python-brace-format
 msgid "You have used {count_attempts} of {max_attempts} submission"
 msgid_plural "You have used {count_attempts} of {max_attempts} submissions"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Wykorzystano {count_attempts} z {max_attempts} zgłoszenia"
+msgstr[1] "Wykorzystano {count_attempts} z {max_attempts} zgłoszeń"
+msgstr[2] "Wykorzystano {count_attempts} z {max_attempts} zgłoszeń"
 
 #: views.py:171
 #, python-brace-format
 msgid "Your response must be between {min} and {max} word."
 msgid_plural "Your response must be between {min} and {max} words."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Twoja odpowiedź musi zawierać od {min} do {max} słowa."
+msgstr[1] "Twoja odpowiedź musi zawierać od {min} do {max} słów."
+msgstr[2] "Twoja odpowiedź musi zawierać od {min} do {max} słów."
 
 #: views.py:267
 #, python-brace-format
