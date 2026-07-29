@@ -4,15 +4,15 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/open-edx/teams/6205/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -105,23 +105,6 @@ msgstr "Ladda upp resurser"
 msgid "mode"
 msgstr "läge"
 
-#: templates/recommender.html:133
-msgid ""
-"This is a list of resources your fellow students thought might be helpful. "
-"If you find another useful resource, either on edx.org or elsewhere, please "
-"add it. If you can improve the description or preview of a resource, please "
-"do so as well. If you find a resource helpful, upvote it. If it&rsquo;s not "
-"so helpful, downvote it. If it has issues (illegal material, incorrect, "
-"etc.), please flag it and let us know the reason."
-msgstr ""
-"Detta är en lista över resurser som dina medstudenter tyckte kunde vara till"
-" hjälp. Om du hittar en annan användbar resurs, antingen på edx.org eller "
-"någon annanstans, vänligen lägg till den. Om du kan förbättra beskrivningen "
-"eller förhandsgranskningen av en resurs, gör gärna det också. Om du tycker "
-"att en resurs är hjälpsam, rösta upp den. Om den inte är så hjälpsam, rösta "
-"ner den. Om den har problem (olagligt material, felaktigt, etc.), markera "
-"den och låt oss veta orsaken."
-
 #: templates/recommender.html:141
 msgid "cancel and go back to resource list"
 msgstr "avbryt och gå tillbaka till resurslistan"
@@ -138,6 +121,11 @@ msgstr "Resurser (i JSON-format):"
 msgid "Provide a file of resource list in JSON format"
 msgstr "Tillhandahåll en fil med resurslista i JSON-format"
 
+#: templates/recommender.html:153 templates/recommender.html:163
+#: templates/recommender.html:173
+msgid "Reason"
+msgstr "Orsak"
+
 #: templates/recommender.html:157
 msgid "Reason for why this resource should be removed"
 msgstr "Anledning till varför denna resurs bör tas bort"
@@ -153,6 +141,10 @@ msgstr "Anledning till varför denna resurs bör flaggas"
 #: templates/recommender.html:183 templates/recommender.html:208
 msgid "Title"
 msgstr "Titel"
+
+#: templates/recommender.html:185 templates/recommender.html:210
+msgid "Provide a resource title, required"
+msgstr "Ange en resurstitel, obligatoriskt"
 
 #: templates/recommender.html:187 templates/recommender.html:212
 msgid ""
@@ -185,6 +177,10 @@ msgstr ""
 #: templates/recommender.html:202
 msgid "Preview screenshot:"
 msgstr "Förhandsgranskningsbild:"
+
+#: templates/recommender.html:202
+msgid "Provide a resource screenshot"
+msgstr "Tillhandahåll en resurs skärmdump"
 
 #: templates/recommender.html:203
 msgid "Save change"
@@ -291,6 +287,10 @@ msgstr ""
 "men ge tillräckligt med detaljer för att låta studenterna veta om denna "
 "resurs är användbar för dem"
 
+#: static/js/src/cats.js:74 static/js/src/cats.js:78
+msgid "Cut-and-paste the URL of the resource."
+msgstr "Klipp och klistra in URL:en till resursen."
+
 #: static/js/src/cats.js:75 static/js/src/cats.js:79
 msgid ""
 "Give a paragraph of summary of the resource; the summary should be more "
@@ -386,7 +386,7 @@ msgstr "Redigera befintlig resurs"
 
 #: static/js/src/cats.js:110
 msgid "Flag Resource"
-msgstr "Flagga resurs"
+msgstr "Markera resurs"
 
 #: static/js/src/cats.js:111
 msgid "Endorse Resource"
@@ -430,6 +430,10 @@ msgstr ""
 msgid "Endorse this resource and give the reason why you do that."
 msgstr "Godkänn denna resurs och ge anledningen till varför du gör det."
 
+#: static/js/src/cats.js:121
+msgid "Remove this resource and give the reason why you do that."
+msgstr "Ta bort den här resursen och ange anledningen till varför du gör det."
+
 #: static/js/src/cats.js:157
 msgid "Hide related resources"
 msgstr "Dölj relaterade resurser"
@@ -442,9 +446,9 @@ msgstr "Från sida {fromPage} Till sida {toPage}"
 msgid "Export resources"
 msgstr "Exportera resurser"
 
-#: static/js/src/cats.js:202
-msgid "Entering add resource mode"
-msgstr "Går in i läget för att lägga till resurs"
+#: static/js/src/cats.js:198
+msgid "Entering import resource mode"
+msgstr "Går in i importläge för resurser"
 
 #: static/js/src/cats.js:203
 msgid "Add new resource"
@@ -453,6 +457,10 @@ msgstr "Lägga till ny resurs"
 #: static/js/src/cats.js:206
 msgid "Entering edit resource mode"
 msgstr "Går in i redigeringsläge för resurser"
+
+#: static/js/src/cats.js:210
+msgid "Entering flag resource mode"
+msgstr "Går in i läget för flaggning av resurser"
 
 #: static/js/src/cats.js:211
 msgid "Flag resource"
@@ -466,9 +474,17 @@ msgstr "Avflagga resurs"
 msgid "Endorse resource"
 msgstr "Godkänn resurs"
 
+#: static/js/src/cats.js:216
+msgid "Unendorse resource"
+msgstr "Avsluta rekommendation av resurs"
+
 #: static/js/src/cats.js:218
 msgid "Remove resource"
 msgstr "Ta bort resurs"
+
+#: static/js/src/cats.js:219
+msgid "Hovering resource"
+msgstr "Resurs vid hovring"
 
 #: static/js/src/cats.js:220
 msgid "A resource was clicked"

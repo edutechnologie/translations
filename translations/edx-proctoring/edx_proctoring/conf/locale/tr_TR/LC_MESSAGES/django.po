@@ -5,17 +5,17 @@
 # EdX Team <info@edx.org>, 2018.
 # 
 # Translators:
-# Brian Smith, 2023
-# Nathan Robertson, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
+# Brian Smith, 2025
+# Nathan Robertson, 2026
+# Ali Işıngör <ali@artistanbul.io>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 00:34+0000\n"
-"PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025\n"
+"POT-Creation-Date: 2025-10-30 00:49+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Ali Işıngör <ali@artistanbul.io>, 2026\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -201,6 +201,74 @@ msgstr "Ek Zaman (dakika)"
 msgid "Review Policy Exception"
 msgstr "İnceleme Politikası İstisnası"
 
+#: templates/common/waiting_banner.html:3
+msgid ""
+"\n"
+"        The result will be visible after <strong id=\"wait_deadline\"> Loading... </strong>\n"
+"    "
+msgstr ""
+"\n"
+"        Sonuç <strong id=\"wait_deadline\"> Yükleniyor... </strong>sonrasında görülecektir\n"
+"    "
+
+#: templates/emails/proctoring_attempt_satisfactory_email.html:5
+#: templates/emails/proctoring_attempt_submitted_email.html:5
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:5
+msgid ""
+"\n"
+"        Hello,\n"
+"    "
+msgstr ""
+"\n"
+"        Merhaba,\n"
+"    "
+
+#: templates/emails/proctoring_attempt_satisfactory_email.html:21
+#, python-format
+msgid ""
+"\n"
+"    If you have any questions about your results, you can reach out at \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+msgstr ""
+"\n"
+"    Sonuçlarınız hakkında herhangi bir sorunuz varsa, şu adresten bize ulaşabilirsiniz\n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:25
+#, python-format
+msgid ""
+"\n"
+"        To appeal your proctored exam results, please reach out with any relevant information\n"
+"        about your exam at \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+msgstr ""
+"\n"
+"        Gözetimli sınav sonuçlarınıza itiraz etmek için, lütfen ilgili bilgileri paylaşarak bize ulaşın.\n"
+"        Sınavınızla ilgili olarak şu adrese başvurabilirsiniz: \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:5
+msgid ""
+"\n"
+"    Proctoring onboarding exam\n"
+"  "
+msgstr ""
+"\n"
+"    Gözetimli oryantasyon sınavı\n"
+"  "
+
 #: templates/onboarding_exam/entrance.html:12
 msgid ""
 "\n"
@@ -211,6 +279,26 @@ msgstr ""
 "     Bu sizin için neden önemli:\n"
 "    "
 
+#: templates/onboarding_exam/entrance.html:18
+msgid ""
+"\n"
+"        Establish your identity with the proctoring system to take a proctored exam\n"
+"      "
+msgstr ""
+"\n"
+"        Gözetimli sınava girmek için gözetim sistemiyle kimliğinizi oluşturun\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:23
+msgid ""
+"\n"
+"        Create your onboarding profile for faster access in the future\n"
+"      "
+msgstr ""
+"\n"
+"        Gelecekte daha hızlı erişim için oryantasyon profilinizi oluşturun\n"
+"      "
+
 #: templates/onboarding_exam/entrance.html:28
 msgid ""
 "\n"
@@ -219,6 +307,32 @@ msgid ""
 msgstr ""
 "\n"
 "       Gözetimli bir sınava girme alıştırması yapın\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:34
+#, python-format
+msgid ""
+"\n"
+"      Proctoring for this course is provided via %(provider_name)s.  Onboarding review, including identity verification, can take 2+ business days.\n"
+"    "
+msgstr ""
+"\n"
+"      Bu dersin gözetimi %(provider_name)s aracılığıyla sağlanmaktadır. Kimlik doğrulama da dahil olmak üzere ilk katılım incelemesi 2+ iş günü sürebilir..\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:40
+#, python-format
+msgid ""
+"\n"
+"        Once your profile has been reviewed, you will receive an email with review results. The email will come from\n"
+"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
+"        Make sure this email has been added to your inbox filter.\n"
+"      "
+msgstr ""
+"\n"
+"       Profiliniz incelendikten sonra, inceleme sonuçlarını içeren bir e-posta alacaksınız. E-posta,\n"
+"       <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>adresinden gelecektir.\n"
+"        Bu e-postanın gelen kutusu filtrelerinize eklendiğinden emin olun.\n"
 "      "
 
 #: templates/onboarding_exam/entrance.html:58
@@ -252,6 +366,42 @@ msgstr ""
 msgid "Retry my exam"
 msgstr "Sınavımı tekrar et"
 
+#: templates/onboarding_exam/rejected.html:21
+#: templates/practice_exam/error.html:30
+#: templates/practice_exam/submitted.html:19
+msgid "Resetting Onboarding Exam"
+msgstr "Oryantasyon Sınavı Sıfırlanıyor"
+
+#: templates/onboarding_exam/submitted.html:4
+msgid ""
+"\n"
+"    You have submitted this onboarding exam\n"
+"  "
+msgstr ""
+"\n"
+"     Bu oryantasyon sınavını gönderdiniz\n"
+"  "
+
+#: templates/onboarding_exam/submitted.html:11
+msgid ""
+"\n"
+"      If you do not have an onboarding profile with the system,\n"
+"      Verificient will review your submission and create an onboarding\n"
+"      profile to grant you access to proctored exams. Onboarding\n"
+"      profile review can take 2+ business days.\n"
+"    "
+msgstr ""
+"\n"
+"     Eğer sistemde bir oryantasyon profiliniz yoksa,\n"
+"     Verificient gönderiminizi inceleyerek size gözetimli sınavlara \n"
+"     erişim sağlayacak bir oryantasyon profili oluşturacaktır.\n"
+"     Oryantasyon profilinin incelenmesi 2+ iş günü sürebilir.\n"
+"    "
+
+#: templates/onboarding_exam/submitted.html:41
+msgid "I understand and want to reset this onboarding exam."
+msgstr "Anladım ve bu oryantasyon sınavını sıfırlamak istiyorum."
+
 #: templates/practice_exam/entrance.html:5
 msgid ""
 "\n"
@@ -277,6 +427,16 @@ msgstr ""
 #: templates/practice_exam/entrance.html:20
 msgid "Continue to my practice exam"
 msgstr "Alıştırma sınavıma devam et"
+
+#: templates/practice_exam/error.html:5
+msgid ""
+"\n"
+"        There was a problem with your practice proctoring session\n"
+"      "
+msgstr ""
+"\n"
+"        Gözetimli alıştırma oturumunuzla ilgili bir sorun oluştu\n"
+"      "
 
 #: templates/practice_exam/error.html:13
 msgid ""
@@ -771,6 +931,16 @@ msgstr ""
 "        Hayır, çalışmaya devam edeceğim.\n"
 "      "
 
+#: templates/timed_exam/submitted.html:21
+msgid ""
+"\n"
+"                After the due date has passed, you can review the exam, but you cannot change your answers.\n"
+"            "
+msgstr ""
+"\n"
+"Son teslim tarihi geçtikten sonra sınavı inceleyebilirsiniz ancak cevaplarınızı değiştiremezsiniz.\n"
+"            "
+
 #: utils.py:87
 #, python-brace-format
 msgid "{num_of_hours} hour"
@@ -809,6 +979,14 @@ msgstr "bir gözetimli sınav"
 msgid "a timed exam"
 msgstr "bir süreli sınav"
 
+#: utils.py:348
+msgid "an onboarding exam"
+msgstr "oryantasyon sınavı"
+
+#: utils.py:350
+msgid "a practice exam"
+msgstr "bir alıştırma sınavı"
+
 #: views.py:152
 msgid "could not determine the course_id"
 msgstr "course_id belirlenemedi"
@@ -818,6 +996,66 @@ msgid "Must be a Staff User to Perform this request."
 msgstr ""
 "Bu isteği karşılayabilmek için Personel Kullanıcısı olmanız gerekiyor."
 
+#: views.py:664
+msgid "Missing required query parameter course_id"
+msgstr "Zorunlu sorgu parametresi course_id eksik"
+
+#: views.py:694 views.py:875
+msgid "There is no onboarding exam related to this course id."
+msgstr "Bu ders kimliği ile ilgili bir oryantasyon sınavı bulunmamaktadır."
+
+#: views.py:723
+msgid "There is no onboarding exam accessible to this user."
+msgstr ""
+"Bu kullanıcı için erişilebilir bir oryantasyon sınavı bulunmamaktadır."
+
+#: views.py:773
+#, python-brace-format
+msgid "No onboarding status API for {proctor_service}"
+msgstr "{proctor_service} için oryantasyon durumu APIsi bulunmamaktadır"
+
+#: views.py:925
+msgid ""
+"The onboarding service is temporarily unavailable. Please try again later."
+msgstr ""
+"Oryantasyon servisi geçici olarak kullanılamıyor. Lütfen daha sonra tekrar "
+"deneyin."
+
 #: views.py:1303
 msgid "you have less than a minute remaining"
 msgstr "Bir dakikadan az zamanınız kaldı"
+
+#: views.py:1758
+msgid "Enter a valid username or email"
+msgstr "Geçerli bir kullanıcı adı veya e-posta girin"
+
+#: views.py:1758
+msgid "user_info"
+msgstr "kullanıcı_bilgisi"
+
+#: views.py:1771
+msgid "Enter a valid positive value number"
+msgstr "Geçerli bir pozitif değer numarası girin"
+
+#: views.py:1771
+msgid "allowance_value"
+msgstr "izin_değeri"
+
+#: views.py:1858
+msgid "Cannot update attempt review status"
+msgstr "Deneme inceleme durumu güncellenemiyor"
+
+#: views.py:2158
+#, python-brace-format
+msgid "No exams in course {course_id}."
+msgstr "{course_id} dersinde sınav yok.    "
+
+#: views.py:2164
+#, python-brace-format
+msgid "No proctored exams in course {course_id}"
+msgstr "{course_id} dersinde gözetimli sınav yok"
+
+#: views.py:2191
+#, python-brace-format
+msgid "No instructor dashboard for {proctor_service}"
+msgstr "{proctor_service} için eğitmen kontrol paneli yok"

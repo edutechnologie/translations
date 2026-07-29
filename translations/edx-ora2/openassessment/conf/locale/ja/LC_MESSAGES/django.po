@@ -5,15 +5,14 @@
 # EdX Team <info@edx.org>, 2018.
 # 
 # Translators:
-# Eden Huthmacher, 2025
 # Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-ora2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:35+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
+"POT-Creation-Date: 2025-10-30 00:45+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
 "Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/open-edx/teams/6205/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -103,6 +102,10 @@ msgstr "提出物ID"
 msgid "Anonymized Student ID"
 msgstr "匿名化された学生ID"
 
+#: data.py:961
+msgid "Assessment ID"
+msgstr "評価ID"
+
 #: data.py:962
 msgid "Assessment Scored Date"
 msgstr "評価採点日"
@@ -124,9 +127,29 @@ msgstr "匿名採点者ID"
 msgid "Overall Feedback"
 msgstr "全体的なフィードバック"
 
+#: data.py:968
+msgid "Assessment Score Earned"
+msgstr "評価スコア獲得"
+
 #: data.py:969
 msgid "Assessment Scored At"
-msgstr "評価採点日時"
+msgstr "評価日時"
+
+#: data.py:970
+msgid "Date/Time Final Score Given"
+msgstr "最終スコアが与えられた日時"
+
+#: data.py:971
+msgid "Final Score Earned"
+msgstr "最終スコア獲得"
+
+#: data.py:972
+msgid "Final Score Possible"
+msgstr "最終得点可能性"
+
+#: data.py:973
+msgid "Feedback Statements Selected"
+msgstr "フィードバック文選択"
 
 #: data.py:974
 msgid "Feedback on Assessment"
@@ -289,6 +312,14 @@ msgstr ""
 msgid "When Teams Enabled is set to true, Top Responses will be disabled."
 msgstr "Teams Enabledがtrueに設定されている場合、Top Responsesは無効になります。"
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:129
+msgid "Teams Enabled"
+msgstr "チーム有効化"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:136
+msgid "Specify whether team submissions are allowed for this response."
+msgstr "チームの提出がこの回答に対して許可されているかどうかを指定します。"
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:141
 msgid "Select Team-Set"
 msgstr "チームセットを選択"
@@ -306,6 +337,12 @@ msgstr "学習者が回答に取り組んでいる間にルーブリックを表
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:167
 msgid "Allow Learner Resubmissions"
 msgstr "学習者の再提出を許可する"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:174
+msgid ""
+"Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
+"resubmissions are not allowed."
+msgstr "学習者が未評価の課題を再提出できるようにするにはTRUEに設定します。再提出を許可しない場合はFALSEに設定します。"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:178
 msgid "Resubmission Grace Period"
@@ -337,6 +374,14 @@ msgstr "課題が公開された後は、基準を削除することはできま
 msgid "Remove"
 msgstr "削除"
 
+#: templates/legacy/edit/oa_edit_criterion.html:17
+msgid "Criterion Name"
+msgstr "基準名"
+
+#: templates/legacy/edit/oa_edit_criterion.html:29
+msgid "Criterion Prompt"
+msgstr "基準プロンプト"
+
 #: templates/legacy/edit/oa_edit_criterion.html:44
 msgid "Add Option"
 msgstr "オプションを追加"
@@ -344,6 +389,10 @@ msgstr "オプションを追加"
 #: templates/legacy/edit/oa_edit_criterion.html:52
 msgid "Feedback for This Criterion"
 msgstr "この基準に対するフィードバック"
+
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
+msgid "Optional"
+msgstr "任意"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
@@ -401,7 +450,7 @@ msgstr "オプションの説明"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:10
 msgid "Step: Peer Assessment"
-msgstr "ステップ: ピア評価"
+msgstr "ピア評価ステップ"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:15
 msgid ""
@@ -409,7 +458,7 @@ msgid ""
 "also receive feedback from others in their final grade. Often, though not "
 "always, this step is preceded by Self Assessment or Learner Training steps."
 msgstr ""
-"ピア評価は、学生が他の学生にフィードバックを提供し、また他の学生からフィードバックを受け取ることを可能にします。このステップは、しばしば（必ずしもそうではありませんが）自己評価や学習者トレーニングのステップに先行します。"
+"ピア評価は、学生が他の学生にフィードバックを提供し、また他の学生からフィードバックを受け取ることを可能にします。多くの場合、このステップは自己評価や学習者トレーニングのステップに先行しますが、必ずしもそうではありません。"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:18
 msgid ""
@@ -430,9 +479,30 @@ msgid ""
 "Valid numbers are 1 to 99."
 msgstr "各学習者が完了しなければならないピア評価の数を指定してください。有効な数値は1から99です。"
 
+#: templates/legacy/edit/oa_edit_peer_assessment.html:36
+msgid "Graded By"
+msgstr "採点者"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:39
+msgid ""
+"Specify the number of learners that each response must be assessed by. Valid"
+" numbers are 1 to 99."
+msgstr "各回答が評価される学習者の人数を指定してください。有効な数値は1から99です。"
+
 #: templates/legacy/edit/oa_edit_peer_assessment.html:43
 msgid "Enable Flexible Peer Grade Averaging"
 msgstr "柔軟なピア評価の平均化を有効にする"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:53
+msgid ""
+"This feature is being enabled by the course-level setting. It can be found "
+"under the Open Response Assessment Settings card on the Pages & Resources "
+"studio page."
+msgstr "この機能はコースレベルの設定で有効化されています。「ページとリソース」スタジオページの「オープンレスポンス評価設定」カードの下にあります。"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:60
+msgid "Grading strategy for the peer assessment"
+msgstr "ピア評価の採点戦略"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:62
 msgid "Mean"
@@ -452,7 +522,7 @@ msgstr ""
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
 msgid "Peer Assessment Deadlines"
-msgstr "ピア評価の締切"
+msgstr "ピア評価の締め切り"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:10
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:10
@@ -467,6 +537,17 @@ msgstr "開始時間"
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing peer responses."
 msgstr "学習者がピアレスポンスの評価を開始できる日時。"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
+#: templates/legacy/staff_area/oa_staff_area.html:119
+msgid "Due Date"
+msgstr "期限日"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:40
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:40
+msgid "Due Time"
+msgstr "締切時間"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:48
 msgid "The date and time when all peer assessments must be complete."
@@ -526,15 +607,23 @@ msgstr ""
 
 #: templates/legacy/edit/oa_edit_schedule.html:5
 msgid "Deadlines Configuration"
-msgstr "締切の設定"
+msgstr "締め切りの設定"
 
 #: templates/legacy/edit/oa_edit_schedule.html:9
 msgid "Select a deadline configuration option"
 msgstr "締切設定オプションを選択"
 
+#: templates/legacy/edit/oa_edit_schedule.html:14
+msgid "Configure deadlines manually"
+msgstr "締切を手動で設定する"
+
 #: templates/legacy/edit/oa_edit_schedule.html:18
 msgid "Match deadlines to the subsection due date"
 msgstr "締切を小節の期日に合わせる"
+
+#: templates/legacy/edit/oa_edit_schedule.html:22
+msgid "Match deadlines to the course end date"
+msgstr "コース終了日に締め切りを合わせる"
 
 #: templates/legacy/edit/oa_edit_schedule.html:25
 msgid "Learn more about open response date settings"
@@ -558,7 +647,7 @@ msgstr "回答期限"
 
 #: templates/legacy/edit/oa_edit_schedule.html:78
 msgid "Response Due Time"
-msgstr "回答期限"
+msgstr "応答期限"
 
 #: templates/legacy/edit/oa_edit_schedule.html:87
 msgid "The date and time when learners can no longer submit responses."
@@ -584,11 +673,11 @@ msgstr "学習者が自分の回答を評価し始めることができる日時
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
 msgid "The date and time when all self assessments must be complete."
-msgstr "すべての自己評価が完了しなければならない日時。"
+msgstr "すべての自己評価を完了しなければならない日時。"
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:8
 msgid "Step: Staff Assessment"
-msgstr "ステップ: スタッフ評価"
+msgstr "スタッフ評価ステップ"
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:12
 msgid ""
@@ -599,6 +688,14 @@ msgstr "スタッフ評価ゲートは、他のステップと組み合わせて
 #: templates/legacy/edit/oa_edit_student_training.html:9
 msgid "Step: Learner Training"
 msgstr "学習者トレーニング"
+
+#: templates/legacy/edit/oa_edit_student_training.html:14
+msgid ""
+"Learner Training is used to help students practice grading a simulated peer "
+"submission in order to train them on the rubric and ensure learner's "
+"understand the rubric for either Self or Peer Assessment steps."
+msgstr ""
+"学習者トレーニングは、学生がルーブリックを学び、自己評価またはピア評価のステップでルーブリックを理解していることを確認するために、模擬のピア提出物を評価する練習をするために使用されます。"
 
 #: templates/legacy/edit/oa_edit_student_training.html:17
 msgid ""
@@ -651,6 +748,10 @@ msgstr "クローン"
 msgid "Rubric Successfully Cloned from Block ID: "
 msgstr "ルーブリックがブロックIDから正常にクローンされました。 "
 
+#: templates/legacy/edit/oa_training_example.html:7
+msgid "Scored Response"
+msgstr "採点済みの回答"
+
 #: templates/legacy/edit/oa_training_example.html:16
 msgid "Response Score"
 msgstr "応答スコア"
@@ -658,6 +759,10 @@ msgstr "応答スコア"
 #: templates/legacy/edit/oa_training_example.html:27
 msgid "Response"
 msgstr "回答"
+
+#: templates/legacy/edit/oa_training_example_criterion.html:10
+msgid "Not Selected"
+msgstr "選択されていません"
 
 #: templates/legacy/edit/oa_training_example_criterion.html:15
 #: templates/legacy/oa_rubric.html:43
@@ -676,6 +781,21 @@ msgstr ""
 "                %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
 "              "
 
+#: templates/legacy/grade/oa_assessment_title.html:7
+#, python-format
+msgid ""
+"\n"
+"                      %(assessment_title)s - %(points)s point\n"
+"                  "
+msgid_plural ""
+"\n"
+"                      %(assessment_title)s - %(points)s points\n"
+"                  "
+msgstr[0] ""
+"\n"
+"                      %(assessment_title)s - %(points)s ポイント\n"
+"                  "
+
 #: templates/legacy/grade/oa_assessment_title.html:24
 #, python-format
 msgid "More information about %(name)s"
@@ -690,9 +810,31 @@ msgstr "%(name)sに関する詳細情報"
 msgid "Your Grade"
 msgstr "あなたの成績"
 
+#: templates/legacy/grade/oa_grade_cancelled.html:19
+#, python-format
+msgid ""
+"\n"
+"                                        %(points_earned)s out of %(points_possible)s\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        %(points_earned)s / %(points_possible)s\n"
+"                                    "
+
 #: templates/legacy/grade/oa_grade_cancelled.html:38
 msgid "Your submission has been cancelled."
 msgstr "提出物がキャンセルされました。"
+
+#: templates/legacy/grade/oa_grade_complete.html:19
+#, python-format
+msgid ""
+"\n"
+"                                            %(points_earned)s out of %(points_possible)s\n"
+"                                        "
+msgstr ""
+"\n"
+"                                            %(points_earned)s 点中 %(points_possible)s 点\n"
+"                                        "
 
 #: templates/legacy/grade/oa_grade_complete.html:38
 #: templates/legacy/response/oa_response.html:29
@@ -729,10 +871,18 @@ msgstr "あなたの回答の評価"
 msgid "Status"
 msgstr "ステータス"
 
+#: templates/legacy/grade/oa_grade_complete.html:65
+msgid "Overall Grade"
+msgstr "総合成績"
+
 #: templates/legacy/grade/oa_grade_complete.html:70
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:28
 msgid "Points"
 msgstr "ポイント"
+
+#: templates/legacy/grade/oa_grade_complete.html:96
+msgid "Additional comments on your response"
+msgstr "ご回答に関する追加コメント"
 
 #: templates/legacy/grade/oa_grade_complete.html:117
 msgid "Provide feedback on peer assessments"
@@ -754,6 +904,12 @@ msgid ""
 "they review course records."
 msgstr "コーススタッフは、コース記録を確認する際に、ここで提供されたフィードバックを見ることができます。"
 
+#: templates/legacy/grade/oa_grade_complete.html:146
+msgid ""
+"Select the statements below that best reflect your experience with peer "
+"assessments."
+msgstr "あなたのピア評価の経験を最もよく反映していると思う文を以下から選んでください。"
+
 #: templates/legacy/grade/oa_grade_complete.html:155
 msgid "These assessments were useful."
 msgstr "これらの評価は役に立ちました。"
@@ -762,10 +918,22 @@ msgstr "これらの評価は役に立ちました。"
 msgid "These assessments were not useful."
 msgstr "これらの評価は役に立ちませんでした。"
 
+#: templates/legacy/grade/oa_grade_complete.html:173
+msgid "I disagree with one or more of the peer assessments of my response."
+msgstr "私の回答に対するピア評価の一部または全部に同意しません。"
+
+#: templates/legacy/grade/oa_grade_complete.html:182
+msgid "Some comments I received were inappropriate."
+msgstr "受け取ったコメントの中には不適切なものもありました。"
+
 #: templates/legacy/grade/oa_grade_complete.html:187
 msgid ""
 "Provide feedback on the grade or comments that you received from your peers."
 msgstr "あなたが受け取った評価やコメントについてフィードバックを提供してください。"
+
+#: templates/legacy/grade/oa_grade_complete.html:190
+msgid "I feel the feedback I received was..."
+msgstr "受け取ったフィードバックは..."
 
 #: templates/legacy/grade/oa_grade_complete.html:200
 msgid "We could not submit your feedback"
@@ -782,6 +950,14 @@ msgstr "未完了"
 #: templates/legacy/grade/oa_grade_incomplete.html:33
 msgid "You have not completed all the steps of this problem."
 msgstr "この問題のすべてのステップを完了していません。"
+
+#: templates/legacy/grade/oa_grade_not_started.html:16
+msgid "Not Started"
+msgstr "開始されていません"
+
+#: templates/legacy/grade/oa_grade_not_started.html:27
+msgid "You have not started this problem yet."
+msgstr "この問題にはまだ取り組んでいません。"
 
 #: templates/legacy/grade/oa_grade_waiting.html:16
 msgid "Waiting for Assessments"
@@ -832,7 +1008,7 @@ msgstr "%(num_points)s ポイント"
 #: templates/legacy/peer/oa_peer_assessment.html:84
 #: templates/legacy/peer/oa_peer_turbo_mode.html:53
 msgid "Your peer's response to the prompt above"
-msgstr "あなたのピアの上記プロンプトへの回答"
+msgstr "あなたの仲間の上記のプロンプトへの回答"
 
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:19
 msgid ""
@@ -908,6 +1084,17 @@ msgstr ""
 "                                    %(start_strong)sこの課題は進行中です。自己評価のステップはまもなく終了します。%(end_strong)s まだ%(start_link)s自己評価%(end_link)sのステップを完了する必要があります。\n"
 "                                "
 
+#: templates/legacy/message/oa_message_incomplete.html:24
+#, python-format
+msgid ""
+"\n"
+"                                    This assignment is in progress. You still need to complete the %(start_link)sself assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"                                    この課題は進行中です。%(start_link)sself assessment%(end_link)sのステップをまだ完了する必要があります。\n"
+"                                "
+
 #: templates/legacy/message/oa_message_incomplete.html:38
 #, python-format
 msgid ""
@@ -927,7 +1114,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                    この課題は進行中です。提出されたすべてのピアレスポンスは評価済みです。さらに学習者がレスポンスを提出したかどうか、後で確認してください。%(start_link)sピア評価%(end_link)sのステップをまだ完了していません。\n"
+"                                    この課題は進行中です。提出されたすべてのピアレスポンスは評価済みです。さらに学習者がレスポンスを提出したかどうかを確認するために、後で再度チェックしてください。%(start_link)sピア評価%(end_link)sのステップをまだ完了していません。\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:46
@@ -939,6 +1126,17 @@ msgid ""
 msgstr ""
 "\n"
 "                                    この課題は進行中です。%(start_strong)sピア評価のステップはまもなく終了します。%(end_strong)s あなたはまだ%(start_link)sピア評価%(end_link)sのステップを完了する必要があります。\n"
+"                                "
+
+#: templates/legacy/message/oa_message_incomplete.html:50
+#, python-format
+msgid ""
+"\n"
+"                                    This assignment is in progress. You still need to complete the %(start_link)speer assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"                                    この課題は進行中です。%(start_link)sピア評価%(end_link)sのステップをまだ完了していません。\n"
 "                                "
 
 #: templates/legacy/message/oa_message_no_team.html:7
@@ -1048,7 +1246,49 @@ msgstr ""
 
 #: templates/legacy/peer/oa_peer_assessment.html:36
 msgid "Assess Peers"
-msgstr "ピアを評価する"
+msgstr "仲間を評価する"
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 00:00 UTC (in
+#. 5 days and 45 minutes)"
+#: templates/legacy/peer/oa_peer_assessment.html:44
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 00:00 UTC (in 5 days
+#. and 45 minutes)"
+#: templates/legacy/peer/oa_peer_assessment.html:51
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#: templates/legacy/peer/oa_peer_assessment.html:61
+#, python-format
+msgid ""
+"\n"
+"                    In Progress (%(review_number)s of %(num_must_grade)s)\n"
+"                "
+msgstr ""
+"\n"
+"                    ```\n"
+"                    \n"
+"進行中（%(review_number)s / %(num_must_grade)s）\n"
+"```\n"
+"                "
 
 #: templates/legacy/peer/oa_peer_assessment.html:75
 #: templates/legacy/peer/oa_peer_turbo_mode.html:45
@@ -1078,6 +1318,20 @@ msgstr "あなたの評価を提出できませんでした。"
 #: templates/legacy/student_training/student_training_cancelled.html:18
 msgid "Cancelled"
 msgstr "キャンセル済み"
+
+#: templates/legacy/peer/oa_peer_closed.html:20
+#, python-format
+msgid ""
+"\n"
+"            Incomplete (%(num_graded)s of %(num_must_grade)s)\n"
+"        "
+msgstr ""
+"\n"
+"            ```\n"
+"            \n"
+"未完了（%(num_graded)s / %(num_must_grade)s）\n"
+"```\n"
+"        "
 
 #: templates/legacy/peer/oa_peer_closed.html:35
 msgid ""
@@ -1109,12 +1363,86 @@ msgstr "追加の提出物を取得できませんでした。"
 msgid "Continue Assessing Peers"
 msgstr "ピアを評価し続ける"
 
+#: templates/legacy/peer/oa_peer_turbo_mode.html:26
+#: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:20
+#, python-format
+msgid ""
+"\n"
+"        Complete (%(num_graded)s)\n"
+"      "
+msgstr ""
+"\n"
+"        ```\n"
+"        完了（%(num_graded)s）\n"
+"```\n"
+"      "
+
+#: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
+msgid ""
+"All submitted peer responses have been assessed. Check back later to see if "
+"more learners have submitted responses."
+msgstr "すべての提出されたピアレスポンスが評価されました。他の学習者がレスポンスを提出したかどうか、後で確認してください。"
+
 #: templates/legacy/peer/oa_peer_unavailable.html:16
 #: templates/legacy/response/oa_response_unavailable.html:17
 #: templates/legacy/self/oa_self_unavailable.html:17
 #: templates/legacy/student_training/student_training_unavailable.html:16
 msgid "Not Available"
 msgstr "利用不可"
+
+#: templates/legacy/peer/oa_peer_waiting.html:20
+#, python-format
+msgid ""
+"\n"
+"          In Progress (%(review_number)s of %(num_must_grade)s)\n"
+"        "
+msgstr ""
+"\n"
+"          ```\n"
+"          進行中（%(review_number)s / %(num_must_grade)s）\n"
+"```\n"
+"        "
+
+#: templates/legacy/peer/oa_peer_waiting.html:37
+msgid ""
+"All available peer responses have been assessed. Check back later to see if "
+"more learners have submitted responses. You will receive your grade after "
+"you've completed all the steps for this problem and your peers have assessed"
+" your response."
+msgstr ""
+"利用可能なすべてのピアレスポンスが評価されました。さらに学習者がレスポンスを提出したかどうかを確認するために、後で再度チェックしてください。この問題のすべてのステップを完了し、ピアがあなたのレスポンスを評価した後に、あなたの成績を受け取ります。"
+
+#: templates/legacy/response/oa_response.html:27
+msgid "Your Team's Response"
+msgstr "チームの回答"
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/response/oa_response.html:39
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/response/oa_response.html:46
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
 
 #: templates/legacy/response/oa_response.html:54
 #: templates/legacy/self/oa_self_assessment.html:56
@@ -1132,7 +1460,7 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"                        あなたの作業は自動的に保存され、期限前であればいつでもチームの回答を完了するために戻ることができます。\n"
+"                        あなたの作業は自動的に保存され、締切日までいつでもチームの回答を完了するために戻ることができます\n"
 "                      "
 
 #: templates/legacy/response/oa_response.html:81
@@ -1158,7 +1486,7 @@ msgstr "プロンプトへの回答を入力してください。"
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the subsection due date "
-msgstr "あなたの作業は自動的に保存され、サブセクションの締切前であればいつでも回答を完了するために戻ることができます。 "
+msgstr "自動的に作業が保存され、サブセクションの締切日までいつでも回答を完了することができます。 "
 
 #: templates/legacy/response/oa_response.html:94
 msgid ""
@@ -1170,7 +1498,7 @@ msgstr "あなたの作業は自動的に保存され、コースが終了する
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the due date "
-msgstr "あなたの作業は自動的に保存され、締切日までであればいつでも回答を完了するために戻ることができます。 "
+msgstr "自動的に作業が保存され、期限前であればいつでも回答を完了するために戻ることができます。 "
 
 #: templates/legacy/response/oa_response.html:108
 msgid ""
@@ -1198,6 +1526,21 @@ msgstr "あなたはチームにいます "
 msgid "Team Members: "
 msgstr "チームメンバー: "
 
+#: templates/legacy/response/oa_response.html:155
+#, python-format
+msgid ""
+"\n"
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              have/has already submitted a response to this assignment with another team,\n"
+"                                              and will not be a part of your team's submission or assignment grade.\n"
+"                                          "
+msgstr ""
+"\n"
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              はすでに他のチームでこの課題に対する回答を提出しており、\n"
+"                                              あなたのチームの提出物や課題の評価には含まれません。\n"
+"                                          "
+
 #: templates/legacy/response/oa_response.html:171
 msgid "Team Response "
 msgstr "チームの回答 "
@@ -1211,6 +1554,11 @@ msgstr "あなたの回答 "
 msgid "(Required)"
 msgstr "（必須）"
 
+#: templates/legacy/response/oa_response.html:179
+#: templates/legacy/response/oa_response.html:249
+msgid "(Optional)"
+msgstr "（任意）"
+
 #: templates/legacy/response/oa_response.html:197
 msgid "Enter your response to the prompt above."
 msgstr "上記のプロンプトに対する回答を入力してください。"
@@ -1219,9 +1567,24 @@ msgstr "上記のプロンプトに対する回答を入力してください。
 msgid "We could not save your progress"
 msgstr "進捗を保存できませんでした"
 
+#: templates/legacy/response/oa_response.html:232
+msgid "Status of Your Response"
+msgstr "応答のステータス"
+
 #: templates/legacy/response/oa_response.html:245
 msgid "File Uploads "
 msgstr "ファイルアップロード "
+
+#: templates/legacy/response/oa_response.html:253
+msgid ""
+"\n"
+"                                  Upload files and review files uploaded by you and your teammates below. Be sure to add\n"
+"                                  descriptions to your files to help your teammates identify them.\n"
+"                              "
+msgstr ""
+"\n"
+"                                  ファイルをアップロードし、あなたとチームメイトがアップロードしたファイルを以下で確認してください。ファイルに説明を追加して、チームメイトが識別しやすくしてください。\n"
+"                              "
 
 #: templates/legacy/response/oa_response.html:261
 msgid "We could not upload files"
@@ -1241,26 +1604,42 @@ msgstr "この提出のためにアップロードするファイルを選択し
 
 #: templates/legacy/response/oa_response.html:280
 msgid "Supported file types: "
-msgstr "サポートされているファイル形式: "
+msgstr "対応ファイル形式: "
 
-#: templates/legacy/response/oa_response.html:285
+#: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
 msgstr "ファイルをアップロード"
 
-#: templates/legacy/response/oa_response.html:287
+#: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
 msgstr "ファイルをアップロード"
 
-#: templates/legacy/response/oa_response.html:304
+#: templates/legacy/response/oa_response.html:305
 msgid "This is a team submission."
 msgstr "これはチームの提出物です。"
 
-#: templates/legacy/response/oa_response.html:310
+#: templates/legacy/response/oa_response.html:307
+msgid ""
+"One team member should submit a response with the team’s shared files and a "
+"text response on behalf of the entire team."
+msgstr "チームメンバーの一人が、チームの共有ファイルとテキストの回答をチーム全体を代表して提出してください。"
+
+#: templates/legacy/response/oa_response.html:309
+msgid ""
+"One team member should submit a response with the team’s shared files on "
+"behalf of the entire team."
+msgstr "チームの代表者が、チーム全体を代表して共有ファイルを提出する必要があります。"
+
+#: templates/legacy/response/oa_response.html:311
 msgid ""
 "One team member should submit a text response on behalf of the entire team."
-msgstr "チームの代表者が、チーム全体を代表してテキスト応答を提出する必要があります。"
+msgstr "チームの代表者がチーム全体を代表してテキスト応答を提出する必要があります。"
 
-#: templates/legacy/response/oa_response.html:314
+#: templates/legacy/response/oa_response.html:313
+msgid "One team member should submit on behalf of the entire team."
+msgstr "チーム全体を代表して、1人のチームメンバーが提出してください。"
+
+#: templates/legacy/response/oa_response.html:315
 msgid ""
 "\n"
 "                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
@@ -1270,11 +1649,11 @@ msgstr ""
 "                  チームの課題について詳しくはこちらをご覧ください: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">リンク</a>)\n"
 "                  "
 
-#: templates/legacy/response/oa_response.html:322
+#: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
 msgstr "あなたの回答を送信できませんでした。"
 
-#: templates/legacy/response/oa_response.html:333
+#: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
 msgstr "回答を提出して次のステップに進んでください"
 
@@ -1292,6 +1671,28 @@ msgstr ""
 "\n"
 "                                あなたの提出物は%(removed_by_username)sによって%(removed_datetime)sにキャンセルされました\n"
 "                            "
+
+#: templates/legacy/response/oa_response_cancelled.html:41
+#, python-format
+msgid ""
+"\n"
+"                               Your submission was cancelled on %(removed_datetime)s\n"
+"                            "
+msgstr ""
+"\n"
+"                               提出物は%(removed_datetime)sにキャンセルされました\n"
+"                            "
+
+#: templates/legacy/response/oa_response_cancelled.html:48
+#, python-format
+msgid ""
+"\n"
+"                            Comments: %(comments)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            コメント: %(comments)s\n"
+"                        "
 
 #: templates/legacy/response/oa_response_closed.html:19
 #: templates/legacy/self/oa_self_closed.html:20
@@ -1362,7 +1763,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                        あなたはまだ%(start_tag)s自己評価%(end_tag)sのステップを完了する必要があります。\n"
+"                        あなたはまだ%(start_tag)sself assessment%(end_tag)sのステップを完了する必要があります。\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:63
@@ -1381,6 +1782,34 @@ msgstr "エラー"
 msgid "Assess Your Response"
 msgstr "あなたの回答を評価する"
 
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/self/oa_self_assessment.html:41
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/self/oa_self_assessment.html:48
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+
 #: templates/legacy/self/oa_self_assessment.html:88
 msgid "Submit your assessment"
 msgstr "評価を提出する"
@@ -1392,6 +1821,10 @@ msgid ""
 "will receive a grade of Incomplete."
 msgstr ""
 "このステップの期限は過ぎました。このステップは現在終了しています。自己評価を完了することも、この課題を続行することもできず、「未完了」の評価を受け取ります。"
+
+#: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
+msgid "Staff Grade"
+msgstr "スタッフ評価"
 
 #: templates/legacy/staff_area/oa_staff_area.html:8
 #: templates/legacy/staff_area/oa_staff_area.html:35
@@ -1411,6 +1844,10 @@ msgstr "課題の統計を表示"
 msgid "Demo the new Grading Experience"
 msgstr "新しい採点体験をデモする"
 
+#: templates/legacy/staff_area/oa_staff_area.html:26
+msgid "View ORA in Studio"
+msgstr "StudioでORAを表示"
+
 #: templates/legacy/staff_area/oa_staff_area.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:69
 #: templates/legacy/staff_area/oa_staff_area.html:151
@@ -1428,6 +1865,14 @@ msgstr "個別の学習者のユーザー名またはメールアドレスを入
 #: templates/legacy/staff_area/oa_staff_area.html:52
 msgid "Enter a team member's username or edX email"
 msgstr "チームメンバーのユーザー名またはedXのメールアドレスを入力してください"
+
+#: templates/legacy/staff_area/oa_staff_area.html:56
+msgid "Submit"
+msgstr "送信"
+
+#: templates/legacy/staff_area/oa_staff_area.html:78
+msgid "Response total"
+msgstr "回答合計"
 
 #: templates/legacy/staff_area/oa_staff_area.html:84
 msgid "Location"
@@ -1467,6 +1912,29 @@ msgstr "このチームに問題のルーブリックを使って評価を付け
 msgid "Give this learner a grade using the problem's rubric."
 msgstr "この学習者に問題のルーブリックを使って評価を与えてください。"
 
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:26
+#, python-format
+msgid ""
+"\n"
+"                                        Response for: %(team_name)s with %(team_usernames)s\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        応答: %(team_name)s チーム (%(team_usernames)s)\n"
+"                                    "
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:30
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:20
+#, python-format
+msgid ""
+"\n"
+"                                        Response for: %(student_username)s\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        回答: %(student_username)s\n"
+"                                    "
+
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:34
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:24
 msgid "Learner Response"
@@ -1481,6 +1949,11 @@ msgstr "チームの上記のプロンプトへの回答"
 #: templates/legacy/staff_area/oa_student_info.html:57
 msgid "The learner's response to the prompt above"
 msgstr "学習者の上記プロンプトへの回答"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:64
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:57
+msgid "Submit assessment"
+msgstr "評価を提出"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:70
 msgid "Submit assessment and continue grading"
@@ -1497,6 +1970,14 @@ msgstr ""
 "                %(ungraded)s 利用可能および %(in_progress)s チェックアウト済み\n"
 "            "
 
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:7
+msgid "Override this learner's current grade using the problem's rubric."
+msgstr "この学習者の現在の成績を問題のルーブリックを使用して上書きします。"
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:9
+msgid "Override this team's current grade using the problem's rubric."
+msgstr "このチームの現在の成績を問題のルーブリックを使用して上書きします。"
+
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:27
 msgid "Team Response"
 msgstr "チームの回答"
@@ -1505,6 +1986,28 @@ msgstr "チームの回答"
 #: templates/legacy/staff_area/oa_student_info.html:59
 msgid "The team's response to the prompt above"
 msgstr "チームの応答は、上記のプロンプトに対するものです。"
+
+#: templates/legacy/staff_area/oa_student_info.html:11
+#, python-format
+msgid ""
+"\n"
+"                    Viewing learner: %(learner)s\n"
+"                "
+msgstr ""
+"\n"
+"                    学習者を表示中: %(learner)s\n"
+"                "
+
+#: templates/legacy/staff_area/oa_student_info.html:15
+#, python-format
+msgid ""
+"\n"
+"                    Viewing team: %(team)s\n"
+"                "
+msgstr ""
+"\n"
+"                    チームの表示: %(team)s\n"
+"                "
 
 #: templates/legacy/staff_area/oa_student_info.html:28
 msgid "Learner's Response"
@@ -1525,13 +2028,20 @@ msgstr ""
 "                            学習者の提出物は%(removed_by_username)sによって%(removed_datetime)sに削除されました\n"
 "                        "
 
+#: templates/legacy/staff_area/oa_student_info.html:50
+#, python-format
+msgid ""
+"\n"
+"                        Comments: %(comments)s\n"
+"                    "
+msgstr ""
+"\n"
+"                        コメント: %(comments)s\n"
+"                    "
+
 #: templates/legacy/staff_area/oa_student_info.html:71
 msgid "Peer Assessments for This Learner"
 msgstr "この学習者のピア評価"
-
-#: templates/legacy/staff_area/oa_student_info.html:76
-msgid "Peer Assessments Completed by This Learner"
-msgstr "この学習者によって完了されたピア評価"
 
 #: templates/legacy/staff_area/oa_student_info.html:81
 msgid "Learner's Self Assessment"
@@ -1553,9 +2063,38 @@ msgstr "学習者の最終成績"
 msgid "Team's Final Grade"
 msgstr "チームの最終成績"
 
+#: templates/legacy/staff_area/oa_student_info.html:112
+#, python-format
+msgid ""
+"\n"
+"                            Final grade: %(points_earned)s out of %(points_possible)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            ```\n"
+"                            \n"
+"最終成績: %(points_earned)s / %(points_possible)s\n"
+"```\n"
+"                        "
+
 #: templates/legacy/staff_area/oa_student_info.html:119
 msgid "Final Grade Details"
 msgstr "最終成績の詳細"
+
+#: templates/legacy/staff_area/oa_student_info.html:139
+#, python-format
+msgid ""
+"\n"
+"                                        %(assessment_label)s - %(points)s point\n"
+"                                    "
+msgid_plural ""
+"\n"
+"                                        %(assessment_label)s - %(points)s points\n"
+"                                    "
+msgstr[0] ""
+"\n"
+"                                        %(assessment_label)s - %(points)s ポイント\n"
+"                                    "
 
 #: templates/legacy/staff_area/oa_student_info.html:154
 msgid "Feedback Recorded"
@@ -1565,12 +2104,19 @@ msgstr "フィードバックが記録されました"
 msgid "The submission is waiting for assessments."
 msgstr "提出物は評価を待っています。"
 
+#: templates/legacy/staff_area/oa_student_info.html:170
+msgid ""
+"The learner's submission has been removed from peer assessment. The learner "
+"receives a grade of zero unless you delete the learner's state for the "
+"problem to allow them to resubmit a response."
+msgstr "学習者の提出物はピア評価から削除されました。学習者は、問題に対する状態を削除して再提出を許可しない限り、0点の評価を受けます。"
+
 #: templates/legacy/staff_area/oa_student_info.html:172
 msgid ""
 "The team’s submission has been removed from grading. The team receives a "
 "grade of zero unless you delete the a team member’s state for the problem to"
 " allow the team to resubmit a response."
-msgstr "チームの提出物は採点から削除されました。チームは、問題に対するチームメンバーの状態を削除して再提出を許可しない限り、0点を受け取ります。"
+msgstr "チームの提出物は採点から除外されました。チームは、問題に対するチームメンバーの状態を削除して再提出を許可しない限り、0点を受け取ります。"
 
 #: templates/legacy/staff_area/oa_student_info.html:177
 msgid "The problem has not been started."
@@ -1578,7 +2124,15 @@ msgstr "問題は開始されていません。"
 
 #: templates/legacy/staff_area/oa_student_info.html:181
 msgid "The problem has not been completed."
-msgstr "問題は完了していません。"
+msgstr "問題が完了していません。"
+
+#: templates/legacy/staff_area/oa_student_info.html:193
+msgid "Submit Assessment Grade Override"
+msgstr "評価の提出成績を上書き"
+
+#: templates/legacy/staff_area/oa_student_info.html:195
+msgid "Submit Team Grade Override"
+msgstr "チームの成績を上書きして提出"
 
 #: templates/legacy/staff_area/oa_student_info.html:204
 msgid "Unable to perform grade override"
@@ -1598,6 +2152,14 @@ msgid ""
 msgstr ""
 "この提出物はキャンセルされており、評価を受けることができません。再提出を許可するために、この問題に関する学習者の状態を削除する方法については、ドキュメントを参照してください。"
 
+#: templates/legacy/staff_area/oa_student_info.html:230
+msgid "Remove Submission From Peer Grading"
+msgstr "ピア評価から提出物を削除"
+
+#: templates/legacy/staff_area/oa_student_info.html:232
+msgid "Remove Team Submission from Grading"
+msgstr "チームの提出物を採点から削除"
+
 #: templates/legacy/staff_area/oa_student_info.html:242
 msgid "Caution: This Action Cannot Be Undone"
 msgstr "注意: この操作は元に戻せません"
@@ -1612,7 +2174,7 @@ msgstr "学習者の提出物を削除すると元に戻せないため、慎重
 msgid ""
 "Removing a team's submission cannot be undone and should be done with "
 "caution."
-msgstr "チームの提出物を削除すると元に戻せないため、慎重に行う必要があります。"
+msgstr "チームの提出物を削除すると元に戻せないため、注意が必要です。"
 
 #: templates/legacy/staff_area/oa_student_info.html:252
 msgid "Comments:"
@@ -1626,6 +2188,17 @@ msgstr "提出物を削除"
 msgid "A response was not found for this learner."
 msgstr "この学習者に対する応答が見つかりませんでした。"
 
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:16
+#, python-format
+msgid ""
+"\n"
+"                            Assessment %(assessment_num)s:\n"
+"                        "
+msgstr ""
+"\n"
+"                            評価 %(assessment_num)s:\n"
+"                        "
+
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:22
 msgid "Assessment Details"
 msgstr "評価の詳細"
@@ -1637,6 +2210,10 @@ msgstr "選択されたオプション"
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:27
 msgid "Feedback"
 msgstr "フィードバック"
+
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:29
+msgid "Points Possible"
+msgstr "可能な得点"
 
 #: templates/legacy/student_training/student_training.html:18
 msgid "Learn to Assess Responses"
@@ -1653,10 +2230,38 @@ msgstr ""
 "                      進行中 (%(current_progress_num)s / %(training_available_num)s)\n"
 "                  "
 
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/student_training/student_training.html:38
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/student_training/student_training.html:45
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
 #: templates/legacy/student_training/student_training.html:58
 #: templates/legacy/student_training/student_training.html:66
 msgid "Learning to Assess Responses"
-msgstr "応答を評価する方法を学ぶ"
+msgstr "反応を評価することを学ぶ"
 
 #: templates/legacy/student_training/student_training.html:61
 msgid ""
@@ -1699,7 +2304,7 @@ msgstr "あなたの評価を確認できませんでした"
 
 #: templates/legacy/student_training/student_training.html:151
 msgid "Compare your selections with the instructor's selections"
-msgstr "選択を講師の選択と比較してください"
+msgstr "選択を講師の選択と比較する"
 
 #: templates/legacy/student_training/student_training_closed.html:29
 msgid ""
@@ -1791,6 +2396,12 @@ msgid ""
 "You have successfully completed this problem and received a "
 "{earned_points}/{total_points}."
 msgstr "この問題を無事に完了し、{earned_points}/{total_points}を獲得しました。"
+
+#: xblock/grade_mixin.py:695
+msgid ""
+"You have not yet received all necessary peer reviews to determine your final"
+" grade."
+msgstr "必要なピアレビューがすべて揃っていないため、最終成績を決定できません。"
 
 #: xblock/grade_mixin.py:710
 msgid ""
@@ -1886,6 +2497,10 @@ msgstr "完了/上書き済み"
 msgid "Not applicable"
 msgstr "該当なし"
 
+#: xblock/staff_area_mixin.py:246
+msgid "Not submitted"
+msgstr "未提出"
+
 #: xblock/staff_area_mixin.py:247
 msgid "Submitted"
 msgstr "提出済み"
@@ -1898,13 +2513,21 @@ msgstr "学習者情報の取得エラー。"
 msgid "Error loading the checked out learner response."
 msgstr "チェックアウトされた学習者の回答を読み込む際にエラーが発生しました。"
 
+#: xblock/staff_area_mixin.py:385
+msgid "No other learner responses are available for grading at this time."
+msgstr "他の学習者の回答は現在、採点可能な状態ではありません。"
+
 #: xblock/staff_area_mixin.py:387
 msgid "Error getting staff grade information."
 msgstr "スタッフの成績情報の取得エラー。"
 
 #: xblock/staff_area_mixin.py:408
 msgid "Error getting staff grade ungraded and checked out counts."
-msgstr "スタッフの評価の未評価およびチェックアウトされた数を取得する際のエラー。"
+msgstr "スタッフの評価の未評価およびチェックアウト済みの数を取得する際のエラー。"
+
+#: xblock/staff_area_mixin.py:703
+msgid "Please enter valid reason to remove the submission."
+msgstr "提出物を削除する正当な理由を入力してください。"
 
 #: xblock/staff_area_mixin.py:714
 msgid "Submission not found"
@@ -2028,6 +2651,10 @@ msgstr "学習者トレーニングのために少なくとも1つの例の回�
 msgid "Each example response for learner training must be unique."
 msgstr "学習者トレーニングのための各例示回答は、ユニークでなければなりません。"
 
+#: xblock/utils/validation.py:160
+msgid "The \"required\" value must be true if staff assessment is the only step."
+msgstr "\"required\" の値は、スタッフ評価が唯一のステップである場合に true でなければなりません。"
+
 #: xblock/utils/validation.py:164
 msgid ""
 "The number of assessments cannot be changed after the problem has been "
@@ -2072,7 +2699,7 @@ msgstr "問題が公開された後、基準の数を変更することはでき
 
 #: xblock/utils/validation.py:243
 msgid "Criteria names cannot be changed after a problem is released"
-msgstr "問題が公開された後は、基準名を変更することはできません。"
+msgstr "問題が公開された後は、基準名を変更できません。"
 
 #: xblock/utils/validation.py:248
 msgid "The number of options cannot be changed after a problem is released."

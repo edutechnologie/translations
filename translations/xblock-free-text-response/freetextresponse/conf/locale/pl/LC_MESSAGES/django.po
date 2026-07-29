@@ -181,9 +181,9 @@ msgstr "Brak odpowiedzi do wyświetlenia w tej chwili"
 #, python-brace-format
 msgid "{weight} point possible"
 msgid_plural "{weight} points possible"
-msgstr[0] "{weight} punkt możliwy do zdobycia"
-msgstr[1] "{weight} punkty możliwe do zdobycia"
-msgstr[2] "{weight} punktów możliwych do zdobycia"
+msgstr[0] "{weight} możliwy punkt"
+msgstr[1] "{weight} możliwe punkty"
+msgstr[2] "{weight} możliwych punktów"
 
 #: views.py:134
 #, python-brace-format

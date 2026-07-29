@@ -6,15 +6,14 @@
 # 
 # Translators:
 # Brian Smith, 2025
-# Eden Huthmacher, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:37+0000\n"
-"PO-Revision-Date: 2025-07-23 17:42+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"POT-Creation-Date: 2025-10-30 00:49+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Ukrainian (https://app.transifex.com/open-edx/teams/6205/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,9 +33,13 @@ msgstr "Усі неперевірені"
 msgid "All Unreviewed Failures"
 msgstr "Усі неперевірені збої"
 
+#: admin.py:142
+msgid "active proctored exams"
+msgstr "діючі іспити під наглядом"
+
 #: admin.py:197
 msgid "courses with active proctored exams"
-msgstr "курси з активним екзаменом під наглядом"
+msgstr "курси з активним іспитом під наглядом"
 
 #: admin.py:354
 msgid "Course Id"
@@ -48,7 +51,7 @@ msgstr "Створено"
 
 #: admin.py:393
 msgid "Download Software Clicked"
-msgstr "Клацніть для завантаження програмного забезпечення"
+msgstr "Натисніть для завантаження програмного забезпечення"
 
 #: admin.py:394
 msgid "Ready To Start"
@@ -56,15 +59,15 @@ msgstr "Готово до старту"
 
 #: admin.py:395
 msgid "Started"
-msgstr "Розпочато."
+msgstr "Розпочався"
 
 #: admin.py:396
 msgid "Ready To Submit"
-msgstr "Готовий до подачі"
+msgstr "Готовий до відправки"
 
 #: admin.py:397
 msgid "Declined"
-msgstr "Відхилений"
+msgstr "Відхилено"
 
 #: admin.py:398
 msgid "Timed Out"
@@ -72,19 +75,19 @@ msgstr "Час вийшов"
 
 #: admin.py:399
 msgid "Submitted"
-msgstr "Подано"
+msgstr "Надіслано"
 
 #: admin.py:400
 msgid "Second Review Required"
-msgstr "Другий огляд обов'язковий"
+msgstr "Друга перевірка обов'язкова"
 
 #: admin.py:401
 msgid "Verified"
-msgstr "Перевірено"
+msgstr "Перевірений"
 
 #: admin.py:402
 msgid "Rejected"
-msgstr "Відхилено"
+msgstr "Відмовлено"
 
 #: admin.py:403
 msgid "Error"
@@ -92,7 +95,7 @@ msgstr "Помилка"
 
 #: admin.py:407
 msgid "Onboarding Missing"
-msgstr "Вступний іспит не пройдено"
+msgstr "Вступний іспит відсутній"
 
 #: admin.py:408
 msgid "Onboarding Failed"
@@ -104,7 +107,7 @@ msgstr "Очікуємо на результати вступного іспит
 
 #: admin.py:410
 msgid "Onboarding Expired"
-msgstr "Термін вступного іспиту сплив"
+msgstr "Термін вступного іспиту протерміново"
 
 #: api.py:824 views.py:1297
 #, python-brace-format
@@ -167,7 +170,7 @@ msgstr "Іспити з обмеженням по часу"
 
 #: api.py:2888
 msgid "Onboarding status question"
-msgstr "Запит про статус адаптації"
+msgstr "Запит про статус адаптації "
 
 #: models.py:391
 msgid "Taking as Proctored"
@@ -207,6 +210,33 @@ msgstr ""
 "        Результат буде видно після <strong id=\"wait_deadline\"> Завантаження... </strong>\n"
 "    "
 
+#: templates/emails/proctoring_attempt_satisfactory_email.html:5
+#: templates/emails/proctoring_attempt_submitted_email.html:5
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:5
+msgid ""
+"\n"
+"        Hello,\n"
+"    "
+msgstr ""
+"\n"
+"Привіт,\n"
+"    "
+
+#: templates/emails/proctoring_attempt_satisfactory_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and you\n"
+"        met all proctoring requirements.\n"
+"    "
+msgstr ""
+"\n"
+"        Ваш іспит під наглядом з \"%(exam_name)s\" курсу\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> було переглянуто.\n"
+"        Ви успішно виконали всі вимоги.\n"
+"    "
+
 #: templates/emails/proctoring_attempt_satisfactory_email.html:21
 #, python-format
 msgid ""
@@ -223,6 +253,79 @@ msgstr ""
 "            %(contact_url_text)s\n"
 "        </a>.\n"
 "    "
+
+#: templates/emails/proctoring_attempt_submitted_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was submitted\n"
+"        successfully and will now be reviewed to ensure all exam\n"
+"        rules were followed. You should receive an email with your exam\n"
+"        status within 5 business days. Final grades may take longer.\n"
+"    "
+msgstr ""
+"\n"
+"        Ваш іспит під наглядом \"%(exam_name)s\" в\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> було успішно надіслано\n"
+"        і тепер він буде розглянутий, щоб переконатися, що всі правила іспиту \n"
+"        було дотримано. Ви отримаєте електронного листа зі статусом вашого іспиту\n"
+"        протягом 5 робочих днів. Остаточні оцінка може зайняти більше часу.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and the\n"
+"        course team has identified one or more violations of the proctored exam rules. Examples\n"
+"        of issues that may result in a rules violation include browsing\n"
+"        the internet, blurry or missing photo identification, using a phone,\n"
+"        or getting help from another person. As a result of the identified issue(s),\n"
+"        you did not successfully meet the proctored exam requirements.\n"
+"    "
+msgstr ""
+"\n"
+"        Ваш іспит під наглядом \"%(exam_name)s\" з\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> було перевірено. Команда \n"
+"         інструкторів виявила одне чи більше порушень\n"
+"         правил здачі іспитів під наглядом.\n"
+"        Прикладами таких порушень може бути перегляд веб-сторінок\n"
+"        нечітке або відсутнє фото для ідентифікації особи,\n"
+"        користування телефоном, чи допомога сторонньої людини.\n"
+"        Внаслідок виявлення порушень,\n"
+"        Ви не не виконали вимоги іспиту під наглядом.\n"
+"         "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:25
+#, python-format
+msgid ""
+"\n"
+"        To appeal your proctored exam results, please reach out with any relevant information\n"
+"        about your exam at \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+msgstr ""
+"\n"
+"        Щоб оскаржити результати іспиту під наглядом, будь ласка, надішліть будь-яку відповідну інформацію\n"
+"        щодо Вашого іспиту на \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:5
+msgid ""
+"\n"
+"    Proctoring onboarding exam\n"
+"  "
+msgstr ""
+"\n"
+"    Вступний іспит під наглядом\n"
+"  "
 
 #: templates/onboarding_exam/entrance.html:12
 msgid ""
@@ -241,7 +344,17 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Встановіть свою особу в системі контролю, щоб скласти контрольований іспит\n"
+"      Підтвердьте свою особу в системі контролю, щоб скласти іспит під наглядом\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:23
+msgid ""
+"\n"
+"        Create your onboarding profile for faster access in the future\n"
+"      "
+msgstr ""
+"\n"
+"        Створіть свій вступний профіль для швидшого доступу в майбутньому\n"
 "      "
 
 #: templates/onboarding_exam/entrance.html:28
@@ -251,7 +364,48 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Потренуйтеся проходити контрольований іспит\n"
+"        Потренуйтесь проходити іспит під наглядом.\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:34
+#, python-format
+msgid ""
+"\n"
+"      Proctoring for this course is provided via %(provider_name)s.  Onboarding review, including identity verification, can take 2+ business days.\n"
+"    "
+msgstr ""
+"\n"
+"      Провайдером контрольованих іспитів для цього курсу є %(provider_name)s. Перевірка вступного іспиту, включно з перевіркою особи, може тривати понад 2 робочих дні.\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:40
+#, python-format
+msgid ""
+"\n"
+"        Once your profile has been reviewed, you will receive an email with review results. The email will come from\n"
+"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
+"        Make sure this email has been added to your inbox filter.\n"
+"      "
+msgstr ""
+"\n"
+"        Після перевірки Вашого профілю, Ви отримаєте електронний лист із результатами перевірки. Електронний лист прийде від\n"
+"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
+"        Переконайтеся, що цей електронний лист додано до фільтра вхідних повідомлень.\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:49
+#, python-format
+msgid ""
+"\n"
+"        Please contact\n"
+"        <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>\n"
+"        if you have questions.\n"
+"      "
+msgstr ""
+"\n"
+"        Будь ласка, напишіть на адресу\n"
+"        <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>\n"
+"        якщо у Вас є запитання.\n"
 "      "
 
 #: templates/onboarding_exam/entrance.html:58
@@ -275,7 +429,7 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"    Помилка: виникла проблема під час сеансу реєстрації\n"
+"    Помилка: виникла проблема під час сеансу вступного іспиту\n"
 "  "
 
 #: templates/onboarding_exam/error.html:13
@@ -286,7 +440,7 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"    Ваша сесія нагляду закінчилася до того, як ви склали цей вступний іспит.\n"
+"    Ваша сесія під наглядом завершилась до того, як Ви склали цей вступний іспит.\n"
 "    Ви повинні повторити цей вступний іспит.\n"
 "  "
 
@@ -308,8 +462,25 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"    Ваш сеанс адаптації перевірено, але він не відповідає всім вимогам\n"
+"    Ваш вступну сесію перевірено, але вона не відповідає всім вимогам\n"
 "  "
+
+#: templates/onboarding_exam/rejected.html:12
+#, python-format
+msgid ""
+"\n"
+"      Please contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> if you have questions. You may retake this onboarding exam by clicking \"Retry my exam\".\n"
+"    "
+msgstr ""
+"\n"
+"      Будь ласка, напишіть на цю адресу\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> якщо у Вас є запитання. Ви можете повторно скласти цей вступний іспит, натиснувши «Повторити мій іспит».\n"
+"    "
 
 #: templates/onboarding_exam/rejected.html:20
 #: templates/onboarding_exam/submitted.html:47
@@ -322,7 +493,7 @@ msgstr "Повторити мій іспит"
 #: templates/practice_exam/error.html:30
 #: templates/practice_exam/submitted.html:19
 msgid "Resetting Onboarding Exam"
-msgstr "Скидання результатів вступного екзамену"
+msgstr "Почати вступний іспит знову"
 
 #: templates/onboarding_exam/submitted.html:4
 msgid ""
@@ -331,8 +502,25 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"    Ви подали цей вступний іспит на перевірку\n"
-"  "
+"      Ви подали цей вступний іспит на перевірку\n"
+"    "
+
+#: templates/onboarding_exam/submitted.html:11
+msgid ""
+"\n"
+"      If you do not have an onboarding profile with the system,\n"
+"      Verificient will review your submission and create an onboarding\n"
+"      profile to grant you access to proctored exams. Onboarding\n"
+"      profile review can take 2+ business days.\n"
+"    "
+msgstr ""
+"\n"
+"      Якщо у Вас немає вступного профілю в системі,\n"
+"      Verificient розгляне Вашу заявку та створить \n"
+"      вступний профіль, щоб надати Вам доступ до \n"
+"      іспитів під наглядом. Перевірка вступного \n"
+"      профілю може тривати понад 2 робочих дні.\n"
+"    "
 
 #: templates/onboarding_exam/submitted.html:19
 #, python-format
@@ -347,11 +535,23 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Після перевірки Вашого профілю Ви отримаєте електронний лист із результатами перевірки. Електронний лист прийде від\n"
-"<a href=\"mailto:%(learner_notification_from_email)s\">\n"
-"  %(learner_notification_from_email)s\n"
-"</a>,\n"
-"тому переконайтеся, що цей електронний лист додано до фільтра вхідних повідомлень.\n"
+"        Після перевірки Вашого профілю Ви отримаєте електронний лист із результатами перевірки. Електронний лист прийде від\n"
+"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
+"        Переконайтеся, що цей електронний лист додано до фільтра вхідних повідомлень.\n"
+"      "
+
+#: templates/onboarding_exam/submitted.html:29
+msgid ""
+"\n"
+"      If you already have an onboarding profile approved through another course,\n"
+"      this submission will not be reviewed. You may retry this exam at any time\n"
+"      to validate that your setup still meets the requirements for proctoring.\n"
+"    "
+msgstr ""
+"\n"
+"      Якщо у Вас уже є вступний профіль, затверджений на іншому курсі,\n"
+"      ця спроба не буде перевірена. Ви можете повторити цей іспит у будь-який час, \n"
+"      щоб підтвердити, що Ваші налаштування все ще відповідають вимогам для іспитів під наглядом.\n"
 "    "
 
 #: templates/onboarding_exam/submitted.html:36
@@ -362,13 +562,31 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Якщо Ви зробили помилку в цьому поданні, то можете перезапустити вступний процес.  \n"
-"Вашу поточну заявку буде видалено й не буде перевірено.\n"
+"      Якщо Ви припустилися помилки під час цієї спроби, Ви можете перезапустити вступний процес.  \n"
+"      Вашу поточну спробу буде видалено та не буде перевірено.\n"
 "    "
 
 #: templates/onboarding_exam/submitted.html:41
 msgid "I understand and want to reset this onboarding exam."
 msgstr "Я розумію та хочу скинути цей вступний іспит."
+
+#: templates/onboarding_exam/submitted.html:53
+#: templates/onboarding_exam/verified.html:16
+#, python-format
+msgid ""
+"\n"
+"      Please contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> if you have questions.\n"
+"    "
+msgstr ""
+"\n"
+"     Будь ласка, напишіть на\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> якщо у Вас є питання.\n"
+"    "
 
 #: templates/onboarding_exam/verified.html:4
 msgid ""
@@ -387,7 +605,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Ваш профіль створено, і ви готові складати контрольовані іспити з цього курсу.\n"
+"      Ваш профіль налаштовано, Ви готові до проходження іспитів під наглядом у межах цього курсу.\n"
 "    "
 
 #: templates/practice_exam/entrance.html:5
@@ -400,9 +618,20 @@ msgstr ""
 "        Спробувати скласти іспит під наглядом\n"
 "      "
 
+#: templates/practice_exam/entrance.html:12
+msgid ""
+"\n"
+"        Get familiar with proctoring for real exams later in the course. This practice exam has no impact\n"
+"        on your grade in the course.\n"
+"      "
+msgstr ""
+"\n"
+"        Ознайомтеся з проходження іспиту під наглядом перед основними іспитами, які будуть пізніше в курсі. Цей тренувальний іспит не впливає на Вашу оцінку в курсі.\n"
+"      "
+
 #: templates/practice_exam/entrance.html:20
 msgid "Continue to my practice exam"
-msgstr "Перейти до мого практичного іспиту."
+msgstr "Продовжити мій практичний іспит"
 
 #: templates/practice_exam/entrance.html:25
 msgid ""
@@ -421,7 +650,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Виникла проблема з вашим іспитом під наглядом\n"
+"        Виникла проблема під час Вашої сесії під наглядом\n"
 "      "
 
 #: templates/practice_exam/error.html:13
@@ -434,6 +663,18 @@ msgstr ""
 "      Результат вашого іспиту під наглядом: <b class=\"failure\"> Незадовільно </b>\n"
 "    "
 
+#: templates/practice_exam/error.html:21
+msgid ""
+"\n"
+"        Your proctoring session ended before you completed this practice exam.\n"
+"        You can retry this practice exam if you had problems setting up the online proctoring software.\n"
+"      "
+msgstr ""
+"\n"
+"      Ваша сесія з іспиту під наглядом закінчилася до того, як ви склали цей тренувальний іспит.\n"
+"      Ви можете повторити цей іспит під наглядом, якщо у вас виникли проблеми з налаштуванням програмного забезпечення.\n"
+"    "
+
 #: templates/practice_exam/submitted.html:5
 msgid ""
 "\n"
@@ -441,7 +682,29 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Ви подали цей іспит за наглядом\n"
+"     Ви надіслали цей тренувальний іспит під наглядом.\n"
+"    "
+
+#: templates/practice_exam/submitted.html:13
+msgid ""
+"\n"
+"        Practice exams do not affect your grade.\n"
+"        You have completed this practice exam and can continue with your course work.\n"
+"      "
+msgstr ""
+"\n"
+"      Пробні іспити не впливають на отримані бали за курс.\n"
+"      Ви закінчили цей пробний іспит і можете продовжувати свою роботу над курсом.\n"
+"    "
+
+#: templates/proctored_exam/confirm-decline.html:5
+msgid ""
+"\n"
+"        Are you sure you want to take this exam without proctoring?\n"
+"      "
+msgstr ""
+"\n"
+"        Ви впевнені, що хочете скласти цей іспит без нагляду?\n"
 "      "
 
 #: templates/proctored_exam/confirm-decline.html:10
@@ -451,7 +714,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Якщо ви складатимете цей іспит без нагляду, ви не матимете права на кредити за курс або облікові дані MicroMasters, якщо будь-яке з них стосується цього курсу.\n"
+"        Якщо Ви складете цей іспит без нагляду, то не матимете права на отримання балів за курс або диплом MicroMasters, якщо це передбачено для цього курсу.\n"
 "      "
 
 #: templates/proctored_exam/confirm-decline.html:16
@@ -499,8 +762,8 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Вам допоможуть налаштувати програмне забезпечення для онлайн-нагляду та підтвердити Вашу особу.</br>\n"
-"      "
+"          Вам допоможуть налаштувати програмне забезпечення для онлайн-нагляду та підтвердити Вашу особу.</br>\n"
+"        "
 
 #: templates/proctored_exam/error.html:4
 #: templates/proctored_exam/error_wrong_browser.html:4
@@ -523,9 +786,9 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Під час перевіреного іспиту сталася системна помилка. Будь ласка, зверніться по допомогу до вашої команди \n"
-"        курсу за адресою <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a> \n"
-"        та поверніться до іспиту, коли отримаєте подальші вказівки.\n"
+"        Під час проходження іспиту під наглядом сталася системна помилка. Будь ласка, зверніться по допомогу до команди курсу  \n"
+"         за адресою <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a> \n"
+"        для отримання допомоги та поверніться до іспиту після того, як отримаєте подальші інструкції.\n"
 "      "
 
 #: templates/proctored_exam/error.html:17
@@ -538,10 +801,10 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Під час перевіреного іспиту сталася системна помилка. Зверніться по допомогу до служби підтримки \n"
-"        <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">%(platform_name)s </a> \n"
-"        та поверніться до іспиту, коли отримаєте подальші вказівки.\n"
-"      "
+"        Під час  проходження іспиту під наглядом сталася системна помилка.  Будь ласка, зверніться по допомогу до служби підтримки \n"
+"        <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">%(platform_name)s </a>\n"
+"        та поверніться до іспиту після отримання подальших інструкцій.\n"
+"  "
 
 #: templates/proctored_exam/error_modal.html:7
 msgid "Close"
@@ -568,12 +831,12 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Ви також можете завершити іспит.\n"
+"   Або ж Ви можете завершити іспит.\n"
 "    "
 
 #: templates/proctored_exam/error_wrong_browser.html:22
 msgid "End My Exam"
-msgstr "Завершити екзамен"
+msgstr "Завершити мій екзамен"
 
 #: templates/proctored_exam/expired.html:4 templates/timed_exam/expired.html:4
 msgid ""
@@ -592,7 +855,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Оскільки термін минув, ви більше не можете складати цей іспит.\n"
+"      Оскільки термін закінчився, ви більше не можете складати цей іспит.\n"
 "    "
 
 #: templates/proctored_exam/failed-prerequisites.html:9
@@ -602,7 +865,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Ви не виконали вимоги для складання цього іспиту з прокторінгом.\n"
+"    Ви не виконали вимоги для проходження цього іспиту під наглядом.\n"
 "    "
 
 #: templates/proctored_exam/failed-prerequisites.html:14
@@ -612,7 +875,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Ви не задовольнили наступні передумови:\n"
+"    Ви не задовольнили наступні вимоги:\n"
 "    "
 
 #: templates/proctored_exam/failed-prerequisites.html:32
@@ -622,7 +885,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Через незадовільні вимоги ви можете скласти цей іспит лише без супроводу.\n"
+"        Через не виконання вимог ви можете складати цей іспит лише без нагляду \n"
 "      "
 
 #: templates/proctored_exam/failed-prerequisites.html:40
@@ -656,6 +919,31 @@ msgstr ""
 "      Ви ще не активували ваш обліковий запис.\n"
 "    "
 
+#: templates/proctored_exam/inactive_account.html:10
+#, python-format
+msgid ""
+"\n"
+"      Your %(platform_name)s account has not yet been activated. To take the proctored exam,\n"
+"      you are required to activate your account.\n"
+"    "
+msgstr ""
+"\n"
+"      Ваш обліковий запис %(platform_name)s ще не активовано. Щоб пройти іспит під наглядом, необхідно активувати обліковий запис.\n"
+"    "
+
+#: templates/proctored_exam/inactive_account.html:16
+#, python-format
+msgid ""
+"\n"
+"      Please check your registered email's Inbox and Spam folders for an activation email from\n"
+"      %(platform_name)s.\n"
+"    "
+msgstr ""
+"\n"
+"      Будь ласка, перевірте папки «Вхідні» та «Спам» вашої зареєстрованої електронної пошти на наявність листа для активації від\n"
+"      %(platform_name)s.\n"
+"    "
+
 #: templates/proctored_exam/inactive_account.html:21
 #, python-format
 msgid ""
@@ -665,7 +953,8 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Якщо Ви не можете знайти цей електронний лист, ви можете <a href=\"%(reset_link)s\" target=\"_blank\">скинути пароль</a>, щоб активувати свій обліковий запис.\n"
+"        Якщо Ви не можете знайти цей електронний лист, ви можете <a href=\"%(reset_link)s\" target=\"_blank\">скинути пароль</a>,\n"
+"        щоб активувати свій обліковий запис.\n"
 "      "
 
 #: templates/proctored_exam/inactive_account.html:26
@@ -675,7 +964,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Якщо Ви не можете знайти цей електронний лист, то можете скинути пароль, щоб активувати свій обліковий запис.\n"
+"        Якщо Ви не можете знайти цей електронний лист, то можете скинути пароль, щоб активувати свій обліковий запис. \n"
 "      "
 
 #: templates/proctored_exam/inactive_account.html:32
@@ -698,7 +987,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Налаштуйте та розпочніть іспит під наглядом\n"
+"      Налаштуйте та розпочніть іспит під наглядом \n"
 "    "
 
 #: templates/proctored_exam/instructions.html:12
@@ -712,7 +1001,11 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          Примітка. У рамках налаштування іспиту під наглядом вам буде запропоновано підтвердити вашу особу. Перш ніж почати, переконайтеся, що ви користуєтеся комп’ютером із веб-камерою та маєте дійсне посвідчення особи з фотографією, наприклад водійські права чи паспорт.\n"
+"          Примітка. Під час налаштування іспиту під наглядом Вам\n"
+"          буде запропоновано підтвердити свою особу. Перш ніж почати,\n"
+"          переконайтеся, що Ви користуєтеся комп’ютером із веб-камерою\n"
+"          та маєте дійсне посвідчення особи з фотографією,\n"
+"          наприклад водійське посвідчення або паспорт.\n"
 "        "
 
 #: templates/proctored_exam/instructions.html:27
@@ -723,7 +1016,7 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"            Якщо у Вас виникли проблеми, пов’язані з проведенням іспиту під наглядом, Ви можете звернутися до технічної підтримки %(provider_name)s, написавши на електронну пошту %(provider_tech_support_email)s або зателефонувавши на %(provider_tech_support_phone)s.\n"
+"            Якщо у Вас виникли проблеми, пов’язані з проведенням іспиту під наглядом, Ви можете звернутися до технічної підтримки %(provider_name)s, написавши на електронну пошту%(provider_tech_support_email)s або зателефонувавши на %(provider_tech_support_phone)s.\n"
 "          "
 
 #: templates/proctored_exam/instructions.html:33
@@ -735,6 +1028,16 @@ msgstr "Розпочати перевірку системи"
 msgid "Start Exam"
 msgstr "Розпочати іспит"
 
+#: templates/proctored_exam/instructions.html:40
+msgid ""
+"\n"
+"          Step 1\n"
+"        "
+msgstr ""
+"\n"
+"          Крок 1\n"
+"        "
+
 #: templates/proctored_exam/instructions.html:45
 msgid ""
 "\n"
@@ -742,7 +1045,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          Скопіюйте цей унікальний код іспиту. Вам буде запропоновано вставити цей код пізніше перед початком іспиту.\n"
+"          Скопіюйте цей унікальний код іспиту. Пізніше Вам буде запропоновано вставити цей код перед початком іспиту.\n"
 "        "
 
 #: templates/proctored_exam/instructions.html:51
@@ -756,8 +1059,18 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Виберіть код іспиту та скопіюйте його за допомогою клавіш Control + C (Windows) або Command + C (Mac).\n"
+"        Виберіть код іспиту, а потім скопіюйте його за допомогою Control + C (Windows) або Command + C (Mac).\n"
 "      "
+
+#: templates/proctored_exam/instructions.html:59
+msgid ""
+"\n"
+"          Step 2\n"
+"        "
+msgstr ""
+"\n"
+"          Крок 2\n"
+"        "
 
 #: templates/proctored_exam/instructions.html:64
 msgid ""
@@ -781,13 +1094,23 @@ msgstr ""
 
 #: templates/proctored_exam/instructions.html:74
 msgid "Have a computer with a functioning webcam"
-msgstr "Маєте комп’ютер із працюючою веб-камерою"
+msgstr "Підготуйте комп’ютер із працюючою вебкамерою"
 
 #: templates/proctored_exam/instructions.html:75
 msgid "Have your valid photo ID (e.g. driver's license or passport) ready"
 msgstr ""
-"Маєте дійсне посвідчення особи з фотографією (наприклад, водійське "
-"посвідчення або паспорт)."
+"Підготуйте дійсне посвідчення особи з фотографією (наприклад, водійське "
+"посвідчення або паспорт)"
+
+#: templates/proctored_exam/instructions.html:81
+msgid ""
+"\n"
+"          Step 3\n"
+"        "
+msgstr ""
+"\n"
+"          Крок 3\n"
+"        "
 
 #: templates/proctored_exam/instructions.html:86
 msgid ""
@@ -796,7 +1119,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          З міркувань безпеки та цілісності іспиту ми просимо вас увійти у свій обліковий запис edX. Потім ми скеруємо вас до досвіду прокторінгу RPNow.\n"
+"          З міркувань безпеки та справедливого проходження іспиту ми просимо Вас увійти у свій обліковий запис edX. Після цього ви будете перенаправлені до RPNow для проходження іспиту під наглядом.\n"
 "        "
 
 #: templates/proctored_exam/instructions.html:100
@@ -829,6 +1152,16 @@ msgstr ""
 msgid "Navigate to onboarding exam"
 msgstr "Перейти до вступного іспиту"
 
+#: templates/proctored_exam/onboarding_error.html:21
+msgid ""
+"\n"
+"    Your onboarding exam is being reviewed. Before attempting this exam, please allow 2+ business days for your onboarding exam to be reviewed.\n"
+"  "
+msgstr ""
+"\n"
+"    Ваш вступний іспит перевіряється. Перш ніж розпочати цей іспит, зачекайте щонайменше 2 робочі дні, щоб Ваш вступний іспит було перевірено.\n"
+"  "
+
 #: templates/proctored_exam/onboarding_error.html:26
 msgid ""
 "\n"
@@ -836,7 +1169,22 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Ваш вступний іспит не склав усіх вимог.\n"
+"      Ваш вступний іспит не відповідає всім вимогам.\n"
+"    "
+
+#: templates/proctored_exam/onboarding_error.html:38
+#, python-format
+msgid ""
+"\n"
+"      Proctoring for your exam is provided via %(provider_name)s.\n"
+"      If you have questions about the status of your onboarding exam, contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>.\n"
+"    "
+msgstr ""
+"\n"
+"      Іспит під наглядом проводиться за допомогою %(provider_name)s.\n"
+"      Якщо у Вас виникли запитання щодо статусу вступного іспиту, напишіть на\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>.\n"
 "    "
 
 #: templates/proctored_exam/pending-prerequisites.html:9
@@ -846,7 +1194,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Ви не виконали попередні вимоги до цього іспиту. Усі вимоги мають бути виконані перед тим, як ви зможете скласти цей перевірений іспит.\n"
+"    Ви не виконали попередні вимоги до цього іспиту. Усі вимоги мають бути виконані перед тим, як Ви зможете скласти цей іспит під наглядом.\n"
 "    "
 
 #: templates/proctored_exam/pending-prerequisites.html:14
@@ -859,9 +1207,19 @@ msgstr ""
 "    Наступні передумови є в <strong>очікуванні</strong> виконання і їх потрібно успішно завершити, перш ніж продовжувати:\n"
 "    "
 
+#: templates/proctored_exam/pending-prerequisites.html:30
+msgid ""
+"\n"
+"    You can take this exam with proctoring only when all prerequisites have been successfully completed.\n"
+"    "
+msgstr ""
+"\n"
+"    Ви можете скласти цей іспит під наглядом лише після успішного виконання всіх попередніх вимог.\n"
+"    "
+
 #: templates/proctored_exam/proctoring_launch_callback.html:164
 msgid " Your Proctoring Session Has Started "
-msgstr " Ваша сесія з іспиту під наглядом розпочалася "
+msgstr "Ваша сесія з іспиту під наглядом розпочалася"
 
 #: templates/proctored_exam/proctoring_launch_callback.html:165
 #, python-format
@@ -873,7 +1231,32 @@ msgstr ""
 " З цього моменту ви повинні дотримуватися <a "
 "href=\"%(link_urls.online_proctoring_rules)s\" target=\"_blank\">правил "
 "онлайн-прокторінгу,</a> щоб успішно пройти перевірку прокторингу для свого "
-"іспиту. "
+"іспиту."
+
+#: templates/proctored_exam/proctoring_launch_callback.html:168
+msgid ""
+"\n"
+"            Do not close this window before you finish your exam. if you close this window, your proctoring session ends, and you will not successfully complete the proctored exam.\n"
+"          "
+msgstr ""
+"\n"
+"            Не закривайте це вікно, перш ніж завершите іспит. Якщо ви закриєте це вікно, сесію з іспиту під наглядом буде перервано, і ви не зможете успішно проходити іспит..\n"
+"          "
+
+#: templates/proctored_exam/proctoring_launch_callback.html:173
+#, python-format
+msgid ""
+"\n"
+"            Return to the %(platform_name)s course window to start your exam. When you have finished your exam and\n"
+"            have marked it as complete, you can close this window to end the proctoring session\n"
+"            and upload your proctoring session data for review.\n"
+"          "
+msgstr ""
+"\n"
+"            Поверніться до %(platform_name)s курсу, щоб розпочати іспит. Коли ви завершите іспит і\n"
+"            позначите його як завершений, ви зможете закрити це вікно, щоб завершити іспит\n"
+"            та завантажите дані сеансу іспиту під наглядом для перевірки.\n"
+"          "
 
 #: templates/proctored_exam/ready_to_resume.html:4
 msgid ""
@@ -882,429 +1265,5 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Ваш іспит готовий до відновлення.\n"
+"      Ви можете продовжити проходження іспиту.\n"
 "    "
-
-#: templates/proctored_exam/ready_to_resume.html:9
-#, python-format
-msgid ""
-"\n"
-"        You will have %(total_time)s to complete your exam.\n"
-"    "
-msgstr ""
-"\n"
-"        У вас буде %(total_time)s, щоб скласти іспит.\n"
-"    "
-
-#: templates/proctored_exam/ready_to_resume.html:14
-msgid ""
-"\n"
-"        To be eligible for credit or the program credential associated with this course, you must pass the proctoring review for this exam.\n"
-"    "
-msgstr ""
-"\n"
-"        Щоб мати право на отримання балів чи диплому за цей курс, Вам необхідно пройти перевірку іспиту під наглядом.\n"
-"    "
-
-#: templates/proctored_exam/ready_to_start.html:23
-msgid ""
-"\n"
-"         You must adhere to the following rules while you complete this exam.\n"
-"         <strong>If you violate these rules, you will receive a score of 0 on the exam, and you will not be eligible for academic course credit.\n"
-"         </strong></br>\n"
-"      "
-msgstr ""
-"\n"
-"         Під час складання цього іспиту Ви повинні дотримуватися наведених нижче правил.\n"
-"         <strong>Якщо Ви порушите ці правила, ви отримаєте на іспиті оцінку 0 і не матимете права на отримання балів за академічний курс.\n"
-"         </strong></br>\n"
-"      "
-
-#: templates/proctored_exam/ready_to_start.html:29
-#, python-format
-msgid ""
-"\n"
-"          %(platform_name)s Rules for Online Proctored Exams\n"
-"      "
-msgstr ""
-"\n"
-"          Правила здачі онлайн-іспитів під наглядом на %(platform_name)s\n"
-"      "
-
-#: templates/proctored_exam/ready_to_start.html:36
-msgid ""
-"\n"
-"      Additional Exam Rules\n"
-"    "
-msgstr ""
-"\n"
-"      Додаткові правила іспиту\n"
-"    "
-
-#: templates/proctored_exam/ready_to_start.html:49
-msgid "Start my exam"
-msgstr "Розпочати іспит"
-
-#: templates/proctored_exam/ready_to_start.html:50
-msgid "Starting Exam"
-msgstr "Початок іспиту"
-
-#: templates/proctored_exam/ready_to_submit.html:4
-msgid ""
-"\n"
-"      Are you sure you want to end your proctored exam?\n"
-"    "
-msgstr ""
-"\n"
-"      Ви впевнені, що хочете завершити іспит під наглядом?\n"
-"    "
-
-#: templates/proctored_exam/ready_to_submit.html:10
-msgid ""
-"Make sure that you have selected \"Submit\" for each answer before you "
-"submit your exam."
-msgstr ""
-"Перш ніж завершити іспит, переконайтеся, що ви натиснули кнопку "
-"\"Надіслати\" під кожною відповіддю."
-
-#: templates/proctored_exam/ready_to_submit.html:12
-msgid ""
-"Once you click \"Yes, end my proctored exam\", the exam will be closed, and "
-"your proctoring session will be submitted for review."
-msgstr ""
-"Коли Ви натиснете «Так, завершити мій контрольований іспит», іспит буде "
-"закрито, а Ваш контрольний сеанс буде надіслано на перевірку."
-
-#: templates/proctored_exam/ready_to_submit.html:15
-msgid "Yes, end my proctored exam"
-msgstr "Так, закінчити мій контрольований іспит"
-
-#: templates/proctored_exam/ready_to_submit.html:16
-msgid "Ending Exam"
-msgstr "Завершення іспиту"
-
-#: templates/proctored_exam/ready_to_submit.html:21
-msgid ""
-"\n"
-"        No, I'd like to continue working\n"
-"      "
-msgstr ""
-"\n"
-"        Ні, я хотів би продовжувати працювати\n"
-"      "
-
-#: templates/proctored_exam/rejected.html:5
-msgid ""
-"\n"
-"        Your proctoring session was reviewed, but did not pass all requirements\n"
-"      "
-msgstr ""
-"\n"
-"        Вашу сесію під наглядом було перевірено, але вона не відповідає всім вимогам.\n"
-"      "
-
-#: templates/proctored_exam/rejected.html:13
-#, python-format
-msgid ""
-"\n"
-"        If you have questions about the status of your proctoring session results, contact %(platform_name)s Support.\n"
-"      "
-msgstr ""
-"\n"
-"        Якщо у Вас є запитання щодо статусу результатів сесії під наглядом, зверніться до служби підтримки %(platform_name)s.\n"
-"      "
-
-#: templates/proctored_exam/rejected.html:23
-msgid ""
-"\n"
-"        If you have concerns about your proctoring session results, contact your course team.\n"
-"      "
-msgstr ""
-"\n"
-"        Якщо у вас є зауваження щодо результатів сесії під наглядом, зверніться до команди курсу.\n"
-"      "
-
-#: templates/proctored_exam/submitted.html:4
-msgid ""
-"\n"
-"      You have submitted this proctored exam for review\n"
-"    "
-msgstr ""
-"\n"
-"      Ви подали цей іспит під наглядом на перевірку\n"
-"    "
-
-#: templates/proctored_exam/submitted.html:9
-msgid "Your recorded data should now be uploaded for review."
-msgstr "Тепер Ваші записані дані мають бути завантажені для перевірки"
-
-#: templates/proctored_exam/submitted.html:11
-msgid ""
-"If the proctoring software window is still open, close it now and confirm "
-"that you want to quit the application."
-msgstr ""
-"Якщо вікно контролюючого програмного забезпечення все ще відкрите, Ви можете"
-" закрити його зараз. Підтвердіть, що хочете вийти з програми, коли буде "
-"запропоновано."
-
-#: templates/proctored_exam/submitted.html:13
-msgid ""
-"Proctoring results are usually available within 5 business days after you "
-"submit your exam."
-msgstr ""
-"Результати перевірки іспиту під наглядом зазвичай доступні протягом 5 "
-"робочих днів після його здачі."
-
-#: templates/proctored_exam/submitted.html:19
-#, python-format
-msgid ""
-"\n"
-"      If you have questions about the status of your proctored exam results, contact %(platform_name)s Support.\n"
-"    "
-msgstr ""
-"\n"
-"      Якщо у вас є запитання щодо статусу результатів вашого іспиту під наглядом, зв’яжіться з  %(platform_name)s службою підтримки.\n"
-"    "
-
-#: templates/proctored_exam/verified.html:5
-msgid ""
-"\n"
-"                Your proctoring session was reviewed successfully. Go to your progress page to view your exam grade.\n"
-"            "
-msgstr ""
-"\n"
-"                Вашу сесію під наглядом успішно перевірено. Перейдіть на сторінку прогресу, щоб переглянути оцінку за іспит.\n"
-"            "
-
-#: templates/proctored_exam/visit_exam_content.html:5
-msgid ""
-"\n"
-"      To view your exam questions and responses, select <strong>View my exam</strong>. The exam's review status is shown in the left navigation pane.\n"
-"    "
-msgstr ""
-"\n"
-"      Щоб переглянути запитання та відповіді на іспит, оберіть <strong>Переглянути мій іспит</strong>. Стан перевірки іспиту відображається на лівій навігаційній панелі.\n"
-"    "
-
-#: templates/proctored_exam/visit_exam_content.html:11
-msgid "View my exam"
-msgstr "Переглянути мій іспит"
-
-#: templates/timed_exam/entrance.html:4
-#, python-format
-msgid ""
-"\n"
-"    %(exam_name)s is a Timed Exam (%(total_time)s)\n"
-"    "
-msgstr ""
-"\n"
-"    %(exam_name)s з терміном часу в (%(total_time)s)\n"
-"    "
-
-#: templates/timed_exam/entrance.html:9
-msgid "This exam has a time limit associated with it."
-msgstr "Цей іспит має обмеження за часом."
-
-#: templates/timed_exam/entrance.html:11
-msgid "To pass this exam, you must complete the problems in the time allowed."
-msgstr "Щоб скласти цей іспит, потрібно виконати завдання у встановлений час."
-
-#: templates/timed_exam/entrance.html:13
-msgid "After you select "
-msgstr "Після вашого вибору "
-
-#: templates/timed_exam/entrance.html:15
-msgid "I am ready to start this timed exam,"
-msgstr "Я готовий розпочати цей іспит з обмеженням по часу,"
-
-#: templates/timed_exam/entrance.html:17
-msgid "you will have "
-msgstr "ви отримаєте "
-
-#: templates/timed_exam/entrance.html:17
-msgid " to complete and submit the exam."
-msgstr " для завершення і подання іспиту."
-
-#: templates/timed_exam/entrance.html:21
-msgid ""
-"\n"
-"        I am ready to start this timed exam.\n"
-"      "
-msgstr ""
-"\n"
-"        Я готовий розпочати цей іспит з обмеженням по часу.\n"
-"      "
-
-#: templates/timed_exam/footer.html:3
-msgid "Can I request additional time to complete my exam?"
-msgstr "Чи можу я попросити додатковий час для складання іспиту?"
-
-#: templates/timed_exam/ready_to_submit.html:4
-msgid ""
-"\n"
-"      Are you sure that you want to submit your timed exam?\n"
-"    "
-msgstr ""
-"\n"
-"      Ви впевнені, що хочете подати свій іспит з обмеженням по часу?\n"
-"    "
-
-#: templates/timed_exam/ready_to_submit.html:14
-msgid ""
-"\n"
-"      After you submit your exam, your exam will be graded.\n"
-"    "
-msgstr ""
-"\n"
-"      Після того, як ви здасте іспит, ваш іспит буде оцінено.\n"
-"    "
-
-#: templates/timed_exam/ready_to_submit.html:19
-msgid ""
-"\n"
-"      Yes, submit my timed exam.\n"
-"    "
-msgstr ""
-"\n"
-"      Так, подати мій іспит з обмеженням по часу.\n"
-"    "
-
-#: templates/timed_exam/ready_to_submit.html:25
-msgid ""
-"\n"
-"        No, I want to continue working.\n"
-"      "
-msgstr ""
-"\n"
-"        Ні, я хочу продовжувати працювати.\n"
-"      "
-
-#: templates/timed_exam/submitted.html:6
-msgid ""
-"\n"
-"                The time allotted for this exam has expired. Your exam has been submitted and any work you completed\n"
-"                will be graded.\n"
-"            "
-msgstr ""
-"\n"
-"                Час, призначений для цього іспиту, минув. Ваш іспит подано, і роботу, яку ви виконали\n"
-"                буде оцінено.\n"
-"            "
-
-#: templates/timed_exam/submitted.html:21
-msgid ""
-"\n"
-"                After the due date has passed, you can review the exam, but you cannot change your answers.\n"
-"            "
-msgstr ""
-"\n"
-"                Після закінчення терміну ви можете переглянути іспит, але не можете змінити свої відповіді.\n"
-"            "
-
-#: utils.py:87
-#, python-brace-format
-msgid "{num_of_hours} hour"
-msgstr "{num_of_hours} година"
-
-#: utils.py:90
-#, python-brace-format
-msgid "{num_of_hours} hours"
-msgstr "{num_of_hours} годин"
-
-#: utils.py:98 utils.py:108
-#, python-brace-format
-msgid "{num_of_minutes} minutes"
-msgstr "{num_of_minutes} хвилин"
-
-#: utils.py:103
-#, python-brace-format
-msgid "{num_of_minutes} minute"
-msgstr "{num_of_minutes} хвилина"
-
-#: utils.py:106
-#, python-brace-format
-msgid " and {num_of_minutes} minutes"
-msgstr " і {num_of_minutes} хвилин"
-
-#: utils.py:342
-msgid "a proctored exam"
-msgstr "іспит під наглядом"
-
-#: utils.py:345
-msgid "a timed exam"
-msgstr "іспит з обмеженням по часу"
-
-#: utils.py:348
-msgid "an onboarding exam"
-msgstr "вступний іспит"
-
-#: utils.py:350
-msgid "a practice exam"
-msgstr "тренувальний іспит"
-
-#: views.py:152
-msgid "could not determine the course_id"
-msgstr "не вдалося визначити ідентифікатор курсу"
-
-#: views.py:664
-msgid "Missing required query parameter course_id"
-msgstr "Відсутній обов’язковий параметр запиту course_id"
-
-#: views.py:694 views.py:875
-msgid "There is no onboarding exam related to this course id."
-msgstr "Немає вступного іспиту, пов’язаного з цим ідентифікатором курсу."
-
-#: views.py:723
-msgid "There is no onboarding exam accessible to this user."
-msgstr "Для цього користувача немає доступного вступного іспиту."
-
-#: views.py:773
-#, python-brace-format
-msgid "No onboarding status API for {proctor_service}"
-msgstr "Немає API вступного статусу для {proctor_service}"
-
-#: views.py:925
-msgid ""
-"The onboarding service is temporarily unavailable. Please try again later."
-msgstr ""
-"Служба забезпечення процесу вступу тимчасово недоступна. Будь ласка, "
-"спробуйте пізніше."
-
-#: views.py:1303
-msgid "you have less than a minute remaining"
-msgstr "у вас залишилося менше хвилини"
-
-#: views.py:1758
-msgid "Enter a valid username or email"
-msgstr "Введіть дійсне ім’я користувача або електронну адресу"
-
-#: views.py:1758
-msgid "user_info"
-msgstr "user_info"
-
-#: views.py:1771
-msgid "Enter a valid positive value number"
-msgstr "Введіть дійсне додатнє число"
-
-#: views.py:1771
-msgid "allowance_value"
-msgstr "allowance_value"
-
-#: views.py:1858
-msgid "Cannot update attempt review status"
-msgstr "Не вдалося оновити статус перевірки спроби"
-
-#: views.py:2158
-#, python-brace-format
-msgid "No exams in course {course_id}."
-msgstr "Немає іспитів на курсі {course_id}."
-
-#: views.py:2164
-#, python-brace-format
-msgid "No proctored exams in course {course_id}"
-msgstr "На курсі {course_id} відсутні іспити під наглядом"
-
-#: views.py:2191
-#, python-brace-format
-msgid "No instructor dashboard for {proctor_service}"
-msgstr "Немає інформаційної панелі інструктора для {proctor_service}"

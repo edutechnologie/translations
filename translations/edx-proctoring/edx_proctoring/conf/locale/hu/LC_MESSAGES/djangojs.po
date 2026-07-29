@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:37+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
+"POT-Creation-Date: 2025-10-03 00:52+0000\n"
+"PO-Revision-Date: 2023-05-10 00:48+0000\n"
 "Last-Translator: Eden Huthmacher, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/open-edx/teams/6205/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: static/proctoring/js/exam_action_handler.js:44
+msgid "OK"
+msgstr "Rendben"
 
 #: static/proctoring/js/exam_action_handler.js:130
 #: static/proctoring/js/exam_action_handler.js:195
@@ -99,6 +103,10 @@ msgstr "További idő (perc)"
 msgid "Time Multiplier"
 msgstr "Időszorzó"
 
+#: static/proctoring/js/views/proctored_exam_attempt_view.js:10
+msgid "Eligible"
+msgstr "Jogosult"
+
 #: static/proctoring/js/views/proctored_exam_attempt_view.js:11
 msgid "Created"
 msgstr "Létrehozva"
@@ -152,6 +160,10 @@ msgstr "Elutasítva"
 #: static/proctoring/js/views/proctored_exam_onboarding_view.js:37
 msgid "Error"
 msgstr "Hiba"
+
+#: static/proctoring/js/views/proctored_exam_attempt_view.js:25
+msgid "Onboarding Failed"
+msgstr "Az onboarding sikertelen volt"
 
 #: static/proctoring/js/views/proctored_exam_attempt_view.js:179
 msgid "Practice"
@@ -257,6 +269,14 @@ msgstr ""
 msgid "Setup Started"
 msgstr "Beállítás elindítva"
 
+#: static/proctoring/js/views/proctored_exam_onboarding_view.js:31
+msgid "Onboarding Started"
+msgstr "Az onboarding elkezdődött"
+
+#: static/proctoring/js/views/proctored_exam_onboarding_view.js:40
+msgid "Onboarding Reset Failed Due to Past Due Exam"
+msgstr "Az újraindítás sikertelen a lejárt vizsga miatt"
+
 #: static/proctoring/js/views/proctored_exam_onboarding_view.js:42
 msgid "Audit"
 msgstr "Felülvizsgálat"
@@ -277,9 +297,9 @@ msgstr "Nincs azonosító szakember"
 msgid "Credit"
 msgstr "Kredit"
 
-#: static/proctoring/js/views/proctored_exam_onboarding_view.js:47
-msgid "Master's"
-msgstr "Mesterképzés"
+#: static/proctoring/js/views/proctored_exam_onboarding_view.js:48
+msgid "Executive Education"
+msgstr "Vezetői oktatás"
 
 #: static/proctoring/js/views/proctored_exam_view.js:153
 msgid ""

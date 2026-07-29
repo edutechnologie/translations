@@ -28,3 +28,7 @@ msgstr "Zapisz"
 #: templates/html/audio_edit.html:14
 msgid "Cancel"
 msgstr "Anuluj"
+
+#: added_by_omar.py:14
+msgid "Testing TX Branches"
+msgstr "Testowanie gałęzi TX"

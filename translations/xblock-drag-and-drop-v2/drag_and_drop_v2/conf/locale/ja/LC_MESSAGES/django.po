@@ -4,7 +4,6 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
 # Brian Smith, 2025
 # 
 msgid ""
@@ -12,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
 "Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/open-edx/teams/6205/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -66,6 +65,10 @@ msgstr "いいえ、このアイテムはここに属していません。もう
 #: default_data.py:27
 msgid "Of course it goes here! It goes anywhere!"
 msgstr "もちろん、ここに行きます！どこにでも行けます！"
+
+#: default_data.py:29
+msgid "Goes to the top"
+msgstr "一番上に行く"
 
 #: default_data.py:30
 msgid "Goes to the middle"
@@ -186,6 +189,10 @@ msgstr "回答済み"
 msgid "Attempted or Past Due"
 msgstr "試行済みまたは期限切れ"
 
+#: drag_and_drop_v2.py:153
+msgid "Closed"
+msgstr "終了"
+
 #: drag_and_drop_v2.py:154
 msgid "Finished"
 msgstr "完了"
@@ -210,6 +217,10 @@ msgstr "すべての試行後"
 msgid "After All Attempts or Correct"
 msgstr "すべての試行または正解後"
 
+#: drag_and_drop_v2.py:160
+msgid "Attempted"
+msgstr "試行済み"
+
 #: drag_and_drop_v2.py:166
 msgid "Problem Weight"
 msgstr "問題の重み"
@@ -230,7 +241,7 @@ msgstr "ドラッグ可能なアイテムの背景色（例：「blue」また�
 
 #: drag_and_drop_v2.py:182
 msgid "Item text color"
-msgstr "項目のテキスト色"
+msgstr "項目のテキストカラー"
 
 #: drag_and_drop_v2.py:183
 msgid "Text color to use for draggable items (example: 'white' or '#ffffff')."
@@ -291,9 +302,17 @@ msgstr "問題の最大スコアは0から1の間の生の値として利用可�
 msgid "Unknown DnDv2 mode {mode} - course is misconfigured"
 msgstr "DnDv2のモード{mode}が不明です - コースが誤って設定されています"
 
+#: drag_and_drop_v2.py:643
+msgid "show_answer handler should only be called for assessment mode"
+msgstr "show_answerハンドラーは評価モードでのみ呼び出されるべきです。"
+
 #: drag_and_drop_v2.py:648
 msgid "The answer is unavailable"
 msgstr "回答は利用できません"
+
+#: drag_and_drop_v2.py:789
+msgid "do_attempt handler should only be called for assessment mode"
+msgstr "do_attemptハンドラーは、評価モードでのみ呼び出されるべきです。"
 
 #: drag_and_drop_v2.py:794 drag_and_drop_v2.py:912
 msgid "Max number of attempts reached"
@@ -338,6 +357,10 @@ msgstr "背景画像"
 #: templates/html/drag_and_drop_edit.html:117
 msgid "Provide custom image"
 msgstr "カスタム画像を提供する"
+
+#: templates/html/drag_and_drop_edit.html:121
+msgid "Generate image automatically"
+msgstr "画像を自動生成"
 
 #: templates/html/drag_and_drop_edit.html:126
 msgid "Background URL"
@@ -393,6 +416,19 @@ msgstr "画像とゾーンを生成"
 msgid "Background description"
 msgstr "背景の説明"
 
+#: templates/html/drag_and_drop_edit.html:189
+msgid ""
+"\n"
+"                            Please provide a description of the image for non-visual users.\n"
+"                            The description should provide sufficient information to allow anyone\n"
+"                            to solve the problem even without seeing the image.\n"
+"                        "
+msgstr ""
+"\n"
+"                            画像の説明を視覚に頼らないユーザーに提供してください。\n"
+"                            説明は、画像を見なくても問題を解決できるように十分な情報を提供する必要があります。\n"
+"                        "
+
 #: templates/html/drag_and_drop_edit.html:199
 msgid "Zone labels"
 msgstr "ゾーンラベル"
@@ -429,6 +465,14 @@ msgstr "アイテム"
 msgid "Item definitions"
 msgstr "アイテム定義"
 
+#: templates/html/drag_and_drop_edit.html:278
+msgid "Add an item"
+msgstr "アイテムを追加"
+
+#: templates/html/drag_and_drop_edit.html:288
+msgid "Continue"
+msgstr "続行"
+
 #: templates/html/drag_and_drop_edit.html:292
 msgid "Save"
 msgstr "保存"
@@ -445,7 +489,7 @@ msgstr "あなたの最高得点は{score}です"
 #: utils.py:122
 #, python-brace-format
 msgid "Final attempt was used, highest score is {score}"
-msgstr "最終試行が使用され、最高スコアは{score}です。"
+msgstr "最終試行が使用され、最高得点は{score}です。"
 
 #: utils.py:130
 #, python-brace-format
@@ -487,9 +531,13 @@ msgstr "未知のゾーン"
 msgid "Placed in: {zone_title}"
 msgstr "配置先: {zone_title}"
 
+#: public/js/drag_and_drop.js:170
+msgid "Correctly placed in: {zone_title}"
+msgstr "{zone_title}に正しく配置されました"
+
 #: public/js/drag_and_drop.js:182
 msgid ", draggable, grabbed"
-msgstr ", ドラッグ可能, 掴んだ"
+msgstr "、ドラッグ可能、掴んだ"
 
 #: public/js/drag_and_drop.js:182
 msgid ", draggable"
@@ -515,6 +563,10 @@ msgstr "ドロップ可能"
 msgid "Feedback"
 msgstr "フィードバック"
 
+#: public/js/drag_and_drop.js:336 public/js/drag_and_drop.js:341
+msgid "Explanation"
+msgstr "説明"
+
 #: public/js/drag_and_drop.js:357 public/js/drag_and_drop.js:547
 msgid "Close"
 msgstr "閉じる"
@@ -535,11 +587,48 @@ msgid ""
 msgstr ""
 "ドラッグアンドドロップの問題は、ドラッグ可能なアイテムとドロップゾーンで構成されています。ユーザーはキーボードを使ってドラッグ可能なアイテムを選択し、適切なドロップゾーンに移動してドロップします。"
 
+#: public/js/drag_and_drop.js:365
+msgid ""
+"You can complete this problem using only your keyboard by following the "
+"guidance below:"
+msgstr "キーボードだけを使って、以下のガイダンスに従ってこの問題を解決できます。"
+
+#: public/js/drag_and_drop.js:367
+msgid ""
+"Use only TAB and SHIFT+TAB to navigate between draggable items and drop "
+"zones."
+msgstr "ドラッグ可能なアイテムとドロップゾーンの間を移動するには、TABキーとSHIFT+TABキーのみを使用してください。"
+
+#: public/js/drag_and_drop.js:368
+msgid "Press CTRL+M to select a draggable item (effectively picking it up)."
+msgstr "CTRL+Mキーを押してドラッグ可能なアイテムを選択します（実際に持ち上げることになります）。"
+
 #: public/js/drag_and_drop.js:369
 msgid ""
 "Navigate using TAB and SHIFT+TAB to the appropriate dropzone and press "
 "CTRL+M once more to drop it here."
 msgstr "TABとSHIFT+TABを使って適切なドロップゾーンに移動し、もう一度CTRL+Mを押してここにドロップします。"
+
+#: public/js/drag_and_drop.js:370
+msgid ""
+"Press ESC if you want to cancel the drop operation (for example, to select a"
+" different item)."
+msgstr "ドロップ操作をキャンセルしたい場合は、ESCキーを押してください（例えば、別のアイテムを選択する場合）。"
+
+#: public/js/drag_and_drop.js:371
+msgid ""
+"TAB back to the list of draggable items and repeat this process until all of"
+" the draggable items have been placed on their respective dropzones."
+msgstr ""
+"ドラッグ可能なアイテムのリストにTABで戻り、このプロセスを繰り返して、すべてのドラッグ可能なアイテムがそれぞれのドロップゾーンに配置されるまで続けてください。"
+
+#: public/js/drag_and_drop.js:389
+msgid "You have used {used} of {total} attempts."
+msgstr "{total} 回の試行のうち {used} 回を使用しました。"
+
+#: public/js/drag_and_drop.js:412
+msgid "Submit"
+msgstr "送信"
 
 #: public/js/drag_and_drop.js:453
 msgid "Show Answer"
@@ -572,7 +661,7 @@ msgstr "不正解"
 #: public/js/drag_and_drop.js:610
 msgid "{earned}/{possible} point (graded)"
 msgid_plural "{earned}/{possible} points (graded)"
-msgstr[0] "{earned}/{possible} ポイント (採点済み)"
+msgstr[0] "{earned}/{possible} 点（採点済み）"
 
 #. Translators: {earned} is the number of points earned. {possible} is the
 #. total number of points (examples: 0/1, 1/1, 2/3, 5/10). The total number of
@@ -581,7 +670,7 @@ msgstr[0] "{earned}/{possible} ポイント (採点済み)"
 #: public/js/drag_and_drop.js:617
 msgid "{earned}/{possible} point (ungraded)"
 msgid_plural "{earned}/{possible} points (ungraded)"
-msgstr[0] "{earned}/{possible} ポイント (未採点)"
+msgstr[0] "{earned}/{possible} 点 (未採点)"
 
 #. Translators: {possible} is the number of points possible (examples: 1, 3,
 #. 10).
@@ -595,7 +684,7 @@ msgstr[0] "{possible} 点可能（採点済み）"
 #: public/js/drag_and_drop.js:634
 msgid "{possible} point possible (ungraded)"
 msgid_plural "{possible} points possible (ungraded)"
-msgstr[0] "{possible}点可能（未採点）"
+msgstr[0] "{possible} ポイント可能 (未採点)"
 
 #: public/js/drag_and_drop.js:660
 msgid "Drag and Drop Problem"

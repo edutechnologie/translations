@@ -4,16 +4,16 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
-"Language-Team: Japanese (https://app.transifex.com/open-edx/teams/6205/ja/)\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: Japanese (https://app.transifex.com/open-edx/teams/301281/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,9 +24,17 @@ msgstr ""
 msgid "Legal Policies"
 msgstr "法的ポリシー"
 
+#: templates/edx.org/_footer.html:11
+msgid "Terms of Service & Honor Code"
+msgstr "利用規約と名誉規定"
+
 #: templates/edx.org/_footer.html:16
 msgid "Privacy Policy"
 msgstr "プライバシーポリシー"
+
+#: templates/edx.org/_footer.html:21
+msgid "Cookie Policy"
+msgstr "クッキーポリシー"
 
 #: templates/edx.org/_footer.html:26
 msgid "Your Privacy Choices"
@@ -39,6 +47,10 @@ msgid ""
 msgstr ""
 "すべての権利は、特に記載がない限り、保留されています。edX、Open edX、およびedXとOpen edXのロゴは、edX "
 "Inc.の登録商標または商標です。"
+
+#: templates/edx.org/_footer.html:46
+msgid "Powered by"
+msgstr "提供元:"
 
 #: templates/edx.org/credentials/programs/base.html:30
 msgid "About edX"
@@ -62,6 +74,11 @@ msgid ""
 "has successfully completed all courses and received passing grades to earn a"
 " MicroBachelors program certificate in"
 msgstr "すべてのコースを修了し、合格点を取得して、MicroBachelorsプログラムの証明書を取得しました。"
+
+#. Translators: MicroBachelors should not be translated
+#: templates/edx.org/credentials/programs/microbachelors/certificate.html:12
+msgid "MicroBachelors program certificate"
+msgstr "マイクロバチェラーズプログラム証明書"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:17
@@ -97,6 +114,11 @@ msgid ""
 msgstr "すべてのコースを修了し、合格点を取得して、MicroMastersプログラムの証明書を取得しました。"
 
 #. Translators: MicroMasters should not be translated
+#: templates/edx.org/credentials/programs/micromasters/certificate.html:21
+msgid "MicroMasters program certificate"
+msgstr "MicroMastersプログラム証明書"
+
+#. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:26
 msgid "About the edX MicroMasters credential"
 msgstr "edX MicroMasters資格について"
@@ -124,6 +146,10 @@ msgstr "すべてのコースを修了し、プロフェッショナル認定証
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:11
 msgid "Professional Certificate"
 msgstr "プロフェッショナル認定証"
+
+#: templates/edx.org/credentials/programs/professional-certificate/certificate.html:15
+msgid "About the edX Professional Certificate"
+msgstr "edXプロフェッショナル認定について"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:19
 #, python-brace-format

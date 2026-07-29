@@ -18,10 +18,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-25 00:36+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
+"POT-Creation-Date: 2025-09-19 00:44+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
 "Last-Translator: Brian Smith, 2025\n"
-"Language-Team: Vietnamese (https://app.transifex.com/open-edx/teams/6205/vi/)\n"
+"Language-Team: Vietnamese (https://app.transifex.com/open-edx/teams/301281/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -63,11 +63,11 @@ msgstr "Lỗi lưu đánh giá OpenAssessment"
 msgid "Saving"
 msgstr "Đang lưu"
 
-#: cms/static/js/base.js:101
+#: cms/static/js/base.js:113
 msgid "This link will open in a new browser window/tab"
 msgstr "Liên kết này sẽ mở trong cửa sổ/tab trình duyệt mới"
 
-#: cms/static/js/base.js:108
+#: cms/static/js/base.js:120
 msgid "This link will open in a modal window"
 msgstr "Liên kết này sẽ mở trong một cửa sổ phương thức"
 
@@ -532,6 +532,7 @@ msgstr "Không thể tải lên tập tin của bạn"
 #: cms/static/js/views/modals/course_outline_modals.js:351
 #: cms/static/js/views/modals/edit_xblock.js:151
 #: cms/static/js/views/video_transcripts.js:325
+#: lms/static/js/student_account/enrollment.js:87
 #: lms/static/js/student_account/tos_modal.js:48
 #: xmodule/js/src/html/edit.js:370
 #: cms/templates/js/course-video-settings.underscore:6
@@ -672,7 +673,7 @@ msgstr "Thêm nội dung thư viện"
 
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:642
+#: cms/static/js/views/pages/container.js:652
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "Thêm"
@@ -691,8 +692,8 @@ msgstr "Bạn có chắc chắn muốn xóa bản cập nhật này không?"
 #: cms/static/js/views/course_info_update.js:241
 #: cms/static/js/views/course_outline.js:390
 #: cms/static/js/views/course_outline.js:402
-#: cms/static/js/views/pages/container.js:414
-#: cms/static/js/views/pages/container.js:426 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/pages/container.js:424
+#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
 #: cms/static/js/views/utils/xblock_utils.js:101
 #: cms/static/js/views/utils/xblock_utils.js:113
 #: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
@@ -702,37 +703,37 @@ msgid "OK"
 msgstr "OK"
 
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:767
+#: cms/static/js/views/pages/container.js:779
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "Sao chép"
 
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:385
+#: cms/static/js/views/pages/container.js:395
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
 msgstr "Dán"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:409
+#: cms/static/js/views/pages/container.js:419
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "Một số lỗi xảy ra"
 
 #: cms/static/js/views/course_outline.js:387
-#: cms/static/js/views/pages/container.js:411
+#: cms/static/js/views/pages/container.js:421
 #: cms/static/js/views/utils/xblock_utils.js:98
 msgid "The following required files could not be added to the course:"
 msgstr "Không thể thêm các tệp bắt buộc sau vào khóa học:"
 
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:429
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr "Bạn có thể cần phải cập nhật (các) tệp theo cách thủ công"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:422
+#: cms/static/js/views/pages/container.js:432
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -742,25 +743,25 @@ msgstr ""
 "được sử dụng bởi thành phần bạn đã dán:"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:431
+#: cms/static/js/views/pages/container.js:441
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "(Các) tệp mới được thêm vào Tệp &amp; Nội dung tải lên."
 
 #: cms/static/js/views/course_outline.js:409
-#: cms/static/js/views/pages/container.js:433
+#: cms/static/js/views/pages/container.js:443
 #: cms/static/js/views/utils/xblock_utils.js:120
 msgid "The following required files were imported to this course:"
 msgstr "Các tệp bắt buộc sau đã được nhập vào khóa học này:"
 
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:438
+#: cms/static/js/views/pages/container.js:448
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "Xem tập tin"
 
 #: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:447
+#: cms/static/js/views/pages/container.js:457
 #: cms/static/js/views/utils/xblock_utils.js:134
 msgid "Dismiss"
 msgstr "Loại bỏ"
@@ -800,7 +801,7 @@ msgid "Select language"
 msgstr "Chọn ngôn ngữ"
 
 #: cms/static/js/views/course_video_settings.js:474
-#: cms/static/js/views/metadata.js:357
+#: cms/static/js/views/metadata.js:362
 #: cms/static/js/views/previous_video_upload.js:78
 #: cms/static/js/views/video_transcripts.js:270
 #: lms/djangoapps/teams/static/teams/js/views/edit_team_members.js:96
@@ -1102,7 +1103,7 @@ msgstr ""
 "Bạn có chắc chắn muốn hạn chế quyền truy cập của {email} vào “ {container} ”"
 " không?"
 
-#: cms/static/js/views/metadata.js:610 lms/static/js/views/file_uploader.js:47
+#: cms/static/js/views/metadata.js:615 lms/static/js/views/file_uploader.js:47
 msgid "Upload File"
 msgstr "Cập nhật dử liệu"
 
@@ -1314,7 +1315,7 @@ msgstr "Ngày thêm"
 
 #. Translators: "title" is the name of the current component or unit being
 #. edited.
-#: cms/static/js/views/pages/container.js:719
+#: cms/static/js/views/pages/container.js:731
 msgid "Editing access for: {title}"
 msgstr "Quyền chỉnh sửa cho: {title}"
 
@@ -1932,7 +1933,7 @@ msgstr "Cảnh báo"
 #: common/static/common/js/discussion/views/discussion_thread_view.js:233
 #: common/static/common/js/discussion/views/response_comment_view.js:121
 #: lms/djangoapps/instructor/static/instructor/ProblemBrowser/components/ReportStatus/ReportStatus.jsx:33
-#: lms/static/js/student_account/views/FinishAuthView.js:82
+#: lms/static/js/student_account/views/FinishAuthView.js:84
 #: lms/static/js/verify_student/views/step_view.js:50
 #: lms/static/js/views/fields.js:43
 msgid "Error"
@@ -3750,56 +3751,56 @@ msgstr "Đang tải dữ liệu..."
 msgid "Error getting issued certificates list."
 msgstr "Lỗi khi nhận danh sách chứng chỉ đã cấp."
 
-#: lms/static/js/instructor_dashboard/data_download.js:123
+#: lms/static/js/instructor_dashboard/data_download.js:124
 msgid "Error generating anonymous IDs. Please try again."
 msgstr "Lỗi tạo ID ẩn danh. Vui lòng thử lại."
 
-#: lms/static/js/instructor_dashboard/data_download.js:149
+#: lms/static/js/instructor_dashboard/data_download.js:150
 #: lms/static/js/instructor_dashboard/data_download_2.js:49
 msgid "Error generating proctored exam results. Please try again."
 msgstr "Lỗi tạo kết quả bài kiểm tra dự kiến. Vui lòng thử lại."
 
-#: lms/static/js/instructor_dashboard/data_download.js:175
+#: lms/static/js/instructor_dashboard/data_download.js:176
 #: lms/static/js/instructor_dashboard/data_download_2.js:48
 msgid "Error generating survey results. Please try again."
 msgstr "Lỗi tạo kết quả khảo sát. Vui lòng thử lại."
 
-#: lms/static/js/instructor_dashboard/data_download.js:201
+#: lms/static/js/instructor_dashboard/data_download.js:202
 #: lms/static/js/instructor_dashboard/data_download_2.js:47
 msgid "Error generating student profile information. Please try again."
 msgstr "Lỗi tạo thông tin hồ sơ sinh viên. Vui lòng thử lại."
 
-#: lms/static/js/instructor_dashboard/data_download.js:227
+#: lms/static/js/instructor_dashboard/data_download.js:228
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmarks_list.js:23
 #: cms/templates/js/move-xblock-modal.underscore:6
 #: openedx/features/course_search/static/course_search/templates/search_loading.underscore:1
 msgid "Loading"
 msgstr "Đang tải"
 
-#: lms/static/js/instructor_dashboard/data_download.js:235
+#: lms/static/js/instructor_dashboard/data_download.js:236
 msgid "Error getting student list."
 msgstr "Lỗi lấy danh sách sinh viên."
 
-#: lms/static/js/instructor_dashboard/data_download.js:301
+#: lms/static/js/instructor_dashboard/data_download.js:302
 #: lms/static/js/instructor_dashboard/data_download_2.js:50
 msgid "Error generating list of students who may enroll. Please try again."
 msgstr "Lỗi khi tạo danh sách sinh viên có thể đăng ký. Vui lòng thử lại."
 
-#: lms/static/js/instructor_dashboard/data_download.js:333
+#: lms/static/js/instructor_dashboard/data_download.js:359
 msgid "Error retrieving grading configuration."
 msgstr "Lỗi truy xuất cấu hình chấm điểm."
 
-#: lms/static/js/instructor_dashboard/data_download.js:358
+#: lms/static/js/instructor_dashboard/data_download.js:384
 #: lms/static/js/instructor_dashboard/data_download_2.js:156
 msgid "Error generating grades. Please try again."
 msgstr "Lỗi tạo điểm. Vui lòng thử lại."
 
-#: lms/static/js/instructor_dashboard/data_download.js:360
+#: lms/static/js/instructor_dashboard/data_download.js:386
 #: lms/static/js/instructor_dashboard/data_download_2.js:46
 msgid "Error generating problem grade report. Please try again."
 msgstr "Lỗi tạo báo cáo điểm vấn đề. Vui lòng thử lại."
 
-#: lms/static/js/instructor_dashboard/data_download.js:362
+#: lms/static/js/instructor_dashboard/data_download.js:388
 #: lms/static/js/instructor_dashboard/data_download_2.js:45
 msgid "Error generating ORA data report. Please try again."
 msgstr "Lỗi tạo báo cáo dữ liệu ORA. Vui lòng thử lại."
@@ -4814,19 +4815,19 @@ msgstr ""
 msgid "Terms of Service and Honor Code"
 msgstr "Điều khoản dịch vụ và Mã danh dự"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:109
+#: lms/static/js/student_account/views/FinishAuthView.js:111
 msgid "Saving your email preference"
 msgstr "Đang lưu tùy chọn email của bạn"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:127
+#: lms/static/js/student_account/views/FinishAuthView.js:129
 msgid "Enrolling you in the selected course"
 msgstr "Ghi danh bạn vào khóa học đã chọn"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:159
+#: lms/static/js/student_account/views/FinishAuthView.js:163
 msgid "Adding the selected course to your cart"
 msgstr "Thêm khóa học đã chọn vào giỏ hàng của bạn"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:172
+#: lms/static/js/student_account/views/FinishAuthView.js:177
 msgid "Loading your courses"
 msgstr "Đang tải các khóa học của bạn"
 
@@ -5153,7 +5154,7 @@ msgid "Bookmark this page"
 msgstr "Đánh dấu trang này"
 
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmark_button.js:10
-#: xmodule/js/src/sequence/display.js:445
+#: xmodule/js/src/sequence/display.js:521
 msgid "Bookmarked"
 msgstr "Đã đánh dấu"
 
@@ -5258,17 +5259,17 @@ msgid "{earned}/{possible} point (ungraded)"
 msgid_plural "{earned}/{possible} points (ungraded)"
 msgstr[0] "{earned} / {possible} điểm (không phân loại)"
 
-#: xmodule/js/src/capa/display.js:349
+#: xmodule/js/src/capa/display.js:356
 msgid "The grading process is still running. Refresh the page to see updates."
 msgstr ""
 "Quá trình chấm điểm vẫn đang diễn ra. Làm mới trang để xem thông tin cập "
 "nhật."
 
-#: xmodule/js/src/capa/display.js:458
+#: xmodule/js/src/capa/display.js:465
 msgid "Could not grade your answer. The submission was aborted."
 msgstr "Không thể chấm điểm câu trả lời của bạn. Việc gửi đã bị hủy bỏ."
 
-#: xmodule/js/src/capa/display.js:522
+#: xmodule/js/src/capa/display.js:529
 msgid ""
 "Submission aborted! Sorry, your browser does not support file uploads. If "
 "you can, please use Chrome or Safari which have been verified to support "
@@ -5278,33 +5279,33 @@ msgstr ""
 "tin lên. Nếu có thể, vui lòng sử dụng Chrome hoặc Safari đã được xác minh để"
 " hỗ trợ tải tệp lên."
 
-#: xmodule/js/src/capa/display.js:548
+#: xmodule/js/src/capa/display.js:555
 msgid "You submitted {filename}; only {allowedFiles} are allowed."
 msgstr "Bạn đã gửi {filename} ; chỉ cho phép {allowedFiles} ."
 
-#: xmodule/js/src/capa/display.js:561
+#: xmodule/js/src/capa/display.js:568
 msgid "Your file {filename} is too large (max size: {maxSize}MB)."
 msgstr "Tệp {filename} của bạn quá lớn (kích thước tối đa: {maxSize} MB)."
 
-#: xmodule/js/src/capa/display.js:577
+#: xmodule/js/src/capa/display.js:584
 msgid "You did not submit the required files: {requiredFiles}."
 msgstr "Bạn chưa gửi các tệp được yêu cầu: {requiredFiles} ."
 
-#: xmodule/js/src/capa/display.js:587
+#: xmodule/js/src/capa/display.js:594
 msgid "You did not select any files to submit."
 msgstr "Bạn chưa chọn bất kỳ tập tin nào để gửi."
 
 #. Translators: This is only translated to allow for reordering of label and
 #. associated status.;
-#: xmodule/js/src/capa/display.js:681
+#: xmodule/js/src/capa/display.js:688
 msgid "{label}: {status}"
 msgstr "{label} : {status}"
 
-#: xmodule/js/src/capa/display.js:712
+#: xmodule/js/src/capa/display.js:719
 msgid "This problem has been reset."
 msgstr "Vấn đề này đã được thiết lập lại."
 
-#: xmodule/js/src/capa/display.js:1018
+#: xmodule/js/src/capa/display.js:1025
 msgid "unsubmitted"
 msgstr "chưa được nộp"
 
@@ -6594,7 +6595,7 @@ msgstr ""
 msgid "Explanation"
 msgstr "Giải trình"
 
-#: xmodule/js/src/sequence/display.js:330
+#: xmodule/js/src/sequence/display.js:406
 msgid ""
 "Sequence error! Cannot navigate to %(tab_name)s in the current "
 "SequenceModule. Please contact the course staff."
@@ -6779,30 +6780,30 @@ msgstr "Không hiển thị trở lại"
 msgid "Open language menu"
 msgstr "Mở trình đơn ngôn ngữ"
 
-#: xmodule/js/src/video/09_video_caption.js:589
+#: xmodule/js/src/video/09_video_caption.js:630
 msgid "Transcript will be displayed when you start playing the video."
 msgstr "Bản ghi sẽ được hiển thị khi bạn bắt đầu phát video."
 
-#: xmodule/js/src/video/09_video_caption.js:837
+#: xmodule/js/src/video/09_video_caption.js:878
 msgid ""
 "Activating a link in this group will skip to the corresponding point in the "
 "video."
 msgstr ""
 "Kích hoạt liên kết trong nhóm này sẽ chuyển sang điểm tương ứng trong video."
 
-#: xmodule/js/src/video/09_video_caption.js:840
+#: xmodule/js/src/video/09_video_caption.js:881
 msgid "Video transcript"
 msgstr "Bản ghi video"
 
-#: xmodule/js/src/video/09_video_caption.js:843
+#: xmodule/js/src/video/09_video_caption.js:884
 msgid "Start of transcript. Skip to the end."
 msgstr "Bắt đầu biên bản. Chuyển đến cuối."
 
-#: xmodule/js/src/video/09_video_caption.js:847
+#: xmodule/js/src/video/09_video_caption.js:888
 msgid "End of transcript. Skip to the start."
 msgstr "Kết thúc biên bản. Chuyển đến phần đầu."
 
-#: xmodule/js/src/video/09_video_caption.js:851
+#: xmodule/js/src/video/09_video_caption.js:892
 msgid ""
 "Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
 " keys to navigate language options. Press ENTER to change to the selected "
@@ -6812,23 +6813,23 @@ msgstr ""
 " LÊN và XUỐNG để điều hướng các tùy chọn ngôn ngữ. Nhấn ENTER để thay đổi "
 "ngôn ngữ đã chọn."
 
-#: xmodule/js/src/video/09_video_caption.js:1205
+#: xmodule/js/src/video/09_video_caption.js:1248
 msgid "Hide closed captions"
 msgstr "Ẩn phụ đề"
 
-#: xmodule/js/src/video/09_video_caption.js:1223
+#: xmodule/js/src/video/09_video_caption.js:1266
 msgid "(Caption will be displayed when you start playing the video.)"
 msgstr "(Chú thích sẽ được hiển thị khi bạn bắt đầu phát video.)"
 
-#: xmodule/js/src/video/09_video_caption.js:1230
+#: xmodule/js/src/video/09_video_caption.js:1273
 msgid "Turn on closed captioning"
 msgstr "Bật phụ đề chi tiết"
 
-#: xmodule/js/src/video/09_video_caption.js:1338
+#: xmodule/js/src/video/09_video_caption.js:1381
 msgid "Turn on transcripts"
 msgstr "Bật bản chép lời"
 
-#: xmodule/js/src/video/09_video_caption.js:1353
+#: xmodule/js/src/video/09_video_caption.js:1396
 msgid "Turn off transcripts"
 msgstr "Tắt bản ghi"
 
@@ -10255,11 +10256,11 @@ msgstr "Ghi danh ngay"
 msgid "Coming Soon"
 msgstr "Sắp ra mắt"
 
-#: lms/templates/learner_dashboard/course_enroll.underscore:47
+#: lms/templates/learner_dashboard/course_enroll.underscore:48
 msgid "Enrollment Opens on"
 msgstr "Ghi danh mở vào"
 
-#: lms/templates/learner_dashboard/course_enroll.underscore:54
+#: lms/templates/learner_dashboard/course_enroll.underscore:56
 msgid "Not Currently Available"
 msgstr "Hiện không có sẵn"
 

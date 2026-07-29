@@ -4,15 +4,15 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/open-edx/teams/6205/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -61,11 +61,11 @@ msgstr "スタッフのみがリソースをインポートできます"
 #: recommender.py:859 recommender.py:886
 msgid ""
 "Please submit the JSON file obtained with the download resources button"
-msgstr "ダウンロードリソースボタンで取得したJSONファイルを提出してください。"
+msgstr "リソースのダウンロードボタンで取得したJSONファイルを提出してください。"
 
 #: recommender.py:899
 msgid "Tried to access flagged resources without staff permission"
-msgstr "スタッフの許可なくフラグが立てられたリソースにアクセスしようとしました"
+msgstr "スタッフの許可なくフラグ付きリソースにアクセスしようとしました"
 
 #: templates/recommender.html:85
 msgid "This is a list of recommended resources. If you\\"
@@ -111,12 +111,20 @@ msgstr ""
 "あなたの仲間の学生が役立つと思ったリソースのリストです。edx.orgや他の場所で役立つリソースを見つけた場合は、追加してください。リソースの説明やプレビューを改善できる場合は、ぜひ行ってください。役立つリソースを見つけたら、アップボートしてください。あまり役立たない場合は、ダウンボートしてください。問題がある場合（違法な内容、不正確など）、フラグを立てて理由をお知らせください。"
 
 #: templates/recommender.html:141
+msgid "cancel and go back to resource list"
+msgstr "キャンセルしてリソース一覧に戻る"
+
+#: templates/recommender.html:141
 msgid "&lt; Related resources"
 msgstr "関連リソース"
 
 #: templates/recommender.html:147
 msgid "Resources (in JSON format):"
 msgstr "リソース（JSON形式）："
+
+#: templates/recommender.html:147
+msgid "Provide a file of resource list in JSON format"
+msgstr "リソースリストのファイルをJSON形式で提供する"
 
 #: templates/recommender.html:153 templates/recommender.html:163
 #: templates/recommender.html:173
@@ -147,7 +155,7 @@ msgstr "リソースのタイトルを提供してください（必須）"
 msgid ""
 "Provide a meaningful title so other students know whether this is useful to "
 "them"
-msgstr "他の学生が役立つかどうか判断できるような意味のあるタイトルを提供してください。"
+msgstr "他の学生が役に立つかどうか判断できるように、意味のあるタイトルを付けてください。"
 
 #: templates/recommender.html:189
 msgid "Location"
@@ -165,7 +173,7 @@ msgstr "説明"
 msgid ""
 "Provide a meaningful description so other students know whether this is "
 "useful to them"
-msgstr "他の学生がそれが役に立つかどうかを知るために、意味のある説明を提供してください。"
+msgstr "他の学生がそれが自分にとって有用かどうかを知るために、意味のある説明を提供してください。"
 
 #: templates/recommender.html:202
 msgid "Preview screenshot:"
@@ -195,6 +203,11 @@ msgstr "リソースを追加"
 msgid "Configuration setting"
 msgstr "設定の構成設定"
 
+#: templates/recommenderstudio.html:9
+msgid ""
+"Set the student-view, client side configurations for RecommenderXblock."
+msgstr "RecommenderXblockの学生ビュー、クライアント側の設定を行います。"
+
 #: templates/recommenderstudio.html:12 templates/recommenderstudio.html:18
 msgid "Yes"
 msgstr "はい"
@@ -207,7 +220,7 @@ msgstr "いいえ"
 msgid ""
 "Do you want to take users on a little tour when they see the "
 "RecommenderXBlock first time?"
-msgstr "RecommenderXBlockを初めて見るユーザーに、簡単なツアーを提供しますか？"
+msgstr "ユーザーがRecommenderXBlockを初めて見るときに、少しツアーを案内しますか？"
 
 #: templates/recommenderstudio.html:21
 msgid "Do you want to disable the UX functions which are under development?"
@@ -235,6 +248,14 @@ msgstr "他の学生がこの問題を解くのに役立つ新しいリソース
 #: static/js/src/cats.js:66
 msgid "Edit this resource"
 msgstr "このリソースを編集する"
+
+#: static/js/src/cats.js:67
+msgid "Upvote if the resource is helpful"
+msgstr "リソースが役に立つ場合は高評価をお願いします"
+
+#: static/js/src/cats.js:68
+msgid "Downvote if the resource is not helpful"
+msgstr "リソースが役に立たない場合は低評価してください"
 
 #: static/js/src/cats.js:69
 msgid "Votes"
@@ -287,7 +308,7 @@ msgstr "このリソースを削除すべき理由を明確に述べてくださ
 
 #: static/js/src/cats.js:83
 msgid "Flag this resource as problematic and give your reason"
-msgstr "このリソースに問題があると報告し、その理由を述べてください。"
+msgstr "このリソースに問題があるとしてフラグを立て、理由を述べてください。"
 
 #: static/js/src/cats.js:84
 msgid "Delete this resource"
@@ -312,6 +333,10 @@ msgstr "このリソースはスタッフによって承認されています"
 #: static/js/src/cats.js:89
 msgid "Click to view resources for removal"
 msgstr "削除するリソースを表示するにはクリックしてください"
+
+#: static/js/src/cats.js:90
+msgid "Click to view resources in ordinary decreasing-vote order"
+msgstr "リソースを通常の投票数が多い順に表示するにはクリックしてください。"
 
 #: static/js/src/cats.js:93
 msgid ""
@@ -349,7 +374,7 @@ msgstr "既存のリソースを編集"
 
 #: static/js/src/cats.js:110
 msgid "Flag Resource"
-msgstr "リソースをフラグする"
+msgstr "リソースを報告"
 
 #: static/js/src/cats.js:111
 msgid "Endorse Resource"
@@ -442,6 +467,10 @@ msgstr "リソースの承認を取り消す"
 #: static/js/src/cats.js:218
 msgid "Remove resource"
 msgstr "リソースを削除"
+
+#: static/js/src/cats.js:219
+msgid "Hovering resource"
+msgstr "リソースをホバーする"
 
 #: static/js/src/cats.js:220
 msgid "A resource was clicked"

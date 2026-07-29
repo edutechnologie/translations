@@ -11,7 +11,6 @@
   "header.user.menu.login": "Zaloguj",
   "header.user.menu.register": "Zarejestruj się",
   "header.user.menu.studio.home": "Strona główna studia",
-  "header.user.menu.studio.maintenance": "Konserwacja",
   "header.label.account.nav": "Konto",
   "header.label.account.menu": "Menu konta",
   "header.label.account.menu.for": "Menu konta dla {username}",
@@ -32,7 +31,6 @@
   "header.menu.signOut.label": "Wyloguj",
   "header.menu.aria-label": "Opcje użytkownika",
   "header.user.menu.studio": "Strona główna studia",
-  "header.user.menu.maintenance": "Konserwacja",
   "header.label.courseOutline": "Powrót do planu kursu w studiu",
   "header.label.search.nav": "Szukaj treści"
 }

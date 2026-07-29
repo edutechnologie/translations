@@ -16,107 +16,100 @@ en:
   Action: الإجراء
   Action Count: عدد الإجراءات
   Action Date: تاريخ الإجراء
-  Active: نَشِط
-  Active Courses: المُقَرَّرات النَّشِطة
-  Active Learner: مُتَعَلِّم نَشِط
+  Active: نشط
+  Active Courses: المساقات النشطة
+  Active Learner: متعلم نشط
   Active Learners: المتعلمون النشطون
   Active Users Per Organization: المستخدمون النشطون لكل مؤسسة
-  Active Within Last 7 Days: كان نَشِطاً خِلال الأيام السبعة الماضية
-  Approving State: حالة المُوافَقة
-  At Risk: مُتَعَثِّر
-  At-Risk Learners: المُتَعَلِّمون المُتَعَثِّرون
-  Attempt: مُحَاوَلة
-  Attempted All Problems: حاوَلَ حَلَّ جَميع المَسائِل
-  Attempted At Least One Problem: حاوَلَ حَلَّ مَسأَلة واحِدة أو أكثر
-  Attempts: المُحاولات
-  Average Score: مُتَوَسِّط الدَرَجات
-  Avg Attempts: متوسط المحاولات
-  Avg Correct Attempts Coursewide: مُتَوَسِّط المُحاولات الصحيحة على مستوى المُقَرَّر
-  Avg Correct Attempts by Selected Learners: مُتَوَسِّط المُحاولات الصحيحة مِن قِبَل مُتَعَلِّمين مُحَدَّدين
-  Avg Course Grade: مُتَوَسِّط درجات المُقَرَّر
-  Avg Incorrect Attempts Coursewide: مُتَوَسِّط المُحاولات الخاطِئة على مستوى المُقَرَّر
-  Avg Incorrect Attempts by Selected Learners: مُتَوَسِّط المُحاولات الخاطِئة مِن قِبَل مُتَعَلِّمين مُحَدَّدين
-  Avg Score: مُتَوَسِّط الدَرَجات
-  Avg Video Length (seconds): مُتَوَسِّط مُدَّة الفيديو (بالثواني)
+  Active Within Last 7 Days: كان نشطاً خلال الأيام السبعة الماضية
+  Approving State: حالة الموافقة
+  At Risk: مُتعثِّر
+  At-Risk Learners: المتعلمون المُتعثِّرون
+  Attempt: محاولة
+  Attempted All Problems: حاول حل جميع المسائل
+  Attempted At Least One Problem: حاول حل مسألة واحدة أو أكثر
+  Attempts: المحاولات
+  Average Score: مُتوسِّط الدرجات
+  Avg Attempts: مُتوسط المحاولات
   Block ID: معرف الكتلة
   Block Id: معرف الكتلة
   COUNT(*): COUNT(*)
   Changed By Fk: تم التغيير بواسطة Fk
-  Changed On: عُدِّلَت في
-  Chart showing the number of Superset actions taken on each chart in the selected time period.: رَسم بياني يُوَضِّح عدداً مِن إجراءات Superset المُتَخَذة على كل رسم بياني خِلال الفترة الزمنية المُحَدَّدة.
-  Chart showing the number of Superset actions taken on each dashboard in the selected time period.: رَسم بياني يُوَضِّح عدداً مِن إجراءات Superset المُتَخَذة على كل لوحة تَحَكُّم خِلال الفترة الزمنية المُحَدَّدة.
+  Changed On: عُدِّلت في
+  Chart showing the number of Superset actions taken on each chart in the selected time period.: رسم بياني يوضّح عدداً من إجراءات Superset المتخذة على كل رسم بياني خلال الفترة الزمنية المحدّدة.
+  Chart showing the number of Superset actions taken on each dashboard in the selected time period.: رسم بياني يوضّح عدداً من إجراءات Superset المتخذة على كل لوحة تحكّم خلال الفترة الزمنية المحدّدة.
   Chart showing the number of registered users over the selected time period.: رسم بياني يوضح عدد المستخدمين المُسجَّلين خلال الفترة الزمنية المحدّدة.
   ClickHouse: ClickHouse
   ClickHouse metrics: مقاييس ClickHouse
   Content Level: مستوى المحتوى
   Correct Attempts: المحاولات الصحيحة
-  Correct Attempts By Learner: المُحاولات الصحيحة مِن قِبَل المُتَعَلِّم
-  Correct Attempts by Selected Learner: مُتَوَسِّط المُحاولات الصحيحة مِن قِبَل مُتَعَلِّم مُحَدَّد
+  Correct Attempts By Learner: المحاولات الصحيحة من قبل المتعلم
+  Correct Attempts by Selected Learner: مُتوسِّط المحاولات الصحيحة من قِبَل متعلم محدّد
   Count: العدد
-  Count of Passing Grades: تِعداد الدرجات الناجِحة
-  Count of Scores: عََدد الدَرَجات
-  Count of unique users who performed an action in Superset over the selected time period.: عَدَد المُستَخدِمين الفريدين الذين نَفَّذوا إجراءً ما في Superset خِلال الفترة الزمنية المُحَدَّدة.
+  Count of Passing Grades: تعداد الدرجات الناجحة
+  Count of Scores: عدد الدرجات
+  Count of unique users who performed an action in Superset over the selected time period.: عدد المستخدمين الفريدين الذين نفّذوا إجراء ما في Superset خلال الفترة الزمنية المحدّدة.
   Count over time of unique users who performed an action in Superset over the selected time period.: الإحصاء بمرور الوقت للمستخدمين الفريدين الذين نفذوا إجراءً في Superset خلال الفترة الزمنية المحددة.
-  Course Comparison Dashboard: لوحة مُقارَنة المُقَرَّرات
-  Course Dashboard: اللوحة الرئيسية للمُقَرَّر
-  Course Data JSON: بيانات المُقَرَّر بِصيغة JSON
+  Course Comparison Dashboard: لوحة مقارنة المساقات
+  Course Dashboard: اللوحة الرئيسية للمساق
+  Course Data JSON: بيانات المساق بصيغة JSON
   Course End: تاريخ انتهاء المساق
-  Course Enrollments Over Time: عمليات التسجيل في المُقَرَّر مع مُرور الوقت
+  Course Enrollments Over Time: عمليات التسجيل في المساق مع مرور الوقت
   Course Grade: درجة المساق
-  Course ID: مُعَرَّف المُقَرَّر
-  Course Info: معلومات المُقَرَّر
-  Course Information: معلومات المُقَرَّر
+  Course ID: معرّف المساق
+  Course Info: معلومات المساق
+  Course Information: معلومات المساق
   Course Key: مفتاح المساق
-  Course Key Short: المِفتاح القصير للمُقَرَّر
-  Course Metrics: مقاييس المُقَرَّر
+  Course Key Short: المفتاح القصير للمساق
+  Course Metrics: مقاييس المساق
   Course Name: اسم الدورة التدريبية
   Course Order: ترتيب الدورة  التدريبية
   Course Run: تشغيل الدورة  التدريبية
   Course Start: تاريخ بدأ الدورة التدريبية
-  Course Tag: وَسْم المساق
+  Course Tag: وُسْم المساق
   Course grade: درجة الدورة  التدريبية
   Course name: اسم الدورة
   Course run: تشغيل الدورة
   Courses: الدورات
-  Courses Cnt: عَدَد المُقَرَّرات 
-  Courses Per Organization: المُقَرَّرات لِكُل مُؤَسَّسة
+  Courses Cnt: عدد المساقات
+  Courses Per Organization: المساقات لكل مؤسسة
   Created: 'أُنشِئ '
   Created By Fk: تم إنشاؤها بواسطة Fk
-  Created On: أُنشِئَ في
+  Created On: أُنشِئ في
   Cumulative Enrollments by Track: التسجيلات التراكمية حسب المسار
   Cumulative Interactions: التفاعلات التراكمية
-  Current Active Enrollments By Mode: الاشتِراكات النَشِطة الحاليّة حسب الوضع
+  Current Active Enrollments By Mode: الاشتراكات النشطة الحالية حسب الوضع
   Current Enrollees: المسجلين الحاليين
   Currently Enrolled Users: المستخدمين المسجلين حاليا
-  Dashboard ID: مُعَرَّف اللوحة الرئيسية
+  Dashboard ID: معرّف اللوحة الرئيسية
   Dashboard Status: حالة اللوحة الرئيسية
-  Dashboard Title: عُنوان اللوحة الرئيسية
+  Dashboard Title: عنوان اللوحة الرئيسية
   Datasource ID: معرف مصدر البيانات
   Datasource Name: اسم مصدر البيانات
   Datasource Type: نوع مصدر البيانات
   Date: التاريخ
   Description: الوصف
-  Display Name: الاسم الظاهِر
-  Distribution of Course Grades: التوزيع الإحصائي لدرجات المُقَرَّر
-  Distribution of Current Course Grade: التوزيع الإحصائي لدرجة المُقَرَّر الحالي
+  Display Name: الاسم الظاهر
+  Distribution of Course Grades: التوزيع الإحصائي لدرجات المساق
+  Distribution of Current Course Grade: التوزيع الإحصائي لدرجة المساق الحالي
   Dump ID: معرف التفريغ
   Duration (Seconds): المدة (ثواني)
   Email: البريد الإلكتروني
   Emission Day: يوم الإصدار
-  Emission Time: وقت الانبعاث
-  Engagement: 'التَفاعُل '
-  Enrolled At: مُلتَحِق في
-  Enrollees by Enrollment Track: المُسَجَّلون وِفقاً لِمَسار التسجيل
-  Enrollees per Enrollment Track: المُسَجَّلون لكل مَسار تسجيل
+  Emission Time: وقت الإصدار
+  Engagement: التفاعل
+  Enrolled At: مُلتحق في
+  Enrollees by Enrollment Track: المُسجَّلون وفقاً لمسار التسجيل
+  Enrollees per Enrollment Track: المُسجَّلون لكل مسار تسجيل
   Enrollment: التسجيل
-  Enrollment Counts: عدد المُسَجَّلين
+  Enrollment Counts: عدد المُسجَّلين
   Enrollment Date: تاريخ التسجيل
-  Enrollment Dates: مَواعيد التسجيل
+  Enrollment Dates: مواعيد التسجيل
   Enrollment End: نهاية التسجيل
   Enrollment Mode: وضع التسجيل
   Enrollment Start: بدء التسجيل
   Enrollment Status: حالة التسجيل
-  Enrollment Track: مَسار التسجيل
+  Enrollment Track: مسار التسجيل
   Enrollment status: حالة التسجيل
   Enrollment track: مسار التسجيل
   Enrollments: 'عمليات التسجيل '
@@ -124,142 +117,145 @@ en:
   Event ID: معرف الحدث
   Event String: سلسلة الحدث
   Event Time: وقت الحدث
-  Events Cnt: عَدَد الأَحداث
+  Events Cnt: عدد الأحداث
   Fail Login Count: فشل عدد تسجيل الدخول
-  Final Response Results: نَتَائِج الرَد النِهائي
+  Final Response Results: نتائج الرد النهائي
   First Name: الاسم الأول
-  Full Views: مُشاهَدات كامِلة
-  Grade Range: نِطاق الدَرَجات
-  Grade range: نِطاق الدَرَجات
-  Graded: مُقَيَّم
-  Graded Learners: المُتَعَلِّمون ذوو الدرجات
-  Graded Subsection Engagement: مُستَوى التَفاعُل مع القِسم الفُرعي المُقَيَّم
-  Graded Subsection Performance: أداء القِسم الفُرعي المُقَيَّم
+  Full Views: مشاهدات كاملة
+  Grade Range: نِطاق الدرجات
+  Grade range: نِطاق الدرجات
+  Graded: مقيّم
+  Graded Learners: المتعلمون ذوو الدرجات
+  Graded Subsection Engagement: مستوى التفاعل مع القِسم الفرعي المقيّم
+  Graded Subsection Performance: أداء القِسم الفرعي المُقيّم
   Help: المساعدة
   Http User Agent: وكيل مستخدم HTTP
   Id: بطاقة تعريف
-  'In-Context Analytics: Course': 'التحليلات ضِمن السِياق: المُقَرَّر'
-  'In-Context Analytics: Graded Subsection': 'التحليلات ضِمن السِياق: القِسم الفُرعي المُقَيَّم'
-  'In-Context Analytics: Problem': 'التحليلات ضِمن السِياق: المَسأَلة'
-  'In-Context Analytics: Video': 'التحليلات ضِمن السِياق: الفيديو'
+  'In-Context Analytics: Course': 'التحليلات ضِمن السياق: المساق'
+  'In-Context Analytics: Graded Subsection': 'التحليلات ضِمن السياق: القِسم الفرعي المقيّم'
+  'In-Context Analytics: Problem': 'التحليلات ضِمن السياق: المسألة'
+  'In-Context Analytics: Video': 'التحليلات ضِمن السياق: الفيديو'
   Incorrect Attempts: محاولات غير صحيحة
-  Incorrect Attempts By Learner: المُحاولات الخاطِئة مِن قِبَل المُتَعَلِّم
-  Incorrect Attempts by Selected Learner: المُحاولات الخاطِئة مِن قِبَل المُتَعَلِّم المُحَدَّد
-  Individual Learner: المُتَعَلِّم المُنفَرِد
-  Initial Numeric Responses: الإجابات الرَقمِية الأوَلِيّة
-  Initial Responses: الإجابات الأوَلِيّة
+  Incorrect Attempts By Learner: المحاولات الخاطئة من قبل المتعلم
+  Incorrect Attempts by Selected Learner: المحاولات الخاطئة من قبل المتعلم المحدّد
+  Individual Learner: المتعلم المنفرد
+  Initial Numeric Responses: الإجابات الرقمية الأوليّة
+  Initial Responses: الإجابات الأوليّة
   Interaction Type: نوع التفاعل
-  Last Course Published: أحدث مُقَرَّر منشور
+  Last Course Published: أحدث مساق منشور
   Last Login: أحدث تسجيل دخول
-  Last Name: اسم العائِلة (اللقب)
-  Last Received Event: أحدثُ حَدَث تَمَّ استِلامه
+  Last Name: اسم العائلة (اللقب)
+  Last Received Event: أحدث حدث تم استلامه
   Last Visit Date: تاريخ آخر زيارة
   Last Visited: آخر زيارة
-  Last course syncronized: أحدث مُقَرَّر تمّت مُزامَنته
-  Learner Performance: أداء المُتَعَلِّم
-  Learner Status: حالة المُتَعَلِّم
-  Learner Summary: مُوجَز المُتَعَلِّم
-  Learners: المُتَعَلِّمون
+  Last course syncronized: أحدث مساق تمّت مزامنته
+  Learner Performance: أداء المتعلم
+  Learner Status: حالة المتعلم
+  Learner Summary: موجز المتعلم
+  Learners: المتعلمون
   Learners with Passing Grade: المتعلمون الحاصلون على درجات النجاح
-  Login Count: تِعداد مَرَّات الدخول
+  Login Count: تعداد مرات الدخول
   Memory Usage (KB): استخدام الذاكرة (كيلو بايت)
-  Memory Usage Mb: استِخدام الذاكِرة بالميغابايت
+  Memory Usage Mb: استخدام الذاكرة بالميغابايت
   Modified: عُدِّل
-  More details: مَزيداً مِن التفاصيل
-  Most-used Charts: الرُسوم البيانية الأكثر استِخداماً
-  Most-used Dashboards: اللوحات الرئيسية الأكثَر استِخداماً
+  More details: مزيداً من التفاصيل
+  Most-used Charts: الرُسوم البيانية الأكثر استخداماً
+  Most-used Dashboards: اللوحات الرئيسية الأكثر استخداماً
   Name: الاسم
-  Name Org: اسم المُؤَسَّسة
+  Name Org: اسم المؤسسة
   Number of Learners: عدد المتعلمين
-  Number of Learners who Attempted the Problem: عدد المُتَعَلِّمين الذين حاولوا حَلَّ المَسألة
-  Number of Videos: عدد مقاطِع الفيديو
-  Number of Videos Watched: عدد مقاطِع الفيديو التي شوهِدَت
+  Number of Learners who Attempted the Problem: عدد المتعلمين الذين حاولوا حل المسألة
+  Number of Videos: عدد مقاطع الفيديو
+  Number of Videos Watched: عدد مقاطع الفيديو التي شوهِدَت
   Object ID: معرف الكائن
-  Object Id: مُعَرَّف الموضوع
+  Object Id: معرّف الموضوع
   Object Type: نوع الكائن
-  Only available in versions Redwood and later: مُتاح فقط في إصدارات Redwood والأحدث
-  Operator Dashboard: لوحة تَحَكُّم المُشَغِّل
-  Org: المُؤَسَّسة
-  Organization: مُؤَسَّسة
-  Organizations: المُؤَسَّسات
-  Overview: نَظرَة عامَّة
+  Only available in versions Redwood and later: متاح فقط في إصدارات Redwood والأحدث
+  Operator Dashboard: لوحة تحكّم المُشغِّل
+  Org: المؤسسة
+  Organization: مؤسسة
+  Organizations: المؤسسات
+  Overview: نظرة عامّة
   Page Count: عدد الصفحات
-  Page Engagement Over Time: التَفاعُل مع الصفحة بِمُرور الوقت
-  Page Engagement per Section: التَفاعُل مع الصفحة لِكُل قِسم
-  Page Engagement per Section/Subsection: التَفاعُل مع الصفحة لِكُل قِسم أو قِسم فرعي
-  Page Engagement per Subsection: مشاركة الصفحة لكل قسم فرعي
+  Page Engagement Over Time: التفاعل مع الصفحة بمرور الوقت
+  Page Engagement per Section: التفاعل مع الصفحة لكل قِسم
+  Page Engagement per Section/Subsection: التفاعل مع الصفحة لكل قِسم أو قِسم فرعي
+  Page Engagement per Subsection: التفاعل مع الصفحة لكل قِسم فرعي
   Pages: الصفحات
-  Partial Views: مُشاهَدات جُزْئِية
-  Partial and Full Video Views: مُشاهَدات الفيديو الجُزْئِية والكامِلة
-  Passed: ناجِح
-  Passed/Failed: نَجَحَ / فَشِلَ
+  Partial Views: مشاهدات جُزئية
+  Partial and Full Video Views: مشاهدات الفيديو الجُزئية والكاملة
+  Passed: ناجح
+  Passed/Failed: نجح / فشل
   Password: كلمة المرور
-  Performance: الأَدَاء
-  Problem Attempts: مُحاوَلات حَل المَسأَلة
-  Problem Attempts and Results: مُحاوَلات حَل المَسأَلة ونَتائِجِها
-  Problem Engagement: التَفاعُل مع المَسائِل
-  Problem Engagement per Section: التَفاعُل مع المَسَائِل لِكل قِسم
-  Problem Engagement per Section/Subsection: التَفاعُل مع المَسَائِل لِكل قِسم أو قِسم فَرعي
-  Problem Engagement per Subsection: التَفاعُل مع المَسَائِل لِكل قِسم فَرعي
-  Problem Id: مُعَرَّف المَسأَلة
-  Problem Link: رابِط المَسأَلة
-  Problem Location and Name: موقِع المَسأَلة واسمها
+  Performance: الأداء
+  Problem Attempts: محاولات حل المسألة
+  Problem Attempts and Results: محاولات حل المسألة ونتائجها
+  Problem Engagement: التفاعل مع المسائل
+  Problem Engagement per Section: التفاعل مع المسائل لكل قِسم
+  Problem Engagement per Section/Subsection: التفاعل مع المسائل لكل قِسم أو قِسم فرعي
+  Problem Engagement per Subsection: التفاعل مع المسائل لكل قِسم فرعي
+  Problem Id: معرّف المسألة
+  Problem Link: رابط المسألة
+  Problem Location and Name: موقع المسألة واسمها
   Problem Name: 'اسم المسألة '
-  Problem Name Location: مَوقِع اسم المَسأَلة
-  Problem Name With Location: اسم المَسأَلة مع مَوقِعِها
-  Problem Number: رَقم المَسأَلة
-  Problem Results: نَتائِج المَسأَلة
-  Problem Results Table: جَدوَل نَتَائِج المَسائِل
-  Problems: مَسائِل
-  Query: استِعلام
-  Query Duration Ms: مُدَّة الاستِعلامِ بالمِلي ثانِية
-  Query performance: أدَاءُ الاستِعلام
-  Respondents: المُستَجِيبون
-  Response: رَد
-  Response Numeric: إجابات رَقمِية
+  Problem Name Location: موقع اسم المسألة
+  Problem Name With Location: اسم المسألة مع موقعها
+  Problem Number: رقم المسألة
+  Problem Part: جزء المسألة
+  Problem Results: نتائج المسألة
+  Problem Results Table: جدول نتائج المسائل
+  Problems: مسائل
+  Query: استعلام
+  Query Duration Ms: مُدّة الاستعلام بالمِلي ثانية
+  Query performance: أدَاء الاستعلام
+  Respondents: المستجيبون
+  Response: رد
+  Response Count: عدد الإجابات
+  Response Numeric: إجابات رقمية
   Responses: الإجابات
   Result: النتيجة
-  Rownum: رقم السطر
-  Section Location and Name: مَوقِع القِسم واسمه
+  Score Range: نِطاق الدرجات
+  Section Location and Name: موقع القسم واسمه
   Section Name: اسم القسم
   Section Subsection Video Engagement: التفاعل مع مقاطع فيديو القِسم أو القِسم الفرعي
   Section Summary: ملخص القسم
-  Section With Name: القِسم ذوو الاسم
-  Section with name: القِسم ذوو الاسم
+  Section With Name: القِسم ذو الاسم
+  Section with name: القِسم ذو الاسم
   Section/Subsection Name: اسم القسم/القسم الفرعي
-  Section/Subsection Page Enggagement: التَفاعُل مع صفحات القِسم أو القِسم الفرعي
-  Section/Subsection Problem Engagement: التَفاعُل مع مسائِل القِسم أو القِسم الفرعي
-  Section/Subsection Video Engagement: التَفاعُل مع مقاطِع فيديو القِسم أو القِسم الفرعي
-  Segment Range: نِطاق المَقطع
+  Section/Subsection Page Enggagement: التفاعل مع صفحات القِسم أو القِسم الفرعي
+  Section/Subsection Problem Engagement: التفاعل مع مسائل القِسم أو القِسم الفرعي
+  Section/Subsection Video Engagement: التفاعل مع مقاطع فيديو القِسم أو القِسم الفرعي
+  Segment Range: نِطاق المقطع
   Segment Start: بداية المقطع
-  Self Paced: تعلّم ذاتيّ
+  Self Paced: تعلّم ذاتي
   Slice ID: معرف الشريحة
   Slice Name: اسم الشريحة
   Slowest ClickHouse Queries: أبطأ استعلامات ClickHouse
-  Start Position: نُقطة البِداية
+  Start Position: نقطة البداية
   Started At: بدأت في
   Subsection Location and Name: موقع القسم الفرعي واسمه
   Subsection Name: اسم القسم الفرعي
-  Subsection Number: رَقم القِسم الفَرعي
+  Subsection Number: رقم القِسم الفرعي
   Subsection Summary: ملخص القسم الفرعي
-  Subsection With Name: القِسم الفرعي ذوو الاسم
-  Subsection with name: القِسم الفرعي ذوو الاسم
-  Success: جرت العملية بِنَجاح
+  Subsection With Name: القِسم الفرعي ذو الاسم
+  Subsection with name: القِسم الفرعي ذو الاسم
+  Success: جرت العملية بنجاح
   Superset: Superset
-  Superset Active Users: مُستَخدِمو Superset النَشِطون
-  Superset Active Users Over Time: مُستَخدِمو Superset النَشِطون بِمُرور الوقت
-  Superset Registered Users Over Time: المُستَخدِمون المُسَجَّلون في  Superset بِمُرور الوقت
+  Superset Active Users: مستخدمو Superset النشطون
+  Superset Active Users Over Time: مستخدمو Superset النشطون بمرور الوقت
+  Superset Registered Users Over Time: المستخدمون المُسجَّلون في  Superset بمرور الوقت
   Tables: الجداول
-  Tag: وَسْم
+  Tag: وَسم
   Tags: وُسوم
-  Time Last Dumped: وَقت آخِر تفريغ
+  Time Last Dumped: وقت آخِر تفريغ
   Time Range: النطاق الزمني
-  Total: المَجموع
-  Total Avg: 'المُتَوَسِّط الإجمالي  '
-  Total Courses: إجمالي المُقَرَّرات
-  Total Organizations: إجمالي المُؤَسَّسات
-  Total Views: العدد الكليّ للمُشاهدات
-  Unique Viewers: المُشاهِدون الفريدون
+  Time Stamp: الطابع الزمني
+  Total: المجموع
+  Total Avg: 'المُتوسط الإجمالي  '
+  Total Courses: إجمالي المساقات
+  Total Organizations: إجمالي المؤسسات
+  Total Views: العدد الكليّ للمشاهدات
+  Unique Viewers: المشاهدون الفريدون
   User ID: رقم المستخدم
   User Info: معلومات المستخدم
   User Name: اسم المستخدم
@@ -267,40 +263,44 @@ en:
   Username: اسم المستخدم
   Value: القيمة
   Video Duration: مدة الفيديو
-  Video Engagement: التَفاعُل مع الفيديو
-  Video Engagement per Section: التَفاعُل مع مقاطِع الفيديو لِكُل قِسم
-  Video Engagement per Section/Subsection: التَفاعُل مع مقاطِع الفيديو لِكُل قِسم أو قِسم فرعي
-  Video Engagement per Subsection: التَفاعُل مع مقاطِع الفيديو لِكُل قِسم فرعي
-  Video Event: الحدث المُتَعلِّق بالفيديو
-  Video ID: مُعَرَّف الفيديو
-  Video Id: مُعَرَّف الفيديو
+  Video Engagement: التفاعل مع الفيديو
+  Video Engagement per Section: التفاعل مع مقاطع الفيديو لكل قِسم
+  Video Engagement per Section/Subsection: التفاعل مع مقاطع الفيديو لكل قِسم أو قِسم فرعي
+  Video Engagement per Subsection: التفاعل مع مقاطع الفيديو لكل قِسم فرعي
+  Video Event: الحدث المتعلق بالفيديو
+  Video ID: معرّف الفيديو
+  Video Id: معرّف الفيديو
   Video Link: رابط الفيديو
-  Video Location and Name: مَوقِع الفيديو واسمه
+  Video Location and Name: موقع الفيديو واسمه
   Video Name: اسم الفيديو
-  Video Name With Location: اسم الفيديو ومَوقِعه
-  Video Number: رَقم الفيديو
-  Video Position: مَوضِع الفيديو
+  Video Name Location: موقع اسم الفيديو
+  Video Name With Location: اسم الفيديو وموقعه
+  Video Number: رقم الفيديو
+  Video Position: موضع الفيديو
+  Video Segment Count: عدد مقاطع الفيديو
   Videos: الفيديوهات
-  Viewed All Pages: شاهَدَ جميع الصفحات
-  Viewed All Videos: شاهَدَ جميع الفيديوهات
-  Viewed At Least One Page: شاهَدَ صفحة واحدة على الأقل
-  Viewed At Least One Video: شاهَدَ مَقطع فيدو واحد على الأقل
-  Visited On: تَمَّت زيارته في
-  Watched Entire Video: لقد شاهَدْتَ الفيديو كامِلاً
+  Viewed All Pages: شاهَد جميع الصفحات
+  Viewed All Videos: شاهَد جميع الفيديوهات
+  Viewed At Least One Page: شاهَد صفحة واحدة على الأقل
+  Viewed At Least One Video: شاهَد مقطع فيديو واحد على الأقل
+  Visited On: تمّت زيارته في
+  Watched Entire Video: شاهد الفيديو بالكامل
+  Watched Time: الوقت المشاهد
   audit: مُستمِع
-  failed: فَشِل
-  graded: مُقَيَّم
+  failed: فشل
+  graded: مُقيّم
   honor: شرف
-  passed: ناجِح
+  order: طلبية
+  passed: ناجح
   registered: مسجل
   section_subsection_name: section_subsection_name
   section_subsection_page_engagement: section_subsection_page_engagement
   section_subsection_problem_engagement: section_subsection_problem_engagement
-  sort: رَتِّب
-  success: جرت العملية بِنَجاح
-  ungraded: غير مُقَيَّم
+  sort: رتِّب
+  success: جرت العملية بنجاح
+  ungraded: غير مقيّم
   unregistered: غير مسجل
-  verified: مُوَثَّق
+  verified: موثّق
   '{{ASPECTS_COURSE_COMPARISON_HELP_MARKDOWN}}': '{{ASPECTS_COURSE_COMPARISON_HELP_MARKDOWN}}'
   '{{ASPECTS_COURSE_OVERVIEW_HELP_MARKDOWN}}': '{{ASPECTS_COURSE_OVERVIEW_HELP_MARKDOWN}}'
   '{{ASPECTS_INDIVIDUAL_LEARNER_HELP_MARKDOWN}}': '{{ASPECTS_INDIVIDUAL_LEARNER_HELP_MARKDOWN}}'

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-ora2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:35+0000\n"
+"POT-Creation-Date: 2025-10-30 00:45+0000\n"
 "PO-Revision-Date: 2014-06-04 15:41-0400\n"
 "Last-Translator: Muhammad Ayub khan <ayubkhan@edx.org>\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -1786,19 +1786,19 @@ msgstr "Wybierz plik do przesłania w ramach tego zgłoszenia."
 msgid "Supported file types: "
 msgstr "Obsługiwane typy plików: "
 
-#: templates/legacy/response/oa_response.html:285
+#: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
 msgstr "Prześlij pliki"
 
-#: templates/legacy/response/oa_response.html:287
+#: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
 msgstr "Prześlij plik"
 
-#: templates/legacy/response/oa_response.html:304
+#: templates/legacy/response/oa_response.html:305
 msgid "This is a team submission."
 msgstr "To jest zgłoszenie zespołowe."
 
-#: templates/legacy/response/oa_response.html:306
+#: templates/legacy/response/oa_response.html:307
 msgid ""
 "One team member should submit a response with the team’s shared files and a "
 "text response on behalf of the entire team."
@@ -1806,7 +1806,7 @@ msgstr ""
 "Jeden członek zespołu powinien przesłać odpowiedź wraz ze współdzielonymi "
 "plikami zespołu i odpowiedzią tekstową w imieniu całego zespołu."
 
-#: templates/legacy/response/oa_response.html:308
+#: templates/legacy/response/oa_response.html:309
 msgid ""
 "One team member should submit a response with the team’s shared files on "
 "behalf of the entire team."
@@ -1814,18 +1814,18 @@ msgstr ""
 "Jeden członek zespołu powinien przesłać odpowiedź wraz ze współdzielonymi "
 "plikami zespołu w imieniu całego zespołu."
 
-#: templates/legacy/response/oa_response.html:310
+#: templates/legacy/response/oa_response.html:311
 msgid ""
 "One team member should submit a text response on behalf of the entire team."
 msgstr ""
 "Jeden członek zespołu powinien przesłać odpowiedź tekstową w imieniu całego "
 "zespołu."
 
-#: templates/legacy/response/oa_response.html:312
+#: templates/legacy/response/oa_response.html:313
 msgid "One team member should submit on behalf of the entire team."
 msgstr "Jeden członek zespołu powinien przesłać w imieniu całego zespołu."
 
-#: templates/legacy/response/oa_response.html:314
+#: templates/legacy/response/oa_response.html:315
 msgid ""
 "\n"
 "                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
@@ -1835,11 +1835,11 @@ msgstr ""
 "                  Dowiedz się więcej o zadaniach zespołowych tutaj: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
 "                  "
 
-#: templates/legacy/response/oa_response.html:322
+#: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
 msgstr "Nie udało się przesłać Twojej odpowiedzi"
 
-#: templates/legacy/response/oa_response.html:333
+#: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
 msgstr "Prześlij swoją odpowiedź i przejdź do następnego kroku"
 

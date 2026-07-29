@@ -39,26 +39,28 @@ en:
   Avg % Correct on 1st Attempt: Avg % Correct on 1st Attempt
   Avg Attempts: Avg Attempts
   Avg Correct Attempts Coursewide: Avg Correct Attempts Coursewide
-  Avg Correct Attempts by Selected Learners: Avg Correct Attempts by Selected Learners
+  Avg Correct Attempts by Selected Learners: Avg Correct Attempts by Selected 
+    Learners
   Avg Course Grade: Avg Course Grade
   Avg Incorrect Attempts Coursewide: Avg Incorrect Attempts Coursewide
-  Avg Incorrect Attempts by Selected Learners: Avg Incorrect Attempts by Selected
-    Learners
-  Avg Score: Avg Score
+  Avg Incorrect Attempts by Selected Learners: Avg Incorrect Attempts by 
+    Selected Learners
   Avg Video Length (seconds): Avg Video Length (seconds)
   Block ID: Block ID
   Block Id: Block Id
+  Block Name: Block Name
+  Block Type: Block Type
   COUNT(*): COUNT(*)
   Changed By Fk: Changed By Fk
   Changed On: Changed On
-  Chart showing the number of Superset actions taken on each chart in the selected time period.: Chart
-    showing the number of Superset actions taken on each chart in the selected time
-    period.
-  Chart showing the number of Superset actions taken on each dashboard in the selected time period.: Chart
-    showing the number of Superset actions taken on each dashboard in the selected
-    time period.
-  Chart showing the number of registered users over the selected time period.: Chart
-    showing the number of registered users over the selected time period.
+  Chart showing the number of Superset actions taken on each chart in the 
+    selected time period.: Chart showing the number of Superset actions taken on
+    each chart in the selected time period.
+  Chart showing the number of Superset actions taken on each dashboard in the 
+    selected time period.: Chart showing the number of Superset actions taken on
+    each dashboard in the selected time period.
+  Chart showing the number of registered users over the selected time period.: 
+    Chart showing the number of registered users over the selected time period.
   ClickHouse: ClickHouse
   ClickHouse metrics: ClickHouse metrics
   Content Level: Content Level
@@ -68,11 +70,12 @@ en:
   Count: Count
   Count of Passing Grades: Count of Passing Grades
   Count of Scores: Count of Scores
-  Count of unique users who performed an action in Superset over the selected time period.: Count
-    of unique users who performed an action in Superset over the selected time period.
-  Count over time of unique users who performed an action in Superset over the selected time period.: Count
-    over time of unique users who performed an action in Superset over the selected
-    time period.
+  Count of unique users who performed an action in Superset over the selected 
+    time period.: Count of unique users who performed an action in Superset over
+    the selected time period.
+  Count over time of unique users who performed an action in Superset over the 
+    selected time period.: Count over time of unique users who performed an 
+    action in Superset over the selected time period.
   Course Comparison Dashboard: Course Comparison Dashboard
   Course Dashboard: Course Dashboard
   Course Data JSON: Course Data JSON
@@ -100,10 +103,10 @@ en:
   Courses Per Organization: Courses Per Organization
   Coursewide % Correct: Coursewide % Correct
   Coursewide Percent Correct: Coursewide Percent Correct
-  Coursewide averages are based on learners who attempted the problem.: Coursewide
-    averages are based on learners who attempted the problem.
-  Coursewide percentages are based on learners who attempted the problem.: Coursewide
-    percentages are based on learners who attempted the problem.
+  Coursewide averages are based on learners who attempted the problem.: 
+    Coursewide averages are based on learners who attempted the problem.
+  Coursewide percentages are based on learners who attempted the problem.: 
+    Coursewide percentages are based on learners who attempted the problem.
   Created: Created
   Created By Fk: Created By Fk
   Created On: Created On
@@ -121,9 +124,11 @@ en:
   Date: Date
   Description: Description
   Display Name: Display Name
-  Displays the top 10 highest enrollment courses. Selecting different courses in the filter will display those courses.: Displays
-    the top 10 highest enrollment courses. Selecting different courses in the filter
-    will display those courses.
+  Display Name With Location: Display Name With Location
+  Displays the top 10 highest enrollment courses. Selecting different courses in 
+    the filter will display those courses.: Displays the top 10 highest 
+    enrollment courses. Selecting different courses in the filter will display 
+    those courses.
   Distribution of Course Grades: Distribution of Course Grades
   Distribution of Current Course Grade: Distribution of Current Course Grade
   Dump ID: Dump ID
@@ -156,6 +161,7 @@ en:
   Fail Login Count: Fail Login Count
   Final Response Results: Final Response Results
   First Name: First Name
+  First Try Correct Count: First Try Correct Count
   Full Views: Full Views
   Grade Bucket: Grade Bucket
   Grade Range: Grade Range
@@ -165,6 +171,7 @@ en:
   Graded Subsection Engagement: Graded Subsection Engagement
   Graded Subsection Performance: Graded Subsection Performance
   Help: Help
+  Hierarchy Location: Hierarchy Location
   Http User Agent: Http User Agent
   Id: Id
   'In-Context Analytics: Course': 'In-Context Analytics: Course'
@@ -179,6 +186,7 @@ en:
   Initial Responses: Initial Responses
   Instance Health: Instance Health
   Interaction Type: Interaction Type
+  Item Count: Item Count
   Last Course Published: Last Course Published
   Last Login: Last Login
   Last Name: Last Name
@@ -204,22 +212,21 @@ en:
   Name: Name
   Name Org: Name Org
   Number of Learners: Number of Learners
-  Number of Learners who Attempted the Problem: Number of Learners who Attempted the
-    Problem
+  Number of Learners who Attempted the Problem: Number of Learners who Attempted
+    the Problem
   Number of Videos: Number of Videos
   Number of Videos Watched: Number of Videos Watched
   Number of Views across Video Duration: Number of Views across Video Duration
   Object ID: Object ID
   Object Id: Object Id
   Object Type: Object Type
-  Only available in versions Redwood and later: Only available in versions Redwood
-    and later
+  Only available in versions Redwood and later: Only available in versions 
+    Redwood and later
   Operator Dashboard: Operator Dashboard
   Org: Org
   Organization: Organization
   Organizations: Organizations
   Overview: Overview
-  Page Count: Page Count
   Page Engagement Over Time: Page Engagement Over Time
   Page Engagement per Section: Page Engagement per Section
   Page Engagement per Section/Subsection: Page Engagement per Section/Subsection
@@ -235,15 +242,17 @@ en:
   Problem Attempts and Results: Problem Attempts and Results
   Problem Engagement: Problem Engagement
   Problem Engagement per Section: Problem Engagement per Section
-  Problem Engagement per Section/Subsection: Problem Engagement per Section/Subsection
+  Problem Engagement per Section/Subsection: Problem Engagement per 
+    Section/Subsection
   Problem Engagement per Subsection: Problem Engagement per Subsection
   Problem Id: Problem Id
   Problem Link: Problem Link
-  Problem Location and Name: Problem Location and Name
   Problem Name: Problem Name
   Problem Name Location: Problem Name Location
   Problem Name With Location: Problem Name With Location
+  Problem Name and Location: Problem Name and Location
   Problem Number: Problem Number
+  Problem Part: Problem Part
   Problem Results: Problem Results
   Problem Results Table: Problem Results Table
   Problems: Problems
@@ -254,26 +263,33 @@ en:
   Repeat Views: Repeat Views
   Respondents: Respondents
   Response: Response
+  Response Count: Response Count
   Response Numeric: Response Numeric
   Responses: Responses
   Result: Result
   Result Rows: Result Rows
-  Rewatched Time: Rewatched Time
+  Rewatched: Rewatched
   Rownum: Rownum
   Run Metrics: Run Metrics
   Run Name: Run Name
   Scaled Score: Scaled Score
+  Score Range: Score Range
+  Score Range Count: Score Range Count
+  Section Block Id: Section Block Id
   Section Location and Name: Section Location and Name
   Section Name: Section Name
+  Section Name and Location: Section Name and Location
+  Section Number: Section Number
+  Section Subsection Name: Section Subsection Name
   Section Subsection Video Engagement: Section Subsection Video Engagement
   Section Summary: Section Summary
   Section With Name: Section With Name
-  Section with name: Section with name
   Section/Subsection Name: Section/Subsection Name
   Section/Subsection Page Enggagement: Section/Subsection Page Enggagement
   Section/Subsection Problem Engagement: Section/Subsection Problem Engagement
   Section/Subsection Video Engagement: Section/Subsection Video Engagement
-  Segment Range: Segment Range
+  Segment Count: Segment Count
+  Segment Count Rewatched: Segment Count Rewatched
   Segment Start: Segment Start
   Selected Learner % Correct: Selected Learner % Correct
   Selected Learner % Incorrect: Selected Learner % Incorrect
@@ -285,10 +301,9 @@ en:
   Slice ID: Slice ID
   Slice Name: Slice Name
   Slowest ClickHouse Queries: Slowest ClickHouse Queries
-  Start Position: Start Position
-  Started At: Started At
+  Subsection Block Id: Subsection Block Id
   Subsection Location and Name: Subsection Location and Name
-  Subsection Name: Subsection Name
+  Subsection Name and Location: Subsection Name and Location
   Subsection Number: Subsection Number
   Subsection Summary: Subsection Summary
   Subsection With Name: Subsection With Name
@@ -306,16 +321,17 @@ en:
   Time Last Dumped: Time Last Dumped
   Time Range: Time Range
   Time Stamp: Time Stamp
-  ? To view the number of views across the duration of a single video, click the name
-    of the video in the Video Link column in table above.
-  : To view the number of views across the duration of a single video, click the name
-    of the video in the Video Link column in table above.
+  ? To view the number of views across the duration of a single video, click the
+    name of the video in the Video Link column in table above.
+  : To view the number of views across the duration of a single video, click the
+    name of the video in the Video Link column in table above.
   Total: Total
   Total Avg: Total Avg
   Total Courses: Total Courses
   Total Organizations: Total Organizations
   Total Views: Total Views
   Unique Viewers: Unique Viewers
+  Unique Views: Unique Views
   Unique vs. Repeat Views: Unique vs. Repeat Views
   User ID: User ID
   User Info: User Info
@@ -329,29 +345,23 @@ en:
   Video Duration: Video Duration
   Video Engagement: Video Engagement
   Video Engagement per Section: Video Engagement per Section
-  Video Engagement per Section/Subsection: Video Engagement per Section/Subsection
+  Video Engagement per Section/Subsection: Video Engagement per 
+    Section/Subsection
   Video Engagement per Subsection: Video Engagement per Subsection
   Video Event: Video Event
-  Video ID: Video ID
-  Video Id: Video Id
   Video Link: Video Link
-  Video Location and Name: Video Location and Name
-  Video Name: Video Name
   Video Name Location: Video Name Location
-  Video Name With Location: Video Name With Location
   Video Number: Video Number
-  Video Position: Video Position
-  Video Segment Count: Video Segment Count
+  Video Rewatched Count: Video Rewatched Count
+  Video Watched Count: Video Watched Count
   Videos: Videos
   Viewed All Pages: Viewed All Pages
   Viewed All Videos: Viewed All Videos
   Viewed At Least One Page: Viewed At Least One Page
   Viewed At Least One Video: Viewed At Least One Video
   Visited On: Visited On
-  Visualization Bucket: Visualization Bucket
+  Watched Count: Watched Count
   Watched Entire Video: Watched Entire Video
-  Watched Segment Count: Watched Segment Count
-  Watched Time: Watched Time
   audit: audit
   failed: failed
   graded: graded

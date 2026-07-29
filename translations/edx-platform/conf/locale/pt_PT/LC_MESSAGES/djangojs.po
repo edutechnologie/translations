@@ -18,10 +18,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-25 00:36+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
+"POT-Creation-Date: 2025-09-19 00:44+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
 "Last-Translator: Brian Smith, 2025\n"
-"Language-Team: Portuguese (Portugal) (https://app.transifex.com/open-edx/teams/6205/pt_PT/)\n"
+"Language-Team: Portuguese (Portugal) (https://app.transifex.com/open-edx/teams/301281/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -64,11 +64,11 @@ msgstr "Erro ao Guardar a AvaliaçãoAberta"
 msgid "Saving"
 msgstr "A guardar"
 
-#: cms/static/js/base.js:101
+#: cms/static/js/base.js:113
 msgid "This link will open in a new browser window/tab"
 msgstr "Este link irá abrir numa nova janela/separador do navegador"
 
-#: cms/static/js/base.js:108
+#: cms/static/js/base.js:120
 msgid "This link will open in a modal window"
 msgstr "Esta ligação abrir-se-á numa janela modal"
 
@@ -548,6 +548,7 @@ msgstr "Não foi possível enviar o seu ficheiro"
 #: cms/static/js/views/modals/course_outline_modals.js:351
 #: cms/static/js/views/modals/edit_xblock.js:151
 #: cms/static/js/views/video_transcripts.js:325
+#: lms/static/js/student_account/enrollment.js:87
 #: lms/static/js/student_account/tos_modal.js:48
 #: xmodule/js/src/html/edit.js:370
 #: cms/templates/js/course-video-settings.underscore:6
@@ -618,8 +619,8 @@ msgid ""
 "\n"
 "Also any content that links/refers to this item will no longer work (e.g. broken images and/or links)"
 msgstr ""
-"Tem certeza que deseja eliminar este item? A operação não pode ser revertida! ⏎\n"
-"⏎\n"
+"Tem certeza que deseja eliminar este item? A operação não pode ser revertida! \n"
+"\n"
 "Além disso, qualquer conteúdo que tenha links ou se refira a este item deixa de funcionar (ex.: imagens e/or links quebrados) "
 
 #: cms/static/js/views/asset.js:64
@@ -688,7 +689,7 @@ msgstr "Adicionar conteúdo da biblioteca"
 
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:642
+#: cms/static/js/views/pages/container.js:652
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "Adicionar"
@@ -707,8 +708,8 @@ msgstr "Tem certeza que quer eliminar esta atualização?"
 #: cms/static/js/views/course_info_update.js:241
 #: cms/static/js/views/course_outline.js:390
 #: cms/static/js/views/course_outline.js:402
-#: cms/static/js/views/pages/container.js:414
-#: cms/static/js/views/pages/container.js:426 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/pages/container.js:424
+#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
 #: cms/static/js/views/utils/xblock_utils.js:101
 #: cms/static/js/views/utils/xblock_utils.js:113
 #: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
@@ -718,7 +719,7 @@ msgid "OK"
 msgstr "OK"
 
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:767
+#: cms/static/js/views/pages/container.js:779
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "Copiar"
@@ -728,19 +729,19 @@ msgid "Copy of \"{componentDisplayName}\""
 msgstr "Cópia de \"{componentDisplayName}\""
 
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:385
+#: cms/static/js/views/pages/container.js:395
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
 msgstr "Colar"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:409
+#: cms/static/js/views/pages/container.js:419
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "Ocorreram alguns erros"
 
 #: cms/static/js/views/course_outline.js:387
-#: cms/static/js/views/pages/container.js:411
+#: cms/static/js/views/pages/container.js:421
 #: cms/static/js/views/utils/xblock_utils.js:98
 msgid "The following required files could not be added to the course:"
 msgstr ""
@@ -748,13 +749,13 @@ msgstr ""
 "disciplina:"
 
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:429
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr "Poderá ser necessário atualizar manualmente um ou mais ficheiros"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:422
+#: cms/static/js/views/pages/container.js:432
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -764,26 +765,26 @@ msgstr ""
 "versão utilizada pelo componente que colou:"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:431
+#: cms/static/js/views/pages/container.js:441
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "Novo(s) ficheiro(s) adicionado(s) a Ficheiros & Uploads."
 
 #: cms/static/js/views/course_outline.js:409
-#: cms/static/js/views/pages/container.js:433
+#: cms/static/js/views/pages/container.js:443
 #: cms/static/js/views/utils/xblock_utils.js:120
 msgid "The following required files were imported to this course:"
 msgstr ""
 "Os seguintes ficheiros obrigatórios foram importados para esta disciplina:"
 
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:438
+#: cms/static/js/views/pages/container.js:448
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "Ver ficheiros"
 
 #: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:447
+#: cms/static/js/views/pages/container.js:457
 #: cms/static/js/views/utils/xblock_utils.js:134
 msgid "Dismiss"
 msgstr "Rejeitar"
@@ -823,7 +824,7 @@ msgid "Select language"
 msgstr "Selecionar idioma"
 
 #: cms/static/js/views/course_video_settings.js:474
-#: cms/static/js/views/metadata.js:357
+#: cms/static/js/views/metadata.js:362
 #: cms/static/js/views/previous_video_upload.js:78
 #: cms/static/js/views/video_transcripts.js:270
 #: lms/djangoapps/teams/static/teams/js/views/edit_team_members.js:96
@@ -1126,7 +1127,7 @@ msgstr "Tem a certeza?"
 msgid "Are you sure you want to restrict {email} access to “{container}”?"
 msgstr "Tem a certeza que pretende limitar o acesso de {email} a \"{container}\"?"
 
-#: cms/static/js/views/metadata.js:610 lms/static/js/views/file_uploader.js:47
+#: cms/static/js/views/metadata.js:615 lms/static/js/views/file_uploader.js:47
 msgid "Upload File"
 msgstr "Carregar Ficheiro"
 
@@ -1344,7 +1345,7 @@ msgstr "Data adicionada"
 
 #. Translators: "title" is the name of the current component or unit being
 #. edited.
-#: cms/static/js/views/pages/container.js:719
+#: cms/static/js/views/pages/container.js:731
 msgid "Editing access for: {title}"
 msgstr "Editar o acesso para: {title}"
 
@@ -1963,7 +1964,7 @@ msgstr "Aviso"
 #: common/static/common/js/discussion/views/discussion_thread_view.js:233
 #: common/static/common/js/discussion/views/response_comment_view.js:121
 #: lms/djangoapps/instructor/static/instructor/ProblemBrowser/components/ReportStatus/ReportStatus.jsx:33
-#: lms/static/js/student_account/views/FinishAuthView.js:82
+#: lms/static/js/student_account/views/FinishAuthView.js:84
 #: lms/static/js/verify_student/views/step_view.js:50
 #: lms/static/js/views/fields.js:43
 msgid "Error"
@@ -3858,64 +3859,72 @@ msgstr "Carregando dados..."
 msgid "Error getting issued certificates list."
 msgstr "Erro ao obter lista de certificados emitidos."
 
-#: lms/static/js/instructor_dashboard/data_download.js:123
+#: lms/static/js/instructor_dashboard/data_download.js:124
 msgid "Error generating anonymous IDs. Please try again."
 msgstr "Erro ao criar IDs anónimos. Por favor, tente de novo."
 
-#: lms/static/js/instructor_dashboard/data_download.js:149
+#: lms/static/js/instructor_dashboard/data_download.js:150
 #: lms/static/js/instructor_dashboard/data_download_2.js:49
 msgid "Error generating proctored exam results. Please try again."
 msgstr ""
 "Erro ao gerar resultados de exames supervisionados. Por favor, tente "
 "novamente."
 
-#: lms/static/js/instructor_dashboard/data_download.js:175
+#: lms/static/js/instructor_dashboard/data_download.js:176
 #: lms/static/js/instructor_dashboard/data_download_2.js:48
 msgid "Error generating survey results. Please try again."
 msgstr ""
 "Erro ao gerar os resultados dos inquéritos. Por favor, tente novamente."
 
-#: lms/static/js/instructor_dashboard/data_download.js:201
+#: lms/static/js/instructor_dashboard/data_download.js:202
 #: lms/static/js/instructor_dashboard/data_download_2.js:47
 msgid "Error generating student profile information. Please try again."
 msgstr ""
 "Erro ao gerar informação do perfil de estudante. Por favor, tente novamente."
 
-#: lms/static/js/instructor_dashboard/data_download.js:227
+#: lms/static/js/instructor_dashboard/data_download.js:228
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmarks_list.js:23
 #: cms/templates/js/move-xblock-modal.underscore:6
 #: openedx/features/course_search/static/course_search/templates/search_loading.underscore:1
 msgid "Loading"
 msgstr "Carregando"
 
-#: lms/static/js/instructor_dashboard/data_download.js:235
+#: lms/static/js/instructor_dashboard/data_download.js:236
 msgid "Error getting student list."
 msgstr "Erro ao obter a lista de alunos."
 
-#: lms/static/js/instructor_dashboard/data_download.js:301
+#: lms/static/js/instructor_dashboard/data_download.js:302
 #: lms/static/js/instructor_dashboard/data_download_2.js:50
 msgid "Error generating list of students who may enroll. Please try again."
 msgstr ""
 "Erro ao gerar lista de estudantes que se podem inscrever. Por favor, tente "
 "novamente."
 
-#: lms/static/js/instructor_dashboard/data_download.js:333
+#: lms/static/js/instructor_dashboard/data_download.js:327
+msgid ""
+"Error generating list of inactive students who are enrolled in a course. "
+"Please try again."
+msgstr ""
+"Erro ao gerar a lista de estudantes inativos que estão inscritos num curso. "
+"Por favor, tente novamente."
+
+#: lms/static/js/instructor_dashboard/data_download.js:359
 msgid "Error retrieving grading configuration."
 msgstr "Erro ao recuperar a configuração da classificação."
 
-#: lms/static/js/instructor_dashboard/data_download.js:358
+#: lms/static/js/instructor_dashboard/data_download.js:384
 #: lms/static/js/instructor_dashboard/data_download_2.js:156
 msgid "Error generating grades. Please try again."
 msgstr "Erro ao gerar as classificações. Por favor, tente novamente."
 
-#: lms/static/js/instructor_dashboard/data_download.js:360
+#: lms/static/js/instructor_dashboard/data_download.js:386
 #: lms/static/js/instructor_dashboard/data_download_2.js:46
 msgid "Error generating problem grade report. Please try again."
 msgstr ""
 "Erro ao gerar o relatório de problemas de classificação. Por favor, tente "
 "novamente."
 
-#: lms/static/js/instructor_dashboard/data_download.js:362
+#: lms/static/js/instructor_dashboard/data_download.js:388
 #: lms/static/js/instructor_dashboard/data_download_2.js:45
 msgid "Error generating ORA data report. Please try again."
 msgstr "Erro ao gerar relatório de dados ORA. Por favor, tente novamente."
@@ -4109,11 +4118,29 @@ msgid "Successfully enrolled the following users:"
 msgstr "Os seguintes utilizadores foram inscritos com sucesso:"
 
 #. Translators: A list of users appears after this sentence;
+#: lms/static/js/instructor_dashboard/membership.js:792
+msgid ""
+"Email was sent to the following users. They will be allowed to enroll once "
+"they register:"
+msgstr ""
+"Foi enviado um e-mail aos seguintes utilizadores. Poderão inscrever-se assim"
+" que concluírem o registo:"
+
+#. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:804
 msgid "These users will be allowed to enroll once they register:"
 msgstr ""
 "Estes utilizadores terão permissão para se inscreverem depois de se "
 "registarem:"
+
+#. Translators: A list of users appears after this sentence;
+#: lms/static/js/instructor_dashboard/membership.js:816
+msgid ""
+"Email was sent to the following users. They will be enrolled once they "
+"register:"
+msgstr ""
+"Foi enviado um e-mail aos seguintes utilizadores. Serão inscritos assim que "
+"concluírem o registo:"
 
 #. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:828
@@ -4949,19 +4976,39 @@ msgstr ""
 msgid "Terms of Service and Honor Code"
 msgstr "Termos de Serviço e Código de Honra"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:109
+#: lms/static/js/student_account/views/FinishAuthView.js:71
+msgid "query param next is provide"
+msgstr "O parâmetro de consulta “Seguinte” foi fornecido."
+
+#: lms/static/js/student_account/views/FinishAuthView.js:73
+msgid "query param next is internal"
+msgstr "O parâmetro de consulta “Seguinte” é interno."
+
+#: lms/static/js/student_account/views/FinishAuthView.js:111
 msgid "Saving your email preference"
 msgstr "A guardar a sua preferência de email"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:127
+#: lms/static/js/student_account/views/FinishAuthView.js:129
 msgid "Enrolling you in the selected course"
 msgstr "Inscrevendo-o/a no curso selecionado"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:159
+#: lms/static/js/student_account/views/FinishAuthView.js:140
+msgid "course mode param is not provided"
+msgstr "O parâmetro de modo do curso não foi fornecido."
+
+#: lms/static/js/student_account/views/FinishAuthView.js:148
+msgid "course mode param is provided"
+msgstr "O parâmetro de modo do curso foi fornecido."
+
+#: lms/static/js/student_account/views/FinishAuthView.js:163
 msgid "Adding the selected course to your cart"
 msgstr "A adicionar o curso selecionado ao seu carrinho"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:172
+#: lms/static/js/student_account/views/FinishAuthView.js:167
+msgid " redirect the user to the next page"
+msgstr "Redirecionar o utilizador para a página seguinte."
+
+#: lms/static/js/student_account/views/FinishAuthView.js:177
 msgid "Loading your courses"
 msgstr "Carregando os seus cursos"
 
@@ -5288,7 +5335,7 @@ msgid "Bookmark this page"
 msgstr "Marcar esta página como favorita"
 
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmark_button.js:10
-#: xmodule/js/src/sequence/display.js:445
+#: xmodule/js/src/sequence/display.js:521
 msgid "Bookmarked"
 msgstr "Marcado como favorito"
 
@@ -5409,17 +5456,17 @@ msgstr[0] "{earned}/{possible} ponto (não classificado)"
 msgstr[1] "{earned}/{possible} pontos (não classificados)"
 msgstr[2] "{earned}/{possible} pontos (não classificados)"
 
-#: xmodule/js/src/capa/display.js:349
+#: xmodule/js/src/capa/display.js:356
 msgid "The grading process is still running. Refresh the page to see updates."
 msgstr ""
 "O processo de classificação ainda está em execução. Atualize a página."
 
-#: xmodule/js/src/capa/display.js:458
+#: xmodule/js/src/capa/display.js:465
 msgid "Could not grade your answer. The submission was aborted."
 msgstr ""
 "Não foi possível classificar a sua resposta. A submissão foi cancelada."
 
-#: xmodule/js/src/capa/display.js:522
+#: xmodule/js/src/capa/display.js:529
 msgid ""
 "Submission aborted! Sorry, your browser does not support file uploads. If "
 "you can, please use Chrome or Safari which have been verified to support "
@@ -5428,35 +5475,35 @@ msgstr ""
 "Submissão cancelada! Lamentamos, o seu browser não permite o carregamento "
 "dos ficheiros. Por favor, utilize o Chrome ou o Safari."
 
-#: xmodule/js/src/capa/display.js:548
+#: xmodule/js/src/capa/display.js:555
 msgid "You submitted {filename}; only {allowedFiles} are allowed."
 msgstr "Submeteu {filename}; apenas {allowedFiles} são permitidos."
 
-#: xmodule/js/src/capa/display.js:561
+#: xmodule/js/src/capa/display.js:568
 msgid "Your file {filename} is too large (max size: {maxSize}MB)."
 msgstr ""
 "O seu ficheiro {filename} excede o tamanho máximo (limite máximo: "
 "{maxSize}MB)."
 
-#: xmodule/js/src/capa/display.js:577
+#: xmodule/js/src/capa/display.js:584
 msgid "You did not submit the required files: {requiredFiles}."
 msgstr "Não submeteu os ficheiros necessários: {requiredFiles}."
 
-#: xmodule/js/src/capa/display.js:587
+#: xmodule/js/src/capa/display.js:594
 msgid "You did not select any files to submit."
 msgstr "Não selecionou nenhum ficheiro para submissão."
 
 #. Translators: This is only translated to allow for reordering of label and
 #. associated status.;
-#: xmodule/js/src/capa/display.js:681
+#: xmodule/js/src/capa/display.js:688
 msgid "{label}: {status}"
 msgstr "{label}: {status}"
 
-#: xmodule/js/src/capa/display.js:712
+#: xmodule/js/src/capa/display.js:719
 msgid "This problem has been reset."
 msgstr "Este problema foi reiniciado."
 
-#: xmodule/js/src/capa/display.js:1018
+#: xmodule/js/src/capa/display.js:1025
 msgid "unsubmitted"
 msgstr "não submetido"
 
@@ -6745,7 +6792,7 @@ msgstr ""
 msgid "Explanation"
 msgstr "Explicação"
 
-#: xmodule/js/src/sequence/display.js:330
+#: xmodule/js/src/sequence/display.js:406
 msgid ""
 "Sequence error! Cannot navigate to %(tab_name)s in the current "
 "SequenceModule. Please contact the course staff."
@@ -6937,11 +6984,11 @@ msgstr "Não mostrar novamente"
 msgid "Open language menu"
 msgstr "Abrir o menu de idiomas"
 
-#: xmodule/js/src/video/09_video_caption.js:589
+#: xmodule/js/src/video/09_video_caption.js:630
 msgid "Transcript will be displayed when you start playing the video."
 msgstr "A transcrição será exibida quando começar a reproduzir o vídeo."
 
-#: xmodule/js/src/video/09_video_caption.js:837
+#: xmodule/js/src/video/09_video_caption.js:878
 msgid ""
 "Activating a link in this group will skip to the corresponding point in the "
 "video."
@@ -6949,19 +6996,19 @@ msgstr ""
 "A ativação de um link neste grupo irá saltar para o ponto correspondente no "
 "vídeo."
 
-#: xmodule/js/src/video/09_video_caption.js:840
+#: xmodule/js/src/video/09_video_caption.js:881
 msgid "Video transcript"
 msgstr "Transcrição do vídeo"
 
-#: xmodule/js/src/video/09_video_caption.js:843
+#: xmodule/js/src/video/09_video_caption.js:884
 msgid "Start of transcript. Skip to the end."
 msgstr "Início de transcrição. Saltar para o fim."
 
-#: xmodule/js/src/video/09_video_caption.js:847
+#: xmodule/js/src/video/09_video_caption.js:888
 msgid "End of transcript. Skip to the start."
 msgstr "Fim de transcrição. Saltar para o início."
 
-#: xmodule/js/src/video/09_video_caption.js:851
+#: xmodule/js/src/video/09_video_caption.js:892
 msgid ""
 "Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
 " keys to navigate language options. Press ENTER to change to the selected "
@@ -6971,23 +7018,23 @@ msgstr ""
 "use as teclas de seta PARA CIMA e PARA BAIXO para navegar pelas opções de "
 "idioma. Pressione ENTER para alteração para o idioma selecionado."
 
-#: xmodule/js/src/video/09_video_caption.js:1205
+#: xmodule/js/src/video/09_video_caption.js:1248
 msgid "Hide closed captions"
 msgstr "Ocultar legendas"
 
-#: xmodule/js/src/video/09_video_caption.js:1223
+#: xmodule/js/src/video/09_video_caption.js:1266
 msgid "(Caption will be displayed when you start playing the video.)"
 msgstr "(As legendas serão exibidas quando iniciar a reprodução do vídeo.)"
 
-#: xmodule/js/src/video/09_video_caption.js:1230
+#: xmodule/js/src/video/09_video_caption.js:1273
 msgid "Turn on closed captioning"
 msgstr "Ativar legendas"
 
-#: xmodule/js/src/video/09_video_caption.js:1338
+#: xmodule/js/src/video/09_video_caption.js:1381
 msgid "Turn on transcripts"
 msgstr "Ativar transcrições"
 
-#: xmodule/js/src/video/09_video_caption.js:1353
+#: xmodule/js/src/video/09_video_caption.js:1396
 msgid "Turn off transcripts"
 msgstr "Desativar transcrições"
 
@@ -10466,11 +10513,11 @@ msgstr "Inscreva-se Agora"
 msgid "Coming Soon"
 msgstr "Em Breve"
 
-#: lms/templates/learner_dashboard/course_enroll.underscore:47
+#: lms/templates/learner_dashboard/course_enroll.underscore:48
 msgid "Enrollment Opens on"
 msgstr "A Inscrição Abre em"
 
-#: lms/templates/learner_dashboard/course_enroll.underscore:54
+#: lms/templates/learner_dashboard/course_enroll.underscore:56
 msgid "Not Currently Available"
 msgstr "Não Disponível de Momento"
 

@@ -35,8 +35,6 @@
   "ora-grading.ListView.backToResponsesLowercase": "powrót do wszystkich otwartych odpowiedzi",
   "ora-grading.ListView.reloadSubmissions": "Załaduj ponownie zgłoszenia",
   "ora-grading.ListView.loadingResponses": "Ładowanie odpowiedzi",
-  "ora-grading.NotificationsBanner.Message": "Możesz teraz włączyć powiadomienia dla zadań ORA wymagających oceniania przez personel, z",
-  "ora-grading.NotificationsBanner.linkMessage": "centrum preferencji.",
   "ora-grading.ResponseDisplay.SubmissionFiles.tableNameHeader": "Nazwa",
   "ora-grading.ResponseDisplay.SubmissionFiles.tableExtensionHeader": "Rozszerzenie pliku",
   "ora-grading.ResponseDisplay.SubmissionFiles.tablePopoverHeader": "Metadane pliku",

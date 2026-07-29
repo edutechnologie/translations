@@ -4,16 +4,16 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
-"Language-Team: Hungarian (https://app.transifex.com/open-edx/teams/6205/hu/)\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: Hungarian (https://app.transifex.com/open-edx/teams/301281/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,6 +31,10 @@ msgstr "Általános szerződési feltételek és becsületkódex"
 #: templates/edx.org/_footer.html:16
 msgid "Privacy Policy"
 msgstr "Adatvédelmi Irányelvek"
+
+#: templates/edx.org/_footer.html:21
+msgid "Cookie Policy"
+msgstr "Süti szabályzat"
 
 #: templates/edx.org/_footer.html:26
 msgid "Your Privacy Choices"
@@ -69,8 +73,9 @@ msgid ""
 "has successfully completed all courses and received passing grades to earn a"
 " MicroBachelors program certificate in"
 msgstr ""
-"sikeresen teljesítette az összes kurzust, és sikeres vizsgát tett egy "
-"MicroBachelors program bizonyítvány megszerzéséhez a következő területen:"
+"sikeresen teljesítette az összes kurzust, és megszerezte a szükséges "
+"érdemjegyeket, hogy MicroBachelors program bizonyítványt szerezzen a "
+"következő területen:"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:12
@@ -115,8 +120,9 @@ msgid ""
 "has successfully completed all courses and received passing grades to earn a"
 " MicroMasters program certificate in"
 msgstr ""
-"sikeresen teljesítette az összes kurzust, és sikeres vizsgát tett egy "
-"MicroMasters program bizonyítvány megszerzéséhez a következő területen:"
+"sikeresen teljesítette az összes kurzust, és megszerezte a szükséges "
+"érdemjegyeket, hogy MicroMasters program bizonyítványt szerezzen a következő"
+" területen:"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:21
@@ -151,8 +157,8 @@ msgid ""
 "successfully completed all courses and received passing grades for a "
 "Professional Certificate in"
 msgstr ""
-"sikeresen teljesítette az összes kurzust, és sikeres vizsgát tett egy "
-"szakmai bizonyítvány megszerzéséhez a következő területen:"
+"sikeresen elvégezte az összes kurzust, és sikeres vizsgát tett egy szakmai "
+"bizonyítvány megszerzéséhez a következő területen:"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:11
 msgid "Professional Certificate"
@@ -171,11 +177,11 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"Az edX Professional Certificate azt jelzi, hogy a tanuló befejezett egy "
+"Az edX Professional Bizonyítvány azt jelzi, hogy a tanuló befejezett egy "
 "olyan kurzuscsoportot, amely gazdag megértést nyújt egy tanulmányi "
-"területről. A Professional Certificate Programok teljesítéséhez a tanulóknak"
-" {link_start}Ellenőrzött Bizonyítványokat{link_end} kell szerezniük a "
-"Programban szereplő minden egyes kurzusról."
+"területről. A Professional Bizonyítvány Programok befejezéséhez a tanulóknak"
+" {link_start}Verified Certificates{link_end}-et kell szerezniük a Programban"
+" szereplő minden egyes kurzusról."
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:8
@@ -194,8 +200,8 @@ msgid ""
 "has successfully completed all courses and received passing grades for an "
 "XSeries Program certificate in"
 msgstr ""
-"sikeresen teljesítette az összes kurzust, és sikeres vizsgát tett egy "
-"XSeries Program bizonyítvány megszerzéséhez a következő területen:"
+"sikeresen teljesítette az összes kurzust, és megszerezte az XSeries Program "
+"bizonyítványt a következő területen:"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:21

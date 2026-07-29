@@ -11,18 +11,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 # 
 # Translators:
-# Transifex Bot <>, 2025
-# Eden Huthmacher, 2025
 # Brian Smith, 2025
+# Omar Al-Ithawi <i@omardo.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-25 00:36+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Brian Smith, 2025\n"
+"POT-Creation-Date: 2025-09-19 00:44+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Omar Al-Ithawi <i@omardo.com>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/open-edx/teams/6205/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,6 +39,14 @@ msgid ""
 msgstr ""
 "サーバーのエラーまたはインターネット接続の問題が原因で発生している可能性があります。ページを更新するか、オンラインであることを確認してください。"
 
+#: cms/static/cms/js/main.js:47
+msgid "Studio's having trouble saving your work"
+msgstr "スタジオが作業の保存に問題を抱えています"
+
+#: cms/static/cms/js/xblock/cms.runtime.v1.js:98
+msgid "OpenAssessment Save Error"
+msgstr "OpenAssessment保存エラー"
+
 #: cms/static/cms/js/xblock/cms.runtime.v1.js:113
 #: cms/static/js/certificates/views/signatory_details.js:72
 #: cms/static/js/models/section.js:27 cms/static/js/utils/drag_and_drop.js:300
@@ -56,11 +63,11 @@ msgstr ""
 msgid "Saving"
 msgstr "保存中"
 
-#: cms/static/js/base.js:101
+#: cms/static/js/base.js:113
 msgid "This link will open in a new browser window/tab"
 msgstr "このリンクは新しいブラウザウィンドウ/タブで開きます。"
 
-#: cms/static/js/base.js:108
+#: cms/static/js/base.js:120
 msgid "This link will open in a modal window"
 msgstr "このリンクはモーダルウィンドウで開きます。"
 
@@ -256,6 +263,10 @@ msgid ""
 "Are you sure you want to delete {email} from the library “{container}”?"
 msgstr "図書館「{container}」から{email}を削除してもよろしいですか？"
 
+#: cms/static/js/factories/manage_users_lib.js:21
+msgid "Library User"
+msgstr "図書館利用者"
+
 #: cms/static/js/factories/settings_advanced.js:41
 msgid "Hide Deprecated Settings"
 msgstr "非推奨設定を非表示"
@@ -263,6 +274,11 @@ msgstr "非推奨設定を非表示"
 #: cms/static/js/factories/settings_advanced.js:45
 msgid "Show Deprecated Settings"
 msgstr "非推奨設定を表示"
+
+#: cms/static/js/factories/textbooks.js:20
+#: cms/static/js/views/pages/group_configurations.js:84
+msgid "You have unsaved changes. Do you really want to leave this page?"
+msgstr "変更が保存されていません。本当にこのページを離れますか？"
 
 #: cms/static/js/features/import/factories/import.js:22
 msgid "There was an error during the upload process."
@@ -309,6 +325,12 @@ msgstr "コースのインポート中にエラーが発生しました"
 msgid "There was an error with the upload"
 msgstr "アップロード中にエラーが発生しました。"
 
+#. Translators: This is the status of a video upload that is queued
+#. waiting for other uploads to complete
+#: cms/static/js/models/active_video_upload.js:9
+msgid "Queued"
+msgstr "キューに追加済み"
+
 #. Translators: This is the status of an active video upload
 #: cms/static/js/models/active_video_upload.js:11
 #: cms/static/js/views/assets.js:241 cms/static/js/views/video_thumbnail.js:57
@@ -326,6 +348,10 @@ msgstr "アップロードが完了しました"
 #: cms/static/js/models/active_video_upload.js:16
 msgid "Upload failed"
 msgstr "アップロードに失敗しました"
+
+#: cms/static/js/models/chapter.js:35
+msgid "Chapter name and asset_path are both required"
+msgstr "章の名前とasset_pathの両方が必要です"
 
 #: cms/static/js/models/chapter.js:40
 msgid "Chapter name is required"
@@ -496,6 +522,7 @@ msgstr "ファイルをアップロードできませんでした。"
 #: cms/static/js/views/modals/course_outline_modals.js:351
 #: cms/static/js/views/modals/edit_xblock.js:151
 #: cms/static/js/views/video_transcripts.js:325
+#: lms/static/js/student_account/enrollment.js:87
 #: lms/static/js/student_account/tos_modal.js:48
 #: xmodule/js/src/html/edit.js:370
 #: cms/templates/js/course-video-settings.underscore:6
@@ -633,7 +660,7 @@ msgstr "ライブラリコンテンツを追加"
 
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:642
+#: cms/static/js/views/pages/container.js:652
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "追加"
@@ -646,8 +673,24 @@ msgstr "{startTag}{requestToken}{endTag}{selector}"
 msgid "Are you sure you want to delete this update?"
 msgstr "この更新を削除してもよろしいですか？"
 
+#. #-#-#-#-#  djangojs.po (0.1a)  #-#-#-#-#
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: cms/static/js/views/course_info_update.js:241
+#: cms/static/js/views/course_outline.js:390
+#: cms/static/js/views/course_outline.js:402
+#: cms/static/js/views/pages/container.js:424
+#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/utils/xblock_utils.js:101
+#: cms/static/js/views/utils/xblock_utils.js:113
+#: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
+#: common/static/common/templates/discussion/templates.underscore:879
+#: lms/templates/learner_dashboard/verification_popover.underscore:13
+msgid "OK"
+msgstr "OK"
+
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:767
+#: cms/static/js/views/pages/container.js:779
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "コピー中"
@@ -657,25 +700,31 @@ msgid "Copy of \"{componentDisplayName}\""
 msgstr "「{componentDisplayName}」のコピー"
 
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:385
+#: cms/static/js/views/pages/container.js:395
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
-msgstr "貼り付け中"
+msgstr "貼り付け"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:409
+#: cms/static/js/views/pages/container.js:419
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "いくつかのエラーが発生しました。"
 
+#: cms/static/js/views/course_outline.js:387
+#: cms/static/js/views/pages/container.js:421
+#: cms/static/js/views/utils/xblock_utils.js:98
+msgid "The following required files could not be added to the course:"
+msgstr "コースに追加できなかった必要なファイルは次のとおりです。"
+
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:429
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr "ファイルを手動で更新する必要があるかもしれません。"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:422
+#: cms/static/js/views/pages/container.js:432
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -683,22 +732,22 @@ msgid ""
 msgstr "このコースにはすでに以下のファイルが存在しますが、貼り付けたコンポーネントで使用されているバージョンと一致しません。"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:431
+#: cms/static/js/views/pages/container.js:441
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "新しいファイルが「ファイルとアップロード」に追加されました。"
 
+#: cms/static/js/views/course_outline.js:409
+#: cms/static/js/views/pages/container.js:443
+#: cms/static/js/views/utils/xblock_utils.js:120
+msgid "The following required files were imported to this course:"
+msgstr "このコースにインポートされた必要なファイルは次のとおりです。"
+
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:438
+#: cms/static/js/views/pages/container.js:448
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "ファイルを表示"
-
-#: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:447
-#: cms/static/js/views/utils/xblock_utils.js:134
-msgid "Dismiss"
-msgstr "却下"
 
 #: cms/static/js/views/course_rerun.js:53
 msgid "Create Re-run"
@@ -721,13 +770,21 @@ msgstr "エラーが発生しました。数分待ってから、もう一度お
 msgid "None"
 msgstr "None"
 
+#: cms/static/js/views/course_video_settings.js:307
+msgid "Select turnaround"
+msgstr "ターンアラウンドを選択"
+
+#: cms/static/js/views/course_video_settings.js:335
+msgid "Select fidelity"
+msgstr "忠実度を選択"
+
 #: cms/static/js/views/course_video_settings.js:387
 #: cms/static/js/views/course_video_settings.js:423
 msgid "Select language"
 msgstr "言語を選択"
 
 #: cms/static/js/views/course_video_settings.js:474
-#: cms/static/js/views/metadata.js:357
+#: cms/static/js/views/metadata.js:362
 #: cms/static/js/views/previous_video_upload.js:78
 #: cms/static/js/views/video_transcripts.js:270
 #: lms/djangoapps/teams/static/teams/js/views/edit_team_members.js:96
@@ -736,6 +793,10 @@ msgstr "言語を選択"
 #: lms/djangoapps/teams/static/teams/templates/edit-team-member.underscore:14
 msgid "Remove"
 msgstr "削除"
+
+#: cms/static/js/views/course_video_settings.js:475
+msgid "Press Remove to remove language"
+msgstr "言語を削除するには「削除」を押してください。"
 
 #: cms/static/js/views/course_video_settings.js:485
 msgid "Settings updated"
@@ -864,6 +925,12 @@ msgstr "インストラクターの画像をアップロードする。"
 msgid "Files must be in JPEG or PNG format."
 msgstr "ファイルはJPEGまたはPNG形式でなければなりません。"
 
+#: cms/static/js/views/license.js:8
+#: cms/templates/js/license-selector.underscore:82
+#: cms/templates/js/license-selector.underscore:110
+msgid "All Rights Reserved"
+msgstr "すべての権利を留保"
+
 #: cms/static/js/views/license.js:9
 msgid "You reserve all rights for your work"
 msgstr "あなたの作品のすべての権利を留保します。"
@@ -872,9 +939,17 @@ msgstr "あなたの作品のすべての権利を留保します。"
 msgid "Creative Commons"
 msgstr "クリエイティブ・コモンズ"
 
+#: cms/static/js/views/license.js:13
+msgid "You waive some rights for your work, such that others can use it too"
+msgstr "あなたの作品に対するいくつかの権利を放棄し、他の人もそれを利用できるようにします。"
+
 #: cms/static/js/views/license.js:17
 msgid "Version"
 msgstr "バージョン"
+
+#: cms/static/js/views/license.js:22
+msgid "Attribution"
+msgstr "帰属"
 
 #: cms/static/js/views/license.js:25
 msgid ""
@@ -882,11 +957,21 @@ msgid ""
 "but only if they give credit the way you request. Currently, this option is "
 "required."
 msgstr ""
-"他の人があなたの著作権で保護された作品をコピー、配布、表示、実行することを許可しますが、あなたが要求する方法でクレジットを与える場合に限ります。現在、このオプションは必須です。"
+"他人があなたの著作物をコピー、配布、表示、実行することを許可しますが、あなたが要求する方法でクレジットを与える場合に限ります。現在、このオプションは必須です。"
 
 #: cms/static/js/views/license.js:29
 msgid "Noncommercial"
 msgstr "非営利"
+
+#: cms/static/js/views/license.js:32
+msgid ""
+"Allow others to copy, distribute, display and perform your work - and "
+"derivative works based upon it - but for noncommercial purposes only."
+msgstr "他の人があなたの作品をコピー、配布、表示、実行し、それに基づく派生作品を作成することを許可しますが、非営利目的に限ります。"
+
+#: cms/static/js/views/license.js:35
+msgid "No Derivatives"
+msgstr "改変禁止"
 
 #: cms/static/js/views/license.js:38
 msgid ""
@@ -895,6 +980,10 @@ msgid ""
 "incompatible with \"Share Alike\"."
 msgstr ""
 "他の人があなたの作品をコピー、配布、表示、実行することを許可しますが、それはそのままの形でのみであり、派生作品は含まれません。このオプションは「継承」と互換性がありません。"
+
+#: cms/static/js/views/license.js:42
+msgid "Share Alike"
+msgstr "共有ライセンス"
 
 #: cms/static/js/views/license.js:45
 msgid ""
@@ -962,7 +1051,7 @@ msgstr "本当によろしいですか？"
 msgid "Are you sure you want to restrict {email} access to “{container}”?"
 msgstr "{email}の「{container}」へのアクセスを制限してもよろしいですか？"
 
-#: cms/static/js/views/metadata.js:610 lms/static/js/views/file_uploader.js:47
+#: cms/static/js/views/metadata.js:615 lms/static/js/views/file_uploader.js:47
 msgid "Upload File"
 msgstr "ファイルをアップロード"
 
@@ -1051,6 +1140,10 @@ msgstr "可視性"
 msgid "Full Page"
 msgstr "全ページ"
 
+#: cms/static/js/views/modals/course_outline_modals.js:1492
+msgid "Embed Link"
+msgstr "埋め込みリンク"
+
 #. Translators: "title" is the name of the current component being edited.
 #: cms/static/js/views/modals/edit_xblock.js:23
 msgid "Editing: {title}"
@@ -1088,9 +1181,18 @@ msgstr "コンポーネントを移動する場所を選択してください"
 msgid "Move: {displayName}"
 msgstr "移動: {displayName}"
 
+#. Translators: "title" is the name of the current component being edited.
+#: cms/static/js/views/modals/preview_v2_library_changes.js:23
+msgid "Preview changes to: {title}"
+msgstr "{title}の変更をプレビュー"
+
 #: cms/static/js/views/modals/preview_v2_library_changes.js:35
 msgid "Accept changes"
 msgstr "変更を承認"
+
+#: cms/static/js/views/modals/preview_v2_library_changes.js:36
+msgid "Ignore changes"
+msgstr "変更を無視"
 
 #: cms/static/js/views/modals/preview_v2_library_changes.js:99
 msgid "Ignore these changes?"
@@ -1125,6 +1227,10 @@ msgstr "変更を元に戻す"
 msgid "Change Manually"
 msgstr "手動で変更"
 
+#: cms/static/js/views/move_xblock_list.js:33
+msgid "Sections"
+msgstr "セクション"
+
 #: cms/static/js/views/move_xblock_list.js:34
 msgid "Subsections"
 msgstr "小節"
@@ -1155,6 +1261,16 @@ msgstr "コース概要"
 #: cms/static/js/views/paged_container.js:260
 msgid "Date added"
 msgstr "追加日"
+
+#. Translators: "title" is the name of the current component or unit being
+#. edited.
+#: cms/static/js/views/pages/container.js:731
+msgid "Editing access for: {title}"
+msgstr "{title} の編集アクセス"
+
+#: cms/static/js/views/pages/container_subviews.js:169
+msgid "Publishing"
+msgstr "公開"
 
 #: cms/static/js/views/pages/container_subviews.js:231
 #: cms/static/js/views/pages/container_subviews.js:233
@@ -1226,8 +1342,19 @@ msgid ""
 "Showing {currentItemRange} out of {totalItemsCount}, filtered by "
 "{assetType}, sorted by {sortName} ascending"
 msgstr ""
+"{currentItemRange} 件中 {totalItemsCount} 件を表示中、{assetType} "
+"でフィルタリング、{sortName} 昇順で並べ替え"
+
+#. Translators: sample result:
+#. "Showing 0-9 out of 25 total, filtered by Images, sorted by Date Added
+#. descending"
+#: cms/static/js/views/paging_header.js:57
+msgid ""
+"Showing {currentItemRange} out of {totalItemsCount}, filtered by "
+"{assetType}, sorted by {sortName} descending"
+msgstr ""
 "{currentItemRange} 件中 {totalItemsCount} 件を表示中、{assetType} で絞り込み、{sortName} "
-"昇順で並べ替え"
+"の降順で並べ替え"
 
 #. Translators: sample result:
 #. "Showing 0-9 out of 25 total, sorted by Date Added ascending"
@@ -1283,6 +1410,12 @@ msgstr ""
 #: lms/static/js/views/image_field.js:22
 msgid "Removing"
 msgstr "削除"
+
+#: cms/static/js/views/settings/advanced.js:70
+msgid ""
+"Your changes will not take effect until you save your progress. Take care "
+"with key and value formatting, as validation is not implemented."
+msgstr "変更は進捗を保存するまで反映されません。キーと値のフォーマットには注意してください。検証は実装されていません。"
 
 #: cms/static/js/views/settings/advanced.js:142
 msgid "Your policy changes have been saved."
@@ -1421,6 +1554,10 @@ msgstr "はい、この{xblock_type}を削除します"
 msgid "Delete this {xblock_type}?"
 msgstr "この{xblock_type}を削除しますか？"
 
+#: cms/static/js/views/utils/xblock_utils.js:349
+msgid "section"
+msgstr "セクション"
+
 #: cms/static/js/views/utils/xblock_utils.js:351
 msgid "subsection"
 msgstr "小節"
@@ -1491,6 +1628,10 @@ msgstr "リンクタイプは一意である必要があります。"
 msgid "Links should be unique."
 msgstr "リンクは一意である必要があります。"
 
+#: cms/static/js/views/video/transcripts/metadata_videolist.js:394
+msgid "Incorrect url format."
+msgstr "URL形式が正しくありません。"
+
 #: cms/static/js/views/video/translations_editor.js:14
 msgid ""
 "Sorry, there was an error parsing the subtitles that you uploaded. Please "
@@ -1559,16 +1700,21 @@ msgid "Video duration is {humanizeDuration}"
 msgstr "ビデオの長さは{humanizeDuration}です"
 
 #: cms/static/js/views/video_thumbnail.js:189
+msgid "minutes"
+msgstr "分(minutes)"
+
+#: cms/static/js/views/video_thumbnail.js:189
 msgid "minute"
 msgstr "分"
+
+#. Translators: message will be like 15 minutes, 1 minute
+#: cms/static/js/views/video_thumbnail.js:192
+msgid "{minutes} {unit}"
+msgstr "{minutes} {unit}"
 
 #: cms/static/js/views/video_thumbnail.js:198
 msgid "seconds"
 msgstr "秒数"
-
-#: cms/static/js/views/video_thumbnail.js:198
-msgid "second"
-msgstr "秒"
 
 #: cms/static/js/views/video_thumbnail.js:234
 msgid "Video image upload started"
@@ -1668,7 +1814,7 @@ msgstr "警告"
 #: common/static/common/js/discussion/views/discussion_thread_view.js:233
 #: common/static/common/js/discussion/views/response_comment_view.js:121
 #: lms/djangoapps/instructor/static/instructor/ProblemBrowser/components/ReportStatus/ReportStatus.jsx:33
-#: lms/static/js/student_account/views/FinishAuthView.js:82
+#: lms/static/js/student_account/views/FinishAuthView.js:84
 #: lms/static/js/verify_student/views/step_view.js:50
 #: lms/static/js/views/fields.js:43
 msgid "Error"
@@ -1715,9 +1861,13 @@ msgid ""
 msgstr ""
 "リクエストを完了できませんでした。ページを再読み込みして、もう一度お試しください。問題が解決しない場合は、ヘルプタブをクリックして問題を報告してください。"
 
+#: common/static/common/js/components/views/paging_header.js:38
+msgid "Showing {firstIndex} out of {numItems} total"
+msgstr "{firstIndex} 件中 {numItems} 件を表示中"
+
 #: common/static/common/js/components/views/paging_header.js:43
 msgid "Showing {firstIndex}-{lastIndex} out of {numItems} total"
-msgstr "{firstIndex}〜{lastIndex}件を表示中（全{numItems}件中）"
+msgstr "{firstIndex}〜{lastIndex}件を表示（全{numItems}件中）"
 
 #: common/static/common/js/discussion/utils.js:154
 msgid "Loading content"
@@ -1737,6 +1887,10 @@ msgstr "…"
 #: common/static/common/js/discussion/utils.js:519
 msgid "Some images in this post have been omitted"
 msgstr "この投稿の一部の画像は省略されています。"
+
+#: common/static/common/js/discussion/utils.js:525
+msgid "image omitted"
+msgstr "画像省略"
 
 #: common/static/common/js/discussion/views/discussion_content_view.js:285
 msgid "there is currently {numVotes} vote"
@@ -1940,6 +2094,10 @@ msgstr "%(field)sは最大%(count)d文字までしか含めることができま
 msgid "Please enter your %(field)s."
 msgstr "%(field)sを入力してください。"
 
+#: common/static/js/capa/drag_and_drop/base_image.js:14
+msgid "Drop target image"
+msgstr "ターゲット画像をドロップ"
+
 #: common/static/js/capa/drag_and_drop/draggable_events.js:86
 msgid "dragging out of slider"
 msgstr "スライダーからドラッグする"
@@ -1961,6 +2119,12 @@ msgstr "ターゲットにドロップされました"
 #, javascript-format
 msgid "%s ago"
 msgstr "%s 前"
+
+#. Translators: %s will be a time quantity, such as "4 minutes" or "1 day"
+#: common/static/js/src/jquery.timeago.locale.js:5
+#, javascript-format
+msgid "%s from now"
+msgstr "今から%s"
 
 #: common/static/js/src/jquery.timeago.locale.js:6
 msgid "less than a minute"
@@ -2099,6 +2263,10 @@ msgstr "問題が発生しました。後でもう一度お試しください。
 msgid "Add Attachment"
 msgstr "添付ファイルを追加"
 
+#: lms/djangoapps/support/static/support/jsx/file_upload.jsx:128
+msgid "(Optional)"
+msgstr "（任意）"
+
 #: lms/djangoapps/support/static/support/jsx/file_upload.jsx:157
 msgid "Remove file"
 msgstr "ファイルを削除"
@@ -2113,6 +2281,10 @@ msgid ""
 "For inquiries regarding assignments, grades, or structure of a specific "
 "course, please post in the discussion forums for that course directly."
 msgstr "特定のコースに関する課題、成績、または構成についての問い合わせは、そのコースのディスカッションフォーラムに直接投稿してください。"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:30
+msgid "Not specific to a course"
+msgstr "特定のコースに関連しない"
 
 #: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:50
 #: lms/static/js/instructor_dashboard/util.js:200
@@ -2147,6 +2319,10 @@ msgstr "締切"
 #: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:58
 msgid "Errors/Technical Issues"
 msgstr "エラー/技術的な問題"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:59
+msgid "Financial Aid"
+msgstr "経済的支援"
 
 #: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:60
 msgid "Photo Verification"
@@ -2209,9 +2385,19 @@ msgstr "マイダッシュボードに移動"
 msgid "Go to {platform} Home"
 msgstr "{platform} ホームへ移動"
 
+#: lms/djangoapps/support/static/support/jsx/success.jsx:34
+msgid ""
+"Thank you for submitting a request! We appreciate your patience while we "
+"work to review your request."
+msgstr "リクエストを送信していただきありがとうございます。リクエストの確認作業を進めておりますので、しばらくお待ちください。"
+
 #: lms/djangoapps/support/static/support/jsx/upload_progress.jsx:25
 msgid "Cancel upload"
 msgstr "アップロードをキャンセル"
+
+#: lms/djangoapps/teams/static/teams/js/collections/team.js:36
+msgid "last activity"
+msgstr "最終活動"
 
 #: lms/djangoapps/teams/static/teams/js/collections/team.js:37
 msgid "open slots"
@@ -2271,6 +2457,10 @@ msgid ""
 "The language that team members primarily use to communicate with each other."
 msgstr "チームメンバーが主に使用するコミュニケーション言語。"
 
+#: lms/djangoapps/teams/static/teams/js/views/edit_team.js:74
+msgid "Country"
+msgstr "国 (Country)"
+
 #: lms/djangoapps/teams/static/teams/js/views/edit_team.js:80
 #: lms/djangoapps/teams/static/teams/templates/team-profile.underscore:38
 msgid "The country that team members primarily identify with."
@@ -2311,6 +2501,12 @@ msgstr "このチームにはメンバーがいません。"
 
 #. Translators: 'date' is a placeholder for a fuzzy,
 #. * relative timestamp (see: https://github.com/rmm5t/jquery-timeago)
+#: lms/djangoapps/teams/static/teams/js/views/edit_team_members.js:59
+msgid "Joined %(date)s"
+msgstr "%(date)s に参加しました"
+
+#. Translators: 'date' is a placeholder for a fuzzy,
+#. * relative timestamp (see: https://github.com/rmm5t/jquery-timeago)
 #: lms/djangoapps/teams/static/teams/js/views/edit_team_members.js:69
 msgid "Last Activity %(date)s"
 msgstr "最終活動 %(date)s"
@@ -2347,7 +2543,7 @@ msgstr "管理"
 
 #: lms/djangoapps/teams/static/teams/js/views/my_teams.js:28
 msgid "You are not currently a member of any team."
-msgstr "現在、どのチームにも所属していません。"
+msgstr "あなたは現在、どのチームにも所属していません。"
 
 #. Translators: "and others" refers to fact that additional
 #. * members of a team exist that are not displayed.
@@ -2423,6 +2619,11 @@ msgstr "トピック"
 msgid "My Teams"
 msgstr "マイチーム"
 
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:158
+#: lms/templates/instructor/instructor_dashboard_2/certificate-bulk-allowlist.underscore:11
+msgid "Browse"
+msgstr "閲覧"
+
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:206
 msgid "Your request could not be completed. Reload the page and try again."
 msgstr "リクエストを完了できませんでした。ページを再読み込みして、もう一度お試しください。"
@@ -2443,11 +2644,26 @@ msgstr "チーム検索"
 msgid "Create a New Team"
 msgstr "新しいチームを作成"
 
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:268
+msgid ""
+"Create a new team if you can't find an existing team to join, or if you "
+"would like to learn with friends you know."
+msgstr "新しいチームを作成してください。既存のチームが見つからない場合や、知っている友人と一緒に学びたい場合におすすめです。"
+
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:303
+#: lms/djangoapps/teams/static/teams/templates/team-profile-header-actions.underscore:11
+msgid "Edit Team"
+msgstr "チームを編集"
+
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:305
 msgid ""
 "If you make significant changes, make sure you notify members of the team "
 "before making these changes."
 msgstr "重要な変更を加える場合は、変更を行う前にチームのメンバーに通知してください。"
+
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:335
+msgid "Membership"
+msgstr "会員資格"
 
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:337
 msgid ""
@@ -2458,6 +2674,24 @@ msgstr "このチームからメンバーを削除することができます。
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:390
 msgid "Showing results for \"{searchString}\""
 msgstr "\"{searchString}\" の結果を表示しています"
+
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:408
+msgid "Search teams"
+msgstr "チームを検索"
+
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:538
+msgid ""
+"See all teams you belong to and all public teams in your course, organized "
+"by topic. Join an open public team to collaborate with other learners who "
+"are interested in the same topic as you are."
+msgstr ""
+"あなたが所属しているすべてのチームと、コース内のすべての公開チームをトピックごとに確認できます。同じトピックに興味を持つ他の学習者と協力するために、公開チームに参加しましょう。"
+
+#: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:545
+msgid ""
+"See all teams you belong to and all public teams in your course, organized "
+"by topic."
+msgstr "あなたが所属するすべてのチームと、コース内のすべての公開チームをトピックごとに整理して表示します。"
 
 #: lms/djangoapps/teams/static/teams/js/views/teams_tab.js:549
 msgid "See all teams you belong to."
@@ -2650,7 +2884,13 @@ msgstr "強調されたテキスト"
 
 #: lms/static/js/Markdown.Editor.js:1740
 msgid "enter link description here"
-msgstr "リンクの説明をここに入力してください"
+msgstr "リンクの説明を入力してください"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: lms/static/js/Markdown.Editor.js:1843 xmodule/js/src/html/edit.js:280
+msgid "Blockquote"
+msgstr "引用文"
 
 #: lms/static/js/Markdown.Editor.js:2106
 msgid "List item"
@@ -2692,7 +2932,11 @@ msgstr "すべての単位"
 #: lms/templates/ccx/schedule.underscore:65
 #: lms/templates/ccx/schedule.underscore:71
 msgid "Click to change"
-msgstr "クリックして変更"
+msgstr "変更するにはクリック"
+
+#: lms/static/js/ccx/schedule.js:225
+msgid "Select a chapter"
+msgstr "章を選択"
 
 #: lms/static/js/ccx/schedule.js:267 lms/static/js/ccx/schedule.js:278
 msgid "Save changes"
@@ -2767,7 +3011,7 @@ msgstr " 学習者が例外リストに正常に追加されました"
 msgid ""
 " records are not in the correct format and have not been added to the "
 "exception list"
-msgstr " レコードが正しい形式ではなく、例外リストに追加されませんでした。"
+msgstr " 記録が正しい形式ではなく、例外リストに追加されていません。"
 
 #: lms/static/js/certificates/views/certificate_bulk_allowlist.js:114
 msgid ""
@@ -2793,7 +3037,7 @@ msgstr " このコースでは、学習者はすでに例外リストに表示�
 
 #: lms/static/js/certificates/views/certificate_bulk_allowlist.js:129
 msgid " learner already appears on the exception list in this course"
-msgstr " このコースでは、学習者はすでに例外リストに表示されています。"
+msgstr " 学習者はすでにこのコースの例外リストに載っています。"
 
 #: lms/static/js/certificates/views/certificate_bulk_allowlist.js:134
 msgid ""
@@ -2811,7 +3055,7 @@ msgstr " このコースに受講者は登録されておらず、例外リス�
 msgid ""
 " learners have an active certificate invalidation in this course and have "
 "not been added to the exception list"
-msgstr " このコースで学習者の証明書が無効化されており、例外リストに追加されていません。"
+msgstr " 学習者はこのコースで有効な証明書の無効化があり、例外リストに追加されていません。"
 
 #: lms/static/js/certificates/views/certificate_bulk_allowlist.js:144
 msgid ""
@@ -2865,6 +3109,12 @@ msgstr "アンケートの処理中にエラーが発生しました。"
 #: lms/templates/edxnotes/note-item.underscore:9
 msgid "More"
 msgstr "もっと"
+
+#: lms/static/js/courseware/credit_progress.js:14
+#: lms/templates/discovery/facet.underscore:13
+#: lms/templates/edxnotes/note-item.underscore:7
+msgid "Less"
+msgstr "少ない"
 
 #: lms/static/js/customwmd.js:187
 msgid "HTML preview of post"
@@ -2994,6 +3244,10 @@ msgstr "コース内のディスカッションのトピックは分割されて
 msgid "Any divided discussion topics are divided based on enrollment track."
 msgstr "登録トラックに基づいて分割されたディスカッショントピックは分割されます。"
 
+#: lms/static/js/discussions_management/views/discussions.js:188
+msgid "Any divided discussion topics are divided based on cohort."
+msgstr "ディスカッションのトピックは、コホートに基づいて分割されています。"
+
 #: lms/static/js/discussions_management/views/discussions.js:195
 msgid "Your changes have been saved. {details}"
 msgstr "変更が保存されました。{details}"
@@ -3021,6 +3275,18 @@ msgstr "エラーが発生しました。インターネットに接続されて
 msgid "Hide notes"
 msgstr "メモを非表示"
 
+#: lms/static/js/edxnotes/views/notes_visibility_factory.js:76
+msgid "Notes visible"
+msgstr "メモが表示されています"
+
+#: lms/static/js/edxnotes/views/notes_visibility_factory.js:82
+msgid "Show notes"
+msgstr "ノートを表示"
+
+#: lms/static/js/edxnotes/views/notes_visibility_factory.js:83
+msgid "Notes hidden"
+msgstr "ノートが非表示になっています"
+
 #: lms/static/js/edxnotes/views/search_box.js:22
 msgid "Please enter a term in the {anchorStart} search field{anchorEnd}."
 msgstr "{anchorStart}検索フィールド{anchorEnd}に用語を入力してください。"
@@ -3033,6 +3299,10 @@ msgstr "現在のタブ"
 msgid "Location in Course"
 msgstr "コース内の位置"
 
+#: lms/static/js/edxnotes/views/tabs/recent_activity.js:30
+msgid "Recent Activity"
+msgstr "最近の活動"
+
 #: lms/static/js/edxnotes/views/tabs/search_results.js:36
 msgid "No results found for \"{query_string}\". Please try searching again."
 msgstr "\"{query_string}\"に対する結果が見つかりませんでした。もう一度検索してください。"
@@ -3041,6 +3311,14 @@ msgstr "\"{query_string}\"に対する結果が見つかりませんでした。
 #: openedx/features/course_search/static/course_search/templates/dashboard_search_results.underscore:2
 msgid "Search Results"
 msgstr "検索結果"
+
+#. Translators: this is a title shown before all Notes that have no associated
+#. tags. It is put within
+#. brackets to differentiate it from user-defined tags, but it should still be
+#. translated.
+#: lms/static/js/edxnotes/views/tabs/tags.js:40
+msgid "[no tags]"
+msgstr "[タグなし]"
 
 #. #-#-#-#-#  djangojs.po (0.1a)  #-#-#-#-#
 #. Translators: 'Tags' is the name of the view (noun) within the Student Notes
@@ -3063,6 +3341,10 @@ msgstr "申し込みを送信できません"
 #: lms/static/js/student_account/views/LoginView.js:220
 msgid "An error has occurred. Check your Internet connection and try again."
 msgstr "エラーが発生しました。インターネット接続を確認して、再試行してください。"
+
+#: lms/static/js/financial-assistance/views/financial_assistance_form_view.js:158
+msgid "Choose one"
+msgstr "一つ選択してください"
 
 #: lms/static/js/groups/views/cohort_editor.js:63
 #: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:5
@@ -3154,7 +3436,7 @@ msgstr "コホートを追加できません"
 
 #: lms/static/js/groups/views/cohorts.js:98
 msgid "You currently have no cohorts configured"
-msgstr "現在、設定されているコホートはありません。"
+msgstr "コホートが設定されていません。"
 
 #: lms/static/js/groups/views/cohorts.js:99
 #: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:22
@@ -3166,6 +3448,10 @@ msgid ""
 "The {cohortGroupName} cohort has been created. You can manually add students"
 " to this cohort below."
 msgstr "{cohortGroupName}コホートが作成されました。以下でこのコホートに学生を手動で追加できます。"
+
+#: lms/static/js/groups/views/cohorts.js:269
+msgid "Assign students to cohorts by uploading a CSV file."
+msgstr "CSVファイルをアップロードして学生をコホートに割り当てます。"
 
 #: lms/static/js/groups/views/cohorts.js:270
 msgid "Choose a .csv file"
@@ -3198,7 +3484,7 @@ msgstr "このコースの証明書を学生が生成できるようにします
 
 #: lms/static/js/instructor_dashboard/certificates.js:22
 msgid "Prevent students from generating certificates in this course?"
-msgstr "このコースで学生が証明書を生成するのを防ぎますか？"
+msgstr "学生がこのコースで証明書を生成するのを防ぎますか？"
 
 #: lms/static/js/instructor_dashboard/certificates.js:45
 msgid "Start generating certificates for all students in this course?"
@@ -3210,7 +3496,7 @@ msgstr "証明書の生成中にエラーが発生しました。もう一度お
 
 #: lms/static/js/instructor_dashboard/certificates.js:71
 msgid "Start regenerating certificates for students in this course?"
-msgstr "このコースの学生のために証明書の再発行を開始しますか？"
+msgstr "このコースの学生の証明書を再生成しますか？"
 
 #: lms/static/js/instructor_dashboard/certificates.js:98
 msgid "Error while regenerating certificates. Please try again."
@@ -3226,52 +3512,62 @@ msgstr "データを読み込んでいます..."
 msgid "Error getting issued certificates list."
 msgstr "発行された証明書のリストを取得中にエラーが発生しました。"
 
-#: lms/static/js/instructor_dashboard/data_download.js:123
+#: lms/static/js/instructor_dashboard/data_download.js:124
 msgid "Error generating anonymous IDs. Please try again."
 msgstr "匿名IDの生成中にエラーが発生しました。もう一度お試しください。"
 
-#: lms/static/js/instructor_dashboard/data_download.js:149
+#: lms/static/js/instructor_dashboard/data_download.js:150
 #: lms/static/js/instructor_dashboard/data_download_2.js:49
 msgid "Error generating proctored exam results. Please try again."
 msgstr "試験監督付き試験の結果の生成中にエラーが発生しました。もう一度お試しください。"
 
-#: lms/static/js/instructor_dashboard/data_download.js:175
+#: lms/static/js/instructor_dashboard/data_download.js:176
 #: lms/static/js/instructor_dashboard/data_download_2.js:48
 msgid "Error generating survey results. Please try again."
 msgstr "アンケート結果の生成中にエラーが発生しました。もう一度お試しください。"
 
-#: lms/static/js/instructor_dashboard/data_download.js:201
+#: lms/static/js/instructor_dashboard/data_download.js:202
 #: lms/static/js/instructor_dashboard/data_download_2.js:47
 msgid "Error generating student profile information. Please try again."
 msgstr "学生プロフィール情報の生成中にエラーが発生しました。もう一度お試しください。"
 
-#: lms/static/js/instructor_dashboard/data_download.js:227
+#: lms/static/js/instructor_dashboard/data_download.js:228
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmarks_list.js:23
 #: cms/templates/js/move-xblock-modal.underscore:6
 #: openedx/features/course_search/static/course_search/templates/search_loading.underscore:1
 msgid "Loading"
 msgstr "読み込み中"
 
-#: lms/static/js/instructor_dashboard/data_download.js:235
+#: lms/static/js/instructor_dashboard/data_download.js:236
 msgid "Error getting student list."
 msgstr "学生リストの取得エラー。"
 
-#: lms/static/js/instructor_dashboard/data_download.js:301
+#: lms/static/js/instructor_dashboard/data_download.js:302
 #: lms/static/js/instructor_dashboard/data_download_2.js:50
 msgid "Error generating list of students who may enroll. Please try again."
 msgstr "学生の登録リストの生成中にエラーが発生しました。もう一度お試しください。"
 
-#: lms/static/js/instructor_dashboard/data_download.js:358
+#: lms/static/js/instructor_dashboard/data_download.js:327
+msgid ""
+"Error generating list of inactive students who are enrolled in a course. "
+"Please try again."
+msgstr "コースに登録されている非アクティブな学生のリストを生成する際にエラーが発生しました。もう一度お試しください。"
+
+#: lms/static/js/instructor_dashboard/data_download.js:359
+msgid "Error retrieving grading configuration."
+msgstr "採点設定の取得中にエラーが発生しました。"
+
+#: lms/static/js/instructor_dashboard/data_download.js:384
 #: lms/static/js/instructor_dashboard/data_download_2.js:156
 msgid "Error generating grades. Please try again."
 msgstr "成績の生成中にエラーが発生しました。もう一度お試しください。"
 
-#: lms/static/js/instructor_dashboard/data_download.js:360
+#: lms/static/js/instructor_dashboard/data_download.js:386
 #: lms/static/js/instructor_dashboard/data_download_2.js:46
 msgid "Error generating problem grade report. Please try again."
 msgstr "問題の成績レポートの生成中にエラーが発生しました。もう一度お試しください。"
 
-#: lms/static/js/instructor_dashboard/data_download.js:362
+#: lms/static/js/instructor_dashboard/data_download.js:388
 #: lms/static/js/instructor_dashboard/data_download_2.js:45
 msgid "Error generating ORA data report. Please try again."
 msgstr "ORAデータレポートの生成中にエラーが発生しました。もう一度お試しください。"
@@ -3418,7 +3714,7 @@ msgstr "これらのユーザーはベータテスターとして追加されま
 #. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:571
 msgid "These users were not removed as beta testers:"
-msgstr "これらのユーザーはベータテスターとして削除されませんでした。"
+msgstr "ベータテスターとして削除されなかったユーザー:"
 
 #: lms/static/js/instructor_dashboard/membership.js:583
 msgid "Could not find users associated with the following identifiers:"
@@ -3457,14 +3753,14 @@ msgstr "以下のユーザーにメールが送信されました。登録が完
 #. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:804
 msgid "These users will be allowed to enroll once they register:"
-msgstr "これらのユーザーは登録後に受講が許可されます。"
+msgstr "これらのユーザーは登録後に参加が許可されます。"
 
 #. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:816
 msgid ""
 "Email was sent to the following users. They will be enrolled once they "
 "register:"
-msgstr "以下のユーザーにメールが送信されました。登録が完了すると、受講が許可されます。"
+msgstr "以下のユーザーにメールが送信されました。登録が完了すると、受講が可能になります。"
 
 #. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:840
@@ -3477,6 +3773,14 @@ msgstr "メールが正常に送信されました。次のユーザーはコー
 msgid ""
 "These users were not affiliated with the course so could not be unenrolled:"
 msgstr "このユーザーはコースに所属していなかったため、登録解除できませんでした。"
+
+#: lms/static/js/instructor_dashboard/send_email.js:68
+msgid "Your message must have a subject."
+msgstr "メッセージには件名が必要です。"
+
+#: lms/static/js/instructor_dashboard/send_email.js:70
+msgid "Your message cannot be blank."
+msgstr "メッセージを空白にすることはできません。"
 
 #: lms/static/js/instructor_dashboard/send_email.js:73
 msgid "Your message must have at least one target."
@@ -3592,7 +3896,7 @@ msgstr "問題の場所を入力してください。"
 msgid ""
 "Success! Problem attempts reset for problem '<%- problem_id %>' and student "
 "'<%- student_id %>'."
-msgstr "問題「<%- problem_id %>」と学生「<%- student_id %>」の問題試行がリセットされました。"
+msgstr "問題「<%- problem_id %>」と学生「<%- student_id %>」の試行回数がリセットされました。"
 
 #: lms/static/js/instructor_dashboard/student_admin.js:157
 msgid ""
@@ -3789,11 +4093,23 @@ msgstr "タスク入力"
 msgid "Task ID"
 msgstr "タスクID"
 
+#. Translators: a "Requester" is a username that requested a task such as
+#. sending email
+#: lms/static/js/instructor_dashboard/util.js:91
+msgid "Requester"
+msgstr "依頼者"
+
 #. Translators: A timestamp of when a task (eg, sending email) was submitted
 #. appears after this
 #: lms/static/js/instructor_dashboard/util.js:100
 msgid "Submitted"
 msgstr "提出済み"
+
+#. Translators: The length of a task (eg, sending email) in seconds appears
+#. this
+#: lms/static/js/instructor_dashboard/util.js:109
+msgid "Duration (sec)"
+msgstr "継続時間（秒）"
 
 #. Translators: The state (eg, "In progress") of a task (eg, sending email)
 #. appears after this.
@@ -3835,6 +4151,10 @@ msgstr "送信時刻"
 msgid "Number Sent"
 msgstr "送信数"
 
+#: lms/static/js/instructor_dashboard/util.js:271
+msgid "Copy Email To Editor"
+msgstr "メールをエディターにコピー"
+
 #: lms/static/js/instructor_dashboard/util.js:287
 msgid "Subject:"
 msgstr "件名:"
@@ -3857,11 +4177,17 @@ msgstr "メッセージ"
 
 #: lms/static/js/instructor_dashboard/util.js:399
 msgid "No tasks currently running."
-msgstr "現在、実行中のタスクはありません。"
+msgstr "タスクは現在実行されていません。"
 
 #: lms/static/js/instructor_dashboard/util.js:501
 msgid "File Name"
 msgstr "ファイル名"
+
+#: lms/static/js/instructor_dashboard/util.js:502
+msgid ""
+"Links are generated on demand and expire within 5 minutes due to the "
+"sensitive nature of student information."
+msgstr "学生情報の機密性のため、リンクは必要に応じて生成され、5分以内に期限切れになります。"
 
 #: lms/static/js/learner_dashboard/EnterpriseLearnerPortalModal.jsx:123
 msgid "You have access to the {enterpriseName} dashboard"
@@ -3983,11 +4309,11 @@ msgstr "ユーザー{user}の学生状態を正常に削除しました"
 
 #: lms/static/js/staff_debug_actions.js:102
 msgid "Failed to delete student state for user."
-msgstr "ユーザーの学生状態を削除できませんでした。"
+msgstr "ユーザーの学生状態の削除に失敗しました。"
 
 #: lms/static/js/staff_debug_actions.js:113
 msgid "Successfully rescored problem for user {user}"
-msgstr "ユーザー {user} の問題の再採点に成功しました。"
+msgstr "ユーザー {user} の問題の再採点に成功しました"
 
 #: lms/static/js/staff_debug_actions.js:114
 msgid "Failed to rescore problem for user."
@@ -4087,6 +4413,10 @@ msgid ""
 msgstr ""
 "あなたの雇用主や大学のシステムから{siteName}へのアクセスが含まれます{additionalSiteSpecificDeletionText}。"
 
+#: lms/static/js/student_account/components/StudentAccountDeletion.jsx:104
+msgid "We’re sorry to see you go!"
+msgstr "お別れするのは残念です！"
+
 #: lms/static/js/student_account/components/StudentAccountDeletion.jsx:125
 msgid "Delete My Account"
 msgstr "アカウントを削除"
@@ -4152,19 +4482,43 @@ msgid ""
 msgstr ""
 "アカウントの削除とメールリストからの削除は、システムで完全に処理されるまでに数週間かかる場合があります。それまでにメールの配信を停止したい場合は、メールのフッターから配信停止の手続きを行ってください。"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:109
+#: lms/static/js/student_account/tos_modal.js:47
+msgid "Terms of Service and Honor Code"
+msgstr "利用規約と名誉規定"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:71
+msgid "query param next is provide"
+msgstr "クエリパラメータ「next」は提供されます。"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:73
+msgid "query param next is internal"
+msgstr "クエリパラメータ「next」は内部です。"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:111
 msgid "Saving your email preference"
 msgstr "メール設定の保存"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:127
+#: lms/static/js/student_account/views/FinishAuthView.js:129
 msgid "Enrolling you in the selected course"
 msgstr "選択したコースに登録しています"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:159
+#: lms/static/js/student_account/views/FinishAuthView.js:140
+msgid "course mode param is not provided"
+msgstr "コースモードのパラメータが提供されていません"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:148
+msgid "course mode param is provided"
+msgstr "コースモードパラメータが提供されています"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:163
 msgid "Adding the selected course to your cart"
 msgstr "選択したコースをカートに追加する"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:172
+#: lms/static/js/student_account/views/FinishAuthView.js:167
+msgid " redirect the user to the next page"
+msgstr " ユーザーを次のページにリダイレクトする"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:177
 msgid "Loading your courses"
 msgstr "コースを読み込んでいます"
 
@@ -4172,6 +4526,13 @@ msgstr "コースを読み込んでいます"
 #: lms/static/js/student_account/views/RegisterView.js:150
 msgid "An error occurred."
 msgstr "エラーが発生しました。"
+
+#. Translators: This string is appended to optional field labels on the
+#. student login, registration, and
+#. profile forms.
+#: lms/static/js/student_account/views/FormView.js:33
+msgid "(optional)"
+msgstr "（任意）"
 
 #: lms/static/js/student_account/views/LoginView.js:39
 msgid "We couldn't sign you in."
@@ -4244,11 +4605,15 @@ msgstr "%(currentProvider)sに正常にサインインしました。"
 msgid ""
 "We just need a little more information before you start learning with "
 "%(platformName)s."
-msgstr "%(platformName)sで学習を始める前に、もう少し情報が必要です。"
+msgstr "学習を始める前に、%(platformName)sに関するもう少し情報が必要です。"
 
 #: lms/static/js/verify_student/views/image_input_view.js:93
 msgid "Image Upload Error"
 msgstr "画像アップロードエラー"
+
+#: lms/static/js/verify_student/views/image_input_view.js:94
+msgid "Please verify that you have uploaded a valid image (PNG and JPEG)."
+msgstr "画像が有効であることを確認してください（PNGおよびJPEG）。"
 
 #: lms/static/js/verify_student/views/incourse_reverify_view.js:82
 #: lms/static/js/verify_student/views/review_photos_step_view.js:72
@@ -4263,6 +4628,14 @@ msgstr "写真を提出できませんでした"
 #: lms/static/js/verify_student/views/make_payment_step_view.js:50
 msgid "Professional Education Verified Certificate"
 msgstr "プロフェッショナル教育認定証明書"
+
+#: lms/static/js/verify_student/views/make_payment_step_view.js:52
+msgid "Professional Education"
+msgstr "プロフェッショナル教育"
+
+#: lms/static/js/verify_student/views/make_payment_step_view.js:55
+msgid "Verified Certificate upgrade"
+msgstr "認定証明書のアップグレード"
 
 #: lms/static/js/verify_student/views/make_payment_step_view.js:57
 msgid "Verified Certificate"
@@ -4334,6 +4707,10 @@ msgstr "ウェブカメラが接続されていないようです。"
 msgid "Double-check that your webcam is connected and working to continue."
 msgstr "ウェブカメラが接続されていて正常に動作していることを再確認してください。"
 
+#: lms/static/js/verify_student/views/webcam_photo_view.js:337
+msgid "Photo Captured successfully."
+msgstr "写真が正常に撮影されました。"
+
 #: lms/static/js/verify_student/views/webcam_photo_view.js:378
 msgid "No Flash Detected"
 msgstr "フラッシュが検出されません"
@@ -4356,6 +4733,10 @@ msgstr "検証エラー"
 #: lms/templates/learner_dashboard/program_card.underscore:26
 msgid "In Progress"
 msgstr "進行中"
+
+#: lms/static/js/views/fields.js:63
+msgid "Placeholder"
+msgstr "プレースホルダー"
 
 #: lms/static/js/views/file_uploader.js:85
 msgid "Your upload of '{file}' succeeded."
@@ -4432,9 +4813,14 @@ msgid "Bookmark this page"
 msgstr "このページをブックマークする"
 
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmark_button.js:10
-#: xmodule/js/src/sequence/display.js:445
+#: xmodule/js/src/sequence/display.js:521
 msgid "Bookmarked"
 msgstr "ブックマーク済み"
+
+#: openedx/features/course_search/static/course_search/js/views/search_results_view.js:69
+msgid "{total_results} result found for \"{search_term}\""
+msgid_plural "{total_results} results found for \"{search_term}\""
+msgstr[0] "{total_results} 件の結果が「{search_term}」に対して見つかりました"
 
 #: xmodule/assets/library_content/public/js/library_content_edit.js:16
 #: xmodule/js/public/js/library_content_edit.js:16
@@ -4469,6 +4855,14 @@ msgstr "注釈を表示"
 #: xmodule/js/src/annotatable/display.js:285
 msgid "Hide Annotations"
 msgstr "注釈を非表示"
+
+#: xmodule/js/src/annotatable/display.js:300
+msgid "Expand Instructions"
+msgstr "指示を展開"
+
+#: xmodule/js/src/annotatable/display.js:302
+msgid "Collapse Instructions"
+msgstr "指示を折りたたむ"
 
 #: xmodule/js/src/annotatable/display.js:392
 msgid "Commentary"
@@ -4513,7 +4907,7 @@ msgstr[0] "{num_points}点可能（未採点）"
 #: xmodule/js/src/capa/display.js:269
 msgid "{earned}/{possible} point (graded)"
 msgid_plural "{earned}/{possible} points (graded)"
-msgstr[0] "{earned}/{possible} ポイント (採点済み)"
+msgstr[0] "{earned}/{possible} 点（採点済み）"
 
 #. Translators: {earned} is the number of points earned. {possible} is the
 #. total number of points (examples: 0/1, 1/1, 2/3, 5/10). The total number of
@@ -4524,15 +4918,15 @@ msgid "{earned}/{possible} point (ungraded)"
 msgid_plural "{earned}/{possible} points (ungraded)"
 msgstr[0] "{earned}/{possible} ポイント (未採点)"
 
-#: xmodule/js/src/capa/display.js:349
+#: xmodule/js/src/capa/display.js:356
 msgid "The grading process is still running. Refresh the page to see updates."
 msgstr "採点プロセスはまだ進行中です。ページを更新して最新情報を確認してください。"
 
-#: xmodule/js/src/capa/display.js:458
+#: xmodule/js/src/capa/display.js:465
 msgid "Could not grade your answer. The submission was aborted."
 msgstr "あなたの回答を採点できませんでした。提出は中止されました。"
 
-#: xmodule/js/src/capa/display.js:522
+#: xmodule/js/src/capa/display.js:529
 msgid ""
 "Submission aborted! Sorry, your browser does not support file uploads. If "
 "you can, please use Chrome or Safari which have been verified to support "
@@ -4540,33 +4934,33 @@ msgid ""
 msgstr ""
 "送信が中止されました！申し訳ありませんが、お使いのブラウザはファイルのアップロードをサポートしていません。可能であれば、ファイルのアップロードがサポートされていることが確認されているChromeまたはSafariをご利用ください。"
 
-#: xmodule/js/src/capa/display.js:548
+#: xmodule/js/src/capa/display.js:555
 msgid "You submitted {filename}; only {allowedFiles} are allowed."
 msgstr "あなたは{filename}を提出しましたが、許可されているのは{allowedFiles}のみです。"
 
-#: xmodule/js/src/capa/display.js:561
+#: xmodule/js/src/capa/display.js:568
 msgid "Your file {filename} is too large (max size: {maxSize}MB)."
 msgstr "ファイル{filename}は大きすぎます（最大サイズ：{maxSize}MB）。"
 
-#: xmodule/js/src/capa/display.js:577
+#: xmodule/js/src/capa/display.js:584
 msgid "You did not submit the required files: {requiredFiles}."
 msgstr "必要なファイルが提出されていません: {requiredFiles}。"
 
-#: xmodule/js/src/capa/display.js:587
+#: xmodule/js/src/capa/display.js:594
 msgid "You did not select any files to submit."
 msgstr "ファイルが選択されていません。"
 
 #. Translators: This is only translated to allow for reordering of label and
 #. associated status.;
-#: xmodule/js/src/capa/display.js:681
+#: xmodule/js/src/capa/display.js:688
 msgid "{label}: {status}"
 msgstr "{label}: {status}"
 
-#: xmodule/js/src/capa/display.js:712
+#: xmodule/js/src/capa/display.js:719
 msgid "This problem has been reset."
 msgstr "この問題はリセットされました。"
 
-#: xmodule/js/src/capa/display.js:1018
+#: xmodule/js/src/capa/display.js:1025
 msgid "unsubmitted"
 msgstr "未提出"
 
@@ -4582,6 +4976,10 @@ msgstr ""
 msgid "Paragraph"
 msgstr "段落"
 
+#: xmodule/js/src/html/edit.js:149
+msgid "Preformatted"
+msgstr "プリフォーマット"
+
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:150 xmodule/js/src/html/edit.js:645
@@ -4592,13 +4990,13 @@ msgstr "見出し3"
 #. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:151 xmodule/js/src/html/edit.js:650
 msgid "Heading 4"
-msgstr "見出し4"
+msgstr "見出し 4"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:152 xmodule/js/src/html/edit.js:655
 msgid "Heading 5"
-msgstr "見出し5"
+msgstr "見出し 5"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -4629,6 +5027,12 @@ msgstr "左揃え"
 #: xmodule/js/src/html/edit.js:245
 msgid "Align right"
 msgstr "右揃え"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:250
+msgid "Alignment"
+msgstr "整列"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -4668,6 +5072,12 @@ msgstr "ブロック"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:290
+msgid "Body"
+msgstr "本文"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:295
 msgid "Bold"
 msgstr "太字"
@@ -4677,6 +5087,18 @@ msgstr "太字"
 #: xmodule/js/src/html/edit.js:300
 msgid "Border color"
 msgstr "境界線の色"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:305
+msgid "Border"
+msgstr "境界線"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:310
+msgid "Bottom"
+msgstr "下部"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -4707,6 +5129,12 @@ msgstr "セルのプロパティ"
 #: xmodule/js/src/html/edit.js:340
 msgid "Cell spacing"
 msgstr "セル間隔"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:345
+msgid "Cell type"
+msgstr "セルタイプ"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -4768,6 +5196,12 @@ msgstr "列"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:405
+msgid "Constrain proportions"
+msgstr "比率を制限"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:410
 msgid "Copy row"
 msgstr "行をコピー"
@@ -4804,6 +5238,12 @@ msgstr "行を切り取り"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:440
+msgid "Cut"
+msgstr "切り取り"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:445
 msgid "Decrease indent"
 msgstr "インデントを減らす"
@@ -4830,7 +5270,7 @@ msgstr "行を削除"
 #. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:465
 msgid "Delete table"
-msgstr "テーブルを削除"
+msgstr "表を削除"
 
 #. #-#-#-#-#  djangojs.po (0.1a)  #-#-#-#-#
 #. Translators: this is a message from the raw HTML editor displayed in the
@@ -4852,6 +5292,12 @@ msgstr "寸法"
 #: xmodule/js/src/html/edit.js:480
 msgid "Disc"
 msgstr "ディスク"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:485
+msgid "Div"
+msgstr "ディブ"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -4907,9 +5353,27 @@ msgstr "ファイル"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:525
+msgid "Find and replace"
+msgstr "検索と置換"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:530
 msgid "Find next"
 msgstr "次を検索"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:535
+msgid "Find previous"
+msgstr "前を検索"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:540
+msgid "Find"
+msgstr "検索"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -4937,9 +5401,71 @@ msgstr "フッター"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:565
+msgid "Format"
+msgstr "形式"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:570
+msgid "Formats"
+msgstr "形式"
+
+#. #-#-#-#-#  djangojs.po (0.1a)  #-#-#-#-#
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:575
+#: common/static/common/templates/image-modal.underscore:6
+msgid "Fullscreen"
+msgstr "全画面表示"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:580
 msgid "General"
 msgstr "一般"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:585
+msgid "H Align"
+msgstr "H位置揃え"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:590
+msgid "Header 1"
+msgstr "ヘッダー 1"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:595
+msgid "Header 2"
+msgstr "見出し 2"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:600
+msgid "Header 3"
+msgstr "ヘッダー3"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:605
+msgid "Header 4"
+msgstr "ヘッダー4"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:610
+msgid "Header 5"
+msgstr "ヘッダー5"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:615
+msgid "Header 6"
+msgstr "ヘッダー6"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -4997,6 +5523,18 @@ msgstr "水平スペース"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:685
+msgid "HTML source code"
+msgstr "HTMLソースコード"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:690
+msgid "Ignore all"
+msgstr "すべて無視"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:700
 msgid "Image description"
 msgstr "画像の説明"
@@ -5015,6 +5553,12 @@ msgstr "インライン"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:715
+msgid "Insert column after"
+msgstr "列の後に挿入"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:720
 msgid "Insert column before"
 msgstr "列を前に挿入"
@@ -5027,15 +5571,33 @@ msgstr "日付/時刻を挿入"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:730
+msgid "Insert image"
+msgstr "画像を挿入"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:735
 msgid "Insert link"
 msgstr "リンクを挿入"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:740
+msgid "Insert row after"
+msgstr "行を後に挿入"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:745
 msgid "Insert row before"
 msgstr "行を前に挿入"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:750
+msgid "Insert table"
+msgstr "表を挿入"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -5081,6 +5643,12 @@ msgstr "イタリック体"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:790
+msgid "Justify"
+msgstr "両端揃え"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:795
 msgid "Keywords"
 msgstr "キーワード"
@@ -5099,6 +5667,24 @@ msgstr "左揃え"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:810
+msgid "Lower Alpha"
+msgstr "下位アルファベット"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:815
+msgid "Lower Greek"
+msgstr "下位ギリシャ語"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:820
+msgid "Lower Roman"
+msgstr "小文字ローマ数字"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:825
 msgid "Match case"
 msgstr "大文字と小文字を区別"
@@ -5108,6 +5694,18 @@ msgstr "大文字と小文字を区別"
 #: xmodule/js/src/html/edit.js:830
 msgid "Merge cells"
 msgstr "セルを結合"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:835
+msgid "Middle"
+msgstr "中央"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:845
+msgid "New document"
+msgstr "新しいドキュメント"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -5129,6 +5727,12 @@ msgstr "次へ"
 #: xmodule/js/src/html/edit.js:860
 msgid "No color"
 msgstr "色なし"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:865
+msgid "Nonbreaking space"
+msgstr "改行なしスペース"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -5176,9 +5780,21 @@ msgstr "埋め込みコードを以下に貼り付けてください。"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:925
+msgid "Paste"
+msgstr "貼り付け"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:930
 msgid "Poster"
 msgstr "ポスター"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:935
+msgid "Pre"
+msgstr "プレ"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -5219,6 +5835,12 @@ msgstr "すべて置換"
 #: cms/templates/js/video/metadata-translations-item.underscore:5
 msgid "Replace"
 msgstr "置換"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:990
+msgid "Restore last draft"
+msgstr "最後の下書きを復元"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -5330,6 +5952,12 @@ msgstr "スペルチェック"
 #: xmodule/js/src/html/edit.js:1085
 msgid "Split cell"
 msgstr "セルを分割"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:1090
+msgid "Square"
+msgstr "四角形"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -5450,6 +6078,12 @@ msgstr "元に戻す"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:1185
+msgid "Upper Alpha"
+msgstr "アルファベット大文字"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:1190
 msgid "Upper Roman"
 msgstr "大文字ローマ数字"
@@ -5459,6 +6093,12 @@ msgstr "大文字ローマ数字"
 #: xmodule/js/src/html/edit.js:1195
 msgid "Url"
 msgstr "URL"
+
+#. Translators: this is a message from the raw HTML editor displayed in the
+#. browser when a user needs to edit HTML
+#: xmodule/js/src/html/edit.js:1200
+msgid "V Align"
+msgstr "垂直配置"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -5583,11 +6223,22 @@ msgid ""
 "An answer option has been left blank. Please review and edit the component."
 msgstr "回答の選択肢が空白のままです。コンポーネントを確認して編集してください。"
 
-#: xmodule/js/src/sequence/display.js:330
+#: xmodule/js/src/problem/edit.js:714
+msgid "Explanation"
+msgstr "説明"
+
+#: xmodule/js/src/sequence/display.js:406
 msgid ""
 "Sequence error! Cannot navigate to %(tab_name)s in the current "
 "SequenceModule. Please contact the course staff."
 msgstr "シーケンスエラー！現在のSequenceModuleで%(tab_name)sに移動できません。コーススタッフに連絡してください。"
+
+#: xmodule/js/src/video/00_i18n.js:15
+#: xmodule/js/src/video/09_play_pause_control.js:30
+#: xmodule/js/src/video/09_play_pause_control.js:88
+#: xmodule/js/src/video/09_play_skip_control.js:30
+msgid "Play"
+msgstr "再生"
 
 #: xmodule/js/src/video/00_i18n.js:16
 #: xmodule/js/src/video/09_play_pause_control.js:78
@@ -5602,6 +6253,11 @@ msgstr "ミュート"
 msgid "Unmute"
 msgstr "ミュート解除"
 
+#: xmodule/js/src/video/00_i18n.js:19
+#: xmodule/js/src/video/04_video_full_screen.js:229
+msgid "Exit full browser"
+msgstr "全画面表示を終了"
+
 #: xmodule/js/src/video/00_i18n.js:21
 #: xmodule/js/src/video/08_video_speed_control.js:46
 msgid "Speed"
@@ -5611,6 +6267,11 @@ msgstr "速度"
 #: xmodule/js/src/video/08_video_auto_advance_control.js:40
 msgid "Auto-advance"
 msgstr "自動進行"
+
+#: xmodule/js/src/video/00_i18n.js:23
+#: xmodule/js/src/video/07_video_volume_control.js:72
+msgid "Volume"
+msgstr "音量"
 
 #. Translators: Volume level equals 0%.
 #: xmodule/js/src/video/00_i18n.js:25
@@ -5645,6 +6306,14 @@ msgstr "最大"
 #: xmodule/js/src/video/02_html5_video.js:87
 msgid "This browser cannot play .mp4, .ogg, or .webm files."
 msgstr "このブラウザでは .mp4、.ogg、または .webm ファイルを再生できません。"
+
+#: xmodule/js/src/video/02_html5_video.js:88
+msgid "Try using a different browser, such as Google Chrome."
+msgstr "別のブラウザ、例えばGoogle Chromeを試してみてください。"
+
+#: xmodule/js/src/video/05_video_quality_control.js:25
+msgid "High Definition"
+msgstr "高精細"
 
 #: xmodule/js/src/video/05_video_quality_control.js:26
 #: xmodule/js/src/video/05_video_quality_control.js:159
@@ -5693,9 +6362,21 @@ msgstr "このボタンをクリックしてビデオをミュートまたはミ
 msgid "Adjust video volume"
 msgstr "ビデオの音量を調整する"
 
+#: xmodule/js/src/video/08_video_speed_control.js:36
+msgid ""
+"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
+"navigate the different speeds, then press ENTER to change to the selected "
+"speed."
+msgstr ""
+"速度メニューに入るにはUPを押し、UPとDOWNの矢印キーを使って異なる速度をナビゲートし、選択した速度に変更するにはENTERを押します。"
+
 #: xmodule/js/src/video/08_video_speed_control.js:40
 msgid "Adjust video speed"
 msgstr "動画の速度を調整する"
+
+#: xmodule/js/src/video/08_video_speed_control.js:271
+msgid "Video speed: "
+msgstr "ビデオ速度: "
 
 #: xmodule/js/src/video/09_play_skip_control.js:79
 msgid "Skip"
@@ -5703,7 +6384,7 @@ msgstr "スキップ"
 
 #: xmodule/js/src/video/09_poster.js:31
 msgid "Play video"
-msgstr "ビデオを再生"
+msgstr "動画を再生"
 
 #: xmodule/js/src/video/09_skip_control.js:33
 msgid "Do not show again"
@@ -5713,41 +6394,53 @@ msgstr "再表示しない"
 msgid "Open language menu"
 msgstr "言語メニューを開く"
 
-#: xmodule/js/src/video/09_video_caption.js:589
+#: xmodule/js/src/video/09_video_caption.js:630
 msgid "Transcript will be displayed when you start playing the video."
 msgstr "ビデオを再生すると、トランスクリプトが表示されます。"
 
-#: xmodule/js/src/video/09_video_caption.js:837
+#: xmodule/js/src/video/09_video_caption.js:878
 msgid ""
 "Activating a link in this group will skip to the corresponding point in the "
 "video."
 msgstr "このグループのリンクをアクティブにすると、ビデオの対応するポイントにスキップします。"
 
-#: xmodule/js/src/video/09_video_caption.js:840
+#: xmodule/js/src/video/09_video_caption.js:881
 msgid "Video transcript"
 msgstr "ビデオトランスクリプト"
 
-#: xmodule/js/src/video/09_video_caption.js:843
+#: xmodule/js/src/video/09_video_caption.js:884
 msgid "Start of transcript. Skip to the end."
 msgstr "トランスクリプトの開始。最後までスキップ。"
 
-#: xmodule/js/src/video/09_video_caption.js:847
+#: xmodule/js/src/video/09_video_caption.js:888
 msgid "End of transcript. Skip to the start."
 msgstr "トランスクリプトの終了。最初にスキップ。"
 
-#: xmodule/js/src/video/09_video_caption.js:1223
+#: xmodule/js/src/video/09_video_caption.js:892
+msgid ""
+"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
+" keys to navigate language options. Press ENTER to change to the selected "
+"language."
+msgstr ""
+"言語メニューに入るにはUP矢印キーを押し、言語オプションをナビゲートするにはUPおよびDOWN矢印キーを使用します。選択した言語に変更するにはENTERを押します。"
+
+#: xmodule/js/src/video/09_video_caption.js:1248
+msgid "Hide closed captions"
+msgstr "字幕を非表示"
+
+#: xmodule/js/src/video/09_video_caption.js:1266
 msgid "(Caption will be displayed when you start playing the video.)"
 msgstr "(ビデオの再生を開始するとキャプションが表示されます。)"
 
-#: xmodule/js/src/video/09_video_caption.js:1230
+#: xmodule/js/src/video/09_video_caption.js:1273
 msgid "Turn on closed captioning"
 msgstr "字幕をオンにする"
 
-#: xmodule/js/src/video/09_video_caption.js:1338
+#: xmodule/js/src/video/09_video_caption.js:1381
 msgid "Turn on transcripts"
 msgstr "トランスクリプトをオンにする"
 
-#: xmodule/js/src/video/09_video_caption.js:1353
+#: xmodule/js/src/video/09_video_caption.js:1396
 msgid "Turn off transcripts"
 msgstr "トランスクリプトをオフにする"
 
@@ -5792,6 +6485,10 @@ msgstr "最小完了率は0から100の間の整数でなければなりませ�
 msgid "Use as a Prerequisite"
 msgstr "前提条件として使用"
 
+#: cms/templates/js/access-editor.underscore:51
+msgid "Make this subsection available as a prerequisite to other content"
+msgstr "他のコンテンツの前提条件としてこのサブセクションを利用可能にする"
+
 #: cms/templates/js/active-video-upload-list.underscore:14
 msgid "Active Uploads"
 msgstr "アクティブアップロード"
@@ -5822,6 +6519,14 @@ msgstr "%(type)sコンポーネントテンプレートメニュー"
 msgid "Common Problem Types"
 msgstr "一般的な問題の種類"
 
+#: cms/templates/js/add-xblock-component-support-legend.underscore:9
+msgid "Supported"
+msgstr "サポート済み"
+
+#: cms/templates/js/add-xblock-component-support-legend.underscore:13
+msgid "Provisional"
+msgstr "仮の"
+
 #: cms/templates/js/add-xblock-component-support-legend.underscore:18
 #: cms/templates/js/add-xblock-component-support-level.underscore:9
 msgid "Not Supported"
@@ -5846,6 +6551,11 @@ msgstr "非推奨"
 #: cms/templates/js/asset-library.underscore:5
 msgid "List of uploaded files and assets in this course"
 msgstr "このコースにアップロードされたファイルとアセットの一覧"
+
+#: cms/templates/js/asset-library.underscore:20
+#: cms/templates/js/asset-library.underscore:53
+msgid "- Sortable"
+msgstr "並べ替え可能"
 
 #: cms/templates/js/asset-library.underscore:35
 msgid "Show All"
@@ -5882,6 +6592,14 @@ msgstr "このファイルを開く/ダウンロードする"
 #: cms/templates/js/asset.underscore:23
 msgid "Studio:"
 msgstr "スタジオ:"
+
+#: cms/templates/js/asset.underscore:29
+msgid "Web:"
+msgstr "Web:"
+
+#: cms/templates/js/asset.underscore:39
+msgid "Delete this asset"
+msgstr "このアセットを削除"
 
 #: cms/templates/js/asset.underscore:42
 msgid "Lock this asset"
@@ -5962,6 +6680,10 @@ msgid ""
 "certificates. Leave blank to use the official course title."
 msgstr "証明書に表示する公式コース名の代わりを指定してください。公式コース名を使用する場合は空白のままにしてください。"
 
+#: cms/templates/js/certificate-editor.underscore:41
+msgid "Add Additional Signatory"
+msgstr "追加署名者を追加"
+
 #: cms/templates/js/certificate-editor.underscore:42
 msgid "(Add signatories for a certificate)"
 msgstr "(証明書の署名者を追加する)"
@@ -5969,6 +6691,14 @@ msgstr "(証明書の署名者を追加する)"
 #: cms/templates/js/certificate-web-preview.underscore:1
 msgid "Choose mode"
 msgstr "モードを選択"
+
+#: cms/templates/js/certificate-web-preview.underscore:8
+msgid "Preview Certificate"
+msgstr "証明書をプレビュー"
+
+#: cms/templates/js/certificate-web-preview.underscore:13
+msgid "Activate"
+msgstr "有効化"
 
 #: cms/templates/js/certificate-web-preview.underscore:15
 msgid "Deactivate"
@@ -6087,6 +6817,10 @@ msgstr "有効"
 msgid "Enable Now"
 msgstr "今すぐ有効にする"
 
+#: cms/templates/js/course-instructor-details.underscore:4
+msgid "Instructor Name"
+msgstr "講師名"
+
 #: cms/templates/js/course-instructor-details.underscore:5
 msgid "Please add the instructor's name"
 msgstr "講師名を追加してください"
@@ -6112,6 +6846,14 @@ msgstr "組織名"
 msgid "Please add the institute where the instructor is associated"
 msgstr "講師が所属する機関を追加してください"
 
+#: cms/templates/js/course-instructor-details.underscore:21
+msgid "Biography"
+msgstr "経歴"
+
+#: cms/templates/js/course-instructor-details.underscore:22
+msgid "Instructor Biography"
+msgstr "講師の略歴"
+
 #: cms/templates/js/course-instructor-details.underscore:23
 msgid "Please add the instructor's biography"
 msgstr "講師の経歴を追加してください"
@@ -6119,6 +6861,14 @@ msgstr "講師の経歴を追加してください"
 #: cms/templates/js/course-instructor-details.underscore:27
 msgid "Photo"
 msgstr "写真"
+
+#: cms/templates/js/course-instructor-details.underscore:29
+msgid "Instructor Photo"
+msgstr "講師の写真"
+
+#: cms/templates/js/course-instructor-details.underscore:33
+msgid "Instructor Photo URL"
+msgstr "インストラクター写真URL"
 
 #: cms/templates/js/course-instructor-details.underscore:34
 msgid ""
@@ -6160,9 +6910,17 @@ msgid ""
 "through their link."
 msgstr "サブセクション間のナビゲーションはできず、それぞれのリンクを通じてのみアクセス可能です。"
 
+#: cms/templates/js/course-outline.underscore:71
+msgid "Unpublished changes to live content"
+msgstr "公開されていないライブコンテンツへの変更"
+
 #: cms/templates/js/course-outline.underscore:73
 msgid "Unpublished units will not be released"
 msgstr "未公開のユニットはリリースされません"
+
+#: cms/templates/js/course-outline.underscore:75
+msgid "Unpublished changes to content that will release in the future"
+msgstr "将来リリースされるコンテンツへの未公開の変更"
 
 #: cms/templates/js/course-outline.underscore:83
 #, python-brace-format
@@ -6176,6 +6934,10 @@ msgstr "未採点"
 #: cms/templates/js/course-outline.underscore:114
 msgid "Onboarding Exam"
 msgstr "オンボーディング試験"
+
+#: cms/templates/js/course-outline.underscore:116
+msgid "Practice proctored Exam"
+msgstr "模擬監督試験"
 
 #: cms/templates/js/course-outline.underscore:118
 msgid "Proctored Exam"
@@ -6199,6 +6961,11 @@ msgstr "表示名"
 #: cms/templates/js/course-outline.underscore:169
 msgid "Discussions enabled"
 msgstr "ディスカッションが有効になっています"
+
+#: cms/templates/js/course-outline.underscore:176
+#: cms/templates/js/course-outline.underscore:177
+msgid "Proctoring Settings"
+msgstr "プロクタリング設定"
 
 #: cms/templates/js/course-outline.underscore:210
 #: cms/templates/js/course-outline.underscore:240
@@ -6237,10 +7004,28 @@ msgstr "リリース状況:"
 msgid "Released:"
 msgstr "リリース:"
 
+#: cms/templates/js/course-outline.underscore:293
+#: cms/templates/js/publish-xblock.underscore:17
+msgid "Scheduled:"
+msgstr "予定:"
+
+#: cms/templates/js/course-outline.underscore:296
+#: cms/templates/js/publish-xblock.underscore:72
+#: lms/templates/ccx/schedule.underscore:93
+#: lms/templates/ccx/schedule.underscore:103
+msgid "Unscheduled"
+msgstr "未定"
+
 #: cms/templates/js/course-outline.underscore:311
 #: cms/templates/js/highlights-editor.underscore:2
 msgid "Section Highlights"
 msgstr "セクションのハイライト"
+
+#: cms/templates/js/course-outline.underscore:318
+#: cms/templates/js/course-outline.underscore:351
+#: cms/templates/js/course-outline.underscore:381
+msgid "Graded as:"
+msgstr "評価:"
 
 #: cms/templates/js/course-outline.underscore:325
 #: cms/templates/js/course-outline.underscore:355
@@ -6286,7 +7071,7 @@ msgstr "%(xblock_type)sを貼り付け"
 
 #: cms/templates/js/course-outline.underscore:510
 msgid "From:"
-msgstr "From:"
+msgstr "から:"
 
 #: cms/templates/js/course-outline.underscore:513
 msgid "What's in my clipboard?"
@@ -6296,9 +7081,13 @@ msgstr "クリップボードには何が入っていますか？"
 msgid "Learning Outcome"
 msgstr "学習成果"
 
+#: cms/templates/js/course-settings-learning-fields.underscore:3
+msgid "Add a learning outcome here"
+msgstr "ここに学習成果を追加してください"
+
 #: cms/templates/js/course-video-settings-update-org-credentials-footer.underscore:3
 msgid "Press discard changes to discard your changes."
-msgstr "変更を破棄するには、変更を破棄してください。"
+msgstr "変更を破棄を押して、変更を破棄します。"
 
 #: cms/templates/js/course-video-settings-update-org-credentials-footer.underscore:6
 #: cms/templates/js/course-video-settings-update-settings-footer.underscore:6
@@ -6325,6 +7114,18 @@ msgstr "コースビデオ設定"
 msgid "Video Sharing"
 msgstr "ビデオ共有"
 
+#: cms/templates/js/course-video-sharing-enable.underscore:13
+msgid "Learn more"
+msgstr "詳しくはこちら"
+
+#: cms/templates/js/course-video-transcript-preferences.underscore:3
+msgid "Transcript Turnaround"
+msgstr "トランスクリプトの処理時間"
+
+#: cms/templates/js/course-video-transcript-preferences.underscore:8
+msgid "Transcript Fidelity"
+msgstr "文字起こしの正確性"
+
 #: cms/templates/js/course-video-transcript-preferences.underscore:13
 msgid "Video Source Language"
 msgstr "ビデオのソース言語"
@@ -6343,6 +7144,14 @@ msgstr "追加"
 #: cms/templates/js/course-video-transcript-preferences.underscore:25
 msgid "Press Add to language"
 msgstr "言語に追加を押す"
+
+#: cms/templates/js/course-video-transcript-provider-empty.underscore:1
+msgid "Automated Transcripts"
+msgstr "自動文字起こし"
+
+#: cms/templates/js/course-video-transcript-provider-selected.underscore:1
+msgid "Transcript Provider"
+msgstr "トランスクリプトプロバイダー"
 
 #: cms/templates/js/course-video-transcript-provider-selected.underscore:5
 msgid "Change"
@@ -6386,6 +7195,12 @@ msgstr "このタイプのすべての課題の重みを、総成績に対する
 msgid "Total Number"
 msgstr "総数"
 
+#: cms/templates/js/course_grade_policy.underscore:23
+msgid ""
+"The number of subsections in the course that contain problems of this "
+"assignment type."
+msgstr "コース内のこの課題タイプの問題を含む小節の数。"
+
 #: cms/templates/js/course_grade_policy.underscore:27
 msgid "Number of Droppable"
 msgstr "ドロップ可能な数"
@@ -6427,6 +7242,10 @@ msgstr "コース内の{type}課題の数は、ここで定義された数と一
 msgid "Course Handouts"
 msgstr "コース配布資料"
 
+#: cms/templates/js/course_info_handouts.underscore:9
+msgid "You have no handouts defined"
+msgstr "ハンドアウトが定義されていません"
+
 #: cms/templates/js/course_info_handouts.underscore:13
 msgid ""
 "There is invalid code in your content. Please check to make sure it is valid"
@@ -6462,14 +7281,26 @@ msgstr "成績評価単位のディスカッションを有効にしてくださ
 msgid "Discussion Configuration"
 msgstr "ディスカッション設定"
 
+#: cms/templates/js/due-date-editor.underscore:3
+msgid "Due Date:"
+msgstr "期限:"
+
+#: cms/templates/js/due-date-editor.underscore:9
+msgid "Due Time in UTC:"
+msgstr "提出期限（UTC）："
+
 #: cms/templates/js/edit-chapter.underscore:3
 msgid "Chapter Name"
-msgstr "章名"
+msgstr "章の名前"
 
 #: cms/templates/js/edit-chapter.underscore:4
 #, python-brace-format
 msgid "Chapter {order}"
 msgstr "第{order}章"
+
+#: cms/templates/js/edit-chapter.underscore:9
+msgid "Chapter Asset"
+msgstr "章のアセット"
 
 #: cms/templates/js/edit-chapter.underscore:10
 #, python-brace-format
@@ -6484,6 +7315,10 @@ msgstr "PDFファイルをアップロードするか、Studioアセットファ
 msgid "Upload PDF"
 msgstr "PDFをアップロード"
 
+#: cms/templates/js/edit-chapter.underscore:14
+msgid "delete chapter"
+msgstr "章を削除"
+
 #: cms/templates/js/edit-textbook.underscore:10
 msgid "Textbook information"
 msgstr "教科書情報"
@@ -6496,9 +7331,19 @@ msgstr "教科書名"
 msgid "Introduction to Cookie Baking"
 msgstr "クッキー作りの入門"
 
+#: cms/templates/js/edit-textbook.underscore:14
+msgid ""
+"provide the title/name of the text book as you would like your students to "
+"see it"
+msgstr "教科書のタイトル／名前を、学生が見ることを想定して提供してください。"
+
 #: cms/templates/js/edit-textbook.underscore:18
 msgid "Chapter information"
 msgstr "章情報"
+
+#: cms/templates/js/edit-textbook.underscore:21
+msgid "Add a Chapter"
+msgstr "章を追加"
 
 #: cms/templates/js/edit-title-button.underscore:1
 msgid "Edit Title"
@@ -6539,6 +7384,18 @@ msgid ""
 "When sharing this link with your learners, they will see the content of the "
 "subsection along with the header and footer of your LMS."
 msgstr "学習者とこのリンクを共有すると、LMSのヘッダーとフッターと共にサブセクションの内容が表示されます。"
+
+#: cms/templates/js/grading-editor.underscore:1
+msgid "Grading"
+msgstr "採点"
+
+#: cms/templates/js/grading-editor.underscore:5
+msgid "Grade as:"
+msgstr "評価方法:"
+
+#: cms/templates/js/grading-editor.underscore:7
+msgid "Not Graded"
+msgstr "評価なし"
 
 #: cms/templates/js/group-configuration-details.underscore:52
 #: cms/templates/js/group-configuration-editor.underscore:53
@@ -6595,6 +7452,10 @@ msgid ""
 "Video, Problems. You must have two or more groups."
 msgstr "学生が割り当てられるグループの名前。例えば、コントロール、ビデオ、問題。2つ以上のグループが必要です。"
 
+#: cms/templates/js/group-configuration-editor.underscore:33
+msgid "Add another group"
+msgstr "別のグループを追加"
+
 #: cms/templates/js/group-configuration-editor.underscore:39
 msgid ""
 "This configuration is currently used in content experiments. If you make "
@@ -6616,6 +7477,10 @@ msgstr "学習者がこのセクションで受け取るメールメッセージ
 #, python-brace-format
 msgid "Highlight {highlight_index}"
 msgstr "ハイライト {highlight_index}"
+
+#: cms/templates/js/highlights-editor.underscore:55
+msgid "A highlight to look forward to this week."
+msgstr "今週楽しみにしているハイライト。"
 
 #: cms/templates/js/license-selector.underscore:3
 msgid "License Type"
@@ -6659,6 +7524,26 @@ msgstr "%(new_item_message)s"
 #, python-format
 msgid "New %(item_type)s"
 msgstr "新しい%(item_type)s"
+
+#: cms/templates/js/metadata-dict-entry.underscore:9
+#: cms/templates/js/metadata-file-uploader-entry.underscore:5
+#: cms/templates/js/metadata-list-entry.underscore:12
+#: cms/templates/js/metadata-number-entry.underscore:4
+#: cms/templates/js/metadata-option-entry.underscore:12
+#: cms/templates/js/metadata-option-public-access.underscore:12
+#: cms/templates/js/metadata-string-entry.underscore:4
+msgid "Clear"
+msgstr "クリア"
+
+#: cms/templates/js/metadata-dict-entry.underscore:11
+#: cms/templates/js/metadata-file-uploader-entry.underscore:6
+#: cms/templates/js/metadata-list-entry.underscore:14
+#: cms/templates/js/metadata-number-entry.underscore:5
+#: cms/templates/js/metadata-option-entry.underscore:13
+#: cms/templates/js/metadata-option-public-access.underscore:13
+#: cms/templates/js/metadata-string-entry.underscore:5
+msgid "Clear Value"
+msgstr "明確な価値"
 
 #: cms/templates/js/metadata-file-uploader-item.underscore:2
 #: cms/templates/js/video-transcripts.underscore:42
@@ -6722,7 +7607,7 @@ msgstr "ビデオ ID"
 
 #: cms/templates/js/previous-video-upload-list.underscore:17
 msgid "Transcripts"
-msgstr "成績証明書"
+msgstr "字幕"
 
 #: cms/templates/js/previous-video-upload-list.underscore:18
 msgid "Video Status"
@@ -6735,10 +7620,18 @@ msgstr "ビデオステータス"
 msgid "Action"
 msgstr "アクション"
 
+#: cms/templates/js/previous-video-upload.underscore:13
+msgid "Remove this video"
+msgstr "このビデオを削除"
+
 #: cms/templates/js/previous-video-upload.underscore:15
 #, python-brace-format
 msgid "Remove {video_name} video"
 msgstr "{video_name}ビデオを削除"
+
+#: cms/templates/js/publish-history.underscore:2
+msgid "Never published"
+msgstr "未公開"
 
 #: cms/templates/js/publish-history.underscore:4
 #, python-format
@@ -6758,6 +7651,10 @@ msgstr "下書き（未公開）"
 msgid "Visible to Staff Only"
 msgstr "スタッフのみ表示"
 
+#: cms/templates/js/publish-xblock.underscore:6
+msgid "Published and Live"
+msgstr "公開中"
+
 #: cms/templates/js/publish-xblock.underscore:8
 msgid "Published (not yet released)"
 msgstr "公開済み（未リリース）"
@@ -6769,6 +7666,10 @@ msgstr "下書き（未公開の変更）"
 #: cms/templates/js/publish-xblock.underscore:13
 msgid "Release:"
 msgstr "リリース:"
+
+#: cms/templates/js/publish-xblock.underscore:23
+msgid "Publishing Status"
+msgstr "公開状況"
 
 #: cms/templates/js/publish-xblock.underscore:31
 #, python-brace-format
@@ -6800,6 +7701,10 @@ msgstr "表示対象:"
 msgid "Will Be Visible To:"
 msgstr "表示対象:"
 
+#: cms/templates/js/publish-xblock.underscore:88
+msgid "Staff Only"
+msgstr "職員専用"
+
 #: cms/templates/js/publish-xblock.underscore:92
 #, python-format
 msgid "with %(section_or_subsection)s"
@@ -6813,6 +7718,18 @@ msgstr "職員と学習者"
 #: cms/templates/js/staff-lock-editor.underscore:37
 msgid "Hide from learners"
 msgstr "学習者から隠す"
+
+#: cms/templates/js/publish-xblock.underscore:113
+msgid "Note: Do not hide graded assignments after they have been released."
+msgstr "注意: 公開後の採点済み課題を非表示にしないでください。"
+
+#: cms/templates/js/publish-xblock.underscore:137
+msgid "Copy Unit"
+msgstr "ユニットをコピー"
+
+#: cms/templates/js/release-date-editor.underscore:1
+msgid "Release Date and Time"
+msgstr "公開日と時間"
 
 #: cms/templates/js/release-date-editor.underscore:5
 msgid "Release Date:"
@@ -6856,6 +7773,12 @@ msgstr "評価結果の可視性"
 msgid "Always show assessment results"
 msgstr "常に評価結果を表示する"
 
+#: cms/templates/js/show-correctness-editor.underscore:10
+msgid ""
+"When learners submit an answer to an assessment, they immediately see "
+"whether the answer is correct or incorrect, and the score received."
+msgstr "学習者が評価に対する回答を提出すると、すぐにその回答が正しいか間違っているか、そして受け取ったスコアが表示されます。"
+
 #: cms/templates/js/show-correctness-editor.underscore:14
 msgid "Never show assessment results"
 msgstr "評価結果を表示しない"
@@ -6865,6 +7788,10 @@ msgid ""
 "Learners never see whether their answers to assessments are correct or "
 "incorrect, nor the score received."
 msgstr "学習者は、評価に対する自分の回答が正しいか間違っているか、または受け取ったスコアを確認することはありません。"
+
+#: cms/templates/js/show-correctness-editor.underscore:21
+msgid "Show assessment results when subsection is past due"
+msgstr "サブセクションの期限が過ぎたときに評価結果を表示する"
 
 #: cms/templates/js/show-correctness-editor.underscore:24
 msgid ""
@@ -6910,9 +7837,17 @@ msgstr "名前 "
 msgid "Name of the signatory"
 msgstr "署名者の名前"
 
+#: cms/templates/js/signatory-editor.underscore:15
+msgid "The name of this signatory as it should appear on certificates."
+msgstr "この署名者の名前が証明書にどのように表示されるべきか。"
+
 #: cms/templates/js/signatory-editor.underscore:21
 msgid "Title "
 msgstr "タイトル "
+
+#: cms/templates/js/signatory-editor.underscore:22
+msgid "Title of the signatory"
+msgstr "署名者の肩書き"
 
 #: cms/templates/js/signatory-editor.underscore:23
 msgid ""
@@ -6923,6 +7858,16 @@ msgstr "タイトルが100文字を超えると、学生が証明書を1ペー�
 #: cms/templates/js/signatory-editor.underscore:29
 msgid "Organization "
 msgstr "組織 "
+
+#: cms/templates/js/signatory-editor.underscore:30
+msgid "Organization of the signatory"
+msgstr "署名者の所属組織"
+
+#: cms/templates/js/signatory-editor.underscore:31
+msgid ""
+"The organization that this signatory belongs to, as it should appear on "
+"certificates."
+msgstr "この署名者が所属する組織名は、証明書に表示されるべき形で記載してください。"
 
 #: cms/templates/js/signatory-editor.underscore:43
 msgid "Path to Signature Image"
@@ -6979,7 +7924,7 @@ msgstr "学習者から意図的に隠されており、コーススタッフの
 msgid ""
 "If the unit was previously published and released to learners, any changes "
 "you made to the unit when it was hidden will now be visible to learners."
-msgstr "学習者に以前公開されていたユニットの場合、非表示にしている間に行った変更は、今後学習者に見えるようになります。"
+msgstr "ユニットが以前に公開され、学習者にリリースされていた場合、非表示にしている間にユニットに加えた変更は、今後学習者に見えるようになります。"
 
 #: cms/templates/js/staff-lock-editor.underscore:47
 #, python-format
@@ -7003,6 +7948,10 @@ msgstr "要約を有効にする"
 msgid "Current Role:"
 msgstr "現在の役割:"
 
+#: cms/templates/js/team-member.underscore:8
+msgid "You!"
+msgstr "あなた！"
+
 #: cms/templates/js/team-member.underscore:19
 #, python-brace-format
 msgid "send an email message to {email}"
@@ -7021,6 +7970,11 @@ msgstr "{role}アクセスを追加"
 #, python-brace-format
 msgid "Remove {role} Access"
 msgstr "{role}アクセスを削除"
+
+#: cms/templates/js/team-member.underscore:44
+#, python-brace-format
+msgid "Delete the user, {username}"
+msgstr "ユーザー「{username}」を削除する"
 
 #: cms/templates/js/timed-examination-preference-editor.underscore:2
 msgid "Set as a Special Exam"
@@ -7051,6 +8005,10 @@ msgstr ""
 msgid "Timed"
 msgstr "時間制限付き"
 
+#: cms/templates/js/timed-examination-preference-editor.underscore:38
+msgid "Proctored"
+msgstr "監督付き"
+
 #: cms/templates/js/timed-examination-preference-editor.underscore:40
 msgid ""
 "Proctored exams are timed and they record video of each learner taking the "
@@ -7073,11 +8031,19 @@ msgid ""
 msgstr ""
 "オンボーディングを使用して、学習者に試験監督を紹介し、本人確認を行い、オンボーディングプロファイルを作成します。学習者は、試験監督付きの試験を受ける前にオンボーディングプロファイルのステップを完了する必要があります。プロファイルのレビューには2営業日以上かかります。"
 
+#: cms/templates/js/timed-examination-preference-editor.underscore:58
+msgid "Practice Proctored"
+msgstr "練習監督付き"
+
 #: cms/templates/js/timed-examination-preference-editor.underscore:60
 msgid ""
 "Use a practice proctored exam to introduce learners to the proctoring tools "
 "and processes. Results of a practice exam do not affect a learner's grade."
 msgstr "学習者にプロクタリングツールとプロセスを紹介するために、模擬試験を使用してください。模擬試験の結果は学習者の成績に影響しません。"
+
+#: cms/templates/js/timed-examination-preference-editor.underscore:67
+msgid "Time Allotted (HH:MM):"
+msgstr "所要時間（HH:MM）："
 
 #: cms/templates/js/timed-examination-preference-editor.underscore:71
 msgid ""
@@ -7086,6 +8052,10 @@ msgid ""
 " exam through the Instructor Dashboard."
 msgstr ""
 "試験の時間配分を選択してください。24時間を超える場合は、時間を入力してください。インストラクターダッシュボードを通じて、個々の学習者に試験を完了するための追加時間を与えることができます。"
+
+#: cms/templates/js/timed-examination-preference-editor.underscore:77
+msgid "Review Rules"
+msgstr "ルールの確認"
 
 #: cms/templates/js/timed-examination-preference-editor.underscore:86
 #, python-brace-format
@@ -7183,7 +8153,7 @@ msgid ""
 "the content in this unit. Learners who do not require verification see this "
 "content by default."
 msgstr ""
-"検証が必要な学習者は、このユニットのコンテンツを表示するために選択されたチェックポイントを通過する必要があります。検証が不要な学習者は、デフォルトでこのコンテンツを表示します。"
+"検証が必要な学習者は、このユニットの内容を表示するために選択されたチェックポイントを通過する必要があります。検証が不要な学習者は、デフォルトでこの内容を表示します。"
 
 #: cms/templates/js/video-thumbnail.underscore:17
 #, python-brace-format
@@ -7230,7 +8200,7 @@ msgstr "公開されたブランチバージョン {published} は、ドラフ�
 
 #: cms/templates/js/video/transcripts/metadata-videolist-entry.underscore:8
 msgid "Add URLs for additional versions"
-msgstr "追加バージョンのURLを追加"
+msgstr "追加バージョンのURLを追加する"
 
 #: cms/templates/js/video/transcripts/metadata-videolist-entry.underscore:11
 msgid ""
@@ -7269,6 +8239,11 @@ msgstr "どのタイムドトランスクリプトを使用しますか？"
 #: cms/templates/js/video/transcripts/messages/transcripts-use-existing.underscore:13
 msgid "Error."
 msgstr "エラー。"
+
+#: cms/templates/js/video/transcripts/messages/transcripts-choose.underscore:22
+#, python-format
+msgid "Timed Transcript from %(filename)s"
+msgstr "%(filename)s からのタイムドトランスクリプト"
 
 #: cms/templates/js/video/transcripts/messages/transcripts-found.underscore:1
 msgid "Timed Transcript Found"
@@ -7366,6 +8341,10 @@ msgid ""
 msgstr ""
 "EdXにはこのビデオのタイムドトランスクリプトがあります。このトランスクリプトを置き換えたい場合は、新しい.srtトランスクリプトファイルをアップロードしてください。このトランスクリプトを編集したい場合は、既存のトランスクリプトをダウンロードして編集し、再アップロードすることができます。"
 
+#: cms/templates/js/video/transcripts/messages/transcripts-use-existing.underscore:3
+msgid "Confirm Timed Transcript"
+msgstr "タイムドトランスクリプトを確認"
+
 #: cms/templates/js/video/transcripts/messages/transcripts-use-existing.underscore:7
 msgid ""
 "You changed a video URL, but did not change the timed transcript file. Do "
@@ -7373,6 +8352,16 @@ msgid ""
 " file?"
 msgstr ""
 "ビデオのURLを変更しましたが、タイムドトランスクリプトファイルを変更していません。現在のタイムドトランスクリプトを使用しますか、それとも新しい.srtトランスクリプトファイルをアップロードしますか？"
+
+#: cms/templates/js/video/transcripts/messages/transcripts-use-existing.underscore:21
+#: cms/templates/js/video/transcripts/messages/transcripts-use-existing.underscore:22
+#: cms/templates/js/video/transcripts/messages/transcripts-use-existing.underscore:25
+msgid "Use Current Transcript"
+msgstr "現在のトランスクリプトを使用"
+
+#: common/static/common/templates/image-modal.underscore:14
+msgid "Large"
+msgstr "大"
 
 #: common/static/common/templates/image-modal.underscore:27
 msgid "Zoom In"
@@ -7385,6 +8374,10 @@ msgstr "ズームアウト"
 #: common/static/common/templates/components/paging-footer.underscore:11
 msgid "Enter the page number you'd like to quickly navigate to."
 msgstr "移動したいページ番号を入力してください。"
+
+#: common/static/common/templates/components/paging-header.underscore:11
+msgid "Sorted by"
+msgstr "並び替え:"
 
 #: common/static/common/templates/components/search-field.underscore:6
 msgid "Clear search"
@@ -7415,21 +8408,37 @@ msgstr "このスレッドは終了しました。"
 msgid "Add a response:"
 msgstr "応答を追加:"
 
+#: common/static/common/templates/discussion/templates.underscore:33
+#: common/static/common/templates/discussion/templates.underscore:168
+#: common/static/common/templates/discussion/templates.underscore:488
+#: lms/templates/verify_student/incourse_reverify.underscore:62
+msgid "Submit"
+msgstr "送信"
+
 #: common/static/common/templates/discussion/templates.underscore:74
 #, python-format
 msgid "discussion posted %(time_ago)s by %(author)s"
-msgstr "ディスカッションが%(author)sによって%(time_ago)sに投稿されました"
+msgstr "%(author)s によって %(time_ago)s に投稿されたディスカッション"
 
 #: common/static/common/templates/discussion/templates.underscore:76
 #, python-format
 msgid "question posted %(time_ago)s by %(author)s"
 msgstr "質問が%(author)sによって%(time_ago)sに投稿されました"
 
+#: common/static/common/templates/discussion/templates.underscore:84
+#: common/static/common/templates/discussion/templates.underscore:330
+msgid "Pinned"
+msgstr "固定"
+
 #: common/static/common/templates/discussion/templates.underscore:87
 #: common/static/common/templates/discussion/templates.underscore:218
 #: common/static/common/templates/discussion/templates.underscore:282
 msgid "Reported"
 msgstr "報告済み"
+
+#: common/static/common/templates/discussion/templates.underscore:90
+msgid "Closed"
+msgstr "閉鎖済み"
 
 #: common/static/common/templates/discussion/templates.underscore:108
 #, python-format
@@ -7443,7 +8452,7 @@ msgstr "この投稿は%(group_name)sのみに表示されます。"
 
 #: common/static/common/templates/discussion/templates.underscore:124
 msgid "This post is visible to everyone."
-msgstr "この投稿は全員に表示されます。"
+msgstr "この投稿はすべての人に見えます。"
 
 #: common/static/common/templates/discussion/templates.underscore:131
 msgid "Editing post"
@@ -7459,6 +8468,10 @@ msgstr "参加を促すために、明確で説明的なタイトルを追加し
 msgid "Edit your post below."
 msgstr "投稿を以下で編集してください。"
 
+#: common/static/common/templates/discussion/templates.underscore:147
+msgid "Update post"
+msgstr "投稿を更新"
+
 #: common/static/common/templates/discussion/templates.underscore:154
 #, python-format
 msgid "Show Comment (%(num_comments)s)"
@@ -7470,14 +8483,36 @@ msgstr[0] "コメントを表示 (%(num_comments)s)"
 msgid "Add a comment"
 msgstr "コメントを追加"
 
+#: common/static/common/templates/discussion/templates.underscore:189
+#, python-format
+msgid "marked as answer %(time_ago)s by %(user)s"
+msgstr "%(user)s により %(time_ago)s に回答としてマークされました"
+
 #: common/static/common/templates/discussion/templates.underscore:193
 #, python-format
 msgid "marked as answer %(time_ago)s"
 msgstr "回答としてマークされました %(time_ago)s"
 
+#: common/static/common/templates/discussion/templates.underscore:203
+#, python-format
+msgid "endorsed %(time_ago)s"
+msgstr "%(time_ago)s に承認されました"
+
+#: common/static/common/templates/discussion/templates.underscore:242
+msgid "Editing response"
+msgstr "応答を編集"
+
 #: common/static/common/templates/discussion/templates.underscore:245
 msgid "Update response"
 msgstr "応答を更新"
+
+#: common/static/common/templates/discussion/templates.underscore:289
+msgid "Editing comment"
+msgstr "コメントを編集"
+
+#: common/static/common/templates/discussion/templates.underscore:292
+msgid "Update comment"
+msgstr "コメントを更新"
 
 #: common/static/common/templates/discussion/templates.underscore:305
 msgid "discussion"
@@ -7602,6 +8637,15 @@ msgstr "質問は答えを必要とする問題を提起します。ディスカ
 msgid "Question"
 msgstr "質問"
 
+#: common/static/common/templates/discussion/templates.underscore:736
+#: common/static/common/templates/discussion/templates.underscore:738
+msgid "Endorse"
+msgstr "承認"
+
+#: common/static/common/templates/discussion/templates.underscore:739
+msgid "Unendorse"
+msgstr "承認を取り消す"
+
 #: common/static/common/templates/discussion/templates.underscore:748
 #: common/static/common/templates/discussion/templates.underscore:750
 msgid "Mark as Answer"
@@ -7610,6 +8654,11 @@ msgstr "回答済みとしてマーク"
 #: common/static/common/templates/discussion/templates.underscore:751
 msgid "Unmark as Answer"
 msgstr "回答済みのマークを外す"
+
+#: common/static/common/templates/discussion/templates.underscore:760
+#: common/static/common/templates/discussion/templates.underscore:762
+msgid "Follow"
+msgstr "フォロー"
 
 #: common/static/common/templates/discussion/templates.underscore:763
 msgid "Unfollow"
@@ -7621,12 +8670,28 @@ msgstr "この投稿に投票する"
 
 #: common/static/common/templates/discussion/templates.underscore:792
 msgid "Report abuse"
-msgstr "不正行為を報告"
+msgstr "不適切な内容を報告"
+
+#: common/static/common/templates/discussion/templates.underscore:794
+msgid "Report"
+msgstr "報告"
+
+#: common/static/common/templates/discussion/templates.underscore:795
+msgid "Unreport"
+msgstr "報告を取り消す"
 
 #: common/static/common/templates/discussion/templates.underscore:806
 #: common/static/common/templates/discussion/templates.underscore:808
 msgid "Pin"
 msgstr "ピン留め"
+
+#: common/static/common/templates/discussion/templates.underscore:809
+msgid "Unpin"
+msgstr "固定解除"
+
+#: common/static/common/templates/discussion/templates.underscore:823
+msgid "Open"
+msgstr "開く"
 
 #: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore:3
 msgid "Discussion Home"
@@ -7663,6 +8728,10 @@ msgstr "投稿に参加する"
 msgid "Vote for good posts and responses"
 msgstr "良い投稿や回答に投票する"
 
+#: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore:40
+msgid "Report abuse, topics, and responses"
+msgstr "不適切な内容、トピック、回答を報告する"
+
 #: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore:44
 msgid "Follow or unfollow posts"
 msgstr "投稿をフォローまたはフォロー解除"
@@ -7675,6 +8744,13 @@ msgstr "更新を受け取る"
 msgid "Toggle Notifications Setting"
 msgstr "通知設定を切り替える"
 
+#: lms/djangoapps/discussion/static/discussion/templates/discussion-home.underscore:58
+msgid ""
+"Check this box to receive an email digest once a day notifying you about "
+"new, unread activity from posts you are following."
+msgstr ""
+"フォローしている投稿からの新しい未読アクティビティについて、1日1回のメールダイジェストを受け取るには、このボックスをチェックしてください。"
+
 #: lms/djangoapps/support/static/support/templates/certificates.underscore:10
 msgid "username or email"
 msgstr "ユーザー名またはメールアドレス"
@@ -7682,6 +8758,12 @@ msgstr "ユーザー名またはメールアドレス"
 #: lms/djangoapps/support/static/support/templates/certificates.underscore:17
 msgid "course id"
 msgstr "コースID"
+
+#: lms/djangoapps/support/static/support/templates/certificates_results.underscore:2
+#: lms/templates/instructor/instructor_dashboard_2/certificate-allowlist.underscore:16
+#: lms/templates/instructor/instructor_dashboard_2/certificate-invalidation.underscore:23
+msgid "No results"
+msgstr "結果なし"
 
 #: lms/djangoapps/support/static/support/templates/certificates_results.underscore:6
 msgid "Course Key"
@@ -7727,6 +8809,19 @@ msgstr "新しい登録モード:"
 msgid "Reason for change:"
 msgstr "変更理由:"
 
+#: lms/djangoapps/support/static/support/templates/enrollment-modal.underscore:16
+msgid "Choose One"
+msgstr "選択してください"
+
+#: lms/djangoapps/support/static/support/templates/enrollment-modal.underscore:21
+#: lms/djangoapps/support/static/support/templates/enrollment-modal.underscore:22
+msgid "Explain if other."
+msgstr "その他の場合は説明してください。"
+
+#: lms/djangoapps/support/static/support/templates/enrollment-modal.underscore:24
+msgid "Submit enrollment change"
+msgstr "登録変更を提出"
+
 #: lms/djangoapps/support/static/support/templates/enrollment.underscore:9
 #: lms/templates/instructor/instructor_dashboard_2/certificate-invalidation.underscore:7
 msgid "Username or email address"
@@ -7750,7 +8845,7 @@ msgstr "アップグレードの締切期日"
 
 #: lms/djangoapps/support/static/support/templates/enrollment.underscore:24
 msgid "Verification Deadline"
-msgstr "受験締切期日"
+msgstr "修了試験締切期日"
 
 #: lms/djangoapps/support/static/support/templates/enrollment.underscore:25
 msgid "Enrollment Date"
@@ -7759,6 +8854,10 @@ msgstr "登録日"
 #: lms/djangoapps/support/static/support/templates/enrollment.underscore:26
 msgid "Enrollment Mode"
 msgstr "登録モード"
+
+#: lms/djangoapps/support/static/support/templates/enrollment.underscore:27
+msgid "Verified mode price"
+msgstr "認証モードの価格"
 
 #: lms/djangoapps/support/static/support/templates/enrollment.underscore:28
 msgid "Reason"
@@ -7812,6 +8911,14 @@ msgstr "チームを説明する情報を入力してください。チームを
 msgid "Optional Characteristics"
 msgstr "オプションの特徴"
 
+#: lms/djangoapps/teams/static/teams/templates/edit-team.underscore:38
+msgid ""
+"Help other learners decide whether to join your team by specifying some "
+"characteristics for your team. Choose carefully, because fewer people might "
+"be interested in joining your team if it seems too restrictive."
+msgstr ""
+"他の学習者があなたのチームに参加するかどうかを決める際に役立つよう、チームの特徴を指定してください。あまりにも制限が多いと、参加を希望する人が少なくなるかもしれないので、慎重に選んでください。"
+
 #: lms/djangoapps/teams/static/teams/templates/edit-team.underscore:49
 msgid "Create team."
 msgstr "チームを作成"
@@ -7859,6 +8966,10 @@ msgstr "メンバーシップをアップロード"
 #: lms/djangoapps/teams/static/teams/templates/manage.underscore:46
 msgid "Error assigning team memberships"
 msgstr "チームメンバーシップの割り当てエラー"
+
+#: lms/djangoapps/teams/static/teams/templates/team-actions.underscore:2
+msgid "Are you having trouble finding a team to join?"
+msgstr "チームに参加するのに困っていますか？"
 
 #: lms/djangoapps/teams/static/teams/templates/team-profile-header-actions.underscore:4
 msgid "Join Team"
@@ -7915,6 +9026,10 @@ msgstr "すべて折りたたむ"
 msgid "Start Date"
 msgstr "開始日"
 
+#: lms/templates/ccx/schedule.underscore:15
+msgid "Due Date"
+msgstr "締切日"
+
 #: lms/templates/ccx/schedule.underscore:17
 msgid "remove all"
 msgstr "すべて削除"
@@ -7923,6 +9038,10 @@ msgstr "すべて削除"
 #, python-format
 msgid "toggle chapter %(displayName)s"
 msgstr "章を切り替える %(displayName)s"
+
+#: lms/templates/ccx/schedule.underscore:33
+msgid "Section"
+msgstr "セクション"
 
 #: lms/templates/ccx/schedule.underscore:45
 #, python-format
@@ -7979,6 +9098,10 @@ msgstr "\"{exam_link}\"を{exam_type}として受験しています。 "
 msgid "a timed exam"
 msgstr "制限時間付き試験"
 
+#: lms/templates/courseware/proctored-exam-status.underscore:32
+msgid "The timer on the right shows the time remaining in the exam."
+msgstr "試験の残り時間は右側のタイマーに表示されます。"
+
 #: lms/templates/courseware/proctored-exam-status.underscore:33
 msgid ""
 "To receive credit for problems, you must select \"Submit\" for each problem "
@@ -7993,6 +9116,10 @@ msgstr "もっと表示"
 #: lms/templates/courseware/proctored-exam-status.underscore:36
 msgid "Show Less"
 msgstr "表示を減らす"
+
+#: lms/templates/discovery/course_card.underscore:6
+msgid "LEARN MORE"
+msgstr "詳細を見る"
 
 #: lms/templates/discovery/course_card.underscore:17
 #, python-format
@@ -8019,6 +9146,14 @@ msgstr "注意"
 msgid "You commented..."
 msgstr "あなたがコメントしました..."
 
+#: lms/templates/edxnotes/note-item.underscore:34
+msgid "Noted in:"
+msgstr "記録先:"
+
+#: lms/templates/edxnotes/note-item.underscore:41
+msgid "Last Edited:"
+msgstr "最終編集日時:"
+
 #: lms/templates/edxnotes/note-item.underscore:45
 msgid "Tags:"
 msgstr "タグ"
@@ -8042,6 +9177,11 @@ msgstr "注文番号"
 msgid "Date Placed"
 msgstr "配置日"
 
+#: lms/templates/fields/field_order_history.underscore:4
+#: lms/templates/fields/field_order_history.underscore:14
+msgid "Cost"
+msgstr "費用"
+
 #: lms/templates/fields/field_order_history.underscore:7
 msgid "Order Details"
 msgstr "注文詳細"
@@ -8063,6 +9203,11 @@ msgstr ""
 "{currentCountOpeningTag}{currentCharacterCount}{currentCountClosingTag} / "
 "{maxCharacters}"
 
+#: lms/templates/financial-assistance/financial_assessment_form.underscore:1
+#: lms/templates/financial-assistance/financial_assessment_submitted.underscore:1
+msgid "Financial Assistance Application"
+msgstr "経済支援申請書"
+
 #: lms/templates/financial-assistance/financial_assessment_form.underscore:14
 msgid "Profile Information"
 msgstr "プロフィール情報"
@@ -8080,9 +9225,17 @@ msgstr ""
 msgid "Email address"
 msgstr "メールアドレス"
 
+#: lms/templates/financial-assistance/financial_assessment_form.underscore:28
+msgid "Legal name"
+msgstr "法的氏名"
+
 #: lms/templates/financial-assistance/financial_assessment_form.underscore:32
 msgid "Country of residence"
 msgstr "居住している国"
+
+#: lms/templates/financial-assistance/financial_assessment_form.underscore:36
+msgid "Application Details"
+msgstr "申請詳細情報"
 
 #: lms/templates/financial-assistance/financial_assessment_form.underscore:42
 msgid "Submit Application"
@@ -8114,6 +9267,11 @@ msgstr "各学習者のユーザー名またはメールアドレスを入力し
 msgid "Student email or username"
 msgstr "学生のメールアドレスまたはユーザー名"
 
+#: lms/templates/instructor/instructor_dashboard_2/certificate-allowlist-editor.underscore:8
+#: lms/templates/instructor/instructor_dashboard_2/certificate-allowlist-editor.underscore:9
+msgid "Free text notes"
+msgstr "自由記述ノート"
+
 #: lms/templates/instructor/instructor_dashboard_2/certificate-allowlist-editor.underscore:12
 #: lms/templates/instructor/instructor_dashboard_2/certificate-bulk-allowlist.underscore:15
 msgid "Add to Exception List"
@@ -8139,6 +9297,10 @@ msgstr "例外リストのすべてのユーザー"
 #: lms/templates/instructor/instructor_dashboard_2/certificate-allowlist.underscore:21
 msgid "User Email"
 msgstr "ユーザーのメールアドレス"
+
+#: lms/templates/instructor/instructor_dashboard_2/certificate-allowlist.underscore:22
+msgid "Exception Granted"
+msgstr "例外が認められました"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificate-allowlist.underscore:23
 msgid "Certificate Generated"
@@ -8185,9 +9347,17 @@ msgstr "証明書を無効にする"
 msgid "Student"
 msgstr "受講者"
 
+#: lms/templates/instructor/instructor_dashboard_2/certificate-invalidation.underscore:30
+msgid "Invalidated"
+msgstr "無効化済み"
+
 #: lms/templates/instructor/instructor_dashboard_2/certificate-invalidation.underscore:44
 msgid "Remove from Invalidation Table"
 msgstr "無効化テーブルから削除"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-discussions-subcategory.underscore:6
+msgid "Divided"
+msgstr "分割"
 
 #: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:5
 msgid "Manage Learners"
@@ -8269,6 +9439,14 @@ msgstr "コンテンツグループなし"
 msgid "Select a Content Group"
 msgstr "コンテンツグループを選択"
 
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:69
+msgid "Choose a content group to associate"
+msgstr "関連付けるコンテンツグループを選択"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:71
+msgid "Not selected"
+msgstr "未選択"
+
 #: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:93
 msgid "Deleted Content Group"
 msgstr "削除されたコンテンツグループ"
@@ -8330,9 +9508,17 @@ msgstr "%(cohort_name)s（%(user_count)s）"
 msgid "Enable Cohorts"
 msgstr "コホートを有効にする"
 
+#: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:11
+msgid "Select a cohort to manage"
+msgstr "管理するコホートを選択"
+
 #: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:16
 msgid "View Cohort"
 msgstr "コホートを表示"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:37
+msgid "Assign learners to cohorts by uploading a CSV file"
+msgstr "学習者をコホートに割り当てるには、CSVファイルをアップロードします。"
 
 #: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:44
 #, python-brace-format
@@ -8362,6 +9548,10 @@ msgstr "コンテンツ特化型ディスカッショントピック"
 #: lms/templates/instructor/instructor_dashboard_2/divided-discussions-inline.underscore:9
 msgid "Specify whether content-specific discussion topics are divided."
 msgstr "コンテンツ固有のディスカッショントピックが分割されているかどうかを指定します。"
+
+#: lms/templates/instructor/instructor_dashboard_2/divided-discussions-inline.underscore:13
+msgid "Always divide content-specific discussion topics"
+msgstr "常にコンテンツ固有のディスカッションテーマを分ける"
 
 #: lms/templates/instructor/instructor_dashboard_2/divided-discussions-inline.underscore:19
 msgid "Divide the selected content-specific discussion topics"
@@ -8423,9 +9613,21 @@ msgstr "セッションを選択:"
 msgid "Enroll Now"
 msgstr "今すぐ登録"
 
-#: lms/templates/learner_dashboard/course_enroll.underscore:54
+#: lms/templates/learner_dashboard/course_enroll.underscore:44
+msgid "Coming Soon"
+msgstr "近日公開予定"
+
+#: lms/templates/learner_dashboard/course_enroll.underscore:48
+msgid "Enrollment Opens on"
+msgstr "登録開始日"
+
+#: lms/templates/learner_dashboard/course_enroll.underscore:56
 msgid "Not Currently Available"
 msgstr "現在利用できません"
+
+#: lms/templates/learner_dashboard/course_entitlement.underscore:4
+msgid "More sessions coming soon."
+msgstr "近日中にさらに多くのセッションが開催されます。"
 
 #: lms/templates/learner_dashboard/course_entitlement.underscore:7
 msgid "Change to a different session or leave the current session."
@@ -8449,6 +9651,10 @@ msgstr "{sessionDates} - 現在選択中"
 #, python-brace-format
 msgid "{sessionDates} (Open until {enrollmentEnd})"
 msgstr "{sessionDates}（{enrollmentEnd}まで受付）"
+
+#: lms/templates/learner_dashboard/course_entitlement.underscore:27
+msgid "More sessions coming soon"
+msgstr "近日中にさらに多くのセッションが追加されます。"
 
 #: lms/templates/learner_dashboard/course_entitlement.underscore:28
 msgid "Leave the current session and decide later"
@@ -8523,7 +9729,14 @@ msgstr "プログラム記録を表示"
 #: lms/templates/learner_dashboard/program_details_sidebar.underscore:27
 #: lms/templates/learner_dashboard/program_details_tab_view.underscore:120
 msgid "Additional Credit Opportunities"
-msgstr "追加単位取得の機会"
+msgstr "追加単位の機会"
+
+#: lms/templates/learner_dashboard/program_details_sidebar.underscore:41
+#: lms/templates/learner_dashboard/program_details_sidebar.underscore:67
+#: lms/templates/learner_dashboard/program_details_tab_view.underscore:143
+#: lms/templates/learner_dashboard/program_details_tab_view.underscore:172
+msgid "Learn More"
+msgstr "詳細を見る"
 
 #: lms/templates/learner_dashboard/program_details_sidebar.underscore:53
 #: lms/templates/learner_dashboard/program_details_tab_view.underscore:157
@@ -8633,11 +9846,7 @@ msgstr "私のプログラム"
 
 #: lms/templates/learner_dashboard/upgrade_message.underscore:3
 msgid "Needs verified certificate "
-msgstr "認証済み証明書が必要 "
-
-#: lms/templates/learner_dashboard/upgrade_message.underscore:9
-msgid "Upgrade to Verified"
-msgstr "認証済みにアップグレード"
+msgstr "認定証が必要 "
 
 #: lms/templates/student_account/account.underscore:2
 msgid "New Address"
@@ -8667,6 +9876,14 @@ msgstr "パスワードをお忘れですか"
 #: lms/templates/student_account/form_field.underscore:157
 msgid "Other sign-in issues"
 msgstr "他のサインインの問題"
+
+#: lms/templates/student_account/form_field.underscore:147
+msgid "Sign in with your company or school"
+msgstr "会社または学校でサインイン"
+
+#: lms/templates/student_account/form_field.underscore:151
+msgid "Need other help signing in?"
+msgstr "サインインに関する他のヘルプが必要ですか？"
 
 #: lms/templates/student_account/form_field.underscore:154
 msgid "Create an account"
@@ -8721,6 +9938,11 @@ msgstr "初めてですか？"
 msgid "Create an Account."
 msgstr "アカウントを作成する。"
 
+#: lms/templates/student_account/login.underscore:14
+#, python-brace-format
+msgid "Sign in to continue learning as {email}"
+msgstr "{email}としてサインインして学習を続ける"
+
 #: lms/templates/student_account/login.underscore:16
 msgid "Sign in to continue learning"
 msgstr "学習を続けるにはサインインしてください"
@@ -8737,6 +9959,13 @@ msgid ""
 "Going forward, your account information will be updated and maintained by "
 "{enterprise_name}."
 msgstr "今後、アカウント情報は{enterprise_name}によって更新および管理されます。"
+
+#: lms/templates/student_account/login.underscore:23
+#, python-brace-format
+msgid ""
+"You can view your information or unlink from {enterprise_name} anytime in "
+"your Account Settings."
+msgstr "{enterprise_name}からいつでもアカウント設定で情報を確認したり、リンクを解除したりできます。"
 
 #: lms/templates/student_account/login.underscore:25
 msgid "To continue learning with this account, sign in below."
@@ -8763,6 +9992,11 @@ msgstr "アカウントをまだお持ちでない場合は、以下のボタン
 #: lms/templates/student_account/login.underscore:43
 msgid "Use my university info"
 msgstr "大学の情報を使用する"
+
+#: lms/templates/student_account/login.underscore:48
+#: lms/templates/student_account/login.underscore:63
+msgid "or sign in with"
+msgstr "または次の方法でサインイン"
 
 #: lms/templates/student_account/login.underscore:76
 #, python-format
@@ -8805,6 +10039,10 @@ msgstr "%(providerName)sを使用してアカウントを作成"
 msgid "Use my institution/campus credentials"
 msgstr "私の所属機関/キャンパスの認証情報を使用する"
 
+#: lms/templates/student_account/register.underscore:45
+msgid "or create a new one here"
+msgstr "新しいアカウントをここで作成する"
+
 #: lms/templates/student_account/register.underscore:63
 msgid "Support education research by providing additional information"
 msgstr "教育研究を支援するために追加情報を提供する"
@@ -8814,9 +10052,13 @@ msgstr "教育研究を支援するために追加情報を提供する"
 msgid "Congratulations! You are now verified on %(platformName)s!"
 msgstr "おめでとうございます！%(platformName)sで認証されました！"
 
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:5
+msgid "You are now enrolled as a verified student for:"
+msgstr "あなたは次のコースに認定学生として登録されました。"
+
 #: lms/templates/verify_student/enrollment_confirmation_step.underscore:12
 msgid "A list of courses you have just enrolled in as a verified student"
-msgstr "あなたが認証済みの学生として登録したコースの一覧"
+msgstr "あなたが認証済みの学生として登録したコースのリスト"
 
 #: lms/templates/verify_student/enrollment_confirmation_step.underscore:31
 msgid "Explore your course!"
@@ -8861,7 +10103,11 @@ msgstr ""
 
 #: lms/templates/verify_student/face_photo_step.underscore:10
 msgid "Photo Identification"
-msgstr "写真付き身分証明書"
+msgstr "写真認証"
+
+#: lms/templates/verify_student/face_photo_step.underscore:11
+msgid "You need a valid ID that contains your full name and photo."
+msgstr "有効な身分証明書が必要です。身分証明書には、氏名と写真が含まれている必要があります。"
 
 #: lms/templates/verify_student/face_photo_step.underscore:17
 #: lms/templates/verify_student/incourse_reverify.underscore:3
@@ -8968,7 +10214,7 @@ msgstr "カメラに対して頭の位置を保つのが難しい場合はどう
 msgid ""
 "If you require assistance with taking either photo for submission, contact "
 "%(platformName)s support for additional suggestions."
-msgstr "提出用の写真撮影に関してサポートが必要な場合は、%(platformName)s サポートに連絡して追加の提案を受けてください。"
+msgstr "提出用の写真撮影に関してサポートが必要な場合は、追加の提案を得るために%(platformName)sサポートに連絡してください。"
 
 #: lms/templates/verify_student/face_photo_step.underscore:77
 #: lms/templates/verify_student/id_photo_step.underscore:69
@@ -8989,7 +10235,12 @@ msgstr "ウェブカメラを使って身分証明書の写真を撮影してく
 msgid ""
 "You need an ID with your name and photo. A driver's license, passport, or ID"
 " are all acceptable."
-msgstr "あなたの名前と写真が入ったIDが必要です。運転免許証、パスポート、またはIDがすべて受け入れられます。"
+msgstr "あなたの名前と写真が入ったIDが必要です。運転免許証、パスポート、またはIDがすべて受け付けられます。"
+
+#: lms/templates/verify_student/id_photo_step.underscore:15
+#: lms/templates/verify_student/incourse_reverify.underscore:13
+msgid "Tips on taking a successful photo"
+msgstr "写真をうまく撮るためのヒント"
 
 #: lms/templates/verify_student/id_photo_step.underscore:19
 msgid "Ensure that you can see your photo and read your name"
@@ -9026,7 +10277,7 @@ msgid ""
 "(20-30 centimeters) from the camera, with the ID card centered relative to "
 "the camera. "
 msgstr ""
-"画像キャプチャ手順は補助なしで完了できるかもしれませんが、カメラの位置を正しくするために数回の提出が必要になることがあります。最適なカメラの位置はコンピュータによって異なりますが、一般的にIDカードの写真を撮る際のベストな位置は、カメラから8〜12インチ（20〜30センチメートル）で、IDカードがカメラに対して中央に位置することです。"
+"画像キャプチャ手順は補助なしで完了できるかもしれませんが、カメラの位置を正しくするために数回の提出が必要になることがあります。最適なカメラの位置はコンピュータによって異なりますが、一般的にIDカードの写真を撮る際のベストな位置は、カメラから8〜12インチ（20〜30センチメートル）離れ、IDカードがカメラに対して中央に配置されていることです。"
 " "
 
 #: lms/templates/verify_student/id_photo_step.underscore:54
@@ -9062,6 +10313,10 @@ msgid ""
 "Once in position, use the Take Photo button {icon} to capture your photo"
 msgstr "位置が決まったら、「写真を撮る」ボタン {icon} を使って写真を撮影してください。"
 
+#: lms/templates/verify_student/incourse_reverify.underscore:22
+msgid "Can we match the photo you took with the one on your ID?"
+msgstr "撮影した写真をIDの写真と照合できますか？"
+
 #: lms/templates/verify_student/incourse_reverify.underscore:35
 msgid ""
 "As part of the verification process, you take a photo of both your face and "
@@ -9078,12 +10333,20 @@ msgid ""
 "are not saved or visible anywhere on %(platformName)s after the verification"
 " process is complete."
 msgstr ""
-"あなたの写真を安全に暗号化し、承認サービスに送信してレビューします。確認プロセスが完了した後、あなたの写真や情報は%(platformName)s上のどこにも保存されず、表示されません。"
+"私たちは、利用可能な最高レベルのセキュリティを使用してあなたの写真を暗号化し、承認サービスに送信してレビューを行います。確認プロセスが完了した後、あなたの写真や情報は%(platformName)sのどこにも保存されず、表示されることはありません。"
 
 #: lms/templates/verify_student/intro_step.underscore:6
 #, python-brace-format
 msgid "Thanks for returning to verify your ID in: {courseName}"
 msgstr "{courseName}におけるID確認のために戻っていただきありがとうございます。"
+
+#: lms/templates/verify_student/intro_step.underscore:19
+msgid ""
+"You need to activate your account before you can enroll in courses. Check "
+"your inbox for an activation email. After you complete activation you can "
+"return and refresh this page."
+msgstr ""
+"アカウントを有効化する必要があります。コースに登録する前に、受信トレイで有効化メールを確認してください。有効化が完了したら、このページに戻って更新できます。"
 
 #: lms/templates/verify_student/intro_step.underscore:31
 msgid "Activate Your Account"
@@ -9111,6 +10374,14 @@ msgid ""
 "You can now enter your payment information and complete your enrollment."
 msgstr "お支払い情報を入力し、登録を完了することができます。"
 
+#: lms/templates/verify_student/make_payment_step.underscore:37
+#, python-brace-format
+msgid ""
+"You can pay now even if you don't have the following items available, but "
+"you will need to have these by {date} to qualify to earn a Verified "
+"Certificate."
+msgstr "必要な項目がなくても今すぐ支払うことができますが、認証済み証明書を取得するためには{date}までにこれらを用意する必要があります。"
+
 #: lms/templates/verify_student/make_payment_step.underscore:44
 #, python-brace-format
 msgid ""
@@ -9121,6 +10392,18 @@ msgstr "{userEmail}にアカウントを有効化するためのリンクが記�
 #: lms/templates/verify_student/make_payment_step.underscore:48
 msgid "Why activate?"
 msgstr "なぜアクティベートするのか？"
+
+#: lms/templates/verify_student/make_payment_step.underscore:50
+msgid ""
+"We ask you to activate your account to ensure it is really you creating the "
+"account and to prevent fraud."
+msgstr "アカウントを有効化していただくことで、アカウントを作成しているのが本当にご本人であることを確認し、不正行為を防止します。"
+
+#: lms/templates/verify_student/make_payment_step.underscore:53
+msgid ""
+"You can pay now even if you don't have the following items available, but "
+"you will need to have these to qualify to earn a Verified Certificate."
+msgstr "必要な項目が揃っていなくても今すぐ支払うことはできますが、認定証を取得するためにはこれらが必要です。"
 
 #: lms/templates/verify_student/make_payment_step.underscore:65
 msgid "Government-Issued Photo ID"
@@ -9137,6 +10420,10 @@ msgid ""
 "complete the enrollment process."
 msgstr "すべての専門教育コースは有料であり、登録手続きを完了するには支払いが必要です。"
 
+#: lms/templates/verify_student/make_payment_step.underscore:97
+msgid "You have already verified your ID!"
+msgstr "すでにIDが確認されています！"
+
 #: lms/templates/verify_student/make_payment_step.underscore:100
 #, python-brace-format
 msgid "Your verification status is good until {verificationGoodUntil}."
@@ -9149,6 +10436,11 @@ msgstr "価格"
 #: lms/templates/verify_student/make_payment_step_ab_testing.underscore:5
 msgid "Account Not Activated"
 msgstr "アカウントが有効化されていません"
+
+#: lms/templates/verify_student/make_payment_step_ab_testing.underscore:21
+#, python-brace-format
+msgid "Upgrade to a Verified Certificate for {courseName}"
+msgstr "{courseName}の認定証にアップグレードする"
 
 #: lms/templates/verify_student/make_payment_step_ab_testing.underscore:33
 msgid ""
@@ -9168,6 +10460,11 @@ msgstr "合計"
 msgid "Professional Certificate for {courseName}"
 msgstr "{courseName}のプロフェッショナル認定証"
 
+#: lms/templates/verify_student/make_payment_step_ab_testing.underscore:49
+#, python-brace-format
+msgid "Verified Certificate for {courseName}"
+msgstr "{courseName} の認定証明書"
+
 #: lms/templates/verify_student/make_payment_step_ab_testing.underscore:80
 #, python-brace-format
 msgid ""
@@ -9182,6 +10479,17 @@ msgstr "証明書を受け取るには、本人確認も行う必要がありま
 msgid ""
 "To verify your identity, you need a webcam and a government-issued photo ID."
 msgstr "あなたの身元を確認するには、ウェブカメラと政府発行の写真付き身分証明書が必要です。"
+
+#: lms/templates/verify_student/make_payment_step_ab_testing.underscore:96
+msgid ""
+"Your ID must be a government-issued photo ID that clearly shows your face."
+msgstr "あなたのIDは、顔がはっきりと写っている政府発行の写真付きIDでなければなりません。"
+
+#: lms/templates/verify_student/make_payment_step_ab_testing.underscore:108
+msgid ""
+"You will use your webcam to take a picture of your face and of your "
+"government-issued photo ID."
+msgstr "ウェブカメラを使用して、自分の顔と政府発行の写真付き身分証明書の写真を撮影します。"
 
 #: lms/templates/verify_student/reverify_success_step.underscore:2
 msgid "Identity Verification In Progress"
@@ -9228,6 +10536,10 @@ msgstr "写真の要件:"
 msgid "Does the photo of you show your whole face?"
 msgstr "あなたの写真は顔全体が写っていますか？"
 
+#: lms/templates/verify_student/review_photos_step.underscore:28
+msgid "Is your name on your ID readable?"
+msgstr "あなたのIDの名前は読めますか？"
+
 #: lms/templates/verify_student/review_photos_step.underscore:29
 #, python-format
 msgid "Does the name on your ID match your account name: %(fullName)s?"
@@ -9246,6 +10558,10 @@ msgstr "アカウントの氏名がIDの氏名と一致していることを確�
 msgid "Photos don't meet the requirements?"
 msgstr "写真が要件を満たしていませんか？"
 
+#: lms/templates/verify_student/review_photos_step.underscore:52
+msgid "Retake Your Photos"
+msgstr "写真を撮り直す"
+
 #: lms/templates/verify_student/review_photos_step.underscore:63
 msgid "Before proceeding, please confirm that your details match"
 msgstr "先に進む前に、詳細が一致していることを確認してください。"
@@ -9260,13 +10576,13 @@ msgstr "写真が見えませんか？ブラウザがカメラの使用を許可
 msgid "Live view of webcam"
 msgstr "ウェブカメラのライブビュー"
 
+#: lms/templates/verify_student/webcam_photo.underscore:24
+msgid "Retake Photo"
+msgstr "写真を撮り直す"
+
 #: lms/templates/verify_student/webcam_photo.underscore:28
 msgid "Take Photo"
 msgstr "写真を撮る"
-
-#: openedx/features/course_bookmarks/static/course_bookmarks/templates/bookmarks-list.underscore:25
-msgid "Bookmarked on"
-msgstr "ブックマーク済み:"
 
 #: openedx/features/course_bookmarks/static/course_bookmarks/templates/bookmarks-list.underscore:44
 msgid "You have not bookmarked any courseware pages yet"

@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
 "Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -192,7 +192,7 @@ msgstr[1] "{weight} puan mümkün"
 msgid "{score_string}/{weight} point"
 msgid_plural "{score_string}/{weight} points"
 msgstr[0] "{score_string}/{weight} noktası"
-msgstr[1] "{score_string}/{weight} puan"
+msgstr[1] "{score_string} /{weight} puan"
 
 #: views.py:147
 #, python-brace-format

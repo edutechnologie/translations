@@ -35,8 +35,6 @@
   "ora-grading.ListView.backToResponsesLowercase": "",
   "ora-grading.ListView.reloadSubmissions": "",
   "ora-grading.ListView.loadingResponses": "",
-  "ora-grading.NotificationsBanner.Message": "ཁྱོད་ཀྱིས་ད་ལྟ་ལས་བྱེད་པའི་རིམ་པ་བགར་དགོས་པའི་ORAལས་འགན་གྱི་བརྡ་ཐོ་དེ་ནས་ལྕོགས་ཅན་བཟོ་ཐུབ།",
-  "ora-grading.NotificationsBanner.linkMessage": "དགའ་མོས་ལྟེ་གནས་",
   "ora-grading.ResponseDisplay.SubmissionFiles.tableNameHeader": "",
   "ora-grading.ResponseDisplay.SubmissionFiles.tableExtensionHeader": "",
   "ora-grading.ResponseDisplay.SubmissionFiles.tablePopoverHeader": "",

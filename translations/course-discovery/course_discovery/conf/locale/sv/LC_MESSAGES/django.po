@@ -5,28 +5,28 @@
 # 
 # Translators:
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:29+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
-"Language-Team: Swedish (https://app.transifex.com/open-edx/teams/6205/sv/)\n"
+"POT-Creation-Date: 2025-10-30 00:32+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: Swedish (https://app.transifex.com/open-edx/teams/301281/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps/api/filters.py:47
+#: apps/api/filters.py:48
 #, python-brace-format
 msgid "No user with the username [{username}] exists."
 msgstr "Användarnamnet [{username}] existerar inte."
 
-#: apps/api/filters.py:50
+#: apps/api/filters.py:51
 msgid ""
 "Only staff users are permitted to filter by username. Remove the username "
 "parameter."
@@ -66,6 +66,10 @@ msgstr "Minsta ansträngning kan inte vara större än Maximal ansträngning"
 msgid "Minimum effort and Maximum effort cannot be the same"
 msgstr "Minsta ansträngning och Maximal ansträngning kan inte vara samma sak"
 
+#: apps/api/serializers.py:1205
+msgid "Dictionary mapping course run IDs to boolean values"
+msgstr "Ordboksmappningskurs kör ID till booleska värden"
+
 #: apps/api/serializers.py:1309
 msgid "Restriction Type cannot be empty"
 msgstr "Restriktionstyp kan inte vara tom"
@@ -83,7 +87,7 @@ msgid ""
 "Languages that course runs in this program have available transcripts in."
 msgstr "Språk som kurser i detta program har översättningar i"
 
-#: apps/api/utils.py:343
+#: apps/api/utils.py:346
 #, python-brace-format
 msgid ""
 "An error occurred while setting the course run image for [{key}] in studio. "
@@ -100,12 +104,12 @@ msgstr "Att ange både editable=1 och en q-parameter stöds inte."
 msgid "You must include a course_uuid in your query parameters."
 msgstr "Du måste inkludera en kurs_uuid i dina frågeparametrar."
 
-#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:204
+#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
 msgstr "Saknat värde för: [{name}]. "
 
-#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:215
+#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
 msgid "Incorrect data sent. "
 msgstr "Felaktiga uppgifter skickade. "
 
@@ -117,29 +121,38 @@ msgstr "Det gick inte att ange kurskörningsdata: {}"
 msgid "Can only update status, ofac restrictions, and ofac comment"
 msgstr "Kan bara uppdatera status, ofac-begränsningar och ofac-kommentarer"
 
-#: apps/api/v1/views/course_runs.py:369
+#: apps/api/v1/views/course_runs.py:363
+#, python-brace-format
+msgid ""
+"The course run type '{course_run_type}' is not valid for this course type "
+"'{course_type}'."
+msgstr ""
+"Kurstypen '{course_run_type}' är inte giltig för denna kurstyp "
+"'{course_type}'."
+
+#: apps/api/v1/views/course_runs.py:381
 msgid "Course run is in review. Editing disabled."
 msgstr "Kursomgången är under granskning. Redigering inaktiverad."
 
-#: apps/api/v1/views/course_runs.py:376
+#: apps/api/v1/views/course_runs.py:388
 msgid "Invalid parameter"
 msgstr "Ogiltig parameter"
 
-#: apps/api/v1/views/courses.py:61
+#: apps/api/v1/views/courses.py:62
 msgid "Failed to set data: {}"
 msgstr "Det gick inte att ange data: {}"
 
-#: apps/api/v1/views/courses.py:206
+#: apps/api/v1/views/courses.py:207
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
 msgstr "Organisationen [{org}] finns inte. "
 
-#: apps/api/v1/views/courses.py:208
+#: apps/api/v1/views/courses.py:209
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
 msgstr "Kurstyp [{course_type}] finns inte. "
 
-#: apps/api/v1/views/courses.py:211
+#: apps/api/v1/views/courses.py:212
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
 msgstr "Produktkälla [{product_source}] finns inte. "
@@ -158,7 +171,7 @@ msgstr ""
 "Skapandet av kursen misslyckades. Kursens URL-slug '[{url_slug}]' används "
 "redan. Uppdatera det här fältet och försök igen."
 
-#: apps/api/v1/views/courses.py:296
+#: apps/api/v1/views/courses.py:298
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
@@ -166,7 +179,7 @@ msgstr ""
 "Att byta rättighetstyp efter att ha granskats stöds inte. Kontakta din "
 "projektkoordinator för ytterligare hjälp om det behövs."
 
-#: apps/api/v1/views/courses.py:406
+#: apps/api/v1/views/courses.py:408
 #, python-brace-format
 msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
@@ -346,7 +359,7 @@ msgstr "Analytics API URL"
 
 #: apps/core/models.py:85
 msgid "Analytics Access Token"
-msgstr "Analysåtkomsttoken"
+msgstr "Åtkomsttoken för analys"
 
 #: apps/core/models.py:94
 msgid "Partner"
@@ -401,19 +414,23 @@ msgstr "Ja"
 msgid "No"
 msgstr "Nej"
 
-#: apps/course_metadata/admin.py:537 apps/course_metadata/admin.py:882
+#: apps/course_metadata/admin.py:538 apps/course_metadata/admin.py:883
 msgid "Included course runs"
 msgstr "Inkluderade kursomgångar"
 
-#: apps/course_metadata/admin.py:888
+#: apps/course_metadata/admin.py:889
 msgid "Edit link"
 msgstr "Redigera länk"
 
-#: apps/course_metadata/admin.py:898
+#: apps/course_metadata/admin.py:897
+msgid "Edit course run exclusions"
+msgstr "Redigera kurskörningsundantag"
+
+#: apps/course_metadata/admin.py:899
 msgid "(save and continue editing to create a link)"
 msgstr "(spara och fortsätt redigera för att skapa en länk)"
 
-#: apps/course_metadata/admin.py:1036
+#: apps/course_metadata/admin.py:1037
 #, python-format
 msgid "Successfully %(status)s %(count)d %(items)s."
 msgstr "Framgångsrikt %(status)s %(count)d %(items)s."
@@ -440,13 +457,13 @@ msgid "Available now"
 msgstr "Tillgänglig nu"
 
 #: apps/course_metadata/algolia_models.py:118
-#: apps/course_metadata/models.py:2704
+#: apps/course_metadata/models.py:2757
 msgid "Upcoming"
 msgstr "Kommande"
 
 #: apps/course_metadata/algolia_models.py:120
-#: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2698
-#: apps/course_metadata/models.py:2714
+#: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2751
+#: apps/course_metadata/models.py:2767
 msgid "Archived"
 msgstr "Arkiverad"
 
@@ -521,9 +538,21 @@ msgstr "demo"
 msgid "other"
 msgstr "Övrig"
 
+#: apps/course_metadata/choices.py:54
+msgid "Course Create"
+msgstr "Skapa kurs"
+
 #: apps/course_metadata/choices.py:55
-msgid "Course Partial Update"
-msgstr "Kurs Delvis Uppdatering"
+msgid "Partial Update"
+msgstr "Delvis uppdatering"
+
+#: apps/course_metadata/choices.py:56
+msgid "Course Rerun"
+msgstr "Kursomgång"
+
+#: apps/course_metadata/choices.py:57
+msgid "Course Editor Update"
+msgstr "Uppdatering av kursredigerare"
 
 #: apps/course_metadata/choices.py:64
 msgid "Pending"
@@ -553,6 +582,14 @@ msgstr "Delvis klar"
 msgid "Errored"
 msgstr "Felaktig"
 
+#: apps/course_metadata/choices.py:74
+msgid "Honor"
+msgstr "Förtroende"
+
+#: apps/course_metadata/choices.py:75
+msgid "Credit"
+msgstr "Poäng"
+
 #: apps/course_metadata/choices.py:77
 msgid "Professional"
 msgstr "Professionell"
@@ -572,6 +609,10 @@ msgstr "Obetald Executive Education"
 #: apps/course_metadata/choices.py:81
 msgid "Paid Bootcamp"
 msgstr "Betald Bootcamp"
+
+#: apps/course_metadata/choices.py:82
+msgid "Unpaid Bootcamp"
+msgstr "Obetald Bootcamp"
 
 #: apps/course_metadata/choices.py:86
 msgid "Platform"
@@ -604,6 +645,10 @@ msgstr "Sprint"
 #: apps/course_metadata/choices.py:110
 msgid "Course Stack"
 msgstr "Kursstack"
+
+#: apps/course_metadata/choices.py:114
+msgid "Custom B2B Enterprise"
+msgstr "Anpassad B2B Enterprise"
 
 #: apps/course_metadata/choices.py:115
 msgid "Custom B2C"
@@ -745,6 +790,10 @@ msgstr "Program kan endast aktiveras om de har en bannerbild."
 msgid "Tag to add to courses"
 msgstr "Tagga för att lägga till kurser"
 
+#: apps/course_metadata/management/commands/add_tag_to_courses.py:16
+msgid "UUIDs of courses to tag"
+msgstr "UUID:er för kurser att tagga"
+
 #: apps/course_metadata/management/commands/add_tag_to_courses.py:18
 msgid ""
 "Use arguments from the TagCourseUUIDsConfig model instead of the command "
@@ -771,20 +820,28 @@ msgid "Short code for a partner."
 msgstr "Kortkod för en partner."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:20
-#: apps/course_metadata/models.py:237 apps/course_metadata/models.py:492
-#: apps/course_metadata/models.py:640 apps/course_metadata/models.py:673
-#: apps/course_metadata/models.py:697 apps/course_metadata/models.py:736
-#: apps/course_metadata/models.py:1029 apps/course_metadata/models.py:1250
-#: apps/course_metadata/models.py:1412 apps/course_metadata/models.py:2241
-#: apps/course_metadata/models.py:3308 apps/course_metadata/models.py:4268
-#: apps/course_metadata/models.py:4360 apps/learner_pathway/models.py:34
+#: apps/course_metadata/models.py:238 apps/course_metadata/models.py:493
+#: apps/course_metadata/models.py:641 apps/course_metadata/models.py:674
+#: apps/course_metadata/models.py:698 apps/course_metadata/models.py:737
+#: apps/course_metadata/models.py:1054 apps/course_metadata/models.py:1275
+#: apps/course_metadata/models.py:1452 apps/course_metadata/models.py:2288
+#: apps/course_metadata/models.py:3372 apps/course_metadata/models.py:4422
+#: apps/course_metadata/models.py:4563 apps/learner_pathway/models.py:34
 #: apps/learner_pathway/models.py:83 apps/learner_pathway/models.py:158
 msgid "UUID"
 msgstr "UUID"
 
+#: apps/course_metadata/management/commands/backpopulate_course_type.py:22
+msgid "Course to backpopulate."
+msgstr "Kurs för att återbefolka."
+
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:27
 msgid "KEY"
 msgstr "NYCKEL"
+
+#: apps/course_metadata/management/commands/backpopulate_course_type.py:29
+msgid "Organization to backpopulate."
+msgstr "Organisation att backpopulera."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:35
 msgid ""
@@ -952,21 +1009,21 @@ msgstr "Sökvägen /course/{url_slug} används inte, inget att radera"
 msgid "Path {url_path} not in use, nothing to delete"
 msgstr "Sökväg {url_path} används inte, inget att ta bort"
 
-#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:42
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:44
 msgid "One or more courses failed to unpublish."
 msgstr "En eller flera kurser kunde inte avpubliceras."
 
-#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:48
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:50
 #, python-brace-format
 msgid "Successfully unpublished runs in course {key}"
 msgstr "Opublicerade körningar i kursen {key}"
 
-#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:51
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:53
 #, python-brace-format
 msgid "Failed to unpublish runs in course {key}"
 msgstr "Det gick inte att avpublicera körningar i kursen {key}"
 
-#: apps/course_metadata/models.py:238
+#: apps/course_metadata/models.py:239
 msgid ""
 "Please do not use any spaces or special characters other than period, "
 "underscore or hyphen. This key will be used in the course's course key."
@@ -975,16 +1032,16 @@ msgstr ""
 "understreck eller bindestreck. Denna nyckel kommer att användas i kursens "
 "kursnyckel."
 
-#: apps/course_metadata/models.py:243
+#: apps/course_metadata/models.py:244
 msgid "If populated, this field will overwrite name in platform."
 msgstr ""
 "Om det är ifyllt kommer detta fält att skriva över namnet i plattformen."
 
-#: apps/course_metadata/models.py:248
+#: apps/course_metadata/models.py:249
 msgid "Spanish Description"
 msgstr "Spanska beskrivning"
 
-#: apps/course_metadata/models.py:249
+#: apps/course_metadata/models.py:250
 msgid ""
 "For seo, this field allows for alternate spanish description to be manually "
 "inputted"
@@ -992,8 +1049,8 @@ msgstr ""
 "För SEO tillåter det här fältet att alternativ spansk beskrivning kan matas "
 "in manuellt"
 
-#: apps/course_metadata/models.py:274 apps/course_metadata/models.py:1489
-#: apps/course_metadata/models.py:2325
+#: apps/course_metadata/models.py:275 apps/course_metadata/models.py:1529
+#: apps/course_metadata/models.py:2372
 msgid ""
 "Pick a tag from the suggestions. To make a new tag, add a comma after the "
 "tag name."
@@ -1001,7 +1058,11 @@ msgstr ""
 "Välj en tagg från förslagen. För att lägga till en ny tagg, lägg till ett "
 "kommatecken efter taggnamnet."
 
-#: apps/course_metadata/models.py:280
+#: apps/course_metadata/models.py:279
+msgid "Automatically generate course run keys"
+msgstr "Generera automatiskt kursnycklar"
+
+#: apps/course_metadata/models.py:281
 msgid ""
 "When this flag is enabled, the key of a new course run will be auto "
 "generated.  When this flag is disabled, the key can be manually set."
@@ -1010,7 +1071,7 @@ msgstr ""
 "genereras automatiskt. När denna flagga är inaktiverad kan nyckeln ställas "
 "in manuellt."
 
-#: apps/course_metadata/models.py:286
+#: apps/course_metadata/models.py:287
 msgid ""
 "This field signifies if any of this org's courses are in the enterprise "
 "subscription catalog"
@@ -1018,7 +1079,7 @@ msgstr ""
 "Detta fält anger om någon av denna organisations kurser finns i "
 "företagsabonnemangskatalogen."
 
-#: apps/course_metadata/models.py:289
+#: apps/course_metadata/models.py:290
 msgid ""
 "The 6 character-hex-value of the orgnization theme color,\n"
 "            all related course under same organization will use this color as theme color.\n"
@@ -1028,11 +1089,11 @@ msgstr ""
 "            alla relaterade kurser under samma organisation kommer att använda denna färg som temafärg.\n"
 "            (t.ex. \"#ff0000\" vilket motsvarar röd) Ingen anledning att ange `#`"
 
-#: apps/course_metadata/models.py:305
+#: apps/course_metadata/models.py:306
 msgid "The timestamp of the last time the organization data was modified."
 msgstr "Tidsstämpeln för när organisationsdata senast ändrades."
 
-#: apps/course_metadata/models.py:321
+#: apps/course_metadata/models.py:322
 msgid ""
 "Please do not use any spaces or special characters other than period, "
 "underscore or hyphen in the key field."
@@ -1040,15 +1101,15 @@ msgstr ""
 "Använd inga mellanslag eller specialtecken förutom punkt, understreck eller "
 "bindestreck i nyckelfältet."
 
-#: apps/course_metadata/models.py:392
+#: apps/course_metadata/models.py:393
 msgid "Corresponding organization code in an external product source"
 msgstr "Motsvarande organisationskod i en extern produktkälla"
 
-#: apps/course_metadata/models.py:449
+#: apps/course_metadata/models.py:450
 msgid "LevelType model translations"
 msgstr "LevelType modellöversättningar"
 
-#: apps/course_metadata/models.py:474
+#: apps/course_metadata/models.py:475
 msgid ""
 "Seat types that qualify for completion of programs of this type. Learners "
 "completing associated courses, but enrolled in other seat types, will NOT "
@@ -1060,41 +1121,41 @@ msgstr ""
 "sittplatser, kommer INTE att få deras slutförande av kursen inräknat i "
 "programmets slutförande."
 
-#: apps/course_metadata/models.py:488
+#: apps/course_metadata/models.py:489
 msgid "Please provide an image file with transparent background"
 msgstr "Vänligen tillhandahåll en bildfil med transparent bakgrund"
 
-#: apps/course_metadata/models.py:491 apps/course_metadata/models.py:535
-#: apps/course_metadata/models.py:701 apps/course_metadata/models.py:739
-#: apps/course_metadata/models.py:1424 apps/course_metadata/models.py:3322
+#: apps/course_metadata/models.py:492 apps/course_metadata/models.py:536
+#: apps/course_metadata/models.py:702 apps/course_metadata/models.py:740
+#: apps/course_metadata/models.py:1464 apps/course_metadata/models.py:3386
 msgid "Leave this field blank to have the value generated automatically."
 msgstr "Lämna detta fält tomt om du vill att systemet autogenererar ett värde"
 
-#: apps/course_metadata/models.py:532
+#: apps/course_metadata/models.py:533
 msgid "Name of the external source."
 msgstr "Namnet på den externa källan."
 
-#: apps/course_metadata/models.py:537
+#: apps/course_metadata/models.py:538
 msgid "Description of the external source."
 msgstr "Beskrivning av den externa källan."
 
-#: apps/course_metadata/models.py:542
+#: apps/course_metadata/models.py:543
 msgid "Programs of these types will be OFAC restricted"
 msgstr "Program av dessa typer kommer att vara OFAC-begränsade"
 
-#: apps/course_metadata/models.py:556
+#: apps/course_metadata/models.py:557
 msgid "ProgramType model translations"
 msgstr "ProgramType modellöversättningar"
 
-#: apps/course_metadata/models.py:570
+#: apps/course_metadata/models.py:571
 msgid "This mode requires ID verification."
 msgstr "Detta läge kräver ID-verifiering."
 
-#: apps/course_metadata/models.py:573
+#: apps/course_metadata/models.py:574
 msgid "Completion can grant credit toward an organization’s degree."
 msgstr "Genomförande kan ge kredit mot en organisations examen."
 
-#: apps/course_metadata/models.py:577
+#: apps/course_metadata/models.py:578
 msgid ""
 "Certificate type granted if this mode is eligible for a certificate, or "
 "blank if not."
@@ -1102,7 +1163,7 @@ msgstr ""
 "Certifikattyp beviljas om detta läge är berättigat till ett certifikat, "
 "eller tomt om inte."
 
-#: apps/course_metadata/models.py:581
+#: apps/course_metadata/models.py:582
 msgid ""
 "Who gets paid for the course? Platform is the site owner, Organization is "
 "the school."
@@ -1110,11 +1171,11 @@ msgstr ""
 "Vem får betalt för kursen? Plattformen är webbplatsens ägare, organisationen"
 " är skolan."
 
-#: apps/course_metadata/models.py:678
+#: apps/course_metadata/models.py:679
 msgid "Sets the order for displaying Course Run Types."
 msgstr "Ställer in ordningen för visning av Course Run Types."
 
-#: apps/course_metadata/models.py:681
+#: apps/course_metadata/models.py:682
 msgid ""
 "Leave this blank to allow all orgs. Otherwise, specifies which orgs can see "
 "this course type in Publisher."
@@ -1122,19 +1183,19 @@ msgstr ""
 "Lämna detta tomt för att tillåta alla organisationer. Annars anger du vilka "
 "organisationer som kan se den här kurstypen i Publisher."
 
-#: apps/course_metadata/models.py:731
+#: apps/course_metadata/models.py:732
 msgid "Subject model translations"
 msgstr "Ämnesöversättningar"
 
-#: apps/course_metadata/models.py:778
+#: apps/course_metadata/models.py:779
 msgid "Topic model translations"
 msgstr "Ämnesöversättningar"
 
-#: apps/course_metadata/models.py:837
+#: apps/course_metadata/models.py:846
 msgid "SEO Meta tags for Products"
 msgstr "SEO-metataggar för produkter"
 
-#: apps/course_metadata/models.py:867
+#: apps/course_metadata/models.py:881
 msgid ""
 "The ID of the Taxi Form (by 2U) that would be rendered in place of the "
 "hubspot capture form"
@@ -1142,7 +1203,7 @@ msgstr ""
 "Taxiformulärets ID (av 2U) som skulle återges i stället för "
 "navpunktsfångstformuläret"
 
-#: apps/course_metadata/models.py:873
+#: apps/course_metadata/models.py:887
 msgid ""
 "The grouping of the Taxi Form (by 2U) that would be rendered instead of the "
 "hubspot capture form"
@@ -1150,98 +1211,110 @@ msgstr ""
 "Grupperingen av taxiformuläret (av 2U) som skulle återges istället för "
 "formuläret för hubspot capture"
 
-#: apps/course_metadata/models.py:911
+#: apps/course_metadata/models.py:933
 msgid "The URL of the paid landing page on external site"
 msgstr "Webbadressen till den betalda målsidan på extern webbplats"
 
-#: apps/course_metadata/models.py:917
+#: apps/course_metadata/models.py:939
 msgid "The URL of the organic landing page on external site"
 msgstr "Webbadressen till den organiska målsidan på extern webbplats"
 
-#: apps/course_metadata/models.py:928
+#: apps/course_metadata/models.py:950
 msgid "The start date of the external course offering for marketing purpose"
 msgstr "Startdatum för det externa kursutbudet i marknadsföringssyfte"
 
-#: apps/course_metadata/models.py:932
+#: apps/course_metadata/models.py:954
 msgid "The ends date of the external course offering for marketing purpose"
 msgstr "Slutdatum för det externa kursutbudet i marknadsföringssyfte"
 
-#: apps/course_metadata/models.py:936
+#: apps/course_metadata/models.py:958
 msgid "The suggested deadline for enrollment for marketing purpose"
 msgstr "Den föreslagna deadline för registrering i marknadsföringssyfte"
 
-#: apps/course_metadata/models.py:940
+#: apps/course_metadata/models.py:962
 msgid "The identifier for a product variant."
 msgstr "Identifieraren för en produktvariant."
 
-#: apps/course_metadata/models.py:971
+#: apps/course_metadata/models.py:967
+msgid "This field allows for override the default course term"
+msgstr "Detta fält tillåter att åsidosätta standardkursens termin"
+
+#: apps/course_metadata/models.py:993
 msgid ""
 "This field contain external course marketing type specific to product lines"
 msgstr ""
 "Detta fält innehåller extern kursmarknadsföringstyp specifik för "
 "produktlinjer"
 
-#: apps/course_metadata/models.py:980
+#: apps/course_metadata/models.py:1002
 msgid ""
 "Determines weather the course should be displayed on the owning "
 "organization's page"
 msgstr "Avgör om kursen ska visas på den ägande organisationens sida"
 
-#: apps/course_metadata/models.py:1048
+#: apps/course_metadata/models.py:1073
 msgid "A list of major works by this person. Must be valid HTML."
 msgstr "En lista över större verk av denna person. Måste vara giltig HTML."
 
-#: apps/course_metadata/models.py:1247
+#: apps/course_metadata/models.py:1081
+msgid "People"
+msgstr "Människor"
+
+#: apps/course_metadata/models.py:1272
 msgid ""
 "Add the collaborator image, please make sure its dimensions are 200x100px"
 msgstr ""
-"Lägg till bilden för redigeringsbehörig, se till att dess mått är 200x100px"
+"Lägga till bilden för redigeringsbehörig, se till att dess mått är 200x100px"
 
-#: apps/course_metadata/models.py:1272
+#: apps/course_metadata/models.py:1296
+msgid "U.S. Value Per Lead"
+msgstr "Värde per lead i USA"
+
+#: apps/course_metadata/models.py:1297
 msgid "U.S. value per lead in U.S. dollars."
 msgstr "Amerikanskt värde per lead i amerikanska dollar."
 
-#: apps/course_metadata/models.py:1277
+#: apps/course_metadata/models.py:1302
 msgid "International Value Per Lead"
 msgstr "Internationellt värde per lead"
 
-#: apps/course_metadata/models.py:1278
+#: apps/course_metadata/models.py:1303
 msgid "International value per lead in U.S. dollars."
 msgstr "Internationellt värde per lead i amerikanska dollar."
 
-#: apps/course_metadata/models.py:1283
+#: apps/course_metadata/models.py:1308
 msgid "U.S. Value Per Click"
 msgstr "Värde per klick i USA"
 
-#: apps/course_metadata/models.py:1284
+#: apps/course_metadata/models.py:1309
 msgid "U.S. value per click in U.S. dollars."
 msgstr "Amerikanskt värde per klick i amerikanska dollar."
 
-#: apps/course_metadata/models.py:1289
+#: apps/course_metadata/models.py:1314
 msgid "International Value Per Click"
 msgstr "Internationellt värde per klick"
 
-#: apps/course_metadata/models.py:1290
+#: apps/course_metadata/models.py:1315
 msgid "International value per click in U.S. dollars."
 msgstr "Internationellt värde per klick i amerikanska dollar."
 
-#: apps/course_metadata/models.py:1328
+#: apps/course_metadata/models.py:1359
 msgid "Latitude"
 msgstr "Latitud"
 
-#: apps/course_metadata/models.py:1335
+#: apps/course_metadata/models.py:1366
 msgid "Longitude"
 msgstr "Longitud"
 
-#: apps/course_metadata/models.py:1372
+#: apps/course_metadata/models.py:1409
 msgid "Allowlist"
 msgstr "Tillåtelselista"
 
-#: apps/course_metadata/models.py:1373
+#: apps/course_metadata/models.py:1410
 msgid "Blocklist"
 msgstr "Blockeringslista"
 
-#: apps/course_metadata/models.py:1420
+#: apps/course_metadata/models.py:1460
 msgid ""
 "When making reruns for this course, they will use this key instead of the "
 "course key."
@@ -1249,7 +1322,7 @@ msgstr ""
 "När de gör repriser för denna kurs kommer de att använda denna nyckel "
 "istället för kursnyckeln."
 
-#: apps/course_metadata/models.py:1437
+#: apps/course_metadata/models.py:1477
 msgid ""
 "The actual duration of this course as experienced by learners who complete "
 "it."
@@ -1257,19 +1330,19 @@ msgstr ""
 "Den faktiska varaktigheten av denna kurs som upplevs av elever som slutför "
 "den."
 
-#: apps/course_metadata/models.py:1458
+#: apps/course_metadata/models.py:1498
 msgid "Add the course image"
 msgstr "Lägga till kursbilden"
 
-#: apps/course_metadata/models.py:1461 apps/course_metadata/models.py:3294
+#: apps/course_metadata/models.py:1501 apps/course_metadata/models.py:3358
 msgid "FAQ"
 msgstr "FAQ"
 
-#: apps/course_metadata/models.py:1464
+#: apps/course_metadata/models.py:1504
 msgid "Total number of learners who have enrolled in this course"
 msgstr "Totalt antal elever som har anmält sig till denna kurs"
 
-#: apps/course_metadata/models.py:1469
+#: apps/course_metadata/models.py:1509
 msgid ""
 "Total number of learners who have enrolled in this course in the last 6 "
 "months"
@@ -1277,25 +1350,25 @@ msgstr ""
 "Totalt antal elever som har anmält sig till denna kurs under de senaste 6 "
 "månaderna"
 
-#: apps/course_metadata/models.py:1483
+#: apps/course_metadata/models.py:1523
 msgid "Course number format e.g CS002x, BIO1.1x, BIO1.2x"
 msgstr "Kursnummerformat t.ex. CS002x, BIO1.1x, BIO1.2x"
 
-#: apps/course_metadata/models.py:1497
+#: apps/course_metadata/models.py:1537
 msgid "Additional Information"
 msgstr "Mer information"
 
-#: apps/course_metadata/models.py:1519
+#: apps/course_metadata/models.py:1559
 msgid "The last time this course was modified in the database."
 msgstr "Senast denna kurs ändrades i databasen."
 
-#: apps/course_metadata/models.py:1524
+#: apps/course_metadata/models.py:1564
 msgid ""
 "This field signifies if this course is in the enterprise subscription "
 "catalog"
 msgstr "Detta fält anger om denna kurs finns i företagsabonnemangskatalogen"
 
-#: apps/course_metadata/models.py:1532 apps/course_metadata/models.py:3453
+#: apps/course_metadata/models.py:1572 apps/course_metadata/models.py:3517
 msgid ""
 "If checked, this item will not be indexed in Algolia and will not show up in"
 " search results."
@@ -1303,15 +1376,15 @@ msgstr ""
 "Om markerad, kommer detta objekt inte att indexeras i Algolia och kommer "
 "inte att visas i sökresultaten."
 
-#: apps/course_metadata/models.py:1540 apps/course_metadata/models.py:3461
+#: apps/course_metadata/models.py:1580 apps/course_metadata/models.py:3525
 msgid "If checked, the About Page will have a meta tag with noindex value"
-msgstr "Om markerad, kommer Om-sidan att ha en meta-tagg med värdet noindex"
+msgstr "Om markerad, kommer Om-sida att ha en metatag med värdet noindex"
 
-#: apps/course_metadata/models.py:1545
+#: apps/course_metadata/models.py:1585
 msgid "Watchers"
 msgstr "Bevakare"
 
-#: apps/course_metadata/models.py:1547
+#: apps/course_metadata/models.py:1587
 msgid ""
 "The list of email addresses that will be notified if any of the course runs "
 "is published or scheduled."
@@ -1319,23 +1392,23 @@ msgstr ""
 "Listan över e-postadresser som kommer att meddelas om någon av "
 "kursomgångarna publiceras eller schemaläggs."
 
-#: apps/course_metadata/models.py:1786
+#: apps/course_metadata/models.py:1832
 msgid "Future"
 msgstr "Framtid"
 
-#: apps/course_metadata/models.py:1788
+#: apps/course_metadata/models.py:1834
 msgid "Past"
 msgstr "Dåtid"
 
-#: apps/course_metadata/models.py:2229 apps/course_metadata/models.py:3305
+#: apps/course_metadata/models.py:2276 apps/course_metadata/models.py:3369
 msgid "Blocked"
 msgstr "Blockerad"
 
-#: apps/course_metadata/models.py:2230 apps/course_metadata/models.py:3306
+#: apps/course_metadata/models.py:2277 apps/course_metadata/models.py:3370
 msgid "Unrestricted"
 msgstr "Obegränsad"
 
-#: apps/course_metadata/models.py:2251
+#: apps/course_metadata/models.py:2298
 msgid ""
 "Title specific for this run of a course. Leave this value blank to default "
 "to the parent course's title."
@@ -1343,7 +1416,7 @@ msgstr ""
 "Titel specifik för denna kursomgång. Lämna blank för att använda den vanliga"
 " kurstiteln."
 
-#: apps/course_metadata/models.py:2260
+#: apps/course_metadata/models.py:2307
 msgid ""
 "Short description specific for this run of a course. Leave this value blank "
 "to default to the parent course's short_description attribute."
@@ -1351,7 +1424,7 @@ msgstr ""
 "Kort beskrivning specifik för denna kursomgång. Lämna blank för att använda "
 "den vanliga kursbeskrivningen."
 
-#: apps/course_metadata/models.py:2264
+#: apps/course_metadata/models.py:2311
 msgid ""
 "Full description specific for this run of a course. Leave this value blank "
 "to default to the parent course's full_description attribute."
@@ -1359,23 +1432,23 @@ msgstr ""
 "Komplett beskrivning specifik för denna kursomgång. Lämna blank för att "
 "använda den vanliga kursbeskrivningen."
 
-#: apps/course_metadata/models.py:2269
+#: apps/course_metadata/models.py:2316
 msgid ""
 "Estimated minimum number of hours per week needed to complete a course run."
 msgstr ""
 "Antal timmar per vecka man minst behöver studera för att klara kursen."
 
-#: apps/course_metadata/models.py:2272
+#: apps/course_metadata/models.py:2319
 msgid ""
 "Estimated maximum number of hours per week needed to complete a course run."
 msgstr ""
 "Antal timmar per vecka man maximalt behöver studera för att klara kursen."
 
-#: apps/course_metadata/models.py:2275
+#: apps/course_metadata/models.py:2322
 msgid "Estimated number of weeks needed to complete this course run."
 msgstr "Beräknat antal veckor som behövs för att slutföra denna kursomgång."
 
-#: apps/course_metadata/models.py:2282
+#: apps/course_metadata/models.py:2329
 msgid ""
 "A JSON dict detailing the available translations and transcriptions for this"
 " run. The dict has two keys: translation_languages and "
@@ -1385,11 +1458,11 @@ msgstr ""
 " för denna körning. Ordboken har två nycklar: translation_languages och "
 "transcription_languages."
 
-#: apps/course_metadata/models.py:2289
+#: apps/course_metadata/models.py:2336
 msgid "Total number of learners who have enrolled in this course run"
 msgstr "Totalt antal elever som har anmält sig till denna kurs körs"
 
-#: apps/course_metadata/models.py:2293
+#: apps/course_metadata/models.py:2340
 msgid ""
 "Total number of learners who have enrolled in this course run in the last 6 "
 "months"
@@ -1397,7 +1470,7 @@ msgstr ""
 "Totalt antal elever som har anmält sig till denna kurs har gått under de "
 "senaste 6 månaderna"
 
-#: apps/course_metadata/models.py:2306
+#: apps/course_metadata/models.py:2353
 msgid ""
 "Whether this run should be hidden from API responses.  Do not edit here - "
 "this value will be overwritten by the \"Course Visibility In Catalog\" field"
@@ -1407,11 +1480,11 @@ msgstr ""
 "kommer att skrivas över av fältet \"Kurssynlighet i katalog\" i Studio via "
 "Uppdatera kursmetadata."
 
-#: apps/course_metadata/models.py:2312
+#: apps/course_metadata/models.py:2359
 msgid "Indicates whether the course relation has been manually overridden."
 msgstr "Indikerar om kursrelationen har åsidosatts manuellt."
 
-#: apps/course_metadata/models.py:2319
+#: apps/course_metadata/models.py:2366
 msgid ""
 "'What You Will Learn' description for this particular course run. Leave this"
 " value blank to default to the parent course's Outcome attribute."
@@ -1420,13 +1493,13 @@ msgstr ""
 "detta värde tomt för att förinställa den överordnade kursens "
 "resultatattribut."
 
-#: apps/course_metadata/models.py:2332 apps/course_metadata/models.py:3489
+#: apps/course_metadata/models.py:2379 apps/course_metadata/models.py:3553
 msgid "Add OFAC restriction text to the FAQ section of the Marketing site"
 msgstr ""
 "Lägga till OFAC-begränsningstext i FAQ-sektionen på "
 "marknadsföringswebbplatsen"
 
-#: apps/course_metadata/models.py:2352
+#: apps/course_metadata/models.py:2399
 msgid ""
 "This calculated field signifies if this course run is in the enterprise "
 "subscription catalog"
@@ -1434,7 +1507,7 @@ msgstr ""
 "Detta beräknade fält anger om denna kurskörning finns i "
 "företagsabonnemangskatalogen"
 
-#: apps/course_metadata/models.py:2358
+#: apps/course_metadata/models.py:2405
 msgid ""
 "The identifier for a product variant. This is used to link a course run to a"
 " product variant for external LOBs (i.e; ExecEd & Bootcamps)."
@@ -1443,15 +1516,15 @@ msgstr ""
 "kurstillfälle till en produktvariant för externa LOBs (dvs. ExecEd & "
 "Bootcamps)."
 
-#: apps/course_metadata/models.py:2700 apps/course_metadata/models.py:2713
+#: apps/course_metadata/models.py:2753 apps/course_metadata/models.py:2766
 msgid "Current"
 msgstr "Nuvarande"
 
-#: apps/course_metadata/models.py:2702
+#: apps/course_metadata/models.py:2755
 msgid "Starting Soon"
 msgstr "Börjar snart"
 
-#: apps/course_metadata/models.py:2752
+#: apps/course_metadata/models.py:2805
 msgid ""
 "Switching seat types after being reviewed is not supported. Please reach out"
 " to your project coordinator for additional help if necessary."
@@ -1459,39 +1532,43 @@ msgstr ""
 "Att byta rättighetstyp efter att ha granskats stöds inte. Kontakta din "
 "projektkoordinator för ytterligare hjälp om det behövs."
 
-#: apps/course_metadata/models.py:3104
+#: apps/course_metadata/models.py:3159
 msgid "Change careers"
 msgstr "Byt karriär"
 
-#: apps/course_metadata/models.py:3105
+#: apps/course_metadata/models.py:3160
 msgid "Job advancement"
 msgstr "Karriärutveckling"
 
-#: apps/course_metadata/models.py:3106
+#: apps/course_metadata/models.py:3161
 msgid "Learn valuable skills"
 msgstr "Lär dig värdefulla färdigheter"
 
-#: apps/course_metadata/models.py:3107
+#: apps/course_metadata/models.py:3162
 msgid "Learn for fun"
 msgstr "Lär för nöjes skull"
 
-#: apps/course_metadata/models.py:3295
+#: apps/course_metadata/models.py:3359
 msgid "FAQs"
 msgstr "Vanliga frågor"
 
-#: apps/course_metadata/models.py:3310
+#: apps/course_metadata/models.py:3374
 msgid "The user-facing display title for this Program."
 msgstr "Den användarvända visningstiteln för detta program."
 
-#: apps/course_metadata/models.py:3312
+#: apps/course_metadata/models.py:3376
 msgid "A brief, descriptive subtitle for the Program."
 msgstr "En kort, beskrivande undertitel för programmet."
 
-#: apps/course_metadata/models.py:3314
+#: apps/course_metadata/models.py:3378
 msgid "A brief hook for the marketing website"
 msgstr "En kort hook för marknadsföringswebbplatsen"
 
-#: apps/course_metadata/models.py:3329
+#: apps/course_metadata/models.py:3381
+msgid "The lifecycle status of this Program."
+msgstr "Livscykelstatus för detta program."
+
+#: apps/course_metadata/models.py:3393
 msgid ""
 "If this box is not checked, courses will be ordered as in the courses select"
 " box above."
@@ -1499,7 +1576,7 @@ msgstr ""
 "Om denna ruta inte är markerad kommer kurser att beställas som i "
 "kursvalsrutan ovan."
 
-#: apps/course_metadata/models.py:3344
+#: apps/course_metadata/models.py:3408
 msgid ""
 "This field is now deprecated (ECOM-6021).Estimated number of weeks needed to"
 " complete a course run belonging to this program."
@@ -1507,11 +1584,11 @@ msgstr ""
 "Det här fältet är nu utfasat (ECOM-6021). Uppskattat antal veckor som krävs "
 "för att genomföra en kurs som hör till detta program."
 
-#: apps/course_metadata/models.py:3370
+#: apps/course_metadata/models.py:3434
 msgid "DEPRECATED: Use the card image field"
 msgstr "UTGÅNGAD: Använd kortbildsfältet"
 
-#: apps/course_metadata/models.py:3377
+#: apps/course_metadata/models.py:3441
 msgid ""
 "This field can be used by API clients to determine the order in which "
 "instructors will be displayed on program pages. Instructors in this list "
@@ -1522,15 +1599,15 @@ msgstr ""
 "här listan bör visas innan alla andra associerade med detta programs kurser "
 "körs."
 
-#: apps/course_metadata/models.py:3388
+#: apps/course_metadata/models.py:3452
 msgid "The description of credit redemption for courses in program"
 msgstr "Beskrivningen av tillgodoräknande av kurser i programmet"
 
-#: apps/course_metadata/models.py:3393
+#: apps/course_metadata/models.py:3457
 msgid "Allow courses in this program to be purchased in a single transaction"
 msgstr "Tillåt kurser i det här programmet att köpas i en enda transaktion"
 
-#: apps/course_metadata/models.py:3397
+#: apps/course_metadata/models.py:3461
 msgid ""
 "Hide program on marketing site landing and search pages. This program MAY "
 "have a detail page."
@@ -1538,12 +1615,12 @@ msgstr ""
 "Dölj program på marknadsföringssidans mål- och söksidor. Det här programmet "
 "KAN ha en detaljsida."
 
-#: apps/course_metadata/models.py:3400
+#: apps/course_metadata/models.py:3464
 msgid "Total number of learners who have enrolled in courses this program"
 msgstr ""
 "Totalt antal elever som har registrerat sig för kurser i detta program"
 
-#: apps/course_metadata/models.py:3405
+#: apps/course_metadata/models.py:3469
 msgid ""
 "Total number of learners who have enrolled in courses in this program in the"
 " last 6 months"
@@ -1551,7 +1628,7 @@ msgstr ""
 "Totalt antal elever som har anmält sig till kurser i detta program under de "
 "senaste 6 månaderna"
 
-#: apps/course_metadata/models.py:3410
+#: apps/course_metadata/models.py:3474
 msgid ""
 "Number of credits a learner will earn upon successful completion of the "
 "program"
@@ -1559,7 +1636,7 @@ msgstr ""
 "Antal poäng en elev kommer att tjäna efter framgångsrikt slutförande av "
 "programmet"
 
-#: apps/course_metadata/models.py:3414
+#: apps/course_metadata/models.py:3478
 msgid ""
 "This calculated field signifies if all the courses in this program are "
 "included in the enterprise subscription catalog "
@@ -1567,20 +1644,20 @@ msgstr ""
 "Detta beräknade fält anger om alla kurser i detta program ingår i "
 "företagsabonnemangskatalogen "
 
-#: apps/course_metadata/models.py:3418
+#: apps/course_metadata/models.py:3482
 msgid ""
 "A field to override Organization short code alias specific for this program."
 msgstr ""
 "Ett fält för att åsidosätta organisationens kortkodalias specifikt för detta"
 " program."
 
-#: apps/course_metadata/models.py:3425
+#: apps/course_metadata/models.py:3489
 msgid "A field to override Organization logo specific for this program."
 msgstr ""
 "Ett fält för att åsidosätta organisationslogotypen som är specifik för detta"
 " program."
 
-#: apps/course_metadata/models.py:3429
+#: apps/course_metadata/models.py:3493
 msgid ""
 "Primary subject field specific for this program. Useful field in case there "
 "are no courses associated with this program."
@@ -1588,7 +1665,7 @@ msgstr ""
 "Primärt ämnesområde specifikt för detta program. Användbart fält om det inte"
 " finns några kurser kopplade till detta program."
 
-#: apps/course_metadata/models.py:3434
+#: apps/course_metadata/models.py:3498
 msgid ""
 "Level type specific for this program. Useful field in case there are no "
 "courses associated with this program."
@@ -1596,7 +1673,7 @@ msgstr ""
 "Nivåtyp specifik för detta program. Användbart fält om det inte finns några "
 "kurser kopplade till detta program."
 
-#: apps/course_metadata/models.py:3439
+#: apps/course_metadata/models.py:3503
 msgid ""
 "Language code specific for this program. Useful field in case there are no "
 "courses associated with this program."
@@ -1604,7 +1681,7 @@ msgstr ""
 "Språkkod specifik för detta program. Användbart fält om det inte finns några"
 " kurser kopplade till detta program."
 
-#: apps/course_metadata/models.py:3473
+#: apps/course_metadata/models.py:3537
 msgid ""
 "Useful field to overwrite the duration of a program. It can be a text "
 "describing a period of time, Ex: 6-9 months."
@@ -1612,7 +1689,7 @@ msgstr ""
 "Användbart fält för att skriva över varaktigheten av ett program. Det kan "
 "vara en text som beskriver en tidsperiod, t.ex. 6-9 månader."
 
-#: apps/course_metadata/models.py:3482
+#: apps/course_metadata/models.py:3546
 msgid ""
 "Pick a tag/label from the suggestions. To make a new tag, add a comma after "
 "the tag name."
@@ -1620,35 +1697,35 @@ msgstr ""
 "Välj en tagg/etikett från förslagen. För att lägga till en ny tagg, lägg "
 "till ett kommatecken efter taggnamnet."
 
-#: apps/course_metadata/models.py:3493
+#: apps/course_metadata/models.py:3557
 msgid "The last time this program was modified."
 msgstr "Den senaste gången detta program ändrades."
 
-#: apps/course_metadata/models.py:3950 apps/course_metadata/models.py:3967
+#: apps/course_metadata/models.py:4009 apps/course_metadata/models.py:4026
 msgid "ID"
 msgstr "ID"
 
-#: apps/course_metadata/models.py:3986
+#: apps/course_metadata/models.py:4045
 msgid "The actual rank number"
 msgstr "Det faktiska rangnumret"
 
-#: apps/course_metadata/models.py:3987
+#: apps/course_metadata/models.py:4046
 msgid "What does the rank number mean"
 msgstr "Vad betyder rangnumret"
 
-#: apps/course_metadata/models.py:3988
+#: apps/course_metadata/models.py:4047
 msgid "From where the rank is obtained"
 msgstr "Varifrån rangen erhålls"
 
-#: apps/course_metadata/models.py:4004
+#: apps/course_metadata/models.py:4094
 msgid "Callback URL to partner application flow"
 msgstr "Återuppringnings-URL till partnerapplikationsflöde"
 
-#: apps/course_metadata/models.py:4007
+#: apps/course_metadata/models.py:4097
 msgid "Overall program ranking (e.g. \"#1 in the U.S.\")"
 msgstr "Övergripande programrankning (t.ex. \"#1 i USA\")"
 
-#: apps/course_metadata/models.py:4012
+#: apps/course_metadata/models.py:4102
 msgid ""
 "The 6 character hex value of the color to make the banner borders\n"
 "            (e.g. \"#ff0000\" which equals red) No need to provide the `#`"
@@ -1656,51 +1733,51 @@ msgstr ""
 "Färgens hexadecimala värde på 6 tecken för att göra bannerkanterna\n"
 "            (t.ex. \"#ff0000\" som är lika med rött) Du behöver inte ange \"#\""
 
-#: apps/course_metadata/models.py:4021
+#: apps/course_metadata/models.py:4111
 msgid "Provide a campus image for the header of the degree"
 msgstr "Ge en campusbild för examenshuvudet"
 
-#: apps/course_metadata/models.py:4027
+#: apps/course_metadata/models.py:4117
 msgid "Provide a background image for the title section of the degree"
 msgstr "Tillhandahåll en bakgrundsbild för titelsektionen av examen"
 
-#: apps/course_metadata/models.py:4032
+#: apps/course_metadata/models.py:4122
 msgid "The fine print that displays at the Tuition section's bottom"
 msgstr "Det finstilta som visas längst ner i undervisningssektionen"
 
-#: apps/course_metadata/models.py:4037
+#: apps/course_metadata/models.py:4127
 msgid "The fine print that displays at the Deadline section's bottom"
 msgstr "Det finstilta som visas längst ner i deadline-sektionen"
 
-#: apps/course_metadata/models.py:4044
+#: apps/course_metadata/models.py:4134
 msgid "The sailthru email list name to capture leads"
 msgstr "Sailthru-e-postlistans namn för att fånga leads"
 
-#: apps/course_metadata/models.py:4058
+#: apps/course_metadata/models.py:4148
 msgid "Please provide an image file for the lead capture banner."
 msgstr "Ange en bildfil för lead capture-bannern."
 
-#: apps/course_metadata/models.py:4061
+#: apps/course_metadata/models.py:4151
 msgid "The Hubspot form ID for the lead capture form"
 msgstr "Hubspot-formulärets ID för lead capture-formuläret"
 
-#: apps/course_metadata/models.py:4067
+#: apps/course_metadata/models.py:4157
 msgid "URL to micromasters landing page"
 msgstr "URL till micromasters målsida"
 
-#: apps/course_metadata/models.py:4073
+#: apps/course_metadata/models.py:4163
 msgid "Micromasters verbose title"
 msgstr "Micromasters utförlig titel"
 
-#: apps/course_metadata/models.py:4079
+#: apps/course_metadata/models.py:4169
 msgid "Micromasters descriptive paragraph"
 msgstr "Micromasters beskrivande stycke"
 
-#: apps/course_metadata/models.py:4092
+#: apps/course_metadata/models.py:4182
 msgid "Customized background image for the MicroMasters section."
 msgstr "Anpassad bakgrundsbild för MicroMasters-sektionen."
 
-#: apps/course_metadata/models.py:4096
+#: apps/course_metadata/models.py:4186
 msgid ""
 "Override org name if micromasters program comes from different organization "
 "than Masters program"
@@ -1708,121 +1785,141 @@ msgstr ""
 "Åsidosätt organisationsnamn om micromasters-programmet kommer från en annan "
 "organisation än masterprogrammet"
 
-#: apps/course_metadata/models.py:4115
+#: apps/course_metadata/models.py:4193
+msgid "Ranking display for search card (e.g. \"#1 in the U.S.\""
+msgstr "Rangvisning för sökkort (t.ex. \"#1 i USA\""
+
+#: apps/course_metadata/models.py:4199
+msgid "Cost display for search card (e.g. \"$9,999\""
+msgstr "Kostnadsvisning för sökkort (t.ex. \"$9,999\""
+
+#: apps/course_metadata/models.py:4205
 msgid "Number of courses for search card (e.g. \"11 Courses\""
 msgstr "Antal kurser för sökkort (t.ex. \"11 kurser\""
 
-#: apps/course_metadata/models.py:4123
+#: apps/course_metadata/models.py:4213
 msgid ""
 "Designates whether the degree should be displayed on the owning "
 "organization's page"
 msgstr "Anger om examen ska visas på den ägande organisationens sida"
 
-#: apps/course_metadata/models.py:4140
+#: apps/course_metadata/models.py:4232
 msgid "The redirect URL of the degree on external site"
 msgstr "Omdirigeringsadressen för graden på extern webbplats"
 
-#: apps/course_metadata/models.py:4145
+#: apps/course_metadata/models.py:4237
 msgid "The URL of the landing page on external site"
 msgstr "Webbadressen till målsidan på extern webbplats"
 
-#: apps/course_metadata/models.py:4180
+#: apps/course_metadata/models.py:4288
 msgid "Bell"
 msgstr "Klocka"
 
-#: apps/course_metadata/models.py:4181
+#: apps/course_metadata/models.py:4289
 msgid "Certificate"
 msgstr "Certifikat"
 
-#: apps/course_metadata/models.py:4182
+#: apps/course_metadata/models.py:4290
 msgid "Checkmark"
 msgstr "Bock"
 
-#: apps/course_metadata/models.py:4183
+#: apps/course_metadata/models.py:4291
 msgid "Clock"
 msgstr "Klocka"
 
-#: apps/course_metadata/models.py:4185
+#: apps/course_metadata/models.py:4292
+msgid "Desktop"
+msgstr "Dator"
+
+#: apps/course_metadata/models.py:4293
 msgid "Info"
 msgstr "Info"
 
-#: apps/course_metadata/models.py:4186
+#: apps/course_metadata/models.py:4294
 msgid "Sitemap"
 msgstr "sitemap"
 
-#: apps/course_metadata/models.py:4187
+#: apps/course_metadata/models.py:4295
 msgid "User"
 msgstr "Användare"
 
-#: apps/course_metadata/models.py:4188
+#: apps/course_metadata/models.py:4296
 msgid "Dollar"
 msgstr "Dollar"
 
-#: apps/course_metadata/models.py:4189
+#: apps/course_metadata/models.py:4297
 msgid "Book"
 msgstr "Bok"
 
-#: apps/course_metadata/models.py:4191
+#: apps/course_metadata/models.py:4298
+msgid "Mortar Board"
+msgstr "Studentmössa"
+
+#: apps/course_metadata/models.py:4299
 msgid "Star"
 msgstr "Stjärna"
 
-#: apps/course_metadata/models.py:4192
+#: apps/course_metadata/models.py:4300
 msgid "Trophy"
 msgstr "Trofé"
 
-#: apps/course_metadata/models.py:4196
+#: apps/course_metadata/models.py:4304
 msgid "Icon FA class"
 msgstr "Ikon FA klass"
 
-#: apps/course_metadata/models.py:4197
+#: apps/course_metadata/models.py:4305
 msgid "Paired text"
 msgstr "Parad text"
 
-#: apps/course_metadata/models.py:4220
+#: apps/course_metadata/models.py:4344
 msgid "Describes the deadline (e.g. Early Admission Deadline)"
 msgstr "Beskriver deadline (t.ex. Tidig antagningsdeadline)"
 
-#: apps/course_metadata/models.py:4224
+#: apps/course_metadata/models.py:4348
 msgid "The date after which the deadline expires (e.g. January 1, 2019)"
 msgstr "Det datum efter vilket tidsfristen löper ut (t.ex. 1 januari 2019)"
 
-#: apps/course_metadata/models.py:4249
+#: apps/course_metadata/models.py:4352
+msgid "The time after which the deadline expires (e.g. 11:59 PM EST)."
+msgstr "Tiden efter vilken tidsfristen löper ut (t.ex. 11:59 EST)."
+
+#: apps/course_metadata/models.py:4388
 msgid "Describes what the cost is for (e.g. Tuition)"
 msgstr "Beskriver vad kostnaden är för (t.ex. undervisning)"
 
-#: apps/course_metadata/models.py:4253
+#: apps/course_metadata/models.py:4392
 msgid "String-based field stating how much the cost is (e.g. $1000)."
 msgstr "Strängbaserat fält som anger hur mycket kostnaden är (t.ex. $1000)."
 
-#: apps/course_metadata/models.py:4289
+#: apps/course_metadata/models.py:4443
 msgid "A high-level overview of the degree's courseware."
 msgstr "En översikt över examens kursmaterial på hög nivå."
 
-#: apps/course_metadata/models.py:4365
+#: apps/course_metadata/models.py:4568
 msgid "Organization name"
 msgstr "Organisations namn"
 
-#: apps/course_metadata/models.py:4392
+#: apps/course_metadata/models.py:4595
 msgid "These programs are for a different partner than the pathway itself: {}"
 msgstr "Dessa program är för en annan partner än själva vägen: {}"
 
-#: apps/course_metadata/models.py:4419
+#: apps/course_metadata/models.py:4622
 msgid "Facebook"
 msgstr "Facebook"
 
-#: apps/course_metadata/models.py:4420
+#: apps/course_metadata/models.py:4623
 msgid "Twitter"
 msgstr "Twitter"
 
-#: apps/course_metadata/models.py:4421
+#: apps/course_metadata/models.py:4624
 msgid "Blog"
 msgstr "Blogg"
 
-#: apps/course_metadata/models.py:4422
+#: apps/course_metadata/models.py:4625
 msgid "Others"
 msgstr "Övriga"
 
-#: apps/course_metadata/models.py:4482
+#: apps/course_metadata/models.py:4685
 #, python-brace-format
 msgid ""
 "Partner {partner_key} and course partner {course_partner_key} do not match "
@@ -1831,7 +1928,7 @@ msgstr ""
 "Partner {partner_key} och kurspartner {course_partner_key} matchar inte när "
 "man försöker spara url-slug {url_slug}"
 
-#: apps/course_metadata/models.py:4502
+#: apps/course_metadata/models.py:4705
 #, python-brace-format
 msgid ""
 "Partner {partner_key} and course partner {course_partner_key} do not match "
@@ -1840,19 +1937,19 @@ msgstr ""
 "Partner {partner_key} och kurspartner {course_partner_key} matchar inte när "
 "man försöker spara webbadressomdirigering {url_path}"
 
-#: apps/course_metadata/models.py:4523
+#: apps/course_metadata/models.py:4726
 msgid "It expects the data will be provided in a csv file format "
 msgstr "Det förväntas att data tillhandahålls i csv-filformat "
 
-#: apps/course_metadata/models.py:4535
+#: apps/course_metadata/models.py:4738
 msgid "A csv file containing uuid of the courses to be archived"
 msgstr "En csv-fil som innehåller uuid för de kurser som ska arkiveras"
 
-#: apps/course_metadata/models.py:4549 apps/course_metadata/models.py:4562
-#: apps/course_metadata/models.py:4575 apps/course_metadata/models.py:4595
-#: apps/course_metadata/models.py:4608 apps/course_metadata/models.py:4627
-#: apps/course_metadata/models.py:4647 apps/course_metadata/models.py:4662
-#: apps/course_metadata/models.py:4814
+#: apps/course_metadata/models.py:4752 apps/course_metadata/models.py:4765
+#: apps/course_metadata/models.py:4778 apps/course_metadata/models.py:4813
+#: apps/course_metadata/models.py:4826 apps/course_metadata/models.py:4845
+#: apps/course_metadata/models.py:4865 apps/course_metadata/models.py:4880
+#: apps/course_metadata/models.py:5033
 msgid ""
 "It expects the data will be provided in a csv file format with first row "
 "containing all the headers."
@@ -1860,75 +1957,75 @@ msgstr ""
 "Den förväntar sig att data kommer att tillhandahållas i ett csv-filformat "
 "med första raden som innehåller alla rubriker."
 
-#: apps/course_metadata/models.py:4619
+#: apps/course_metadata/models.py:4837
 msgid "Open Courses"
 msgstr "Öppna kurser"
 
-#: apps/course_metadata/models.py:4620
+#: apps/course_metadata/models.py:4838
 msgid "2U Executive Education Courses"
 msgstr "2U Executive Education-kurser"
 
-#: apps/course_metadata/models.py:4621
+#: apps/course_metadata/models.py:4839
 msgid "Bootcamps"
 msgstr "Bootcamps"
 
-#: apps/course_metadata/models.py:4632 apps/course_metadata/models.py:4736
+#: apps/course_metadata/models.py:4850 apps/course_metadata/models.py:4954
 msgid "Course UUIDs"
 msgstr "Kursens UUID"
 
-#: apps/course_metadata/models.py:4712
+#: apps/course_metadata/models.py:4930
 msgid "Course Run IDs"
 msgstr "Course Run ID:n"
 
-#: apps/course_metadata/models.py:4728
+#: apps/course_metadata/models.py:4946
 msgid "Profile Image UUIDs"
 msgstr "Profilbild UUID:er"
 
-#: apps/course_metadata/models.py:4735
+#: apps/course_metadata/models.py:4953
 msgid "Tag"
 msgstr "Märka"
 
-#: apps/course_metadata/models.py:4751
+#: apps/course_metadata/models.py:4969
 msgid "Remove All Redirects"
 msgstr "Ta bort alla omdirigeringar"
 
-#: apps/course_metadata/models.py:4752
+#: apps/course_metadata/models.py:4970
 msgid "Url Paths"
 msgstr "Webbadresser"
 
-#: apps/course_metadata/models.py:4760
+#: apps/course_metadata/models.py:4978
 msgid "Add redirects from all published course url slugs"
 msgstr "Lägga till omdirigeringar från alla publicerade kurs-url-sluggar"
 
-#: apps/course_metadata/models.py:4761 apps/taxonomy_support/models.py:55
+#: apps/course_metadata/models.py:4979 apps/taxonomy_support/models.py:55
 msgid "Course uuids"
 msgstr "Kurs-UUID:er"
 
-#: apps/course_metadata/models.py:4825
+#: apps/course_metadata/models.py:5044
 msgid "User who uploaded the file"
 msgstr "Användare som laddade upp filen"
 
-#: apps/course_metadata/models.py:4830
+#: apps/course_metadata/models.py:5049
 msgid "Summary of the task"
 msgstr "Sammanfattning av uppgiften"
 
-#: apps/course_metadata/models.py:4833
+#: apps/course_metadata/models.py:5052
 msgid "Task Type"
 msgstr "Uppgiftstyp"
 
-#: apps/course_metadata/models.py:4836
+#: apps/course_metadata/models.py:5055
 msgid "Type of Bulk Task to be performed"
 msgstr "Typ av massuppgift som ska utföras"
 
-#: apps/course_metadata/models.py:4839
+#: apps/course_metadata/models.py:5058
 msgid "Status"
 msgstr "Status"
 
-#: apps/course_metadata/models.py:4842
+#: apps/course_metadata/models.py:5061
 msgid "Status of the Bulk Task"
 msgstr "Status för massuppgiften"
 
-#: apps/course_metadata/models.py:4850
+#: apps/course_metadata/models.py:5069
 msgid "Identifier of the celery task associated with this bulk task"
 msgstr ""
 "Identifier för celery-uppgiften som är associerad med denna bulk-uppgift"
@@ -2001,34 +2098,144 @@ msgstr ""
 "%(user_name)s gjorde följande kommentar på %(course_name)s %(date)s vid "
 "%(time)s"
 
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:7
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:3
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:9
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:3
-#: apps/course_metadata/templates/course_metadata/email/internal_review.html:9
-#: apps/course_metadata/templates/course_metadata/email/internal_review.txt:3
-#: apps/course_metadata/templates/course_metadata/email/legal_review.html:9
-#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:3
-#: apps/course_metadata/templates/course_metadata/email/reviewed.html:9
-#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:3
+msgid "Hi Course Team,"
+msgstr "Hej Kursgrupp,"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:12
 #, python-format
-msgid "Dear %(recipient_name)s,"
-msgstr "Bästa %(recipient_name)s,"
+msgid ""
+"\n"
+"        This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
+"        "
+msgstr ""
+"\n"
+"        Detta är en automatisk påminnelse om att kursen \"%(course_name)s\" (Kursnyckel: %(course_key)s) är planerad att avslutas om %(days)s den %(course_end_date)s.\n"
+"        "
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:16
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
+msgid ""
+"To ensure uninterrupted learner access and enrollment, please take one of "
+"the following actions:"
+msgstr ""
+"För att säkerställa oavbruten tillgång och registrering för elever, vänligen"
+" vidta en av följande åtgärder:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:19
+#, python-format
+msgid ""
+"\n"
+"        This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) has officially ended as of %(course_end_date)s.\n"
+"        "
+msgstr ""
+"\n"
+"        Detta är en automatisk påminnelse om att kursen \"%(course_name)s\" (Kursnyckel: %(course_key)s) officiellt har avslutats den %(course_end_date)s.\n"
+"        "
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:23
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:18
+msgid ""
+"If this was intentional, no action is needed. However, if this course was "
+"meant to remain available, you have two options to restore access:"
+msgstr ""
+"Om detta var avsiktligt, behövs ingen åtgärd. Men om kursen var avsedd att "
+"förbli tillgänglig, har du två alternativ för att återställa åtkomsten:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:21
+msgid ""
+"Extend the current course run’s end date if the same course is meant to "
+"remain available."
+msgstr ""
+"Förläng det nuvarande kurstillfällets slutdatum om samma kurs ska förbli "
+"tillgänglig."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:31
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:22
+msgid ""
+"Create a new course run if you are planning to offer this course again with "
+"updated content, pacing, or a new cohort of learners."
+msgstr ""
+"Skapa en ny kursomgång om du planerar att erbjuda kursen igen med uppdaterat"
+" innehåll, tempo eller en ny grupp av deltagare."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:32
+msgid "Visit the Course in Publisher"
+msgstr "Besök kursen i Publisher"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:37
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:25
+msgid "You can review and modify the course end settings here:"
+msgstr "Du kan granska och ändra kursens slutinställningar här:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:41
+#, python-format
+msgid ""
+"\n"
+"        If no action is taken, the course will no longer be available for enrollment or access by learners on \n"
+"        <a href=\"%(partner_marketing_site_url)s\">%(partner_marketing_site_url)s</a> after the end date.\n"
+"        "
+msgstr ""
+"\n"
+"        Om ingen åtgärd vidtas kommer kursen inte längre att vara tillgänglig för registrering eller åtkomst av deltagare på \n"
+"<a href=\"%(partner_marketing_site_url)s\">%(partner_marketing_site_url)s</a> efter slutdatumet.\n"
+"        "
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:47
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:34
+msgid "Thanks"
+msgstr "Tack"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:6
+#, python-format
+msgid ""
+"\n"
+"This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
+msgstr ""
+"\n"
+"Detta är en automatisk påminnelse om att kursen \"%(course_name)s\" (Kursnyckel: %(course_key)s) är planerad att avslutas om %(days)s den %(course_end_date)s.\n"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:10
+#, python-format
+msgid ""
+"\n"
+"This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) has officially ended as of %(course_end_date)s.\n"
+msgstr ""
+"\n"
+"Detta är en automatisk påminnelse om att kursen \"%(course_name)s\" (Kursnyckel: %(course_key)s) officiellt har avslutats den %(course_end_date)s.\n"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:23
+msgid "Visit the Course in Publisher:"
+msgstr "Besök kursen i Publisher:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:29
+#, python-format
+msgid ""
+"\n"
+"If no action is taken, the course will no longer be available for enrollment or access by learners on %(partner_marketing_site_url)s after the end date.\n"
+msgstr ""
+"\n"
+"Om ingen åtgärd vidtas kommer kursen inte längre att vara tillgänglig för registrering eller åtkomst av deltagare på %(partner_marketing_site_url)s efter slutdatumet.\n"
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:17
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:7
 #, python-format
 msgid ""
 "The About page for the %(course_run_number)s course run of %(course_name)s "
-"has been published. No further action is necessary."
+"has been submitted for publishing. The new session will appear on the edX "
+"website following the next couple of deployments—typically within 24 to 48 "
+"business hours."
 msgstr ""
-"Om-sidan för %(course_run_number)s kurskörning av %(course_name)s har "
-"publicerats. Inga ytterligare åtgärder är nödvändiga."
+"Om-sidan för kursomgång %(course_run_number)s av %(course_name)s har "
+"skickats in för publicering. Den nya sessionen kommer att visas på edX-"
+"webbplatsen efter de närmaste distributionerna—vanligtvis inom 24 till 48 "
+"arbetstimmar."
 
-#: apps/course_metadata/templates/course_metadata/email/go_live.html:24
-#, python-brace-format
-msgid "{link_start}{preview_url}{link_middle}View this About page.{link_end}"
-msgstr "{link_start}{preview_url}{link_middle}Visa denna Om-sida.{link_end}"
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.html:33
+#: apps/course_metadata/templates/course_metadata/email/go_live.html:26
 #: apps/course_metadata/templates/course_metadata/email/legal_review.html:23
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:38
 #, python-brace-format
@@ -2038,19 +2245,22 @@ msgstr ""
 "{link_start}{contact_us_email}{link_middle}{contact_us_email}{link_end}"
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:11
-#, python-format
-msgid "View this About page. %(preview_url)s"
-msgstr "Se denna Om-sidan. %(preview_url)s"
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.txt:15
-#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:15
-#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:25
 msgid ""
-"Note: This email address is unable to receive replies. For questions or "
-"comments, please contact your Project Coordinator(s):"
+"Note: This is a no-reply email. For any questions or comments, please "
+"contact your Project Coordinator at"
 msgstr ""
-"Obs: Den här e-postadressen kan inte ta emot svar. För frågor eller "
-"kommentarer, vänligen kontakta din(a) projektkoordinator(er):"
+"Observera: Detta är ett e-postmeddelande som inte går att svara på. För "
+"frågor eller kommentarer, vänligen kontakta din projektkoordinator på"
+
+#: apps/course_metadata/templates/course_metadata/email/internal_review.html:9
+#: apps/course_metadata/templates/course_metadata/email/internal_review.txt:3
+#: apps/course_metadata/templates/course_metadata/email/legal_review.html:9
+#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:3
+#: apps/course_metadata/templates/course_metadata/email/reviewed.html:9
+#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:3
+#, python-format
+msgid "Dear %(recipient_name)s,"
+msgstr "Bästa %(recipient_name)s,"
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:14
 #, python-brace-format
@@ -2124,6 +2334,15 @@ msgstr "%(org_name)s har skickat %(course_name)s för granskning."
 msgid "View this course run in Publisher above to determine OFAC status."
 msgstr ""
 "Se denna kurs som körs i Publisher ovan för att fastställa OFAC-status."
+
+#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:15
+#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:25
+msgid ""
+"Note: This email address is unable to receive replies. For questions or "
+"comments, please contact your Project Coordinator(s):"
+msgstr ""
+"Obs: Den här e-postadressen kan inte ta emot svar. För frågor eller "
+"kommentarer, vänligen kontakta din(a) projektkoordinator(er):"
 
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:15
 #, python-brace-format
@@ -2208,7 +2427,7 @@ msgstr ""
 "   Kursen '%(course_name)s' har granskats framgångsrikt av edX och är nu redo för publicering. Kursen kommer att publiceras den %(course_publish_date)s.\n"
 "    För att se en förhandsvisning av kursens Om-sida, gå hit: %(course_preview_url)s\n"
 
-#: apps/course_metadata/utils.py:390
+#: apps/course_metadata/utils.py:391
 msgid "Special characters not allowed in Course Number."
 msgstr "Specialtecken är inte tillåtna i kursnummer."
 
@@ -2288,6 +2507,10 @@ msgstr "Aktiv/inaktiv status för denna väg."
 msgid "Learner Pathway"
 msgstr "Lärarväg"
 
+#: apps/learner_pathway/models.py:119
+msgid "Learner Pathways"
+msgstr "Lärarvägar"
+
 #: apps/learner_pathway/models.py:165
 msgid "Minimum number of nodes to complete this step of the pathway"
 msgstr "Minsta antal noder för att slutföra detta steg av vägen"
@@ -2307,6 +2530,10 @@ msgstr "Learner Pathway-kurs"
 #: apps/learner_pathway/models.py:238
 msgid "Learner Pathway Courses"
 msgstr "Learner Pathway-kurser"
+
+#: apps/learner_pathway/models.py:275
+msgid "Learner Pathway Program"
+msgstr "Learner Pathway-program"
 
 #: apps/learner_pathway/models.py:276
 msgid "Learner Pathway Programs"
@@ -2373,13 +2600,13 @@ msgstr "Kursrekommendationer"
 
 #: apps/taxonomy_support/models.py:54
 msgid "Adds recommendations for all published courses"
-msgstr "Lägger till rekommendationer för alla publicerade kurser"
+msgstr "Lägga till rekommendationer för alla publicerade kurser"
 
 #: apps/taxonomy_support/models.py:58
 msgid ""
 "Adds recommendations for courses created or modified in the past num days"
 msgstr ""
-"Lägger till rekommendationer för kurser som skapats eller ändrats under de "
+"Lägga till rekommendationer för kurser som skapats eller ändrats under de "
 "senaste dagarna"
 
 #: apps/taxonomy_support/providers.py:198

@@ -4,7 +4,6 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
 # Brian Smith, 2025
 # 
 msgid ""
@@ -12,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
 "Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Azerbaijani (https://app.transifex.com/open-edx/teams/6205/az/)\n"
 "MIME-Version: 1.0\n"
@@ -89,7 +88,7 @@ msgstr "Əlbəttə, bu, bura uyğundur! Bu, hər yerə uyğundur!"
 
 #: default_data.py:29
 msgid "Goes to the top"
-msgstr "Yuxarıya gedir"
+msgstr "Üst tərəfə gedir"
 
 #: default_data.py:30
 msgid "Goes to the middle"
@@ -168,6 +167,10 @@ msgstr ""
 msgid "Show title"
 msgstr "Başlığı göstər"
 
+#: drag_and_drop_v2.py:120
+msgid "Display the title to the learner?"
+msgstr "Başlığı öyrənciyə göstərmək?"
+
 #: drag_and_drop_v2.py:127
 msgid "Problem text"
 msgstr "Problemin mətni"
@@ -182,11 +185,11 @@ msgstr "\"Problem\" başlığını göstər"
 
 #: drag_and_drop_v2.py:136
 msgid "Display the heading \"Problem\" above the problem text?"
-msgstr "Başlıq \"Problem\" problem mətninin yuxarısında göstərilsin?"
+msgstr "\"Problem\" başlığını problem mətninin yuxarısında göstərilsin?"
 
 #: drag_and_drop_v2.py:142
 msgid "Show answer"
-msgstr "Qısa cavab"
+msgstr "Cavabı göstər"
 
 #: drag_and_drop_v2.py:143
 msgid ""
@@ -197,6 +200,10 @@ msgstr ""
 "Problemin cavabını nə vaxt göstərmək lazım olduğunu müəyyən edir. Standart "
 "dəyər Genişləndirilmiş Parametrlərdə təyin edilə bilər. Xüsusi dəyəri geri "
 "qaytarmaq üçün 'Standart' seçimini seçin."
+
+#: drag_and_drop_v2.py:149
+msgid "Default"
+msgstr "Susmaya görə"
 
 #: drag_and_drop_v2.py:150
 msgid "Always"
@@ -236,7 +243,7 @@ msgstr "Bütün cəhdlərdən sonra"
 
 #: drag_and_drop_v2.py:159
 msgid "After All Attempts or Correct"
-msgstr "Bütün Cəhdlərdən Sonra və ya Düzgün"
+msgstr "Bütün cəhdlərdən sonra və ya düzgün"
 
 #: drag_and_drop_v2.py:160
 msgid "Attempted"
@@ -306,6 +313,10 @@ msgstr ""
 "Öyrəncinin hədəf şəkil üzərinə buraxdığı elementlərin cari mövqeləri "
 "haqqında məlumat."
 
+#: drag_and_drop_v2.py:217
+msgid "Number of attempts learner used"
+msgstr "Öyrəncinin istifadə etdiyi cəhdlərin sayı"
+
 #: drag_and_drop_v2.py:224
 msgid "Indicates whether a learner has completed the problem at least once"
 msgstr ""
@@ -333,7 +344,7 @@ msgstr ""
 #: drag_and_drop_v2.py:568
 #, python-brace-format
 msgid "Unknown DnDv2 mode {mode} - course is misconfigured"
-msgstr "Naməlum DnDv2 rejimi {mode} - kurs səhv konfiqurasiya edilib"
+msgstr "DnDv2 rejimi {mode} naməlumdur - kurs səhv konfiqurasiya edilib"
 
 #: drag_and_drop_v2.py:643
 msgid "show_answer handler should only be called for assessment mode"
@@ -347,13 +358,25 @@ msgstr "Cavab mövcud deyil"
 msgid "do_attempt handler should only be called for assessment mode"
 msgstr "do_attempt handler yalnız qiymətləndirmə rejimi üçün çağırılmalıdır"
 
+#: drag_and_drop_v2.py:794 drag_and_drop_v2.py:912
+msgid "Max number of attempts reached"
+msgstr "Cəhdlərin maksimal sayı çatdı"
+
 #: drag_and_drop_v2.py:799
 msgid "Submission deadline has passed."
 msgstr "Təqdimetmə müddəti bitmişdir."
 
+#: templates/html/drag_and_drop.html:4
+msgid "Loading drag and drop problem."
+msgstr "Sürüşdür və burax problemini yükləyir."
+
 #: templates/html/drag_and_drop_edit.html:10
 msgid "Basic Settings"
 msgstr "Əsas Parametrlər"
+
+#: templates/html/drag_and_drop_edit.html:53
+msgid "(inherited from Advanced Settings)"
+msgstr "(Ətraflı Parametrlərdən miras alınmış)"
 
 #: templates/html/drag_and_drop_edit.html:90
 msgid "Introductory feedback"
@@ -379,12 +402,28 @@ msgstr "Fon Şəkli"
 msgid "Provide custom image"
 msgstr "Xüsusi şəkil təmin edin"
 
+#: templates/html/drag_and_drop_edit.html:121
+msgid "Generate image automatically"
+msgstr "Şəkili avtomatik yarat"
+
+#: templates/html/drag_and_drop_edit.html:126
+msgid "Background URL"
+msgstr "Fon URL-u"
+
+#: templates/html/drag_and_drop_edit.html:133
+msgid "Change background"
+msgstr "Fon rəngini dəyişdir"
+
 #: templates/html/drag_and_drop_edit.html:135
 msgid ""
 "For example, 'http://example.com/background.png' or "
 "'/static/background.png'."
 msgstr ""
 "Məsələn, 'http://example.com/background.png' və ya '/static/background.png'."
+
+#: templates/html/drag_and_drop_edit.html:140
+msgid "Zone Layout"
+msgstr "Zona Düzeni"
 
 #: templates/html/drag_and_drop_edit.html:142
 msgid "Number of columns"
@@ -402,9 +441,17 @@ msgstr "Sütunların və sətirlərin sayı."
 msgid "Zone Size"
 msgstr "Zona Ölçüsü"
 
+#: templates/html/drag_and_drop_edit.html:163
+msgid "Zone width"
+msgstr "Zona eni"
+
 #: templates/html/drag_and_drop_edit.html:171
 msgid "Zone height"
 msgstr "Zona hündürlüyü"
+
+#: templates/html/drag_and_drop_edit.html:178
+msgid "Size of a single zone in pixels."
+msgstr "Bir zonanın ölçüsü piksellərlə."
 
 #: templates/html/drag_and_drop_edit.html:181
 msgid "Generate image and zones"
@@ -414,9 +461,31 @@ msgstr "Şəkil və zonalar yarat"
 msgid "Background description"
 msgstr "Fon təsviri"
 
+#: templates/html/drag_and_drop_edit.html:189
+msgid ""
+"\n"
+"                            Please provide a description of the image for non-visual users.\n"
+"                            The description should provide sufficient information to allow anyone\n"
+"                            to solve the problem even without seeing the image.\n"
+"                        "
+msgstr ""
+"\n"
+"                            ```\n"
+"\n"
+"\n"
+"Zəhmət olmasa, görmə qabiliyyəti olmayan istifadəçilər üçün şəkilin təsvirini təqdim edin.\n"
+"Təsvir, şəkili görmədən belə, hər kəsin problemi həll etməsi üçün kifayət qədər məlumat verməlidir.\n"
+"\n"
+"```\n"
+"                        "
+
 #: templates/html/drag_and_drop_edit.html:199
 msgid "Zone labels"
 msgstr "Zona etiketləri"
+
+#: templates/html/drag_and_drop_edit.html:202
+msgid "Display label names on the image"
+msgstr "Etiket adlarını şəkil üzərində göstər"
 
 #: templates/html/drag_and_drop_edit.html:206
 msgid "Zone borders"
@@ -426,6 +495,10 @@ msgstr "Zona sərhədləri"
 msgid "Display zone borders on the image"
 msgstr "Zona sərhədlərini şəkil üzərində göstər"
 
+#: templates/html/drag_and_drop_edit.html:215
+msgid "Display zone borders when dragging an item"
+msgstr "Zona sərhədlərini əşyanı sürükləyərkən göstər"
+
 #: templates/html/drag_and_drop_edit.html:220
 msgid "Zone definitions"
 msgstr "Zona tərifləri"
@@ -433,6 +506,10 @@ msgstr "Zona tərifləri"
 #: templates/html/drag_and_drop_edit.html:226
 msgid "Add a zone"
 msgstr "Zona əlavə et"
+
+#: templates/html/drag_and_drop_edit.html:240
+msgid "Items"
+msgstr "Elementlər"
 
 #: templates/html/drag_and_drop_edit.html:274
 msgid "Item definitions"
@@ -478,6 +555,28 @@ msgid_plural "Misplaced {misplaced_count} items"
 msgstr[0] "Səhv yerləşdirilmiş {misplaced_count} element"
 msgstr[1] "Səhv yerləşdirilmiş {misplaced_count} elementlər"
 
+#: utils.py:152
+#, python-brace-format
+msgid ""
+"Misplaced {misplaced_count} item (misplaced item was returned to the item "
+"bank)"
+msgid_plural ""
+"Misplaced {misplaced_count} items (misplaced items were returned to the item"
+" bank)"
+msgstr[0] ""
+"Yersiz yerləşdirilmiş {misplaced_count} maddə (yersiz yerləşdirilmiş maddə "
+"maddə bankına qaytarıldı)"
+msgstr[1] ""
+"Səhv yerləşdirilmiş {misplaced_count} element (səhv yerləşdirilmiş "
+"elementlər element bankına qaytarıldı)"
+
+#: utils.py:163
+#, python-brace-format
+msgid "Did not place {missing_count} required item"
+msgid_plural "Did not place {missing_count} required items"
+msgstr[0] "Tələb olunan {missing_count} elementi yerləşdirmədi"
+msgstr[1] "Tələb olunan {missing_count} elementi yerləşdirmədi"
+
 #: public/js/drag_and_drop.js:48 public/js/drag_and_drop.js:399
 msgid "Submitting"
 msgstr "Göndərilir"
@@ -509,6 +608,10 @@ msgstr "Burada heç bir əşya yerləşdirilməyib"
 #: public/js/drag_and_drop.js:265
 msgid "Items placed here: "
 msgstr "Buraya yerləşdirilən elementlər: "
+
+#: public/js/drag_and_drop.js:297
+msgid ", dropzone"
+msgstr ", düşmə zonası"
 
 #: public/js/drag_and_drop.js:300
 msgid "droppable"
@@ -544,6 +647,14 @@ msgstr ""
 "zonalarından ibarətdir. İstifadəçilər klaviaturaları ilə sürüklənə bilən "
 "elementi seçməli və sonra onu buraxmaq üçün uyğun buraxma zonasına "
 "keçməlidirlər."
+
+#: public/js/drag_and_drop.js:365
+msgid ""
+"You can complete this problem using only your keyboard by following the "
+"guidance below:"
+msgstr ""
+"Bu problemi yalnız klaviaturanızdan istifadə edərək aşağıdakı təlimatlara "
+"əməl etməklə tamamlaya bilərsiniz:"
 
 #: public/js/drag_and_drop.js:367
 msgid ""
@@ -583,6 +694,10 @@ msgstr ""
 "prosesi bütün sürüklənə bilən elementlər müvafiq düşmə zonalarına "
 "yerləşdirilənə qədər təkrarlayın."
 
+#: public/js/drag_and_drop.js:389
+msgid "You have used {used} of {total} attempts."
+msgstr "{used} cəhdin {total} cəhdini istifadə etmisiniz."
+
 #: public/js/drag_and_drop.js:412
 msgid "Submit"
 msgstr "Təqdim edin"
@@ -590,6 +705,10 @@ msgstr "Təqdim edin"
 #: public/js/drag_and_drop.js:453
 msgid "Show Answer"
 msgstr "Qısa cavab"
+
+#: public/js/drag_and_drop.js:466
+msgid "Go to Beginning"
+msgstr "Başlanğıca get"
 
 #: public/js/drag_and_drop.js:472
 msgid "Reset"
@@ -649,7 +768,7 @@ msgstr[1] "{possible}bal mümkündür (qiymətləndirilməyib)"
 
 #: public/js/drag_and_drop.js:660
 msgid "Drag and Drop Problem"
-msgstr "Sürükle və Burax Problemi"
+msgstr "Sürükleyib Buraxma Problemi"
 
 #: public/js/drag_and_drop.js:662
 msgid "Problem"
@@ -658,6 +777,10 @@ msgstr "Problem"
 #: public/js/drag_and_drop.js:687
 msgid "Item Bank"
 msgstr "Məhsul Bankı"
+
+#: public/js/drag_and_drop.js:732
+msgid "Drop Targets"
+msgstr "Düşmə Hədəfləri"
 
 #: public/js/drag_and_drop.js:898
 msgid "An error occurred. Unable to load drag and drop problem."

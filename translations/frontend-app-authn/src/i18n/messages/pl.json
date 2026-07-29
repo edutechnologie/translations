@@ -147,6 +147,7 @@
   "registration.request.server.error": "Wystąpił błąd. Spróbuj odświeżyć stronę lub sprawdź połączenie internetowe.",
   "registration.rate.limit.error": "Zbyt wiele nieudanych prób rejestracji. Spróbuj ponownie później.",
   "registration.tpa.session.expired": "Rejestracja za pomocą {provider} przekroczyła czas.",
+  "registration.forbidden.username": "Nazwy użytkowników nie mogą zawierać słów, które można pomylić z rolami w kursie. Wybierz inną nazwę użytkownika.",
   "registration.tpa.authentication.failure": "Przykro nam, nie masz uprawnień do dostępu do {platform_name} za pośrednictwem tego kanału. Skontaktuj się ze swoim administratorem lub menedżerem nauki, aby uzyskać dostęp do {platform_name}.{lineBreak}{lineBreak}Szczegóły błędu:{lineBreak}{errorMessage}",
   "terms.of.service.and.honor.code": "Regulamin i Kodeks Honorowy",
   "privacy.policy": "Polityka prywatności",

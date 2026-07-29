@@ -26,7 +26,7 @@
   "catalogSearchResults.NoResultsProgramBannerText": "No se encontraron programas que coincidan con su búsqueda. Intentar",
   "catalogSearchResults.NoResultsBannerHyperlinkText": "quitando filtros",
   "catalogPage.subtitle.text": "edX ofrece contenido de cursos atractivo e impulsado por el mercado de más de 250 de las universidades mejor clasificadas y líderes industriales reconocidos en todo el mundo. Nuestro equipo de expertos lo ayudará a crear fácilmente una Academia personalizada adaptada a todos los objetivos de aprendizaje de su organización, o diseñar la suya propia utilizando las herramientas a continuación.",
-  "catalogPage.hero.text": "Explore el aprendizaje de clase mundial Calidad inigualable. Relevancia del mercado. Soluciones integrales.",
+  "catalogPage.hero.text": "Explora el aprendizaje de clase mundial con calidad inigualable, relevancia del mercado y soluciones integrales.",
   "catalogPage.hero.highlight": "Explora el aprendizaje de clase mundial",
   "catalogPage.catalogSelectionDeck.title": "Seleccione un catálogo",
   "catalogs.catalogSearchResults.error": "{message} : {fullError}",
@@ -67,10 +67,10 @@
   "catalogs.askXpert.result.card.label.for.self.paced.programs": "Programas a su propio ritmo",
   "catalogs.askXpert.result.card.label.for.executive.education.courses": "Cursos de educación ejecutiva",
   "catalogs.askXpert.result.card.error.label": "Ocurrió un error. Por favor, intente una nueva búsqueda",
-  "catalogs.catalogSearchResults.downloadCsv.toastText": "",
-  "catalogs.catalogSearchResults.downloadCsv.useLearnerPortalLinks": "",
-  "catalogs.catalogSearchResults.downloadCsv.button.default": "",
-  "catalogs.catalogSearchResults.downloadCsv.button.pending": "",
-  "catalogs.catalogSearchResults.downloadCsv.button.complete": "",
-  "catalogs.catalogSearchResults.downloadCsv.button.error": ""
+  "catalogs.catalogSearchResults.downloadCsv.toastText": "Descargado con filtros: {filters}. Consulta la página web para obtener la información más actualizada sobre los cursos.",
+  "catalogs.catalogSearchResults.downloadCsv.useLearnerPortalLinks": "Usa enlaces del portal del estudiante",
+  "catalogs.catalogSearchResults.downloadCsv.button.default": "Descargar resultados",
+  "catalogs.catalogSearchResults.downloadCsv.button.pending": "Descargando resultados",
+  "catalogs.catalogSearchResults.downloadCsv.button.complete": "Descarga completa",
+  "catalogs.catalogSearchResults.downloadCsv.button.error": "Error"
 }

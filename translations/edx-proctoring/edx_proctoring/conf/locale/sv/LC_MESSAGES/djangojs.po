@@ -5,16 +5,15 @@
 # EdX Team <info@edx.org>, 2018.
 # 
 # Translators:
-# Transifex Bot <>, 2025
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:37+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"POT-Creation-Date: 2025-10-30 00:49+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/open-edx/teams/6205/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -78,7 +77,7 @@ msgstr "Granska policyundantag"
 
 #: static/proctoring/js/views/proctored_exam_add_bulk_allowance_view.js:224
 msgid "Add Time(Minutes)"
-msgstr "Lägg till tid (minuter)"
+msgstr "Lägga till tid (minuter)"
 
 #: static/proctoring/js/views/proctored_exam_add_bulk_allowance_view.js:226
 msgid "Add Multiplier as a Number Greater Than 1"
@@ -103,6 +102,10 @@ msgstr "Ytterligare tid (minuter)"
 #: static/proctoring/spec/proctored_exam_add_bulk_allowance_spec.js:83
 msgid "Time Multiplier"
 msgstr "Tidsmultiplikator"
+
+#: static/proctoring/js/views/proctored_exam_attempt_view.js:10
+msgid "Eligible"
+msgstr "Berättigad"
 
 #: static/proctoring/js/views/proctored_exam_attempt_view.js:11
 msgid "Created"
@@ -186,6 +189,10 @@ msgstr "Övning"
 msgid "Proctored"
 msgstr "Proctored"
 
+#: static/proctoring/js/views/proctored_exam_attempt_view.js:181
+msgid "Timed"
+msgstr "Tidsinställd"
+
 #: static/proctoring/js/views/proctored_exam_attempt_view.js:214
 msgid "Are you sure you want to remove this student's exam attempt?"
 msgstr "Är du säker på att du vill ta bort denna elevs provförsök?"
@@ -214,6 +221,10 @@ msgstr "Du har skickat in ditt introduktionsprov."
 #: static/proctoring/js/views/proctored_exam_info.js:35
 msgid "Your onboarding exam has been approved in this course."
 msgstr "Ditt introduktionsprov har godkänts i den här kursen."
+
+#: static/proctoring/js/views/proctored_exam_info.js:39
+msgid "Your onboarding exam has been rejected. Please retry onboarding."
+msgstr "Ditt introduktionsprov har avvisats. Försök ombordstigning igen."
 
 #: static/proctoring/js/views/proctored_exam_info.js:43
 msgid ""
@@ -267,9 +278,17 @@ msgstr ""
 "Din introduktionsstatus har upphört att gälla. Vänligen slutför "
 "introduktionen igen för att fortsätta ta proctorade prov."
 
+#: static/proctoring/js/views/proctored_exam_onboarding_view.js:30
+msgid "Setup Started"
+msgstr "Inställning Startad"
+
 #: static/proctoring/js/views/proctored_exam_onboarding_view.js:31
 msgid "Onboarding Started"
 msgstr "Onboarding påbörjad"
+
+#: static/proctoring/js/views/proctored_exam_onboarding_view.js:40
+msgid "Onboarding Reset Failed Due to Past Due Exam"
+msgstr "Återställning av onboarding misslyckades på grund av försenat prov"
 
 #: static/proctoring/js/views/proctored_exam_onboarding_view.js:42
 msgid "Audit"
@@ -282,6 +301,14 @@ msgstr "Förtroende"
 #: static/proctoring/js/views/proctored_exam_onboarding_view.js:44
 msgid "Professional"
 msgstr "Professionell"
+
+#: static/proctoring/js/views/proctored_exam_onboarding_view.js:45
+msgid "No ID Professional"
+msgstr "Ingen ID Professionell"
+
+#: static/proctoring/js/views/proctored_exam_onboarding_view.js:46
+msgid "Credit"
+msgstr "Poäng"
 
 #: static/proctoring/js/views/proctored_exam_onboarding_view.js:48
 msgid "Executive Education"

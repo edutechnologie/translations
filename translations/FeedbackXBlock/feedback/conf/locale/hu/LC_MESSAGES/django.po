@@ -4,15 +4,15 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/open-edx/teams/6205/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,6 +37,16 @@ msgstr ""
 "kulcsfontosságú leckéket, valamint az előadásunkban lévő főbb "
 "hiányosságokat."
 
+#: feedback.py:37
+msgid ""
+"Take a little bit of time to reflect here. Research shows that a meaningful "
+"synthesis will help you better understand and remember material from this "
+"course."
+msgstr ""
+"Szánjon egy kis időt a gondolkodásra. A kutatások azt mutatják, hogy egy "
+"értelmes szintézis segít jobban megérteni és megjegyezni az anyagot ebből a "
+"kurzusból."
+
 #: feedback.py:43 feedback.py:164
 msgid "Excellent"
 msgstr "Kiváló"
@@ -52,6 +62,10 @@ msgstr "Átlagos"
 #: feedback.py:43 feedback.py:168
 msgid "Poor"
 msgstr "Gyenge"
+
+#: feedback.py:78
+msgid "Freeform user prompt"
+msgstr "Szabad formájú felhasználói kérés"
 
 #: feedback.py:84 feedback.py:100
 msgid "Random number generated for p. -1 if uninitialized"
@@ -72,6 +86,10 @@ msgstr "Visszajelzés"
 #: feedback.py:112
 msgid "Display Name"
 msgstr "Megjelenített név"
+
+#: feedback.py:113
+msgid "Provide Feedback"
+msgstr "Adjon visszajelzést"
 
 #: feedback.py:118 templates/html/studio_view.html:17
 msgid "Voting message"
@@ -187,13 +205,17 @@ msgstr "Igaz"
 msgid "Whether to show the aggregate report to students."
 msgstr "Megjelenjen-e az összesített jelentés a diákok számára."
 
+#: templates/html/studio_view.html:44
+msgid "Freeform prompt"
+msgstr "Szabad formátumú kérdés"
+
 #: templates/html/studio_view.html:47
 msgid "Example: Please provide us feedback on this section."
 msgstr "Kérjük, adjon visszajelzést erről a szakaszról."
 
 #: templates/html/studio_view.html:52
 msgid "Freeform placeholder"
-msgstr "Szabad szöveg helyőrző"
+msgstr "Szabad szöveges helykitöltő"
 
 #: templates/html/studio_view.html:55
 msgid "This is shown as grayed out text before the student has answered."
@@ -213,7 +235,7 @@ msgstr "Arcok (szomorútól a vidámig)"
 
 #: templates/html/studio_view.html:64
 msgid "Numeric"
-msgstr "Numerikus"
+msgstr "Számértékes"
 
 #: templates/html/studio_view.html:65
 msgid "Stars"
@@ -222,8 +244,7 @@ msgstr "Csillagok"
 #: templates/html/studio_view.html:68
 msgid "We can either show happy/sad faces, numbers 1-5 or stars."
 msgstr ""
-"Megjeleníthetünk boldog/szomorú arcokat, 1-5-ig terjedő számokat vagy "
-"csillagokat."
+"Mutatunk boldog/szomorú arcokat, 1-5-ig terjedő számokat vagy csillagokat."
 
 #: templates/html/studio_view.html:73
 msgid "Likert prompt"
@@ -244,7 +265,7 @@ msgstr "Példa: Kiváló!"
 
 #: templates/html/studio_view.html:89
 msgid "Likert option 2"
-msgstr "Likert opció 2"
+msgstr "Likert lehetőség 2"
 
 #: templates/html/studio_view.html:92
 msgid "Example: Good"
@@ -260,7 +281,11 @@ msgstr "Példa: Közepes"
 
 #: templates/html/studio_view.html:105
 msgid "Likert option 4"
-msgstr "Likert opció 4"
+msgstr "Likert 4. lehetőség"
+
+#: templates/html/studio_view.html:108
+msgid "Example: Fair"
+msgstr "Példa: Közepes"
 
 #: templates/html/studio_view.html:113
 msgid "Likert option 5"
@@ -276,4 +301,4 @@ msgstr "Mentés"
 
 #: templates/html/studio_view.html:126
 msgid "Cancel"
-msgstr "Mégsem"
+msgstr "Megszakít"

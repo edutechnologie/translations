@@ -4,15 +4,15 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/open-edx/teams/6205/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,11 +59,15 @@ msgstr "Medel"
 
 #: feedback.py:43 feedback.py:167
 msgid "Fair"
-msgstr "Rättvis"
+msgstr "Godkänd"
 
 #: feedback.py:43 feedback.py:168
 msgid "Poor"
 msgstr "Dålig"
+
+#: feedback.py:78
+msgid "Freeform user prompt"
+msgstr "Användarens fria inmatning"
 
 #: feedback.py:84 feedback.py:100
 msgid "Random number generated for p. -1 if uninitialized"
@@ -125,6 +129,10 @@ msgstr ""
 msgid "Please rate your overall experience"
 msgstr "Vänligen betygsätt din totala upplevelse"
 
+#: feedback.py:170
+msgid "Please take a moment to thoughtfully reflect."
+msgstr "Ta en stund för att reflektera eftertänksamt."
+
 #: feedback.py:387
 msgid "Please vote!"
 msgstr "Var god och rösta!"
@@ -140,6 +148,10 @@ msgstr "Antal betyg"
 #: static/html/feedback_instructor.html:16
 msgid "Average rating"
 msgstr "Genomsnittligt betyg"
+
+#: static/html/feedback_instructor.html:19
+msgid "Feedback "
+msgstr "Återkoppling "
 
 #: static/html/feedback_instructor.html:40
 msgid "Comment"
@@ -171,6 +183,10 @@ msgstr ""
 msgid "Display name"
 msgstr "Visningsnamn"
 
+#: templates/html/studio_view.html:12
+msgid "The name of the component."
+msgstr "Namnet på komponenten."
+
 #: templates/html/studio_view.html:20
 msgid "The message to show after user vote."
 msgstr "Meddelandet som visas efter användarens röst."
@@ -194,6 +210,10 @@ msgstr "Sann"
 #: templates/html/studio_view.html:39
 msgid "Whether to show the aggregate report to students."
 msgstr "Huruvida den sammanställda rapporten ska visas för studenter."
+
+#: templates/html/studio_view.html:44
+msgid "Freeform prompt"
+msgstr "Fritextfråga"
 
 #: templates/html/studio_view.html:47
 msgid "Example: Please provide us feedback on this section."
@@ -267,7 +287,11 @@ msgstr "Exempel: Medel"
 
 #: templates/html/studio_view.html:105
 msgid "Likert option 4"
-msgstr "Likert-alternativ 4"
+msgstr "Alternativ 4 på Likert-skalan"
+
+#: templates/html/studio_view.html:108
+msgid "Example: Fair"
+msgstr "Exempel: Godkänd"
 
 #: templates/html/studio_view.html:113
 msgid "Likert option 5"

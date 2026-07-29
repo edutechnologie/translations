@@ -5,16 +5,15 @@
 # EdX Team <info@edx.org>, 2018.
 # 
 # Translators:
-# Transifex Bot <>, 2025
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:37+0000\n"
-"PO-Revision-Date: 2025-07-23 17:42+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"POT-Creation-Date: 2025-10-30 00:49+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/open-edx/teams/6205/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,9 +25,17 @@ msgstr ""
 msgid "internally reviewed"
 msgstr "belsőleg felülvizsgálva"
 
+#: admin.py:121
+msgid "All Unreviewed"
+msgstr "Minden ellenőrizetlen"
+
 #: admin.py:142
 msgid "active proctored exams"
 msgstr "aktív felügyelt vizsgák"
+
+#: admin.py:197
+msgid "courses with active proctored exams"
+msgstr "tanfolyamok aktív felügyelt vizsgákkal"
 
 #: admin.py:354
 msgid "Course Id"
@@ -78,6 +85,10 @@ msgstr "Elutasítva"
 msgid "Error"
 msgstr "Hiba"
 
+#: admin.py:408
+msgid "Onboarding Failed"
+msgstr "Az onboarding sikertelen"
+
 #: api.py:824 views.py:1297
 #, python-brace-format
 msgid "you have {remaining_time} remaining"
@@ -91,9 +102,13 @@ msgstr "képzésed"
 msgid "Taking As Proctored Exam"
 msgstr "Proktorizált vizsga letétele"
 
+#: api.py:2243
+msgid "Proctored Option Available"
+msgstr "Elérhető felügyelt opció"
+
 #: api.py:2248
 msgid "Taking As Open Exam"
-msgstr "Nyílt vizsga letétele"
+msgstr "Nyílt vizsga letételeként"
 
 #: api.py:2253 api.py:2258
 msgid "Pending Session Review"
@@ -101,7 +116,7 @@ msgstr "Függőben lévő munkamenet-áttekintés"
 
 #: api.py:2263
 msgid "Passed Proctoring"
-msgstr "Sikeres vizsgaellenőrzés"
+msgstr "Sikeres felügyelet"
 
 #: api.py:2268 api.py:2273
 msgid "Failed Proctoring"
@@ -129,7 +144,15 @@ msgstr "Időzített vizsga"
 
 #: api.py:2888
 msgid "Onboarding status question"
-msgstr "Beillesztési állapot kérdés"
+msgstr "Beilleszkedési státusz kérdés"
+
+#: models.py:391
+msgid "Taking as Proctored"
+msgstr "Proktorként történő részvétel"
+
+#: models.py:413
+msgid "Is Resumable"
+msgstr "Újraindítható"
 
 #: models.py:418
 msgid "Ready to Resume"
@@ -154,7 +177,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Az eredmény látható lesz <strong id=\"wait_deadline\"> Betöltés... </strong> után\n"
+"        Az eredmény látható lesz, miután <strong id=\"wait_deadline\"> Betöltés... </strong>\n"
 "    "
 
 #: templates/emails/proctoring_attempt_satisfactory_email.html:12
@@ -171,6 +194,71 @@ msgstr ""
 "        <a href=\"%(course_url)s\">%(course_name)s</a> kurzusban felülvizsgálatra került, és\n"
 "        megfelelt minden felügyeleti követelménynek.\n"
 "    "
+
+#: templates/emails/proctoring_attempt_submitted_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was submitted\n"
+"        successfully and will now be reviewed to ensure all exam\n"
+"        rules were followed. You should receive an email with your exam\n"
+"        status within 5 business days. Final grades may take longer.\n"
+"    "
+msgstr ""
+"\n"
+"        A felügyelt vizsgád \"%(exam_name)s\" a(z) <a href=\"%(course_url)s\">%(course_name)s</a> kurzusban sikeresen be lett adva, és most felülvizsgálatra kerül, hogy minden vizsgaszabályt betartottak-e. Az elkövetkező 5 munkanapon belül e-mailt kell kapnod a vizsga állapotáról. A végső jegyek megérkezése tovább tarthat.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and the\n"
+"        course team has identified one or more violations of the proctored exam rules. Examples\n"
+"        of issues that may result in a rules violation include browsing\n"
+"        the internet, blurry or missing photo identification, using a phone,\n"
+"        or getting help from another person. As a result of the identified issue(s),\n"
+"        you did not successfully meet the proctored exam requirements.\n"
+"    "
+msgstr ""
+"\n"
+"        A felügyelt vizsgája \"%(exam_name)s\" a  \n"
+"<a href=\"%(course_url)s\">%(course_name)s</a> kurzusban felülvizsgálatra került, és a  \n"
+"kurzus csapata egy vagy több szabálysértést azonosított a felügyelt vizsga szabályaival kapcsolatban. Példák  \n"
+"a szabálysértéshez vezető problémákra közé tartozhat az internet böngészése, homályos vagy hiányzó fényképes azonosítás, telefonhasználat,  \n"
+"vagy más személytől való segítségkérés. Az azonosított probléma(k) miatt  \n"
+"nem sikerült teljesítenie a felügyelt vizsga követelményeit.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:25
+#, python-format
+msgid ""
+"\n"
+"        To appeal your proctored exam results, please reach out with any relevant information\n"
+"        about your exam at \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+msgstr ""
+"\n"
+"        Kérjük, hogy a felügyelt vizsga eredményének megfellebbezéséhez vegye fel velünk a kapcsolatot a vizsgájával kapcsolatos bármilyen releváns információval a következő címen: \n"
+"<a href=\"%(contact_url)s\">\n"
+"    %(contact_url_text)s\n"
+"</a>.\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:5
+msgid ""
+"\n"
+"    Proctoring onboarding exam\n"
+"  "
+msgstr ""
+"\n"
+"    Proctoring onboarding vizsga\n"
+"  "
 
 #: templates/onboarding_exam/entrance.html:12
 msgid ""
@@ -202,6 +290,16 @@ msgstr ""
 "        Hozza létre az onboarding profilját a gyorsabb hozzáférés érdekében a jövőben\n"
 "      "
 
+#: templates/onboarding_exam/entrance.html:28
+msgid ""
+"\n"
+"        Practice taking a proctored test\n"
+"      "
+msgstr ""
+"\n"
+"        Gyakorolja a felügyelt teszt írását\n"
+"      "
+
 #: templates/onboarding_exam/entrance.html:34
 #, python-format
 msgid ""
@@ -213,19 +311,18 @@ msgstr ""
 "      A vizsgafelügyeletet ehhez a kurzushoz a(z) %(provider_name)s biztosítja. Az onboarding áttekintés, beleértve a személyazonosság ellenőrzését, több mint 2 munkanapot is igénybe vehet.\n"
 "    "
 
-#: templates/onboarding_exam/entrance.html:40
+#: templates/onboarding_exam/entrance.html:49
 #, python-format
 msgid ""
 "\n"
-"        Once your profile has been reviewed, you will receive an email with review results. The email will come from\n"
-"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
-"        Make sure this email has been added to your inbox filter.\n"
+"        Please contact\n"
+"        <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>\n"
+"        if you have questions.\n"
 "      "
 msgstr ""
 "\n"
-"        Miután a profilját átnézték, e-mailt fog kapni az értékelés eredményeivel. Az e-mail a következő címről érkezik:\n"
-"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
-"        Győződjön meg róla, hogy ez az e-mail hozzá lett adva a bejövő levelek szűrőjéhez.\n"
+"        Kérdései esetén kérjük, lépjen kapcsolatba a következő címen:  \n"
+"<a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>.\n"
 "      "
 
 #: templates/onboarding_exam/entrance.html:62
@@ -238,16 +335,6 @@ msgstr ""
 "    Ön végig lesz vezetve az online felügyeleti szoftver beállításán és a személyazonosság ellenőrzésén.\n"
 "  "
 
-#: templates/onboarding_exam/error.html:4
-msgid ""
-"\n"
-"    Error: There was a problem with your onboarding session\n"
-"  "
-msgstr ""
-"\n"
-"    Hiba: Probléma merült fel az onboarding folyamat során.\n"
-"  "
-
 #: templates/onboarding_exam/error.html:13
 msgid ""
 "\n"
@@ -256,19 +343,33 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"    A felügyeleti munkamenet véget ért, mielőtt befejezte volna ezt a bevezető vizsgát.  \n"
+"    A felügyelt vizsgája véget ért, mielőtt befejezte volna ezt a bevezető vizsgát.  \n"
 "Újra kell próbálnia ezt a bevezető vizsgát.\n"
 "  "
 
-#: templates/onboarding_exam/rejected.html:5
+#: templates/onboarding_exam/rejected.html:12
+#, python-format
 msgid ""
 "\n"
-"    Your onboarding session was reviewed, but did not pass all requirements\n"
-"  "
+"      Please contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> if you have questions. You may retake this onboarding exam by clicking \"Retry my exam\".\n"
+"    "
 msgstr ""
 "\n"
-"    Az Ön bevezető ülése felülvizsgálatra került, de nem felelt meg minden követelménynek.\n"
-"  "
+"      Kérjük, lépjen kapcsolatba\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a>, ha kérdése van. Újra megpróbálhatja ezt a bevezető vizsgát a \"Vizsgám újrapróbálása\" gombra kattintva.\n"
+"    "
+
+#: templates/onboarding_exam/rejected.html:20
+#: templates/onboarding_exam/submitted.html:47
+#: templates/practice_exam/error.html:29
+#: templates/practice_exam/submitted.html:18
+msgid "Retry my exam"
+msgstr "Próbálja újra a vizsgámat"
 
 #: templates/onboarding_exam/rejected.html:21
 #: templates/practice_exam/error.html:30
@@ -299,23 +400,23 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Miután a profilját átnézték, e-mailt fog kapni az értékelés eredményeivel. Az e-mail a következő címről érkezik:  \n"
+"      Amint a profilját átnézték, e-mailt fog kapni az értékelés eredményeivel. Az e-mail a következő címről érkezik:  \n"
 "<a href=\"mailto:%(learner_notification_from_email)s\">  \n"
 "%(learner_notification_from_email)s  \n"
 "</a>,  \n"
-"így győződjön meg róla, hogy ez az e-mail hozzá lett adva a bejövő levelek szűrőjéhez.\n"
+"ezért győződjön meg róla, hogy ez az e-mail hozzá lett adva a beérkező levelek szűrőjéhez.\n"
 "    "
 
-#: templates/onboarding_exam/submitted.html:29
+#: templates/onboarding_exam/submitted.html:36
 msgid ""
 "\n"
-"      If you already have an onboarding profile approved through another course,\n"
-"      this submission will not be reviewed. You may retry this exam at any time\n"
-"      to validate that your setup still meets the requirements for proctoring.\n"
+"      If you have made an error in this submission you may restart the onboarding process. \n"
+"      Your current submission will be removed and will not receive a review.\n"
 "    "
 msgstr ""
 "\n"
-"      Ha már van egy másik kurzus által jóváhagyott onboarding profilod, ezt a beküldést nem fogják felülvizsgálni. Bármikor újra megpróbálhatod ezt a vizsgát, hogy ellenőrizd, a beállításaid továbbra is megfelelnek-e a felügyeleti követelményeknek.\n"
+"      Ha hibát követett el ebben a beküldésben, újraindíthatja a bevezetési folyamatot.  \n"
+"Az aktuális beküldése eltávolításra kerül, és nem kap értékelést.\n"
 "    "
 
 #: templates/onboarding_exam/submitted.html:41
@@ -364,8 +465,18 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          Ön végig lesz vezetve az online felügyeleti szoftver beállításának és személyazonossága igazolásának lépésein.\n"
+"          Ön végig lesz vezetve az online felügyeleti szoftver beállításának és a személyazonosságának ellenőrzésének lépésein.\n"
 "        "
+
+#: templates/practice_exam/error.html:5
+msgid ""
+"\n"
+"        There was a problem with your practice proctoring session\n"
+"      "
+msgstr ""
+"\n"
+"        Probléma merült fel a gyakorló felügyeleti üléseddel kapcsolatban.\n"
+"      "
 
 #: templates/practice_exam/error.html:13
 msgid ""
@@ -385,8 +496,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        A felügyelői munkamenet véget ért, mielőtt befejezte volna ezt a gyakorló vizsgát.\n"
-"\n"
+"        A felügyelői munkamenet véget ért, mielőtt befejezte volna ezt a gyakorló vizsgát.  \n"
 "Újra megpróbálhatja ezt a gyakorló vizsgát, ha problémái voltak az online felügyelői szoftver beállításával.\n"
 "      "
 
@@ -410,6 +520,16 @@ msgstr ""
 "\n"
 "        A gyakorló vizsgák nem befolyásolják az osztályzatát.  \n"
 "Ön befejezte ezt a gyakorló vizsgát, és folytathatja a tanulmányait.\n"
+"      "
+
+#: templates/proctored_exam/confirm-decline.html:5
+msgid ""
+"\n"
+"        Are you sure you want to take this exam without proctoring?\n"
+"      "
+msgstr ""
+"\n"
+"        Biztos, hogy felügyelet nélkül szeretné megírni ezt a vizsgát?\n"
 "      "
 
 #: templates/proctored_exam/confirm-decline.html:10
@@ -467,7 +587,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Ön végig lesz vezetve az online felügyeleti szoftver beállításának és személyazonossága igazolásának lépésein.</br>\n"
+"        Ön végig lesz vezetve az online vizsgafelügyeleti szoftver beállításának lépésein, és azonosítania kell magát.</br>\n"
 "      "
 
 #: templates/proctored_exam/error.html:4
@@ -481,9 +601,47 @@ msgstr ""
 "      Hiba a felügyelt vizsgával\n"
 "    "
 
+#: templates/proctored_exam/error.html:11
+#, python-format
+msgid ""
+"\n"
+"        A system error has occurred with your proctored exam. Please reach out to your course \n"
+"        team at <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a> \n"
+"        for assistance, and return to the exam once you receive further instructions.\n"
+"      "
+msgstr ""
+"\n"
+"        Rendszerhiba történt a felügyelt vizsgájával kapcsolatban. Kérjük, forduljon a kurzus csapatához a <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a> címen segítségért, és térjen vissza a vizsgához, miután további utasításokat kapott.\n"
+"      "
+
+#: templates/proctored_exam/error.html:17
+#, python-format
+msgid ""
+"\n"
+"        A system error has occurred with your proctored exam. Please reach out to \n"
+"        <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">%(platform_name)s Support</a> for \n"
+"        assistance, and return to the exam once you receive further instructions.\n"
+"      "
+msgstr ""
+"\n"
+"        Rendszerhiba történt a felügyelt vizsgájával kapcsolatban. Kérjük, forduljon a <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">%(platform_name)s ügyfélszolgálatához</a> segítségért, és térjen vissza a vizsgához, miután további utasításokat kapott.\n"
+"      "
+
 #: templates/proctored_exam/error_modal.html:7
 msgid "Close"
 msgstr "Bezár"
+
+#: templates/proctored_exam/error_wrong_browser.html:10
+msgid ""
+"\n"
+"      The content of this exam can only be viewed through the RPNow\n"
+"      application. If you have yet to complete your exam, please\n"
+"      return to the RPNow application to proceed.\n"
+"    "
+msgstr ""
+"\n"
+"      A vizsga tartalmát csak az RPNow alkalmazáson keresztül lehet megtekinteni. Ha még nem fejezte be a vizsgát, kérjük, térjen vissza az RPNow alkalmazásba a folytatáshoz.\n"
+"    "
 
 #: templates/proctored_exam/error_wrong_browser.html:17
 msgid ""
@@ -494,6 +652,10 @@ msgstr ""
 "\n"
 "      Alternatívaként befejezheti a vizsgáját.\n"
 "    "
+
+#: templates/proctored_exam/error_wrong_browser.html:22
+msgid "End My Exam"
+msgstr "Befejezem a vizsgámat"
 
 #: templates/proctored_exam/expired.html:4 templates/timed_exam/expired.html:4
 msgid ""
@@ -522,7 +684,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Nem teljesítetted a vizsga felügyelettel történő letételéhez szükséges követelményeket.\n"
+"    Nem teljesítetted a vizsga proktorálásának követelményeit.\n"
 "    "
 
 #: templates/proctored_exam/failed-prerequisites.html:14
@@ -556,6 +718,16 @@ msgstr ""
 "      Ha kérdése van a követelmények státuszával kapcsolatban, lépjen kapcsolatba a(z) %(platform_name)s ügyfélszolgálatával.\n"
 "    "
 
+#: templates/proctored_exam/footer.html:5
+msgid ""
+"\n"
+"        About Proctored Exams\n"
+"        "
+msgstr ""
+"\n"
+"        A felügyelt vizsgákról\n"
+"        "
+
 #: templates/proctored_exam/inactive_account.html:4
 msgid ""
 "\n"
@@ -566,6 +738,18 @@ msgstr ""
 "      Nem aktiválta a fiókját.\n"
 "    "
 
+#: templates/proctored_exam/inactive_account.html:21
+#, python-format
+msgid ""
+"\n"
+"        If you cannot find this email, you can <a href=\"%(reset_link)s\" target=\"_blank\">reset your password</a> to\n"
+"        activate your account.\n"
+"      "
+msgstr ""
+"\n"
+"        Ha nem találja ezt az e-mailt, <a href=\"%(reset_link)s\" target=\"_blank\">új jelszót állíthat be</a> fiókja aktiválásához.\n"
+"      "
+
 #: templates/proctored_exam/inactive_account.html:26
 msgid ""
 "\n"
@@ -575,6 +759,19 @@ msgstr ""
 "\n"
 "        Ha nem találja ezt az e-mailt, jelszavának visszaállításával aktiválhatja fiókját.\n"
 "      "
+
+#: templates/proctored_exam/inactive_account.html:32
+#, python-format
+msgid ""
+"\n"
+"      If you continue to have trouble please contact <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">\n"
+"      %(platform_name)s Support</a>.\n"
+"    "
+msgstr ""
+"\n"
+"      \n"
+"Ha továbbra is problémái vannak, kérjük, vegye fel a kapcsolatot a(z) <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">%(platform_name)s támogatással</a>.\n"
+"    "
 
 #: templates/proctored_exam/instructions.html:6
 msgid ""
@@ -597,7 +794,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          Megjegyzés: A felügyelt vizsga beállításának részeként felkérik, hogy igazolja személyazonosságát. Mielőtt elkezdené, győződjön meg arról, hogy olyan számítógépen van, amely rendelkezik webkamerával, és hogy van érvényes fényképes igazolványa, például jogosítvány vagy útlevél.\n"
+"          Megjegyzés: A felügyelt vizsga beállításának részeként felkérik majd, hogy igazolja személyazonosságát. Mielőtt elkezdené, győződjön meg róla, hogy olyan számítógépen van, amely rendelkezik webkamerával, és hogy van érvényes fényképes igazolványa, például jogosítvány vagy útlevél.\n"
 "        "
 
 #: templates/proctored_exam/instructions.html:27
@@ -620,6 +817,16 @@ msgstr "Rendszerellenőrzés indítása"
 msgid "Start Exam"
 msgstr "Vizsga indítása"
 
+#: templates/proctored_exam/instructions.html:40
+msgid ""
+"\n"
+"          Step 1\n"
+"        "
+msgstr ""
+"\n"
+"          1. lépés\n"
+"        "
+
 #: templates/proctored_exam/instructions.html:45
 msgid ""
 "\n"
@@ -630,6 +837,10 @@ msgstr ""
 "          Másold le ezt az egyedi vizsgakódot. Később be kell illesztened ezt a kódot, mielőtt elkezded a vizsgát.\n"
 "        "
 
+#: templates/proctored_exam/instructions.html:51
+msgid "Copy Exam Code"
+msgstr "Vizsgakód másolása"
+
 #: templates/proctored_exam/instructions.html:54
 msgid ""
 "\n"
@@ -639,6 +850,16 @@ msgstr ""
 "\n"
 "        Válassza ki a vizsgakódot, majd másolja ki a Control + C (Windows) vagy Command + C (Mac) billentyűkombinációval.\n"
 "      "
+
+#: templates/proctored_exam/instructions.html:59
+msgid ""
+"\n"
+"          Step 2\n"
+"        "
+msgstr ""
+"\n"
+"          2. lépés\n"
+"        "
 
 #: templates/proctored_exam/instructions.html:64
 msgid ""
@@ -660,11 +881,25 @@ msgstr ""
 "        Győződjön meg róla, hogy:\n"
 "      "
 
+#: templates/proctored_exam/instructions.html:74
+msgid "Have a computer with a functioning webcam"
+msgstr "Legyen egy számítógép működő webkamerával"
+
 #: templates/proctored_exam/instructions.html:75
 msgid "Have your valid photo ID (e.g. driver's license or passport) ready"
 msgstr ""
 "Legyen kéznél az érvényes fényképes igazolványa (pl. jogosítvány vagy "
 "útlevél)"
+
+#: templates/proctored_exam/instructions.html:81
+msgid ""
+"\n"
+"          Step 3\n"
+"        "
+msgstr ""
+"\n"
+"          3. lépés\n"
+"        "
 
 #: templates/proctored_exam/instructions.html:86
 msgid ""
@@ -681,6 +916,16 @@ msgstr ""
 msgid "Take this exam without proctoring."
 msgstr "Tegye meg ezt a vizsgát felügyelet nélkül."
 
+#: templates/proctored_exam/onboarding_error.html:4
+msgid ""
+"\n"
+"      You must complete an onboarding exam before taking this proctored exam\n"
+"    "
+msgstr ""
+"\n"
+"      Teljesítenie kell egy bevezető vizsgát, mielőtt ezt a felügyelt vizsgát megkezdené.\n"
+"    "
+
 #: templates/proctored_exam/onboarding_error.html:11
 msgid ""
 "\n"
@@ -688,13 +933,23 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Kérjük, végezzen el egy bevezető vizsgát, mielőtt megpróbálja ezt a vizsgát.\n"
+"      Kérjük, végezze el a bevezető vizsgát, mielőtt megpróbálja ezt a vizsgát.\n"
 "    "
 
 #: templates/proctored_exam/onboarding_error.html:17
 #: templates/proctored_exam/onboarding_error.html:32
 msgid "Navigate to onboarding exam"
 msgstr "Navigáljon az onboarding vizsgához"
+
+#: templates/proctored_exam/onboarding_error.html:21
+msgid ""
+"\n"
+"    Your onboarding exam is being reviewed. Before attempting this exam, please allow 2+ business days for your onboarding exam to be reviewed.\n"
+"  "
+msgstr ""
+"\n"
+"    A belépő vizsgád felülvizsgálat alatt van. Mielőtt megpróbálnád ezt a vizsgát, kérlek, hagyj 2+ munkanapot a belépő vizsgád felülvizsgálatára.\n"
+"  "
 
 #: templates/proctored_exam/onboarding_error.html:26
 msgid ""
@@ -703,7 +958,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Az Ön bevezető vizsgája nem felelt meg minden követelménynek.\n"
+"      A bevezető vizsgája nem felelt meg minden követelménynek.\n"
 "    "
 
 #: templates/proctored_exam/onboarding_error.html:38
@@ -728,7 +983,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Nem teljesítette a vizsga előfeltételeit. Minden követelménynek teljesülnie kell, mielőtt részt vehet ezen a felügyelt vizsgán.\n"
+"    Nem teljesítetted a vizsga előfeltételeit. Minden követelménynek meg kell felelned, mielőtt részt vehetsz ezen a felügyelt vizsgán.\n"
 "    "
 
 #: templates/proctored_exam/pending-prerequisites.html:14
@@ -777,337 +1032,25 @@ msgstr ""
 "            Ne zárja be ezt az ablakot, amíg be nem fejezi a vizsgát. Ha bezárja ezt az ablakot, a felügyeleti munkamenet véget ér, és nem fogja sikeresen befejezni a felügyelt vizsgát.\n"
 "          "
 
-#: templates/proctored_exam/ready_to_resume.html:14
-msgid ""
-"\n"
-"        To be eligible for credit or the program credential associated with this course, you must pass the proctoring review for this exam.\n"
-"    "
-msgstr ""
-"\n"
-"        Ahhoz, hogy jogosult legyél a kurzushoz kapcsolódó kreditre vagy programtanúsítványra, át kell menned a vizsga felügyeleti ellenőrzésén.\n"
-"    "
-
-#: templates/proctored_exam/ready_to_start.html:10
+#: templates/proctored_exam/proctoring_launch_callback.html:173
 #, python-format
 msgid ""
 "\n"
-"        &#8226; You have %(total_time)s to complete this exam. </br>\n"
-"        &#8226; Once you start the exam, you cannot stop the timer. </br>\n"
-"        &#8226; For all question types, you must click \"submit\" to complete your answer. </br>\n"
-"        &#8226; If time expires before you click \"End My Exam\", only your submitted answers will be graded.\n"
-"      "
+"            Return to the %(platform_name)s course window to start your exam. When you have finished your exam and\n"
+"            have marked it as complete, you can close this window to end the proctoring session\n"
+"            and upload your proctoring session data for review.\n"
+"          "
 msgstr ""
 "\n"
-"        &#8226; Önnek %(total_time)s áll rendelkezésére a vizsga befejezéséhez. </br>  \n"
-"        &#8226; Miután elkezdi a vizsgát, nem állíthatja le az időzítőt. </br>  \n"
-"        &#8226; Minden kérdéstípusnál kattintania kell a \"beküldés\" gombra a válasz befejezéséhez. </br>  \n"
-"        &#8226; Ha lejár az idő, mielőtt a \"Befejezem a vizsgámat\" gombra kattintana, csak a beküldött válaszai lesznek értékelve.\n"
-"      "
+"            Térjen vissza a %(platform_name)s kurzus ablakába, hogy elkezdhesse a vizsgát. Amikor befejezte a vizsgát, és megjelölte azt befejezettként, bezárhatja ezt az ablakot, hogy befejezze a felügyeleti ülést, és feltöltheti a felügyeleti ülés adatait ellenőrzésre.\n"
+"          "
 
-#: templates/proctored_exam/ready_to_start.html:18
+#: templates/proctored_exam/ready_to_resume.html:4
 msgid ""
 "\n"
-"      Proctored Exam Rules\n"
+"      Your exam is ready to be resumed.\n"
 "    "
 msgstr ""
 "\n"
-"      Felügyelt vizsga szabályai\n"
+"      A vizsgája készen áll a folytatásra.\n"
 "    "
-
-#: templates/proctored_exam/ready_to_start.html:23
-msgid ""
-"\n"
-"         You must adhere to the following rules while you complete this exam.\n"
-"         <strong>If you violate these rules, you will receive a score of 0 on the exam, and you will not be eligible for academic course credit.\n"
-"         </strong></br>\n"
-"      "
-msgstr ""
-"\n"
-"         Be kell tartania a következő szabályokat a vizsga teljesítése során.\n"
-"         <strong>Ha megszegi ezeket a szabályokat, a vizsgán 0 pontot kap, és nem lesz jogosult akadémiai kurzus kreditre.\n"
-"         </strong></br>\n"
-"      "
-
-#: templates/proctored_exam/ready_to_start.html:29
-#, python-format
-msgid ""
-"\n"
-"          %(platform_name)s Rules for Online Proctored Exams\n"
-"      "
-msgstr ""
-"\n"
-"          %(platform_name)s szabályai az online felügyelt vizsgákhoz\n"
-"      "
-
-#: templates/proctored_exam/ready_to_start.html:49
-msgid "Start my exam"
-msgstr "Indítsa el a vizsgámat"
-
-#: templates/proctored_exam/ready_to_start.html:50
-msgid "Starting Exam"
-msgstr "Vizsga indítása"
-
-#: templates/proctored_exam/ready_to_submit.html:4
-msgid ""
-"\n"
-"      Are you sure you want to end your proctored exam?\n"
-"    "
-msgstr ""
-"\n"
-"      Biztosan be akarja fejezni a felügyelt vizsgáját?\n"
-"    "
-
-#: templates/proctored_exam/ready_to_submit.html:10
-msgid ""
-"Make sure that you have selected \"Submit\" for each answer before you "
-"submit your exam."
-msgstr ""
-"Győződjön meg róla, hogy minden válaszhoz kiválasztotta a „Beküldés” opciót,"
-" mielőtt beadja a vizsgáját."
-
-#: templates/proctored_exam/ready_to_submit.html:12
-msgid ""
-"Once you click \"Yes, end my proctored exam\", the exam will be closed, and "
-"your proctoring session will be submitted for review."
-msgstr ""
-"Ha a „Igen, befejezem a felügyelt vizsgámat” gombra kattint, a vizsga "
-"lezárul, és a felügyeleti munkamenetét felülvizsgálatra benyújtják."
-
-#: templates/proctored_exam/ready_to_submit.html:15
-msgid "Yes, end my proctored exam"
-msgstr "Igen, fejezzem be a felügyelt vizsgámat"
-
-#: templates/proctored_exam/rejected.html:5
-msgid ""
-"\n"
-"        Your proctoring session was reviewed, but did not pass all requirements\n"
-"      "
-msgstr ""
-"\n"
-"        A felügyelt vizsgája felülvizsgálatra került, de nem felelt meg minden követelménynek.\n"
-"      "
-
-#: templates/proctored_exam/rejected.html:13
-#, python-format
-msgid ""
-"\n"
-"        If you have questions about the status of your proctoring session results, contact %(platform_name)s Support.\n"
-"      "
-msgstr ""
-"\n"
-"        Ha kérdése van a felügyelt vizsga eredményének állapotával kapcsolatban, lépjen kapcsolatba a %(platform_name)s ügyfélszolgálatával.\n"
-"      "
-
-#: templates/proctored_exam/rejected.html:23
-msgid ""
-"\n"
-"        If you have concerns about your proctoring session results, contact your course team.\n"
-"      "
-msgstr ""
-"\n"
-"        Ha aggályai vannak a felügyeleti vizsga eredményeivel kapcsolatban, vegye fel a kapcsolatot a kurzus csapatával.\n"
-"      "
-
-#: templates/proctored_exam/submitted.html:4
-msgid ""
-"\n"
-"      You have submitted this proctored exam for review\n"
-"    "
-msgstr ""
-"\n"
-"      Ön benyújtotta ezt a felügyelt vizsgát felülvizsgálatra.\n"
-"    "
-
-#: templates/proctored_exam/submitted.html:9
-msgid "Your recorded data should now be uploaded for review."
-msgstr "A rögzített adatoknak most már fel kellene töltődniük ellenőrzésre."
-
-#: templates/proctored_exam/submitted.html:11
-msgid ""
-"If the proctoring software window is still open, close it now and confirm "
-"that you want to quit the application."
-msgstr ""
-"Ha a felügyeleti szoftver ablaka még mindig nyitva van, zárja be most, és "
-"erősítse meg, hogy ki akar lépni az alkalmazásból."
-
-#: templates/proctored_exam/submitted.html:19
-#, python-format
-msgid ""
-"\n"
-"      If you have questions about the status of your proctored exam results, contact %(platform_name)s Support.\n"
-"    "
-msgstr ""
-"\n"
-"      Ha kérdése van a felügyelt vizsga eredményeinek állapotával kapcsolatban, lépjen kapcsolatba a %(platform_name)s támogatásával.\n"
-"    "
-
-#: templates/proctored_exam/visit_exam_content.html:5
-msgid ""
-"\n"
-"      To view your exam questions and responses, select <strong>View my exam</strong>. The exam's review status is shown in the left navigation pane.\n"
-"    "
-msgstr ""
-"\n"
-"      A vizsgakérdéseid és válaszaid megtekintéséhez válaszd a <strong>Vizsgám megtekintése</strong> lehetőséget. A vizsga felülvizsgálati állapota a bal oldali navigációs panelen látható.\n"
-"    "
-
-#: templates/timed_exam/entrance.html:4
-#, python-format
-msgid ""
-"\n"
-"    %(exam_name)s is a Timed Exam (%(total_time)s)\n"
-"    "
-msgstr ""
-"\n"
-"    %(exam_name)s egy időzített vizsga (%(total_time)s)\n"
-"    "
-
-#: templates/timed_exam/entrance.html:9
-msgid "This exam has a time limit associated with it."
-msgstr "Ennek a vizsgának időkorlátja van."
-
-#: templates/timed_exam/entrance.html:11
-msgid "To pass this exam, you must complete the problems in the time allowed."
-msgstr ""
-"A vizsga sikeres teljesítéséhez a megadott időn belül kell megoldania a "
-"feladatokat."
-
-#: templates/timed_exam/entrance.html:13
-msgid "After you select "
-msgstr "miután kiválasztotta "
-
-#: templates/timed_exam/entrance.html:17
-msgid " to complete and submit the exam."
-msgstr " a vizsga kitöltésére és benyújtására."
-
-#: templates/timed_exam/footer.html:3
-msgid "Can I request additional time to complete my exam?"
-msgstr "Kérhetek több időt a vizsgám befejezéséhez?"
-
-#: templates/timed_exam/ready_to_submit.html:4
-msgid ""
-"\n"
-"      Are you sure that you want to submit your timed exam?\n"
-"    "
-msgstr ""
-"\n"
-"      Biztos benne, hogy be akarja nyújtani az időzített vizsgáját?\n"
-"    "
-
-#: templates/timed_exam/ready_to_submit.html:9
-msgid ""
-"\n"
-"      Make sure that you have selected \"Submit\" for each problem before you submit your exam.\n"
-"    "
-msgstr ""
-"\n"
-"      Győződjön meg arról, hogy minden feladatnál kiválasztotta a „Beküldés” opciót, mielőtt leadja a vizsgáját.\n"
-"    "
-
-#: templates/timed_exam/ready_to_submit.html:19
-msgid ""
-"\n"
-"      Yes, submit my timed exam.\n"
-"    "
-msgstr ""
-"\n"
-"      Igen, küldje be az időzített vizsgámat.\n"
-"    "
-
-#: templates/timed_exam/submitted.html:21
-msgid ""
-"\n"
-"                After the due date has passed, you can review the exam, but you cannot change your answers.\n"
-"            "
-msgstr ""
-"\n"
-"                A határidő lejárta után megtekintheti a vizsgát, de nem változtathatja meg a válaszokat.\n"
-"            "
-
-#: utils.py:87
-#, python-brace-format
-msgid "{num_of_hours} hour"
-msgstr "{num_of_hours} óra"
-
-#: utils.py:90
-#, python-brace-format
-msgid "{num_of_hours} hours"
-msgstr "{num_of_hours} óra"
-
-#: utils.py:98 utils.py:108
-#, python-brace-format
-msgid "{num_of_minutes} minutes"
-msgstr "{num_of_minutes} perce"
-
-#: utils.py:101
-#, python-brace-format
-msgid " and {num_of_minutes} minute"
-msgstr " és {num_of_minutes} perc"
-
-#: utils.py:103
-#, python-brace-format
-msgid "{num_of_minutes} minute"
-msgstr "{num_of_minutes} perc"
-
-#: utils.py:106
-#, python-brace-format
-msgid " and {num_of_minutes} minutes"
-msgstr " és {num_of_minutes} perc"
-
-#: utils.py:342
-msgid "a proctored exam"
-msgstr "felügyelt vizsga"
-
-#: utils.py:345
-msgid "a timed exam"
-msgstr "időzített vizsga"
-
-#: utils.py:348
-msgid "an onboarding exam"
-msgstr "bevezető vizsga"
-
-#: utils.py:350
-msgid "a practice exam"
-msgstr "gyakorló vizsga"
-
-#: views.py:152
-msgid "could not determine the course_id"
-msgstr "nem sikerült meghatározni a kurzusazonosítót"
-
-#: views.py:664
-msgid "Missing required query parameter course_id"
-msgstr "Hiányzó kötelező lekérdezési paraméter: course_id"
-
-#: views.py:773
-#, python-brace-format
-msgid "No onboarding status API for {proctor_service}"
-msgstr "Nincs onboarding státusz API a(z) {proctor_service} számára"
-
-#: views.py:925
-msgid ""
-"The onboarding service is temporarily unavailable. Please try again later."
-msgstr ""
-"Az integrációs szolgáltatás átmenetileg nem elérhető. Kérjük, próbálja meg "
-"később."
-
-#: views.py:1303
-msgid "you have less than a minute remaining"
-msgstr "kevesebb mint egy perc van hátra"
-
-#: views.py:1758
-msgid "Enter a valid username or email"
-msgstr "Adjon meg egy érvényes felhasználónevet vagy e-mail címet"
-
-#: views.py:1771
-msgid "Enter a valid positive value number"
-msgstr "Adjon meg egy érvényes pozitív számértéket"
-
-#: views.py:2164
-#, python-brace-format
-msgid "No proctored exams in course {course_id}"
-msgstr "Nincsenek felügyelt vizsgák a(z) {course_id} kurzusban"
-
-#: views.py:2191
-#, python-brace-format
-msgid "No instructor dashboard for {proctor_service}"
-msgstr "Nincs oktatói irányítópult a(z) {proctor_service} számára"

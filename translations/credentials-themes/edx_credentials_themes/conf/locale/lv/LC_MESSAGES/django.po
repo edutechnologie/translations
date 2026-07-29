@@ -5,14 +5,15 @@
 # 
 # Translators:
 # Brian Smith, 2025
+# Elita Leilande, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Brian Smith, 2025\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Elita Leilande, 2026\n"
 "Language-Team: Latvian (https://app.transifex.com/open-edx/teams/6205/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -78,17 +79,17 @@ msgid ""
 " MicroBachelors program certificate in"
 msgstr ""
 "ir sekmīgi pabeidzis visus kursus un saņēmis sekmīgas vērtējumus, lai iegūtu"
-" MicroBachelors programmas sertifikātu"
+" MicroBachelors programmas Apliecinājumu"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:12
 msgid "MicroBachelors program certificate"
-msgstr "Mikrobakalaura programmas sertifikāts"
+msgstr "Mikrobakalaura programmas Apliecinājums"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:17
 msgid "About the edX MicroBachelors program certificate"
-msgstr "Par edX MicroBachelors programmas sertifikātu"
+msgstr "Par edX MicroBachelors programmas Apliecinājumu"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:22
@@ -100,10 +101,10 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the program."
 msgstr ""
-"edX MicroBachelors akreditācijas sertifikāts nozīmē, ka kursa dalībnieks ir "
-"pabeidzis kursu grupu, kas papildina bagātīgu izpratni par studiju jomu. "
+"edX MicroBachelors akreditācijas Apliecinājums nozīmē, ka kursa dalībnieks "
+"ir pabeidzis kursu grupu, kas papildina bagātīgu izpratni par studiju jomu. "
 "Mikrobakalaura programmu pabeigšanai studentiem jāiegūst {link_start} "
-"verificētie sertifikāti {link_end} no katra programmā iekļautā kursa."
+"verificētie Apliecinājumi {link_end} no katra programmā iekļautā kursa."
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:8
@@ -123,12 +124,12 @@ msgid ""
 " MicroMasters program certificate in"
 msgstr ""
 "ir sekmīgi pabeidzis visus kursus un saņēmis sekmīgas vērtējumus, lai iegūtu"
-" MicroMasters programmas sertifikātu"
+" MicroMasters programmas Apliecinājumu"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:21
 msgid "MicroMasters program certificate"
-msgstr "MicroMasters programmas sertifikāts"
+msgstr "MicroMasters programmas Apliecinājums"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:26
@@ -145,10 +146,10 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"edX MicroMasters akreditācijas sertifikāts nozīmē, ka kursa dalībnieks ir "
+"edX MicroMasters akreditācijas Apliecinājums nozīmē, ka kursa dalībnieks ir "
 "pabeidzis kursu grupu, kas papildina bagātīgu izpratni par studiju jomu. Lai"
 " pabeigtu MicroMasters programmas, studentiem ir jāsaņem {link_start} "
-"verificētie sertifikāti {link_end} no katra programmā iekļautā kursa."
+"verificētie Apliecinājumi {link_end} no katra programmā iekļautā kursa."
 
 #. Translators: This phrase is preceded by the learner's name and followed by
 #. a program title
@@ -158,15 +159,15 @@ msgid ""
 "Professional Certificate in"
 msgstr ""
 "sekmīgi pabeidza visus kursus un saņēma sekmīgas vērtējumus profesionālā "
-"sertifikāta iegūšanai"
+"Apliecinājuma iegūšanai"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:11
 msgid "Professional Certificate"
-msgstr "Profesionālais sertifikāts"
+msgstr "Profesionālais Apliecinājums"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:15
 msgid "About the edX Professional Certificate"
-msgstr "Par edX profesionālo sertifikātu"
+msgstr "Par edX profesionālo Apliecinājumu"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:19
 #, python-brace-format
@@ -177,10 +178,10 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"edX profesionālais sertifikāts nozīmē, ka kursa dalībnieks ir pabeidzis "
+"edX profesionālais Apliecinājums nozīmē, ka kursa dalībnieks ir pabeidzis "
 "kursu grupu, kas papildina bagātīgu izpratni par studiju jomu. Lai pabeigtu "
-"profesionālo sertifikātu programmas, studentiem ir jāiegūst {link_start} "
-"verificētie sertifikāti {link_end} no katra programmā iekļautā kursa."
+"profesionālo Apliecinājumu programmas, studentiem ir jāiegūst {link_start} "
+"verificētie Apliecinājumi {link_end} no katra programmā iekļautā kursa."
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:8
@@ -189,7 +190,7 @@ msgid ""
 "You worked hard to earn your XSeries Program certificate from "
 "%(organization_name)s."
 msgstr ""
-"Jūs smagi strādājāt, lai iegūtu XSeries programmas sertifikātu no "
+"Jūs smagi strādājāt, lai iegūtu XSeries programmas Apliecinājumu no "
 "%(organization_name)s ."
 
 #. Translators: XSeries should not be translated, this phrase is preceded by
@@ -200,17 +201,17 @@ msgid ""
 "XSeries Program certificate in"
 msgstr ""
 "ir sekmīgi pabeidzis visus kursus un saņēmis sekmīgas vērtējumus XSeries "
-"programmas sertifikātam"
+"programmas Apliecinājumam"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:21
 msgid "XSeries Program certificate"
-msgstr "XSeries programmas sertifikāts"
+msgstr "XSeries programmas Apliecinājums"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:26
 msgid "About the edX XSeries Program certificate"
-msgstr "Par edX XSeries programmas sertifikātu"
+msgstr "Par edX XSeries programmas Apliecinājumu"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:31
@@ -222,7 +223,8 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"edX XSeries programmas sertifikāts norāda, ka kursa dalībnieks ir pabeidzis "
-"kursu grupu, kas papildina bagātīgu izpratni par studiju jomu. Lai pabeigtu "
-"XSeries programmas, studentiem ir jāiegūst {link_start} verificētie "
-"sertifikāti {link_end} par katru no programmā iekļautajiem kursiem."
+"edX XSeries programmas Apliecinājums norāda, ka kursa dalībnieks ir "
+"pabeidzis kursu grupu, kas papildina bagātīgu izpratni par studiju jomu. Lai"
+" pabeigtu XSeries programmas, studentiem ir jāiegūst {link_start} "
+"verificētie Apliecinājumi {link_end} par katru no programmā iekļautajiem "
+"kursiem."

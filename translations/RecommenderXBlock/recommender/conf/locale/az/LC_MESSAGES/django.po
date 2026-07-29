@@ -4,22 +4,25 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Transifex Bot <>, 2025
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Azerbaijani (https://app.transifex.com/open-edx/teams/6205/az/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: az\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: recommender.py:314
+msgid "Invalid location URL provided"
+msgstr "Verilmiş yer URL-si etibarsızdır"
 
 #: recommender.py:325
 msgid "The resource you are attempting to provide already exists"
@@ -63,6 +66,10 @@ msgid ""
 msgstr ""
 "Zəhmət olmasa, yükləmə resursları düyməsi ilə əldə edilən JSON faylını "
 "təqdim edin."
+
+#: recommender.py:899
+msgid "Tried to access flagged resources without staff permission"
+msgstr "Bayraqlanmış resurslara işçi icazəsi olmadan daxil olmağa cəhd edildi"
 
 #: templates/recommender.html:85
 msgid "This is a list of recommended resources. If you\\"
@@ -181,8 +188,12 @@ msgid ""
 "Provide a meaningful description so other students know whether this is "
 "useful to them"
 msgstr ""
-"Digər tələbələrə bu resursun onlar üçün faydalı olub-olmadığını bilmələri "
-"üçün mənalı bir təsvir təmin edin"
+"Başqa tələbələrin bu məlumatın onlar üçün faydalı olub-olmadığını bilməsi "
+"üçün mənalı bir təsvir verin."
+
+#: templates/recommender.html:202
+msgid "Preview screenshot:"
+msgstr "Önizləmə ekran görüntüsü:"
 
 #: templates/recommender.html:202
 msgid "Provide a resource screenshot"
@@ -234,7 +245,8 @@ msgstr ""
 #: templates/recommenderstudio.html:21
 msgid "Do you want to disable the UX functions which are under development?"
 msgstr ""
-"İnkişaf mərhələsində olan UX funksiyalarını deaktiv etmək istəyirsiniz?"
+"İstifadəçi təcrübəsi funksiyalarını inkişaf mərhələsində deaktiv etmək "
+"istəyirsiniz?"
 
 #: templates/recommenderstudio.html:36
 msgid "How many resources you want to show in each page of the resource list?"
@@ -249,6 +261,14 @@ msgstr ""
 "Səhifələmə idarəetməsində neçə səhifə ikonu var (yəni, səhifə aralığı)? "
 "Səhifələr üçün ikonlar (cari səhifə - səhifə aralığı) ilə (cari səhifə + "
 "səhifə aralığı) arasında göstəriləcək."
+
+#: static/js/src/cats.js:65
+msgid ""
+"Recommend a new resource which may be helpful to other students solving this"
+" problem"
+msgstr ""
+"Yeni bir resurs tövsiyə edin ki, bu problemi həll edən digər tələbələrə "
+"faydalı ola bilər."
 
 #: static/js/src/cats.js:66
 msgid "Edit this resource"
@@ -273,6 +293,10 @@ msgstr "Resursun adı"
 #: static/js/src/cats.js:71
 msgid "Remove this resource and give the reason why you do that"
 msgstr "Bu resursu silin və bunun səbəbini izah edin."
+
+#: static/js/src/cats.js:72
+msgid "Preview image (typically, a screenshot)"
+msgstr "Önizləmə şəkli (adətən, ekran görüntüsü)"
 
 #: static/js/src/cats.js:73 static/js/src/cats.js:77
 msgid ""
@@ -324,15 +348,23 @@ msgstr "Bu resursu silin"
 #: static/js/src/cats.js:85
 msgid "Show a list of student-recommented related resources"
 msgstr ""
-"Göstərin tələbələr tərəfindən tövsiyə olunan əlaqəli resursların siyahısını"
+"Tələbələr tərəfindən tövsiyə olunan əlaqəli resursların siyahısını göstərin"
 
 #: static/js/src/cats.js:86
 msgid "Hide the recommendations list"
 msgstr "Tövsiyələr siyahısını gizlət"
 
+#: static/js/src/cats.js:87
+msgid "Check the icon to endorse this resource"
+msgstr "İkonu yoxlayaraq bu resursu təsdiqləyin"
+
 #: static/js/src/cats.js:88
 msgid "This resource is endorsed by staff"
 msgstr "Bu resurs işçi heyəti tərəfindən təsdiqlənib"
+
+#: static/js/src/cats.js:89
+msgid "Click to view resources for removal"
+msgstr "Resursları silmək üçün baxın"
 
 #: static/js/src/cats.js:90
 msgid "Click to view resources in ordinary decreasing-vote order"
@@ -342,6 +374,10 @@ msgstr "Resursları adi azalan səs sırasına baxmaq üçün klikləyin"
 msgid ""
 "Here is a list of reasons why students think this resource problematic:"
 msgstr "Budur tələbələrin bu resursu problemli hesab etmələrinin səbəbləri:"
+
+#: static/js/src/cats.js:94
+msgid "The reason why it is endorsed is:"
+msgstr "Bunun təsdiqlənməsinin səbəbi:"
 
 #: static/js/src/cats.js:95
 msgid "Resource: "
@@ -370,9 +406,17 @@ msgstr "Resurs təklif et"
 msgid "Edit existing resource"
 msgstr "Mövcud resursu redaktə et"
 
+#: static/js/src/cats.js:110
+msgid "Flag Resource"
+msgstr "Resursu işarələ"
+
 #: static/js/src/cats.js:111
 msgid "Endorse Resource"
 msgstr "Resursu təsdiqlə"
+
+#: static/js/src/cats.js:112
+msgid "Remove Resource"
+msgstr "Resursu sil"
 
 #: static/js/src/cats.js:116
 msgid "Upload resources in JSON format to the database."
@@ -409,9 +453,17 @@ msgstr ""
 msgid "Endorse this resource and give the reason why you do that."
 msgstr "Bu resursu təsdiqləyin və bunu niyə etdiyinizi izah edin."
 
+#: static/js/src/cats.js:121
+msgid "Remove this resource and give the reason why you do that."
+msgstr "Bu resursu silin və bunu niyə etdiyinizi izah edin."
+
 #: static/js/src/cats.js:157
 msgid "Hide related resources"
 msgstr "Əlaqəli resursları gizlət"
+
+#: static/js/src/cats.js:191
+msgid "From page {fromPage} To page {toPage}"
+msgstr "Səhifə {fromPage}-dən Səhifə {toPage}-ə qədər"
 
 #: static/js/src/cats.js:196
 msgid "Export resources"
@@ -419,7 +471,7 @@ msgstr "Resursları ixrac et"
 
 #: static/js/src/cats.js:198
 msgid "Entering import resource mode"
-msgstr "İdxal resurs rejiminə keçid"
+msgstr "İdxal resurs rejiminə daxil olunur"
 
 #: static/js/src/cats.js:202
 msgid "Entering add resource mode"
@@ -437,6 +489,14 @@ msgstr "Redaktə rejiminə keçid"
 msgid "Entering flag resource mode"
 msgstr "Bayraq resursu rejiminə daxil olunur"
 
+#: static/js/src/cats.js:211
+msgid "Flag resource"
+msgstr "Resursu işarələ"
+
+#: static/js/src/cats.js:212
+msgid "Unflag resource"
+msgstr "Resursun işarəsini ləğv et"
+
 #: static/js/src/cats.js:215
 msgid "Endorse resource"
 msgstr "Resursu təsdiqlə"
@@ -448,6 +508,14 @@ msgstr "Resursu təsdiqləməkdən imtina et"
 #: static/js/src/cats.js:218
 msgid "Remove resource"
 msgstr "Resursu sil"
+
+#: static/js/src/cats.js:219
+msgid "Hovering resource"
+msgstr "Resurs üzərində gəzinmə"
+
+#: static/js/src/cats.js:220
+msgid "A resource was clicked"
+msgstr "Resurs klikləndi"
 
 #: static/js/src/cats.js:221
 msgid "Back to resource list mode"

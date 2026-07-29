@@ -1,6 +1,6 @@
 {
   "Hyperlink.externalLinkAltText": {
-    "string": ""
+    "string": "yeni bir nişanda"
   },
   "Hyperlink.externalLinkTitle": {
     "string": "Yeni pəncərədə açılır"
@@ -18,7 +18,7 @@
     "string": "Fayl növü {count, plural, one {{typeString} faylı} other {{typeString} fayllarından biri}} olmalıdır."
   },
   "dropzone.Dropzone.multipleDraggedError": {
-    "developer_comment": "Çoxsaylı fayllar Dropzone üzərinə sürükləndikdə göstərilən mesaj.",
+    "developer_comment": "Dropzone üzərinə bir neçə fayl sürüklənəndə göstərilən mesaj.",
     "string": "Yalnız bir yükləməyə icazə verilir."
   },
   "dropzone.Dropzone.unexpectedValidationError": {
@@ -34,20 +34,20 @@
     "string": "Buraxın"
   },
   "pgn.CardCarousel.scrollToNext": {
-    "developer_comment": "Kaydırıla bilən karuseldə növbəti elementə keçid üçün hərəkəti təsvir edən əlçatanlıq mətni",
-    "string": ""
+    "developer_comment": "Kaydırılan karuseldə növbəti elementə keçmək üçün naviqasiya hərəkətini təsvir edən əlçatanlıq mətni.",
+    "string": "Sürüşdürüb növbətiyə keçin"
   },
   "pgn.CardCarousel.scrollToPrevious": {
-    "developer_comment": "Keçid edilə bilən karuselin əvvəlki elementinə keçid üçün hərəkəti təsvir edən əlçatanlıq mətni",
+    "developer_comment": "Kaydırılan karuseldə əvvəlki elementə keçid üçün hərəkəti təsvir edən əlçatanlıq mətni",
     "string": "Əvvəlkiyə keçid"
   },
   "pgn.ChipCarousel.scrollToNext": {
     "developer_comment": "Kaydırıla bilən karuseldə növbəti elementə keçid üçün hərəkəti təsvir edən əlçatanlıq mətni",
-    "string": ""
+    "string": "Sonrakına keçin"
   },
   "pgn.ChipCarousel.scrollToPrevious": {
     "developer_comment": "Keçid edilə bilən karuselin əvvəlki elementinə keçid üçün hərəkəti təsvir edən əlçatanlıq mətni",
-    "string": "Əvvəlkiyə keçid"
+    "string": "Sürüşdürərək əvvəlkiyə keçin"
   },
   "pgn.DataTable.BaseSelectionStatus.allSelectedText": {
     "developer_comment": "Bütün seçilmiş etiketlər üçün mətn",
@@ -59,26 +59,26 @@
   },
   "pgn.DataTable.BaseSelectionStatus.selectAllText": {
     "developer_comment": "Hamısını seç düyməsi üçün etiket.",
-    "string": ""
+    "string": "Hamısını seç {itemCount}"
   },
   "pgn.DataTable.BaseSelectionStatus.selectedText": {
     "developer_comment": "Seçilmiş etiket üçün mətn",
     "string": "{numSelectedRows} seçildi"
   },
   "pgn.DataTable.BaseSelectionStatus.selectedTextPaginated": {
-    "developer_comment": "",
+    "developer_comment": "Seçilmiş etiketin mətni cədvəl səhifələndikdə",
     "string": "{numSelectedRows} seçilib ({numSelectedRowsOnPage} aşağıda göstərilib)"
   },
   "pgn.DataTable.ExpandAll.collapseAllLabel": {
     "developer_comment": "Data Cədvəlinin genişlənə bilən bütün sətirlərini yığışdıran hərəkət düyməsinin etiketi.",
-    "string": ""
+    "string": "Bütününü yığışdır"
   },
   "pgn.DataTable.ExpandAll.expandAllLabel": {
     "developer_comment": "Məlumat Cədvəlinin genişlənə bilən bütün sətirlərini genişləndirən hərəkət düyməsinin etiketi.",
     "string": "Hamısını genişləndir"
   },
   "pgn.DataTable.FilterStatus.clearFiltersText": {
-    "developer_comment": "",
+    "developer_comment": "Filtrləri təmizlə",
     "string": "Filtrləri təmizlə"
   },
   "pgn.DataTable.RowStatus.statusText": {
@@ -87,10 +87,14 @@
   },
   "pgn.DataTable.SidebarFilters.title": {
     "developer_comment": "Yan panel filtr komponenti üçün başlıq",
-    "string": ""
+    "string": "Filtrlər"
+  },
+  "pgn.DataTable.filtersDropdownTitle": {
+    "developer_comment": "Filtrlərin açılan siyahısının başlığı",
+    "string": "Süzgəclər"
   },
   "pgn.DataTable.paginationLabel": {
-    "developer_comment": "Naviqasiya elementinin səhifələmə komponenti üçün əlçatan adı",
+    "developer_comment": "Səhifələmə komponentinin naviqasiya elementi üçün əlçatan ad",
     "string": "cədvəl səhifələmə"
   },
   "pgn.Dropzone.DefaultContent.fileSizeBetween": {
@@ -102,11 +106,11 @@
     "string": "Maksimum {sizeMax}"
   },
   "pgn.Dropzone.DefaultContent.fileSizeMin": {
-    "developer_comment": "Yüklənmiş faylın ölçüsü müəyyən bir dəyərdən çox olmalıdır.",
+    "developer_comment": "Yüklənmiş faylın ölçüsü müəyyən bir dəyərdən çox olmalıdır mesajı göstərilir.",
     "string": "Min {sizeMin}"
   },
   "pgn.Dropzone.DefaultContent.fileTypeRestriction": {
-    "developer_comment": "Yüklənmiş faylın müəyyən növ(lər)də olması lazım olduqda göstərilən mesaj.",
+    "developer_comment": "Yüklənmiş fayl müəyyən növ(lər)də olmalıdır mesajı göstərilir.",
     "string": "Yüklə {count, plural, one {{firstPart} fayl} other {{firstPart} və ya {secondPart} fayl}}"
   },
   "pgn.Dropzone.DefaultContent.label": {
@@ -119,7 +123,7 @@
   },
   "pgn.Dropzone.UploadProgress.uploadLabel": {
     "developer_comment": "Fayl yüklənməsi zamanı Dropzone komponentində irəliləyiş çubuğunun yanında göstərilən mətn.",
-    "string": ""
+    "string": "Fayl yüklənir: {filename}."
   },
   "pgn.FormAutosuggest.iconButtonClosed": {
     "developer_comment": "Avtomatik təklif menyusu açıldıqda göstərilən mesaj.",
@@ -129,13 +133,25 @@
     "developer_comment": "Avtomatik təklif menyusu bağlandıqda göstərilən mesaj.",
     "string": "Seçimlər menyusunu açın"
   },
+  "pgn.Modal.closeButon": {
+    "developer_comment": "Modal dialoqda bağlama düyməsi üçün əlçatan ad",
+    "string": "Bağla"
+  },
   "pgn.ProductTour.Checkpoint.bottom-position-text": {
     "developer_comment": "Ekran oxuyucusu istifadəçiyə məhsul turunun addımının sonunda olduqlarını bildirmək üçün mesaj.",
     "string": "Addımın altı {step}"
   },
+  "pgn.ProductTour.Checkpoint.page-index-text": {
+    "developer_comment": "Səhifə indeksi sizin ProductTour-dakı yerinizi göstərir",
+    "string": "{səviyyə} / {ümumiSəviyyələr}"
+  },
   "pgn.ProductTour.Checkpoint.top-position-text": {
     "developer_comment": "Ekran oxuyucusu istifadəçiyə məhsul turunun addımının sonunda olduqlarını bildirmək üçün mesaj.",
-    "string": ""
+    "string": "Addımın üstü {step}"
+  },
+  "pgn.ProductTour.checkpointHeader.close": {
+    "developer_comment": "Məhsul Turu komponenti üçün alternativ mətn bağla",
+    "string": "Turu bağla"
   },
   "pgn.Toast.closeLabel": {
     "developer_comment": "Toast komponenti üçün bağlama etiketi",

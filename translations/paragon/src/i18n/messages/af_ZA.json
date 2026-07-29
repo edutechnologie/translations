@@ -89,6 +89,10 @@
     "developer_comment": "Titel vir die sidebar filters komponent",
     "string": "Filters"
   },
+  "pgn.DataTable.filtersDropdownTitle": {
+    "developer_comment": "Titel van die filters aftreklys",
+    "string": "Filters"
+  },
   "pgn.DataTable.paginationLabel": {
     "developer_comment": "Toeganklike naam vir die navigasie-element van &#39;n pagineringskomponent",
     "string": "tabelpaginering"
@@ -129,13 +133,25 @@
     "developer_comment": "&#39;n Boodskap wat gewys word in geval wanneer die outovoorstel-kieslys gesluit is.",
     "string": "Maak die opsiekieslys oop"
   },
+  "pgn.Modal.closeButon": {
+    "developer_comment": "Toeganklike naam vir die toemaakknoppie in die modale dialoog",
+    "string": "Maak toe"
+  },
   "pgn.ProductTour.Checkpoint.bottom-position-text": {
     "developer_comment": "Skermleserboodskap om gebruiker in kennis te stel dat hulle onderaan die produktoerstap geleë is.",
     "string": "Onderaan stap {step}"
   },
+  "pgn.ProductTour.Checkpoint.page-index-text": {
+    "developer_comment": "Bladsy-indeks wat jou plek in die Produktoer wys",
+    "string": "{step} of {totalSteps}"
+  },
   "pgn.ProductTour.Checkpoint.top-position-text": {
     "developer_comment": "Skermleserboodskap om gebruiker in kennis te stel dat hulle onderaan die produktoerstap geleë is.",
     "string": "Bo aan stap {step}"
+  },
+  "pgn.ProductTour.checkpointHeader.close": {
+    "developer_comment": "Maak alternatiewe teks vir ProductTour-komponent toe",
+    "string": "Maak toer toe"
   },
   "pgn.Toast.closeLabel": {
     "developer_comment": "Maak etiket vir Toast-komponent toe",

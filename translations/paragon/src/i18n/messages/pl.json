@@ -89,6 +89,10 @@
     "developer_comment": "Tytuł komponentu filtrów bocznych",
     "string": "Filtry"
   },
+  "pgn.DataTable.filtersDropdownTitle": {
+    "string": "Filtry",
+    "developer_comment": "Title of the filters dropdown"
+  },
   "pgn.DataTable.paginationLabel": {
     "developer_comment": "Nazwa dostępna dla elementu nawigacyjnego komponentu paginacji",
     "string": "stronicowanie tabeli"
@@ -129,13 +133,25 @@
     "developer_comment": "Komunikat wyświetlany w przypadku zamknięcia menu autosugestii.",
     "string": "Otwórz menu opcji"
   },
+  "pgn.Modal.closeButon": {
+    "string": "Zamknij",
+    "developer_comment": "Accessible name for the close button in the modal dialog"
+  },
   "pgn.ProductTour.Checkpoint.bottom-position-text": {
     "developer_comment": "Komunikat dla czytnika ekranu informujący użytkownika, że znajduje się na dole kroku samouczka produktu.",
     "string": "Dół kroku {step}"
   },
+  "pgn.ProductTour.Checkpoint.page-index-text": {
+    "string": "{step} z {totalSteps}",
+    "developer_comment": "Page index showing your place in the ProductTour"
+  },
   "pgn.ProductTour.Checkpoint.top-position-text": {
     "developer_comment": "Komunikat dla czytnika ekranu informujący użytkownika, że znajduje się na dole kroku samouczka produktu.",
     "string": "Góra kroku {step}"
+  },
+  "pgn.ProductTour.checkpointHeader.close": {
+    "string": "Zamknij przewodnik",
+    "developer_comment": "Close alternative text for ProductTour component"
   },
   "pgn.Toast.closeLabel": {
     "developer_comment": "Etykieta zamykania dla komponentu Toast",

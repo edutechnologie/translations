@@ -1,0 +1,175 @@
+# edX translation file.
+# Copyright (C) 2025 EdX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# Translators:
+# Brian Smith, 2025
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"POT-Creation-Date: 2023-06-13 08:00+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: Tibetan (https://app.transifex.com/open-edx/teams/301281/bo/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bo\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: integrated_channels/integrated_channel/models.py:115
+msgid "A configuration nickname."
+msgstr "སྒྲིག་བཀོད་ཀྱི་མིང་འདོགས།"
+
+#: enterprise/admin/forms.py:74 enterprise/api/v1/serializers.py:1634
+msgid "Audit"
+msgstr "Audit"
+
+#: enterprise/admin/forms.py:75 enterprise/api/v1/serializers.py:1635
+msgid "Verified"
+msgstr "ངོས་འཛིན་བྱས་ཟིན།"
+
+#: enterprise/admin/forms.py:76 enterprise/api/v1/serializers.py:1636
+msgid "Professional Education"
+msgstr "ཆེད་སྦྱོང་སློབ་གསོ།"
+
+#: enterprise/admin/forms.py:77 enterprise/api/v1/serializers.py:1637
+msgid "Professional Education (no ID)"
+msgstr "ཆེད་སྦྱོང་སློབ་གསོ། (no ID)"
+
+#: enterprise/admin/forms.py:78 enterprise/api/v1/serializers.py:1638
+msgid "Credit"
+msgstr "Credit"
+
+#: enterprise/admin/forms.py:79 enterprise/api/v1/serializers.py:1639
+msgid "Honor"
+msgstr "Honor"
+
+#: enterprise/admin/forms.py:80 enterprise/api/v1/serializers.py:1640
+msgid "Unpaid Executive Education"
+msgstr " དངུལ་སྤྲད་མེད་པའི་འཛིན་སྐྱོང་སློབ་གསོ།"
+
+#: enterprise/admin/forms.py:104
+msgid "Send email"
+msgstr "གློག་འཕྲིན་ཐོངས།"
+
+#: enterprise/admin/forms.py:315
+msgid "Course"
+msgstr "སློབ་ཚན།"
+
+#: enterprise/admin/forms.py:436
+msgid "Preview"
+msgstr "སྔོན་ལྟ།"
+
+#: enterprise/models.py:2549
+msgid "The customer for which this default enrollment will be realized."
+msgstr ""
+"གཞི་སྒྲིག་འཛུལ་སྤྱོད་འགྲོ་བའི་ལས་ཀྱི་དོན་ལ་འབྲེལ་བ་ཡོད་པའི་དོན་གཅིག་གི་འབྲེལ་བ་ཡིན་པ།."
+
+#: enterprise/models.py:2558
+msgid "The type of content (e.g. a course vs. a course run)."
+msgstr "དེ་དབྱེ་བ་གི་ནང་དོན། (དཔེར་ན། སློབ་ཚན་དང་སློབ་ཚན་འཁོར་བརྒྱུད།)."
+
+#: enterprise/models.py:2566
+msgid ""
+"A course or course run that related users should be automatically enrolled "
+"into."
+msgstr ""
+"འབྲེལ་ཡོད་པའི་སྤྱོད་མཁན་ཚུ་རང་བཞིན་གྱིས་ཐོ་བཙུགས་འབད་དགོས་པའི་སློབ་ཚན་ཡང་ན་སློབ་ཚན་འཁོར་ཞིག་ཡོད།."
+
+#: enterprise/models.py:2738
+#, python-brace-format
+msgid ""
+"A default enrollment intention with this enterprise customer and content key"
+" already exists, but is soft-deleted. Please restore it <a "
+"href=\"{existing_record_admin_url}\">here</a>."
+msgstr ""
+"དེ་རིང་གི་འཚོལ་བ་དང་དེ་ལས་འགན་འཁུར་བྱེད་མཁན་གྱི་སྤྱི་ཚོགས་དང་དེབ་གྲངས་ཀྱི་ལྡེ་ཡིག་གཅིག་ཡོད་རེད།"
+" ཡང་ན་སྐྱོན་བརྗེད་ཡོད་རེད། དེ་ལ་ལོག་སྒྱུར་བྱེད་དགོས། <a "
+"href=\"{existing_record_admin_url}\">འདི་ནས</a>།."
+
+#: enterprise/models.py:3406
+msgid "Active"
+msgstr "བྱེད་ནུས་སྒོ་ཕྱེས།"
+
+#: enterprise/models.py:3449
+msgid "Email"
+msgstr "གློག་འཕྲིན།"
+
+#: enterprise/models.py:4963
+msgid "Title summarizing the onboarding flow."
+msgstr "འགོ་སྤྲོད་རྒྱུན་ལམ་གྱི་མཛོད་རྟགས་བསྡུས་པ།"
+
+#: enterprise/models.py:4969
+msgid ""
+"Specifies whether this flow is active and shown to admin users in the "
+"onboarding tour."
+msgstr ""
+"གཙོ་བོ་རྣམས་ལ་འཛུལ་སྤྱོད་ཀྱི་སྒང་ལ་འདེམས་བྱས་ནས་འདི་གི་རྒྱུན་འགྲོ་འགེང་བར་འགྲོ་བ་དང་སྤྱི་ཚོགས་ལ་མངོན་སྟོན་བྱེད་དགོས་མིན་གསལ་བཤད་བྱེད་པ་རེད།"
+
+#: enterprise/models.py:4993
+msgid "The last time the admin logged into the admin portal."
+msgstr ""
+"སྤྱི་ཚན་གྱི་དྲ་ཐོག་ལ་སྤྱི་ཚན་གྱི་མི་སྤྱི་ཚན་གྱི་དྲ་ཐོག་ལ་འཛུལ་བ་བྱས་པའི་དུས་ཚོད་མཇུག་མ།"
+
+#: enterprise/models.py:5002
+msgid "Whether the admin has dismissed the onboarding tour."
+msgstr "དོན་ལྡན་གྱི་སྤྱོད་འཇུག་གི་སྒོ་འགོད་ལས་སྤྲོད་ཡོད་པ་ཡིན་ནམ།"
+
+#: enterprise/models.py:5012
+msgid "Enterprise Customer Admins"
+msgstr "ཁེ་ལས་ཀྱི་ཚོང་ཤག་དོ་དམ་པ།"
+
+#: enterprise/templates/enterprise/_data_sharing_decline_modal.html:7
+#: enterprise/views.py:1616 enterprise/views.py:2118
+msgid "Close"
+msgstr "སྒོ་རྒྱོབས།"
+
+#: enterprise/templates/enterprise/admin/clear_learners_data_sharing_consent.html:18
+#: enterprise/templates/enterprise/admin/manage_learners.html:47
+#: enterprise/templates/enterprise/admin/setup_auth_org_id.html:6
+#: enterprise/templates/enterprise/admin/transmit_courses_metadata.html:18
+msgid "Home"
+msgstr "གཙོ་ངོས།"
+
+#: enterprise/templates/enterprise/admin/manage_learners.html:99
+msgid "Username"
+msgstr "སྤྱོད་མིང་།"
+
+#: enterprise/templates/enterprise/admin/manage_learners.html:101
+#: enterprise/templates/enterprise/admin/manage_learners.html:141
+msgid "Enroll"
+msgstr "ཞུགས་ཐོ་འཁོད།"
+
+#: enterprise/templates/enterprise/admin/manage_learners.html:140
+msgid "Date Added"
+msgstr "གསར་སྣོན་བྱས་པའི་ཟླ་ཚེས།"
+
+#: enterprise/templates/enterprise/admin/setup_auth_org_id.html:46
+msgid "Cancel"
+msgstr "ཕྱིར་འཐེན།"
+
+#: enterprise/templates/enterprise/enterprise_customer_login_page.html:44
+#: enterprise/templates/enterprise/enterprise_customer_select_form.html:50
+#: enterprise/views.py:372 enterprise/views.py:1612
+msgid "Continue"
+msgstr "མུ་མཐུད་དུ་"
+
+#: enterprise/views.py:1609
+msgid "View Course Details"
+msgstr "སློབ་ཚན་གྱི་ཞིབ་ཕྲ་སྟོན།"
+
+#: enterprise/views.py:1611 enterprise/views.py:2112
+msgid "Price"
+msgstr "རིན་གོང་།"
+
+#: enterprise/views.py:1615
+msgid "Duration"
+msgstr "དུས་ཡུན།"
+
+#: enterprise/views.py:2078
+msgid "enrollment"
+msgstr "ཞུགས་ཐོ།"

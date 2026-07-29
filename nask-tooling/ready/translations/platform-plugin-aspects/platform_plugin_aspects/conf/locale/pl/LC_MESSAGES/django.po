@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:40+0000\n"
+"POT-Creation-Date: 2025-10-30 00:53+0000\n"
 "PO-Revision-Date: 2023-06-13 09:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -29,19 +29,19 @@ msgstr "Panel indywidualnego uczącego się"
 msgid "At-Risk Learners Dashboard"
 msgstr "Panel zagrożonych uczących się"
 
-#: settings/common.py:110
+#: settings/common.py:114
 msgid "Course"
 msgstr "Kurs"
 
-#: settings/common.py:118
+#: settings/common.py:122
 msgid "Graded Subsection"
 msgstr "Oceniana podsekcja"
 
-#: settings/common.py:126
+#: settings/common.py:130
 msgid "Problem"
 msgstr "Problem"
 
-#: settings/common.py:134
+#: settings/common.py:138
 msgid "Video"
 msgstr "Wideo"
 
@@ -61,23 +61,6 @@ msgstr ""
 "Superset jest widoczny tylko dla personelu kursu i instruktorów. Skontaktuj "
 "się z administratorem systemu."
 
-#: utils.py:165
-#, python-brace-format
-msgid ""
-"Unable to fetch Superset guest token, Superset server error "
-"{server_response}"
-msgstr ""
-"Nie można pobrać tokenu gościa Superset, błąd serwera Superset "
-"{server_response}"
-
-#: utils.py:174
-msgid ""
-"Unable to fetch Superset guest token, mostly likely due to invalid "
-"settings.SUPERSET_CONFIG"
-msgstr ""
-"Nie można pobrać tokenu gościa Superset, najprawdopodobniej z powodu "
-"nieprawidłowych ustawień.SUPERSET_CONFIG"
-
 #: views.py:87
 #, python-brace-format
 msgid "Course not found: '{course_id}'"
@@ -88,12 +71,12 @@ msgstr "Nie znaleziono kursu: '{course_id}'"
 msgid "Invalid course id: '{course_id}'"
 msgstr "Nieprawidłowy identyfikator kursu: '{course_id}'"
 
-#: views.py:172
+#: views.py:179
 #, python-brace-format
 msgid "Invalid usage id: '{usage_id}'"
 msgstr "Nieprawidłowy identyfikator użycia: '{usage_id}'"
 
-#: views.py:201
+#: views.py:208
 #, python-brace-format
 msgid "No dashboard for block type: '{block_type}'"
 msgstr "Brak panelu dla typu bloku: '{block_type}'"

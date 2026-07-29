@@ -4,15 +4,15 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:31+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/open-edx/teams/6205/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,6 +31,10 @@ msgstr "ページ上部の水平ナビゲーションにこの名前が表示さ
 #: models.py:33
 msgid "Link Text:"
 msgstr "リンクテキスト:"
+
+#: models.py:36
+msgid "This is the text that will link to your survey."
+msgstr "あなたのアンケートへのリンクとなるテキストです。"
 
 #: models.py:39
 msgid "Message:"
@@ -61,6 +65,10 @@ msgid ""
 "SV_###############"
 msgstr ""
 "Qualtricsがアンケートに使用するIDです。数字と文字を含めることができ、次の形式で入力する必要があります: SV_###############"
+
+#: models.py:67
+msgid "Your University:"
+msgstr "あなたの大学:"
 
 #: models.py:70
 msgid "This is the name of your university."

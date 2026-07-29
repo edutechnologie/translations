@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:40+0000\n"
-"PO-Revision-Date: 2025-07-23 17:31+0000\n"
+"POT-Creation-Date: 2025-10-03 00:56+0000\n"
+"PO-Revision-Date: 2024-04-20 01:08+0000\n"
 "Last-Translator: Eden Huthmacher, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/open-edx/teams/6205/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -32,19 +32,23 @@ msgstr "Kurzus irányítópult"
 msgid "Individual Learner Dashboard"
 msgstr "Egyéni tanulói irányítópult"
 
-#: settings/common.py:110
+#: settings/common.py:43
+msgid "At-Risk Learners Dashboard"
+msgstr "Veszélyeztetett Tanulók Irányítópult"
+
+#: settings/common.py:114
 msgid "Course"
 msgstr "Kurzus"
 
-#: settings/common.py:118
+#: settings/common.py:122
 msgid "Graded Subsection"
 msgstr "Értékelt alfejezet"
 
-#: settings/common.py:126
+#: settings/common.py:130
 msgid "Problem"
 msgstr "Feladat"
 
-#: settings/common.py:134
+#: settings/common.py:138
 msgid "Video"
 msgstr "Videó"
 
@@ -64,23 +68,6 @@ msgstr ""
 "A Superset csak a kurzus személyzete és az oktatók számára látható. Kérjük, "
 "vegye fel a kapcsolatot a rendszergazdával."
 
-#: utils.py:165
-#, python-brace-format
-msgid ""
-"Unable to fetch Superset guest token, Superset server error "
-"{server_response}"
-msgstr ""
-"Nem sikerült lekérni a Superset vendég tokenjét, Superset szerverhiba "
-"{server_response}"
-
-#: utils.py:174
-msgid ""
-"Unable to fetch Superset guest token, mostly likely due to invalid "
-"settings.SUPERSET_CONFIG"
-msgstr ""
-"Nem sikerült lekérni a Superset vendég tokenjét, valószínűleg érvénytelen "
-"beállítások miatt. SUPERSET_CONFIG"
-
 #: views.py:87
 #, python-brace-format
 msgid "Course not found: '{course_id}'"
@@ -91,15 +78,10 @@ msgstr "A kurzus nem található: '{course_id}'"
 msgid "Invalid course id: '{course_id}'"
 msgstr "Érvénytelen kurzusazonosító: '{course_id}'"
 
-#: views.py:172
+#: views.py:179
 #, python-brace-format
 msgid "Invalid usage id: '{usage_id}'"
 msgstr "Érvénytelen usage id: '{usage_id}'"
-
-#: views.py:201
-#, python-brace-format
-msgid "No dashboard for block type: '{block_type}'"
-msgstr "Nincs irányítópult a(z) '{block_type}' blokk típushoz"
 
 #: xblock.py:48 xblock.py:49
 msgid "Display name"

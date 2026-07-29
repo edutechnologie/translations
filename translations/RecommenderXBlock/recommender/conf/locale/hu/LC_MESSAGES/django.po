@@ -4,15 +4,16 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
+# Omar Al-Ithawi <i@omardo.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Omar Al-Ithawi <i@omardo.com>, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/open-edx/teams/6205/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,6 +24,18 @@ msgstr ""
 #: recommender.py:314
 msgid "Invalid location URL provided"
 msgstr "Érvénytelen hely URL-t adtak meg"
+
+#: recommender.py:325
+msgid "The resource you are attempting to provide already exists"
+msgstr "A megadni kívánt erőforrás már létezik."
+
+#: recommender.py:338
+msgid ""
+"The resource you are attempting to provide has been disallowed by the staff."
+" Reason: "
+msgstr ""
+"A forrást, amelyet megpróbál biztosítani, a személyzet nem engedélyezte. "
+"Indok: "
 
 #: recommender.py:355
 msgid "The selected resource does not exist"
@@ -35,6 +48,10 @@ msgstr "A feltöltött fájl mérete meghaladja a küszöbértéket"
 #: recommender.py:414
 msgid "The configuration of pyfs is not properly set"
 msgstr "A pyfs konfigurációja nincs megfelelően beállítva."
+
+#: recommender.py:753
+msgid "Endorse resource without permission"
+msgstr "Támogassa az erőforrást engedély nélkül"
 
 #: recommender.py:797
 msgid "You don't have the permission to remove this resource"
@@ -54,7 +71,7 @@ msgstr ""
 #: recommender.py:899
 msgid "Tried to access flagged resources without staff permission"
 msgstr ""
-"Megpróbált megjelölt forrásokhoz hozzáférni személyzeti engedély nélkül"
+"Megpróbált hozzáférés a megjelölt erőforrásokhoz személyzeti engedély nélkül"
 
 #: templates/recommender.html:85
 msgid "This is a list of recommended resources. If you\\"
@@ -78,6 +95,10 @@ msgstr ""
 msgid "Add new resource &gt;&gt;"
 msgstr "Új forrás hozzáadása &gt;&gt;"
 
+#: templates/recommender.html:121
+msgid "Download resources"
+msgstr "Erőforrások letöltése"
+
 #: templates/recommender.html:124
 msgid "mode"
 msgstr "mód"
@@ -100,7 +121,7 @@ msgstr ""
 
 #: templates/recommender.html:141
 msgid "cancel and go back to resource list"
-msgstr "mégse és vissza a forráslistához"
+msgstr "megszakít és vissza az erőforrások listájához"
 
 #: templates/recommender.html:141
 msgid "&lt; Related resources"
@@ -113,6 +134,18 @@ msgstr "Erőforrások (JSON formátumban):"
 #: templates/recommender.html:147
 msgid "Provide a file of resource list in JSON format"
 msgstr "Készítsen egy fájlt az erőforráslistáról JSON formátumban"
+
+#: templates/recommender.html:157
+msgid "Reason for why this resource should be removed"
+msgstr "Indoklás, hogy miért kellene eltávolítani ezt az erőforrást"
+
+#: templates/recommender.html:167
+msgid "Reason for why this resource should be endorsed"
+msgstr "Indoklás, hogy miért kellene támogatni ezt az erőforrást"
+
+#: templates/recommender.html:177
+msgid "Reason for why this resource should be flagged"
+msgstr "A forrás megjelölésének oka"
 
 #: templates/recommender.html:183 templates/recommender.html:208
 msgid "Title"
@@ -145,24 +178,35 @@ msgstr "Leírás"
 msgid ""
 "Provide a meaningful description so other students know whether this is "
 "useful to them"
-msgstr ""
-"Adj meg egy értelmes leírást, hogy más diákok tudják, hasznos-e számukra."
+msgstr "Adj értelmes leírást, hogy más diákok tudják, hasznos-e ez számukra."
 
 #: templates/recommender.html:202
 msgid "Preview screenshot:"
 msgstr "Előnézeti képernyőkép:"
 
+#: templates/recommender.html:202
+msgid "Provide a resource screenshot"
+msgstr "Adjon meg egy erőforrás képernyőképet"
+
 #: templates/recommender.html:203
 msgid "Save change"
-msgstr "Változás mentése"
+msgstr "Változtatás mentése"
 
 #: templates/recommender.html:222
 msgid "Provide a resource description"
 msgstr "Adjon meg egy erőforrás leírást"
 
+#: templates/recommender.html:227
+msgid "Provide a file of resource screenshot"
+msgstr "Adjon meg egy fájlt az erőforrás képernyőképéről"
+
 #: templates/recommender.html:228
 msgid "Add resource"
 msgstr "Erőforrás hozzáadása"
+
+#: templates/recommenderstudio.html:6
+msgid "Configuration setting"
+msgstr "Beállítások konfigurálása"
 
 #: templates/recommenderstudio.html:9
 msgid ""
@@ -211,16 +255,20 @@ msgid ""
 "Recommend a new resource which may be helpful to other students solving this"
 " problem"
 msgstr ""
-"Ajánljon egy új forrást, amely hasznos lehet más diákok számára a probléma "
+"Ajánlj egy új forrást, amely hasznos lehet más diákoknak a probléma "
 "megoldásában."
+
+#: static/js/src/cats.js:66
+msgid "Edit this resource"
+msgstr "Szerkeszd ezt az erőforrást"
 
 #: static/js/src/cats.js:67
 msgid "Upvote if the resource is helpful"
-msgstr "Szavazzon, ha az erőforrás hasznos."
+msgstr "Szavazz, ha hasznosnak találod az erőforrást"
 
 #: static/js/src/cats.js:68
 msgid "Downvote if the resource is not helpful"
-msgstr "Szavazzon le, ha az erőforrás nem hasznos"
+msgstr "Szavazz le, ha az erőforrás nem hasznos."
 
 #: static/js/src/cats.js:69
 msgid "Votes"
@@ -257,8 +305,7 @@ msgid ""
 "Give a paragraph of summary of the resource; the summary should be more "
 "detailed than you gave in Title"
 msgstr ""
-"Adjon egy bekezdésnyi összefoglalót az erőforrásról; az összefoglalónak "
-"részletesebbnek kell lennie, mint amit a címben adott."
+"Adj részletesebb összefoglalót az erőforrásról, mint amit a címben adtál."
 
 #: static/js/src/cats.js:76 static/js/src/cats.js:80
 msgid ""
@@ -276,7 +323,7 @@ msgstr "Menjen vissza a fő listához"
 #: static/js/src/cats.js:82
 msgid "Give a meaningful reason for why this resource should be removed"
 msgstr ""
-"Adjon meg egy értelmes indokot arra, hogy miért kellene eltávolítani ezt az "
+"Adjon meg egy értelmes indokot, hogy miért kellene eltávolítani ezt az "
 "erőforrást."
 
 #: static/js/src/cats.js:83
@@ -293,11 +340,12 @@ msgstr "Mutassa a diákok által ajánlott kapcsolódó források listáját"
 
 #: static/js/src/cats.js:88
 msgid "This resource is endorsed by staff"
-msgstr "Ezt az erőforrást a személyzet hagyta jóvá"
+msgstr "Ezt az erőforrást a személyzet támogatja."
 
-#: static/js/src/cats.js:89
-msgid "Click to view resources for removal"
-msgstr "Kattintson az eltávolítandó források megtekintéséhez"
+#: static/js/src/cats.js:90
+msgid "Click to view resources in ordinary decreasing-vote order"
+msgstr ""
+"Kattint a források megtekintéséhez szavazatok szerinti csökkenő sorrendben."
 
 #: static/js/src/cats.js:93
 msgid ""
@@ -307,7 +355,7 @@ msgstr ""
 
 #: static/js/src/cats.js:94
 msgid "The reason why it is endorsed is:"
-msgstr "Az ok, amiért támogatják, a következő:"
+msgstr "Azért támogatják, mert:"
 
 #: static/js/src/cats.js:95
 msgid "Resource: "
@@ -322,6 +370,10 @@ msgid ""
 "The content you typed has not been submitted yet. Are you sure to go back?"
 msgstr "A begépelt tartalom még nincs elküldve. Biztosan vissza akarsz lépni?"
 
+#: static/js/src/cats.js:107 static/js/src/cats.js:199
+msgid "Import resources"
+msgstr "Erőforrások importálása"
+
 #: static/js/src/cats.js:108
 msgid "Suggest resource"
 msgstr "Javasoljon forrást"
@@ -330,13 +382,9 @@ msgstr "Javasoljon forrást"
 msgid "Edit existing resource"
 msgstr "Létező erőforrás szerkesztése"
 
-#: static/js/src/cats.js:110
-msgid "Flag Resource"
-msgstr "Jelölje meg az erőforrást"
-
 #: static/js/src/cats.js:111
 msgid "Endorse Resource"
-msgstr "Erőforrás jóváhagyása"
+msgstr "Ajánlott forrás"
 
 #: static/js/src/cats.js:112
 msgid "Remove Resource"
@@ -376,13 +424,18 @@ msgstr ""
 msgid "Endorse this resource and give the reason why you do that."
 msgstr "Támogassa ezt az erőforrást, és adja meg, miért teszi ezt."
 
+#: static/js/src/cats.js:121
+msgid "Remove this resource and give the reason why you do that."
+msgstr ""
+"Távolítsa el ezt az erőforrást, és adja meg az okát, hogy miért teszi ezt."
+
 #: static/js/src/cats.js:157
 msgid "Hide related resources"
 msgstr "Kapcsolódó források elrejtése"
 
 #: static/js/src/cats.js:191
 msgid "From page {fromPage} To page {toPage}"
-msgstr "Oldal {fromPage} - {toPage}"
+msgstr "Oldalról {fromPage} Oldalig {toPage}"
 
 #: static/js/src/cats.js:196
 msgid "Export resources"
@@ -402,7 +455,11 @@ msgstr "Új erőforrás hozzáadása"
 
 #: static/js/src/cats.js:206
 msgid "Entering edit resource mode"
-msgstr "Belépés az erőforrás szerkesztési módba"
+msgstr "Az erőforrás szerkesztési módjának megnyitása"
+
+#: static/js/src/cats.js:210
+msgid "Entering flag resource mode"
+msgstr "Zászló erőforrás módba lépés"
 
 #: static/js/src/cats.js:211
 msgid "Flag resource"

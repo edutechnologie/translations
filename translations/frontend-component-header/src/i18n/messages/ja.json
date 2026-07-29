@@ -9,9 +9,8 @@
   "header.user.menu.order.history": "購買履歴",
   "header.user.menu.logout": "ログアウト",
   "header.user.menu.login": "ログイン",
-  "header.user.menu.register": "サインアップ",
+  "header.user.menu.register": "登録",
   "header.user.menu.studio.home": "スタジオホーム",
-  "header.user.menu.studio.maintenance": "メンテナンス",
   "header.label.account.nav": "アカウント",
   "header.label.account.menu": "アカウントメニュー",
   "header.label.account.menu.for": "{username}のアカウントメニュー",
@@ -24,7 +23,7 @@
   "general.register.sentenceCase": "登録",
   "general.signIn.sentenceCase": "サインイン",
   "header.menu.dashboard.label": "ダッシュボード",
-  "header.help.label": "",
+  "header.help.label": "ヘルプ",
   "header.menu.profile.label": "プロフィール",
   "header.menu.account.label": "アカウント",
   "header.menu.orderHistory.label": "購買履歴",
@@ -32,7 +31,6 @@
   "header.menu.signOut.label": "サインアウト",
   "header.menu.aria-label": "ユーザーオプション",
   "header.user.menu.studio": "スタジオホーム",
-  "header.user.menu.maintenance": "メンテナンス",
-  "header.label.courseOutline": "",
+  "header.label.courseOutline": "Studioでコース概要に戻る",
   "header.label.search.nav": "コンテンツを検索"
 }

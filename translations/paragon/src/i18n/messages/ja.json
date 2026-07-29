@@ -6,11 +6,11 @@
     "string": "新しいタブで開きます"
   },
   "dropzone.Dropzone.invalidSizeLessError": {
-    "developer_comment": "",
+    "developer_comment": "Dropzoneで最小許可サイズ未満のファイルをアップロードしようとしたときに表示されるメッセージ。",
     "string": "ファイルは{size}より大きくなければなりません。"
   },
   "dropzone.Dropzone.invalidSizeMoreError": {
-    "developer_comment": "",
+    "developer_comment": "Dropzoneで最大許可サイズを超えるファイルをアップロードしようとしたときに表示されるメッセージ。",
     "string": "ファイルは{size}未満でなければなりません。"
   },
   "dropzone.Dropzone.invalidType": {
@@ -22,7 +22,7 @@
     "string": "アップロードは1回のみ許可されています。"
   },
   "dropzone.Dropzone.unexpectedValidationError": {
-    "developer_comment": "",
+    "developer_comment": "Dropzoneコンポーネントでファイル検証が不明な理由で失敗した場合に表示されるメッセージ。",
     "string": "ファイルの検証中に予期しない問題が発生しました。もう一度お試しください。"
   },
   "dropzone.Dropzone.uploadError": {
@@ -46,7 +46,7 @@
     "string": "次へスクロール"
   },
   "pgn.ChipCarousel.scrollToPrevious": {
-    "developer_comment": "スクロール可能なカルーセルで前の要素に移動するための操作を説明するアクセシビリティテキスト",
+    "developer_comment": "スクロール可能なカルーセルを前の要素に移動するための操作を説明するアクセシビリティテキスト",
     "string": "前にスクロール"
   },
   "pgn.DataTable.BaseSelectionStatus.allSelectedText": {
@@ -66,7 +66,7 @@
     "string": "{numSelectedRows} 件選択済み"
   },
   "pgn.DataTable.BaseSelectionStatus.selectedTextPaginated": {
-    "developer_comment": "",
+    "developer_comment": "テーブルがページ分割されているときの選択ラベルのテキスト",
     "string": "{numSelectedRows} 件選択済み（以下に {numSelectedRowsOnPage} 件表示）"
   },
   "pgn.DataTable.ExpandAll.collapseAllLabel": {
@@ -83,10 +83,14 @@
   },
   "pgn.DataTable.RowStatus.statusText": {
     "developer_comment": "テーブルに表示されている行数を説明するテキスト",
-    "string": "{firstRow} - {lastRow} 件目を表示中（全 {itemCount} 件）"
+    "string": "{firstRow} - {lastRow} を表示中（全 {itemCount} 件）"
   },
   "pgn.DataTable.SidebarFilters.title": {
     "developer_comment": "サイドバーのフィルターコンポーネントのタイトル",
+    "string": "フィルター"
+  },
+  "pgn.DataTable.filtersDropdownTitle": {
+    "developer_comment": "フィルターのドロップダウンのタイトル",
     "string": "フィルター"
   },
   "pgn.DataTable.paginationLabel": {
@@ -98,11 +102,11 @@
     "string": "{sizeMin}と{sizeMax}の間"
   },
   "pgn.Dropzone.DefaultContent.fileSizeMax": {
-    "developer_comment": "",
+    "developer_comment": "アップロードされたファイルのサイズがある値以上でなければならない場合に表示されるメッセージ。",
     "string": "最大 {sizeMax}"
   },
   "pgn.Dropzone.DefaultContent.fileSizeMin": {
-    "developer_comment": "",
+    "developer_comment": "アップロードされたファイルのサイズがある値以上でなければならない場合に表示されるメッセージ。",
     "string": "最小 {sizeMin}"
   },
   "pgn.Dropzone.DefaultContent.fileTypeRestriction": {
@@ -110,7 +114,7 @@
     "string": "{count, plural, one {{firstPart} ファイル} other {{firstPart} または {secondPart} ファイル}}"
   },
   "pgn.Dropzone.DefaultContent.label": {
-    "developer_comment": "",
+    "developer_comment": "入力ラベルとして表示されるテキスト（Dropzoneコンポーネント用）。",
     "string": "ファイルをここにドラッグ＆ドロップするか、クリックしてアップロードしてください。"
   },
   "pgn.Dropzone.UploadProgress.cancelLabel": {
@@ -118,7 +122,7 @@
     "string": "キャンセル"
   },
   "pgn.Dropzone.UploadProgress.uploadLabel": {
-    "developer_comment": "",
+    "developer_comment": "ファイルアップロード中にプログレスバーの近くに表示されるテキスト。",
     "string": "{filename}をアップロードしています。"
   },
   "pgn.FormAutosuggest.iconButtonClosed": {
@@ -129,13 +133,25 @@
     "developer_comment": "オートサジェストメニューが閉じられた場合に表示されるメッセージ。",
     "string": "オプションメニューを開く"
   },
+  "pgn.Modal.closeButon": {
+    "developer_comment": "モーダルダイアログの閉じるボタンのアクセシブルネーム",
+    "string": "閉じる"
+  },
   "pgn.ProductTour.Checkpoint.bottom-position-text": {
     "developer_comment": "スクリーンリーダーのメッセージ：ユーザーが製品ツアーステップの下部にいることを通知します。",
     "string": "ステップ{step}の下部"
   },
+  "pgn.ProductTour.Checkpoint.page-index-text": {
+    "developer_comment": "製品ツアーでの位置を示すページインデックス",
+    "string": "{step} / {totalSteps}"
+  },
   "pgn.ProductTour.Checkpoint.top-position-text": {
-    "developer_comment": "スクリーンリーダーのメッセージ：ユーザーが製品ツアーステップの下部にいることを通知します。",
+    "developer_comment": "製品ツアーステップの下部にいることをユーザーに通知するスクリーンリーダーメッセージ。",
     "string": "ステップ{step}の先頭"
+  },
+  "pgn.ProductTour.checkpointHeader.close": {
+    "developer_comment": "ProductTourコンポーネントの代替テキストを閉じる",
+    "string": "ツアーを終了"
   },
   "pgn.Toast.closeLabel": {
     "developer_comment": "トーストコンポーネントの閉じるラベル",

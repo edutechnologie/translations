@@ -11,7 +11,6 @@
   "header.user.menu.login": "ནང་འཛུལ།",
   "header.user.menu.register": "ཐོ་འགོད་བྱོས།",
   "header.user.menu.studio.home": "སྒྲིག་སྟེགས་གཙོ་ངོས།",
-  "header.user.menu.studio.maintenance": "",
   "header.label.account.nav": "ཁ་བྱང་།",
   "header.label.account.menu": "ཁ་བྱང་ཐོ་གཞུང་།",
   "header.label.account.menu.for": "འདིའི་ {username} ཁ་བྱང་ཐོ་གཞུང་།",
@@ -30,9 +29,8 @@
   "header.menu.orderHistory.label": "ལོ་རྒྱུས་ཀྱི་གོ་རིམ་སྒྲིག",
   "header.navigation.skipNavLink": "ནང་དོན་གཙོ་བོའི་ཐད་ལ་མཆོང་།",
   "header.menu.signOut.label": "ཕྱིར་ཐོན།",
-  "header.menu.aria-label": "",
+  "header.menu.aria-label": "ལག་ལེན་པའི་གདམ་ཁ་",
   "header.user.menu.studio": "སྒྲིག་སྟེགས་གཙོ་ངོས།",
-  "header.user.menu.maintenance": "",
   "header.label.courseOutline": "སྒྲིག་སྟེགས་ནང་གི་སློབ་ཚན་གྱི་སྡེ་ཚན་ས་བཅད་ཀྱི་མཚམས་སུ་ཕྱིར་ལོག",
   "header.label.search.nav": "ནང་དོན་འཚོལ་བཤེར།"
 }

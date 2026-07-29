@@ -4,8 +4,6 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Transifex Bot <>, 2025
-# Eden Huthmacher, 2025
 # Brian Smith, 2025
 # 
 msgid ""
@@ -13,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
 "Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/open-edx/teams/6205/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -32,9 +30,17 @@ msgstr ""
 "det bredaste lagret är placerat längst ner och det smalaste lagret är "
 "placerat högst upp."
 
+#: default_data.py:14
+msgid "The Top Zone"
+msgstr "Den översta zonen"
+
 #: default_data.py:15
 msgid "The Middle Zone"
 msgstr "Den mellersta zonen"
+
+#: default_data.py:16
+msgid "The Bottom Zone"
+msgstr "Den nedre zonen"
 
 #: default_data.py:18
 msgid "Use this zone to associate an item with the top layer of the triangle."
@@ -91,6 +97,10 @@ msgstr "Går till mitten"
 #: default_data.py:31
 msgid "Goes to the bottom"
 msgstr "Går till botten"
+
+#: default_data.py:32
+msgid "Goes anywhere"
+msgstr "Går överallt"
 
 #: default_data.py:33
 msgid "I don't belong anywhere"
@@ -168,6 +178,10 @@ msgid "The description of the problem or instructions shown to the learner."
 msgstr ""
 "Beskrivningen av problemet eller instruktionerna som visas för eleven."
 
+#: drag_and_drop_v2.py:135
+msgid "Show \"Problem\" heading"
+msgstr "Visa rubriken \"Problem\""
+
 #: drag_and_drop_v2.py:136
 msgid "Display the heading \"Problem\" above the problem text?"
 msgstr "Visa rubriken \"Problem\" ovanför problemtexten?"
@@ -183,8 +197,8 @@ msgid ""
 " option."
 msgstr ""
 "Definierar när svaret på problemet ska visas. Ett standardvärde kan ställas "
-"in i Avancerade inställningar. För att återgå till standardinställningen, "
-"välj alternativet 'Standard'."
+"in i Avancerade Inställningar. För att återgå till standardvärdet, välj "
+"alternativet 'Standard'."
 
 #: drag_and_drop_v2.py:149
 msgid "Default"
@@ -254,6 +268,10 @@ msgstr ""
 "Bakgrundsfärgen på flyttbara objekt i problemet (exempel: 'blå' eller "
 "'#0000ff')."
 
+#: drag_and_drop_v2.py:182
+msgid "Item text color"
+msgstr "Färg på objekttext"
+
 #: drag_and_drop_v2.py:183
 msgid "Text color to use for draggable items (example: 'white' or '#ffffff')."
 msgstr ""
@@ -294,9 +312,20 @@ msgstr ""
 "Information om aktuella positioner för objekt som en elev har släppt på "
 "målbilden."
 
+#: drag_and_drop_v2.py:217
+msgid "Number of attempts learner used"
+msgstr "Antal försök som läraren har använt"
+
 #: drag_and_drop_v2.py:224
 msgid "Indicates whether a learner has completed the problem at least once"
 msgstr "Anger om en elev har slutfört problemet minst en gång"
+
+#: drag_and_drop_v2.py:231
+msgid ""
+"DEPRECATED. Keeps maximum score achieved by student as a weighted value."
+msgstr ""
+"DEPRECERADE. Behåller högsta poäng som studenten uppnått som ett viktat "
+"värde."
 
 #: drag_and_drop_v2.py:237
 msgid ""
@@ -426,6 +455,19 @@ msgstr "Generera bild och zoner"
 msgid "Background description"
 msgstr "Bakgrundsbeskrivning"
 
+#: templates/html/drag_and_drop_edit.html:189
+msgid ""
+"\n"
+"                            Please provide a description of the image for non-visual users.\n"
+"                            The description should provide sufficient information to allow anyone\n"
+"                            to solve the problem even without seeing the image.\n"
+"                        "
+msgstr ""
+"\n"
+"                            Vänligen ge en beskrivning av bilden för användare som inte kan se.\n"
+"                            Beskrivningen bör ge tillräcklig information för att någon ska kunna lösa problemet även utan att se bilden.\n"
+"                        "
+
 #: templates/html/drag_and_drop_edit.html:199
 msgid "Zone labels"
 msgstr "Zonetiketter"
@@ -437,6 +479,10 @@ msgstr "Visa etikettnamn på bilden"
 #: templates/html/drag_and_drop_edit.html:206
 msgid "Zone borders"
 msgstr "Zongränser"
+
+#: templates/html/drag_and_drop_edit.html:209
+msgid "Display zone borders on the image"
+msgstr "Visa zongränser på bilden"
 
 #: templates/html/drag_and_drop_edit.html:215
 msgid "Display zone borders when dragging an item"
@@ -456,7 +502,7 @@ msgstr "Föremål"
 
 #: templates/html/drag_and_drop_edit.html:274
 msgid "Item definitions"
-msgstr "Objektdefinitioner"
+msgstr "Definitioner av objekt"
 
 #: templates/html/drag_and_drop_edit.html:278
 msgid "Add an item"
@@ -498,6 +544,21 @@ msgid_plural "Misplaced {misplaced_count} items"
 msgstr[0] "Felplacerad {misplaced_count} artikel"
 msgstr[1] "Felplacerade {misplaced_count} objekt"
 
+#: utils.py:152
+#, python-brace-format
+msgid ""
+"Misplaced {misplaced_count} item (misplaced item was returned to the item "
+"bank)"
+msgid_plural ""
+"Misplaced {misplaced_count} items (misplaced items were returned to the item"
+" bank)"
+msgstr[0] ""
+"Misplacerad {misplaced_count} artikel (felplacerad artikel returnerades till"
+" artikelbanken)"
+msgstr[1] ""
+"Felplacerade {misplaced_count} objekt (felplacerade objekt returnerades till"
+" objektbanken)"
+
 #: utils.py:163
 #, python-brace-format
 msgid "Did not place {missing_count} required item"
@@ -525,6 +586,10 @@ msgstr "Korrekt placerad i: {zone_title}"
 msgid ", draggable, grabbed"
 msgstr ", flyttbar, greppad"
 
+#: public/js/drag_and_drop.js:182
+msgid ", draggable"
+msgstr ", flyttbar"
+
 #: public/js/drag_and_drop.js:259
 msgid "No items placed here"
 msgstr "Inga objekt placerade här"
@@ -532,6 +597,10 @@ msgstr "Inga objekt placerade här"
 #: public/js/drag_and_drop.js:297
 msgid ", dropzone"
 msgstr ", släppzon"
+
+#: public/js/drag_and_drop.js:300
+msgid "droppable"
+msgstr "droppbar"
 
 #: public/js/drag_and_drop.js:321 public/js/drag_and_drop.js:325
 msgid "Feedback"
@@ -690,6 +759,10 @@ msgstr "Problem"
 #: public/js/drag_and_drop.js:687
 msgid "Item Bank"
 msgstr "Frågebank"
+
+#: public/js/drag_and_drop.js:732
+msgid "Drop Targets"
+msgstr "Målområden för släpp"
 
 #: public/js/drag_and_drop.js:898
 msgid "An error occurred. Unable to load drag and drop problem."

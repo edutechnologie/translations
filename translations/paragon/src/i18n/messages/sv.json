@@ -15,7 +15,7 @@
   },
   "dropzone.Dropzone.invalidType": {
     "developer_comment": "Ett meddelande som visas när en fil med fel MIME-typ laddas upp.",
-    "string": ""
+    "string": "Filtypen måste vara {count, plural, one {{typeString} file} other {one of {typeString} files}}."
   },
   "dropzone.Dropzone.multipleDraggedError": {
     "developer_comment": "Ett meddelande som visas när flera filer dras över Dropzone.",
@@ -30,11 +30,11 @@
     "string": "Ett problem uppstod när din fil laddades upp. Var god försök igen."
   },
   "pgn.Alert.closeLabel": {
-    "developer_comment": "",
+    "developer_comment": "Etikett för en stängningsknapp på varningskomponent",
     "string": "Avfärda"
   },
   "pgn.CardCarousel.scrollToNext": {
-    "developer_comment": "Tillgänglighetstext som beskriver åtgärden för att navigera en rullbar karusell till nästa element",
+    "developer_comment": "Tillgänglighetstext som beskriver åtgärden för att navigera en skrollbar karusell till nästa element",
     "string": "Bläddra till nästa"
   },
   "pgn.CardCarousel.scrollToPrevious": {
@@ -89,6 +89,10 @@
     "developer_comment": "Titel för sidofilterkomponenten",
     "string": "Filter"
   },
+  "pgn.DataTable.filtersDropdownTitle": {
+    "developer_comment": "Titel på filterrullgardinsmenyn",
+    "string": "Filter"
+  },
   "pgn.DataTable.paginationLabel": {
     "developer_comment": "Tillgängligt namn för navigeringselementet i en pagineringskomponent",
     "string": "tabellpaginering"
@@ -98,7 +102,7 @@
     "string": "Mellan {sizeMin} och {sizeMax}"
   },
   "pgn.Dropzone.DefaultContent.fileSizeMax": {
-    "developer_comment": "Ett meddelande som visas när den uppladdade filens storlek måste vara mer än ett visst värde.",
+    "developer_comment": "Ett meddelande som visas när den uppladdade filens storlek måste vara större än ett visst värde.",
     "string": "Max {sizeMax}"
   },
   "pgn.Dropzone.DefaultContent.fileSizeMin": {
@@ -129,13 +133,25 @@
     "developer_comment": "Ett meddelande som visas när autosuggest-menyn är stängd.",
     "string": "Öppna alternativmenyn"
   },
+  "pgn.Modal.closeButon": {
+    "developer_comment": "Tillgängligt namn för stängningsknappen i modaldialogrutan",
+    "string": "Stäng"
+  },
   "pgn.ProductTour.Checkpoint.bottom-position-text": {
     "developer_comment": "Skärmläsarmeddelande för att informera användaren om att de befinner sig längst ner i produktturnéns steg.",
     "string": "Botten av steg {step}"
   },
+  "pgn.ProductTour.Checkpoint.page-index-text": {
+    "developer_comment": "Sidnumret visar din plats i ProductTouren",
+    "string": "{steg} av {totalaSteg}"
+  },
   "pgn.ProductTour.Checkpoint.top-position-text": {
     "developer_comment": "Skärmläsarmeddelande för att informera användaren om att de befinner sig längst ner i produktturnéns steg.",
     "string": "Överst på steg {step}"
+  },
+  "pgn.ProductTour.checkpointHeader.close": {
+    "developer_comment": "Stäng alternativ text för ProductTour-komponent",
+    "string": "Stäng rundtur"
   },
   "pgn.Toast.closeLabel": {
     "developer_comment": "Stäng etikett för Toast-komponent",

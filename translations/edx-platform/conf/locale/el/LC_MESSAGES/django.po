@@ -1,0 +1,3201 @@
+# #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+# edX translation file.
+# Copyright (C) 2025 EdX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  wiki.po (0.1a)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2025 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  edx_proctoring_proctortrack.po (0.1a)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2025 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# 
+# Translators:
+# Brian Smith, 2025
+# Dimitris Voudouris <dimitrisvoudouris@yahoo.co.uk>, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-09-19 00:44+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Dimitris Voudouris <dimitrisvoudouris@yahoo.co.uk>, 2026\n"
+"Language-Team: Greek (https://app.transifex.com/open-edx/teams/6205/el/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cms/djangoapps/contentstore/asset_storage_handlers.py:551
+msgid "Upload completed"
+msgstr "Η μεταφόρτωση ολοκληρώθηκε."
+
+#: cms/djangoapps/contentstore/course_group_config.py:65
+#: cms/djangoapps/contentstore/views/certificate_manager.py:92
+msgid "invalid JSON"
+msgstr "μη έγκυρο JSON"
+
+#: cms/djangoapps/contentstore/course_group_config.py:74
+msgid "must have name of the configuration"
+msgstr "πρέπει να περιλαμβάνει το όνομα της διαμόρφωσης"
+
+#: cms/djangoapps/contentstore/course_group_config.py:76
+msgid "must have at least one group"
+msgstr "θα πρέπει να υπάρχει τουλάχιστον μια ομάδα"
+
+#: cms/djangoapps/contentstore/course_info_model.py:74
+#: cms/djangoapps/contentstore/course_info_model.py:159
+msgid "Invalid course update id."
+msgstr "Μη έγκυρος κωδικός ταυτοποίησης για αναβάθμιση μαθήματος"
+
+#: cms/djangoapps/contentstore/course_info_model.py:126
+msgid "Course update not found."
+msgstr "Η αναβάθμιση Μαθήματος δεν βρέθηκε"
+
+#: cms/djangoapps/contentstore/courseware_index.py:269
+msgid "General indexing error occurred"
+msgstr "Προέκυψε γενικό πρόβλημα καταχώρησης στο ευρετήριο"
+
+#: cms/djangoapps/contentstore/courseware_index.py:352
+msgid "(Unnamed)"
+msgstr "(Χωρίς όνομα)"
+
+#: cms/djangoapps/contentstore/helpers.py:213
+#: lms/djangoapps/instructor/views/tools.py:241
+#: lms/djangoapps/instructor/views/tools.py:253 xmodule/unit_block.py:41
+#: lms/templates/ccx/schedule.html:94 lms/templates/seq_block.html:106
+#: lms/templates/seq_block.html:114
+msgid "Unit"
+msgstr "Κεφάλαιο"
+
+#: cms/djangoapps/contentstore/models.py:184
+msgid "The component must be published to access `published_at`"
+msgstr ""
+"Το στοιχείο πρέπει να δημοσιευθεί για να αποκτήσετε πρόσβαση στο "
+"`published_at`"
+
+#: cms/djangoapps/contentstore/models.py:355
+msgid "The container must be published to access `published_at`"
+msgstr ""
+"Το κοντέινερ πρέπει να δημοσιευτεί για να αποκτήσετε πρόσβαση στο "
+"`published_at`"
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This is the status of an active video upload
+#: cms/djangoapps/contentstore/video_storage_handlers.py:119
+#: cms/templates/import.html:114
+msgid "Uploading"
+msgstr "Μεταφορτώνεται"
+
+#. Translators: This is the status for a video that the servers are currently
+#. processing
+#: cms/djangoapps/contentstore/video_storage_handlers.py:121
+msgid "In Progress"
+msgstr "Σε εξέλιξη"
+
+#. Translators: This is the status for a video that is cancelled during upload
+#. by user
+#: cms/djangoapps/contentstore/video_storage_handlers.py:129
+msgid "Cancelled"
+msgstr "Ακυρώθηκε"
+
+#. Translators: This is the status for a video that is in an unknown state
+#: cms/djangoapps/contentstore/video_storage_handlers.py:141
+msgid "Unknown"
+msgstr "Άγνωστο"
+
+#: cms/djangoapps/contentstore/video_storage_handlers.py:517
+msgid "Duration"
+msgstr "Διάρκεια"
+
+#: cms/djangoapps/contentstore/video_storage_handlers.py:518
+msgid "Date Added"
+msgstr "Ημερομηνία προσθήκης"
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: 'Discussion' refers to the tab in the courseware that leads to
+#. the discussion forums
+#: cms/djangoapps/contentstore/views/component.py:281
+#: lms/djangoapps/courseware/tabs.py:241
+#: lms/djangoapps/discussion/plugins.py:27
+#: openedx/core/djangoapps/discussions/plugins.py:23
+#: openedx/core/djangoapps/notifications/email/utils.py:440
+#: openedx/features/lti_course_tab/tab.py:274 xmodule/discussion_block.py:198
+#: lms/djangoapps/discussion/templates/discussion/discussion_profile_page.html:48
+#: lms/templates/ux/reference/bootstrap/course-skeleton.html:24
+msgid "Discussion"
+msgstr "Συζήτηση"
+
+#: cms/djangoapps/contentstore/views/component.py:330
+msgid "Blank"
+msgstr "Κενό"
+
+#: cms/djangoapps/contentstore/views/course.py:929
+#: cms/djangoapps/contentstore/views/course.py:932
+msgid ""
+"Please change either the organization or course number so that it is unique."
+msgstr ""
+"Παρακαλούμε αλλάξτε είτε τον οργανισμό ή το μάθημα ώστε να είναι μοναδικό."
+
+#: cms/djangoapps/contentstore/views/course.py:937
+#, python-brace-format
+msgid ""
+"Unable to create course '{name}'.\n"
+"\n"
+"{err}"
+msgstr ""
+"Αδυναμία δημιουργίας μαθήματος '{name}'.\n"
+"\n"
+"{err}"
+
+#: cms/djangoapps/contentstore/views/entrance_exam.py:140
+#: lms/djangoapps/courseware/tabs.py:336 lms/djangoapps/courseware/tabs.py:337
+#: cms/templates/settings.html:644
+msgid "Entrance Exam"
+msgstr "Εισαγωγική εξέταση"
+
+#: cms/lib/xblock/upstream_sync.py:281
+msgid "Linked `upstream_key` is not a valid key"
+msgstr "Ο συνδεδεμένος `upstream_key` δεν είναι έγκυρο κλειδί"
+
+#: common/djangoapps/course_modes/helpers.py:48
+#: lms/djangoapps/branding/api.py:329 lms/djangoapps/branding/api.py:404
+#: lms/djangoapps/courseware/views/views.py:2286
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1009
+#: lms/templates/static_templates/honor.html:5
+#: lms/templates/static_templates/honor.html:10
+#: themes/stanford-style/lms/templates/footer.html:20
+#: themes/stanford-style/lms/templates/static_templates/tos.html:19
+msgid "Honor Code"
+msgstr "Κώδικας τιμής"
+
+#: common/djangoapps/course_modes/views.py:268
+msgid "Enrollment is closed"
+msgstr "Οι εγγραφές έχουν λήξει"
+
+#: common/djangoapps/student/admin.py:319
+#, python-format
+msgid "Successfully reverted %(count)d selected history entry."
+msgid_plural "Successfully reverted %(count)d selected history entries."
+msgstr[0] "Επιτυχής επαναφορά %(count)d επιλεγμένης καταχώρησης ιστορικού."
+msgstr[1] "Επιτυχής επαναφορά %(count)d επιλεγμένων καταχωρήσεων ιστορικού."
+
+#: common/djangoapps/student/admin.py:349
+#, python-format
+msgid "Successfully deleted %(count)d selected history entry."
+msgid_plural "Successfully deleted %(count)d selected history entries."
+msgstr[0] ""
+"Διαγράφηκε με επιτυχία η επιλεγμένη καταχώρηση ιστορικού %(count)d."
+msgstr[1] "Διαγράφηκαν επιτυχώς %(count)d επιλεγμένες καταχωρήσεις ιστορικού."
+
+#: common/djangoapps/student/admin.py:520
+msgid "User profile"
+msgstr "Προσωπική σελίδα χρήστη"
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This label appears above a field on the login form
+#. meant to hold the user's password.
+#. Translators: This label appears above a field on the registration form
+#. meant to hold the user's password.
+#: common/djangoapps/student/admin.py:543
+#: openedx/core/djangoapps/user_authn/views/login_form.py:117
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:609
+#: lms/templates/provider_login.html:48 lms/templates/provider_login.html:49
+#: lms/templates/signup_modal.html:44
+#: themes/stanford-style/lms/templates/register-form.html:101
+#: themes/stanford-style/lms/templates/register-form.html:108
+msgid "Password"
+msgstr "Κωδικός"
+
+#: common/djangoapps/student/helpers.py:77
+#: common/djangoapps/student/helpers.py:725
+#, python-brace-format
+msgid "An account with the Email '{email}' already exists."
+msgstr "Υπάρχει ήδη λογαριασμός με το e-mail '{email}'."
+
+#: common/djangoapps/student/helpers.py:78
+#, python-brace-format
+msgid "An account with the Public Username '{username}' already exists."
+msgstr "Υπάρχει ήδη λογαριασμός με το ψευδώνυμο '{username}'."
+
+#: common/djangoapps/student/models/course_enrollment.py:1738
+msgid ""
+"The window of time after enrolling during which users can be granted a "
+"refund, represented in microseconds. The default is 14 days."
+msgstr ""
+"Το χρονικό περιθώριο κατά τη διάρκεια του οποίου οι χρήστες μπορούν να "
+"ζητήσουν επιστροφή χρημάτων μετά την εγγραφή τους, αναπαριστάται σε "
+"μικροδευτερόλεπτα. Ο προεπιλεγμένος χρόνος είναι 14 ημέρες."
+
+#: common/djangoapps/student/models/user.py:463
+msgid "Male"
+msgstr "Άνδρας"
+
+#: common/djangoapps/student/models/user.py:464
+msgid "Female"
+msgstr "Γυναίκα"
+
+#. Translators: 'Other' refers to the student's level of education
+#: common/djangoapps/student/models/user.py:487
+msgid "Other education"
+msgstr "Άλλο"
+
+#: common/djangoapps/student/models/user.py:1364
+#, python-brace-format
+msgid "{platform_name} Honor Code Certificate for {course_name}"
+msgstr "Βεβαίωση {platform_name} με Κώδικα τιμής για το μάθημα {course_name}"
+
+#: common/djangoapps/student/models/user.py:1366
+#: common/djangoapps/student/models/user.py:1367
+#, python-brace-format
+msgid "{platform_name} Professional Certificate for {course_name}"
+msgstr "Επαγγελματική πιστοποίηση {platform_name} για το μάθημα {course_name}"
+
+#: common/djangoapps/student/models/user.py:1429
+#, python-brace-format
+msgid "{platform_name} Certificate for {course_name}"
+msgstr "Βεβαίωση {platform_name} για το μάθημα {course_name}"
+
+#: common/djangoapps/student/views/dashboard.py:607
+#, python-brace-format
+msgid ""
+"Check your {email_start}{email}{email_end} inbox for an account activation "
+"link from {platform_name}. If you need help, contact "
+"{link_start}{platform_name} Support{link_end}."
+msgstr ""
+"Ελέγξτε το email {email_start}{email}{email_end} για το σύνδεσμο "
+"ενεργοποίησης του λογαριασμού σας στο {platform_name}. Αν χρειαστείτε "
+"βοήθεια, επικοινωνήστε με {link_start}το Τμήμα Τεχνικής Υποστήριξης του "
+"{platform_name}{link_end}."
+
+#: common/djangoapps/student/views/management.py:458
+msgid "Your certificate prevents you from unenrolling from this course"
+msgstr ""
+"Δεν μπορείτε να διαγραφείτε από το συγκεκριμένο μάθημα, καθώς σε αυτό "
+"βρίσκεται αναρτημένη η βεβαίωση που έχετε αποκτήσει"
+
+#: common/djangoapps/student/views/management.py:512
+msgid "Please enter a username"
+msgstr "Παρακαλούμε εισάγετε ένα ψευδώνυμο"
+
+#: common/djangoapps/student/views/management.py:731
+#: common/djangoapps/student/views/management.py:746
+msgid "Valid e-mail address required."
+msgstr "Απαιτείται έγκυρο e-mail."
+
+#: common/djangoapps/student/views/management.py:734
+#: common/djangoapps/student/views/management.py:751
+msgid "Old email is the same as the new email."
+msgstr "Η παλιά διεύθυνση είναι ίδια με τη νέα διεύθυνση e-mail."
+
+#: common/djangoapps/student/views/management.py:825
+msgid "Unable to send email activation link. Please try again later."
+msgstr ""
+"Η αποστολή email ενεργοποίησης κατέστη αδύνατη. Παρακαλούμε προσπαθήστε ξανά"
+" αργότερα."
+
+#: common/djangoapps/third_party_auth/templates/third_party_auth/post_custom_auth_entry.html:5
+#: lms/templates/student_account/finish_auth.html:16
+msgid "Please wait"
+msgstr "Παρακαλούμε περιμένετε"
+
+#. Translators: this is an abbreviated month name that will be used when
+#. displaying dates, as in "Aug 10, 2014". It is used for the %b
+#. directive in date-time formats. See http://strftime.org for details.
+#: common/djangoapps/util/date_utils.py:364
+msgctxt "abbreviated month name"
+msgid "Aug"
+msgstr "Αυγ"
+
+#. Translators: this is a month name that will be used when displaying
+#. dates, as in "April 10, 2014". It is used for the %B directive in
+#. date-time formats. See http://strftime.org for details.
+#: common/djangoapps/util/date_utils.py:399
+msgctxt "month name"
+msgid "April"
+msgstr "Απρίλιος"
+
+#: common/djangoapps/util/password_policy_validators.py:68
+#, python-brace-format
+msgid ""
+"Your password must contain {length_instruction}, including "
+"{complexity_instructions}."
+msgstr ""
+"Ο κωδικός σας πρέπει να περιέχει {length_instruction}, συμπεριλαμβανομένων "
+"των {complexity_instructions}."
+
+#: common/djangoapps/util/password_policy_validators.py:73
+#, python-brace-format
+msgid "Your password must contain {length_instruction}."
+msgstr "Ο κωδικός σας πρέπει να περιέχει {length_instruction}."
+
+#: common/djangoapps/util/password_policy_validators.py:101
+msgid "Invalid password."
+msgstr "Μη έγκυρος κωδικός"
+
+#. #-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#
+#. Translators: this is a control to allow users to exit out of this modal
+#. interface (a menu or piece of UI that takes the full focus of the screen)
+#: common/templates/admin/student/loginfailures/change_form_template.html:13
+#: common/templates/admin/student/loginfailures/change_form_template.html:29
+#: lms/templates/wiki/edit.html:47 lms/templates/wiki/history.html:203
+#: lms/templates/wiki/history.html:234
+#: lms/templates/wiki/includes/cheatsheet.html:5
+#: lms/templates/ccx/schedule.html:44 lms/templates/dashboard.html:346
+#: lms/templates/dashboard.html:377
+#: lms/templates/dashboard/_dashboard_entitlement_unenrollment_modal.html:13
+#: lms/templates/forgot_password_modal.html:16
+#: lms/templates/instructor/instructor_dashboard_2/add_coupon_modal.html:13
+#: lms/templates/instructor/instructor_dashboard_2/edit_coupon_modal.html:13
+#: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:13
+#: lms/templates/instructor/instructor_dashboard_2/invalidate_registration_code_modal.html:11
+#: lms/templates/instructor/instructor_dashboard_2/set_course_mode_price_modal.html:13
+#: lms/templates/modal/_modal-settings-language.html:15
+#: lms/templates/signup_modal.html:20
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: common/templates/student/edx_ace/accountactivation/email/body.html:23
+msgid "Account activation"
+msgstr "Ενεργοποίηση λογαριασμού"
+
+#: common/templates/student/edx_ace/accountactivation/email/body.html:33
+msgid "Activate your account"
+msgstr "Ενεργοποιήστε τον λογαριασμό σας"
+
+#: common/templates/student/edx_ace/accountactivation/email/body.html:42
+#: common/templates/student/edx_ace/accountactivation/email/body.txt:6
+#, python-format
+msgid "Enjoy learning with %(platform_name)s."
+msgstr "Ξεκινήστε ένα ταξίδι γνώσης στο %(platform_name)s."
+
+#: common/templates/student/edx_ace/accountactivation/email/body.html:50
+#, python-format, python-brace-format
+msgid ""
+"If you need help, please use our web form at "
+"{start_anchor_web}%(support_url)s{end_anchor} or email "
+"{start_anchor_email}%(support_email)s{end_anchor}."
+msgstr ""
+"Αν χρειαστείτε βοήθεια, παρακαλούμε {start_anchor_web} "
+"%(support_url)s{end_anchor} στείλτε μας μήνυμα στο "
+"{start_anchor_email}%(support_email)s{end_anchor}."
+
+#: common/templates/student/edx_ace/accountactivation/email/subject.txt:3
+#, python-format
+msgid "Action Required: Activate your %(platform_name)s account"
+msgstr ""
+"Απαιτούμενη Ενέργεια: Ενεργοποιήστε τον λογαριασμό σας στο %(platform_name)s"
+
+#: common/templates/student/edx_ace/accountrecovery/email/body.html:10
+#: common/templates/student/edx_ace/accountrecovery/email/body.html:39
+msgid "Create Password"
+msgstr "Δημιουργία κωδικού"
+
+#: common/templates/student/edx_ace/accountrecovery/email/body.html:14
+#: common/templates/student/edx_ace/accountrecovery/email/body.txt:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because you requested to create a password for "
+"your user account at %(platform_name)s."
+msgstr ""
+"Έχετε λάβει αυτό το μήνυμα επειδή ζητήσατε τη δημιουργία κωδικού για το "
+"λογαριασμό σας στο %(platform_name)s"
+
+#: common/templates/student/edx_ace/accountrecovery/email/body.html:28
+#: common/templates/student/edx_ace/accountrecovery/email/body.txt:6
+#, python-format
+msgid ""
+"Once you've created a password [below], you will be able to log in to "
+"%(platform_name)s with this email (%(email)s) and your new password."
+msgstr ""
+"Μόλις δημιουργήσετε το νέο σας κωδικό [δείτε παρακάτω], θα μπορέσετε να "
+"συνδεθείτε με το %(platform_name)s με την ηλεκτρονική διεύθυνση (%(email)s) "
+"και το νέο σας κωδικό."
+
+#: common/templates/student/edx_ace/accountrecovery/email/body.html:34
+#: common/templates/student/edx_ace/accountrecovery/email/body.txt:8
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordreset/email/body.html:33
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordreset/email/body.txt:13
+msgid ""
+"If you didn't request this change, you can disregard this email - we have "
+"not yet reset your password."
+msgstr ""
+"Αν δε ζητήσατε αυτή την αλλαγή απλώς αγνοήστε τούτο το email. Δεν έχουμε "
+"προχωρήσει σε αλλαγή του κωδικού σας."
+
+#: common/templates/student/edx_ace/accountrecovery/email/body.txt:12
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordreset/email/body.txt:15
+msgid "Thanks for using our site!"
+msgstr "Ευχαριστούμε"
+
+#: common/templates/student/edx_ace/accountrecovery/email/body.txt:13
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordreset/email/body.txt:17
+#, python-format
+msgid "The %(platform_name)s Team"
+msgstr "Η ομάδα του %(platform_name)s"
+
+#: common/templates/student/edx_ace/emailchange/email/body.html:10
+msgid "Email Change"
+msgstr "Αλλαγή Email"
+
+#: common/templates/student/edx_ace/emailchange/email/body.html:14
+#: common/templates/student/edx_ace/emailchange/email/body.txt:2
+#, python-format
+msgid ""
+"We received a request to change the e-mail associated with your "
+"%(platform_name)s account from %(old_email)s to %(new_email)s. If this is "
+"correct, please confirm your new e-mail address by visiting:"
+msgstr ""
+"Λάβαμε αίτημα αλλαγής του e-mail που συνδέεται με το λογαριασμό σας στο "
+"%(platform_name)s από %(old_email)s σε %(new_email)s. Αν το αίτημά σας "
+"ισχύει, παρακαλούμε επιβεβαιώστε το νέο σας e-mail, κάνοντας κλικ στο "
+"παρακάτω κουμπί:"
+
+#: common/templates/student/edx_ace/emailchange/email/body.html:20
+msgid "Confirm Email Change"
+msgstr "Επιβεβαίωση Αλλαγής Email"
+
+#: common/templates/student/edx_ace/emailchangeconfirmation/email/body.html:11
+#: common/templates/student/edx_ace/emailchangeconfirmation/email/subject.txt:3
+#, python-format
+msgid "Email Change Confirmation for %(platform_name)s"
+msgstr "Επιβεβαίωση της αλλαγής Εmail για το %(platform_name)s"
+
+#: lms/djangoapps/branding/api.py:317 lms/djangoapps/branding/api.py:391
+#: lms/djangoapps/certificates/views/webview.py:187
+msgid "Terms of Service & Honor Code"
+msgstr "Όροι χρήσης και Κώδικας τιμής"
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This is a legal document users must agree to
+#. in order to register a new account.
+#: lms/djangoapps/branding/api.py:328 lms/djangoapps/branding/api.py:403
+#: openedx/core/djangoapps/user_authn/api/form_fields.py:331
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1082
+#: cms/templates/widgets/footer.html:25
+#: lms/templates/static_templates/tos.html:5
+#: lms/templates/static_templates/tos.html:10
+#: themes/red-theme/lms/templates/footer.html:97
+#: themes/stanford-style/lms/templates/footer.html:18
+#: themes/stanford-style/lms/templates/static_templates/tos.html:8
+#: themes/stanford-style/lms/templates/static_templates/tos.html:11
+msgid "Terms of Service"
+msgstr "Όροι χρήσης"
+
+#. Translators:  This text is bound to the HTML 'title' element of the page
+#. and appears in the browser title bar
+#: lms/djangoapps/certificates/views/webview.py:136
+#, python-brace-format
+msgid "{partner_short_name} {course_number} Certificate | {platform_name}"
+msgstr "{partner_short_name} {course_number} Βεβαίωση |  {platform_name}"
+
+#. Translators:  'All rights reserved' is a legal term used in copyrighting to
+#. protect published content
+#: lms/djangoapps/certificates/views/webview.py:176
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:176
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:231
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:50
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:176
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:174
+msgid "All rights reserved"
+msgstr "Με την επιφύλαξη κάθε νόμιμου δικαιώματος"
+
+#: lms/djangoapps/certificates/views/webview.py:227
+#, python-brace-format
+msgid "About {platform_name}"
+msgstr "Σχετικά με το {platform_name}"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:47
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/head.html:24
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:82
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:47
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/head.html:24
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:67
+#, python-format
+msgid "Go to %(platform_name)s Home Page"
+msgstr "Πηγαίνετε στην Αρχική Σελίδα του %(platform_name)s"
+
+#. Translators: 'absolute' is a date such as "Jan 01,
+#. 2020". 'relative' is a fuzzy description of the time until
+#. 'absolute'. For example, 'absolute' might be "Jan 01, 2020",
+#. and if today were December 5th, 2020, 'relative' would be "1
+#. month".
+#: lms/djangoapps/courseware/date_summary.py:132
+#, python-brace-format
+msgid "{relative} ago - {absolute}"
+msgstr "πριν {relative} - {absolute}"
+
+#: lms/djangoapps/courseware/date_summary.py:132
+#, python-brace-format
+msgid "in {relative} - {absolute}"
+msgstr "σε  {relative} - {absolute}"
+
+#: lms/djangoapps/courseware/date_summary.py:273
+msgid "Course starts"
+msgstr "Έναρξη του μαθήματος"
+
+#: lms/djangoapps/courseware/date_summary.py:281
+msgid "Course ends"
+msgstr "Λήξη του μαθήματος"
+
+#: lms/djangoapps/courseware/date_summary.py:298
+msgid ""
+"After this date, the course will be archived, which means you can review the"
+" course content but can no longer participate in graded assignments or work "
+"towards earning a certificate."
+msgstr ""
+"Μετά από αυτήν την ημερομηνία, το μάθημα θα μπει σε καθεστώς αυτομελέτης, "
+"που σημαίνει ότι θα μπορείτε να δείτε το περιεχόμενο του μαθήματος, αλλά δε "
+"θα μπορείτε πλέον να υποβάλετε τα τεστ και την τελική εξέταση για την "
+"απόκτηση της βεβαίωσης παρακολούθησης."
+
+#: lms/djangoapps/courseware/date_summary.py:304
+msgid ""
+"This course is archived, which means you can review course content but it is"
+" no longer active."
+msgstr ""
+"Το μάθημα αυτό είναι σε καθεστώς αυτομελέτης. Μπορείτε να δείτε το υλικό "
+"μαθήματος, το μάθημα όμως δεν είναι πλέον ενεργό και δεν έχετε πρόσβαση σε "
+"βαθμολογούμενα τεστ και εργασίες."
+
+#: lms/djangoapps/courseware/tabs.py:36
+#: lms/djangoapps/courseware/views/views.py:2239
+#: openedx/features/course_experience/__init__.py:91 xmodule/tabs.py:490
+#: cms/templates/widgets/header.html:89 cms/templates/widgets/header.html:93
+#: cms/templates/widgets/header.html:164 cms/templates/widgets/header.html:292
+#: lms/templates/courseware/course_navigation.html:49
+#: lms/templates/ux/reference/bootstrap/course-skeleton.html:21
+msgid "Course"
+msgstr "Υλικό Μαθήματος"
+
+#: lms/djangoapps/courseware/tabs.py:307
+msgid "Dates"
+msgstr "Ημερομηνίες"
+
+#: lms/djangoapps/courseware/views/views.py:574
+#, python-brace-format
+msgid "To see course content, {sign_in_link} or {register_link}."
+msgstr ""
+"Για να δείτε το περιεχόμενο του μαθήματος, {sign_in_link} ή {register_link}."
+
+#: lms/djangoapps/courseware/views/views.py:580
+#: lms/djangoapps/courseware/views/views.py:595
+#: xmodule/discussion_block.py:191
+msgid "register"
+msgstr "εγγραφείτε"
+
+#: lms/djangoapps/courseware/views/views.py:618
+msgid "You must be enrolled in the course to see course content."
+msgstr "Για να δείτε το μάθημα θα πρέπει να εγγραφείτε σε αυτό. "
+
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:558
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:623
+msgid "Title can't be empty"
+msgstr "Συμπληρώστε το πεδίο \"Τίτλος\""
+
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:560
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:625
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:667
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:750
+msgid "Body can't be empty"
+msgstr "Συμπληρώστε την ερώτηση ή το σχόλιό σας"
+
+#: lms/djangoapps/discussion/templates/discussion/edx_ace/responsenotification/email/body.html:24
+#: lms/djangoapps/discussion/templates/discussion/edx_ace/responsenotification/email/body.txt:16
+msgid "View discussion"
+msgstr "Δείτε τη συζήτηση"
+
+#: lms/djangoapps/instructor/views/api.py:155
+#, python-brace-format
+msgid ""
+"The {report_type} report is being created. To view the status of the report,"
+" see Pending Tasks below."
+msgstr ""
+"Η αναφορά {report_type} δημιουργείται. Για να δείτε την κατάσταση της "
+"αναφοράς, ανατρέξτε στην ενότητα 'Εκκρεμείς διεργασίες' παρακάτω."
+
+#: lms/djangoapps/instructor/views/api.py:444
+#, python-brace-format
+msgid ""
+"Cohort name not found: {cohort}. Ignoring cohort assignment for all users."
+msgstr ""
+"Το όνομα κοόρτης δε βρέθηκε: {cohort}. Παράβλεψη ανάθεσης κοόρτης για όλους "
+"τους χρήστες."
+
+#: lms/djangoapps/instructor/views/api.py:485
+#: lms/djangoapps/instructor/views/api.py:547
+#: lms/djangoapps/instructor/views/api.py:582
+#, python-brace-format
+msgid "Invalid email {email_address}."
+msgstr "Το e-mail  {email_address} δεν είναι έγκυρο."
+
+#: lms/djangoapps/instructor/views/api.py:1504
+#: lms/djangoapps/instructor/views/tools.py:221
+#: lms/djangoapps/instructor/views/tools.py:226
+#: openedx/core/djangoapps/schedules/admin.py:148
+#: lms/templates/api_admin/catalogs/search.html:21
+#: lms/templates/ccx/enrollment.html:83
+#: lms/templates/staff_problem_info.html:68
+msgid "Username"
+msgstr "Ψευδώνυμο"
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This label appears above a field on the login form
+#. meant to hold the user's email address.
+#. Translators: This label appears above a field on the password reset
+#. form meant to hold the user's email address.
+#. Translators: This label appears above a field on the registration form
+#. meant to hold the user's email address.
+#: lms/djangoapps/instructor/views/api.py:1506
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:717
+#: openedx/core/djangoapps/user_authn/views/login_form.py:96
+#: openedx/core/djangoapps/user_authn/views/password_reset.py:90
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:506
+#: lms/templates/ccx/enrollment.html:84
+#: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:53
+#: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:66
+msgid "Email"
+msgstr "Email"
+
+#: lms/djangoapps/instructor/views/api.py:1507
+msgid "Language"
+msgstr "Γλώσσα"
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This label appears above a dropdown menu used to select
+#. the user's gender.
+#. Translators: This label appears above a dropdown menu on the registration
+#. form used to select the user's gender.
+#: lms/djangoapps/instructor/views/api.py:1510
+#: openedx/core/djangoapps/user_authn/api/form_fields.py:117
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:659
+#: lms/templates/signup_modal.html:94
+#: themes/stanford-style/lms/templates/register-form.html:193
+msgid "Gender"
+msgstr "Φύλο"
+
+#: lms/djangoapps/instructor/views/api.py:2253
+#, python-brace-format
+msgid ""
+"User {user_id} does not have permission to override scores for problem "
+"{problem_to_reset}."
+msgstr ""
+"Ο χρήστης {user_id} δεν έχει άδεια να παρακάμψει τις βαθμολογίες για το "
+"πρόβλημα {problem_to_reset}."
+
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:78
+msgid "Instructor"
+msgstr "Διδάσκων"
+
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:157
+#, python-brace-format
+msgid ""
+"To gain insights into student enrollment and participation {link_start}visit"
+" {analytics_dashboard_name}, our new course analytics product{link_end}."
+msgstr ""
+"Για να έχετε μια εικόνα των εγγραφών και της συμμετοχής των σπουδαστών "
+"{link_start}επισκεφθείτε{analytics_dashboard_name}, τη σελίδα Στατιστικά "
+"Στοιχεία{link_end}."
+
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:449
+msgid "Course Info"
+msgstr "Πληροφορίες για το μάθημα"
+
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:551
+#: lms/djangoapps/discussion/templates/discussion/discussion_board_fragment.html:29
+msgid "Discussions"
+msgstr "Συζητήσεις"
+
+#: lms/djangoapps/instructor/views/instructor_task_helpers.py:140
+msgid "Incomplete"
+msgstr "Ανολοκλήρωτο"
+
+#: lms/djangoapps/instructor/views/serializer.py:496
+msgid "Whether to reset for all students."
+msgstr "Εάν θα γίνει επαναφορά για όλους τους μαθητές."
+
+#: lms/djangoapps/instructor/views/serializer.py:501
+msgid "Whether to delete entrance exam state for the student."
+msgstr ""
+"Εάν θα διαγραφεί η κατάσταση των εισαγωγικών εξετάσεων για τον μαθητή."
+
+#: lms/djangoapps/instructor/views/serializer.py:543
+msgid ""
+"You must provide either unique_student_identifier or set all_students to "
+"True."
+msgstr ""
+"Πρέπει να παρέχετε είτε το μοναδικό_αναγνωριστικό_μαθητή είτε να ορίσετε το "
+"όλοι_οι_μαθητές σε Αληθές."
+
+#: lms/djangoapps/instructor/views/serializer.py:565
+msgid "The URL name of the problem to override the score for."
+msgstr ""
+"Το όνομα URL του προβλήματος για το οποίο θα παρακαμφθεί η βαθμολογία."
+
+#: lms/djangoapps/instructor/views/serializer.py:571
+msgid "The overriding score to set."
+msgstr "Η υπερισχύουσα βαθμολογία που πρέπει να οριστεί."
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This label appears above a field on the registration form
+#. meant to hold the user's full name.
+#: lms/djangoapps/instructor/views/tools.py:221
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:556
+#: lms/templates/signup_modal.html:50
+#: themes/stanford-style/lms/templates/register-form.html:88
+#: themes/stanford-style/lms/templates/register-form.html:142
+#: themes/stanford-style/lms/templates/register-shib.html:144
+msgid "Full Name"
+msgstr "Ονοματεπώνυμο"
+
+#: lms/djangoapps/instructor/views/tools.py:221
+#: lms/djangoapps/instructor/views/tools.py:241
+msgid "Extended Due Date"
+msgstr "Παράταση της προθεσμίας υποβολής"
+
+#: lms/djangoapps/instructor_task/api_helper.py:123
+#, python-brace-format
+msgid ""
+"The {report_type} report is being created. To view the status of the report,"
+" see Pending Tasks below. You will be able to download the report when it is"
+" complete."
+msgstr ""
+"Η αναφορά {report_type} δημιουργείται. Για να δείτε την κατάσταση της "
+"αναφοράς, ανατρέξτε στην ενότητα 'Εκκρεμείς διεργασίες' παρακάτω. Θα "
+"μπορείτε να κάνετε λήψη της αναφοράς, όταν ολοκληρωθεί."
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This is a past-tense verb that is inserted into task progress
+#. messages as {action}.
+#: lms/djangoapps/instructor_task/tasks.py:143
+#: lms/templates/wiki/plugins/attachments/index.html:74
+#: wiki/models/article.py:257
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/history.html:22
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:20
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html:39
+#: wiki/templates/wiki/includes/revision_info.html:15
+msgid "deleted"
+msgstr "διαγράφηκε"
+
+#. Translators: {total} is a count.  This message is appended to task progress
+#. status messages.
+#: lms/djangoapps/instructor_task/views.py:221
+#, python-brace-format
+msgid " (out of {total})"
+msgstr "(από {total} συνολικά)"
+
+#: lms/djangoapps/lti_provider/models.py:44
+msgid ""
+"When checked, the platform will automatically use any personal information "
+"provided via LTI to create an account. Otherwise an anonymous account will "
+"be created."
+msgstr ""
+"Όταν είναι επιλεγμένο, η πλατφόρμα θα χρησιμοποιεί αυτόματα οποιαδήποτε "
+"προσωπική πληροφορία παρέχεται μέσω LTI για τη δημιουργία λογαριασμού. "
+"Διαφορετικά, θα δημιουργηθεί ένας ανώνυμος λογαριασμός."
+
+#: lms/djangoapps/support/views/index.py:20
+#: lms/templates/ccx/coach_dashboard.html:60
+#: lms/templates/ccx/enrollment.html:8
+#: lms/templates/support/enrollment.html:22
+msgid "Enrollment"
+msgstr "Εγγραφή"
+
+#: lms/templates/admin/user_api/accounts/cancel_retirement_action.html:38
+#: xmodule/capa_block.py:1024 cms/templates/index.html:219
+#: cms/templates/videos_index_pagination.html:14
+#: lms/templates/dashboard/_entitlement_reason_survey.html:134
+#: lms/templates/dashboard/_reason_survey.html:20
+#: lms/templates/manage_user_standing.html:38
+#: lms/templates/peer_grading/peer_grading_problem.html:58
+#: lms/templates/survey/survey.html:49
+#: lms/templates/widgets/footer-language-selector.html:38
+#: openedx/core/djangoapps/dark_lang/templates/dark_lang/preview-language-fragment.html:32
+#: openedx/core/djangoapps/theming/templates/theming/theming-admin-fragment.html:40
+#: themes/stanford-style/lms/templates/register-shib.html:190
+msgid "Submit"
+msgstr "Υποβολή"
+
+#: lms/templates/instructor/edx_ace/accountcreationandenrollment/email/body.html:33
+#: lms/templates/instructor/edx_ace/accountcreationandenrollment/email/body.txt:6
+#, python-format
+msgid "password: %(password)s"
+msgstr "κωδικός:%(password)s"
+
+#: lms/templates/instructor/edx_ace/accountcreationandenrollment/email/body.html:40
+#: lms/templates/instructor/edx_ace/accountcreationandenrollment/email/body.txt:9
+msgid "It is recommended that you change your password."
+msgstr "Θα σας συνιστούσαμε να αλλάξετε τον κωδικό σας."
+
+#: lms/templates/instructor/edx_ace/accountcreationandenrollment/email/body.txt:11
+#, python-format
+msgid "You may access your course at: %(course_url)s."
+msgstr "Μπορείτε να εισέλθετε στο μάθημά σας στη διεύθυνση: %(course_url)s."
+
+#: lms/templates/logout.html:9 lms/templates/logout.html:36
+msgid "You have signed out."
+msgstr "Έχετε αποσυνδεθεί."
+
+#: lms/templates/wiki/delete.html:39 wiki/templates/wiki/delete.html:38
+msgid "You are deleting an article. Please confirm."
+msgstr ""
+"Με αυτή σας την ενέργεια πρόκειται να διαγράψετε ένα άρθρο. Παρακαλούμε "
+"επιβεβαιώστε ότι θέλετε να προχωρήσετε σε αυτήν."
+
+#: lms/templates/wiki/edit.html:4 wiki/templates/wiki/edit.html:4
+#: wiki/templates/wiki/includes/article_menu.html:34
+#: cms/templates/component.html:13 cms/templates/container.html:201
+#: cms/templates/studio_xblock_wrapper.html:169
+#: lms/templates/wiki/includes/article_menu.html:22
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: lms/templates/wiki/edit.html:36 wiki/templates/wiki/edit.html:31
+#: cms/templates/container.html:194
+msgid "Preview"
+msgstr "Προεπισκόπηση"
+
+#: lms/templates/wiki/plugins/attachments/index.html:13
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:83
+msgid "Upload new file"
+msgstr "Μεταφόρτωση νέου αρχείου"
+
+#: lms/templates/wiki/plugins/attachments/index.html:16
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:106
+msgid "Search and add file"
+msgstr "Αναζήτηση και προσθήκη αρχείου"
+
+#: lms/templates/wiki/plugins/attachments/index.html:22
+msgid "Upload File"
+msgstr "Μεταφόρτωση Αρχείου"
+
+#: lms/templates/wiki/plugins/attachments/index.html:26
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:95
+msgid "Upload file"
+msgstr "Μεταφόρτωση Αρχείου"
+
+#: lms/templates/wiki/plugins/attachments/index.html:34
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html:14
+msgid "Search files and articles"
+msgstr "Αναζήτηση αρχείων και άρθρων"
+
+#: lms/templates/wiki/plugins/attachments/index.html:39
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:117
+#: lms/templates/api_admin/catalogs/search.html:23
+#: lms/templates/courseware/courses.html:44 lms/templates/dashboard.html:286
+#: lms/templates/edxnotes/edxnotes.html:39 lms/templates/index.html:30
+#: lms/templates/ux/reference/bootstrap/course-skeleton.html:47
+#: themes/stanford-style/lms/templates/index.html:26
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: lms/templates/wiki/plugins/attachments/index.html:97
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:33
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/replace.html:4
+#: wiki/plugins/attachments/templates/wiki/plugins/attachments/replace.html:8
+#: wiki/plugins/images/templates/wiki/plugins/images/sidebar.html:31
+msgid "Replace"
+msgstr "Αντικατάσταση"
+
+#: openedx/core/djangoapps/bookmarks/views.py:39
+msgid "An error has occurred. Please try again."
+msgstr "Προέκυψε σφάλμα. Παρακαλούμε δοκιμάστε ξανά."
+
+#: openedx/core/djangoapps/bookmarks/views.py:241
+#, python-brace-format
+msgid ""
+"You can create up to {max_num_bookmarks_per_course} bookmarks. You must "
+"remove some bookmarks before you can add new ones."
+msgstr ""
+"Μπορείτε να δημιουργήσετε έως  {max_num_bookmarks_per_course}  "
+"σελιδοδείκτες. Θα χρειαστεί να αφαιρέσετε κάποιους σελιδοδείκτες προτού "
+"προσθέσετε νέους. "
+
+#: openedx/core/djangoapps/credit/models.py:121
+msgid ""
+"Plain text or html content for displaying custom message inside credit "
+"eligibility email content which is sent when user has met all credit "
+"eligibility requirements."
+msgstr ""
+"Περιεχόμενο απλού κειμένου ή html για εμφάνιση προσαρμοσμένου μηνύματος "
+"εντός περιεχομένου email επιλεξιμότητας αναγνώρισης, το οποίο αποστέλλεται "
+"όταν ο χρήστης πληροί όλες τις απαιτήσεις καταλληλότητας αναγνώρισης."
+
+#: openedx/core/djangoapps/django_comment_common/models.py:28
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:284
+msgid "Community TA"
+msgstr "ΔΙΔΑΚΤΙΚΟ ΠΡΟΣΩΠΙΚΟ"
+
+#: openedx/core/djangoapps/django_comment_common/models.py:29
+msgid "Student"
+msgstr "Σπουδαστής"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:50
+#: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:27
+#: wiki/templates/wiki/includes/article_menu.html:49
+#: lms/templates/wiki/includes/article_menu.html:13
+msgid "View"
+msgstr "Προβολή"
+
+#: openedx/core/djangoapps/password_policy/compliance.py:76
+#, python-brace-format
+msgid ""
+"{strong_tag_open}We recently changed our password "
+"requirements{strong_tag_close}{break_line_tag}Your current password does not"
+" meet the new security requirements. We just sent a password-reset message "
+"to the email address associated with this account. Thank you for helping us "
+"keep your data safe."
+msgstr ""
+"{strong_tag_open}Πρόσφατα τροποποιήσαμε τις προδιαγραφές για τη δημιουργία "
+"κωδικού σύνδεσης{strong_tag_close}{break_line_tag}Ο κωδικός που "
+"χρησιμοποιείτε αυτή τη στιγμή δεν ικανοποιεί τις νέες προδιαγραφές "
+"ασφαλείας. Σας έχουμε αποστείλει μήνυμα στο email σας για τον επανακαθορισμό"
+" του κωδικού που συνδέεται με αυτό τον λογαριασμό. Σας ευχαριστούμε που "
+"συνεισφέρετε στην προσπάθειά μας για τη διασφάλιση των δεδομένων σας. "
+
+#: openedx/core/djangoapps/schedules/admin.py:81
+msgid "Course Id"
+msgstr "Ταυτότητα μαθήματος"
+
+#: openedx/core/djangoapps/schedules/admin.py:159
+#: lms/templates/instructor/instructor_dashboard_2/add_coupon_modal.html:51
+#: lms/templates/instructor/instructor_dashboard_2/edit_coupon_modal.html:47
+#: lms/templates/support/feature_based_enrollments.html:31
+msgid "Course ID"
+msgstr "Ταυτότητα μαθήματος"
+
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:43
+msgid ""
+"Usernames can only contain letters (A-Z, a-z), numerals (0-9), underscores "
+"(_), and hyphens (-)."
+msgstr ""
+"Το ψευδώνυμο μπορεί να περιλαμβάνει λατινικούς χαρακτήρες (κεφαλαία ή μικρά "
+"γράμματα), αριθμούς (0-9), κάτω παύλες (_) και παύλες (-)"
+
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:50
+msgid ""
+"Usernames can only contain letters, numerals, and @/./+/-/_ characters."
+msgstr ""
+"Το ψευδώνυμο μπορεί να περιλαμβάνει γράμματα, αριθμούς και τους χαρακτήρες "
+"@/,/+/-/_"
+
+#. Translators: This message is shown to users who attempt to create a new
+#. account using
+#. an invalid email format.
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:55
+msgid "Enter a valid email address"
+msgstr "Εισάγετε μια έγκυρη διεύθυνση email."
+
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:60
+#, python-brace-format
+msgid ""
+"It looks like {email_address} belongs to an existing account. Try again with"
+" a different email address."
+msgstr ""
+"Φαίνεται ότι το e-mail {email_address} χρησιμοποιείται ήδη. Προσπαθήστε ξανά"
+" με διαφορετικό e-mail."
+
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:64
+msgid "This email is already associated with an existing account"
+msgstr "Αυτό το email χρησιμοποιείται ήδη."
+
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:72
+#, python-brace-format
+msgid ""
+"It looks like {username} belongs to an existing account. Try again with a "
+"different username."
+msgstr ""
+"Φαίνεται ότι το ψευδώνυμο {username} χρησιμοποιείται ήδη. Προσπαθήστε ξανά "
+"με διαφορετικό ψευδώνυμο."
+
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:80
+#, python-brace-format
+msgid "Username must be between {min} and {max} characters long."
+msgstr "Το όνομα χρήστη πρέπει να έχει από {min} έως {max} χαρακτήρες."
+
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:85
+#, python-brace-format
+msgid "Enter a valid email address that contains at least {min} characters."
+msgstr "Το email που εισάγετε θα πρέπει να έχει τουλάχιστον {min} χαρακτήρες."
+
+#: openedx/core/djangoapps/user_api/accounts/__init__.py:101
+msgid "Select your country or region of residence"
+msgstr "Επιλέξτε τη χώρα ή την περιοχή διαμονής σας"
+
+#: openedx/core/djangoapps/user_api/accounts/views.py:637
+msgid ""
+"This account has been temporarily locked due to excessive login failures. "
+"Try again later."
+msgstr ""
+"Η πρόσβαση στον λογαριασμό σας έχει προσωρινά απενεργοποιηθεί λόγω πολλαπλών"
+" ανεπιτυχών προσπαθειών σύνδεσης. Παρακαλούμε δοκιμάστε αργότερα. "
+
+#: openedx/core/djangoapps/user_api/accounts/views.py:647
+#: openedx/core/djangoapps/user_authn/views/login.py:311
+#: lms/templates/provider_login.html:43
+msgid "Email or password is incorrect."
+msgstr "Το email ή ο κωδικός σας είναι λάθος."
+
+#: openedx/core/djangoapps/user_api/preferences/api.py:434
+#, python-brace-format
+msgid "Value '{preference_value}' is not a valid time zone selection."
+msgstr "Η τιμή '{preference_value}' δεν αποτελεί έγκυρη επιλογή ζώνης ώρας. ."
+
+#. Translators: This label appears above a dropdown menu used to select
+#. the user's highest completed level of education.
+#. Translators: This label appears above a dropdown menu on the registration
+#. form used to select the user's highest completed level of education.
+#: openedx/core/djangoapps/user_authn/api/form_fields.py:94
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:629
+msgid "Highest level of education completed"
+msgstr "Επίπεδο εκπαίδευσης"
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This label appears above a dropdown menu on the form
+#. used to select the user's year of birth.
+#. Translators: This label appears above a dropdown menu on the registration
+#. form used to select the user's year of birth.
+#: openedx/core/djangoapps/user_authn/api/form_fields.py:136
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:682
+#: lms/templates/signup_modal.html:108
+msgid "Year of birth"
+msgstr "Έτος γέννησης"
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This label appears above a field which allows the
+#. user to input the Title
+#. Translators: This label appears above a field on the registration form
+#. which allows the user to input the Title
+#: openedx/core/djangoapps/user_authn/api/form_fields.py:206
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:899
+#: wiki/forms.py:37 wiki/forms.py:45 wiki/forms.py:206
+#: wiki/templates/wiki/dir.html:54
+msgid "Title"
+msgstr "Τίτλος"
+
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordreset/email/body.html:14
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordreset/email/body.txt:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because you requested a password reset for your"
+" user account at %(platform_name)s."
+msgstr ""
+"Έχετε λάβει αυτό το μήνυμα επειδή ζητήσατε την αλλαγή του κωδικού σας στο "
+"%(platform_name)s"
+
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordreset/email/body.txt:9
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+"Παρακαλούμε κάντε κλικ στον σύνδεσμο που ακολουθεί και στην σελίδα που θα "
+"εμφανιστεί, επιλέξτε ένα νέο κωδικό πρόσβασης:"
+
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordreset/email/subject.txt:3
+#, python-format
+msgid "Password reset on %(platform_name)s"
+msgstr "Αλλαγή του κωδικού σας στο %(platform_name)s"
+
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordresetsuccess/email/body.html:10
+msgid "Password reset success"
+msgstr "Επιτυχής αλλαγή του κωδικού σας"
+
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordresetsuccess/email/body.html:19
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordresetsuccess/email/body.txt:3
+#, python-format
+msgid ""
+"This is to confirm that you have successfully changed your password "
+"associated with %(platform_name)s account. Please sign-in to your account."
+msgstr ""
+"Έχετε λάβει αυτό το email επειδή αλλάξατε επιτυχώς τον κωδικό σας στο "
+"%(platform_name)s. Μπορείτε να συνδεθείτε στον λογαριασμό σας."
+
+#: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordresetsuccess/email/subject.txt:3
+#, python-format
+msgid "Password reset completed on %(platform_name)s"
+msgstr "Επιτυχής αλλαγή κωδικού στο %(platform_name)s"
+
+#: openedx/core/djangoapps/user_authn/views/login.py:102
+#: lms/templates/navigation/navbar-not-authenticated.html:38
+#: themes/stanford-style/lms/templates/register-form.html:272
+msgid "Register"
+msgstr "Εγγραφείτε "
+
+#: openedx/core/djangoapps/user_authn/views/login.py:138
+msgid "There was an error receiving your login information. Please email us."
+msgstr ""
+"Παρουσιάστηκε σφάλμα κατά τη λήψη πληροφοριών που αφορούν το λογαριασμό σας."
+" Παρακαλούμε να μας αποστείλετε email."
+
+#: openedx/core/djangoapps/user_authn/views/login.py:172
+#, python-brace-format
+msgid ""
+"To protect your account, it’s been temporarily locked. Try again in "
+"{locked_out_period} minutes.{li_start}To be on the safe side, you can reset "
+"your password {link_start}here{link_end} before you try again."
+msgstr ""
+"Η πρόσβαση στον λογαριασμό σας έχει προσωρινά απενεργοποιηθεί λόγω πολλαπλών"
+" ανεπιτυχών προσπαθειών σύνδεσης. Δοκιμάστε ξανά σε {locked_out_period} "
+"λεπτά.{li_start} Αν δεν είστε βέβαιοι για τον κωδικό σας μπορείτε να τον "
+"αλλάξετε {link_start}εδώ{link_end} πριν δοκιμάστε εκ νέου μετά το πέρας του "
+"διαστήματος αναμονής."
+
+#: openedx/core/djangoapps/user_authn/views/login.py:285
+#, python-brace-format
+msgid ""
+"Email or password is incorrect.{li_start}You have {remaining_attempts} more "
+"sign-in attempts before your account is temporarily "
+"locked.{li_end}{li_start}If you've forgotten your password, click "
+"{link_start}here{link_end} to reset.{li_end}"
+msgstr ""
+"Το email ή ο κωδικός σας είναι λάθος.{li_start}Έχετε {remaining_attempts} "
+"ακόμη απόπειρες σύνδεσης προτού απενεργοποιηθεί προσωρινά ο λογαριασμός "
+"σας.{li_end}{li_start}Εάν έχετε ξεχάσει τον κωδικό σας, πατήστε "
+"{link_start}εδώ{link_end} για να τον αλλάξετε.{li_end}"
+
+#. Translators: These instructions appear on the login form, immediately
+#. below a field meant to hold the user's email address.
+#. Translators: These instructions appear on the password reset form,
+#. immediately below a field meant to hold the user's email address.
+#. pylint: disable=no-member
+#: openedx/core/djangoapps/user_authn/views/login_form.py:100
+#: openedx/core/djangoapps/user_authn/views/password_reset.py:99
+#, python-brace-format
+msgid "The email address you used to register with {platform_name}"
+msgstr ""
+"Πληκτρολογήστε το e-mail που χρησιμοποιήσατε για να εγγραφείτε στο "
+"{platform_name}"
+
+#. Translators: This example email address is used as a placeholder in
+#. a field on the password reset form meant to hold the user's email address.
+#: openedx/core/djangoapps/user_authn/views/password_reset.py:94
+msgid "username@domain.com"
+msgstr "π.χ.: epimenidis@gmail.com"
+
+#: openedx/core/djangoapps/user_authn/views/password_reset.py:185
+msgid ""
+"The user account associated with this e-mail address cannot reset the "
+"password."
+msgstr ""
+"Δεν επιτρέπεται η αλλαγή κωδικού πρόσβασης για τον λογαριασμό χρήστη που "
+"αντιστοιχεί σε αυτό το e-mail."
+
+#: openedx/core/djangoapps/user_authn/views/password_reset.py:414
+#: openedx/core/djangoapps/user_authn/views/password_reset.py:429
+msgid "Password reset unsuccessful"
+msgstr "Η προσπάθεια αλλαγής του κωδικού σας ήταν ανεπιτυχής"
+
+#: openedx/core/djangoapps/user_authn/views/password_reset.py:415
+msgid "Error in resetting your password."
+msgstr "Σφάλμα κατά τον επανακαθορισμό του κωδικού σας."
+
+#: openedx/core/djangoapps/user_authn/views/password_reset.py:445
+msgid "Error in resetting your password. Please try again."
+msgstr ""
+"Σφάλμα κατά τη διαδικασία αλλαγής του κωδικού σας. Παρακαλούμε προσπαθήστε "
+"ξανά."
+
+#: openedx/core/djangoapps/user_authn/views/password_reset.py:470
+#, python-brace-format
+msgid ""
+"{html_start}Password Creation Complete{html_end}Your password has been "
+"created. {bold_start}{email}{bold_end} is now your primary login email."
+msgstr ""
+"{html_start}Η διαδικασία δημιουργίας του κωδικού σας ολοκληρώθηκε{html_end}Ο"
+" κωδικός σας έχει πλέον δημιουργηθεί. Το email {bold_start}{email}{bold_end}"
+" είναι αυτό που θα χρησιμοποιείτε στο εξής για τη σύνδεσή σας."
+
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:147
+msgid "A properly formatted e-mail is required"
+msgstr "Απαιτείται μία έγκυρη διεύθυνση e-mail"
+
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:161
+#, python-format
+msgid "Email cannot be more than %(limit_value)s characters long"
+msgstr ""
+"Η διεύθυνση e-mail δεν μπορεί να έχει περισσότερους από %(limit_value)s "
+"χαρακτήρες"
+
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:198
+msgid "Your gender is required"
+msgstr "Απαιτείται η συμπλήρωση του φύλου σας"
+
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:199
+msgid "Your year of birth is required"
+msgstr "Απαιτείται η συμπλήρωση του έτους γέννησής σας"
+
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:200
+msgid "Your mailing address is required"
+msgstr "Απαιτείται η ταχυδρομική διεύθυνση"
+
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:211
+msgid "To enroll, you must follow the honor code."
+msgstr "Για να εγγραφείτε, θα πρέπει να αποδεχθείτε τον κώδικα τιμής."
+
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:219
+msgid "You are missing one or more required fields"
+msgstr "Δεν έχουν συμπληρωθεί όλα τα απαιτούμενα πεδία"
+
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:275
+#, python-brace-format
+msgid ""
+"It looks like {email} belongs to an existing account. Try again with a "
+"different email address."
+msgstr ""
+"Φαίνεται ότι η διεύθυνση {email} ανήκει σε έναν ήδη υπάρχοντα λογαριασμό. "
+"Παρακαλούμε προσπαθήστε χρησιμοποιώντας κάποια άλλη διεύθυνση email."
+
+#. Translators: These instructions appear on the registration form,
+#. immediately
+#. below a field meant to hold the user's email address.
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:510
+msgid "This is what you will use to login."
+msgstr "Αυτό το e-mail θα χρησιμοποιείτε για να συνδεθείτε."
+
+#. Translators: These instructions appear on the registration form,
+#. immediately
+#. below a field meant to hold the user's full name.
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:560
+msgid "This name will be used on any certificates that you earn."
+msgstr "Το ονοματεπώνυμο εμφανίζεται στις βεβαιώσεις που τυχόν θα λάβετε."
+
+#. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+#. Translators: This label appears above a field on the registration form
+#. meant to hold the user's public username.
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:581
+#: lms/templates/signup_modal.html:47 lms/templates/signup_modal.html:59
+#: themes/stanford-style/lms/templates/register-form.html:93
+#: themes/stanford-style/lms/templates/register-shib.html:126
+msgid "Public Username"
+msgstr "Ψευδώνυμο"
+
+#. Translators: These instructions appear on the registration form,
+#. immediately
+#. below a field meant to hold the user's public username.
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:586
+msgid ""
+"The name that will identify you in your courses. It cannot be changed later."
+msgstr ""
+"Το όνομα με το οποίο εμφανίζεστε στα μαθήματα. Δεν μπορείτε να το αλλάξετε."
+
+#. Translators: This label appears above a dropdown menu on the registration
+#. form used to select the country in which the user lives.
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:967
+msgid "Country or Region of Residence"
+msgstr "Χώρα Διαμονής"
+
+#. Translators: These instructions appear on the registration form,
+#. immediately
+#. below a field meant to hold the user's country.
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:978
+msgid "The country or region where you live."
+msgstr "Η χώρα στην οποία διαμένετε."
+
+#. Translators: This is a legal document users must agree to
+#. in order to register a new account.
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1016
+msgid "Terms of Service and Honor Code"
+msgstr "Όροι χρήσης και Κώδικας Τιμής"
+
+#. Translators: "Terms of Service" is a legal document users must agree to
+#. in order to register a new account.
+#. Translators: "Terms of service" is a legal document users must agree to
+#. in order to register a new account.
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1034
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1098
+#, python-brace-format
+msgid "You must agree to the {platform_name} {terms_of_service}"
+msgstr "Θα πρέπει να αποδεχθείτε τους {terms_of_service} του {platform_name}"
+
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1045
+#, python-brace-format
+msgid ""
+"By creating an account, you agree to the                   "
+"{terms_of_service_link_start}{terms_of_service}{terms_of_service_link_end}"
+"                   and you acknowledge that {platform_name} and each Member "
+"process your personal data in accordance                   with the "
+"{privacy_policy_link_start}Privacy Policy{privacy_policy_link_end}."
+msgstr ""
+"Δημιουργώντας λογαριασμό, δέχεστε ότι οι "
+"{terms_of_service_link_start}{terms_of_service}{terms_of_service_link_end} "
+"σας βρίσκουν σύμφωνο και αναγνωρίζετε το δικαίωμα του {platform_name} και "
+"των μελών της ομάδας του να επεξεργαστούν τα προσωπικά σας δεδομένα, σύμφωνα"
+" πάντοτε με την  {privacy_policy_link_start} {privacy_policy_link_end}."
+
+#: openedx/core/djangoapps/user_authn/views/utils.py:53
+msgid "Create Account"
+msgstr "Πατήστε εδώ για να γίνει η εγγραφή σας"
+
+#: openedx/core/lib/api/view_utils.py:161
+msgid "This value is invalid."
+msgstr "Το πεδίο δεν είναι σωστό"
+
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:176
+msgid "Our mailing address is"
+msgstr "Η διεύθυνση του ηλεκτρονικού ταχυδρομείου μας είναι"
+
+#: xmodule/capa/capa_problem.py:747 xmodule/capa_block.py:1398
+msgid "Incorrect"
+msgstr "Λανθασμένο"
+
+#: xmodule/capa/capa_problem.py:752 xmodule/capa_block.py:1407
+msgid "Correct"
+msgstr "Σωστό"
+
+#: xmodule/capa/inputtypes.py:89
+msgid "correct"
+msgstr "σωστό"
+
+#: xmodule/capa/inputtypes.py:90
+msgid "incorrect"
+msgstr "λανθασμένο"
+
+#: xmodule/capa/inputtypes.py:91
+msgid "partially correct"
+msgstr "μερικώς σωστό"
+
+#: xmodule/capa/inputtypes.py:92
+msgid "incomplete"
+msgstr "Μη ολοκληρωμένο"
+
+#: xmodule/capa/inputtypes.py:93 xmodule/capa/inputtypes.py:94
+msgid "unanswered"
+msgstr "αναπάντητο"
+
+#: xmodule/capa/inputtypes.py:96
+msgid "processing"
+msgstr "Επεξεργασία"
+
+#. Translators: these are tooltips that indicate the state of an assessment
+#. question
+#: xmodule/capa/inputtypes.py:100
+msgid "This answer is correct."
+msgstr "Η απάντηση είναι σωστή."
+
+#: xmodule/capa/inputtypes.py:101
+msgid "This answer is incorrect."
+msgstr "Η απάντηση είναι λανθασμένη."
+
+#: xmodule/capa/inputtypes.py:102
+msgid "This answer is partially correct."
+msgstr "Η απάντηση είναι εν μέρει σωστή ."
+
+#: xmodule/capa/inputtypes.py:103
+msgid "This answer is being processed."
+msgstr "Επεξεργαζόμαστε την απάντησή σας."
+
+#: xmodule/capa/inputtypes.py:822
+msgid "Press ESC then TAB or click outside of the code editor to exit"
+msgstr ""
+"Επιλέξτε ESC και TAB ή κάντε κλικ εκτός του πεδίου επεξεργασίας κώδικα για "
+"έξοδο"
+
+#: xmodule/capa/inputtypes.py:1222 xmodule/capa/inputtypes.py:1314
+msgid "Error while rendering preview"
+msgstr "Παρουσιάστηκε σφάλμα κατά την προεπισκόπηση"
+
+#: xmodule/capa/responsetypes.py:361
+msgid "Correct:"
+msgstr "Σωστό:"
+
+#: xmodule/capa/responsetypes.py:363
+msgid "Incorrect:"
+msgstr "Λανθασμένο:"
+
+#: xmodule/capa/responsetypes.py:407 xmodule/capa_block.py:788
+#: xmodule/capa_block.py:804
+msgid "Answer"
+msgstr "Απάντηση"
+
+#: xmodule/capa/responsetypes.py:1498
+#: cms/templates/widgets/problem-edit.html:50
+#: cms/templates/widgets/problem-edit.html:54
+#: cms/templates/widgets/problem-edit.html:131
+msgid "Numerical Input"
+msgstr "Εισαγωγή αριθμητικού"
+
+#: xmodule/capa/responsetypes.py:2187
+#, python-brace-format
+msgid "error getting student answer from {student_answers}"
+msgstr ""
+"Σφάλμα κατά τη λήψη της απάντησης των σπουδαστών από {student_answers}"
+
+#: xmodule/capa/responsetypes.py:2211
+msgid "No answer entered!"
+msgstr "Δεν έχει δοθεί καμία απάντηση!"
+
+#: xmodule/capa/responsetypes.py:2658
+msgid "No answer provided."
+msgstr "Δεν έχει δοθεί καμία απάντηση!"
+
+#: xmodule/capa/responsetypes.py:2677
+msgid "Error: No grader has been set up for this problem."
+msgstr "Σφάλμα: Δεν έχει ορισθεί βαθμολογητής για αυτό το δοκίμιο."
+
+#: xmodule/capa/responsetypes.py:2738
+#, python-brace-format
+msgid ""
+"Unable to deliver your submission to grader (Reason: {error_msg}). Please "
+"try again later."
+msgstr ""
+"Κατέστη αδύνατη η προώθηση του υποβληθέντος δοκιμίου σε βαθμολογητή (Αιτία: "
+"{error_msg}). Παρακαλώ δοκιμάστε αργότερα."
+
+#: xmodule/capa/responsetypes.py:3138
+#, python-brace-format
+msgid "Invalid input: Could not parse '{bad_input}' as a formula."
+msgstr "Μη έγκυρη είσοδος: Αδυναμία ανάλυσης του τύπου '{bad_input}'"
+
+#: xmodule/capa/responsetypes.py:3146
+#, python-brace-format
+msgid "Invalid input: Could not parse '{bad_input}' as a formula"
+msgstr "Μη έγκυρη είσοδος: Αδυναμία ανάλυσης του τύπου '{bad_input}'"
+
+#: xmodule/capa_block.py:213
+msgid "Amount of time after the due date that submissions will be accepted"
+msgstr ""
+"Χρονικό διάστημα μετά την λήξη της προθεσμίας υποβολής εντός του οποίου θα "
+"γίνουν δεκτές υποβολές"
+
+#: xmodule/capa_block.py:225 xmodule/capa_block.py:241
+msgid "Past Due"
+msgstr "Ληξιπρόθεσμο"
+
+#: xmodule/capa_block.py:229 xmodule/modulestore/inheritance.py:89
+msgid "Show Answer"
+msgstr "Εμφάνιση απάντησης"
+
+#: xmodule/capa_block.py:238
+msgid "Closed"
+msgstr "Κλειστό"
+
+#: xmodule/capa_block.py:240
+msgid "Correct or Past Due"
+msgstr "Σωστό ή Ληξιπρόθεσμο"
+
+#: xmodule/capa_block.py:435
+msgid ""
+"We're sorry, there was an error with processing your request. Please try "
+"reloading your page and trying again."
+msgstr ""
+"Λυπούμαστε, προέκυψε σφάλμα κατά την επεξεργασία του αιτήματός σας. "
+"Παρακαλούμε, δοκιμάστε να επαναφορτώσετε τη σελίδα σας και προσπαθήστε ξανά."
+
+#: xmodule/capa_block.py:787 xmodule/capa_block.py:803
+msgid "Question"
+msgstr "Ερώτηση"
+
+#: xmodule/capa_block.py:791
+msgid "Correct Answer"
+msgstr "Σωστή Απάντηση"
+
+#: xmodule/capa_block.py:1037
+msgid "Submitting"
+msgstr "Υποβάλλεται"
+
+#. Translators: e.g. "Hint 1 of 3: " meaning we are showing the first of three
+#. hints.
+#. This text is shown in bold before the accompanying hint text.
+#: xmodule/capa_block.py:1239
+#, python-brace-format
+msgid "Hint ({hint_num} of {hints_count}): "
+msgstr "Υπόδειξη ({hint_num} από {hints_count}): "
+
+#: xmodule/capa_block.py:1318
+#, python-brace-format
+msgid ""
+"Your answers were previously saved. Click '{button_name}' to grade them."
+msgstr ""
+"Οι απαντήσεις σας έχουν αποθηκευτεί αλλά δεν έχουν βαθμολογηθεί. Πατήστε "
+"'{button_name}', για να βαθμολογηθούν. "
+
+#: xmodule/capa_block.py:1416
+msgid "Partially Correct"
+msgstr "Μερικώς σωστό"
+
+#: xmodule/capa_block.py:1418
+msgid "Answer submitted."
+msgstr "Η απάντησή σας έχει υποβληθεί."
+
+#: xmodule/capa_block.py:2151
+msgid "Your answers have been saved."
+msgstr "Οι απαντήσεις σας έχουν αποθηκευτεί."
+
+#: xmodule/capa_block.py:2154
+#, python-brace-format
+msgid ""
+"Your answers have been saved but not graded. Click '{button_name}' to grade "
+"them."
+msgstr ""
+"Οι απαντήσεις σας έχουν αποθηκευτεί αλλά δεν έχουν βαθμολογηθεί. Πατήστε "
+"'{button_name}', για να βαθμολογηθούν."
+
+#: xmodule/course_block.py:420
+msgid "Discussion Topic Mapping"
+msgstr "Λίστα Συζητήσεων ανα Θεματολογία"
+
+#: xmodule/course_block.py:451
+msgid ""
+"Enter policy keys and values to enable the cohort feature, define automated "
+"student assignment to groups, or identify any course-wide discussion topics "
+"as private to cohort members."
+msgstr ""
+"Εισάγατε κλειδιών και τιμών πολιτικής για την ενεργοποίηση της δυνατότητας "
+"ομάδας μελέτης, ορίστε την αυτοματοποιημένη ανάθεση μαθητών σε ομάδες, ή "
+"ορίστε κάθε θέμα συζήτησης μαθήματος ως ιδιωτικό σε μέλη της ομάδας μελέτης."
+
+#: xmodule/course_block.py:536
+msgid "Allow Anonymous Discussion Posts"
+msgstr "Αναζήτηση σε όλες τις αναρτήσεις"
+
+#: xmodule/course_block.py:577
+msgid ""
+"Enter true or false. If true, students can download certificates before the "
+"course ends, if they've met certificate requirements."
+msgstr ""
+"Εισάγετε \"αληθές\" ή \"ψευδές\". Αν εισάγετε \"αληθές\", οι φοιτητές "
+"μπορούν να λάβουν τις βεβαιώσεις τους προτού τελειώσει το μάθημα, εφόσον "
+"πληρούν τα κριτήρια για τη λήψη τους."
+
+#: xmodule/course_block.py:833 cms/templates/settings.html:370
+msgid "Course Language"
+msgstr "Γλώσσα του μαθήματος"
+
+#: xmodule/course_block.py:834
+msgid "Specify the language of your course."
+msgstr "Ορίστε τη γλώσσα του μαθήματός σας,"
+
+#: xmodule/discussion_block.py:184
+#, python-brace-format
+msgid ""
+"You are not signed in. To view the discussion content, {sign_in_link} or "
+"{register_link}, and enroll in this course."
+msgstr ""
+"Δεν έχετε συνδεθεί. Για να δείτε το περιεχόμενο των συζητήσεων, "
+"{sign_in_link} ή {register_link}, στο μάθημα."
+
+#. Translators: Avg is short for Average
+#: xmodule/graders.py:441
+#, python-brace-format
+msgid "{short_label} Avg"
+msgstr ""
+"{short_label} Μ.Ο.\n"
+" "
+
+#: xmodule/html_block.py:65
+msgid "Upstream html contents to store upstream data field"
+msgstr "Περιεχόμενα html ανάντη για αποθήκευση πεδίου δεδομένων ανάντη"
+
+#: xmodule/modulestore/inheritance.py:47 xmodule/seq_block.py:78
+#: lms/templates/ccx/schedule.html:115
+msgid "Due Date"
+msgstr "Υποβολή μέχρι"
+
+#: xmodule/seq_block.py:513
+msgid ""
+"Because the due date has passed, this assignment is hidden from the learner."
+msgstr ""
+"Η εργασία αυτή δεν εμφανίζεται γιατί έχει παρέλθει η προθεσμία υποβολής της."
+
+#: xmodule/video_block/video_xfields.py:138
+msgid "Preferred language for transcript."
+msgstr "Προτιμώμενη γλώσσα υποτίτλων"
+
+#: xmodule/video_block/video_xfields.py:139
+msgid "Preferred language for transcript"
+msgstr "Προτιμώμενη γλώσσα υποτίτλων"
+
+#: xmodule/x_module.py:728
+#, python-brace-format
+msgid ""
+"{display_name} is only accessible to enrolled learners. Sign in or register,"
+" and enroll in this course to view it."
+msgstr ""
+"{display_name}: Προσβάσιμο μόνο σε εγγεγραμμένους χρήστες. Δημιουργήστε "
+"λογαριασμό ή συνδεθείτε και εγγραφείτε στο μάθημα για να δείτε το "
+"περιεχόμενο. "
+
+#: wiki/forms.py:38
+msgid "Type in some contents"
+msgstr "Πληκτρολογήστε στοιχεία περιεχομένου"
+
+#: wiki/forms.py:267
+msgid "Permissions"
+msgstr "Δικαιώματα χρήσης"
+
+#: wiki/forms.py:324
+msgid "No user with that username"
+msgstr "Δεν υπάρχει χρήστης με αυτό το ψευδώνυμο"
+
+#: wiki/views/accounts.py:26
+msgid "You are now sign up... and now you can sign in!"
+msgstr "Έχετε ολοκληρώσει την εγγραφή σας... και τώρα μπορείτε να συνδεθείτε!"
+
+#: wiki/views/article.py:94
+msgid "There was an error creating this article."
+msgstr "Εντοπίστηκε σφάλμα κατά τη δημιουργία αυτού του άρθρου."
+
+#: edx_proctoring_proctortrack/backends/proctortrack_rest.py:33
+msgid ""
+"Once you have verified your identity and reviewed the exam guidelines in "
+"Proctortrack, you will be redirected back to this page."
+msgstr ""
+"Μόλις επαληθεύσετε την ταυτότητά σας και ελέγξετε τις οδηγίες εξέτασης στο "
+"Proctortrack, θα μεταφερθείτε ξανά σε αυτήν τη σελίδα."
+
+#: cms/templates/404.html:7 cms/templates/error.html:12
+#: lms/templates/static_templates/404.html:9
+msgid "Page Not Found"
+msgstr "Η ΣΕΛΙΔΑ ΔΕΝ ΒΡΕΘΗΚΕ"
+
+#: cms/templates/404.html:15 lms/templates/static_templates/404.html:14
+msgid "Page not found"
+msgstr "Η ΣΕΛΙΔΑ ΔΕΝ ΒΡΕΘΗΚΕ"
+
+#: cms/templates/500.html:8
+#, python-brace-format
+msgid "{studio_name} Server Error"
+msgstr "{studio_name} Σφάλμα Διακομιστή"
+
+#: cms/templates/500.html:19
+#, python-brace-format
+msgid "The {em_start}{studio_name}{em_end} servers encountered an error"
+msgstr ""
+"Οι διακομιστές του {em_start}{studio_name}{em_end} αντιμετώπισαν κάποιο "
+"πρόβλημα"
+
+#: cms/templates/500.html:28
+#, python-brace-format
+msgid ""
+"An error occurred in {studio_name} and the page could not be loaded. Please "
+"try again in a few moments."
+msgstr ""
+"Παρουσιάστηκε σφάλμα στο {studio_name} και η σελίδα δεν μπόρεσε να φορτωθεί."
+" Παρακαλούμε προσπαθήστε ξανά σε μερικά λεπτά."
+
+#: cms/templates/500.html:31
+msgid ""
+"We've logged the error and our staff is currently working to resolve this "
+"error as soon as possible."
+msgstr ""
+"Έχουμε καταγράψει το σφάλμα και το προσωπικό μας προσπαθεί να επιλύσει το "
+"πρόβλημα το συντομότερο δυνατόν."
+
+#: cms/templates/certificates.html:15
+msgid "Course Certificates"
+msgstr "Βεβαιώσεις μαθημάτων"
+
+#: cms/templates/course-create-rerun.html:76 cms/templates/index.html:73
+#: lms/templates/support/feature_based_enrollments.html:32
+msgid "Course Name"
+msgstr "Τίτλος Μαθήματος"
+
+#: cms/templates/course-create-rerun.html:88
+#: cms/templates/course-create-rerun.html:108
+msgid "Note: No spaces or special characters are allowed."
+msgstr "Σημείωση: Δεν επιτρέπονται κενά ή ειδικοί χαρακτήρες."
+
+#: cms/templates/course-create-rerun.html:95 cms/templates/index.html:101
+#: cms/templates/settings.html:78
+#: lms/templates/courseware/course_about.html:175
+msgid "Course Number"
+msgstr "Κωδικός Μαθήματος"
+
+#: cms/templates/course_info.html:13 cms/templates/course_info.html:40
+msgid "Course Updates"
+msgstr "Ανακοινώσεις του μαθήματος"
+
+#: cms/templates/course_outline.html:225
+msgid "Collapse All Sections"
+msgstr "Αναδίπλωση όλων των ενοτήτων"
+
+#: cms/templates/course_outline.html:226
+msgid "Expand All Sections"
+msgstr "Εμφάνιση όλων των ενοτήτων"
+
+#: cms/templates/course_outline.html:310
+msgid "Setting release dates and grading policies"
+msgstr "Ρυθμίστε τις ημερομηνίες και τη διαδικασία βαθμολόγησης"
+
+#: cms/templates/export.html:262 cms/templates/import.html:240
+msgid ""
+"Learner-specific content, such as learner grades and discussion forum data"
+msgstr ""
+"Περιεχόμενο συγκεκριμένου φοιτητή, όπως βαθμοί και δεδομένα συζητήσεων"
+
+#: cms/templates/howitworks.html:20
+#, python-brace-format
+msgid "Welcome to {studio_name}"
+msgstr "Καλώς ήλθατε στο {studio_name}"
+
+#: cms/templates/howitworks.html:169
+#, python-brace-format
+msgid "Already have a {studio_name} Account? Sign In"
+msgstr "Έχετε ήδη λογαριασμό στο {studio_name}; Συνδεθείτε!"
+
+#: cms/templates/import.html:224
+msgid "Why import a course?"
+msgstr "Γιατί να εισαγάγετε ένα μάθημα;"
+
+#: cms/templates/import.html:225
+#, python-brace-format
+msgid ""
+"You may want to run a new version of an existing course, or replace an "
+"existing course altogether. Or, you may have developed a course outside "
+"{studio_name}."
+msgstr ""
+"Μπορεί να θέλετε να εκτελέσετε μια νέα έκδοση ενός υπάρχοντος μαθήματος ή να"
+" αντικαταστήσετε ένα υπάρχον μάθημα εντελώς∙ ή μπορεί να έχετε δημιουργήσει "
+"ένα μάθημα εκτός του {studio_name}."
+
+#: cms/templates/import.html:238
+msgid "The following content is not imported."
+msgstr "Δεν εισάγεται το παρακάτω περιεχόμενο:"
+
+#: cms/templates/import.html:247
+msgid ""
+"If you perform an import while your course is running, and you change the "
+"URL names (or url_name nodes) of any Problem components, the student data "
+"associated with those Problem components may be lost. This data includes "
+"students' problem scores."
+msgstr ""
+"Εάν πραγματοποιήσετε μια εισαγωγή μαθήματος ενώ είναι ενεργό το μάθημά σας "
+"και αλλάξετε τις διευθύνσεις URL (ή τους κόμβους url_name) οποιωνδήποτε "
+"τεστ, τα δεδομένα του φοιτητή που σχετίζονται με αυτά ενδέχεται να χαθούν, "
+"π.χ. οι βαθμολογίες του."
+
+#: cms/templates/index.html:244 cms/templates/index.html:290
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html:88
+msgid "Course Number:"
+msgstr "Κωδικός Μαθήματος:"
+
+#: cms/templates/manage_users.html:59 cms/templates/manage_users_lib.html:60
+#: themes/stanford-style/lms/templates/register-form.html:84
+#: themes/stanford-style/lms/templates/register-form.html:128
+#: themes/stanford-style/lms/templates/register-shib.html:135
+msgid "example: username@domain.com"
+msgstr "π.χ.: epimenidis@gmail.com"
+
+#: cms/templates/settings.html:66
+msgid "Basic Information"
+msgstr "Βασικές Πληροφορίες"
+
+#: cms/templates/settings.html:103
+#, python-brace-format
+msgid "Enroll in {course_display_name}"
+msgstr "Εγγραφείτε στο μάθημα {course_display_name}"
+
+#: cms/templates/settings.html:397
+msgid "Course Title"
+msgstr "Τίτλος Μαθήματος"
+
+#: cms/templates/settings_advanced.html:111
+msgid "Show Deprecated Settings"
+msgstr "Προβολή των μη-υποστηριζόμενων ρυθμίσεων."
+
+#: cms/templates/studio_xblock_wrapper.html:123
+msgid ""
+"Sourced from a library - but has been modified locally.Sourced from a "
+"library."
+msgstr ""
+"Προέρχεται από βιβλιοθήκη - αλλά έχει τροποποιηθεί τοπικά. Προέρχεται από "
+"βιβλιοθήκη."
+
+#: cms/templates/studio_xblock_wrapper.html:127
+msgid "Sourced from a library - but has been modified locally."
+msgstr "Προέρχεται από βιβλιοθήκη - αλλά έχει τροποποιηθεί τοπικά."
+
+#: cms/templates/studio_xblock_wrapper.html:144
+#: cms/templates/studio_xblock_wrapper.html:146
+msgid "Edit Title"
+msgstr "Επεξεργασία τίτλου"
+
+#: cms/templates/studio_xblock_wrapper.html:219
+msgid "Unlink from Library"
+msgstr "Αποσύνδεση από τη Βιβλιοθήκη"
+
+#: cms/templates/registration/activation_complete.html:24
+msgid "This account has already been activated."
+msgstr "Ο λογαριασμός σας έχει ήδη ενεργοποιηθεί."
+
+#: cms/templates/registration/activation_complete.html:28
+#, python-brace-format
+msgid "Visit your {link_start}dashboard{link_end} to see your courses."
+msgstr ""
+"Επισκεφθείτε τη {link_start}σελίδα των μαθημάτων σας{link_end} για να δείτε "
+"τα μαθήματα που παρακολουθείτε."
+
+#: cms/templates/registration/activation_complete.html:33
+#, python-brace-format
+msgid "You can now {link_start}sign in{link_end}."
+msgstr "Μπορείτε τώρα να {link_start}συνδεθείτε{link_end}."
+
+#: cms/templates/widgets/header.html:249 cms/templates/widgets/header.html:254
+#: cms/templates/widgets/header.html:318
+msgid "Export"
+msgstr "Εξαγωγή"
+
+#: cms/templates/widgets/header.html:341 lms/templates/header/header.html:95
+#: lms/templates/navigation/navigation.html:63
+#: lms/templates/widgets/footer-language-selector.html:24
+msgid "Choose Language"
+msgstr "Επέλεξε Γλώσσα"
+
+#: cms/templates/widgets/problem-edit.html:18
+#: cms/templates/widgets/problem-edit.html:22
+#: cms/templates/widgets/problem-edit.html:87
+msgid "Heading"
+msgstr "Επικεφαλίδα"
+
+#: cms/templates/widgets/problem-edit.html:20
+#: cms/templates/widgets/problem-edit.html:86
+msgid "Insert a heading"
+msgstr "Εισάγετε επικεφαλίδα"
+
+#: cms/templates/widgets/problem-edit.html:66
+#: cms/templates/widgets/problem-edit.html:70
+#: cms/templates/widgets/problem-edit.html:156
+msgid "Explanation"
+msgstr "Eξήγηση"
+
+#: cms/templates/widgets/problem-edit.html:68
+#: cms/templates/widgets/problem-edit.html:155
+msgid "Add an explanation for this question"
+msgstr "Προσθήκη εξήγησης στο ερώτημα"
+
+#: common/templates/emails/contact_us_feedback_email_body.txt:5
+#, python-brace-format
+msgid "Full Name: {realname}"
+msgstr "Ονοματεπώνυμο: {realname}"
+
+#: lms/djangoapps/discussion/templates/discussion/discussion_board_fragment.html:37
+msgid "Add a Post"
+msgstr "Νέα ανάρτηση"
+
+#: lms/djangoapps/discussion/templates/discussion/discussion_board_fragment.html:57
+msgid "Discussion thread list"
+msgstr "Κατάλογος με τα νήματα των συζητήσεων"
+
+#: lms/djangoapps/discussion/templates/discussion/maintenance_fragment.html:10
+msgid "Discussion unavailable"
+msgstr "Μη διαθέσιμη συζήτηση"
+
+#: lms/djangoapps/discussion/templates/discussion/maintenance_fragment.html:16
+msgid ""
+"The discussions are currently undergoing maintenance. We'll have them back "
+"up shortly!"
+msgstr ""
+"Το φόρουμ συζητήσεων βρίσκεται αυτή τη στιγμή υπό συντήρηση. Σύντομα και "
+"πάλι κοντά σας!"
+
+#: lms/templates/annotatable.html:14
+msgid "Collapse Instructions"
+msgstr "Αναδίπλωση Οδηγιών"
+
+#: lms/templates/annotatable.html:24
+msgid "Guided Discussion"
+msgstr "Κατευθυνόμενη συζήτηση"
+
+#: lms/templates/bookmark_button.html:13 lms/templates/seq_block.html:99
+msgid "Bookmarked"
+msgstr "Αποθηκεύτηκε στους σελιδοδείκτες σας"
+
+#: lms/templates/bookmark_button.html:13
+msgid "Bookmark this page"
+msgstr "Προσθέστε σελιδοδείκτη σε αυτή τη σελίδα"
+
+#: lms/templates/course.html:29 lms/templates/course.html:39
+#: lms/templates/course.html:41
+msgid "Starts"
+msgstr "Έναρξη"
+
+#: lms/templates/course.html:31
+#, python-brace-format
+msgid "Starts: {date}"
+msgstr "Έναρξη: {date}"
+
+#: lms/templates/dashboard.html:239
+msgid "You are not enrolled in any courses yet."
+msgstr "Δεν έχετε ακόμη εγγραφεί σε κάποιο από τα μαθήματα"
+
+#: lms/templates/dashboard.html:245
+#: lms/templates/header/navbar-not-authenticated.html:42
+#: lms/templates/navigation/bootstrap/navbar-authenticated.html:32
+#: lms/templates/navigation/navbar-authenticated.html:16
+msgid "Explore courses"
+msgstr "ΑΝΑΖΗΤΗΣΗ ΜΑΘΗΜΑΤΩΝ"
+
+#: lms/templates/dashboard.html:249
+#: lms/templates/registration/account_activation_sidebar_notice.html:16
+msgid "Activate your account!"
+msgstr "Ενεργοποιήστε τον λογαριασμό σας!"
+
+#: lms/templates/dashboard.html:257
+msgid "Course-loading errors"
+msgstr "Προέκυψαν σφάλματα κατά την φόρτωση του μαθήματος"
+
+#: lms/templates/dashboard.html:283
+msgid "Search Your Courses"
+msgstr "Αναζήτηση στα μαθήματά σας"
+
+#: lms/templates/dashboard.html:289
+msgid "Clear search"
+msgstr "Εκκαθάριση αναζήτησης"
+
+#: lms/templates/dashboard.html:363
+msgid "Receive course emails"
+msgstr "Να λαμβάνω ενημερωτικά e-mails που αφορούν το μάθημα"
+
+#: lms/templates/email_change_successful.html:15
+#, python-brace-format
+msgid "You should see your new email in your {link_start}dashboard{link_end}."
+msgstr ""
+"Μπορείτε πλέον να δείτε το νέο σας e-mail στη σελίδα του "
+"{link_start}λογαριασμού{link_end} σας."
+
+#: lms/templates/email_exists.html:14
+msgid "An account with the new e-mail address already exists."
+msgstr "Υπάρχει ήδη λογαριασμός με το email που εισάγατε."
+
+#: lms/templates/enroll_students.html:4
+msgid "Student Enrollment Form"
+msgstr "Φόρμα εγγραφής σπουδαστή"
+
+#: lms/templates/forgot_password_modal.html:10
+#: lms/templates/forgot_password_modal.html:22
+msgid "Password Reset"
+msgstr "Αλλαγή κωδικού"
+
+#: lms/templates/forgot_password_modal.html:26
+msgid ""
+"Please enter your e-mail address below, and we will e-mail instructions for "
+"setting a new password."
+msgstr ""
+"Παρακαλούμε, εισάγετε το e-mail σας, και θα σας αποστείλουμε ηλεκτρονικά "
+"οδηγίες για τη δημιουργία νέου κωδικού."
+
+#: lms/templates/forgot_password_modal.html:31
+#: lms/templates/instructor/instructor_dashboard_2/add_coupon_modal.html:30
+#: lms/templates/instructor/instructor_dashboard_2/edit_coupon_modal.html:26
+#: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:31
+#: lms/templates/instructor/instructor_dashboard_2/invalidate_registration_code_modal.html:28
+#: lms/templates/instructor/instructor_dashboard_2/set_course_mode_price_modal.html:30
+#: themes/stanford-style/lms/templates/register-form.html:77
+#: themes/stanford-style/lms/templates/register-shib.html:117
+msgid "Required Information"
+msgstr "Απαιτούμενες Πληροφορίες"
+
+#: lms/templates/forgot_password_modal.html:35
+msgid "Your E-mail Address"
+msgstr "Το e-mail σας"
+
+#: lms/templates/forgot_password_modal.html:43
+msgid "Reset My Password"
+msgstr "Αλλαγή του κωδικού μου"
+
+#: lms/templates/forgot_password_modal.html:57
+msgid "Email is incorrect."
+msgstr "Το email είναι λανθασμένο."
+
+#: lms/templates/hidden_content.html:12
+msgid "The due date for this assignment has passed."
+msgstr "Η προθεσμία υποβολής έχει παρέλθει."
+
+#: lms/templates/hidden_content.html:19
+#, python-brace-format
+msgid ""
+"Because the course has ended, this assignment is no longer "
+"available.{line_break}If you have completed this assignment, your grade is "
+"available on the {link_start}progress page{link_end}."
+msgstr ""
+"Η εργασία αυτή δεν είναι πλέον διαθέσιμη, αφού το μάθημα έχει "
+"λήξει.{line_break}Εάν έχετε υποβάλλει αυτή την εργασία, μπορείτε να δείτε "
+"τον βαθμό σας στην {link_start}σελίδα της προόδου{link_end} σας."
+
+#: lms/templates/hidden_content.html:29
+#, python-brace-format
+msgid ""
+"Because the due date has passed, this assignment is no longer "
+"available.{line_break}If you have completed this assignment, your grade is "
+"available on the {link_start}progress page{link_end}."
+msgstr ""
+"Μετά την λήξη της προθεσμίας υποβολής, η εργασία αυτή δεν είναι πλέον "
+"διαθέσιμη.{line_break}Εάν έχετε υποβάλλει αυτή την εργασία, μπορείτε να "
+"δείτε τον βαθμό σας στην {link_start}σελίδα της προόδου{link_end} σας."
+
+#: lms/templates/courseware/courses.html:42
+#: lms/templates/courseware/courses.html:43 lms/templates/index.html:26
+#: lms/templates/index.html:27
+#: themes/stanford-style/lms/templates/index.html:22
+#: themes/stanford-style/lms/templates/index.html:23
+msgid "Search for a course"
+msgstr "Αναζήτηση μαθήματος"
+
+#: lms/templates/index_overlay.html:8
+#, python-brace-format
+msgid "Welcome to {platform_name}"
+msgstr "Καλώς ήλθατε στο {platform_name}"
+
+#: lms/templates/invalid_email_key.html:10
+msgid "Invalid email change key"
+msgstr "Ο σύνδεσμος αλλαγής e-mail δεν είναι έγκυρος"
+
+#: lms/templates/invalid_email_key.html:12
+msgid "This e-mail key is not valid. Please check:"
+msgstr "Ο σύνδεσμος αλλαγής του e-mail σας δεν είναι έγκυρος. Δείτε:"
+
+#: lms/templates/invalid_email_key.html:14
+msgid ""
+"Was this key already used? Check whether the e-mail change has already "
+"happened."
+msgstr ""
+"Μήπως έχετε ήδη χρησιμοποιήσει το σύνδεσμο; Ελέγξτε μήπως έχει ήδη αλλάξει "
+"το e-mail σας ."
+
+#: lms/templates/invalid_email_key.html:15
+msgid "Did your e-mail client break the URL into two lines?"
+msgstr ""
+"Μήπως το πρόγραμμα που χρησιμοποιείτε για να διαχειρίζεστε τα e-mail σας, "
+"χώρισε σε δύο γραμμές τον σύνδεσμο;"
+
+#: lms/templates/invalid_email_key.html:16
+msgid "The keys are valid for a limited amount of time. Has the key expired?"
+msgstr ""
+"Μήπως ο σύνδεσμος έχει λήξει; Οι σύνδεσμοι είναι έγκυροι για περιορισμένο "
+"χρονικό διάστημα."
+
+#. Translators: "points" is the student's achieved score on this LTI unit, and
+#. "total_points" is the maximum number of points achievable.
+#: lms/templates/lti.html:16
+#, python-brace-format
+msgid "{points} / {total_points} points"
+msgstr "{points} / {total_points} μονάδες"
+
+#. Translators: "total_points" is the maximum number of points achievable on
+#. this LTI unit
+#: lms/templates/lti.html:19
+#, python-brace-format
+msgid "{total_points} points possible"
+msgstr "{total_points} μονάδες"
+
+#: lms/templates/manage_user_standing.html:12
+msgid "Username:"
+msgstr "Ψευδώνυμο"
+
+#: lms/templates/manage_user_standing.html:25
+msgid "View Profile"
+msgstr "Προβολή προσωπικής σελίδας"
+
+#: lms/templates/courseware/courseware-error.html:24
+#: lms/templates/module-error.html:10
+#, python-brace-format
+msgid "There has been an error on the {platform_name} servers"
+msgstr "Κάποιο σφάλμα προέκυψε στους διακομιστές του {platform_name}"
+
+#: lms/templates/module-error.html:15
+msgid ""
+"We're sorry, this module is temporarily unavailable. Our staff is working to"
+" fix it as soon as possible. "
+msgstr ""
+"Ζητούμε συγνώμη, προσωρινά η συγκεκριμένη σελίδα είναι εκτός λειτουργίας. Η "
+"ομάδα μας προσπαθεί να επιδιορθώσει το σφάλμα το συντομότερo δυνατόν. "
+
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:170
+#: lms/templates/preview_menu.html:61
+msgid "Staff"
+msgstr "ΠΡΟΣΩΠΙΚΟ"
+
+#: lms/templates/preview_menu.html:75
+msgid "Username or email:"
+msgstr "Ψευδώνυμο ή e-mail:"
+
+#: lms/templates/problem.html:32
+msgid "Hint"
+msgstr "Υπόδειξη"
+
+#: lms/templates/problem.html:98
+msgid ""
+"Some problems have options such as save, reset, hints, or show answer. These"
+" options follow the Submit button."
+msgstr ""
+"Σε κάποιες ασκήσεις έχετε την επιλογή της αποθήκευσης, της επαναφοράς, της "
+"βοήθειας ή της προβολής των απαντήσεων. Οι επιλογές αυτές βρίσκονται κάτω "
+"από το κουμπί της Υποβολής."
+
+#: lms/templates/problem.html:154
+msgid "Answers are displayed within the problem"
+msgstr ""
+"Η σωστή απάντηση ή απαντήσεις φέρουν την κατάλληλη ένδειξη στις ερωτήσεις "
+"πολλαπλής επιλογής και παρατίθενται ολογράφως στις ερωτήσεις αντιστοίχισης "
+"και συμπλήρωσης."
+
+#: lms/templates/problem_notifications.html:14
+msgid "Next Hint"
+msgstr "Επόμενη υπόδειξη"
+
+#: lms/templates/resubscribe.html:19
+#, python-brace-format
+msgid ""
+"You have re-enabled forum notification emails from {platform_name}. You may "
+"{dashboard_link_start}return to your dashboard{link_end}."
+msgstr ""
+"Έχετε επανενεργοποιήσει τη λήψη ενημερωτικών e-mail για το φόρουμ από το "
+"{platform_name}. Μπορείτε να {dashboard_link_start}επιστρέψετε στη σελίδα "
+"των μαθημάτων σας{link_end}."
+
+#: lms/templates/signup_modal.html:57
+#: themes/stanford-style/lms/templates/register-shib.html:120
+msgid "Enter a public username:"
+msgstr "Εισάγετε ένα ψευδώνυμο"
+
+#: lms/templates/signup_modal.html:69
+msgid "Full Name *"
+msgstr "Ονοματεπώνυμο *"
+
+#: lms/templates/signup_modal.html:136
+#: themes/stanford-style/lms/templates/register-form.html:246
+#: themes/stanford-style/lms/templates/register-shib.html:164
+#, python-brace-format
+msgid "I agree to the {link_start}Terms of Service{link_end}"
+msgstr "Συμφωνώ με τους {link_start}Όρους χρήσης{link_end}"
+
+#: lms/templates/signup_modal.html:144
+#: themes/stanford-style/lms/templates/register-form.html:260
+#: themes/stanford-style/lms/templates/register-shib.html:176
+#, python-brace-format
+msgid "I agree to the {link_start}Honor Code{link_end}"
+msgstr "Συμφωνώ με τον {link_start}Κώδικα τιμής{link_end}"
+
+#: lms/templates/signup_modal.html:152
+#: themes/stanford-style/lms/templates/register-form.html:272
+msgid "Create My Account"
+msgstr "Δημιουργία του λογαριασμού μου"
+
+#: lms/templates/signup_modal.html:159
+msgid "Already have an account?"
+msgstr "Έχετε ήδη εγγραφεί; "
+
+#: lms/templates/staff_problem_info.html:39
+#, python-brace-format
+msgid "{platform_name} Content Quality Assessment"
+msgstr "{platform_name} Αξιολόγηση Ποιότητας Περιεχομένου"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:120
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:176
+#: lms/templates/staff_problem_info.html:84
+msgid "Delete Learner's State"
+msgstr "Διαγραφή απαντήσεων και βαθμών"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:93
+#: lms/templates/staff_problem_info.html:87
+msgid "Rescore Learner's Submission"
+msgstr "Υποβολή αναβαθμολόγησης"
+
+#: lms/templates/staff_problem_info.html:131
+msgid "Enter the learner email address or username"
+msgstr ""
+"Εισαγάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου ή το όνομα χρήστη του "
+"φοιτητή"
+
+#: lms/templates/unsubscribe.html:20
+#, python-brace-format
+msgid ""
+"You will no longer receive forum notification emails from {platform_name}. "
+"You may {dashboard_link_start}return to your dashboard{link_end}. If you did"
+" not mean to do this, {undo_link_start}you can re-subscribe{link_end}."
+msgstr ""
+"Δεν θα λαμβάνετε στο εξής e-mail για τις νέες αναρτήσεις στο φόρουμ του "
+"{platform_name}. Μπορείτε να {dashboard_link_start}επιστρέψετε στη σελίδα "
+"των μαθημάτων σας{link_end}. Εάν δεν είχατε πρόθεση να διαγραφείτε, μπορείτε"
+" να {undo_link_start}επανεγγραφείτε{link_end}."
+
+#: lms/templates/vert_module.html:18
+#, python-brace-format
+msgid "{subsection_format} due {{date}}"
+msgstr "{subsection_format} υποβολή μέχρι {{date}}"
+
+#: lms/templates/vert_module.html:22
+#, python-brace-format
+msgid "Due {date}"
+msgstr "είναι ληξιπρόθεσμη στις {date}"
+
+#: lms/templates/calculator/toggle_calculator.html:21
+msgid "Hints"
+msgstr "Υπόδειξη"
+
+#: lms/templates/ccx/enrollment.html:22
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:27
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:108
+msgid "Auto Enroll"
+msgstr "Αυτόματη εγγραφή"
+
+#: lms/templates/ccx/enrollment.html:26
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:31
+#, python-brace-format
+msgid ""
+"If this option is {em_start}checked{em_end}, users who have not yet "
+"registered for {platform_name} will be automatically enrolled."
+msgstr ""
+"{em_start}Με αυτή την επιλογή{em_end}, οι χρήστες που δεν έχουν ακόμη "
+"εγγραφεί στο {platform_name} θα εγγραφούν αυτομάτως."
+
+#: lms/templates/ccx/enrollment.html:31
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:32
+#, python-brace-format
+msgid ""
+"If this option is left {em_start}unchecked{em_end}, users who have not yet "
+"registered for {platform_name} will not be enrolled, but will be allowed to "
+"enroll once they make an account."
+msgstr ""
+"{em_start}Αν δεν κάνετε αυτή την επιλογή{em_end}, οι χρήστες που δεν έχουν "
+"ακόμη εγγραφεί στο {platform_name}  δεν θα εγγραφούν στο μάθημα, αλλά θα "
+"τους επιτραπεί η εγγραφή αμέσως μόλις δημιουργήσουν λογαριασμό."
+
+#: lms/templates/ccx/enrollment.html:44
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:43
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:80
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:123
+msgid "Notify users by email"
+msgstr "Ενημερώστε τους χρήστες μέσω e-mail"
+
+#: lms/templates/ccx/enrollment.html:48
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:47
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:84
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:127
+#, python-brace-format
+msgid ""
+"If this option is {em_start}checked{em_end}, users will receive an email "
+"notification."
+msgstr ""
+"{em_start}Με αυτή την επιλογή{em_end}, οι χρήστες θα λάβουν ειδοποίηση για "
+"την εγγραφή τους μέσω e-mail."
+
+#: lms/templates/ccx/schedule.html:100
+msgid "Start Date"
+msgstr "Ημερομηνία Έναρξης"
+
+#: lms/templates/ccx/schedule.html:115
+msgid "(Optional)"
+msgstr "(Προαιρετικό)"
+
+#: lms/templates/ccx/student_admin.html:6
+msgid "View gradebook"
+msgstr "Προβολή βαθμών"
+
+#: lms/templates/certificates/_accomplishment-banner.html:56
+msgid "Post on Facebook"
+msgstr "Κοινοποιήστε στο Facebook"
+
+#: lms/templates/courseware/course_about.html:55
+msgid "An error occurred. Please try again later."
+msgstr "Προέκυψε σφάλμα. Παρακαλώ προσπαθήστε αργότερα."
+
+#: lms/templates/courseware/course_about.html:88
+msgid "You are enrolled in this course"
+msgstr "ΕΙΣΤΕ ΕΓΓΕΓΡΑΜΜΕΝΟΣ ΣΤΟ ΜΑΘΗΜΑ"
+
+#: lms/templates/courseware/course_about.html:91
+#: lms/templates/courseware/course_about.html:109
+#: lms/templates/dashboard/_dashboard_course_resume.html:21
+msgid "View Course"
+msgstr "ΔΕΙΤΕ ΤΟ ΜΑΘΗΜΑ"
+
+#: lms/templates/courseware/course_about.html:100
+msgid "Enrollment in this course is by invitation only"
+msgstr "Η εγγραφή σε αυτό το μάθημα γίνεται μόνο μετά από πρόσκληση"
+
+#: lms/templates/courseware/course_about.html:217
+msgid "Estimated Effort"
+msgstr "Προσπάθεια"
+
+#: lms/templates/courseware/course_about_sidebar_header.html:14
+#: themes/stanford-style/lms/templates/courseware/course_about_sidebar_header.html:8
+msgid "Share with friends and family!"
+msgstr "Ενημερώστε τους φίλους σας!"
+
+#: lms/templates/courseware/course_about_sidebar_header.html:55
+msgid "Post a Facebook message to say you've enrolled in this course"
+msgstr ""
+"Κοινοποιήστε στη σελίδα σας στο Facebook ότι έχετε εγγραφεί σε αυτό το "
+"μάθημα"
+
+#: lms/templates/courseware/course_updates.html:11
+#: lms/templates/courseware/course_updates.html:41
+msgid "Show"
+msgstr "Εμφάνιση"
+
+#: lms/templates/courseware/course_updates.html:28
+msgid "Show Earlier Course Updates"
+msgstr "Δείτε παλαιότερες ανακοινώσεις"
+
+#: lms/templates/courseware/courses.html:72
+#: lms/templates/courseware/courses.html:73
+msgid "Refine Your Search"
+msgstr "Εξειδικεύστε την αναζήτησή σας"
+
+#: lms/templates/courseware/courseware-error.html:8
+msgid "Courseware"
+msgstr "Υλικό Mαθήματος"
+
+#: lms/templates/courseware/courseware-error.html:29
+#: lms/templates/courseware/error-message.html:9
+msgid ""
+"We're sorry, this module is temporarily unavailable. Our staff is working to"
+" fix it as soon as possible."
+msgstr ""
+"Ζητούμε συγνώμη, προσωρινά η συγκεκριμένη σελίδα είναι εκτός λειτουργίας. Η "
+"ομάδα μας προσπαθεί να επιδιορθώσει το σφάλμα το συντομότερo δυνατόν. "
+
+#: lms/templates/courseware/gradebook.html:91
+#: lms/templates/courseware/gradebook.html:116
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html:59
+msgid "Total"
+msgstr "Σύνολο"
+
+#: lms/templates/courseware/news.html:21
+msgid "Updates to Discussion Posts You Follow"
+msgstr "Ενημέρωση των Συζητήσεων που Ακολουθείτε"
+
+#: lms/templates/courseware/progress.html:67
+#, python-brace-format
+msgid "Course Progress for '{username}' ({email})"
+msgstr "Πρόοδος Μαθήματος για τον σπουδαστή '{username}' ({email})"
+
+#: lms/templates/courseware/progress.html:85
+msgid "View Certificate"
+msgstr "Δείτε τη Βεβαίωση"
+
+#: lms/templates/courseware/progress.html:185
+#: lms/templates/courseware/progress.html:194
+#, python-brace-format
+msgid "{earned} of {total} possible points"
+msgstr "{earned} από {total} μονάδες"
+
+#: lms/templates/courseware/progress.html:208
+#, python-brace-format
+msgid "due {date}"
+msgstr "Υποβολή μέχρι {date}"
+
+#: lms/templates/courseware/progress.html:233
+msgid "Problem scores are hidden until the due date."
+msgstr "Η βαθμολογία σας δεν εμφανίζεται μέχρι την ημερομηνία λήξης του τεστ."
+
+#: lms/templates/courseware/progress.html:239
+msgid "Problem scores are hidden."
+msgstr "Η βαθμολογία σας δεν εμφανίζεται."
+
+#: lms/templates/credit_notifications/credit_eligibility_email.html:89
+#, python-brace-format
+msgid ""
+"We hope you enjoyed the course, and we hope to see you in future "
+"{platform_name} courses!"
+msgstr ""
+"Ελπίζουμε να απολαύσατε το μάθημα και ελπίζουμε να σας δούμε και σε "
+"μελλοντικά μαθήματα του {platform_name}! "
+
+#: lms/templates/credit_notifications/credit_eligibility_email.html:90
+#: lms/templates/emails/order_confirmation_email.txt:18
+#: lms/templates/emails/passed_verification_email.txt:11
+#, python-brace-format
+msgid "The {platform_name} Team"
+msgstr "Η ομάδα του {platform_name}"
+
+#: lms/templates/dashboard/_dashboard_certificate_information.html:65
+#, python-brace-format
+msgid "Grade required for a {cert_name_short}:"
+msgstr "Ελάχιστος βαθμός απόκτησης {cert_name_short}ς:"
+
+#: lms/templates/dashboard/_dashboard_certificate_information.html:67
+msgid "Grade required to pass this course:"
+msgstr "Ελάχιστος βαθμός απόκτησης βεβαίωσης "
+
+#: lms/templates/dashboard/_dashboard_certificate_information.html:91
+#, python-brace-format
+msgid "Your {cert_name_short} is Generating"
+msgstr " Το {cert_name_short} σας βρίσκεται υπό επεξεργασία."
+
+#: lms/templates/dashboard/_dashboard_certificate_information.html:104
+#, python-brace-format
+msgid "View my {cert_name_short}"
+msgstr "Δείτε τη {cert_name_short} "
+
+#: lms/templates/dashboard/_dashboard_certificate_information.html:123
+msgid "Add Certificate to LinkedIn Profile"
+msgstr "Προσθέστε τη βεβαίωσή σας στο προφίλ σας στο LinkedIn"
+
+#: lms/templates/dashboard/_dashboard_certificate_information.html:149
+msgid "View grades"
+msgstr "Δείτε τους βαθμούς σας"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html:132
+msgid "Coming Soon"
+msgstr "Προσεχώς"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html:138
+#, python-brace-format
+msgid "Ended - {date}"
+msgstr "Λήξη - {date}"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html:141
+#, python-brace-format
+msgid "Started - {date}"
+msgstr "Έναρξη - {date}"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html:147
+#: lms/templates/dashboard/_dashboard_course_listing.html:151
+#, python-brace-format
+msgid "Starts - {date}"
+msgstr "Έναρξη - {date}"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html:219
+#: lms/templates/dashboard/_dashboard_course_listing.html:225
+msgid "Share on Facebook"
+msgstr "Κοινοποιήστε στο Facebook"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html:313
+msgid "View Archived Course"
+msgstr "Αυτομελέτη"
+
+#: lms/templates/dashboard/_dashboard_course_resume.html:12
+msgid "Resume Course"
+msgstr "Επιστροφή στο υλικό μαθήματος"
+
+#: lms/templates/dashboard/_reason_survey.html:9
+msgid "I just wanted to browse the material"
+msgstr "Ήθελα μόνο να ρίξω μια ματιά"
+
+#: lms/templates/dashboard/_reason_survey.html:10
+msgid "This won't help me reach my goals"
+msgstr "Το μάθημα δεν με βοηθάει να πετύχω τους στόχους μου"
+
+#: lms/templates/dashboard/_reason_survey.html:11
+msgid "I don't have the time"
+msgstr "Δεν έχω τον απαραίτητο χρόνο"
+
+#: lms/templates/dashboard/_reason_survey.html:12
+msgid "I don't have the academic or language prerequisites"
+msgstr "Δεν έχω τις απαραίτητες γνώσεις για να παρακολουθήσω το μάθημα"
+
+#: lms/templates/dashboard/_reason_survey.html:13
+msgid "I don't have enough support"
+msgstr "Χρειαζόμουν περισσότερη υποστήριξη"
+
+#: lms/templates/dashboard/_reason_survey.html:14
+msgid "I am not happy with the quality of the content"
+msgstr "Δεν είμαι ικανοποιημένος από το περιεχόμενο του μαθήματος"
+
+#: lms/templates/dashboard/_reason_survey.html:15
+msgid "The course material was too hard"
+msgstr "Η ύλη του μαθήματος ήταν πολύ δύσκολη"
+
+#: lms/templates/dashboard/_reason_survey.html:16
+msgid "The course material was too easy"
+msgstr "Το μάθημα ήταν υπερβολικά εύκολο"
+
+#: lms/templates/dashboard/_reason_survey.html:17
+msgid "Something was broken"
+msgstr "Το μάθημα είχε τεχνικά προβλήματα"
+
+#: lms/templates/debug/run_python_form.html:16
+msgid "Results:"
+msgstr "Αποτελέσματα:"
+
+#: lms/templates/discussion/_discussion_inline.html:27
+msgid "Topic:"
+msgstr "Θέμα:"
+
+#: lms/templates/discussion/_filter_dropdown.html:53
+msgid "Discussion topics list"
+msgstr "Λίστα θεμάτων συζήτησης"
+
+#: lms/templates/discussion/_filter_dropdown.html:55
+#: lms/templates/discussion/_filter_dropdown.html:56
+msgid "Filter Topics"
+msgstr "Φιλτράρισμα θεμάτων"
+
+#: lms/templates/discussion/_filter_dropdown.html:57
+msgid "filter topics"
+msgstr "φιλτράρισμα θεμάτων"
+
+#: lms/templates/discussion/_filter_dropdown.html:63
+msgid "All Discussions"
+msgstr "Όλες οι συζητήσεις"
+
+#: lms/templates/discussion/_filter_dropdown.html:67
+msgid "Posts I'm Following"
+msgstr "Οι αναρτήσεις που ακολουθώ"
+
+#. Translators: This is a menu option for showing all forum threads unfiltered
+#: lms/templates/discussion/_thread_list_template.html:11
+msgid "Show all posts"
+msgstr "Όλες οι αναρτήσεις"
+
+#. Translators: This is a menu option for showing only unread forum threads
+#: lms/templates/discussion/_thread_list_template.html:13
+msgid "Unread posts"
+msgstr "Μη διαβασμένες"
+
+#. Translators: This is a menu option for showing only unanswered forum
+#. question threads
+#: lms/templates/discussion/_thread_list_template.html:16
+msgid "Unanswered posts"
+msgstr "Αναπάντητες"
+
+#. Translators: This is a menu option for sorting forum threads
+#: lms/templates/discussion/_thread_list_template.html:42
+msgid "by most activity"
+msgstr "Πιο ενεργές"
+
+#. Translators: This is a menu option for sorting forum threads
+#: lms/templates/discussion/_thread_list_template.html:44
+msgid "by most votes"
+msgstr "οι πιο δημοφιλείς"
+
+#. Translators: The <br> is a line break (empty line), please keep this html
+#. in
+#. the string after the sign off.
+#: lms/templates/emails/business_order_confirmation_email.txt:77
+#, python-brace-format
+msgid "Warm regards,<br>The {platform_name} Team"
+msgstr "Με εκτίμηση, <br> Η ομάδα του {platform_name}"
+
+#: lms/templates/emails/failed_verification_email.txt:38
+#: lms/templates/emails/photo_submission_confirmation.txt:12
+#: lms/templates/emails/reverification_processed.txt:28
+#, python-brace-format
+msgid "The {platform_name} team"
+msgstr "Η ομάδα του  {platform_name}"
+
+#: lms/templates/emails/photo_submission_confirmation.txt:7
+msgid ""
+"We've received your information and the ID verification process has "
+"begun.Check for an email from us in the next few days to confirm whether "
+"your verification was successful.You can also check the status of the "
+"verification process on your dashboard."
+msgstr ""
+"Λάβαμε τα στοιχεία σας και ξεκίνησε η διαδικασία επαλήθευσης ταυτότητας. "
+"Ελέγξτε αν θα λάβετε μήνυμα ηλεκτρονικού ταχυδρομείου από εμάς τις επόμενες "
+"ημέρες, για να επιβεβαιώσετε αν η επαλήθευσή σας ήταν επιτυχής. Μπορείτε "
+"επίσης να ελέγξετε την κατάσταση της διαδικασίας επαλήθευσης στην καρτέλα "
+"\"Μαθήματα\"."
+
+#: lms/templates/emails/reverification_processed.txt:4
+#, python-brace-format
+msgid ""
+"We have successfully verified your identity for the {assessment} assessment "
+"in the {course_name} course."
+msgstr ""
+"Έχουμε επιτυχώς επιβεβαιώσει την ταυτότητά σας για την συμμετοχή σας στην "
+"αλληλοαξιολόγηση {assessment} του μαθήματος {course_name}."
+
+#: lms/templates/emails/reverification_processed.txt:8
+#, python-brace-format
+msgid ""
+"We could not verify your identity for the {assessment} assessment in the "
+"{course_name} course. You have used {used_attempts} out of "
+"{allowed_attempts} attempts to verify your identity."
+msgstr ""
+"Δεν κατορθώσαμε να πιστοποιήσουμε την ταυτότητά σας για τη δοκιμασία "
+"αλληλοαξιολόγησης {assessment} του μαθήματος{course_name}. Έχετε "
+"χρησιμοποιήσει {used_attempts} από τις {allowed_attempts} προσπάθειες που "
+"επιτρέπονται για την ταυτοποίηση της ταυτότητάς σας."
+
+#: lms/templates/emails/reverification_processed.txt:11
+#, python-brace-format
+msgid ""
+"You must verify your identity before the assessment closes on {due_date}."
+msgstr ""
+"Θα πρέπει να πιστοποιήσετε την ταυτότητά σας προτού λήξει η διαδικασία "
+"αλληλοαξιολόγησης στις {due_date}."
+
+#: lms/templates/emails/reverification_processed.txt:18
+#, python-brace-format
+msgid ""
+"We could not verify your identity for the {assessment} assessment in the "
+"{course_name} course. You have used {used_attempts} out of "
+"{allowed_attempts} attempts to verify your identity, and verification is no "
+"longer possible."
+msgstr ""
+"Δεν κατορθώσαμε να πιστοποιήσουμε την ταυτότητά σας για τη δοκιμασία "
+"αλληλοαξιολόγησης {assessment} του μαθήματος{course_name}. Έχετε "
+"χρησιμοποιήσει {used_attempts} από τις {allowed_attempts} προσπάθειες που "
+"επιτρέπονται για την ταυτοποίηση της ταυτότητάς σας και η διαδικασία "
+"ταυτοποίησης δεν είναι πλέον δυνατή."
+
+#: lms/templates/enrollment/course_enrollment_message.html:9
+#, python-brace-format
+msgid ""
+"Thank you for enrolling in {course_names}. We hope you enjoy the course."
+msgstr "Καλωσήρθατε στο μάθημα {course_names}. Ελπίζουμε να το απολαύσετε!"
+
+#: lms/templates/header/navbar-authenticated.html:51
+msgid "Discover New"
+msgstr "Αναζήτηση Μαθημάτων"
+
+#: lms/templates/header/navbar-logo-header.html:24
+#, python-brace-format
+msgid "{name} Dashboard"
+msgstr "{name} Μαθήματα"
+
+#: lms/templates/header/navbar-not-authenticated.html:53
+#: lms/templates/header/navbar-not-authenticated.html:57
+msgid "Register for free"
+msgstr "Εγγραφή"
+
+#: lms/templates/instructor/instructor_dashboard_2/certificates.html:104
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html:142
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:148
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:84
+#: lms/templates/instructor/instructor_dashboard_2/send_email.html:117
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:236
+msgid "Pending Tasks"
+msgstr "Εκκρεμείς διαδικασίες"
+
+#: lms/templates/instructor/instructor_dashboard_2/certificates.html:209
+msgid "Invalidate Certificates"
+msgstr "Ακύρωση βεβαιώσεων"
+
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html:8
+msgid "Enrollment Information"
+msgstr "Πληροφορίες σχετικά με τις εγγραφές"
+
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html:14
+msgid "Number of enrollees (admins, staff, and students) by track"
+msgstr "Αριθμός εγγραφέντων (διδάσκοντες, προσωπικό, φοιτητές) ανά κατηγορία "
+
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html:19
+msgid "Audit"
+msgstr "Ακροατές"
+
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html:78
+msgid "Course Name:"
+msgstr "Τίτλος μαθήματος:"
+
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html:98
+msgid "Course Start Date:"
+msgstr "Έναρξη Μαθήματος:"
+
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html:103
+msgid "Course End Date:"
+msgstr "Ημερομηνία Λήξης του Μαθήματος:"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:13
+msgid ""
+"Click to display the grading configuration for the course. The grading "
+"configuration is the breakdown of graded subsections of the course (such as "
+"exams and problem sets), and can be changed on the 'Grading' page (under "
+"'Settings') in Studio."
+msgstr ""
+"Κάντε κλικ, για να εμφανίσετε τη διαμόρφωση βαθμολογίας για το μάθημα. Η "
+"διαμόρφωση βαθμολογίας είναι η ανάλυση των βαθμολογούμενων κεφαλαίων του "
+"μαθήματος (όπως τεστ και τελική εξέταση) και μπορεί να αλλάξει στη σελίδα "
+"\"Βαθμολογία\" (στην καρτέλα \"Ρυθμίσεις\") στο Studio."
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:14
+msgid "Grading Configuration"
+msgstr "Διαμόρφωση βαθμολογίας"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:26
+msgid "Reports"
+msgstr "Αναφορές"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:28
+msgid ""
+"For large courses, generating some reports can take several hours. When "
+"report generation is complete, a link that includes the date and time of "
+"generation appears in the table below. These reports are generated in the "
+"background, meaning it is OK to navigate away from this page while your "
+"report is generating."
+msgstr ""
+"Για μεγάλα μαθήματα, η δημιουργία ορισμένων αναφορών μπορεί να διαρκέσει "
+"αρκετές ώρες. Όταν ολοκληρωθεί η δημιουργία αναφορών, ένας σύνδεσμος που "
+"περιλαμβάνει την ημερομηνία και την ώρα δημιουργίας εμφανίζεται στον "
+"παρακάτω πίνακα. Αυτές οι αναφορές δημιουργούνται στο παρασκήνιο, που "
+"σημαίνει ότι μπορείτε να απομακρυνθείτε από αυτήν τη σελίδα κατά τη "
+"δημιουργία της αναφοράς σας."
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:32
+msgid ""
+"Click to generate a CSV file of all students enrolled in this course, along "
+"with profile information such as email address and username:"
+msgstr ""
+"Κάνετε κλικ, για να δημιουργήσετε ένα αρχείο CSV όλων των φοιτητών που είναι"
+" εγγεγραμμένοι σε αυτό το μάθημα, μαζί με πληροφορίες της προσωπικής σελίδας"
+" τους, όπως email και όνομα χρήστη:"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:36
+msgid ""
+"Click to generate a CSV file that lists learners who can enroll in the "
+"course but have not yet done so."
+msgstr ""
+"Κάνετε κλικ, για να δημιουργήσετε ένα αρχείο CSV με τη λίστα φοιτητών που "
+"μπορούν να εγγραφούν στο μάθημα, αλλά δεν το έχουν κάνει ακόμη."
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:38
+msgid "Download a CSV of learners who can enroll"
+msgstr "Λήψη CSV "
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
+msgid "Click to download a CSV of anonymized student IDs:"
+msgstr "Κάνετε κλικ για λήψη ενός αρχείου CSV με τα ανώνυμα IDs των φοιτητών:"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:45
+msgid "Get Student Anonymized IDs CSV"
+msgstr "Λήψη CSV"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:57
+msgid ""
+"Select a problem to generate a CSV file that lists all student answers to "
+"the problem. You also select a section or chapter to include results of all "
+"problems in that section or chapter."
+msgstr ""
+"Επιλέξτε ένα τεστ, για να δημιουργήσετε ένα αρχείο CSV με όλες τις "
+"απαντήσεις των μαθητών στο συγκεκριμένο τεστ. Μπορείτε επίσης να επιλέξετε "
+"μια ενότητα ή κεφάλαιο, για να συμπεριλάβετε τα αποτελέσματα όλων των τεστ."
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:84
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/certificates.html:31
+msgid "Click to list certificates that are issued for this course:"
+msgstr ""
+"Κάνετε κλικ, για να δημιουργήσετε μια λίστα των βεβαιώσεων που εκδόθηκαν για"
+" αυτό το μάθημα:"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:86
+msgid "View Certificates Issued"
+msgstr "Προβολή βεβαιώσεων"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:87
+msgid "Download CSV of Certificates Issued"
+msgstr "Λήψη CSV"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:100
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/grading.html:25
+msgid ""
+"Click to generate a CSV grade report for all currently enrolled students."
+msgstr ""
+"Κάνετε κλικ, για να δημιουργήσετε μια αναφορά βαθμολογίας σε μορφή CSV για "
+"όλους τους εγγεγραμμένους φοιτητές."
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:103
+msgid "Generate Problem Grade Report"
+msgstr "Δημιουργία αναφοράς βαθμολογίας τεστ"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:108
+msgid ""
+"Click to generate a ZIP file that contains all submission texts and "
+"attachments."
+msgstr ""
+"Κάντε κλικ για να δημιουργήσετε ένα αρχείο ZIP με όλα τα κείμενα και τα "
+"συνημμένα που έχουν υποβληθεί."
+
+#: lms/templates/instructor/instructor_dashboard_2/extensions.html:15
+#: lms/templates/instructor/instructor_dashboard_2/extensions.html:70
+#: lms/templates/instructor/instructor_dashboard_2/extensions.html:93
+#, python-brace-format
+msgid ""
+"Specify the {platform_name} email address or username of a student here:"
+msgstr ""
+"Συμπληρώστε τη διεύθυνση ηλεκτρονικού ταχυδρομείου που έχει δηλωθεί στο "
+"{platform_name} ή το όνομα χρήστη του φοιτητή, εδώ:"
+
+#: lms/templates/instructor/instructor_dashboard_2/extensions.html:63
+msgid "List all students with due date extensions"
+msgstr "Λίστα φοιτητών"
+
+#: lms/templates/instructor/instructor_dashboard_2/extensions.html:88
+msgid ""
+"Resetting a problem's due date rescinds a due date extension for a student "
+"on a particular subsection. This will revert the due date for the student "
+"back to the problem's original due date."
+msgstr ""
+"Η επαναφορά της ημερομηνίας λήξης ενός τεστ ακυρώνει την παράταση προθεσμίας"
+" για έναν φοιτητή σε ένα συγκεκριμένο κεφάλαιο. Αυτό θα επαναφέρει την "
+"ημερομηνία λήξης για τον μαθητή στην αρχική ημερομηνία λήξης του τεστ."
+
+#: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:24
+msgid "* Required Information"
+msgstr "* Απαιτούμενη Πληροφορία"
+
+#: lms/templates/instructor/instructor_dashboard_2/instructor_dashboard_2.html:29
+#: lms/templates/instructor/instructor_dashboard_2/instructor_dashboard_2.html:116
+msgid "Instructor Dashboard"
+msgstr "Πίνακας διδάσκοντα"
+
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:102
+#, python-brace-format
+msgid ""
+"Note: Users must have an activated {platform_name} account before they can "
+"be enrolled as beta testers."
+msgstr ""
+"Επισήμανση: Οι χρήστες θα πρέπει να διαθέτουν έναν ενεργοποιημένο λογαριασμό"
+" στο {platform_name} προτού εγγραφούν ως beta testers."
+
+#: lms/templates/instructor/instructor_dashboard_2/membership.html:199
+msgid "Admin"
+msgstr "Διαχειριστής"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:10
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:14
+msgid "View Gradebook"
+msgstr "Προβολή βαθμών"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:22
+msgid "View a specific learner's enrollment status"
+msgstr "Δείτε την κατάσταση εγγραφής ενός συγκεκριμένου φοιτητή"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:28
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:50
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:69
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:143
+msgid "Learner email address or username"
+msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου ή όνομα χρήστη φοιτητή"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:44
+msgid "View a specific learner's grades and progress"
+msgstr "Δείτε τους βαθμούς και την πρόοδο ενός συγκεκριμένου φοιτητή"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:63
+msgid "Adjust a learner's grade for a specific problem"
+msgstr "Προσαρμόστε τη βαθμολογία ενός φοιτητή για ένα συγκεκριμένο τεστ"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:90
+msgid ""
+"For the specified problem, rescore the learner's responses. The 'Rescore "
+"Only If Score Improves' option updates the learner's score only if it "
+"improves in the learner's favor."
+msgstr ""
+"Για το καθορισμένο πρόβλημα, βαθμολογήστε ξανά τις απαντήσεις του φοιτητή. Η"
+" επιλογή \"Αναβαθμολόγηση μόνο για βελτίωση της βαθμολογίας\" ενημερώνει τη "
+"βαθμολογία του φοιτητή, μόνο εάν βελτιωθεί προς όφελός του."
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:105
+msgid ""
+"New score for problem, out of the total points available for the problem"
+msgstr ""
+"Νέα βαθμολογία για το τεστ, από τους συνολικούς διαθέσιμους βαθμούς για το "
+"τεστ"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:117
+msgid "Problem History"
+msgstr "Ιστορικό ενός τεστ"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:198
+msgid "Adjust all enrolled learners' grades for a specific problem"
+msgstr ""
+"Προσαρμόστε τους βαθμούς όλων των εγγεγραμμένων φοιτητών για ένα "
+"συγκεκριμένο τεστ"
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:216
+msgid ""
+"Rescore submitted responses. The 'Rescore Only If Scores Improve' option "
+"updates a learner's score only if it improves in the learner's favor."
+msgstr ""
+"Αναβαθμολογήστε τις απαντήσεις που υποβλήθηκαν. Η επιλογή \"Αναβαθμολόγηση "
+"μόνο για βελτίωση της βαθμολογίας\" ενημερώνει τη βαθμολογία ενός φοιτητή, "
+"μόνο εάν βελτιωθεί προς όφελός του."
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:220
+msgid "Rescore Only If Scores Improve"
+msgstr "Αναβαθμολόγηση μόνο για τη βελτίωση της βαθμολογίας"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:74
+msgid ""
+"Click to display the grading configuration for the                 course. "
+"The grading configuration is the breakdown of graded subsections of the "
+"course                 (such as exams and problem sets), and can be changed "
+"on the 'Grading'                 page (under 'Settings') in Studio."
+msgstr ""
+"Κάντε κλικ, για να εμφανίσετε τη διαμόρφωση βαθμολογίας για το μάθημα. Η "
+"διαμόρφωση βαθμολογίας είναι η ανάλυση των βαθμολογούμενων κεφαλαίων του "
+"μαθήματος (όπως τεστ και τελική εξέταση) και μπορεί να αλλάξει στη σελίδα "
+"\"Βαθμολόγηση\" (στην καρτέλα \"Ρυθμίσεις\") στο Studio."
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:78
+msgid "Click to download a CSV of                 anonymized student IDs:"
+msgstr "Κάνετε κλικ για λήψη ενός αρχείου CSV με τα ανώνυμα IDs των φοιτητών:"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:87
+msgid ""
+"Please be patient and do not click these buttons                 multiple "
+"times. Clicking these buttons multiple times will significantly slow the "
+"generation                 process."
+msgstr ""
+"Παρακαλούμε να είστε υπομονετικοί και μην κάνετε πολλές φορές κλικ σε αυτά "
+"τα κουμπιά. Εάν κάνετε πολλές φορές κλικ σε αυτά τα κουμπιά, θα επιβραδυνθεί"
+" σημαντικά η διαδικασία δημιουργίας."
+
+#: lms/templates/modal/_modal-settings-language.html:21
+msgid "Change Preferred Language"
+msgstr "Αλλαγή Προτιμώμενης Γλώσσας"
+
+#: lms/templates/modal/_modal-settings-language.html:34
+msgid "Please choose your preferred language"
+msgstr "Παρακαλώ επιλέξτε τη γλώσσα της προτίμησής σας"
+
+#: lms/templates/modal/_modal-settings-language.html:52
+msgid "Save Language Settings"
+msgstr "Αποθηκεύστε τις ρυθμίσεις γλώσσας"
+
+#: lms/templates/peer_grading/peer_grading.html:24
+#: lms/templates/peer_grading/peer_grading_closed.html:4
+#: lms/templates/peer_grading/peer_grading_problem.html:13
+msgid "Peer Grading"
+msgstr "Αλληλοαξιολόγηση"
+
+#: lms/templates/peer_grading/peer_grading.html:37
+msgid "Due date"
+msgstr "Υποβολή μέχρι"
+
+#: lms/templates/peer_grading/peer_grading.html:40
+msgid "Required"
+msgstr "Απαιτείται"
+
+#: lms/templates/peer_grading/peer_grading_closed.html:6
+msgid ""
+"The due date has passed, and peer grading for this problem is closed at this"
+" time."
+msgstr ""
+"Η προθεσμία υποβολής έχει λήξει και η αλληλοαξιολόγηση έχει πλέον κλείσει."
+
+#: lms/templates/peer_grading/peer_grading_closed.html:8
+msgid "The due date has passed, and peer grading is closed at this time."
+msgstr ""
+"Η προθεσμία υποβολής έχει λήξει και η αλληλοαξιολόγηση έχει πλέον κλείσει."
+
+#: lms/templates/peer_grading/peer_grading_problem.html:21
+msgid "Hide Question"
+msgstr "Απόκρυψη ερώτησης"
+
+#: lms/templates/registration/password_reset_complete.html:13
+msgid "Your Password Reset is Complete"
+msgstr "Η αλλαγή του κωδικού σας έχει ολοκληρωθεί"
+
+#: lms/templates/registration/password_reset_complete.html:33
+msgid "Password Reset Complete"
+msgstr "Η αλλαγή του κωδικού σας έχει ολοκληρωθεί"
+
+#: lms/templates/registration/password_reset_confirm.html:15
+#, python-brace-format
+msgid "Reset Your {platform_name} Password"
+msgstr "Αλλάξτε τον κωδικό πρόσβασής σας στο {platform_name} "
+
+#: lms/templates/registration/password_reset_confirm.html:37
+msgid "Invalid Password Reset Link"
+msgstr ""
+"Ο σύνδεσμος που χρησιμοποιήσατε για την αλλαγή του κωδικού σας δεν είναι "
+"έγκυρος"
+
+#: lms/templates/registration/password_reset_confirm.html:40
+#, python-brace-format
+msgid ""
+"This password reset link is invalid. It may have been used already. To reset"
+" your password, go to the {start_link}sign-in{end_link} page and select "
+"{start_strong}Forgot password{end_strong}."
+msgstr ""
+"Ο σύνδεσμος επαναφοράς του κωδικού σας δεν είναι έγκυρος. Πιθανόν να έχει "
+"χρησιμοποιηθεί ήδη. Για να αλλάξετε τον κωδικό σας, πηγαίνετε στην  "
+"{start_link}σελίδα σύνδεσης{end_link} και κάντε κλικ στο σύνδεσμο "
+"{start_strong}Ξεχάσατε τον κωδικό σας;{end_strong}."
+
+#: lms/templates/registration/password_reset_done.html:3
+msgid "Password reset successful"
+msgstr "Επιτυχής αλλαγή του κωδικού σας"
+
+#: lms/templates/registration/password_reset_done.html:8
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted. You should be receiving it shortly."
+msgstr ""
+"Σας έχουν σταλεί οδηγίες για την επαναφορά του κωδικού πρόσβασής σας στη "
+"διεύθυνση ηλεκτρονικού ταχυδρομείου που δηλώσατε. Ελέγξτε το ηλεκτρονικό σας"
+" ταχυδρομείο για την παραλαβή τους."
+
+#: lms/templates/static_templates/404.html:21
+#, python-brace-format
+msgid ""
+"The page that you were looking for was not found. Go back to the "
+"{link_start}homepage{link_end} ."
+msgstr ""
+"Η σελίδα που αναζητάτε δεν βρέθηκε. Επιστρέψτε στην {link_start}αρχική "
+"σελίδα{link_end}."
+
+#: lms/templates/static_templates/server-error.html:16
+#, python-brace-format
+msgid "There has been a 500 error on the {platform_name} servers"
+msgstr "Προέκυψε σφάλμα -500 error- στους διακομιστές του {platform_name}"
+
+#: lms/templates/student_account/finish_auth.html:6
+msgid "Please Wait"
+msgstr "Παρακαλούμε περιμένετε"
+
+#: lms/templates/student_account/login_and_register.html:12
+msgid "Sign in or Register"
+msgstr "Συνδεθείτε ή Εγγραφείτε"
+
+#: lms/templates/support/feature_based_enrollments.html:67
+msgid "No results found"
+msgstr "Κανένα αποτέλεσμα"
+
+#: lms/templates/survey/survey.html:42
+msgid "You are missing the following required fields:"
+msgstr "Δεν έχετε σημειώσει τα ακόλουθα απαιτούμενα πεδία:"
+
+#: lms/templates/ux/reference/bootstrap/course-skeleton.html:45
+msgid "Search the course"
+msgstr "Αναζήτηση στο μάθημα"
+
+#: lms/templates/ux/reference/bootstrap/course-skeleton.html:51
+msgid "Start Course"
+msgstr "Yλικό Mαθήματος"
+
+#: lms/templates/verify_student/_verification_help.html:9
+msgid "Have questions?"
+msgstr "Έχετε ερωτήσεις;"
+
+#: lms/templates/verify_student/pay_and_verify.html:20
+#, python-brace-format
+msgid "Enroll In {course_name}"
+msgstr "Εγγραφείτε στο {course_name}"
+
+#: openedx/core/djangoapps/dark_lang/templates/dark_lang/preview-language-fragment.html:16
+msgid "Preview Language Setting"
+msgstr "Προεπισκόπηση Ρυθμίσεων Γλώσσας"
+
+#: openedx/core/lib/license/templates/license.html:28
+msgid "All Rights Reserved"
+msgstr "Με την επιφύλαξη κάθε νόμιμου δικαιώματος"
+
+#: openedx/features/course_experience/templates/course_experience/course-dates-fragment.html:11
+msgid "Upcoming Dates"
+msgstr "Σημαντικές ημερομηνίες"
+
+#: themes/stanford-style/lms/templates/footer.html:36
+#, python-brace-format
+msgid "Copyright {year}. All rights reserved."
+msgstr ""
+"Δικαίωμα πνευματικής ιδιοκτησίας {year}. Με την επιφύλαξη κάθε νόμιμου "
+"δικαιώματος"
+
+#: themes/stanford-style/lms/templates/register-form.html:18
+#: themes/stanford-style/lms/templates/register-shib.html:104
+msgid "The following errors occurred while processing your registration:"
+msgstr ""
+"Παρουσιάστηκαν τα ακόλουθα σφάλματα κατά την διαδικασία της εγγραφής σας:"
+
+#: themes/stanford-style/lms/templates/register-form.html:49
+#, python-brace-format
+msgid "Create your own {platform_name} account below"
+msgstr "Δημιούργησε τον λογαριασμό σου στο {platform_name}"
+
+#: themes/stanford-style/lms/templates/register-form.html:51
+#: themes/stanford-style/lms/templates/register-form.html:71
+msgid ""
+"Required fields are noted by <strong class=\"indicator\">bold text and an "
+"asterisk (*)</strong>."
+msgstr ""
+"Τα υποχρεωτικά πεδία επισημαίνονται με<strong class=\"indicator\">έντονη "
+"γραφή και αστερίσκο(*)</strong>."
+
+#: themes/stanford-style/lms/templates/register-form.html:69
+msgid "Please complete the following fields to register for an account. "
+msgstr "Παρακαλώ συμπληρώστε τα παρακάτω πεδία για να εγγραφείτε."
+
+#: themes/stanford-style/lms/templates/register-form.html:95
+#: themes/stanford-style/lms/templates/register-form.html:136
+#: themes/stanford-style/lms/templates/register-shib.html:128
+msgid "Will be shown in any discussions or forums you participate in"
+msgstr "Θα εμφανίζεται σε όλες τις δημόσιες συζητήσεις"
+
+#: themes/stanford-style/lms/templates/register-form.html:180
+msgid "Highest Level of Education Completed"
+msgstr "Επίπεδο εκπαίδευσης"
+
+#: themes/stanford-style/lms/templates/register-form.html:206
+msgid "Year of Birth"
+msgstr "Έτος γέννησης"
+
+#: themes/stanford-style/lms/templates/register-form.html:230
+#, python-brace-format
+msgid "Please share with us your reasons for registering with {platform_name}"
+msgstr ""
+"Παρακαλώ μοιραστείτε μαζί μας τους λόγους της εγγραφής σας στο "
+"{platform_name}"
+
+#: themes/stanford-style/lms/templates/register-shib.html:73
+#, python-brace-format
+msgid "Update my {platform_name} Account"
+msgstr "Ενημέρωση του Λογαριασμού μου στο {platform_name}"
+
+#: themes/stanford-style/lms/templates/register-sidebar.html:35
+msgid "View our FAQs for answers to commonly asked questions."
+msgstr ""
+"Δείτε τις Συχνές Ερωτήσεις για τις πιο συχνές απορίες και τις συνηθέστερες "
+"απαντήσεις σε αυτές."
+
+#: themes/stanford-style/lms/templates/register-sidebar.html:37
+msgid ""
+"Once registered, most questions can be answered in the course specific "
+"discussion forums or through the FAQs."
+msgstr ""
+"Αφού εγγραφείτε θα βρείτε απαντήσεις για τα περισσότερα ερωτήματά σας είτε "
+"στα φόρα συζήτησης των μαθημάτων είτε στις Συχνές Ερωτήσεις."
+
+#: themes/stanford-style/lms/templates/emails/activation_email.txt:4
+#, python-brace-format
+msgid ""
+"Change your life and start learning today by activating your {platform_name}"
+" account. Click on the link below or copy and paste it into your browser's "
+"address bar."
+msgstr ""
+"Ενεργοποιήστε τον λογαριασμό σας στο {platform_name} πατώντας πάνω στο "
+"σύνδεσμο που ακολουθεί ή αντιγράφοντάς τον στην γραμμή διευθύνσεων του "
+"φυλλομετρητή σας."
+
+#: themes/stanford-style/lms/templates/emails/activation_email.txt:16
+#: themes/stanford-style/lms/templates/emails/email_change.txt:13
+#, python-brace-format
+msgid ""
+"If you didn't request this, you don't need to do anything; you won't receive"
+" any more email from us. Please do not reply to this e-mail; if you require "
+"assistance, check the about section of the {platform_name} Courses web site."
+msgstr ""
+"Εάν τελικώς δεν επιθυμείτε να εγγραφείτε, δεν απαιτείται καμία επιπλέον "
+"ενέργεια από μέρους σας. Δεν χρειάζεται να απαντήσετε σε αυτό το μήνυμα ούτε"
+" και θα λάβετε κάποιο άλλο e-mail από εμάς. Εάν χρειάζεστε βοήθεια, δείτε "
+"τις \"Συχνές Ερωτήσεις\" στη σελίδα του {platform_name}. "
+
+#: themes/stanford-style/lms/templates/emails/confirm_email_change.txt:2
+#, python-brace-format
+msgid ""
+"This is to confirm that you changed the e-mail associated with "
+"{platform_name} from {old_email} to {new_email}. If you did not make this "
+"request, please contact us at"
+msgstr ""
+"Το email αυτό σάς επιβεβαιώνει ότι έχετε αλλάξει το e-mail που σχετίζεται με"
+" το λογαριασμό σας {platform_name} από {old_email} σε {new_email}. Εάν δεν "
+"επιθυμείτε αυτή την αλλαγή παρακαλώ ενημερώστε μας στο"
+
+#: themes/stanford-style/lms/templates/emails/email_change.txt:2
+#, python-brace-format
+msgid ""
+"We received a request to change the e-mail associated with your "
+"{platform_name} account from {old_email} to {new_email}. If this is correct,"
+" please confirm your new e-mail address by visiting:"
+msgstr ""
+"Λάβαμε ένα αίτημα για αλλαγή του email σας στο {platform_name} από "
+"{old_email} σε {new_email}. Εάν επιθυμείτε όντως αυτή την αλλαγή, "
+"επιβεβαιώστε τη νέα διεύθυνση email πατώντας πάνω στον παρακάτω σύνδεσμο:"

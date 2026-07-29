@@ -4,15 +4,15 @@
 # EdX Team <info@edx.org>, 2024.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:40+0000\n"
-"PO-Revision-Date: 2025-07-23 17:31+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"POT-Creation-Date: 2025-10-30 00:53+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/open-edx/teams/6205/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,21 +34,21 @@ msgstr "個別学習者ダッシュボード"
 
 #: settings/common.py:43
 msgid "At-Risk Learners Dashboard"
-msgstr "危険にさらされている学習者ダッシュボード"
+msgstr "リスクのある学習者ダッシュボード"
 
-#: settings/common.py:110
+#: settings/common.py:114
 msgid "Course"
 msgstr "講座"
 
-#: settings/common.py:118
+#: settings/common.py:122
 msgid "Graded Subsection"
 msgstr "採点済みサブセクション"
 
-#: settings/common.py:126
+#: settings/common.py:130
 msgid "Problem"
 msgstr "問題"
 
-#: settings/common.py:134
+#: settings/common.py:138
 msgid "Video"
 msgstr "ビデオ"
 
@@ -64,19 +64,6 @@ msgid ""
 "your system administrator."
 msgstr "Supersetはコーススタッフとインストラクターにのみ表示されます。システム管理者に連絡してください。"
 
-#: utils.py:165
-#, python-brace-format
-msgid ""
-"Unable to fetch Superset guest token, Superset server error "
-"{server_response}"
-msgstr "Supersetゲストトークンを取得できません。Supersetサーバーエラー{server_response}"
-
-#: utils.py:174
-msgid ""
-"Unable to fetch Superset guest token, mostly likely due to invalid "
-"settings.SUPERSET_CONFIG"
-msgstr "Supersetゲストトークンを取得できません。設定が無効である可能性が高いです。SUPERSET_CONFIG"
-
 #: views.py:87
 #, python-brace-format
 msgid "Course not found: '{course_id}'"
@@ -87,12 +74,12 @@ msgstr "コースが見つかりません: '{course_id}'"
 msgid "Invalid course id: '{course_id}'"
 msgstr "コースIDが無効です: '{course_id}'"
 
-#: views.py:172
+#: views.py:179
 #, python-brace-format
 msgid "Invalid usage id: '{usage_id}'"
 msgstr "使用IDが無効です: '{usage_id}'"
 
-#: views.py:201
+#: views.py:208
 #, python-brace-format
 msgid "No dashboard for block type: '{block_type}'"
 msgstr "ブロックタイプ '{block_type}' のダッシュボードはありません"
@@ -114,3 +101,14 @@ msgstr "埋め込むダッシュボードのID。Supersetの埋め込みダッ�
 #: xblock.py:64
 msgid "Filters"
 msgstr "フィルター"
+
+#: xblock.py:66
+msgid ""
+"List of SQL filters to apply to the\n"
+"               dashboard. E.g: [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               The fields used here must be available on every dataset used by the dashboard.\n"
+"               "
+msgstr ""
+"ダッシュボードに適用するSQLフィルターのリスト。例: [\"org='edX'\", \"country in ('us', 'co')\"]  \n"
+"ここで使用されるフィールドは、ダッシュボードで使用されるすべてのデータセットで利用可能でなければなりません。\n"
+"               "

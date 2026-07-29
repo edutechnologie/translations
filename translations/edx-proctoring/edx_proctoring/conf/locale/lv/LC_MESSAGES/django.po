@@ -6,15 +6,14 @@
 # 
 # Translators:
 # Brian Smith, 2025
-# Eden Huthmacher, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:37+0000\n"
-"PO-Revision-Date: 2025-07-23 17:42+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"POT-Creation-Date: 2025-10-30 00:49+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Latvian (https://app.transifex.com/open-edx/teams/6205/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +51,7 @@ msgstr "Izveidots"
 
 #: admin.py:393
 msgid "Download Software Clicked"
-msgstr "Noklikšķināts uz Lejupielādēt Programmatūru"
+msgstr "Lejupielādēt programmatūru Noklikšķināts"
 
 #: admin.py:394
 msgid "Ready To Start"
@@ -70,6 +69,10 @@ msgstr "Gatavi iesniegt"
 msgid "Declined"
 msgstr "Noraidīts"
 
+#: admin.py:398
+msgid "Timed Out"
+msgstr "Noildze"
+
 #: admin.py:399
 msgid "Submitted"
 msgstr "Iesniegts"
@@ -80,7 +83,7 @@ msgstr "Nepieciešama otrā pārskatīšana"
 
 #: admin.py:401
 msgid "Verified"
-msgstr "Pārbaudīts"
+msgstr "Verificēts"
 
 #: admin.py:402
 msgid "Rejected"
@@ -92,19 +95,19 @@ msgstr "Kļūda"
 
 #: admin.py:407
 msgid "Onboarding Missing"
-msgstr "Pieslēgšanās nav"
+msgstr "Ieslēgšanās trūkst"
 
 #: admin.py:408
 msgid "Onboarding Failed"
-msgstr "Pieslēgšanās neizdevās"
+msgstr "Ieslēgšanās neizdevās"
 
 #: admin.py:409
 msgid "Onboarding Pending"
-msgstr "Gaida pieslēgšanos"
+msgstr "Gaida iestāšanos"
 
 #: admin.py:410
 msgid "Onboarding Expired"
-msgstr "Pieslēgšanās termiņš beidzies"
+msgstr "Ieslēgšanās termiņš beidzies"
 
 #: api.py:824 views.py:1297
 #, python-brace-format
@@ -203,7 +206,34 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Rezultāts būs redzams pēc <strong id=\"wait_deadline\">ielādes...</strong>\n"
+"Rezultāts būs redzams pēc <strong id=\"wait_deadline\">ielādes...</strong>\n"
+"    "
+
+#: templates/emails/proctoring_attempt_satisfactory_email.html:5
+#: templates/emails/proctoring_attempt_submitted_email.html:5
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:5
+msgid ""
+"\n"
+"        Hello,\n"
+"    "
+msgstr ""
+"\n"
+"Sveiki,\n"
+"    "
+
+#: templates/emails/proctoring_attempt_satisfactory_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and you\n"
+"        met all proctoring requirements.\n"
+"    "
+msgstr ""
+"\n"
+"Jūsu uzraudzītais eksāmens &quot; %(exam_name)s &quot; iekšā\n"
+" <a href=\"%(course_url)s\">%(course_name)s</a> tika pārskatīts, un jūs\n"
+" atbilda visām provizoriskām prasībām.\n"
 "    "
 
 #: templates/emails/proctoring_attempt_satisfactory_email.html:21
@@ -218,9 +248,32 @@ msgid ""
 msgstr ""
 "\n"
 "    Ja jums ir kādi jautājumi par rezultātiem, varat sazināties pa šādu adresi. \n"
-"        <a href=\"%(contact_url)s\">\n"
-"            %(contact_url_text)s\n"
-"        </a>.\n"
+"       <a href=\"%(contact_url)s\">\n"
+"           %(contact_url_text)s\n"
+"       </a>.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and the\n"
+"        course team has identified one or more violations of the proctored exam rules. Examples\n"
+"        of issues that may result in a rules violation include browsing\n"
+"        the internet, blurry or missing photo identification, using a phone,\n"
+"        or getting help from another person. As a result of the identified issue(s),\n"
+"        you did not successfully meet the proctored exam requirements.\n"
+"    "
+msgstr ""
+"\n"
+"Jūsu uzraudzītais eksāmens &quot; %(exam_name)s &quot; iekšā\n"
+" <a href=\"%(course_url)s\">%(course_name)s</a> tika pārskatīts un\n"
+" kursa komanda ir konstatējusi vienu vai vairākus uzraudzītā eksāmena noteikumu pārkāpumus. Piemēri\n"
+" Uzdevumi, kuru rezultātā var tikt pārkāpti noteikumi, ietver pārlūkošanu\n"
+" internets, izplūdusi vai trūkstoša identifikācija ar fotogrāfiju, izmantojot tālruni,\n"
+" vai saņemt palīdzību no citas personas. Konstatētās uzdevumi(-u) rezultātā\n"
+" jūs neizpildījāt eksāmena prasības.\n"
 "    "
 
 #: templates/emails/proctoring_attempt_unsatisfactory_email.html:25
@@ -235,11 +288,22 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Lai pārsūdzētu uzraudzīto eksāmenu rezultātus, lūdzu, iesniedziet attiecīgo informāciju par jūsu eksāmenu \n"
-"<a href=\"%(contact_url)s\">\n"
-"    %(contact_url_text)s\n"
-"</a>.\n"
+"Lai pārsūdzētu uzraudzīto eksāmenu rezultātus, lūdzu, iesniedziet attiecīgo informāciju\n"
+" par jūsu eksāmenu \n"
+" <a href=\"%(contact_url)s\">\n"
+"%(contact_url_text)s\n"
+"</a> .\n"
 "    "
+
+#: templates/onboarding_exam/entrance.html:5
+msgid ""
+"\n"
+"    Proctoring onboarding exam\n"
+"  "
+msgstr ""
+"\n"
+"Uzņemšanas eksāmena sagatavošana\n"
+"  "
 
 #: templates/onboarding_exam/entrance.html:12
 msgid ""
@@ -248,7 +312,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Kāpēc tas jums ir svarīgi:\n"
+"Kāpēc tas jums ir svarīgi:\n"
 "    "
 
 #: templates/onboarding_exam/entrance.html:18
@@ -258,7 +322,17 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Nosakiet savu identitāti pārbaudes sistēmā, lai kārtotu uzraudzītu eksāmenu\n"
+"Nosakiet savu identitāti pārbaudes sistēmā, lai kārtotu uzraudzītu eksāmenu\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:23
+msgid ""
+"\n"
+"        Create your onboarding profile for faster access in the future\n"
+"      "
+msgstr ""
+"\n"
+"Izveidojiet savu reģistrācijas profilu, lai turpmāk piekļūtu ātrāk\n"
 "      "
 
 #: templates/onboarding_exam/entrance.html:28
@@ -268,7 +342,33 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Izmēģiniet veikt uzraudzītu testu\n"
+"Izmēģiniet veikt uzraudzītu testu\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:34
+#, python-format
+msgid ""
+"\n"
+"      Proctoring for this course is provided via %(provider_name)s.  Onboarding review, including identity verification, can take 2+ business days.\n"
+"    "
+msgstr ""
+"\n"
+"      Šī kursa uzraudzība tiek nodrošināta, izmantojot vietni %(provider_name)s.  Uzņemšanas pārbaude, tostarp identitātes pārbaude, var aizņemt vairāk nekā 2 darba dienas.\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:40
+#, python-format
+msgid ""
+"\n"
+"        Once your profile has been reviewed, you will receive an email with review results. The email will come from\n"
+"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
+"        Make sure this email has been added to your inbox filter.\n"
+"      "
+msgstr ""
+"\n"
+"        Kad jūsu profils būs pārskatīts, saņemsiet e-pasta vēstuli ar pārskatīšanas rezultātiem. E-pasts tiks saņemts no\n"
+"       <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
+"        Pārliecinieties, ka šis e-pasts ir pievienots jūsu ienākošās vēstules filtram.\n"
 "      "
 
 #: templates/onboarding_exam/entrance.html:49
@@ -281,14 +381,14 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Lūdzu sazinieties\n"
-"        <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>\n"
-"        ja jums ir jautājumi.\n"
+"Lūdzu sazinieties\n"
+" <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>\n"
+" ja jums ir jautājumi.\n"
 "      "
 
 #: templates/onboarding_exam/entrance.html:58
 msgid "Continue to onboarding"
-msgstr "Turpināt uzņemšanu"
+msgstr "Turpināt uz uzņemšanu"
 
 #: templates/onboarding_exam/entrance.html:62
 msgid ""
@@ -297,9 +397,29 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"    ```\n"
 "Jums tiks sniegti norādījumi par tiešsaistes pārbaudes programmatūras iestatīšanu un identitātes verifikāciju.\n"
-"```\n"
+"  "
+
+#: templates/onboarding_exam/error.html:4
+msgid ""
+"\n"
+"    Error: There was a problem with your onboarding session\n"
+"  "
+msgstr ""
+"\n"
+"Kļūda: radās problēma ar jūsu pievienošanās sesiju\n"
+"  "
+
+#: templates/onboarding_exam/error.html:13
+msgid ""
+"\n"
+"    Your proctoring session ended before you completed this onboarding exam.\n"
+"    You should retry this onboarding exam.\n"
+"  "
+msgstr ""
+"\n"
+"Jūsu pārbaudes sesija beidzās, pirms pabeidzāt šo iestāšanās eksāmenu.\n"
+" Jums vajadzētu vēlreiz izmēģināt šo iestāšanās eksāmenu.\n"
 "  "
 
 #: templates/onboarding_exam/ready_to_submit.html:6
@@ -310,7 +430,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Jūs kārtojat \"%(exam_display_name)s\" kā uzņemšanas eksāmenu. Lai pabeigtu iestāšanos, jums jānoklikšķina uz “Jā, beigt manu uzraudzīto eksāmenu” un jāiesniedz pārbaudes sesija.\n"
+"Jūs kārtojat &quot; %(exam_display_name)s &quot; kā uzņemšanas eksāmenu. Lai pabeigtu iestāšanos, jums jānoklikšķina uz “Jā, beigt manu uzraudzīto eksāmenu” un jāiesniedz pārbaudes sesija.\n"
 "    "
 
 #: templates/onboarding_exam/rejected.html:5
@@ -320,8 +440,25 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"    Jūsu uzņemšanas sesija tika pārskatīta, taču tā neizturēja visas prasības\n"
+"Jūsu uzņemšanas sesija tika pārskatīta, taču tā neizturēja visas prasības\n"
 "  "
+
+#: templates/onboarding_exam/rejected.html:12
+#, python-format
+msgid ""
+"\n"
+"      Please contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> if you have questions. You may retake this onboarding exam by clicking \"Retry my exam\".\n"
+"    "
+msgstr ""
+"\n"
+"      Lūdzu, sazinieties ar\n"
+"     <a href=\"mailto:%(integration_specific_email)s\">\n"
+"       %(integration_specific_email)s\n"
+"      </a> ja jums ir jautājumi. Jūs varat atkārtoti kārtot šo iekāpšanas eksāmenu, noklikšķinot uz \"Atkārtot eksāmenu\".\n"
+"    "
 
 #: templates/onboarding_exam/rejected.html:20
 #: templates/onboarding_exam/submitted.html:47
@@ -343,8 +480,71 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"    Jūs iesniedzāt šo uzņemšanas eksāmenu\n"
+"Jūs iesniedzāt šo uzņemšanas eksāmenu\n"
 "  "
+
+#: templates/onboarding_exam/submitted.html:11
+msgid ""
+"\n"
+"      If you do not have an onboarding profile with the system,\n"
+"      Verificient will review your submission and create an onboarding\n"
+"      profile to grant you access to proctored exams. Onboarding\n"
+"      profile review can take 2+ business days.\n"
+"    "
+msgstr ""
+"\n"
+"Ja jums nav ieejas profila sistēmā,\n"
+" Verificiant pārskatīs jūsu iesniegumu un izveidos uzņemsanas\n"
+" profilu, lai piešķirtu jums piekļuvi uzraudzītiem eksāmeniem. Uzņemšanas\n"
+" profila izskatīšana var ilgt 2+ darbadienas.\n"
+"    "
+
+#: templates/onboarding_exam/submitted.html:19
+#, python-format
+msgid ""
+"\n"
+"      Once your profile has been reviewed, you will receive an email\n"
+"      with review results. The email will come from\n"
+"      <a href=\"mailto:%(learner_notification_from_email)s\">\n"
+"        %(learner_notification_from_email)s\n"
+"      </a>,\n"
+"      so make sure this email has been added to your inbox filter.\n"
+"    "
+msgstr ""
+"\n"
+"      Kad jūsu profils būs pārbaudīts, saņemsiet e-pasta vēstuli.\n"
+"      ar pārskatīšanas rezultātiem. E-pasts tiks saņemts no\n"
+"     <a href=\"mailto:%(learner_notification_from_email)s\">\n"
+"       %(learner_notification_from_email)s\n"
+"     </a>,\n"
+"      tāpēc pārliecinieties, ka šis e-pasts ir pievienots jūsu ienākošās vēstules filtram.\n"
+"    "
+
+#: templates/onboarding_exam/submitted.html:29
+msgid ""
+"\n"
+"      If you already have an onboarding profile approved through another course,\n"
+"      this submission will not be reviewed. You may retry this exam at any time\n"
+"      to validate that your setup still meets the requirements for proctoring.\n"
+"    "
+msgstr ""
+"\n"
+"      Ja jums jau ir apstiprināts ievadprofils, izmantojot citu kursu,\n"
+"      šis iesniegums netiks izskatīts. Šo eksāmenu varat atkārtot jebkurā laikā.\n"
+"      lai pārbaudītu, vai jūsu iestatījumi joprojām atbilst uzraudzības prasībām.\n"
+"    "
+
+#: templates/onboarding_exam/submitted.html:36
+msgid ""
+"\n"
+"      If you have made an error in this submission you may restart the onboarding process. \n"
+"      Your current submission will be removed and will not receive a review.\n"
+"    "
+msgstr ""
+"\n"
+"      Ja pieļāvāt kļūdu šajā iesniegšanā, varat atkārtoti sākt reģistrēšanās procesu. \n"
+"      Jūsu pašreizējais iesniegums tiks dzēsts un netiks pārskatīts.\n"
+"    "
 
 #: templates/onboarding_exam/submitted.html:41
 msgid "I understand and want to reset this onboarding exam."
@@ -362,10 +562,10 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Lūdzu sazinieties\n"
-"      <a href=\"mailto:%(integration_specific_email)s\">\n"
-"        %(integration_specific_email)s\n"
-"      </a> ja jums ir jautājumi.\n"
+"Lūdzu sazinieties\n"
+" <a href=\"mailto:%(integration_specific_email)s\">\n"
+"%(integration_specific_email)s\n"
+"</a> ja jums ir jautājumi.\n"
 "    "
 
 #: templates/onboarding_exam/verified.html:4
@@ -375,7 +575,7 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"    Jūsu reģistrācijas profils tika veiksmīgi pārskatīts\n"
+"Jūsu reģistrācijas profils tika veiksmīgi pārskatīts\n"
 "  "
 
 #: templates/onboarding_exam/verified.html:11
@@ -385,8 +585,30 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Jūsu profils ir izveidots, un jūs esat gatavi kārtot uzraudzītos eksāmenus šajā kursā.\n"
+"Jūsu profils ir izveidots, un jūs esat gatavi kārtot uzraudzītos eksāmenus šajā kursā.\n"
 "    "
+
+#: templates/practice_exam/entrance.html:5
+msgid ""
+"\n"
+"        Try a proctored exam\n"
+"      "
+msgstr ""
+"\n"
+"Izmēģiniet uzraudzītu eksāmenu\n"
+"      "
+
+#: templates/practice_exam/entrance.html:12
+msgid ""
+"\n"
+"        Get familiar with proctoring for real exams later in the course. This practice exam has no impact\n"
+"        on your grade in the course.\n"
+"      "
+msgstr ""
+"\n"
+"Vēlāk kursa laikā iepazīstieties ar sagatavošanu reāliem eksāmeniem. Šis izmēģinājuma eksāmens neietekmē\n"
+" par savu vērtējumu kursā.\n"
+"      "
 
 #: templates/practice_exam/entrance.html:20
 msgid "Continue to my practice exam"
@@ -399,8 +621,17 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          Jūs saņemsit norādījumus, kā iestatīt tiešsaistes uzraudzības programmatūru un pārbaudīt savu identitāti.\n"
+"Jūs saņemsit norādījumus, kā iestatīt tiešsaistes uzraudzības programmatūru un pārbaudīt savu identitāti.\n"
 "        "
+
+#: templates/practice_exam/error.html:5
+msgid ""
+"\n"
+"        There was a problem with your practice proctoring session\n"
+"      "
+msgstr ""
+"\n"
+"Radās problēma ar jūsu izmēģinājuma uzraudzības sesiju"
 
 #: templates/practice_exam/error.html:13
 msgid ""
@@ -409,8 +640,30 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Jūsu izmēģinājuma pārbaudes rezultāti: <b class=\"failure\">neapmierinoši</b>\n"
+"Jūsu izmēģinājuma pārbaudes rezultāti: <b class=\"failure\">neapmierinoši</b>\n"
 "    "
+
+#: templates/practice_exam/error.html:21
+msgid ""
+"\n"
+"        Your proctoring session ended before you completed this practice exam.\n"
+"        You can retry this practice exam if you had problems setting up the online proctoring software.\n"
+"      "
+msgstr ""
+"\n"
+"Jūsu uzraudzības sesija beidzās, pirms pabeidzāt šo izmēģinājuma eksāmenu.\n"
+" Varat vēlreiz mēģināt šo izmēģinājuma eksāmenu, ja radušās uzdevumi ar tiešsaistes uzraudzības programmatūras iestatīšanu.\n"
+"      "
+
+#: templates/practice_exam/submitted.html:5
+msgid ""
+"\n"
+"        You have submitted this practice proctored exam\n"
+"      "
+msgstr ""
+"\n"
+"Jūs iesniedzāt šo izmēģinājuma uzraudzīto eksāmenu\n"
+"      "
 
 #: templates/practice_exam/submitted.html:13
 msgid ""
@@ -420,8 +673,18 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Izmēģinājuma eksāmeni jūsu vērtējumu neietekmē.\n"
-"Jūs pabeidzāt šo izmēģinājuma eksāmenu un varat turpināt kursa darbu.\n"
+"Izmēģinājuma eksāmeni jūsu vērtējumu neietekmē.\n"
+" Jūs pabeidzāt šo izmēģinājuma eksāmenu un varat turpināt kursa darbu.\n"
+"      "
+
+#: templates/proctored_exam/confirm-decline.html:5
+msgid ""
+"\n"
+"        Are you sure you want to take this exam without proctoring?\n"
+"      "
+msgstr ""
+"\n"
+"        Vai tiešām vēlaties kārtot šo eksāmenu bez uzraudzības?\n"
 "      "
 
 #: templates/proctored_exam/confirm-decline.html:10
@@ -451,7 +714,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Šis eksāmens ir uzraudzīts\n"
+"Šis eksāmens ir uraudzīts\n"
 "    "
 
 #: templates/proctored_exam/entrance.html:9
@@ -479,7 +742,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Jūs saņemsit norādījumus, kā iestatīt tiešsaistes uzraudzības programmatūru un pārbaudīt savu identitāti.</br>\n"
+"Jūs saņemsit norādījumus, kā iestatīt tiešsaistes uzraudzības programmatūru un pārbaudīt savu identitāti.</br>\n"
 "      "
 
 #: templates/proctored_exam/error.html:4
@@ -490,12 +753,56 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Kļūda ar uzraudzītu eksāmenu\n"
+"Kļūda ar uzraudzītu eksāmenu\n"
 "    "
+
+#: templates/proctored_exam/error.html:11
+#, python-format
+msgid ""
+"\n"
+"        A system error has occurred with your proctored exam. Please reach out to your course \n"
+"        team at <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a> \n"
+"        for assistance, and return to the exam once you receive further instructions.\n"
+"      "
+msgstr ""
+"\n"
+"Veicot pārbaudīto eksāmenu, radās sistēmas kļūda. Lūdzu, sazinieties ar savu kursu\n"
+" komanda pa <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a>\n"
+" lai saņemtu palīdzību, un atgriezieties pie eksāmena, tiklīdz saņemsiet papildu norādījumus.\n"
+"      "
+
+#: templates/proctored_exam/error.html:17
+#, python-format
+msgid ""
+"\n"
+"        A system error has occurred with your proctored exam. Please reach out to \n"
+"        <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">%(platform_name)s Support</a> for \n"
+"        assistance, and return to the exam once you receive further instructions.\n"
+"      "
+msgstr ""
+"\n"
+"Veicot uzraudzīto eksāmenu, radās sistēmas kļūda. Lūdzu, sazinieties ar\n"
+" <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">%(platform_name)s Atbalsts</a>\n"
+" palīdzību un atgriezieties pie eksāmena, tiklīdz saņemsiet papildu norādījumus.\n"
+"      "
 
 #: templates/proctored_exam/error_modal.html:7
 msgid "Close"
 msgstr "Aizvērt"
+
+#: templates/proctored_exam/error_wrong_browser.html:10
+msgid ""
+"\n"
+"      The content of this exam can only be viewed through the RPNow\n"
+"      application. If you have yet to complete your exam, please\n"
+"      return to the RPNow application to proceed.\n"
+"    "
+msgstr ""
+"\n"
+"      Šī eksāmena saturu var apskatīt tikai ar RPNow\n"
+"      lietojumprogrammā. Ja jums vēl nav pabeigts eksāmens, lūdzu, izmantojiet šo iespēju\n"
+"      atgriezieties RPNow lietojumprogrammā, lai turpinātu darbu.\n"
+"    "
 
 #: templates/proctored_exam/error_wrong_browser.html:17
 msgid ""
@@ -504,7 +811,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Varat arī beigt eksāmenu.\n"
+"Varat arī beigt eksāmenu.\n"
 "    "
 
 #: templates/proctored_exam/error_wrong_browser.html:22
@@ -518,7 +825,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Šī eksāmena termiņš ir pagājis\n"
+"Šī eksāmena termiņš ir pagājis\n"
 "    "
 
 #: templates/proctored_exam/expired.html:9 templates/timed_exam/expired.html:9
@@ -528,7 +835,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Tā kā termiņš ir pagājis, jūs vairs nevarat kārtot šo eksāmenu.\n"
+"Tā kā termiņš ir pagājis, jūs vairs nevarat kārtot šo eksāmenu.\n"
 "    "
 
 #: templates/proctored_exam/failed-prerequisites.html:9
@@ -538,7 +845,17 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Jūs neizpildījāt šī eksāmena kārtošanas prasības.\n"
+"Jūs neizpildījāt šī eksāmena kārtošanas prasības.\n"
+"    "
+
+#: templates/proctored_exam/failed-prerequisites.html:14
+msgid ""
+"\n"
+"    You did not satisfy the following prerequisites:\n"
+"    "
+msgstr ""
+"\n"
+"Jūs neizpildījāt šādus priekšnoteikumus:\n"
 "    "
 
 #: templates/proctored_exam/failed-prerequisites.html:32
@@ -548,7 +865,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Neapmierinātu priekšnosacījumu dēļ šo eksāmenu var kārtot tikai bez pārbaudes.\n"
+"Neapmierinātu priekšnosacījumu dēļ šo eksāmenu var kārtot tikai bez pārbaudes.\n"
 "      "
 
 #: templates/proctored_exam/failed-prerequisites.html:40
@@ -559,7 +876,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Ja jums ir jautājumi par savu prasību statusu, sazinieties ar %(platform_name)s atbalsta dienestu.\n"
+"Ja jums ir jautājumi par savu prasību statusu, sazinieties ar %(platform_name)s atbalsta dienestu.\n"
 "    "
 
 #: templates/proctored_exam/footer.html:5
@@ -569,7 +886,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        Par uzraudzītajiem eksāmeniem\n"
+"Par uzraudzītajiem eksāmeniem\n"
 "        "
 
 #: templates/proctored_exam/inactive_account.html:4
@@ -579,7 +896,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Jūs neesat aktivizējuši savu kontu.\n"
+"Jūs neesat aktivizējuši savu kontu.\n"
 "    "
 
 #: templates/proctored_exam/inactive_account.html:10
@@ -591,7 +908,8 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Jūsu %(platform_name)s konts vēl nav aktivizēts. Lai kārtotu uzraudzīto eksāmenu, jums ir jāaktivizē savs konts.\n"
+"Jūsu %(platform_name)s konts vēl nav aktivizēts. Lai kārtotu uzraudzīto eksāmenu,\n"
+" jums ir jāaktivizē savs konts.\n"
 "    "
 
 #: templates/proctored_exam/inactive_account.html:16
@@ -603,9 +921,22 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Lūdzu, pārbaudiet sava reģistrētā e-pasta mapes Iesūtne un Mēstules, lai atrastu aktivizācijas e-pasta ziņojumu no\n"
-" %(platform_name)s.\n"
+"Lūdzu, pārbaudiet sava reģistrētā e-pasta mapes Iesūtne un Mēstules, lai atrastu aktivizācijas e-pasta ziņojumu no\n"
+" %(platform_name)s .\n"
 "    "
+
+#: templates/proctored_exam/inactive_account.html:21
+#, python-format
+msgid ""
+"\n"
+"        If you cannot find this email, you can <a href=\"%(reset_link)s\" target=\"_blank\">reset your password</a> to\n"
+"        activate your account.\n"
+"      "
+msgstr ""
+"\n"
+"        Ja nevarat atrast šo e-pasta vēstuli, varat atjaunot paroli <a href=\"%(reset_link)s\" target=\"_blank\"></a> uz adresi.\n"
+"        aktivizēt savu kontu.\n"
+"      "
 
 #: templates/proctored_exam/inactive_account.html:26
 msgid ""
@@ -614,8 +945,21 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Ja nevarat atrast šo e-pasta ziņojumu, varat atiestatīt savu paroli, lai aktivizētu savu kontu.\n"
+"Ja nevarat atrast šo e-pasta ziņojumu, varat atiestatīt savu paroli, lai aktivizētu savu kontu.\n"
 "      "
+
+#: templates/proctored_exam/inactive_account.html:32
+#, python-format
+msgid ""
+"\n"
+"      If you continue to have trouble please contact <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">\n"
+"      %(platform_name)s Support</a>.\n"
+"    "
+msgstr ""
+"\n"
+"Ja uzdevumi turpinās, lūdzu, sazinieties <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">\n"
+"%(platform_name)s Atbalsts</a> .\n"
+"    "
 
 #: templates/proctored_exam/instructions.html:6
 msgid ""
@@ -624,7 +968,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Iestatiet un sāciet uzraudzīto eksāmenu\n"
+"Iestatiet un sāciet uzraudzīto eksāmenu\n"
 "    "
 
 #: templates/proctored_exam/instructions.html:12
@@ -638,11 +982,11 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          Piezīme. Uzraudzītā eksāmena iestatīšanas ietvaros jums tiks lūgts\n"
-"          apstiprināt savu identitāti. Pirms sākat, pārliecinieties, vai izmantojat\n"
-"          datoru ar tīmekļa kameru un vai jums ir derīga identifikācijas forma\n"
-"          ar fotoattēlu, piemēram, autovadītāja apliecība vai\n"
-"          pase.\n"
+"Piezīme. Kā daļa no uzraudzītā eksāmena iestatīšanas jums tiks jautāts\n"
+" lai pārbaudītu savu identitāti. Pirms sākat, pārliecinieties, ka esat\n"
+" datorā ar tīmekļa kameru un ka jums ir derīga veidlapa\n"
+" personu apliecinošu dokumentu ar fotogrāfiju, piemēram, vadītāja apliecību vai\n"
+" pase.\n"
 "        "
 
 #: templates/proctored_exam/instructions.html:27
@@ -665,6 +1009,16 @@ msgstr "Sāciet sistēmas pārbaudi"
 msgid "Start Exam"
 msgstr "Sāciet eksāmenu"
 
+#: templates/proctored_exam/instructions.html:40
+msgid ""
+"\n"
+"          Step 1\n"
+"        "
+msgstr ""
+"\n"
+"1. darbība\n"
+"        "
+
 #: templates/proctored_exam/instructions.html:45
 msgid ""
 "\n"
@@ -672,12 +1026,42 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          Kopējiet šo unikālo eksāmena kodu. Jums tiks piedāvāts ielīmēt šo kodu vēlāk, pirms sākat eksāmenu.\n"
+"          Kopējiet šo unikālo eksāmena kodu. Pirms eksāmena sākšanas vēlāk jums tiks piedāvāts ielīmēt šo kodu.\n"
 "        "
 
 #: templates/proctored_exam/instructions.html:51
 msgid "Copy Exam Code"
 msgstr "Kopējiet eksāmena kodu"
+
+#: templates/proctored_exam/instructions.html:54
+msgid ""
+"\n"
+"        Select the exam code, then copy it using Control + C (Windows) or Command + C (Mac).\n"
+"      "
+msgstr ""
+"\n"
+"        Atlasiet eksāmena kodu un kopējiet to, izmantojot Control + C (Windows) vai Command + C (Mac).\n"
+"      "
+
+#: templates/proctored_exam/instructions.html:59
+msgid ""
+"\n"
+"          Step 2\n"
+"        "
+msgstr ""
+"\n"
+"2. darbība\n"
+"        "
+
+#: templates/proctored_exam/instructions.html:64
+msgid ""
+"\n"
+"        Start your system check now. A new window will open for this step and you will verify your identity.\n"
+"      "
+msgstr ""
+"\n"
+"        Uzsāciet sistēmas pārbaudi. Šim solim tiks atvērts jauns logs, un jūs apstiprināsiet savu identitāti.\n"
+"      "
 
 #: templates/proctored_exam/instructions.html:69
 msgid ""
@@ -686,7 +1070,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Pārliecinieties, ka jūs:\n"
+"Pārliecinieties, ka jūs:\n"
 "      "
 
 #: templates/proctored_exam/instructions.html:74
@@ -698,6 +1082,16 @@ msgid "Have your valid photo ID (e.g. driver's license or passport) ready"
 msgstr ""
 "Sagatavojiet derīgu personu apliecinošu dokumentu ar fotogrāfiju (piemēram, "
 "autovadītāja apliecību vai pasi)."
+
+#: templates/proctored_exam/instructions.html:81
+msgid ""
+"\n"
+"          Step 3\n"
+"        "
+msgstr ""
+"\n"
+"3. darbība\n"
+"        "
 
 #: templates/proctored_exam/instructions.html:86
 msgid ""
@@ -714,6 +1108,16 @@ msgstr ""
 msgid "Take this exam without proctoring."
 msgstr "Eksāmenu kārtojiet bez uzraudzības."
 
+#: templates/proctored_exam/onboarding_error.html:4
+msgid ""
+"\n"
+"      You must complete an onboarding exam before taking this proctored exam\n"
+"    "
+msgstr ""
+"\n"
+"Pirms šī uzraudzītā eksāmena kārtošanas jums ir jānokārto uzņemšanas eksāmens\n"
+"    "
+
 #: templates/proctored_exam/onboarding_error.html:11
 msgid ""
 "\n"
@@ -721,7 +1125,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Pirms mēģināt nokārtot šo eksāmenu, lūdzu, izpildiet uzņemšanas eksāmenu.\n"
+"Pirms šī eksāmena mēģinājuma, lūdzu, aizpildiet uzņemšanas eksāmenu.\n"
 "    "
 
 #: templates/proctored_exam/onboarding_error.html:17
@@ -746,7 +1150,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Jūsu uzņemšanas eksāmens neizturēja visas prasības.\n"
+"Jūsu uzņemšanas eksāmens neizturēja visas prasības.\n"
 "    "
 
 #: templates/proctored_exam/onboarding_error.html:38
@@ -761,7 +1165,7 @@ msgstr ""
 "\n"
 "      Eksāmenu vadīšana tiek nodrošināta, izmantojot vietni %(provider_name)s.\n"
 "      Ja jums ir jautājumi par jūsu uzņemšanas eksāmena statusu, sazinieties ar\n"
-"      <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>.\n"
+"     <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>.\n"
 "    "
 
 #: templates/proctored_exam/pending-prerequisites.html:9
@@ -771,7 +1175,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Jūs neesat izpildījuši šī eksāmena priekšnosacījumus. Lai varētu kārtot šo uzraudzīto eksāmenu, ir jābūt izpildītām visām prasībām.\n"
+"Šim eksāmenam ir nepieciesams izpildīt priekšnosacījumus. Lai varētu kārtot šo uzraudzīto eksāmenu, ir jābūt izpildītām visām prasībām.\n"
 "    "
 
 #: templates/proctored_exam/pending-prerequisites.html:14
@@ -816,7 +1220,22 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"            Neaizveriet šo logu pirms nepabeidzāt šo eksāmenu. Ja aizvērsit šo logu, pārbaudes sesija beigsies, un jūs nevarēsit veiksmīgi pabeigt uzraudzīto eksāmenu.\n"
+"Neaizveriet šo logu pirms nepabeidzāt šo eksāmenu. Ja aizvērsit šo logu, pārbaudes sesija beigsies, un jūs nevarēsit veiksmīgi pabeigt uzraudzīto eksāmenu.\n"
+"          "
+
+#: templates/proctored_exam/proctoring_launch_callback.html:173
+#, python-format
+msgid ""
+"\n"
+"            Return to the %(platform_name)s course window to start your exam. When you have finished your exam and\n"
+"            have marked it as complete, you can close this window to end the proctoring session\n"
+"            and upload your proctoring session data for review.\n"
+"          "
+msgstr ""
+"\n"
+"            Atgriezieties %(platform_name)s kursa logā, lai sāktu eksāmenu. Kad pabeidzāt eksāmenu un\n"
+"            un esat atzīmējis, ka eksāmens ir pabeigts, varat aizvērt šo logu, lai pabeigtu uzraudzības sesiju.\n"
+"            un augšupielādēt uzraudzības sesijas datus pārskatīšanai.\n"
 "          "
 
 #: templates/proctored_exam/ready_to_resume.html:4
@@ -826,374 +1245,5 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Jūsu eksāmens ir gatavs atsākšanai.\n"
+"Jūsu eksāmens ir gatavs atsākšanai.\n"
 "    "
-
-#: templates/proctored_exam/ready_to_resume.html:14
-msgid ""
-"\n"
-"        To be eligible for credit or the program credential associated with this course, you must pass the proctoring review for this exam.\n"
-"    "
-msgstr ""
-"\n"
-"        Lai varētu pretendēt uz kredītpunktiem vai ar šo kursu saistītajām programmas apliecībām, jums ir jānokārto šī eksāmena uzraudzības pārbaude.\n"
-"    "
-
-#: templates/proctored_exam/ready_to_start.html:18
-msgid ""
-"\n"
-"      Proctored Exam Rules\n"
-"    "
-msgstr ""
-"\n"
-"      Uzraudzīto eksāmenu noteikumi\n"
-"    "
-
-#: templates/proctored_exam/ready_to_start.html:29
-#, python-format
-msgid ""
-"\n"
-"          %(platform_name)s Rules for Online Proctored Exams\n"
-"      "
-msgstr ""
-"\n"
-"          %(platform_name)s Tiešsaistes uzraudzīto eksāmenu noteikumi\n"
-"      "
-
-#: templates/proctored_exam/ready_to_start.html:49
-msgid "Start my exam"
-msgstr "Sāciet manu eksāmenu"
-
-#: templates/proctored_exam/ready_to_start.html:50
-msgid "Starting Exam"
-msgstr "Eksāmena sākums"
-
-#: templates/proctored_exam/ready_to_submit.html:4
-msgid ""
-"\n"
-"      Are you sure you want to end your proctored exam?\n"
-"    "
-msgstr ""
-"\n"
-"      Vai tiešām vēlaties beigt uzraudzīto eksāmenu?\n"
-"    "
-
-#: templates/proctored_exam/ready_to_submit.html:10
-msgid ""
-"Make sure that you have selected \"Submit\" for each answer before you "
-"submit your exam."
-msgstr ""
-"Pirms eksāmena iesniegšanas pārliecinieties, vai katrai atbildei atlasījāt "
-"&quot;Iesniegt&quot;."
-
-#: templates/proctored_exam/ready_to_submit.html:12
-msgid ""
-"Once you click \"Yes, end my proctored exam\", the exam will be closed, and "
-"your proctoring session will be submitted for review."
-msgstr ""
-"Kad noklikšķināsit uz &quot;Jā, beigt manu uzraudzīto eksāmenu&quot;, "
-"eksāmens tiks slēgts un jūsu pārbaudes sesija tiks iesniegta pārskatīšanai."
-
-#: templates/proctored_exam/ready_to_submit.html:15
-msgid "Yes, end my proctored exam"
-msgstr "Jā, beidziet manu uzraudzīto eksāmenu"
-
-#: templates/proctored_exam/ready_to_submit.html:16
-msgid "Ending Exam"
-msgstr "Eksāmena beigas"
-
-#: templates/proctored_exam/rejected.html:5
-msgid ""
-"\n"
-"        Your proctoring session was reviewed, but did not pass all requirements\n"
-"      "
-msgstr ""
-"\n"
-"        Jūsu pārbaudes sesija tika pārskatīta, taču tā neizturēja visas prasības\n"
-"      "
-
-#: templates/proctored_exam/rejected.html:13
-#, python-format
-msgid ""
-"\n"
-"        If you have questions about the status of your proctoring session results, contact %(platform_name)s Support.\n"
-"      "
-msgstr ""
-"\n"
-"        Ja jums ir jautājumi par pārbaudes sesijas rezultātu statusu, sazinieties ar %(platform_name)s atbalsta dienestu.\n"
-"      "
-
-#: templates/proctored_exam/rejected.html:23
-msgid ""
-"\n"
-"        If you have concerns about your proctoring session results, contact your course team.\n"
-"      "
-msgstr ""
-"\n"
-"        Ja jums ir bažas par pārbaudes sesijas rezultātiem, sazinieties ar kursa komandu.\n"
-"      "
-
-#: templates/proctored_exam/submitted.html:4
-msgid ""
-"\n"
-"      You have submitted this proctored exam for review\n"
-"    "
-msgstr ""
-"\n"
-"      Jūs iesniedzāt šo uzraudzīto eksāmenu pārskatīšanai\n"
-"    "
-
-#: templates/proctored_exam/submitted.html:9
-msgid "Your recorded data should now be uploaded for review."
-msgstr "Jūsu ierakstītie dati tagad ir jāaugšupielādē pārskatīšanai."
-
-#: templates/proctored_exam/submitted.html:11
-msgid ""
-"If the proctoring software window is still open, close it now and confirm "
-"that you want to quit the application."
-msgstr ""
-"Ja uzraudzības programmatūras logs joprojām ir atvērts, aizveriet to un "
-"apstipriniet, ka vēlaties beigt lietotni."
-
-#: templates/proctored_exam/submitted.html:13
-msgid ""
-"Proctoring results are usually available within 5 business days after you "
-"submit your exam."
-msgstr ""
-"Pārbaudes rezultāti parasti ir pieejami 5 darbadienu laikā pēc eksāmena "
-"iesniegšanas."
-
-#: templates/proctored_exam/submitted.html:19
-#, python-format
-msgid ""
-"\n"
-"      If you have questions about the status of your proctored exam results, contact %(platform_name)s Support.\n"
-"    "
-msgstr ""
-"\n"
-"      Ja jums ir jautājumi par uzraudzīto eksāmenu rezultātu statusu, sazinieties ar %(platform_name)s atbalsta dienestu.\n"
-"    "
-
-#: templates/proctored_exam/verified.html:5
-msgid ""
-"\n"
-"                Your proctoring session was reviewed successfully. Go to your progress page to view your exam grade.\n"
-"            "
-msgstr ""
-"\n"
-"                Jūsu pārbaudes sesija tika veiksmīgi pārskatīta. Dodieties uz progresa lapu, lai skatītu eksāmena vērtējumu.\n"
-"            "
-
-#: templates/proctored_exam/visit_exam_content.html:5
-msgid ""
-"\n"
-"      To view your exam questions and responses, select <strong>View my exam</strong>. The exam's review status is shown in the left navigation pane.\n"
-"    "
-msgstr ""
-"\n"
-"      Lai apskatītu eksāmena jautājumus un atbildes, izvēlieties <strong>Skatīt manu eksāmenu</strong>. Eksāmena pārskatīšanas statuss ir redzams kreisajā navigācijas panelī.\n"
-"    "
-
-#: templates/proctored_exam/visit_exam_content.html:11
-msgid "View my exam"
-msgstr "Skatīt manu eksāmenu"
-
-#: templates/timed_exam/entrance.html:9
-msgid "This exam has a time limit associated with it."
-msgstr "Šim eksāmenam ir noteikts laika ierobežojums."
-
-#: templates/timed_exam/entrance.html:11
-msgid "To pass this exam, you must complete the problems in the time allowed."
-msgstr "Lai nokārtotu šo eksāmenu, uzdevumi ir jāizpilda noteiktajā laikā."
-
-#: templates/timed_exam/entrance.html:13
-msgid "After you select "
-msgstr "Pēc tam, kad atlasījāt "
-
-#: templates/timed_exam/entrance.html:15
-msgid "I am ready to start this timed exam,"
-msgstr "Es esmu gatavs/a sākt šo laika ierobežoto eksāmenu,"
-
-#: templates/timed_exam/entrance.html:17
-msgid "you will have "
-msgstr "Jums būs "
-
-#: templates/timed_exam/entrance.html:17
-msgid " to complete and submit the exam."
-msgstr " lai pabeigtu un iesniegtu eksāmenu."
-
-#: templates/timed_exam/entrance.html:21
-msgid ""
-"\n"
-"        I am ready to start this timed exam.\n"
-"      "
-msgstr ""
-"\n"
-"        Es esmu gatavs/a sākt šo laika ierobežoto eksāmenu.\n"
-"      "
-
-#: templates/timed_exam/footer.html:3
-msgid "Can I request additional time to complete my exam?"
-msgstr "Vai varu pieprasīt papildu laiku eksāmena nokārtošanai?"
-
-#: templates/timed_exam/ready_to_submit.html:4
-msgid ""
-"\n"
-"      Are you sure that you want to submit your timed exam?\n"
-"    "
-msgstr ""
-"\n"
-"      Vai tiešām vēlaties iesniegt savu laikā ierobežoto eksāmenu?\n"
-"    "
-
-#: templates/timed_exam/ready_to_submit.html:14
-msgid ""
-"\n"
-"      After you submit your exam, your exam will be graded.\n"
-"    "
-msgstr ""
-"\n"
-"      Pēc eksāmena iesniegšanas jūsu eksāmens tiks novērtēts.\n"
-"    "
-
-#: templates/timed_exam/ready_to_submit.html:19
-msgid ""
-"\n"
-"      Yes, submit my timed exam.\n"
-"    "
-msgstr ""
-"\n"
-"      Jā, iesniedziet manu laikā ierobežotu eksāmenu.\n"
-"    "
-
-#: templates/timed_exam/submitted.html:11
-msgid ""
-"\n"
-"                You have submitted your timed exam.\n"
-"            "
-msgstr ""
-"\n"
-"                Jūs iesniedzāt savu eksāmenu, kam atvēlēts laiks.\n"
-"            "
-
-#: templates/timed_exam/submitted.html:21
-msgid ""
-"\n"
-"                After the due date has passed, you can review the exam, but you cannot change your answers.\n"
-"            "
-msgstr ""
-"\n"
-"                Pēc termiņa beigām eksāmenu varat pārskatīt, bet nevarat mainīt savas atbildes.\n"
-"            "
-
-#: utils.py:87
-#, python-brace-format
-msgid "{num_of_hours} hour"
-msgstr "{num_of_hours} stunda"
-
-#: utils.py:90
-#, python-brace-format
-msgid "{num_of_hours} hours"
-msgstr "{num_of_hours} stundas"
-
-#: utils.py:98 utils.py:108
-#, python-brace-format
-msgid "{num_of_minutes} minutes"
-msgstr "{num_of_minutes} minūtes"
-
-#: utils.py:103
-#, python-brace-format
-msgid "{num_of_minutes} minute"
-msgstr "{num_of_minutes} minūte"
-
-#: utils.py:106
-#, python-brace-format
-msgid " and {num_of_minutes} minutes"
-msgstr " un {num_of_minutes} minūtes"
-
-#: utils.py:342
-msgid "a proctored exam"
-msgstr "uzraudzīts eksāmens"
-
-#: utils.py:345
-msgid "a timed exam"
-msgstr "noteikta laika eksāmens"
-
-#: utils.py:348
-msgid "an onboarding exam"
-msgstr "uzņemšanas eksāmens"
-
-#: utils.py:350
-msgid "a practice exam"
-msgstr "izmēģinājuma eksāmens"
-
-#: views.py:152
-msgid "could not determine the course_id"
-msgstr "nevarēja noteikt kursa_id"
-
-#: views.py:161 views.py:676
-msgid "Must be a Staff User to Perform this request."
-msgstr "Lai izpildītu šo pieprasījumu, ir jābūt personāla lietotājam."
-
-#: views.py:664
-msgid "Missing required query parameter course_id"
-msgstr "Trūkst obligātā vaicājuma parametra course_id"
-
-#: views.py:694 views.py:875
-msgid "There is no onboarding exam related to this course id."
-msgstr "Ar šo kursa ID nav saistīts neviens uzņemšanas eksāmens."
-
-#: views.py:723
-msgid "There is no onboarding exam accessible to this user."
-msgstr "Šim lietotājam nav pieejams neviens uzņemšanas eksāmens."
-
-#: views.py:773
-#, python-brace-format
-msgid "No onboarding status API for {proctor_service}"
-msgstr "Nav iekļaušanas statusa API, kas paredzēts {proctor_service}"
-
-#: views.py:925
-msgid ""
-"The onboarding service is temporarily unavailable. Please try again later."
-msgstr ""
-"Pieslēgšanās pakalpojums īslaicīgi nav pieejams. Lūdzu, pamēģiniet vēlreiz "
-"vēlāk."
-
-#: views.py:1303
-msgid "you have less than a minute remaining"
-msgstr "jums ir palikusi mazāk kā minūte"
-
-#: views.py:1758
-msgid "Enter a valid username or email"
-msgstr "Ievadiet derīgu lietotājvārdu vai e-pastu"
-
-#: views.py:1758
-msgid "user_info"
-msgstr "user_info"
-
-#: views.py:1771
-msgid "Enter a valid positive value number"
-msgstr "Ievadiet derīgu pozitīvas vērtības skaitli"
-
-#: views.py:1771
-msgid "allowance_value"
-msgstr "allowance_value"
-
-#: views.py:1858
-msgid "Cannot update attempt review status"
-msgstr "Nevar atjaunināt mēģinājuma pārskatīšanas statusu"
-
-#: views.py:2158
-#, python-brace-format
-msgid "No exams in course {course_id}."
-msgstr "Kursā {course_id} nav eksāmenu."
-
-#: views.py:2164
-#, python-brace-format
-msgid "No proctored exams in course {course_id}"
-msgstr "Kursā {course_id} nav uzraudzītu eksāmenu"
-
-#: views.py:2191
-#, python-brace-format
-msgid "No instructor dashboard for {proctor_service}"
-msgstr "{proctor_service} nav instruktora informācijas paneļa"

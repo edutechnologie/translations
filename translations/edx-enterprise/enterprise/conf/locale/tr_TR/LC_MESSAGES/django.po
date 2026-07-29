@@ -5,16 +5,15 @@
 # 
 # Translators:
 # Brian Smith, 2025
-# Ali Işıngör <ali@artistanbul.io>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:31+0000\n"
-"Last-Translator: Ali Işıngör <ali@artistanbul.io>, 2025\n"
-"Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/301281/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,11 +36,11 @@ msgstr ""
 "Bir program kayıtlanması bağlamında oluşturulan veri paylaşımı onay "
 "sayfasını önizleyin."
 
-#: consent/admin/__init__.py:119 enterprise/admin/__init__.py:720
+#: consent/admin/__init__.py:119 enterprise/admin/__init__.py:721
 msgid "Preview (course)"
 msgstr "Önizleme (ders)"
 
-#: consent/admin/__init__.py:120 enterprise/admin/__init__.py:733
+#: consent/admin/__init__.py:120 enterprise/admin/__init__.py:734
 msgid "Preview (program)"
 msgstr "Önizleme (program)"
 
@@ -83,9 +82,9 @@ msgstr ""
 "olabilir:<br /><ul><li> kurumsal_müşteri_adı: Kurumsal müşterinin "
 "adı.</li><li> platform_name: Platformun adı.</li><li> item: İzin türüne "
 "bağlı olarak &quot;kurs&quot; veya &quot;program&quot; olan bir "
-"dize.</li><li> course_title: Dersin başlığı. Onay türü ders olduğunda "
-"kullanılabilir.</li><li> course_start_date: Dersin başlangıç tarihi. Onay "
-"türü ders olduğunda kullanılabilir.</li></ul>"
+"dize.</li><li> course_title: Dersin başlığı. Onay türü kurs olduğunda "
+"kullanılabilir.</li><li> course_start_date: Kursun başlangıç tarihi. Onay "
+"türü kurs olduğunda kullanılabilir.</li></ul>"
 
 #: consent/models.py:279
 msgid ""
@@ -101,9 +100,9 @@ msgstr ""
 "değişkenler mevcut olabilir:<br /><ul><li> kurumsal_müşteri_adı: Kurumsal "
 "müşterinin adı.</li><li> platform_name: Platformun adı.</li><li> item: İzin "
 "türüne bağlı olarak &quot;kurs&quot; veya &quot;program&quot; olan bir "
-"dize.</li><li> course_title: Dersin başlığı. Onay türü ders olduğunda "
-"kullanılabilir.</li><li> course_start_date: Dersin başlangıç tarihi. Onay "
-"türü ders olduğunda kullanılabilir.</li></ul>"
+"dize.</li><li> course_title: Dersin başlığı. Onay türü kurs olduğunda "
+"kullanılabilir.</li><li> course_start_date: Kursun başlangıç tarihi. Onay "
+"türü kurs olduğunda kullanılabilir.</li></ul>"
 
 #: consent/models.py:289
 msgid ""
@@ -119,9 +118,9 @@ msgstr ""
 "mevcut olabilir:<br /><ul><li> kurumsal_müşteri_adı: Kurumsal müşterinin "
 "adı.</li><li> platform_name: Platformun adı.</li><li> item: İzin türüne "
 "bağlı olarak &quot;kurs&quot; veya &quot;program&quot; olan bir "
-"dize.</li><li> course_title: Dersin başlığı. Onay türü ders olduğunda "
-"kullanılabilir.</li><li> course_start_date: Dersin başlangıç tarihi. Onay "
-"türü Ders olduğunda kullanılabilir.</li></ul>"
+"dize.</li><li> course_title: Dersin başlığı. Onay türü kurs olduğunda "
+"kullanılabilir.</li><li> course_start_date: Kursun başlangıç tarihi. Onay "
+"türü kurs olduğunda kullanılabilir.</li></ul>"
 
 #: consent/models.py:299
 msgid ""
@@ -137,9 +136,9 @@ msgstr ""
 "Aşağıdaki değişkenler mevcut olabilir:<br /><ul><li> kurumsal_müşteri_adı: "
 "Kurumsal müşterinin adı.</li><li> item: İzin türüne bağlı olarak "
 "&quot;kurs&quot; veya &quot;program&quot; olan bir dize.</li><li> "
-"course_title: Dersin başlığı. Onay türü ders olduğunda "
-"kullanılabilir.</li><li> course_start_date: Dersin başlangıç tarihi. Onay "
-"türü ders olduğunda kullanılabilir.</li></ul>"
+"course_title: Dersin başlığı. Onay türü kurs olduğunda "
+"kullanılabilir.</li><li> course_start_date: Kursun başlangıç tarihi. Onay "
+"türü kurs olduğunda kullanılabilir.</li></ul>"
 
 #: consent/models.py:309
 msgid ""
@@ -152,7 +151,7 @@ msgstr ""
 "Kullanıcı izin vermeyi reddettiğinde kontrol panelinde görünecek bildirimin "
 "başlığı için bir metin girin. Aşağıdaki değişkenler mevcut olabilir:<br "
 "/><ul><li> kurumsal_müşteri_adı: Kurumsal müşterinin adı.</li><li> "
-"course_title: Dersin başlığı. Onay türü ders olduğunda "
+"course_title: Dersin başlığı. Onay türü kurs olduğunda "
 "kullanılabilir.</li></ul>"
 
 #: consent/models.py:318
@@ -166,7 +165,7 @@ msgstr ""
 "Kullanıcı izin vermeyi reddettiğinde kontrol panelinde görünen bildirim "
 "mesajı için bir metin girin. Aşağıdaki değişkenler mevcut olabilir:<br "
 "/><ul><li> kurumsal_müşteri_adı: Kurumsal müşterinin adı.</li><li> "
-"course_title: Dersin başlığı. Onay türü ders olduğunda "
+"course_title: Dersin başlığı. Onay türü kurs olduğunda "
 "kullanılabilir.</li></ul>"
 
 #: consent/models.py:329
@@ -215,7 +214,7 @@ msgid ""
 "Required to create courses etc."
 msgstr ""
 "API çağrıları sırasında kullanılacak hesap numarası. Canvas&#39;ta "
-"account_id olarak adlandırıldı. Ders vb. oluşturmak için gereklidir."
+"account_id olarak adlandırıldı. Kurs vb. oluşturmak için gereklidir."
 
 #: integrated_channels/canvas/models.py:121
 msgid ""
@@ -317,13 +316,13 @@ msgstr "Oturum jetonunun en son sağlandığı tarih ve saat"
 msgid "If checked, subjects will not be sent to Cornerstone"
 msgstr "İşaretlenirse konular Cornerstone&#39;a gönderilmez"
 
-#: integrated_channels/cornerstone/models.py:306
+#: integrated_channels/cornerstone/models.py:311
 msgid "This is the edX course key that is used as a unique identifier."
-msgstr "Bu, benzersiz bir tanımlayıcı olarak kullanılan edX ders anahtarıdır."
+msgstr "Bu, benzersiz bir tanımlayıcı olarak kullanılan edX kurs anahtarıdır."
 
-#: integrated_channels/cornerstone/models.py:313
+#: integrated_channels/cornerstone/models.py:318
 msgid "This is the course key that is being sent to our partners."
-msgstr "Bu, ortaklarımıza gönderilen ders anahtarıdır."
+msgstr "Bu, ortaklarımıza gönderilen kurs anahtarıdır."
 
 #: integrated_channels/integrated_channel/management/commands/__init__.py:67
 msgid ""
@@ -406,7 +405,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Belirtilen Kurumsal Müşteri için Kurumsal öğrenci dersi tamamlama verilerini iletin.\n"
+"Belirtilen Kurumsal Müşteri için Kurumsal öğrenci kursu tamamlama verilerini iletin.\n"
 "    "
 
 #: integrated_channels/integrated_channel/management/commands/remove_stale_integrated_channel_api_logs.py:22
@@ -473,7 +472,7 @@ msgstr "Bu konfigürasyon kuru çalışma modunda mı? (deneysel)"
 
 #: integrated_channels/integrated_channel/models.py:150
 msgid "Displays course price"
-msgstr "Ders fiyatını görüntüler"
+msgstr "Kurs fiyatını görüntüler"
 
 #: integrated_channels/integrated_channel/models.py:162
 msgid ""
@@ -491,8 +490,8 @@ msgid ""
 " newest catalog."
 msgstr ""
 "Aktarılacak katalog UUID&#39;lerinin virgülle ayrılmış listesi. Boşsa tüm "
-"müşteri katalogları iletilecektir. Müşteri kataloglarında çakışan dersler "
-"varsa çakışan ders meta verileri en yeni katalogdan seçilecektir."
+"müşteri katalogları iletilecektir. Müşteri kataloglarında çakışan kurslar "
+"varsa çakışan kurs meta verileri en yeni katalogdan seçilecektir."
 
 #: integrated_channels/integrated_channel/models.py:176
 msgid ""
@@ -503,7 +502,7 @@ msgstr ""
 " de sinyal tabanlı öğrenci veri iletimlerini almayacaktır."
 
 #: integrated_channels/integrated_channel/models.py:537
-#: integrated_channels/integrated_channel/models.py:713
+#: integrated_channels/integrated_channel/models.py:718
 msgid "Data pertaining to the transmissions API request response."
 msgstr "İletim API&#39;si istek yanıtına ilişkin veriler."
 
@@ -527,7 +526,7 @@ msgstr "Moodle web hizmetinin kısa adı."
 #: integrated_channels/moodle/models.py:55
 msgid "The category ID for what edX courses should be associated with."
 msgstr ""
-"Hangi edX derslerinin ilişkilendirilmesi gerektiğine ilişkin kategori "
+"Hangi edX kurslarının ilişkilendirilmesi gerektiğine ilişkin kategori "
 "kimliği."
 
 #: integrated_channels/moodle/models.py:64
@@ -567,12 +566,12 @@ msgid ""
 "When set to True, the configured customer will receive learner data "
 "transmissions, for incomplete courses as well"
 msgstr ""
-"Doğru olarak ayarlandığında yapılandırılan müşteri, tamamlanmamış dersler "
+"Doğru olarak ayarlandığında yapılandırılan müşteri, tamamlanmamış kurslar "
 "için de öğrenci veri iletimlerini alacaktır."
 
 #: integrated_channels/sap_success_factors/exporters/content_metadata.py:223
 #: integrated_channels/sap_success_factors/exporters/content_metadata.py:298
-#: enterprise/views.py:1604
+#: enterprise/views.py:1608
 msgid "Starts"
 msgstr "Başlama Tarihi"
 
@@ -618,7 +617,7 @@ msgid ""
 "('sapsf_user_id') defined in the SAP Customer Configuration for course "
 "completion."
 msgstr ""
-"Doğru olarak ayarlandığında entegrasyon, dersin tamamlanması için SAP "
+"Doğru olarak ayarlandığında entegrasyon, kursun tamamlanması için SAP "
 "Müşteri Yapılandırmasında tanımlanan genel edX hizmet kullanıcısını "
 "(&#39;sapsf_user_id&#39;) kullanacaktır."
 
@@ -638,12 +637,12 @@ msgstr "xAPI LRS&#39;nin anahtarı."
 msgid "secret of xAPI LRS."
 msgstr "xAPI LRS&#39;nin sırrı."
 
-#: enterprise/admin/__init__.py:711
+#: enterprise/admin/__init__.py:712
 msgid ""
 "Preview the HTML template rendered in the context of a course enrollment."
-msgstr "Bir ders kaydı bağlamında oluşturulan HTML şablonunu önizleyin."
+msgstr "Bir kurs kaydı bağlamında oluşturulan HTML şablonunu önizleyin."
 
-#: enterprise/admin/__init__.py:724
+#: enterprise/admin/__init__.py:725
 msgid ""
 "Preview the HTML template rendered in the context of a program enrollment."
 msgstr "Bir program kaydı bağlamında oluşturulan HTML şablonunu önizleyin."
@@ -670,47 +669,47 @@ msgid ""
 msgstr ""
 ".csv dosyasında, ilk satırda &#39;e-posta&#39; başlığıyla gösterilen bir "
 "e-posta adresleri sütunu bulunmalıdır. İsteğe bağlı olarak, .csv dosyası, "
-"öğrencileri birden fazla derse kaydetmek için ilk satırda &#39;ders_id&#39; "
-"başlığıyla gösterilen ders çalıştırma anahtarlarından oluşan bir sütun "
+"öğrencileri birden fazla kursa kaydetmek için ilk satırda &#39;kurs_id&#39; "
+"başlığıyla gösterilen kurs çalıştırma anahtarlarından oluşan bir sütun "
 "içerebilir."
 
 #: enterprise/admin/forms.py:68
 msgid "Enroll these learners in this course"
-msgstr "Bu öğrencileri bu derse kaydedin"
+msgstr "Bu öğrencileri bu kursa kaydedin"
 
 #: enterprise/admin/forms.py:69
 msgid "To enroll learners in a course, enter a course ID."
-msgstr "Öğrencileri bir derse kaydetmek için ders kimliğini girin."
+msgstr "Öğrencileri bir kursa kaydetmek için kurs kimliğini girin."
 
 #: enterprise/admin/forms.py:72
 msgid "Course enrollment track"
 msgstr "Ders kayıt takibi"
 
-#: enterprise/admin/forms.py:74 enterprise/api/v1/serializers.py:1627
+#: enterprise/admin/forms.py:74 enterprise/api/v1/serializers.py:1634
 msgid "Audit"
 msgstr "Gözlemle"
 
-#: enterprise/admin/forms.py:75 enterprise/api/v1/serializers.py:1628
+#: enterprise/admin/forms.py:75 enterprise/api/v1/serializers.py:1635
 msgid "Verified"
 msgstr "Onaylanmış"
 
-#: enterprise/admin/forms.py:76 enterprise/api/v1/serializers.py:1629
+#: enterprise/admin/forms.py:76 enterprise/api/v1/serializers.py:1636
 msgid "Professional Education"
 msgstr "Profesyonel Eğitim"
 
-#: enterprise/admin/forms.py:77 enterprise/api/v1/serializers.py:1630
+#: enterprise/admin/forms.py:77 enterprise/api/v1/serializers.py:1637
 msgid "Professional Education (no ID)"
 msgstr "Mesleki Eğitim (kimlik yok)"
 
-#: enterprise/admin/forms.py:78 enterprise/api/v1/serializers.py:1631
+#: enterprise/admin/forms.py:78 enterprise/api/v1/serializers.py:1638
 msgid "Credit"
 msgstr "Kredi"
 
-#: enterprise/admin/forms.py:79 enterprise/api/v1/serializers.py:1632
+#: enterprise/admin/forms.py:79 enterprise/api/v1/serializers.py:1639
 msgid "Honor"
 msgstr "Onur"
 
-#: enterprise/admin/forms.py:80 enterprise/api/v1/serializers.py:1633
+#: enterprise/admin/forms.py:80 enterprise/api/v1/serializers.py:1640
 msgid "Unpaid Executive Education"
 msgstr "Ödenmemiş Yönetici Eğitimi"
 
@@ -756,7 +755,7 @@ msgstr "Ders"
 
 #: enterprise/admin/forms.py:316
 msgid "Enter the course run key."
-msgstr "Ders çalıştırma anahtarını girin."
+msgstr "Kurs çalıştırma anahtarını girin."
 
 #: enterprise/admin/forms.py:436
 msgid "Preview"
@@ -899,12 +898,12 @@ msgstr ""
 "değiller. Bu öğrenciler bir hesap oluşturduğunda otomatik olarak "
 "kaydolacaklar: {pending_email_list}"
 
-#: enterprise/admin/views.py:912
+#: enterprise/admin/views.py:919
 #, python-brace-format
 msgid "Email {email} is not associated with Enterprise Customer {ec_name}"
 msgstr "{email} e-postası, Kurumsal Müşteri {ec_name} ile ilişkili değil"
 
-#: enterprise/admin/views.py:976
+#: enterprise/admin/views.py:983
 msgid ""
 "Successfully written the \"Auth org id\" field for this enterprise customer."
 msgstr ""
@@ -951,19 +950,19 @@ msgstr ""
 "{token_enterprise_name} {token_email} ek kodlar talep etti. Lütfen onlara "
 "ulaşın."
 
-#: enterprise/api/v1/serializers.py:94
+#: enterprise/api/v1/serializers.py:95
 msgid "Total count of items."
 msgstr "Toplam öğe sayısı."
 
-#: enterprise/api/v1/serializers.py:95
+#: enterprise/api/v1/serializers.py:96
 msgid "URL to fetch next page of items."
 msgstr "Öğelerin sonraki sayfasını getirecek URL."
 
-#: enterprise/api/v1/serializers.py:96
+#: enterprise/api/v1/serializers.py:97
 msgid "URL to fetch previous page of items."
 msgstr "Öğelerin önceki sayfasını getirecek URL."
 
-#: enterprise/api/v1/serializers.py:97
+#: enterprise/api/v1/serializers.py:98
 msgid "List of items."
 msgstr "Eşyaların listesi."
 
@@ -989,7 +988,7 @@ msgid ""
 "[Enterprise API] CourseKey not found in the Catalog. Course: {course_key}, "
 "Catalog: {catalog_id}"
 msgstr ""
-"[Enterprise API] CourseKey Katalogda bulunamadı. Ders: {course_key} , "
+"[Enterprise API] CourseKey Katalogda bulunamadı. Kurs: {course_key} , "
 "Katalog: {catalog_id}"
 
 #: enterprise/api/v1/views/enterprise_customer_catalog.py:217
@@ -1022,7 +1021,7 @@ msgstr ""
 "gerekir."
 
 #: enterprise/api_client/discovery.py:60
-#: enterprise/api_client/discovery.py:399 enterprise/utils.py:1638
+#: enterprise/api_client/discovery.py:399 enterprise/utils.py:1642
 msgid ""
 "To get a CatalogIntegration object, this package must be installed in an "
 "Open edX environment."
@@ -1054,32 +1053,6 @@ msgstr ""
 "Bir ecommerce_api_client almak için bu paketin Open edX ortamına kurulması "
 "gerekir."
 
-#: enterprise/config/models.py:41
-msgid ""
-"Specifies which user role assignments to update.  If unspecified, will "
-"update for all roles."
-msgstr ""
-"Hangi kullanıcı rolü atamalarının güncelleneceğini belirtir. Belirtilmemişse"
-" tüm roller için güncellenecektir."
-
-#: enterprise/config/models.py:45
-msgid "Number of user role asssignments to update in each batch of updates."
-msgstr ""
-"Her güncelleme toplu işleminde güncelleştirilecek kullanıcı rolü "
-"atamalarının sayısı."
-
-#: enterprise/config/models.py:50
-msgid "The enterprise customer to limit role assignments to."
-msgstr "Rol atamalarının sınırlandırılacağı kurumsal müşteri."
-
-#: enterprise/config/models.py:55
-msgid ""
-"If set, no updates or creates will occur; will instead iterate over the "
-"assignments that would be modified or created"
-msgstr ""
-"Ayarlanırsa hiçbir güncelleme veya oluşturma gerçekleşmez; bunun yerine "
-"değiştirilecek veya oluşturulacak atamalar üzerinde yinelenecek"
-
 #: enterprise/constants.py:14
 #, python-brace-format
 msgid ""
@@ -1087,7 +1060,7 @@ msgid ""
 " you must first consent to share your learning achievements with "
 "{enterprise_customer_name}."
 msgstr ""
-"Bu SSO kimlik sağlayıcısını kullanarak oturum açmak ve özel ders "
+"Bu SSO kimlik sağlayıcısını kullanarak oturum açmak ve özel kurs "
 "tekliflerine erişmek için öncelikle öğrenim başarılarınızı "
 "{enterprise_customer_name} ile paylaşmaya izin vermelisiniz."
 
@@ -1097,7 +1070,7 @@ msgid ""
 "In order to sign in and access special offers, you must consent to share "
 "your course data with {enterprise_customer_name}."
 msgstr ""
-"Oturum açmak ve özel tekliflere erişmek için ders verilerinizin "
+"Oturum açmak ve özel tekliflere erişmek için kurs verilerinizin "
 "{enterprise_customer_name} ile paylaşılmasına izin vermelisiniz."
 
 #: enterprise/constants.py:22
@@ -1106,7 +1079,7 @@ msgid ""
 "If you do not consent to share your course data, that information may be "
 "shared with {enterprise_customer_name}."
 msgstr ""
-"Ders verilerinizin paylaşılmasına izin vermezseniz bu bilgiler "
+"Kurs verilerinizin paylaşılmasına izin vermezseniz bu bilgiler "
 "{enterprise_customer_name} ile paylaşılabilir."
 
 #: enterprise/constants.py:25
@@ -1133,7 +1106,7 @@ msgstr ""
 "{privacy_policy_link_start} Gizlilik Politikası {privacy_policy_link_end} "
 "{enterprise_customer_name} farklı olduğunu unutmayın."
 
-#: enterprise/constants.py:86
+#: enterprise/constants.py:88
 msgid ""
 "A series of Master’s-level courses to advance your career, created by top "
 "universities and recognized by companies. MicroMasters Programs are credit-"
@@ -1145,7 +1118,7 @@ msgstr ""
 "MicroMasters Programları krediye uygundur, talep üzerine bilgi sağlar ve "
 "Yüksek Lisans Derecesini hızlandırmak için uygulanabilir."
 
-#: enterprise/constants.py:92
+#: enterprise/constants.py:94
 msgid ""
 "Designed by industry leaders and top universities to enhance professional "
 "skills, Professional Certificates develop the proficiency and expertise that"
@@ -1156,7 +1129,7 @@ msgstr ""
 "üniversiteler tarafından tasarlanan Mesleki Sertifikalar, işverenlerin özel "
 "eğitim ve mesleki eğitimle aradıkları yeterliliği ve uzmanlığı geliştirir."
 
-#: enterprise/constants.py:98
+#: enterprise/constants.py:100
 msgid ""
 "Created by world-renowned experts and top universities, XSeries are designed"
 " to provide a deep understanding of key subjects through a series of "
@@ -1292,7 +1265,7 @@ msgstr "Kurumsal Müşteri Türleri"
 msgid "Specifies enterprise customer type."
 msgstr "Kurumsal müşteri türünü belirtir."
 
-#: enterprise/models.py:215 enterprise/models.py:3376
+#: enterprise/models.py:215 enterprise/models.py:3404
 msgid "Enterprise Customer"
 msgstr "Kurumsal Müşteri"
 
@@ -1412,7 +1385,7 @@ msgstr ""
 "duyurulmayacağını belirtir. Bu yalnızca öğrenci kredisinin eski sürümü olan "
 "\"tekliflere\" sahip müşterilere uygulanır."
 
-#: enterprise/models.py:385
+#: enterprise/models.py:391
 msgid ""
 "Hides labor market data from learners (populated by features using Lightcast"
 " integration). "
@@ -1420,7 +1393,7 @@ msgstr ""
 "İşgücü piyasası verilerini öğrencilerden gizler (Lightcast entegrasyonunu "
 "kullanan özelliklerle doldurulur). "
 
-#: enterprise/models.py:392
+#: enterprise/models.py:398
 msgid ""
 "Automatically enabled. If unchecked, the learners won't be able to search "
 "for a course on the learner portal."
@@ -1428,7 +1401,7 @@ msgstr ""
 "Otomatik olarak etkinleştirildi. İşaretlenmezse öğrenciler, öğrenci "
 "portalında ders arayamazlar."
 
-#: enterprise/models.py:401
+#: enterprise/models.py:407
 msgid ""
 "If checked, learners will be able to see content in the Learner Portal "
 "Sidebar found in the HTML box."
@@ -1436,7 +1409,7 @@ msgstr ""
 "İşaretlenirse öğrenciler, HTML kutusunda bulunan Öğrenci Portalı Kenar "
 "Çubuğundaki içeriği görebilirler."
 
-#: enterprise/models.py:409
+#: enterprise/models.py:415
 msgid ""
 "If checked, the learners will be able to see the pathways on the learner "
 "portal dashboard."
@@ -1444,7 +1417,7 @@ msgstr ""
 "İşaretlenirse öğrenciler, öğrenci portalı panosundaki öğrenme yollarını "
 "görebilirler."
 
-#: enterprise/models.py:417
+#: enterprise/models.py:423
 msgid ""
 "If checked, the learners will be able to see the programs on the learner "
 "portal dashboard."
@@ -1452,7 +1425,7 @@ msgstr ""
 "İşaretlenirse öğrenciler, öğrenci portalı panosundaki programları "
 "görebilirler."
 
-#: enterprise/models.py:425
+#: enterprise/models.py:431
 msgid ""
 "If checked, the learners will be able to see the academies on the learner "
 "portal dashboard."
@@ -1460,7 +1433,7 @@ msgstr ""
 "İşaretlenirse öğrenciler, öğrenci portalı kontrol panelinde akademileri "
 "görebilirler."
 
-#: enterprise/models.py:432
+#: enterprise/models.py:438
 msgid ""
 "If checked, search will be replaced with one academy on enterprise learner "
 "portal."
@@ -1468,7 +1441,7 @@ msgstr ""
 "İşaretlenirse, kurumsal öğrenci portalında arama tek bir akademi ile "
 "değiştirilecektir."
 
-#: enterprise/models.py:439
+#: enterprise/models.py:445
 msgid ""
 "If checked, videos will be displayed in the search results on the learner "
 "portal."
@@ -1476,7 +1449,7 @@ msgstr ""
 "İşaretlenirse videolar öğrenci portalındaki arama sonuçlarında "
 "görüntülenecektir."
 
-#: enterprise/models.py:445
+#: enterprise/models.py:451
 msgid ""
 "Automatically enabled. Displays advanced analytics page on the administrator"
 " portal, which includes skill and labor market data."
@@ -1484,14 +1457,14 @@ msgstr ""
 "Otomatik olarak etkinleştirildi. Beceri ve işgücü piyasası verilerini içeren"
 " gelişmiş analiz sayfasını yönetici portalında görüntüler."
 
-#: enterprise/models.py:453
+#: enterprise/models.py:459
 msgid ""
 "Enables the learning platform configuration screen on the administrator "
 "portal."
 msgstr ""
 "Yönetici portalında öğrenim platformu yapılandırma ekranını etkinleştirir."
 
-#: enterprise/models.py:459
+#: enterprise/models.py:465
 msgid ""
 "Allows a learner to input customer slug to identify their org in the SSO "
 "process. Should be enabled for customers that leverage SSO."
@@ -1500,7 +1473,7 @@ msgstr ""
 "girmesine olanak tanır. SSO'dan yararlanan müşteriler için "
 "etkinleştirilmelidir."
 
-#: enterprise/models.py:465
+#: enterprise/models.py:471
 msgid ""
 "Specifies whether the organization should have access to executive education"
 " 2U content."
@@ -1508,7 +1481,7 @@ msgstr ""
 "Kuruluşun yönetici eğitimi 2U içeriğine erişiminin olup olmayacağını "
 "belirtir."
 
-#: enterprise/models.py:471
+#: enterprise/models.py:477
 msgid ""
 "Display Demo data from analyitcs and learner progress report for demo "
 "customer."
@@ -1516,7 +1489,7 @@ msgstr ""
 "Demo müşterisi için analitiklerden ve öğrenci ilerleme raporundan Demo "
 "verilerini gösterin."
 
-#: enterprise/models.py:478
+#: enterprise/models.py:484
 msgid ""
 "Email linked on learner portal as public point of contact, will default to "
 "all admin users associated with this customer if left blank."
@@ -1525,7 +1498,7 @@ msgstr ""
 "bırakılırsa varsayılan olarak bu müşteriyle ilişkili tüm yönetici "
 "kullanıcılar için kullanılacaktır."
 
-#: enterprise/models.py:488
+#: enterprise/models.py:494
 msgid ""
 "Specifies the discount percent used for enrollments from the enrollment API "
 "where capturing the discount per order is not possible. This is passed to "
@@ -1536,22 +1509,22 @@ msgstr ""
 "Bu, finansal veri raporlaması için siparişler oluşturulurken e-ticarete "
 "aktarılır."
 
-#: enterprise/models.py:502
+#: enterprise/models.py:508
 msgid "Specifies the default language for learners of the organization."
 msgstr "Kuruluşun öğrencileri için varsayılan dili belirtir."
 
-#: enterprise/models.py:512
+#: enterprise/models.py:518
 msgid "Specifies the sender alias for automated emails from the edX system."
 msgstr ""
 "EdX sisteminden gelen otomatik e-postalar için gönderenin takma adını "
 "belirtir."
 
-#: enterprise/models.py:520
+#: enterprise/models.py:526
 msgid ""
 "Email address that will receive learner replies to automated edX emails."
 msgstr "Otomatik edX e-postalarına öğrenci yanıtlarını alacak e-posta adresi."
 
-#: enterprise/models.py:531
+#: enterprise/models.py:537
 msgid ""
 "Text shown on the learner portal dashboard for customer specific purposes. "
 "Open HTML field."
@@ -1559,17 +1532,17 @@ msgstr ""
 "Müşteriye özel amaçlar için öğrenci portalı kontrol panelinde gösterilen "
 "metin. HTML alanını açın."
 
-#: enterprise/models.py:861
+#: enterprise/models.py:867
 msgid ""
 "Course details were not found for course key {} - Course Catalog API "
 "returned nothing. Proceeding with enrollment, but notifications won't be "
 "sent"
 msgstr ""
-"{} ders anahtarı için ders ayrıntıları bulunamadı - Ders Kataloğu API&#39;si"
+"{} kurs anahtarı için kurs ayrıntıları bulunamadı - Kurs Kataloğu API&#39;si"
 " hiçbir şey döndürmedi. Kayıt işlemine devam ediliyor ancak bildirimler "
 "gönderilmeyecek"
 
-#: enterprise/models.py:1096
+#: enterprise/models.py:1102
 msgid ""
 "When enabled along with `active`, all other linked enterprise customers for "
 "this user will be marked as inactive upon save."
@@ -1578,50 +1551,50 @@ msgstr ""
 "tüm bağlantılı kurumsal müşteriler, kaydetme sonrasında etkin değil olarak "
 "işaretlenecektir."
 
-#: enterprise/models.py:1103
+#: enterprise/models.py:1109
 msgid "Enterprise Customer Learner"
 msgstr "Kurumsal Müşteri Öğrencisi"
 
-#: enterprise/models.py:1104
+#: enterprise/models.py:1110
 msgid "Enterprise Customer Learners"
 msgstr "Kurumsal Müşteri Öğrencileri"
 
-#: enterprise/models.py:1716
+#: enterprise/models.py:1738
 msgid "Logo images must be in .png format."
 msgstr "Logo görselleri .png formatında olmalıdır."
 
-#: enterprise/models.py:1743
+#: enterprise/models.py:1765
 msgid "Branding Configuration"
 msgstr "Markalama Yapılandırması"
 
-#: enterprise/models.py:1744
+#: enterprise/models.py:1766
 msgid "Branding Configurations"
 msgstr "Markalama Yapılandırmaları"
 
-#: enterprise/models.py:1826
+#: enterprise/models.py:1854
 msgid "Specifies whether this is default provider for enterprise customer."
 msgstr ""
 "Bunun kurumsal müşteri için varsayılan sağlayıcı olup olmadığını belirtir."
 
-#: enterprise/models.py:1911
+#: enterprise/models.py:1939
 msgid ""
 "The UUID of the course (not course run) in which the learner is entitled."
 msgstr ""
-"Öğrencinin yetkilendirildiği dersin (ders çalıştırması değil) UUID&#39;si."
+"Öğrencinin yetkilendirildiği dersin (kurs çalıştırması değil) UUID&#39;si."
 
-#: enterprise/models.py:1921
+#: enterprise/models.py:1949
 msgid "The enterprise learner to which this entitlement is attached."
 msgstr "Bu yetkinin eklendiği kurumsal öğrenci."
 
-#: enterprise/models.py:2044
+#: enterprise/models.py:2072
 msgid "The enterprise learner to which this enrollment is attached."
 msgstr "Bu kaydın eklendiği kurumsal öğrenci."
 
-#: enterprise/models.py:2051
+#: enterprise/models.py:2079
 msgid "The ID of the course in which the learner was enrolled."
 msgstr "Öğrencinin kayıtlı olduğu dersin kimliği."
 
-#: enterprise/models.py:2058
+#: enterprise/models.py:2086
 msgid ""
 "Specifies whether a user marked this course as saved for later in the "
 "learner portal."
@@ -1629,31 +1602,31 @@ msgstr ""
 "Kullanıcının bu dersi öğrenci portalında daha sonra kullanılmak üzere "
 "kaydedilmiş olarak işaretleyip işaretlemediğini belirtir."
 
-#: enterprise/models.py:2074
+#: enterprise/models.py:2102
 msgid ""
 "Specifies whether the enterprise course enrollment's course enrollment "
 "object was unenrolled."
 msgstr ""
-"Kurumsal ders kaydının ders kayıt nesnesinin kaydının silinip silinmediğini "
+"Kurumsal kurs kaydının kurs kayıt nesnesinin kaydının silinip silinmediğini "
 "belirtir."
 
-#: enterprise/models.py:2084
+#: enterprise/models.py:2112
 msgid ""
 "Specifies when an enterprise course enrollment's course enrollment object "
 "was unenrolled."
 msgstr ""
-"Kurumsal ders kaydının ders kayıt nesnesinin kaydının ne zaman iptal "
+"Kurumsal kurs kaydının kurs kayıt nesnesinin kaydının ne zaman iptal "
 "edildiğini belirtir."
 
-#: enterprise/models.py:2342
+#: enterprise/models.py:2370
 msgid "The course entitlement the associated subsidy is for."
-msgstr "İlgili sübvansiyonun ders hakkı içindir."
+msgstr "İlgili sübvansiyonun kurs hakkı içindir."
 
-#: enterprise/models.py:2353
+#: enterprise/models.py:2381
 msgid "The course enrollment the associated subsidy is for."
-msgstr "İlgili sübvansiyonun ders kaydı içindir."
+msgstr "İlgili sübvansiyonun kurs kaydı içindir."
 
-#: enterprise/models.py:2360
+#: enterprise/models.py:2388
 msgid ""
 "Whether the enterprise subsidy is revoked, e.g., when a user's license is "
 "revoked."
@@ -1661,7 +1634,7 @@ msgstr ""
 "İşletme sübvansiyonunun iptal edilip edilmediği (örneğin, bir kullanıcının "
 "lisansı iptal edildiğinde)."
 
-#: enterprise/models.py:2808
+#: enterprise/models.py:2836
 msgid ""
 "Specifies whether the catalog is allowed to include exec ed (2U) courses.  "
 "This means that, when the content_filter specifies that 'course' content "
@@ -1669,19 +1642,19 @@ msgid ""
 " won't be excluded from the content of the associated catalog."
 msgstr ""
 "Kataloğun yürütülen (2U) dersleri içermesine izin verilip verilmediğini "
-"belirtir. Bu, content_filter &#39;ders&#39; içerik türlerinin kataloğa dahil"
-" edilmesi gerektiğini belirttiğinde executive-education-2u ders türlerinin "
+"belirtir. Bu, content_filter &#39;kurs&#39; içerik türlerinin kataloğa dahil"
+" edilmesi gerektiğini belirttiğinde executive-education-2u kurs türlerinin "
 "ilgili kataloğun içeriğinden hariç tutulmayacağı anlamına gelir."
 
-#: enterprise/models.py:2815
+#: enterprise/models.py:2843
 msgid "Enterprise Catalog Query"
 msgstr "Kurumsal Katalog Sorgulama"
 
-#: enterprise/models.py:2816
+#: enterprise/models.py:2844
 msgid "Enterprise Catalog Queries"
 msgstr "Kurumsal Katalog Sorguları"
 
-#: enterprise/models.py:2929
+#: enterprise/models.py:2957
 msgid ""
 "Query parameters which will be used to filter the discovery service's "
 "search/all endpoint results, specified as a Json object. An empty Json "
@@ -1693,31 +1666,31 @@ msgstr ""
 "Json nesnesi, mevcut tüm içerik öğelerinin kataloğa dahil edileceği anlamına"
 " gelir."
 
-#: enterprise/models.py:2937
+#: enterprise/models.py:2965
 msgid ""
 "Ordered list of enrollment modes which can be displayed to learners for "
 "course runs in this catalog."
 msgstr ""
-"Bu katalogda ders çalışmaları için öğrencilere görüntülenebilecek kayıt "
+"Bu katalogda kurs çalışmaları için öğrencilere görüntülenebilecek kayıt "
 "modlarının sıralı listesi."
 
-#: enterprise/models.py:2943
+#: enterprise/models.py:2971
 msgid ""
 "Specifies whether courses should be published with direct-to-audit "
 "enrollment URLs."
 msgstr ""
-"Derslerin doğrudan denetime yönelik kayıt URL&#39;leriyle yayınlanmasının "
+"Kursların doğrudan denetime yönelik kayıt URL&#39;leriyle yayınlanmasının "
 "gerekip gerekmediğini belirtir."
 
-#: enterprise/models.py:2950
+#: enterprise/models.py:2978
 msgid "Enterprise Customer Catalog"
 msgstr "Kurumsal Müşteri Kataloğu"
 
-#: enterprise/models.py:2951 enterprise/models.py:3498
+#: enterprise/models.py:2979 enterprise/models.py:3526
 msgid "Enterprise Customer Catalogs"
 msgstr "Kurumsal Müşteri Katalogları"
 
-#: enterprise/models.py:3218
+#: enterprise/models.py:3246
 msgid ""
 "Fill in a standard Django template that, when rendered, produces the email you want sent to newly-enrolled Enterprise Customer learners. The following variables may be available:\n"
 "<ul><li>user_name: A human-readable name for the person being emailed. Be sure to handle the case where this is not defined, as it may be missing in some cases. It may also be a username, if the learner hasn't configured their \"real\" name in the system.</li>    <li>organization_name: The name of the organization sponsoring the enrollment.</li>    <li>enrolled_in: Details of the course or program that was enrolled in. It may contain:    <ul><li>name: The name of the enrollable item (e.g., \"Demo Course\").</li>        <li>url: A link to the homepage of the enrolled-in item.</li>        <li>branding: A custom branding name for the enrolled-in item. For example, the branding of a MicroMasters program would be \"MicroMasters\".</li>     <li>start: The date the enrolled-in item becomes available. Render this to text using the Django `date` template filter (see <a href=\"https://docs.djangoproject.com/en/1.8/ref/templates/builtins/#date\">the Django documentation</a>).</li><li>type: Whether the enrolled-in item is a course, a program, or something else.</li></ul></ul>"
@@ -1725,7 +1698,7 @@ msgstr ""
 "Oluşturulduğunda yeni kayıtlı Kurumsal Müşteri öğrencilerine gönderilmesini istediğiniz e-postayı üreten standart bir Django şablonunu doldurun. Aşağıdaki değişkenler mevcut olabilir:\n"
 "<ul><li> user_name: E-postayla gönderilen kişinin insan tarafından okunabilen adı. Bazı durumlarda eksik olabileceğinden, bunun tanımlanmadığı durumu ele aldığınızdan emin olun. Öğrencinin sistemde &quot;gerçek&quot; adını yapılandırmamış olması durumunda, bu aynı zamanda bir kullanıcı adı da olabilir.</li><li> kuruluş_adı: Kayda sponsor olan kuruluşun adı.</li><li> kayıtlı_in: Kayıt olunan kurs veya programın ayrıntıları. Aşağıdakileri içerebilir:<ul><li> name: Kaydedilebilir öğenin adı (örneğin, &quot;Demo Kursu&quot;).</li><li> url: Kayıtlı öğenin ana sayfasına bağlantı.</li><li> markalama: Kayıtlı öğe için özel bir markalama adı. Örneğin, bir MicroMasters programının markalaması &quot;MicroMasters&quot; olacaktır.</li><li> başlangıç: Kaydedilen öğenin kullanılabilir hale geldiği tarih. Django &#39;tarih&#39; şablon filtresini kullanarak bunu metne dönüştürün ( <a href=\"https://docs.djangoproject.com/en/1.8/ref/templates/builtins/#date\">Django belgelerine</a> bakın).</li><li> tür: Kaydedilen öğenin bir kurs, program veya başka bir şey olup olmadığı.</li></ul></ul>"
 
-#: enterprise/models.py:3236
+#: enterprise/models.py:3264
 #, python-brace-format
 msgid ""
 "Enter a string that can be used to generate a dynamic subject line for "
@@ -1734,29 +1707,29 @@ msgid ""
 msgstr ""
 "Bildirim e-postaları için dinamik konu satırı oluşturmak amacıyla "
 "kullanılabilecek bir dize girin. {course_name} yer tutucusu, kayıtlı olunan "
-"ders veya programın adı ile değiştirilecektir."
+"kurs veya programın adı ile değiştirilecektir."
 
-#: enterprise/models.py:3378
+#: enterprise/models.py:3406
 msgid "Active"
 msgstr "Aktif"
 
-#: enterprise/models.py:3379
+#: enterprise/models.py:3407
 msgid "Include Date"
 msgstr "Tarihi Ekle"
 
-#: enterprise/models.py:3380
+#: enterprise/models.py:3408
 msgid "Include date in the report file name"
 msgstr "Rapor dosya adına tarih ekleyin"
 
-#: enterprise/models.py:3386
+#: enterprise/models.py:3414
 msgid "Delivery Method"
 msgstr "Teslimat Yöntemi"
 
-#: enterprise/models.py:3387
+#: enterprise/models.py:3415
 msgid "The method in which the data should be sent."
 msgstr "Verilerin gönderilmesi gereken yöntem."
 
-#: enterprise/models.py:3392
+#: enterprise/models.py:3420
 msgid ""
 "Specifies whether report should be compressed. Without compression files "
 "will not be password protected or encrypted."
@@ -1764,56 +1737,56 @@ msgstr ""
 "Raporun sıkıştırılıp sıkıştırılmayacağını belirtir. Sıkıştırma olmadan "
 "dosyalar parolayla korunmaz veya şifrelenmez."
 
-#: enterprise/models.py:3399
+#: enterprise/models.py:3427
 msgid "PGP Encryption Key"
 msgstr "PGP Şifreleme Anahtarı"
 
-#: enterprise/models.py:3400
+#: enterprise/models.py:3428
 msgid "The key for encryption, if PGP encrypted file is required."
 msgstr "PGP şifreli dosya gerekiyorsa şifreleme anahtarı."
 
-#: enterprise/models.py:3408
+#: enterprise/models.py:3436
 msgid "Data Type"
 msgstr "Veri tipi"
 
-#: enterprise/models.py:3409
+#: enterprise/models.py:3437
 msgid "The type of data this report should contain."
 msgstr "Bu raporun içermesi gereken veri türü."
 
-#: enterprise/models.py:3416
+#: enterprise/models.py:3444
 msgid "Report Type"
 msgstr "Rapor tipi"
 
-#: enterprise/models.py:3417
+#: enterprise/models.py:3445
 msgid "The type this report should be sent as, e.g. CSV."
 msgstr "Bu raporun gönderilmesi gereken tür; örneğin CSV."
 
-#: enterprise/models.py:3421
+#: enterprise/models.py:3449
 msgid "Email"
 msgstr "E-posta"
 
-#: enterprise/models.py:3422
+#: enterprise/models.py:3450
 msgid "The email(s), one per line, where the report should be sent."
 msgstr ""
 "Raporun gönderilmesi gereken e-posta(lar), her satıra bir tane gelecek "
 "şekilde."
 
-#: enterprise/models.py:3429
+#: enterprise/models.py:3457
 msgid "Frequency"
 msgstr "Sıklık"
 
-#: enterprise/models.py:3430
+#: enterprise/models.py:3458
 msgid ""
 "The frequency interval (daily, weekly, or monthly) that the report should be"
 " sent."
 msgstr ""
 "Raporun gönderilmesi gereken sıklık aralığı (günlük, haftalık veya aylık)."
 
-#: enterprise/models.py:3435
+#: enterprise/models.py:3463
 msgid "Day of Month"
 msgstr "Ayın günü"
 
-#: enterprise/models.py:3436
+#: enterprise/models.py:3464
 msgid ""
 "The day of the month to send the report. This field is required and only "
 "valid when the frequency is monthly."
@@ -1821,11 +1794,11 @@ msgstr ""
 "Raporun gönderileceği ayın günü. Bu alan zorunludur ve yalnızca sıklığın "
 "aylık olması durumunda geçerlidir."
 
-#: enterprise/models.py:3444
+#: enterprise/models.py:3472
 msgid "Day of Week"
 msgstr "Haftanın günü"
 
-#: enterprise/models.py:3445
+#: enterprise/models.py:3473
 msgid ""
 "The day of the week to send the report. This field is required and only "
 "valid when the frequency is weekly."
@@ -1833,11 +1806,11 @@ msgstr ""
 "Raporun gönderileceği haftanın günü. Bu alan zorunludur ve yalnızca sıklığın"
 " haftalık olduğu durumlarda geçerlidir."
 
-#: enterprise/models.py:3449
+#: enterprise/models.py:3477
 msgid "Hour of Day"
 msgstr "Günün Saati"
 
-#: enterprise/models.py:3450
+#: enterprise/models.py:3478
 msgid ""
 "The hour of the day to send the report, in Eastern Standard Time (EST). This"
 " is required for all frequency settings."
@@ -1845,7 +1818,7 @@ msgstr ""
 "Raporun gönderileceği günün Doğu Standart Saati (EST) saati. Bu, tüm frekans"
 " ayarları için gereklidir."
 
-#: enterprise/models.py:3458
+#: enterprise/models.py:3486
 msgid ""
 "This password will be used to secure the zip file. It will be encrypted when"
 " stored in the database."
@@ -1853,28 +1826,28 @@ msgstr ""
 "Bu şifre zip dosyasının güvenliğini sağlamak için kullanılacaktır. "
 "Veritabanında saklandığında şifrelenecektir."
 
-#: enterprise/models.py:3465
+#: enterprise/models.py:3493
 msgid "SFTP Host name"
 msgstr "SFTP Ana Bilgisayar adı"
 
-#: enterprise/models.py:3466
+#: enterprise/models.py:3494
 msgid "If the delivery method is sftp, the host to deliver the report to."
 msgstr "Teslim yöntemi sftp ise raporun teslim edileceği ana bilgisayar."
 
-#: enterprise/models.py:3471
+#: enterprise/models.py:3499
 msgid "SFTP Port"
 msgstr "SFTP Bağlantı Noktası"
 
-#: enterprise/models.py:3472
+#: enterprise/models.py:3500
 msgid "If the delivery method is sftp, the port on the host to connect to."
 msgstr ""
 "Teslimat yöntemi sftp ise, bağlanılacak ana bilgisayardaki bağlantı noktası."
 
-#: enterprise/models.py:3479
+#: enterprise/models.py:3507
 msgid "SFTP username"
 msgstr "SFTP kullanıcı adı"
 
-#: enterprise/models.py:3480
+#: enterprise/models.py:3508
 msgid ""
 "If the delivery method is sftp, the username to use to securely access the "
 "host."
@@ -1882,7 +1855,7 @@ msgstr ""
 "Teslimat yöntemi sftp ise, ana makineye güvenli bir şekilde erişmek için "
 "kullanılacak kullanıcı adı."
 
-#: enterprise/models.py:3486
+#: enterprise/models.py:3514
 msgid ""
 "If the delivery method is sftp, the password to use to securely access the "
 "host. The password will be encrypted when stored in the database."
@@ -1890,59 +1863,59 @@ msgstr ""
 "Teslimat yöntemi sftp ise, ana bilgisayara güvenli bir şekilde erişmek için "
 "kullanılacak şifre. Parola veritabanında saklandığında şifrelenecektir."
 
-#: enterprise/models.py:3493
+#: enterprise/models.py:3521
 msgid "SFTP file path"
 msgstr "SFTP dosya yolu"
 
-#: enterprise/models.py:3494
+#: enterprise/models.py:3522
 msgid ""
 "If the delivery method is sftp, the path on the host to deliver the report "
 "to."
 msgstr ""
 "Teslim yöntemi sftp ise, raporun teslim edileceği ana bilgisayardaki yol."
 
-#: enterprise/models.py:3602
+#: enterprise/models.py:3630
 msgid "Delivery method cannot be updated"
 msgstr "Teslimat yöntemi güncellenemiyor"
 
-#: enterprise/models.py:3618
+#: enterprise/models.py:3646
 msgid "Day of week must be set if the frequency is weekly."
 msgstr "Sıklık haftalık ise haftanın günü ayarlanmalıdır."
 
-#: enterprise/models.py:3622
+#: enterprise/models.py:3650
 msgid "Day of month must be set if the frequency is monthly."
 msgstr "Sıklık aylık ise ayın günü ayarlanmalıdır."
 
-#: enterprise/models.py:3625
+#: enterprise/models.py:3653
 msgid "Frequency must be set to either daily, weekly, or monthly."
 msgstr "Sıklık günlük, haftalık veya aylık olarak ayarlanmalıdır."
 
-#: enterprise/models.py:3631
+#: enterprise/models.py:3659
 msgid "Email(s) must be set if the delivery method is email."
 msgstr "Teslimat yöntemi e-posta ise e-posta(lar) ayarlanmalıdır."
 
-#: enterprise/models.py:3635
+#: enterprise/models.py:3663
 msgid "Decrypted password must be set if the delivery method is email."
 msgstr "Teslimat yöntemi e-posta ise şifresi çözülmüş şifre ayarlanmalıdır."
 
-#: enterprise/models.py:3639
+#: enterprise/models.py:3667
 msgid "SFTP Hostname must be set if the delivery method is sftp."
 msgstr "Teslimat yöntemi sftp ise SFTP Ana Bilgisayar Adı ayarlanmalıdır."
 
-#: enterprise/models.py:3641
+#: enterprise/models.py:3669
 msgid "SFTP username must be set if the delivery method is sftp."
 msgstr "Teslim yöntemi sftp ise SFTP kullanıcı adı ayarlanmalıdır."
 
-#: enterprise/models.py:3643
+#: enterprise/models.py:3671
 msgid "SFTP File Path must be set if the delivery method is sftp."
 msgstr "Teslimat yöntemi sftp ise SFTP Dosya Yolu ayarlanmalıdır."
 
-#: enterprise/models.py:3646
+#: enterprise/models.py:3674
 msgid "Decrypted SFTP password must be set if the delivery method is SFTP."
 msgstr ""
 "Teslimat yöntemi SFTP ise şifresi çözülmüş SFTP şifresi ayarlanmalıdır."
 
-#: enterprise/models.py:3709
+#: enterprise/models.py:3737
 msgid ""
 "The EnterpriseCustomer for which the role is assigned to for the provided "
 "user. Defaults to the first active Enterprise Customer that the user is "
@@ -1955,26 +1928,26 @@ msgstr ""
 "Müşteri nesnesi isteniyorsa lütfen önce kaydı oluşturun, ardından açılır "
 "menüyü kullanarak kurumsal müşteri alanını değiştirin."
 
-#: enterprise/models.py:3998
+#: enterprise/models.py:4026
 msgid "Filters to show banner notifications conditionally."
 msgstr "Banner bildirimlerini koşullu olarak gösterecek filtreler."
 
-#: enterprise/models.py:4003
+#: enterprise/models.py:4031
 msgid "Admin Notification Filter"
 msgstr "Yönetici Bildirim Filtresi"
 
-#: enterprise/models.py:4004
+#: enterprise/models.py:4032
 msgid "Admin Notification Filters"
 msgstr "Yönetici Bildirim Filtreleri"
 
-#: enterprise/models.py:4030
+#: enterprise/models.py:4058
 msgid ""
 "Notification banner title which will appear to enterprise admin on admin "
 "portal."
 msgstr ""
 "Yönetici portalında kurumsal yöneticiye görünecek bildirim başlığı başlığı."
 
-#: enterprise/models.py:4038
+#: enterprise/models.py:4066
 msgid ""
 "Notification banner text which will appear to enterprise admin on admin "
 "portal. You can enter maximum of 512 characters. This text support markdown."
@@ -1985,36 +1958,36 @@ msgstr ""
 "Desteklenen işaretleme özellikleri için https://commonmark.org/help/ "
 "adresine bakın."
 
-#: enterprise/models.py:4055
+#: enterprise/models.py:4083
 msgid "Admin Notification"
 msgstr "Yönetici Bildirimi"
 
-#: enterprise/models.py:4056
+#: enterprise/models.py:4084
 msgid "Admin Notifications"
 msgstr "Yönetici Bildirimleri"
 
-#: enterprise/models.py:4094
+#: enterprise/models.py:4122
 msgid "Admin Notification Read"
 msgstr "Yönetici Bildirimi Okuması"
 
-#: enterprise/models.py:4095
+#: enterprise/models.py:4123
 msgid "Admin Notifications Read"
 msgstr "Yönetici Bildirimleri Okuma"
 
-#: enterprise/models.py:4128 enterprise/models.py:4232
-#: enterprise/models.py:4377
+#: enterprise/models.py:4156 enterprise/models.py:4260
+#: enterprise/models.py:4405
 msgid "The enterprise that can be linked using this key."
 msgstr "Bu anahtar kullanılarak bağlanabilecek kuruluş."
 
-#: enterprise/models.py:4137
+#: enterprise/models.py:4165
 msgid "The number of times this key can be used to link a learner."
 msgstr "Bu anahtarın bir öğrenciyi bağlamak için kullanılabilme sayısı."
 
-#: enterprise/models.py:4146
+#: enterprise/models.py:4174
 msgid "The key will no longer be valid after this date."
 msgstr "Anahtar bu tarihten sonra artık geçerli olmayacaktır."
 
-#: enterprise/models.py:4155
+#: enterprise/models.py:4183
 msgid ""
 "Specifies if the key is active. Once deactivated, the key is no longer valid"
 " and cannot be reactivated."
@@ -2022,60 +1995,60 @@ msgstr ""
 "Anahtarın etkin olup olmadığını belirtir. Devre dışı bırakıldığında anahtar "
 "artık geçerli değildir ve yeniden etkinleştirilemez."
 
-#: enterprise/models.py:4236
+#: enterprise/models.py:4264
 msgid "ChatGPT prompt."
 msgstr "ChatGPT istemi."
 
-#: enterprise/models.py:4238
+#: enterprise/models.py:4266
 msgid "ChatGPT response."
 msgstr "ChatGPT yanıtı."
 
-#: enterprise/models.py:4239
+#: enterprise/models.py:4267
 msgid "Prompt type."
 msgstr "İstem türü."
 
-#: enterprise/models.py:4243
+#: enterprise/models.py:4271
 msgid "ChatGPT Response"
 msgstr "ChatGPT Yanıtı"
 
-#: enterprise/models.py:4244
+#: enterprise/models.py:4272
 msgid "ChatGPT Responses"
 msgstr "ChatGPT Yanıtları"
 
-#: enterprise/models.py:4354
+#: enterprise/models.py:4382
 msgid "Enterprise Customer SSO Configuration"
 msgstr "Kurumsal Müşteri SSO Yapılandırması"
 
-#: enterprise/models.py:4355
+#: enterprise/models.py:4383
 msgid "Enterprise Customer SSO Configurations"
 msgstr "Kurumsal Müşteri SSO Yapılandırmaları"
 
-#: enterprise/models.py:4364
+#: enterprise/models.py:4392
 msgid "The display name of the SSO configuration."
 msgstr "SSO yapılandırmasının görünen adı."
 
-#: enterprise/models.py:4386
+#: enterprise/models.py:4414
 msgid ""
 "Specifies whether the integration with the SSO orchestration is active."
 msgstr "SSO orkestrasyonu ile entegrasyonun etkin olup olmadığını belirtir."
 
-#: enterprise/models.py:4395
+#: enterprise/models.py:4423
 msgid "The identity provider integrated with by the SSO orchestrator ."
 msgstr "SSO orkestratörü tarafından entegre edilen kimlik sağlayıcı."
 
-#: enterprise/models.py:4404
+#: enterprise/models.py:4432
 msgid "The metadata url of the identity provider."
 msgstr "Kimlik sağlayıcının meta veri URL&#39;si."
 
-#: enterprise/models.py:4412
+#: enterprise/models.py:4440
 msgid "The metadata xml of the identity provider."
 msgstr "Kimlik sağlayıcının meta veri xml&#39;si."
 
-#: enterprise/models.py:4421
+#: enterprise/models.py:4449
 msgid "The entity id of the identity provider."
 msgstr "Kimlik sağlayıcının varlık kimliği."
 
-#: enterprise/models.py:4430
+#: enterprise/models.py:4458
 msgid ""
 "Specifies whether the integration with the customer's identity provider "
 "should auto update metadata."
@@ -2083,40 +2056,40 @@ msgstr ""
 "Müşterinin kimlik sağlayıcısıyla entegrasyonun meta verileri otomatik olarak"
 " güncelleştirmesi gerekip gerekmediğini belirtir."
 
-#: enterprise/models.py:4484
+#: enterprise/models.py:4512
 msgid ""
 "The date and time when the configuration was submitted to the SSO "
 "orchestration."
 msgstr "Yapılandırmanın SSO düzenlemesine gönderildiği tarih ve saat."
 
-#: enterprise/models.py:4492
+#: enterprise/models.py:4520
 msgid ""
 "The date and time when the configuration was completed by the SSO "
 "orchestration."
 msgstr ""
 "Yapılandırmanın SSO düzenlemesi tarafından tamamlandığı tarih ve saat."
 
-#: enterprise/models.py:4500
+#: enterprise/models.py:4528
 msgid ""
 "The date and time when the configuration was validated and used for the "
 "first time."
 msgstr "Yapılandırmanın doğrulandığı ve ilk kez kullanıldığı tarih ve saat."
 
-#: enterprise/models.py:4508
+#: enterprise/models.py:4536
 msgid ""
 "The date and time when the orchestrator encountered an error during "
 "configuration."
 msgstr ""
 "Orkestratörün yapılandırma sırasında bir hatayla karşılaştığı tarih ve saat."
 
-#: enterprise/models.py:4517
+#: enterprise/models.py:4545
 msgid ""
 "Whether admin has indicated the service provider metadata was uploaded."
 msgstr ""
 "Yöneticinin servis sağlayıcı meta verilerinin yüklendiğini belirtip "
 "belirtmediği."
 
-#: enterprise/models.py:4527 enterprise/models.py:4563
+#: enterprise/models.py:4555 enterprise/models.py:4591
 msgid ""
 "SAP specific configuration: the timeout interval for the OData API in "
 "seconds."
@@ -2124,15 +2097,15 @@ msgstr ""
 "SAP&#39;ye özgü yapılandırma: OData API&#39;si için saniye cinsinden zaman "
 "aşımı aralığı."
 
-#: enterprise/models.py:4537
+#: enterprise/models.py:4565
 msgid "SAP specific configuration: the root url of the OData API."
 msgstr "SAP&#39;ye özel yapılandırma: OData API&#39;sinin kök URL&#39;si."
 
-#: enterprise/models.py:4546
+#: enterprise/models.py:4574
 msgid "SAP specific configuration: the company id of the OData API."
 msgstr "SAP&#39;ye özel yapılandırma: OData API&#39;nin şirket kimliği."
 
-#: enterprise/models.py:4555
+#: enterprise/models.py:4583
 msgid ""
 "SAP specific configuration: the root url of the SAP SuccessFactors OAuth "
 "API."
@@ -2140,58 +2113,58 @@ msgstr ""
 "SAP&#39;ye özel konfigürasyon: SAP SuccessFactors OAuth API&#39;sinin kök "
 "URL&#39;si."
 
-#: enterprise/models.py:4572
+#: enterprise/models.py:4600
 msgid ""
 "SAP specific configuration: the private key used to sign the SAML assertion."
 msgstr ""
 "SAP&#39;ye özgü yapılandırma: SAML onayını imzalamak için kullanılan özel "
 "anahtar."
 
-#: enterprise/models.py:4581
+#: enterprise/models.py:4609
 msgid "SAP specific configuration: the client id of the OData API."
 msgstr "SAP&#39;ye özgü yapılandırma: OData API&#39;sinin istemci kimliği."
 
-#: enterprise/models.py:4590
+#: enterprise/models.py:4618
 msgid "SAP specific configuration: the user id of the OAuth API."
 msgstr "SAP&#39;ye özel yapılandırma: OAuth API&#39;nin kullanıcı kimliği."
 
-#: enterprise/models.py:4612
+#: enterprise/models.py:4640
 msgid "Field is locked as the configuration has already been submitted."
 msgstr "Yapılandırma zaten gönderildiğinden alan kilitlendi."
 
-#: enterprise/models.py:4650
+#: enterprise/models.py:4678
 msgid "Record has already been submitted for configuration."
 msgstr "Kayıt zaten yapılandırma için gönderildi."
 
-#: enterprise/models.py:4700
+#: enterprise/models.py:4728
 msgid "Specifies enterprise group name."
 msgstr "Kurumsal grup adını belirtir."
 
-#: enterprise/models.py:4721
+#: enterprise/models.py:4749
 msgid "Enterprise Group"
 msgstr "İşletme Grubu"
 
-#: enterprise/models.py:4722
+#: enterprise/models.py:4750
 msgid "Enterprise Groups"
 msgstr "Kurumsal Gruplar"
 
-#: enterprise/models.py:4835
+#: enterprise/models.py:4863
 msgid ""
 "The moment at which the membership record is written with an Enterprise "
 "Customer User record."
 msgstr "Kurumsal Müşteri Kullanıcı kaydı ile üyelik kaydının yazıldığı an."
 
-#: enterprise/models.py:4845
+#: enterprise/models.py:4873
 msgid "Current status of the membership record"
 msgstr "Üyelik kaydının güncel durumu"
 
-#: enterprise/models.py:4852
+#: enterprise/models.py:4880
 msgid ""
 "The moment at which the membership record was revoked by an Enterprise "
 "admin."
 msgstr "Üyelik kaydının bir Kurumsal yönetici tarafından iptal edildiği an."
 
-#: enterprise/models.py:4860
+#: enterprise/models.py:4888
 msgid ""
 "The last time the membership action was in an error state. Null means the "
 "membership is not errored."
@@ -2199,16 +2172,16 @@ msgstr ""
 "En son üyelik eylemi hata durumundaydı. Null, üyeliğin hatalı olmadığı "
 "anlamına gelir."
 
-#: enterprise/models.py:4865
+#: enterprise/models.py:4893
 msgid "Enterprise Group Membership"
 msgstr "Kurumsal Grup Üyeliği"
 
-#: enterprise/models.py:4866
+#: enterprise/models.py:4894
 msgid "Enterprise Group Memberships"
 msgstr "Kurumsal Grup Üyelikleri"
 
 #: enterprise/templates/enterprise/_data_sharing_decline_modal.html:7
-#: enterprise/views.py:1612 enterprise/views.py:2114
+#: enterprise/views.py:1616 enterprise/views.py:2118
 msgid "Close"
 msgstr "Kapat"
 
@@ -2278,15 +2251,15 @@ msgstr "İptal"
 #: enterprise/templates/enterprise/admin/transmit_courses_metadata.html:33
 #: enterprise/templates/enterprise/admin/transmit_courses_metadata.html:40
 msgid "Transmit Courses Metadata"
-msgstr "Ders Meta Verilerini Aktarın"
+msgstr "Kurs Meta Verilerini Aktarın"
 
 #: enterprise/templates/enterprise/enterprise_customer_login_page.html:44
 #: enterprise/templates/enterprise/enterprise_customer_select_form.html:50
-#: enterprise/views.py:372 enterprise/views.py:1608
+#: enterprise/views.py:372 enterprise/views.py:1612
 msgid "Continue"
 msgstr "Devam et"
 
-#: enterprise/utils.py:148
+#: enterprise/utils.py:149
 msgid ""
 "Either \"Email or Username\" or \"CSV bulk upload\" must be specified, but "
 "both were."
@@ -2294,43 +2267,43 @@ msgstr ""
 "&quot;E-posta veya Kullanıcı Adı&quot; ya da &quot;CSV toplu yükleme&quot; "
 "belirtilmelidir, ancak her ikisi de belirtilmişti."
 
-#: enterprise/utils.py:151
+#: enterprise/utils.py:152
 msgid "Error: Learners could not be added. Correct the following errors."
 msgstr "Hata: Öğrenciler eklenemedi. Aşağıdaki hataları düzeltin."
 
-#: enterprise/utils.py:153
+#: enterprise/utils.py:154
 #, python-brace-format
 msgid ""
 "Enrollment track {course_mode} is not available for course {course_id}."
-msgstr "{course_mode} kayıt yolu {course_id} dersi için mevcut değil."
+msgstr "{course_mode} kayıt yolu {course_id} kursu için mevcut değil."
 
-#: enterprise/utils.py:155
+#: enterprise/utils.py:156
 msgid "Select a course enrollment track for the given course(s)."
-msgstr "Verilen ders(ler) için bir ders kayıt kanalı seçin."
+msgstr "Verilen kurs(lar) için bir kurs kayıt kanalı seçin."
 
-#: enterprise/utils.py:157
+#: enterprise/utils.py:158
 #, python-brace-format
 msgid ""
 "Could not retrieve details for the course ID {course_id}. Specify a valid "
 "ID."
 msgstr ""
-"{course_id} ders kimliğine ilişkin ayrıntılar alınamadı. Geçerli bir kimlik "
+"{course_id} kurs kimliğine ilişkin ayrıntılar alınamadı. Geçerli bir kimlik "
 "belirtin."
 
-#: enterprise/utils.py:160
+#: enterprise/utils.py:161
 msgid ""
 "Either \"CSV bulk upload\" or a singular course ID may be used for manual "
 "enrollments, but not both together."
 msgstr ""
-"Manuel kayıtlar için &quot;CSV toplu yükleme&quot; veya tekil ders kimliği "
+"Manuel kayıtlar için &quot;CSV toplu yükleme&quot; veya tekil kurs kimliği "
 "kullanılabilir, ancak ikisi birlikte kullanılamaz."
 
-#: enterprise/utils.py:164
+#: enterprise/utils.py:165
 #, python-brace-format
 msgid "{argument} does not appear to be a valid email address."
 msgstr "{argument} geçerli bir e-posta adresi gibi görünmüyor."
 
-#: enterprise/utils.py:166
+#: enterprise/utils.py:167
 #, python-brace-format
 msgid ""
 "{argument} does not appear to be a valid email address or known username"
@@ -2338,7 +2311,7 @@ msgstr ""
 "{argument} geçerli bir e-posta adresi veya bilinen bir kullanıcı adı gibi "
 "görünmüyor"
 
-#: enterprise/utils.py:169
+#: enterprise/utils.py:170
 #, python-brace-format
 msgid ""
 "Expected a CSV file with [{expected_columns}] columns, but found "
@@ -2347,11 +2320,11 @@ msgstr ""
 "[ {expected_columns} ] sütunlarını içeren bir CSV dosyası bekleniyordu ancak"
 " bunun yerine [ {actual_columns} ] sütunları bulundu."
 
-#: enterprise/utils.py:173
+#: enterprise/utils.py:174
 msgid "Reason field is required but was not filled."
 msgstr "Neden alanı zorunludur ancak doldurulmamıştır."
 
-#: enterprise/utils.py:176
+#: enterprise/utils.py:177
 msgid ""
 "Either \"Email or Username\" or \"CSV bulk upload\" must be specified, but "
 "neither were."
@@ -2359,7 +2332,7 @@ msgstr ""
 "&quot;E-posta veya Kullanıcı Adı&quot; ya da &quot;CSV toplu yükleme&quot; "
 "belirtilmelidir, ancak ikisi de belirtilmemiştir."
 
-#: enterprise/utils.py:179
+#: enterprise/utils.py:180
 #, python-brace-format
 msgid ""
 "User with email address {email} is already registered with Enterprise "
@@ -2368,21 +2341,21 @@ msgstr ""
 "{email} e-posta adresine sahip kullanıcı zaten {ec_name} Kurumsal "
 "Müşterisine kayıtlı"
 
-#: enterprise/utils.py:181
+#: enterprise/utils.py:182
 msgid "User is not linked with Enterprise Customer"
 msgstr "Kullanıcı Kurumsal Müşteri ile bağlantılı değil"
 
-#: enterprise/utils.py:182
+#: enterprise/utils.py:183
 #, python-brace-format
 msgid "User with email address {email} doesn't exist."
 msgstr "{email} e-posta adresine sahip kullanıcı mevcut değil."
 
-#: enterprise/utils.py:183
+#: enterprise/utils.py:184
 #, python-brace-format
 msgid "Course ID {course_id} doesn't exist in Enterprise Customer's Catalog"
-msgstr "Ders Kimliği {course_id} Kurumsal Müşterinin Kataloğunda mevcut değil"
+msgstr "Kurs Kimliği {course_id} Kurumsal Müşterinin Kataloğunda mevcut değil"
 
-#: enterprise/utils.py:185
+#: enterprise/utils.py:186
 #, python-brace-format
 msgid ""
 "Enterprise channel worker user with the username "
@@ -2391,23 +2364,23 @@ msgstr ""
 "&quot; {channel_worker_username} &quot; kullanıcı adına sahip kurumsal kanal"
 " çalışan kullanıcısı bulunamadı."
 
-#: enterprise/utils.py:188
+#: enterprise/utils.py:189
 msgid ""
 "Unable to parse CSV file. Please make sure it is a CSV 'utf-8' encoded file."
 msgstr ""
 "CSV dosyası ayrıştırılamıyor. Lütfen bunun CSV &#39;utf-8&#39; kodlu bir "
 "dosya olduğundan emin olun."
 
-#: enterprise/utils.py:191
+#: enterprise/utils.py:192
 msgid "Discount percentage should be from 0 to 100."
 msgstr "İndirim yüzdesi 0 ile 100 arasında olmalıdır."
 
-#: enterprise/utils.py:401
+#: enterprise/utils.py:402
 #, python-brace-format
 msgid "You've been enrolled in {course_name}!"
 msgstr "{course_name} kaydoldunuz!"
 
-#: enterprise/utils.py:560 enterprise/utils.py:639
+#: enterprise/utils.py:561 enterprise/utils.py:640
 msgid "`user` must have one of either `email` or `user_email`."
 msgstr ""
 "&quot;kullanıcı&quot;, &quot;e-posta&quot; veya &quot;kullanıcı_e-"
@@ -2521,8 +2494,8 @@ msgid ""
 " I enrolled in (audit or verified) and the date when I enrolled in each "
 "course or program"
 msgstr ""
-"Hangi derslere ve/veya programlara kaydoldum veya kaydımı sildim, hangi "
-"bölüme kaydoldum (denetleme veya doğrulama) ve her derse veya programa "
+"Hangi kurslara ve/veya programlara kaydoldum veya kaydımı sildim, hangi "
+"bölüme kaydoldum (denetleme veya doğrulama) ve her kursa veya programa "
 "kaydolduğum tarih"
 
 #: enterprise/views.py:402
@@ -2530,7 +2503,7 @@ msgid ""
 "Information about each course or program I've enrolled in, including its "
 "duration and level of effort required"
 msgstr ""
-"Süresi ve gereken çaba düzeyi de dahil olmak üzere, kaydolduğum her ders "
+"Süresi ve gereken çaba düzeyi de dahil olmak üzere, kaydolduğum her kurs "
 "veya program hakkında bilgi"
 
 #: enterprise/views.py:406
@@ -2539,7 +2512,7 @@ msgid ""
 "whether I watched a given video or attempted or completed a given homework "
 "assignment)"
 msgstr ""
-"Her dersin veya programın belirli bölümlerini tamamlayıp tamamlamadığım "
+"Her kursun veya programın belirli bölümlerini tamamlayıp tamamlamadığım "
 "(örneğin, belirli bir videoyu izleyip izlemediğim veya belirli bir ev "
 "ödevini deneyip tamamlamadığım veya tamamlayıp tamamlamadığım)"
 
@@ -2550,9 +2523,9 @@ msgid ""
 "when I last logged in to each course or program and how much of the course "
 "or program content I have consumed"
 msgstr ""
-"Her bir ders veya programda harcanan toplam süre, her bir ders veya programa"
-" en son giriş yaptığım tarih ve ders veya program içeriğinin ne kadarını "
-"tükettiğim de dahil olmak üzere, her bir ders veya programın periyodik "
+"Her bir kurs veya programda harcanan toplam süre, her bir kurs veya programa"
+" en son giriş yaptığım tarih ve kurs veya program içeriğinin ne kadarını "
+"tükettiğim de dahil olmak üzere, her bir kurs veya programın periyodik "
 "olarak genel tamamlanma yüzdesi"
 
 #: enterprise/views.py:414
@@ -2574,7 +2547,7 @@ msgstr ""
 
 #: enterprise/views.py:417
 msgid "Whether I received a certificate in each course or program"
-msgstr "Her ders veya programda sertifika alıp almadığım"
+msgstr "Her kurs veya programda sertifika alıp almadığım"
 
 #: enterprise/views.py:420
 #, python-brace-format
@@ -2585,10 +2558,10 @@ msgid ""
 " I may withdraw my permission only by fully unenrolling from any courses or "
 "programs that are sponsored by {enterprise_customer_name}."
 msgstr ""
-"İznim yalnızca {enterprise_customer_name} sponsorluğundaki ders veya "
+"İznim yalnızca {enterprise_customer_name} sponsorluğundaki kurs veya "
 "programlardan elde edilen veriler için geçerlidir ve kendi başıma aldığım "
-"{platform_name} ders veya programlarından elde edilen veriler için geçerli "
-"değildir. Yalnızca {enterprise_customer_name} sponsorluğundaki ders veya "
+"{platform_name} kurs veya programlarından elde edilen veriler için geçerli "
+"değildir. Yalnızca {enterprise_customer_name} sponsorluğundaki kurs veya "
 "programlardan kaydımı tamamen iptal ederek iznimi geri çekebileceğimi "
 "anlıyorum."
 
@@ -2670,7 +2643,7 @@ msgstr "öğrenme ilerlemeniz"
 
 #: enterprise/views.py:617
 msgid "course completion"
-msgstr "dersin tamamlanması"
+msgstr "kursun tamamlanması"
 
 #: enterprise/views.py:985
 msgid "Enterprise Slug Login"
@@ -2692,30 +2665,30 @@ msgstr "Eğitmenli Eğitim"
 msgid "Self-Paced"
 msgstr "Kendi Kendine Eğitim"
 
-#: enterprise/views.py:1451
+#: enterprise/views.py:1455
 msgid "FREE"
 msgstr "ÖZGÜR"
 
-#: enterprise/views.py:1453
+#: enterprise/views.py:1457
 msgid "Not eligible for a certificate."
 msgstr "Sertifika almaya uygun değil."
 
-#: enterprise/views.py:1455
+#: enterprise/views.py:1459
 msgid "Earn a verified certificate!"
 msgstr "Doğrulanmış bir sertifika kazanın!"
 
-#: enterprise/views.py:1514
+#: enterprise/views.py:1518
 #, python-brace-format
 msgid "{num_weeks}, starting on {start_date} and ending at {end_date}"
 msgstr "{num_weeks} , {start_date} başlayıp {end_date} bitiyor"
 
-#: enterprise/views.py:1516 enterprise/views.py:1935
+#: enterprise/views.py:1520 enterprise/views.py:1939
 msgid "{} week"
 msgid_plural "{} weeks"
 msgstr[0] "{} hafta"
 msgstr[1] "{} haftalar"
 
-#: enterprise/views.py:1576
+#: enterprise/views.py:1580
 #, python-brace-format
 msgid ""
 "Discount provided by {strong_start}{enterprise_customer_name}{strong_end}"
@@ -2723,142 +2696,142 @@ msgstr ""
 "İndirim {strong_start} tarafından sağlanmıştır {enterprise_customer_name} "
 "{strong_end}"
 
-#: enterprise/views.py:1602 enterprise/views.py:1603
+#: enterprise/views.py:1606 enterprise/views.py:1607
 msgid "Confirm your course"
-msgstr "Dersinizi onaylayın"
+msgstr "Kursunuzu onaylayın"
 
-#: enterprise/views.py:1605
+#: enterprise/views.py:1609
 msgid "View Course Details"
 msgstr "Ders Ayrıntılarını Görüntüle"
 
-#: enterprise/views.py:1606
+#: enterprise/views.py:1610
 msgid "Please select one:"
 msgstr "Lütfen birini seçin:"
 
-#: enterprise/views.py:1607 enterprise/views.py:2108
+#: enterprise/views.py:1611 enterprise/views.py:2112
 msgid "Price"
 msgstr "Ücret"
 
-#: enterprise/views.py:1609 enterprise/views.py:2111
+#: enterprise/views.py:1613 enterprise/views.py:2115
 msgid "Level"
 msgstr "Seviye"
 
-#: enterprise/views.py:1610 enterprise/views.py:2110
+#: enterprise/views.py:1614 enterprise/views.py:2114
 msgid "Effort"
 msgstr "Çaba"
 
-#: enterprise/views.py:1611
+#: enterprise/views.py:1615
 msgid "Duration"
 msgstr "Süre"
 
-#: enterprise/views.py:1613 enterprise/views.py:2100
+#: enterprise/views.py:1617 enterprise/views.py:2104
 msgid "What you'll learn"
 msgstr "Ne öğreneceksin"
 
-#: enterprise/views.py:1614 enterprise/views.py:2112
+#: enterprise/views.py:1618 enterprise/views.py:2116
 msgid "About This Course"
-msgstr "Bu Ders Hakkında"
+msgstr "Bu Kurs Hakkında"
 
-#: enterprise/views.py:1615 enterprise/views.py:2113
+#: enterprise/views.py:1619 enterprise/views.py:2117
 msgid "Course Staff"
-msgstr "Ders Personeli"
+msgstr "Kurs Personeli"
 
-#: enterprise/views.py:2052
+#: enterprise/views.py:2056
 #, python-brace-format
 msgid "{count} Course"
 msgid_plural "{count} Courses"
 msgstr[0] "{count} Kurs"
 msgstr[1] "{count} Dersler"
 
-#: enterprise/views.py:2059
+#: enterprise/views.py:2063
 msgid "{}-{} hours per week, per course"
-msgstr "Ders başına haftada {}-{} saat"
+msgstr "Kurs başına haftada {}-{} saat"
 
-#: enterprise/views.py:2066
+#: enterprise/views.py:2070
 msgid "{}-{} weeks per course"
-msgstr "Ders başına {}-{} hafta"
+msgstr "Kurs başına {}-{} hafta"
 
-#: enterprise/views.py:2073
+#: enterprise/views.py:2077
 msgid "Purchase all unenrolled courses"
-msgstr "Kayıtlı olmayan tüm dersleri satın alın"
+msgstr "Kayıtlı olmayan tüm kursları satın alın"
 
-#: enterprise/views.py:2074
+#: enterprise/views.py:2078
 msgid "enrollment"
 msgstr "kayıtlanma"
 
-#: enterprise/views.py:2076
+#: enterprise/views.py:2080
 msgid "Pursue the program"
 msgstr "Programı takip edin"
 
-#: enterprise/views.py:2077
+#: enterprise/views.py:2081
 msgid "program enrollment"
 msgstr "program kaydı"
 
-#: enterprise/views.py:2098
+#: enterprise/views.py:2102
 msgid "enrolled"
 msgstr "kayıtlı"
 
-#: enterprise/views.py:2099
+#: enterprise/views.py:2103
 msgid "already enrolled, must pay for certificate"
 msgstr "zaten kayıtlısınız, sertifika için ödeme yapmanız gerekiyor"
 
-#: enterprise/views.py:2102
+#: enterprise/views.py:2106
 msgid "Real Career Impact"
 msgstr "Kariyerinizde Yaratacağı Etki"
 
-#: enterprise/views.py:2104
+#: enterprise/views.py:2108
 msgid "See More"
 msgstr "Daha fazla gör"
 
-#: enterprise/views.py:2105
+#: enterprise/views.py:2109
 msgid "See Less"
 msgstr "Daha Az Gör"
 
-#: enterprise/views.py:2106
+#: enterprise/views.py:2110
 msgid "Confirm Program"
 msgstr "Programı Onayla"
 
-#: enterprise/views.py:2107
+#: enterprise/views.py:2111
 msgid "Program Summary"
 msgstr "Program Özeti"
 
-#: enterprise/views.py:2109
+#: enterprise/views.py:2113
 msgid "Length"
 msgstr "Uzunluk"
 
-#: enterprise/views.py:2115
+#: enterprise/views.py:2119
 msgid "Program not eligible for one-click purchase."
 msgstr "Program tek tıklamayla satın almaya uygun değil."
 
-#: enterprise/views.py:2116
+#: enterprise/views.py:2120
 #, python-brace-format
 msgid "What is an {platform_name} {program_type}?"
 msgstr "{platform_name} {program_type} nedir?"
 
-#: enterprise/views.py:2120
+#: enterprise/views.py:2124
 #, python-brace-format
 msgid "What is {platform_name}?"
 msgstr "{platform_name} nedir?"
 
-#: enterprise/views.py:2125
+#: enterprise/views.py:2129
 #, python-brace-format
 msgid "Presented by {organization}"
 msgstr "Tarafından sunulmuştur {organization}"
 
-#: enterprise/views.py:2126
+#: enterprise/views.py:2130
 #, python-brace-format
 msgid "Confirm your {item}"
 msgstr "{item} onaylayın"
 
-#: enterprise/views.py:2138
+#: enterprise/views.py:2142
 msgid "Credit- and Certificate-eligible"
 msgstr "Kredi ve Sertifikaya uygun"
 
-#: enterprise/views.py:2139
+#: enterprise/views.py:2143
 msgid "Self-paced; courses can be taken in any order"
 msgstr "Kendi hızınızda; dersler herhangi bir sırayla alınabilir"
 
-#: enterprise/views.py:2141
+#: enterprise/views.py:2145
 #, python-brace-format
 msgid "{purchase_action} for"
 msgstr "{purchase_action} için"
@@ -2870,3 +2843,29 @@ msgid ""
 msgstr ""
 "Bu EnterpriseCourseEnrollmentSerializer&#39;ı kullanmak için bu paketin bir "
 "Open edX ortamına kurulması gerekir."
+
+#: enterprise/config/models.py:41
+msgid ""
+"Specifies which user role assignments to update.  If unspecified, will "
+"update for all roles."
+msgstr ""
+"Hangi kullanıcı rolü atamalarının güncelleneceğini belirtir. Belirtilmemişse"
+" tüm roller için güncellenecektir."
+
+#: enterprise/config/models.py:45
+msgid "Number of user role asssignments to update in each batch of updates."
+msgstr ""
+"Her güncelleme toplu işleminde güncelleştirilecek kullanıcı rolü "
+"atamalarının sayısı."
+
+#: enterprise/config/models.py:50
+msgid "The enterprise customer to limit role assignments to."
+msgstr "Rol atamalarının sınırlandırılacağı kurumsal müşteri."
+
+#: enterprise/config/models.py:55
+msgid ""
+"If set, no updates or creates will occur; will instead iterate over the "
+"assignments that would be modified or created"
+msgstr ""
+"Ayarlanırsa hiçbir güncelleme veya oluşturma gerçekleşmez; bunun yerine "
+"değiştirilecek veya oluşturulacak atamalar üzerinde yinelenecek"

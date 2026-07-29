@@ -4,21 +4,25 @@
 # EdX Team <info@edx.org>, 2025.
 # 
 # Translators:
-# Eden Huthmacher, 2025
+# Brian Smith, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2025-07-23 17:31+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/open-edx/teams/6205/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: audio.py:31
+msgid "URL for MP3 file to play"
+msgstr "MP3 fájl URL-je a lejátszáshoz"
 
 #: templates/html/audio_edit.html:7
 msgid "Audio Source Location"
@@ -30,4 +34,8 @@ msgstr "Mentés"
 
 #: templates/html/audio_edit.html:14
 msgid "Cancel"
-msgstr "Mégsem"
+msgstr "Megszakít"
+
+#: added_by_omar.py:14
+msgid "Testing TX Branches"
+msgstr "TX ágak tesztelése"

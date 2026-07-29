@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-25 00:36+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
+"POT-Creation-Date: 2025-09-19 00:44+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
 "Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Afrikaans (South Africa) (https://app.transifex.com/open-edx/teams/6205/af_ZA/)\n"
 "MIME-Version: 1.0\n"
@@ -64,11 +64,11 @@ msgstr "OpenAssessment Stoor Fout"
 msgid "Saving"
 msgstr "Stoor"
 
-#: cms/static/js/base.js:101
+#: cms/static/js/base.js:113
 msgid "This link will open in a new browser window/tab"
 msgstr "Hierdie skakel sal in &#39;n nuwe blaaiervenster/oortjie oopmaak"
 
-#: cms/static/js/base.js:108
+#: cms/static/js/base.js:120
 msgid "This link will open in a modal window"
 msgstr "Hierdie skakel sal in &#39;n modale venster oopmaak"
 
@@ -119,7 +119,7 @@ msgstr "Jy het nog geen sertifikate geskep nie."
 
 #: cms/static/js/certificates/views/signatory_editor.js:134
 msgid "Delete \"<%- signatoryName %>\" from the list of signatories?"
-msgstr "Vee <%- signatoryName %> uit die lys van ondertekenaars uit?"
+msgstr "Vee \"<%- signatoryName %>\" uit die lys van ondertekenaars uit?"
 
 #: cms/static/js/certificates/views/signatory_editor.js:137
 #: cms/static/js/views/course_info_update.js:238
@@ -540,6 +540,7 @@ msgstr "Jou lêer kon nie opgelaai word nie"
 #: cms/static/js/views/modals/course_outline_modals.js:351
 #: cms/static/js/views/modals/edit_xblock.js:151
 #: cms/static/js/views/video_transcripts.js:325
+#: lms/static/js/student_account/enrollment.js:87
 #: lms/static/js/student_account/tos_modal.js:48
 #: xmodule/js/src/html/edit.js:370
 #: cms/templates/js/course-video-settings.underscore:6
@@ -680,7 +681,7 @@ msgstr "Voeg biblioteekinhoud by"
 
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:642
+#: cms/static/js/views/pages/container.js:652
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "Voeg by"
@@ -699,8 +700,8 @@ msgstr "Is jy seker jy wil hierdie opdatering uitvee?"
 #: cms/static/js/views/course_info_update.js:241
 #: cms/static/js/views/course_outline.js:390
 #: cms/static/js/views/course_outline.js:402
-#: cms/static/js/views/pages/container.js:414
-#: cms/static/js/views/pages/container.js:426 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/pages/container.js:424
+#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
 #: cms/static/js/views/utils/xblock_utils.js:101
 #: cms/static/js/views/utils/xblock_utils.js:113
 #: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
@@ -710,7 +711,7 @@ msgid "OK"
 msgstr "OK"
 
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:767
+#: cms/static/js/views/pages/container.js:779
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "Kopiëring"
@@ -720,31 +721,31 @@ msgid "Copy of \"{componentDisplayName}\""
 msgstr "Afskrif van &quot; {componentDisplayName} &quot;"
 
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:385
+#: cms/static/js/views/pages/container.js:395
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
 msgstr "Plak"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:409
+#: cms/static/js/views/pages/container.js:419
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "Sommige foute het voorgekom"
 
 #: cms/static/js/views/course_outline.js:387
-#: cms/static/js/views/pages/container.js:411
+#: cms/static/js/views/pages/container.js:421
 #: cms/static/js/views/utils/xblock_utils.js:98
 msgid "The following required files could not be added to the course:"
 msgstr "Die volgende vereiste lêers kon nie by die kursus gevoeg word nie:"
 
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:429
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr "Jy sal dalk &#39;n lêer(s) handmatig moet opdateer"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:422
+#: cms/static/js/views/pages/container.js:432
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -754,25 +755,25 @@ msgstr ""
 " die weergawe wat gebruik word deur die komponent wat jy geplak het nie:"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:431
+#: cms/static/js/views/pages/container.js:441
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "Nuwe lêer(s) by lêers en oplaaie gevoeg."
 
 #: cms/static/js/views/course_outline.js:409
-#: cms/static/js/views/pages/container.js:433
+#: cms/static/js/views/pages/container.js:443
 #: cms/static/js/views/utils/xblock_utils.js:120
 msgid "The following required files were imported to this course:"
 msgstr "Die volgende vereiste lêers is na hierdie kursus ingevoer:"
 
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:438
+#: cms/static/js/views/pages/container.js:448
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "Bekyk lêers"
 
 #: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:447
+#: cms/static/js/views/pages/container.js:457
 #: cms/static/js/views/utils/xblock_utils.js:134
 msgid "Dismiss"
 msgstr "Verwerp"
@@ -812,7 +813,7 @@ msgid "Select language"
 msgstr "Kies taal"
 
 #: cms/static/js/views/course_video_settings.js:474
-#: cms/static/js/views/metadata.js:357
+#: cms/static/js/views/metadata.js:362
 #: cms/static/js/views/previous_video_upload.js:78
 #: cms/static/js/views/video_transcripts.js:270
 #: lms/djangoapps/teams/static/teams/js/views/edit_team_members.js:96
@@ -849,7 +850,7 @@ msgstr "{selectedProvider} geloofsbriewe gestoor"
 
 #: cms/static/js/views/edit_chapter.js:62
 msgid "Upload a new PDF to “<%- name %>”"
-msgstr "Laai &#39;n nuwe PDF op na &quot;<%- name %>&quot;"
+msgstr "Laai &#39;n nuwe PDF op na “<%- name %>”"
 
 #: cms/static/js/views/edit_chapter.js:64
 msgid "Please select a PDF file to upload."
@@ -1116,7 +1117,7 @@ msgstr "Is jy seker?"
 msgid "Are you sure you want to restrict {email} access to “{container}”?"
 msgstr "Is jy seker jy wil {email} toegang tot “ {container} ” beperk?"
 
-#: cms/static/js/views/metadata.js:610 lms/static/js/views/file_uploader.js:47
+#: cms/static/js/views/metadata.js:615 lms/static/js/views/file_uploader.js:47
 msgid "Upload File"
 msgstr "Laai leêr op"
 
@@ -1332,7 +1333,7 @@ msgstr "Datum bygevoeg"
 
 #. Translators: "title" is the name of the current component or unit being
 #. edited.
-#: cms/static/js/views/pages/container.js:719
+#: cms/static/js/views/pages/container.js:731
 msgid "Editing access for: {title}"
 msgstr "Redigeringstoegang vir: {title}"
 
@@ -1548,7 +1549,7 @@ msgstr "Laai jou video-kleinkiekieprent op."
 
 #: cms/static/js/views/show_textbook.js:33
 msgid "Delete “<%- name %>”?"
-msgstr "Vee &quot;<%- name %>&quot; uit?"
+msgstr "Vee “<%- name %>” uit?"
 
 #: cms/static/js/views/show_textbook.js:36
 msgid ""
@@ -1955,7 +1956,7 @@ msgstr "Waarskuwing"
 #: common/static/common/js/discussion/views/discussion_thread_view.js:233
 #: common/static/common/js/discussion/views/response_comment_view.js:121
 #: lms/djangoapps/instructor/static/instructor/ProblemBrowser/components/ReportStatus/ReportStatus.jsx:33
-#: lms/static/js/student_account/views/FinishAuthView.js:82
+#: lms/static/js/student_account/views/FinishAuthView.js:84
 #: lms/static/js/verify_student/views/step_view.js:50
 #: lms/static/js/views/fields.js:43
 msgid "Error"
@@ -3834,60 +3835,68 @@ msgstr "Laai tans data …"
 msgid "Error getting issued certificates list."
 msgstr "Kon nie lys met uitgereikte sertifikate kry nie."
 
-#: lms/static/js/instructor_dashboard/data_download.js:123
+#: lms/static/js/instructor_dashboard/data_download.js:124
 msgid "Error generating anonymous IDs. Please try again."
 msgstr "Kon nie anonieme ID&#39;s genereer nie. Probeer asseblief weer."
 
-#: lms/static/js/instructor_dashboard/data_download.js:149
+#: lms/static/js/instructor_dashboard/data_download.js:150
 #: lms/static/js/instructor_dashboard/data_download_2.js:49
 msgid "Error generating proctored exam results. Please try again."
 msgstr ""
 "Kon nie proctored eksamenuitslae genereer nie. Probeer asseblief weer."
 
-#: lms/static/js/instructor_dashboard/data_download.js:175
+#: lms/static/js/instructor_dashboard/data_download.js:176
 #: lms/static/js/instructor_dashboard/data_download_2.js:48
 msgid "Error generating survey results. Please try again."
 msgstr "Kon nie opnameresultate genereer nie. Probeer asseblief weer."
 
-#: lms/static/js/instructor_dashboard/data_download.js:201
+#: lms/static/js/instructor_dashboard/data_download.js:202
 #: lms/static/js/instructor_dashboard/data_download_2.js:47
 msgid "Error generating student profile information. Please try again."
 msgstr ""
 "Kon nie studenteprofielinligting genereer nie. Probeer asseblief weer."
 
-#: lms/static/js/instructor_dashboard/data_download.js:227
+#: lms/static/js/instructor_dashboard/data_download.js:228
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmarks_list.js:23
 #: cms/templates/js/move-xblock-modal.underscore:6
 #: openedx/features/course_search/static/course_search/templates/search_loading.underscore:1
 msgid "Loading"
 msgstr "Laai tans"
 
-#: lms/static/js/instructor_dashboard/data_download.js:235
+#: lms/static/js/instructor_dashboard/data_download.js:236
 msgid "Error getting student list."
 msgstr "Kon nie studentelys kry nie."
 
-#: lms/static/js/instructor_dashboard/data_download.js:301
+#: lms/static/js/instructor_dashboard/data_download.js:302
 #: lms/static/js/instructor_dashboard/data_download_2.js:50
 msgid "Error generating list of students who may enroll. Please try again."
 msgstr ""
 "Kon nie lys van studente genereer wat mag inskryf nie. Probeer asseblief "
 "weer."
 
-#: lms/static/js/instructor_dashboard/data_download.js:333
+#: lms/static/js/instructor_dashboard/data_download.js:327
+msgid ""
+"Error generating list of inactive students who are enrolled in a course. "
+"Please try again."
+msgstr ""
+"Kon nie &#39;n lys van onaktiewe studente wat vir &#39;n kursus ingeskryf "
+"is, genereer nie. Probeer asseblief weer."
+
+#: lms/static/js/instructor_dashboard/data_download.js:359
 msgid "Error retrieving grading configuration."
 msgstr "Kon nie graderingopstelling ophaal nie."
 
-#: lms/static/js/instructor_dashboard/data_download.js:358
+#: lms/static/js/instructor_dashboard/data_download.js:384
 #: lms/static/js/instructor_dashboard/data_download_2.js:156
 msgid "Error generating grades. Please try again."
 msgstr "Kon nie grade genereer nie. Probeer asseblief weer."
 
-#: lms/static/js/instructor_dashboard/data_download.js:360
+#: lms/static/js/instructor_dashboard/data_download.js:386
 #: lms/static/js/instructor_dashboard/data_download_2.js:46
 msgid "Error generating problem grade report. Please try again."
 msgstr "Kon nie probleemgraadverslag genereer nie. Probeer asseblief weer."
 
-#: lms/static/js/instructor_dashboard/data_download.js:362
+#: lms/static/js/instructor_dashboard/data_download.js:388
 #: lms/static/js/instructor_dashboard/data_download_2.js:45
 msgid "Error generating ORA data report. Please try again."
 msgstr "Kon nie ORA-dataverslag genereer nie. Probeer asseblief weer."
@@ -3964,17 +3973,17 @@ msgstr "Kon nie gebruiker se toestemmings verander nie."
 msgid ""
 "Could not find a user with username or email address '<%- identifier %>'."
 msgstr ""
-"Kon nie &#39;n gebruiker met gebruikersnaam of e-posadres &#39;<%- "
-"identifier %>&#39; vind nie."
+"Kon nie &#39;n gebruiker met gebruikersnaam of e-posadres '<%- identifier "
+"%>' vind nie."
 
 #: lms/static/js/instructor_dashboard/membership.js:277
 msgid ""
 "Error: User '<%- username %>' has not yet activated their account. Users "
 "must create and activate their accounts before they can be assigned a role."
 msgstr ""
-"Fout: Gebruiker &#39;<%- username %>&#39; het nog nie hul rekening "
-"geaktiveer nie. Gebruikers moet hul rekeninge skep en aktiveer voordat "
-"&#39;n rol aan hulle toegeken kan word."
+"Fout: Gebruiker '<%- username %>' het nog nie hul rekening geaktiveer nie. "
+"Gebruikers moet hul rekeninge skep en aktiveer voordat &#39;n rol aan hulle "
+"toegeken kan word."
 
 #: lms/static/js/instructor_dashboard/membership.js:283
 msgid "Error: You cannot remove yourself from the Instructor group!"
@@ -4079,10 +4088,28 @@ msgid "Successfully enrolled the following users:"
 msgstr "Het die volgende gebruikers suksesvol ingeskryf:"
 
 #. Translators: A list of users appears after this sentence;
+#: lms/static/js/instructor_dashboard/membership.js:792
+msgid ""
+"Email was sent to the following users. They will be allowed to enroll once "
+"they register:"
+msgstr ""
+"E-pos is aan die volgende gebruikers gestuur. Hulle sal toegelaat word om in"
+" te skryf sodra hulle registreer:"
+
+#. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:804
 msgid "These users will be allowed to enroll once they register:"
 msgstr ""
 "Hierdie gebruikers sal toegelaat word om in te skryf sodra hulle registreer:"
+
+#. Translators: A list of users appears after this sentence;
+#: lms/static/js/instructor_dashboard/membership.js:816
+msgid ""
+"Email was sent to the following users. They will be enrolled once they "
+"register:"
+msgstr ""
+"E-pos is aan die volgende gebruikers gestuur. Hulle sal ingeskryf word sodra"
+" hulle registreer:"
 
 #. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:828
@@ -4215,8 +4242,8 @@ msgid ""
 "Error getting enrollment status for '<%- student_id %>'. Make sure that the "
 "student identifier is spelled correctly."
 msgstr ""
-"Kon nie inskrywingstatus vir &#39;<%- student_id %>&#39; kry nie. Maak seker"
-" dat die studente-identifiseerder korrek gespel is."
+"Kon nie inskrywingstatus vir '<%- student_id %>' kry nie. Maak seker dat die"
+" studente-identifiseerder korrek gespel is."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:91
 msgid "Retrieving enrollment status..."
@@ -4227,8 +4254,8 @@ msgid ""
 "Error getting student progress url for '<%- student_id %>'. Make sure that "
 "the student identifier is spelled correctly."
 msgstr ""
-"Kon nie studentevorderings-URL vir &#39;<%- student_id %>&#39; kry nie. Maak"
-" seker dat die studente-identifiseerder korrek gespel is."
+"Kon nie studentevorderings-URL vir '<%- student_id %>' kry nie. Maak seker "
+"dat die studente-identifiseerder korrek gespel is."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:149
 #: lms/static/js/instructor_dashboard/student_admin.js:191
@@ -4263,8 +4290,8 @@ msgstr ""
 msgid ""
 "Delete student '<%- student_id %>'s state on problem '<%- problem_id %>'?"
 msgstr ""
-"Vee student &#39;<%- student_id %> se toestand op probleem &#39;<%- "
-"problem_id %>&#39; uit?"
+"Vee student '<%- student_id %>' se toestand op probleem '<%- problem_id %>' "
+"uit?"
 
 #: lms/static/js/instructor_dashboard/student_admin.js:205
 msgid ""
@@ -4272,9 +4299,9 @@ msgid ""
 " %>'. Make sure that the problem and student identifiers are complete and "
 "correct."
 msgstr ""
-"Kon nie student &#39;<%- student_id %> se toestand op probleem &#39;<%- "
-"problem_id %>&#39; uitvee nie. Maak seker dat die probleem en studente-"
-"identifiseerders volledig en korrek is."
+"Kon nie student '<%- student_id %>' se toestand op probleem '<%- problem_id "
+"%>' uitvee nie. Maak seker dat die probleem en studente-identifiseerders "
+"volledig en korrek is."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:216
 msgid "Module state successfully deleted."
@@ -4286,9 +4313,9 @@ msgid ""
 "student_id %>'. Make sure that the problem and student identifiers are "
 "complete and correct."
 msgstr ""
-"Kon nie taakgeskiedenis vir probleem &#39;<%- problem_id %>&#39; en student "
-"&#39;<%- student_id %>&#39; kry nie. Maak seker dat die probleem en "
-"studente-identifiseerders volledig en korrek is."
+"Kon nie taakgeskiedenis vir probleem '<%- problem_id %>' en student '<%- "
+"student_id %>' kry nie. Maak seker dat die probleem en studente-"
+"identifiseerders volledig en korrek is."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:287
 msgid "Entrance exam attempts is being reset for student '{student_id}'."
@@ -4350,17 +4377,16 @@ msgstr ""
 #: lms/static/js/instructor_dashboard/student_admin.js:413
 msgid "Reset attempts for all students on problem '<%- problem_id %>'?"
 msgstr ""
-"Stel pogings terug vir alle studente oor probleem &#39;<%- problem_id "
-"%>&#39;?"
+"Stel pogings terug vir alle studente oor probleem '<%- problem_id %>'?"
 
 #: lms/static/js/instructor_dashboard/student_admin.js:422
 msgid ""
 "Successfully started task to reset attempts for problem '<%- problem_id %>'."
 " Click the 'Show Task Status' button to see the status of the task."
 msgstr ""
-"Suksesvol begin taak om pogings vir probleem &#39;<%- problem_id %>&#39; "
-"terug te stel. Klik die &#39;Wys taakstatus&#39;-knoppie om die status van "
-"die taak te sien."
+"Suksesvol begin taak om pogings vir probleem '<%- problem_id %>' terug te "
+"stel. Klik die &#39;Wys taakstatus&#39;-knoppie om die status van die taak "
+"te sien."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:426
 msgid ""
@@ -4368,8 +4394,8 @@ msgid ""
 "problem_id %>'. Make sure that the problem identifier is complete and "
 "correct."
 msgstr ""
-"Kon nie &#39;n taak begin om pogings vir alle studente op probleem &#39;<%- "
-"problem_id %>&#39; terug te stel nie. Maak seker dat die probleem "
+"Kon nie &#39;n taak begin om pogings vir alle studente op probleem '<%- "
+"problem_id %>' terug te stel nie. Maak seker dat die probleem "
 "identifiseerder volledig en korrek is."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:475
@@ -4382,9 +4408,9 @@ msgid ""
 "'<%- student_id %>'. Click the 'Show Task Status' button to see the status "
 "of the task."
 msgstr ""
-"Begin probleemtaak vir probleem &#39;<%- problem_id %>&#39; en student "
-"&#39;<%- student_id %>&#39; herlaai. Klik die &#39;Wys "
-"taakstatus&#39;-knoppie om die status van die taak te sien."
+"Begin probleemtaak vir probleem '<%- problem_id %>' en student '<%- "
+"student_id %>' herlaai. Klik die &#39;Wys taakstatus&#39;-knoppie om die "
+"status van die taak te sien."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:508
 msgid ""
@@ -4392,9 +4418,9 @@ msgid ""
 "'<%- student_id %>'. Make sure that the the problem and student identifiers "
 "are complete and correct."
 msgstr ""
-"Kon nie &#39;n taak begin om probleem &#39;<%- problem_id %>&#39; vir "
-"student &#39;<%- student_id %>&#39; te herstel nie. Maak seker dat die "
-"probleem en studente-identifiseerders volledig en korrek is."
+"Kon nie &#39;n taak begin om probleem '<%- problem_id %>' vir student '<%- "
+"student_id %>' te herstel nie. Maak seker dat die probleem en studente-"
+"identifiseerders volledig en korrek is."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:549
 msgid "Please enter a score."
@@ -4406,9 +4432,9 @@ msgid ""
 "student '<%- student_id %>'. Click the 'Show Task Status' button to see the "
 "status of the task."
 msgstr ""
-"Het taak begin om die telling vir probleem &#39;<%- problem_id %>&#39; en "
-"student &#39;<%- student_id %>&#39; te ignoreer. Klik die &#39;Wys "
-"taakstatus&#39;-knoppie om die status van die taak te sien."
+"Het taak begin om die telling vir probleem '<%- problem_id %>' en student "
+"'<%- student_id %>' te ignoreer. Klik die &#39;Wys taakstatus&#39;-knoppie "
+"om die status van die taak te sien."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:562
 msgid ""
@@ -4416,10 +4442,9 @@ msgid ""
 "student '<%- student_id %>'. Make sure that the the score and the problem "
 "and student identifiers are complete and correct."
 msgstr ""
-"Kon nie &#39;n taak begin om telling vir probleem &#39;<%- problem_id "
-"%>&#39; vir student &#39;<%- student_id %>&#39; te ignoreer nie. Maak seker "
-"dat die telling en die probleem en studente-identifiseerders volledig en "
-"korrek is."
+"Kon nie &#39;n taak begin om telling vir probleem '<%- problem_id %>' vir "
+"student '<%- student_id %>' te ignoreer nie. Maak seker dat die telling en "
+"die probleem en studente-identifiseerders volledig en korrek is."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:604
 msgid ""
@@ -4442,24 +4467,24 @@ msgstr ""
 
 #: lms/static/js/instructor_dashboard/student_admin.js:632
 msgid "Rescore problem '<%- problem_id %>' for all students?"
-msgstr "Herstel probleem &#39;<%- problem_id %>&#39; vir alle studente?"
+msgstr "Herstel probleem '<%- problem_id %>' vir alle studente?"
 
 #: lms/static/js/instructor_dashboard/student_admin.js:642
 msgid ""
 "Successfully started task to rescore problem '<%- problem_id %>' for all "
 "students. Click the 'Show Task Status' button to see the status of the task."
 msgstr ""
-"Suksesvol begin met taak om probleem &#39;<%- problem_id %>&#39; vir alle "
-"studente te herstel. Klik die &#39;Wys taakstatus&#39;-knoppie om die status"
-" van die taak te sien."
+"Suksesvol begin met taak om probleem '<%- problem_id %>' vir alle studente "
+"te herstel. Klik die &#39;Wys taakstatus&#39;-knoppie om die status van die "
+"taak te sien."
 
 #: lms/static/js/instructor_dashboard/student_admin.js:646
 msgid ""
 "Error starting a task to rescore problem '<%- problem_id %>'. Make sure that"
 " the problem identifier is complete and correct."
 msgstr ""
-"Kon nie &#39;n taak begin om probleem &#39;<%- problem_id %>&#39; te herstel"
-" nie. Maak seker dat die probleem identifiseerder volledig en korrek is."
+"Kon nie &#39;n taak begin om probleem '<%- problem_id %>' te herstel nie. "
+"Maak seker dat die probleem identifiseerder volledig en korrek is."
 
 #. Translators: a "Task" is a background process such as grading students or
 #. sending email
@@ -4914,19 +4939,39 @@ msgstr ""
 msgid "Terms of Service and Honor Code"
 msgstr "Diensbepalings en Erekode"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:109
+#: lms/static/js/student_account/views/FinishAuthView.js:71
+msgid "query param next is provide"
+msgstr "navraagparameter volgende is verskaf"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:73
+msgid "query param next is internal"
+msgstr "navraagparameter volgende is intern"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:111
 msgid "Saving your email preference"
 msgstr "Stoor tans jou e-posvoorkeur"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:127
+#: lms/static/js/student_account/views/FinishAuthView.js:129
 msgid "Enrolling you in the selected course"
 msgstr "Skryf jou in vir die geselekteerde kursus"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:159
+#: lms/static/js/student_account/views/FinishAuthView.js:140
+msgid "course mode param is not provided"
+msgstr "kursusmodusparameter word nie verskaf nie"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:148
+msgid "course mode param is provided"
+msgstr "kursusmodusparameter word verskaf"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:163
 msgid "Adding the selected course to your cart"
 msgstr "Voeg die geselekteerde kursus by jou mandjie"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:172
+#: lms/static/js/student_account/views/FinishAuthView.js:167
+msgid " redirect the user to the next page"
+msgstr " herlei die gebruiker na die volgende bladsy"
+
+#: lms/static/js/student_account/views/FinishAuthView.js:177
 msgid "Loading your courses"
 msgstr "Laai tans jou kursusse"
 
@@ -5254,7 +5299,7 @@ msgid "Bookmark this page"
 msgstr "Boekmerk die bladsy"
 
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmark_button.js:10
-#: xmodule/js/src/sequence/display.js:445
+#: xmodule/js/src/sequence/display.js:521
 msgid "Bookmarked"
 msgstr "Boekmerk"
 
@@ -5366,17 +5411,17 @@ msgid_plural "{earned}/{possible} points (ungraded)"
 msgstr[0] "{earned} / {possible} punt (ongegradeer)"
 msgstr[1] "{earned} / {possible} punte (ongegradeer)"
 
-#: xmodule/js/src/capa/display.js:349
+#: xmodule/js/src/capa/display.js:356
 msgid "The grading process is still running. Refresh the page to see updates."
 msgstr ""
 "Die graderingsproses is steeds aan die gang. Herlaai die bladsy om "
 "opdaterings te sien."
 
-#: xmodule/js/src/capa/display.js:458
+#: xmodule/js/src/capa/display.js:465
 msgid "Could not grade your answer. The submission was aborted."
 msgstr "Kon nie jou antwoord gradeer nie. Die indiening is gestaak."
 
-#: xmodule/js/src/capa/display.js:522
+#: xmodule/js/src/capa/display.js:529
 msgid ""
 "Submission aborted! Sorry, your browser does not support file uploads. If "
 "you can, please use Chrome or Safari which have been verified to support "
@@ -5386,33 +5431,33 @@ msgstr ""
 "As jy kan, gebruik asseblief Chrome of Safari wat geverifieer is om "
 "lêeroplaaie te ondersteun."
 
-#: xmodule/js/src/capa/display.js:548
+#: xmodule/js/src/capa/display.js:555
 msgid "You submitted {filename}; only {allowedFiles} are allowed."
 msgstr "Jy het {filename} ingedien; slegs {allowedFiles} word toegelaat."
 
-#: xmodule/js/src/capa/display.js:561
+#: xmodule/js/src/capa/display.js:568
 msgid "Your file {filename} is too large (max size: {maxSize}MB)."
 msgstr "Jou lêer {filename} is te groot (maksimum grootte: {maxSize} MB)."
 
-#: xmodule/js/src/capa/display.js:577
+#: xmodule/js/src/capa/display.js:584
 msgid "You did not submit the required files: {requiredFiles}."
 msgstr "Jy het nie die vereiste lêers ingedien nie: {requiredFiles} ."
 
-#: xmodule/js/src/capa/display.js:587
+#: xmodule/js/src/capa/display.js:594
 msgid "You did not select any files to submit."
 msgstr "Jy het geen lêers gekies om in te dien nie."
 
 #. Translators: This is only translated to allow for reordering of label and
 #. associated status.;
-#: xmodule/js/src/capa/display.js:681
+#: xmodule/js/src/capa/display.js:688
 msgid "{label}: {status}"
 msgstr "{label} : {status}"
 
-#: xmodule/js/src/capa/display.js:712
+#: xmodule/js/src/capa/display.js:719
 msgid "This problem has been reset."
 msgstr "Hierdie probleem is teruggestel."
 
-#: xmodule/js/src/capa/display.js:1018
+#: xmodule/js/src/capa/display.js:1025
 msgid "unsubmitted"
 msgstr "nie ingedien nie"
 
@@ -6702,7 +6747,7 @@ msgstr ""
 msgid "Explanation"
 msgstr "Verduideliking"
 
-#: xmodule/js/src/sequence/display.js:330
+#: xmodule/js/src/sequence/display.js:406
 msgid ""
 "Sequence error! Cannot navigate to %(tab_name)s in the current "
 "SequenceModule. Please contact the course staff."
@@ -6890,11 +6935,11 @@ msgstr "Moet nie weer wys nie"
 msgid "Open language menu"
 msgstr "Maak taalkieslys oop"
 
-#: xmodule/js/src/video/09_video_caption.js:589
+#: xmodule/js/src/video/09_video_caption.js:630
 msgid "Transcript will be displayed when you start playing the video."
 msgstr "Transkripsie sal vertoon word wanneer jy die video begin speel."
 
-#: xmodule/js/src/video/09_video_caption.js:837
+#: xmodule/js/src/video/09_video_caption.js:878
 msgid ""
 "Activating a link in this group will skip to the corresponding point in the "
 "video."
@@ -6902,19 +6947,19 @@ msgstr ""
 "Aktivering van &#39;n skakel in hierdie groep sal na die ooreenstemmende "
 "punt in die video oorslaan."
 
-#: xmodule/js/src/video/09_video_caption.js:840
+#: xmodule/js/src/video/09_video_caption.js:881
 msgid "Video transcript"
 msgstr "Video transkripsie"
 
-#: xmodule/js/src/video/09_video_caption.js:843
+#: xmodule/js/src/video/09_video_caption.js:884
 msgid "Start of transcript. Skip to the end."
 msgstr "Begin van transkripsie. Slaan oor na die einde."
 
-#: xmodule/js/src/video/09_video_caption.js:847
+#: xmodule/js/src/video/09_video_caption.js:888
 msgid "End of transcript. Skip to the start."
 msgstr "Einde van transkripsie. Slaan oor na die begin."
 
-#: xmodule/js/src/video/09_video_caption.js:851
+#: xmodule/js/src/video/09_video_caption.js:892
 msgid ""
 "Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
 " keys to navigate language options. Press ENTER to change to the selected "
@@ -6924,23 +6969,23 @@ msgstr ""
 "en AF-pyltjiesleutels om taalopsies te navigeer. Druk ENTER om na die "
 "geselekteerde taal te verander."
 
-#: xmodule/js/src/video/09_video_caption.js:1205
+#: xmodule/js/src/video/09_video_caption.js:1248
 msgid "Hide closed captions"
 msgstr "Versteek geslote onderskrifte"
 
-#: xmodule/js/src/video/09_video_caption.js:1223
+#: xmodule/js/src/video/09_video_caption.js:1266
 msgid "(Caption will be displayed when you start playing the video.)"
 msgstr "(Onderskrif sal vertoon word wanneer jy die video begin speel.)"
 
-#: xmodule/js/src/video/09_video_caption.js:1230
+#: xmodule/js/src/video/09_video_caption.js:1273
 msgid "Turn on closed captioning"
 msgstr "Skakel geslote onderskrifte aan"
 
-#: xmodule/js/src/video/09_video_caption.js:1338
+#: xmodule/js/src/video/09_video_caption.js:1381
 msgid "Turn on transcripts"
 msgstr "Skakel transkripsies aan"
 
-#: xmodule/js/src/video/09_video_caption.js:1353
+#: xmodule/js/src/video/09_video_caption.js:1396
 msgid "Turn off transcripts"
 msgstr "Skakel transkripsies af"
 
@@ -10412,11 +10457,11 @@ msgstr "Skryf nou in"
 msgid "Coming Soon"
 msgstr "Kom binnekort"
 
-#: lms/templates/learner_dashboard/course_enroll.underscore:47
+#: lms/templates/learner_dashboard/course_enroll.underscore:48
 msgid "Enrollment Opens on"
 msgstr "Inskrywing maak oop op"
 
-#: lms/templates/learner_dashboard/course_enroll.underscore:54
+#: lms/templates/learner_dashboard/course_enroll.underscore:56
 msgid "Not Currently Available"
 msgstr "Nie tans beskikbaar nie"
 

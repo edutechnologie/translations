@@ -7,14 +7,15 @@
 # Translators:
 # Brian Smith, 2025
 # Eden Huthmacher, 2025
+# Omar Al-Ithawi <i@omardo.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:37+0000\n"
-"PO-Revision-Date: 2025-07-23 17:42+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"POT-Creation-Date: 2025-10-30 00:49+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Omar Al-Ithawi <i@omardo.com>, 2025\n"
 "Language-Team: Albanian (https://app.transifex.com/open-edx/teams/6205/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,7 +45,7 @@ msgstr "kurse me provime aktive"
 
 #: admin.py:354
 msgid "Course Id"
-msgstr "Id i kursit"
+msgstr "Id e kursit"
 
 #: admin.py:392
 msgid "Created"
@@ -76,7 +77,7 @@ msgstr "Përfundoi koha"
 
 #: admin.py:399
 msgid "Submitted"
-msgstr "dorëzuar"
+msgstr "Paraqitur"
 
 #: admin.py:400
 msgid "Second Review Required"
@@ -123,6 +124,10 @@ msgstr "kursin tuaj"
 #, python-brace-format
 msgid "Proctoring Results For {course_name} {exam_name}"
 msgstr "Rezultatet e vëzhgimit për {course_name} {exam_name}"
+
+#: api.py:2238
+msgid "Taking As Proctored Exam"
+msgstr "Marrja e provimit si të mbrojtur"
 
 #: api.py:2243
 msgid "Proctored Option Available"
@@ -218,6 +223,107 @@ msgstr ""
 "        Përshëndetje,\n"
 "    "
 
+#: templates/emails/proctoring_attempt_satisfactory_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and you\n"
+"        met all proctoring requirements.\n"
+"    "
+msgstr ""
+"\n"
+"Provimi juaj i parashikuar &quot; %(exam_name)s &quot; në\n"
+" <a href=\"%(course_url)s\">%(course_name)s</a> u rishikua dhe ju\n"
+" plotësonte të gjitha kërkesat e proctoring.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_satisfactory_email.html:21
+#, python-format
+msgid ""
+"\n"
+"    If you have any questions about your results, you can reach out at \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+msgstr ""
+"\n"
+"Nëse keni ndonjë pyetje në lidhje me rezultatet tuaja, mund të kontaktoni në\n"
+" <a href=\"%(contact_url)s\">\n"
+"%(contact_url_text)s\n"
+"</a> .\n"
+"    "
+
+#: templates/emails/proctoring_attempt_submitted_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was submitted\n"
+"        successfully and will now be reviewed to ensure all exam\n"
+"        rules were followed. You should receive an email with your exam\n"
+"        status within 5 business days. Final grades may take longer.\n"
+"    "
+msgstr ""
+"\n"
+"        \n"
+"Provimi juaj i parashikuar \"%(exam_name)s\" në\n"
+"<a href=\"%(course_url)s\">%(course_name)s</a> u dorëzua me sukses dhe tani do të rishikohet për të siguruar që të gjitha rregullat e provimit u respektuan. Ju duhet të merrni një email me statusin e provimit tuaj brenda 5 ditëve të punës. Notat përfundimtare mund të marrin më shumë kohë.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and the\n"
+"        course team has identified one or more violations of the proctored exam rules. Examples\n"
+"        of issues that may result in a rules violation include browsing\n"
+"        the internet, blurry or missing photo identification, using a phone,\n"
+"        or getting help from another person. As a result of the identified issue(s),\n"
+"        you did not successfully meet the proctored exam requirements.\n"
+"    "
+msgstr ""
+"\n"
+"Provimi juaj i parashikuar &quot; %(exam_name)s &quot; në\n"
+" <a href=\"%(course_url)s\">%(course_name)s</a> u rishikua dhe\n"
+" ekipi i kursit ka identifikuar një ose më shumë shkelje të rregullave të provimit të mbrojtur. Shembuj\n"
+" çështjet që mund të rezultojnë në shkelje të rregullave përfshijnë shfletimin\n"
+" interneti, identifikimi i paqartë ose i munguar me foto, duke përdorur një telefon,\n"
+" ose duke marrë ndihmë nga një person tjetër. Si rezultat i çështjeve të identifikuara,\n"
+" nuk i keni përmbushur me sukses kërkesat e provimit të parashikuara.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:25
+#, python-format
+msgid ""
+"\n"
+"        To appeal your proctored exam results, please reach out with any relevant information\n"
+"        about your exam at \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+msgstr ""
+"\n"
+"Për të apeluar rezultatet e parashikuara të provimit, ju lutemi kontaktoni me çdo informacion përkatës\n"
+" në lidhje me provimin tuaj në\n"
+" <a href=\"%(contact_url)s\">\n"
+"%(contact_url_text)s\n"
+"</a> .\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:5
+msgid ""
+"\n"
+"    Proctoring onboarding exam\n"
+"  "
+msgstr ""
+"\n"
+"Proctoring onboarding provim\n"
+"  "
+
 #: templates/onboarding_exam/entrance.html:12
 msgid ""
 "\n"
@@ -269,6 +375,36 @@ msgstr ""
 "      Mbrojtja për këtë kurs ofrohet nëpërmjet %(provider_name)s.  Rishikimi i hyrjes, duke përfshirë verifikimin e identitetit, mund të zgjasë 2+ ditë pune.\n"
 "    "
 
+#: templates/onboarding_exam/entrance.html:40
+#, python-format
+msgid ""
+"\n"
+"        Once your profile has been reviewed, you will receive an email with review results. The email will come from\n"
+"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
+"        Make sure this email has been added to your inbox filter.\n"
+"      "
+msgstr ""
+"\n"
+"Pasi të jetë shqyrtuar profili juaj, do të merrni një email me rezultatet e rishikimit. Email-i do të vijë nga\n"
+" <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a> .\n"
+" Sigurohuni që ky email të jetë shtuar në filtrin tuaj të kutisë hyrëse.\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:49
+#, python-format
+msgid ""
+"\n"
+"        Please contact\n"
+"        <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>\n"
+"        if you have questions.\n"
+"      "
+msgstr ""
+"\n"
+"Ju lutemi kontaktoni\n"
+" <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>\n"
+" nëse keni pyetje.\n"
+"      "
+
 #: templates/onboarding_exam/entrance.html:58
 msgid "Continue to onboarding"
 msgstr "Vazhdoni të hyni në bord"
@@ -281,6 +417,28 @@ msgid ""
 msgstr ""
 "\n"
 "    Ju do të udhëhiqeni përmes konfigurimit të softuerit të kërkimit në internet dhe verifikimit të identitetit.\n"
+"  "
+
+#: templates/onboarding_exam/error.html:4
+msgid ""
+"\n"
+"    Error: There was a problem with your onboarding session\n"
+"  "
+msgstr ""
+"\n"
+"Gabim: Pati një problem me seancën tuaj të hyrjes\n"
+"  "
+
+#: templates/onboarding_exam/error.html:13
+msgid ""
+"\n"
+"    Your proctoring session ended before you completed this onboarding exam.\n"
+"    You should retry this onboarding exam.\n"
+"  "
+msgstr ""
+"\n"
+"Sesioni juaj i kërkimit përfundoi përpara se të përfundonit këtë provim të hyrjes.\n"
+" Duhet ta riprovoni këtë provim të hyrjes.\n"
 "  "
 
 #: templates/onboarding_exam/ready_to_submit.html:6
@@ -304,6 +462,23 @@ msgstr ""
 "    Sesioni juaj i hyrjes u shqyrtua, por nuk i kaloi të gjitha kërkesat\n"
 "  "
 
+#: templates/onboarding_exam/rejected.html:12
+#, python-format
+msgid ""
+"\n"
+"      Please contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> if you have questions. You may retake this onboarding exam by clicking \"Retry my exam\".\n"
+"    "
+msgstr ""
+"\n"
+"Ju lutemi kontaktoni\n"
+" <a href=\"mailto:%(integration_specific_email)s\">\n"
+"%(integration_specific_email)s\n"
+"</a> nëse keni pyetje. Ju mund ta rimerni këtë provim të hyrjes duke klikuar &quot;Provo sërish provimin tim&quot;.\n"
+"    "
+
 #: templates/onboarding_exam/rejected.html:20
 #: templates/onboarding_exam/submitted.html:47
 #: templates/practice_exam/error.html:29
@@ -316,6 +491,32 @@ msgstr "Riprovo provimin tim"
 #: templates/practice_exam/submitted.html:19
 msgid "Resetting Onboarding Exam"
 msgstr "Rivendosja e provimit të hyrjes"
+
+#: templates/onboarding_exam/submitted.html:4
+msgid ""
+"\n"
+"    You have submitted this onboarding exam\n"
+"  "
+msgstr ""
+"\n"
+"Ju e keni dorëzuar këtë provim inboarding\n"
+"  "
+
+#: templates/onboarding_exam/submitted.html:11
+msgid ""
+"\n"
+"      If you do not have an onboarding profile with the system,\n"
+"      Verificient will review your submission and create an onboarding\n"
+"      profile to grant you access to proctored exams. Onboarding\n"
+"      profile review can take 2+ business days.\n"
+"    "
+msgstr ""
+"\n"
+"Nëse nuk keni një profil të hyrjes në sistem,\n"
+" Verificient do të shqyrtojë dorëzimin tuaj dhe do të krijojë një hyrje\n"
+" profili për t&#39;ju dhënë akses në provimet e mbrojtura. Hyrja në bord\n"
+" shqyrtimi i profilit mund të zgjasë 2+ ditë pune.\n"
+"    "
 
 #: templates/onboarding_exam/submitted.html:19
 #, python-format
@@ -338,6 +539,20 @@ msgstr ""
 "      prandaj sigurohuni që ky email të jetë shtuar në filtrin tuaj të kutisë hyrëse.\n"
 "    "
 
+#: templates/onboarding_exam/submitted.html:29
+msgid ""
+"\n"
+"      If you already have an onboarding profile approved through another course,\n"
+"      this submission will not be reviewed. You may retry this exam at any time\n"
+"      to validate that your setup still meets the requirements for proctoring.\n"
+"    "
+msgstr ""
+"\n"
+"Nëse tashmë keni një profil inboarding të miratuar përmes një kursi tjetër,\n"
+" ky parashtresë nuk do të shqyrtohet. Mund ta riprovoni këtë provim në çdo kohë\n"
+" për të vërtetuar që konfigurimi juaj ende i plotëson kërkesat për kërkim.\n"
+"    "
+
 #: templates/onboarding_exam/submitted.html:36
 msgid ""
 "\n"
@@ -354,6 +569,34 @@ msgstr ""
 msgid "I understand and want to reset this onboarding exam."
 msgstr "E kuptoj dhe dua ta rivendos këtë provim të hyrjes."
 
+#: templates/onboarding_exam/submitted.html:53
+#: templates/onboarding_exam/verified.html:16
+#, python-format
+msgid ""
+"\n"
+"      Please contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> if you have questions.\n"
+"    "
+msgstr ""
+"\n"
+"Ju lutemi kontaktoni\n"
+" <a href=\"mailto:%(integration_specific_email)s\">\n"
+"%(integration_specific_email)s\n"
+"</a> nëse keni pyetje.\n"
+"    "
+
+#: templates/onboarding_exam/verified.html:4
+msgid ""
+"\n"
+"    Your onboarding profile was reviewed successfully\n"
+"  "
+msgstr ""
+"\n"
+"Profili yt i hyrjes u shqyrtua me sukses\n"
+"  "
+
 #: templates/onboarding_exam/verified.html:11
 msgid ""
 "\n"
@@ -363,6 +606,28 @@ msgstr ""
 "\n"
 "      Profili juaj është krijuar dhe ju jeni gati për të marrë provimet e kujdesshme në këtë kurs.\n"
 "    "
+
+#: templates/practice_exam/entrance.html:5
+msgid ""
+"\n"
+"        Try a proctored exam\n"
+"      "
+msgstr ""
+"\n"
+"Provoni një provim proctored\n"
+"      "
+
+#: templates/practice_exam/entrance.html:12
+msgid ""
+"\n"
+"        Get familiar with proctoring for real exams later in the course. This practice exam has no impact\n"
+"        on your grade in the course.\n"
+"      "
+msgstr ""
+"\n"
+"Njihuni me kujdesin për provimet reale më vonë gjatë kursit. Ky provim praktik nuk ka asnjë ndikim\n"
+" në notën tuaj në kurs.\n"
+"      "
 
 #: templates/practice_exam/entrance.html:20
 msgid "Continue to my practice exam"
@@ -432,6 +697,16 @@ msgstr ""
 "Ju keni përfunduar këtë provim praktik dhe mund të vazhdoni me punën tuaj të kursit.\n"
 "      "
 
+#: templates/proctored_exam/confirm-decline.html:5
+msgid ""
+"\n"
+"        Are you sure you want to take this exam without proctoring?\n"
+"      "
+msgstr ""
+"\n"
+"Jeni i sigurt që dëshironi të merrni këtë provim pa kontroll?\n"
+"      "
+
 #: templates/proctored_exam/confirm-decline.html:10
 msgid ""
 "\n"
@@ -449,6 +724,18 @@ msgstr "Vazhdoni provimin pa kontroll"
 #: templates/proctored_exam/confirm-decline.html:19
 msgid "Go Back"
 msgstr "Kthehu prapa"
+
+#: templates/proctored_exam/entrance.html:4
+#: templates/proctored_exam/failed-prerequisites.html:4
+#: templates/proctored_exam/pending-prerequisites.html:4
+msgid ""
+"\n"
+"      This exam is proctored\n"
+"    "
+msgstr ""
+"\n"
+"Ky provim është i mbrojtur\n"
+"    "
 
 #: templates/proctored_exam/entrance.html:9
 msgid ""
@@ -476,6 +763,32 @@ msgid ""
 msgstr ""
 "\n"
 "        Do të udhëhiqeni përmes hapave për të konfiguruar softuerin e kërkimit në internet dhe për të verifikuar identitetin tuaj.</br>\n"
+"      "
+
+#: templates/proctored_exam/error.html:4
+#: templates/proctored_exam/error_wrong_browser.html:4
+msgid ""
+"\n"
+"      Error with proctored exam\n"
+"    "
+msgstr ""
+"\n"
+"Gabim me provimin e parashikuar\n"
+"    "
+
+#: templates/proctored_exam/error.html:11
+#, python-format
+msgid ""
+"\n"
+"        A system error has occurred with your proctored exam. Please reach out to your course \n"
+"        team at <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a> \n"
+"        for assistance, and return to the exam once you receive further instructions.\n"
+"      "
+msgstr ""
+"\n"
+"Ka ndodhur një gabim i sistemit me provimin tuaj të mbrojtur. Ju lutemi kontaktoni kursin tuaj\n"
+" ekipi në <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a>\n"
+" për ndihmë dhe kthehuni në provim sapo të merrni udhëzime të mëtejshme.\n"
 "      "
 
 #: templates/proctored_exam/error.html:17
@@ -626,6 +939,19 @@ msgstr ""
 "      Ju lutemi kontrolloni dosjet Inbox dhe Spam të emailit tuaj të regjistruar për një email aktivizimi nga %(platform_name)s.\n"
 "    "
 
+#: templates/proctored_exam/inactive_account.html:21
+#, python-format
+msgid ""
+"\n"
+"        If you cannot find this email, you can <a href=\"%(reset_link)s\" target=\"_blank\">reset your password</a> to\n"
+"        activate your account.\n"
+"      "
+msgstr ""
+"\n"
+"Nëse nuk mund ta gjeni këtë email, mund të <a href=\"%(reset_link)s\" target=\"_blank\">rivendosni fjalëkalimin tuaj</a> në\n"
+" aktivizoni llogarinë tuaj.\n"
+"      "
+
 #: templates/proctored_exam/inactive_account.html:26
 msgid ""
 "\n"
@@ -696,6 +1022,16 @@ msgstr "Filloni Kontrollin e Sistemit"
 msgid "Start Exam"
 msgstr "Filloni Provimin"
 
+#: templates/proctored_exam/instructions.html:40
+msgid ""
+"\n"
+"          Step 1\n"
+"        "
+msgstr ""
+"\n"
+"Hapi 1\n"
+"        "
+
 #: templates/proctored_exam/instructions.html:45
 msgid ""
 "\n"
@@ -719,6 +1055,16 @@ msgstr ""
 "\n"
 "        Zgjidhni kodin e provimit, më pas kopjojeni duke përdorur Control + C (Windows) ose Command + C (Mac).\n"
 "      "
+
+#: templates/proctored_exam/instructions.html:59
+msgid ""
+"\n"
+"          Step 2\n"
+"        "
+msgstr ""
+"\n"
+"Hapi 2\n"
+"        "
 
 #: templates/proctored_exam/instructions.html:64
 msgid ""
@@ -749,6 +1095,16 @@ msgid "Have your valid photo ID (e.g. driver's license or passport) ready"
 msgstr ""
 "Keni gati ID-në tuaj të vlefshme me foto (p.sh. patentë shoferi ose "
 "pasaportë)."
+
+#: templates/proctored_exam/instructions.html:81
+msgid ""
+"\n"
+"          Step 3\n"
+"        "
+msgstr ""
+"\n"
+"Hapi 3\n"
+"        "
 
 #: templates/proctored_exam/instructions.html:86
 msgid ""
@@ -882,6 +1238,31 @@ msgstr ""
 "            Mos e mbyllni këtë dritare para se të përfundoni provimin. nëse e mbyllni këtë dritare, sesioni juaj i mbikëqyrjes përfundon dhe ju nuk do ta përfundoni me sukses provimin e mbrojtur.\n"
 "          "
 
+#: templates/proctored_exam/proctoring_launch_callback.html:173
+#, python-format
+msgid ""
+"\n"
+"            Return to the %(platform_name)s course window to start your exam. When you have finished your exam and\n"
+"            have marked it as complete, you can close this window to end the proctoring session\n"
+"            and upload your proctoring session data for review.\n"
+"          "
+msgstr ""
+"\n"
+"Kthehuni te dritarja e kursit %(platform_name)s për të filluar provimin. Kur të keni mbaruar provimin dhe\n"
+" e keni shënuar si të plotë, mund ta mbyllni këtë dritare për të përfunduar seancën e kërkimit\n"
+" dhe ngarkoni të dhënat tuaja të sesionit të kërkimit për shqyrtim.\n"
+"          "
+
+#: templates/proctored_exam/ready_to_resume.html:4
+msgid ""
+"\n"
+"      Your exam is ready to be resumed.\n"
+"    "
+msgstr ""
+"\n"
+"Provimi juaj është gati për të rifilluar.\n"
+"    "
+
 #: templates/proctored_exam/ready_to_resume.html:9
 #, python-format
 msgid ""
@@ -912,6 +1293,58 @@ msgstr ""
 "\n"
 "      E rëndësishme\n"
 "    "
+
+#: templates/proctored_exam/ready_to_start.html:10
+#, python-format
+msgid ""
+"\n"
+"        &#8226; You have %(total_time)s to complete this exam. </br>\n"
+"        &#8226; Once you start the exam, you cannot stop the timer. </br>\n"
+"        &#8226; For all question types, you must click \"submit\" to complete your answer. </br>\n"
+"        &#8226; If time expires before you click \"End My Exam\", only your submitted answers will be graded.\n"
+"      "
+msgstr ""
+"\n"
+"• Ju keni %(total_time)s për të përfunduar këtë provim.</br>\n"
+" • Pasi të filloni provimin, nuk mund ta ndaloni kohëmatësin.</br>\n"
+" • Për të gjitha llojet e pyetjeve, duhet të klikoni &quot;dorëzo&quot; për të plotësuar përgjigjen tuaj.</br>\n"
+" • Nëse skadon koha para se të klikoni &quot;Përfundo provimin tim&quot;, vetëm përgjigjet e dorëzuara do të vlerësohen.\n"
+"      "
+
+#: templates/proctored_exam/ready_to_start.html:18
+msgid ""
+"\n"
+"      Proctored Exam Rules\n"
+"    "
+msgstr ""
+"\n"
+"Rregullat e provimit të mbrojtura\n"
+"    "
+
+#: templates/proctored_exam/ready_to_start.html:23
+msgid ""
+"\n"
+"         You must adhere to the following rules while you complete this exam.\n"
+"         <strong>If you violate these rules, you will receive a score of 0 on the exam, and you will not be eligible for academic course credit.\n"
+"         </strong></br>\n"
+"      "
+msgstr ""
+"\n"
+"Ju duhet t&#39;u përmbaheni rregullave të mëposhtme gjatë përfundimit të këtij provimi.\n"
+" <strong>Nëse shkelni këto rregulla, do të merrni notën 0 në provim dhe nuk do të keni të drejtë për kreditimin e kursit akademik.\n"
+"</strong></br>\n"
+"      "
+
+#: templates/proctored_exam/ready_to_start.html:29
+#, python-format
+msgid ""
+"\n"
+"          %(platform_name)s Rules for Online Proctored Exams\n"
+"      "
+msgstr ""
+"\n"
+"%(platform_name)s Rregullat për provimet e mbrojtura në internet\n"
+"      "
 
 #: templates/proctored_exam/ready_to_start.html:36
 msgid ""
@@ -1137,6 +1570,20 @@ msgstr ""
 msgid "Can I request additional time to complete my exam?"
 msgstr "A mund të kërkoj kohë shtesë për të përfunduar provimin tim?"
 
+#: templates/timed_exam/footer.html:4
+msgid ""
+"\n"
+"      If you have disabilities,\n"
+"      you might be eligible for an additional time allowance on timed exams.\n"
+"      Ask your course team for information about additional time allowances.\n"
+"    "
+msgstr ""
+"\n"
+"Nëse keni aftësi të kufizuara,\n"
+" ju mund të keni të drejtë për një shtesë kohore në provimet me kohë.\n"
+" Pyesni ekipin tuaj të kursit për informacion në lidhje me lejimet shtesë të kohës.\n"
+"    "
+
 #: templates/timed_exam/ready_to_submit.html:4
 msgid ""
 "\n"
@@ -1166,6 +1613,38 @@ msgstr ""
 "\n"
 "      Pasi të dorëzoni provimin tuaj, provimi juaj do të vlerësohet.\n"
 "    "
+
+#: templates/timed_exam/ready_to_submit.html:19
+msgid ""
+"\n"
+"      Yes, submit my timed exam.\n"
+"    "
+msgstr ""
+"\n"
+"Po, dorëzo provimin tim në kohë.\n"
+"    "
+
+#: templates/timed_exam/ready_to_submit.html:25
+msgid ""
+"\n"
+"        No, I want to continue working.\n"
+"      "
+msgstr ""
+"\n"
+"Jo, dua të vazhdoj të punoj.\n"
+"      "
+
+#: templates/timed_exam/submitted.html:6
+msgid ""
+"\n"
+"                The time allotted for this exam has expired. Your exam has been submitted and any work you completed\n"
+"                will be graded.\n"
+"            "
+msgstr ""
+"\n"
+"Koha e caktuar për këtë provim ka skaduar. Provimi juaj është dorëzuar dhe çdo punë që keni përfunduar\n"
+" do të vlerësohet.\n"
+"            "
 
 #: templates/timed_exam/submitted.html:11
 msgid ""
@@ -1197,11 +1676,6 @@ msgstr "{num_of_hours} orë"
 msgid "{num_of_hours} hours"
 msgstr "{num_of_hours} orë"
 
-#: utils.py:98 utils.py:108
-#, python-brace-format
-msgid "{num_of_minutes} minutes"
-msgstr "{num_of_minutes} minuta"
-
 #: utils.py:101
 #, python-brace-format
 msgid " and {num_of_minutes} minute"
@@ -1224,6 +1698,10 @@ msgstr "një provim proktor"
 #: utils.py:345
 msgid "a timed exam"
 msgstr "një provim në kohë"
+
+#: utils.py:348
+msgid "an onboarding exam"
+msgstr "një provim inboarding"
 
 #: utils.py:350
 msgid "a practice exam"

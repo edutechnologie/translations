@@ -24,17 +24,15 @@
 # 
 # Translators:
 # Brian Smith, 2025
-# Ali Işıngör <ali@artistanbul.io>, 2025
-# Eden Huthmacher, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-25 00:36+0000\n"
-"PO-Revision-Date: 2025-07-23 17:30+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"POT-Creation-Date: 2025-09-19 00:44+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,11 +64,11 @@ msgstr "Tüm ders ana hatlarının yenilemeleri başarıyla talep edildi."
 msgid "Regenerate *all* course outlines"
 msgstr "*Tüm* ders ana hatlarını yeniden oluştur"
 
-#: cms/djangoapps/contentstore/asset_storage_handlers.py:548
+#: cms/djangoapps/contentstore/asset_storage_handlers.py:551
 msgid "Upload completed"
 msgstr "Yükleme tamamlandı"
 
-#: cms/djangoapps/contentstore/asset_storage_handlers.py:592
+#: cms/djangoapps/contentstore/asset_storage_handlers.py:595
 #, python-brace-format
 msgid ""
 "File {filename} exceeds maximum size of {maximum_size_in_megabytes} MB."
@@ -92,7 +90,7 @@ msgid "Content Groups"
 msgstr "İçerik Grupları"
 
 #: cms/djangoapps/contentstore/course_group_config.py:65
-#: cms/djangoapps/contentstore/views/certificates.py:142
+#: cms/djangoapps/contentstore/views/certificate_manager.py:92
 msgid "invalid JSON"
 msgstr "geçersiz JSON"
 
@@ -253,40 +251,40 @@ msgstr "Kötü ders yeri verildi"
 msgid "Missing branch on fresh clone"
 msgstr "Temiz kopyada olmayan geliştirme dalı"
 
-#: cms/djangoapps/contentstore/helpers.py:203
+#: cms/djangoapps/contentstore/helpers.py:205
 msgid "Vertical"
 msgstr "Dikey"
 
-#: cms/djangoapps/contentstore/helpers.py:207
+#: cms/djangoapps/contentstore/helpers.py:209
 #: cms/templates/course_outline.html:212 lms/templates/ccx/schedule.html:86
-#: lms/templates/seq_block.html:136
+#: lms/templates/seq_block.html:156
 msgid "Section"
 msgstr "Bölüm"
 
-#: cms/djangoapps/contentstore/helpers.py:209
+#: cms/djangoapps/contentstore/helpers.py:211
 #: lms/templates/ccx/schedule.html:90
 msgid "Subsection"
 msgstr "Altbölüm"
 
-#: cms/djangoapps/contentstore/helpers.py:211
+#: cms/djangoapps/contentstore/helpers.py:213
 #: lms/djangoapps/instructor/views/tools.py:241
 #: lms/djangoapps/instructor/views/tools.py:253 xmodule/unit_block.py:41
-#: lms/templates/ccx/schedule.html:94 lms/templates/seq_block.html:89
-#: lms/templates/seq_block.html:97
+#: lms/templates/ccx/schedule.html:94 lms/templates/seq_block.html:106
+#: lms/templates/seq_block.html:114
 msgid "Unit"
 msgstr "Ünite"
 
-#: cms/djangoapps/contentstore/helpers.py:218
+#: cms/djangoapps/contentstore/helpers.py:220
 #: cms/djangoapps/contentstore/views/component.py:283
 msgid "Problem"
 msgstr "Problem"
 
-#: cms/djangoapps/contentstore/helpers.py:220
+#: cms/djangoapps/contentstore/helpers.py:222
 #: cms/djangoapps/contentstore/views/component.py:287
 msgid "Library Content"
 msgstr "Kütüphane İçeriği"
 
-#: cms/djangoapps/contentstore/helpers.py:222
+#: cms/djangoapps/contentstore/helpers.py:224
 #: cms/djangoapps/contentstore/views/component.py:288
 msgid "Problem Bank"
 msgstr "Soru Bankası"
@@ -327,11 +325,11 @@ msgstr "Tamamen işlenmiş dersler için bile bağlantıları yeniden oluşturun
 msgid "Delete all and create links for given course(s)."
 msgstr "Tümünü sil ve belirtilen ders(ler) için bağlantılar oluştur."
 
-#: cms/djangoapps/contentstore/models.py:93
+#: cms/djangoapps/contentstore/models.py:96
 msgid "Upstream context key i.e., learning_package/library key"
 msgstr "Upstream bağlam anahtarı, örn: learning_package/library key"
 
-#: cms/djangoapps/contentstore/models.py:196
+#: cms/djangoapps/contentstore/models.py:151
 msgid ""
 "Upstream block usage key, this value cannot be null and useful to track "
 "upstream library blocks that do not exist yet"
@@ -339,15 +337,19 @@ msgstr ""
 "Upstream block kullanım anahtarı, bu değer boş olamaz ve henüz var olmayan "
 "upstream kütüphane blocklarını izlemek için yararlıdır"
 
-#: cms/djangoapps/contentstore/models.py:202
+#: cms/djangoapps/contentstore/models.py:157
 msgid "Component Link"
 msgstr "Bileşen Bağlantısı"
 
-#: cms/djangoapps/contentstore/models.py:203
+#: cms/djangoapps/contentstore/models.py:158
 msgid "Component Links"
 msgstr "Bileşen Bağlantıları"
 
-#: cms/djangoapps/contentstore/models.py:280
+#: cms/djangoapps/contentstore/models.py:184
+msgid "The component must be published to access `published_at`"
+msgstr "Bileşen yayımlanmalı ki `published_at` erişimi sağlanabilsin."
+
+#: cms/djangoapps/contentstore/models.py:321
 msgid ""
 "Upstream block key (e.g. lct:...), this value cannot be null and is useful "
 "to track upstream library blocks that do not exist yet or were deleted."
@@ -355,50 +357,54 @@ msgstr ""
 "Upstream block anahtarı (örneğin lct:...), bu değer boş olamaz ve henüz var "
 "olmayan veya silinen upstream kitaplık blocklarını izlemek için yararlıdır."
 
-#: cms/djangoapps/contentstore/models.py:287
+#: cms/djangoapps/contentstore/models.py:328
 msgid "Container Link"
 msgstr "Konteyner Bağlantısı"
 
-#: cms/djangoapps/contentstore/models.py:288
+#: cms/djangoapps/contentstore/models.py:329
 msgid "Container Links"
 msgstr "Konteyner Bağlantıları"
+
+#: cms/djangoapps/contentstore/models.py:355
+msgid "The container must be published to access `published_at`"
+msgstr "Konteynerin `published_at` erişimi için yayımlanması gerekir."
 
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This is listed as the duration for a video that has not
 #. yet reached the point in its processing by the servers where its
 #. duration is determined.
-#: cms/djangoapps/contentstore/models.py:354
+#: cms/djangoapps/contentstore/models.py:535
 #: cms/djangoapps/contentstore/video_storage_handlers.py:533
 #: openedx/core/djangoapps/api_admin/models.py:42 cms/templates/index.html:483
 msgid "Pending"
 msgstr "Beklemede"
 
-#: cms/djangoapps/contentstore/models.py:355
+#: cms/djangoapps/contentstore/models.py:536
 msgid "Processing"
 msgstr "İşleniyor"
 
 #. Translators: This is the status for a video that the servers have failed to
 #. process
-#: cms/djangoapps/contentstore/models.py:356
+#: cms/djangoapps/contentstore/models.py:537
 #: cms/djangoapps/contentstore/video_storage_handlers.py:127
 msgid "Failed"
 msgstr "Başarısız"
 
-#: cms/djangoapps/contentstore/models.py:357 lms/templates/seq_block.html:76
+#: cms/djangoapps/contentstore/models.py:538 lms/templates/seq_block.html:93
 #: lms/templates/vert_module.html:28
 msgid "Completed"
 msgstr "Tamamlandı"
 
-#: cms/djangoapps/contentstore/models.py:369
+#: cms/djangoapps/contentstore/models.py:550
 msgid "Linking status for course context key"
 msgstr "Ders bağlam anahtarı için bağlantı durumu"
 
-#: cms/djangoapps/contentstore/models.py:374
+#: cms/djangoapps/contentstore/models.py:555
 msgid "Status of links in given learning context/course."
 msgstr "Verilen öğrenme bağlamında/derste bağlantıların durumu."
 
-#: cms/djangoapps/contentstore/models.py:380
-#: cms/djangoapps/contentstore/models.py:381
+#: cms/djangoapps/contentstore/models.py:561
+#: cms/djangoapps/contentstore/models.py:562
 msgid "Learning Context Links status"
 msgstr "Öğrenme Bağlamı Bağlantıları durumu"
 
@@ -500,7 +506,7 @@ msgstr "\"{language_code}\" dil kodlu bir altyazı zaten mevcut."
 msgid "A transcript file is required."
 msgstr "Bir altyazı dosyası gerekiyor."
 
-#: cms/djangoapps/contentstore/utils.py:855
+#: cms/djangoapps/contentstore/utils.py:865
 #: cms/templates/visibility_editor.html:113
 msgid "Deleted Group"
 msgstr "Silinmiş Grup"
@@ -508,32 +514,32 @@ msgstr "Silinmiş Grup"
 #. Translators: This is building up a list of groups. It is marked for
 #. translation because of the
 #. comma, which is used as a separator between each group.
-#: cms/djangoapps/contentstore/utils.py:923
+#: cms/djangoapps/contentstore/utils.py:933
 #, python-brace-format
 msgid "{previous_groups}, {current_group}"
 msgstr "{previous_groups}, {current_group}"
 
-#: cms/djangoapps/contentstore/utils.py:1086
+#: cms/djangoapps/contentstore/utils.py:1096
 #: cms/djangoapps/contentstore/views/block.py:277
 #: cms/djangoapps/contentstore/views/component.py:282 xmodule/html_block.py:61
 msgid "Text"
 msgstr "Metin"
 
-#: cms/djangoapps/contentstore/utils.py:1283
+#: cms/djangoapps/contentstore/utils.py:1293
 #, python-brace-format
 msgid "Duplicate of {0}"
 msgstr "{0}'ın kopyası"
 
-#: cms/djangoapps/contentstore/utils.py:1285
+#: cms/djangoapps/contentstore/utils.py:1295
 #, python-brace-format
 msgid "Duplicate of '{0}'"
 msgstr "'{0}'ın kopyası"
 
-#: cms/djangoapps/contentstore/utils.py:1341
+#: cms/djangoapps/contentstore/utils.py:1351
 msgid "Invalid prerequisite course key"
 msgstr "Geçersiz ders anahtar önkoşulu."
 
-#: cms/djangoapps/contentstore/utils.py:1907
+#: cms/djangoapps/contentstore/utils.py:1917
 msgid "Set Date"
 msgstr "Tarihi Belirle"
 
@@ -553,7 +559,7 @@ msgstr "İşlem Sürüyor"
 #. Translators: This is the status for a video that the servers have
 #. successfully processed
 #: cms/djangoapps/contentstore/video_storage_handlers.py:123
-#: openedx/core/djangoapps/content_staging/data.py:19
+#: openedx/core/djangoapps/content_staging/data.py:21
 msgid "Ready"
 msgstr "Hazır"
 
@@ -633,7 +639,7 @@ msgid "{profile_name} URL"
 msgstr "{profile_name} URL"
 
 #: cms/djangoapps/contentstore/video_storage_handlers.py:516
-#: lms/djangoapps/instructor/views/api.py:1502
+#: lms/djangoapps/instructor/views/api.py:1505
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:59
 msgid "Name"
 msgstr "İsim"
@@ -662,7 +668,7 @@ msgstr "Durum"
 msgid "{course}_video_urls"
 msgstr "{course}_video_urls"
 
-#: cms/djangoapps/contentstore/video_storage_handlers.py:954
+#: cms/djangoapps/contentstore/video_storage_handlers.py:956
 msgid "A non zero positive integer is expected"
 msgstr "Sıfır olmayan bir pozitif tamsayı bekleniyor"
 
@@ -724,17 +730,16 @@ msgstr ""
 "Görüntü dosyası adında sadece harf, rakam, tire (-) ve alt tire (_) "
 "bulunabilir."
 
-#: cms/djangoapps/contentstore/views/certificates.py:165
+#: cms/djangoapps/contentstore/views/certificate_manager.py:115
 msgid "must have name of the certificate"
 msgstr "Sertifika adı girilmesi zorunludur"
 
-#: cms/djangoapps/contentstore/views/certificates.py:250
+#: cms/djangoapps/contentstore/views/certificate_manager.py:200
 #, python-brace-format
 msgid "Certificate dict {0} missing value key '{1}'"
 msgstr "{0} dict sertifikası kayıp değer anahtarı '{1}'"
 
-#: cms/djangoapps/contentstore/views/certificates.py:355
-#: cms/djangoapps/contentstore/views/certificates.py:393
+#: cms/djangoapps/contentstore/views/certificates.py:148
 #, python-brace-format
 msgid "PermissionDenied: Failed in authenticating {user}"
 msgstr "İzin Reddedildi: {user} kimlik doğrulaması başarısız"
@@ -751,6 +756,7 @@ msgstr "{platform_name} Destek Seviyeleri:"
 #: lms/djangoapps/courseware/tabs.py:241
 #: lms/djangoapps/discussion/plugins.py:27
 #: openedx/core/djangoapps/discussions/plugins.py:23
+#: openedx/core/djangoapps/notifications/email/utils.py:440
 #: openedx/features/lti_course_tab/tab.py:274 xmodule/discussion_block.py:198
 #: lms/djangoapps/discussion/templates/discussion/discussion_profile_page.html:48
 #: lms/templates/ux/reference/bootstrap/course-skeleton.html:24
@@ -792,18 +798,18 @@ msgstr "Boş Problem"
 msgid "Advanced"
 msgstr "Gelişmiş"
 
-#: cms/djangoapps/contentstore/views/course.py:355
+#: cms/djangoapps/contentstore/views/course.py:358
 msgid "Course has been successfully reindexed."
 msgstr "Dersin tekrar indekslenme işlemi başarılı."
 
-#: cms/djangoapps/contentstore/views/course.py:884
+#: cms/djangoapps/contentstore/views/course.py:888
 msgid ""
 "Special characters not allowed in organization, course number, and course "
 "run."
 msgstr ""
 "Özel karakterler kurum, ders numarası, ve ders yayınında kullanılamaz."
 
-#: cms/djangoapps/contentstore/views/course.py:920
+#: cms/djangoapps/contentstore/views/course.py:924
 msgid ""
 "There is already a course defined with the same organization and course "
 "number. Please change either organization or course number to be unique."
@@ -811,13 +817,13 @@ msgstr ""
 "Aynı kurum ve ders koduyla tanımlanmış başka bir ders mevcut. Lütfen kurum "
 "veya ders kodunu tekil olacak şekilde değiştirin. "
 
-#: cms/djangoapps/contentstore/views/course.py:925
-#: cms/djangoapps/contentstore/views/course.py:928
+#: cms/djangoapps/contentstore/views/course.py:929
+#: cms/djangoapps/contentstore/views/course.py:932
 msgid ""
 "Please change either the organization or course number so that it is unique."
 msgstr "Lütfen kurumu ya da ders numarasını tekil olacak şekilde değiştirin."
 
-#: cms/djangoapps/contentstore/views/course.py:933
+#: cms/djangoapps/contentstore/views/course.py:937
 #, python-brace-format
 msgid ""
 "Unable to create course '{name}'.\n"
@@ -828,7 +834,7 @@ msgstr ""
 "\n"
 "{err}"
 
-#: cms/djangoapps/contentstore/views/course.py:945
+#: cms/djangoapps/contentstore/views/course.py:949
 msgid ""
 "User does not have the permission to create courses in this organization or "
 "course creation is disabled"
@@ -836,7 +842,7 @@ msgstr ""
 "Kullanıcının bu kurumda ders oluşturma izni yok veya ders oluşturma devre "
 "dışı"
 
-#: cms/djangoapps/contentstore/views/course.py:962
+#: cms/djangoapps/contentstore/views/course.py:966
 msgid ""
 "You must link this course to an organization in order to continue. "
 "Organization you selected does not exist in the system, you will need to add"
@@ -845,19 +851,19 @@ msgstr ""
 "Devam etmek için bu dersi bir organizasyona bağlamalısınız. Seçtiğiniz "
 "organizasyon sistemde mevcut değil, organizasyonu sisteme eklemeniz gerekir"
 
-#: cms/djangoapps/contentstore/views/course.py:1368
+#: cms/djangoapps/contentstore/views/course.py:1372
 msgid "An error occurred while trying to save your tabs"
 msgstr "Sekmelerinizi kaydetmeyi denerken bir hata oluştu."
 
-#: cms/djangoapps/contentstore/views/course.py:1369
+#: cms/djangoapps/contentstore/views/course.py:1373
 msgid "Tabs Exception"
 msgstr "Sekmeler İstisnası"
 
-#: cms/djangoapps/contentstore/views/course.py:1587
+#: cms/djangoapps/contentstore/views/course.py:1591
 msgid "This group configuration is in use and cannot be deleted."
 msgstr "Bu grup yapılandırması kullanımda ve silinemez."
 
-#: cms/djangoapps/contentstore/views/course.py:1601
+#: cms/djangoapps/contentstore/views/course.py:1605
 msgid "This content group is in use and cannot be deleted."
 msgstr "Bu içerik grubu kullanımda ve silinemez."
 
@@ -934,7 +940,7 @@ msgstr ""
 msgid "'{organization_key}' is not a valid organization identifier."
 msgstr "'{organization_key}' geçerli bir kurum belirticisi değil."
 
-#: cms/djangoapps/contentstore/views/preview.py:302
+#: cms/djangoapps/contentstore/views/preview.py:304
 #, python-brace-format
 msgid "Access restricted to: {list_of_groups}"
 msgstr "Erişim şu gruplara açıktır: {list_of_groups}"
@@ -1024,63 +1030,63 @@ msgstr "Geçersiz `role` belirtildi."
 msgid "You may not remove the last Admin. Add another Admin first."
 msgstr "Son Yöneticiyi kaldıramazsınız. Önce başka bir Yönetici ekleyin."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/create_xblock.py:101
+#: cms/djangoapps/contentstore/xblock_storage_handlers/create_xblock.py:102
 #: xmodule/library_content_block.py:458
 msgid "Empty"
 msgstr "Boş"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:229
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:631
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:230
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:682
 #, python-brace-format
 msgid "Libraries cannot have more than {limit} components"
 msgstr "Kütüphaneler {limit} bileşenden daha fazlasına sahip olamaz"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:438
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:436
 #: openedx/core/djangoapps/xblock/rest_api/views.py:334
 msgid "Invalid data"
 msgstr "Geçersiz veri"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:440
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:438
 #: openedx/core/djangoapps/xblock/rest_api/views.py:336
 #, python-brace-format
 msgid "Invalid data ({details})"
 msgstr "Geçersiz veri ({details})"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:605
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:656
 msgid "There was a problem pasting your component."
 msgstr "Bileşeninizi yapıştırırken bir hata gerçekleşti."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:609
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:660
 msgid "Your clipboard is empty or invalid."
 msgstr "Panonuz boş veya geçersiz."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:752
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:803
 #, python-brace-format
 msgid "You can not move {source_type} into {target_parent_type}."
 msgstr "{source_type} verisini {target_parent_type} üzerine taşıyamazsınız."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:761
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:812
 msgid "Item is already present in target location."
 msgstr "Nesne hedef konumda zaten mevcut."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:763
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:814
 msgid "You can not move an item into itself."
 msgstr "Bir nesneyi zaten bulunduğu konuma taşıyamazsınız."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:765
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:816
 msgid "You can not move an item into it's child."
 msgstr "Bir nesneyi kendi altına taşıyamazsınız."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:767
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:818
 msgid "You can not move an item directly into content experiment."
 msgstr "Bir nesneyi doğrudan içerik denemesine taşıyamazsınız."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:769
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:820
 #, python-brace-format
 msgid "{source_usage_key} not found in {parent_usage_key}."
 msgstr "{source_usage_key} anahtarı {parent_usage_key} içinde bulunamadı."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:781
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:832
 #, python-brace-format
 msgid ""
 "You can not move {source_usage_key} at an invalid index ({target_index})."
@@ -1088,12 +1094,12 @@ msgstr ""
 "{source_usage_key} anahtarını geçersiz bir ({target_index}) indeksine "
 "taşıyamazsınız."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:788
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:839
 #, python-brace-format
 msgid "You must provide target_index ({target_index}) as an integer."
 msgstr "({target_index}) target_index bir tamsayı olarak girilmeli."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1100
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1154
 #, python-brace-format
 msgid ""
 "Students must score {score}{pct_sign} or higher to access course materials."
@@ -1103,11 +1109,11 @@ msgstr ""
 
 #. Translators: This is the percent sign. It will be used to represent
 #. a percent value out of 100, e.g. "58%" means "58/100".
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1105
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1159
 msgid "%"
 msgstr "%"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1666
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1727
 #, python-brace-format
 msgid "{section_or_subsection} \"{display_name}\""
 msgstr "{section_or_subsection} \"{display_name}\""
@@ -1156,57 +1162,6 @@ msgstr "Kullanıcının altında ders oluşturmasına izin verilen kurumlar."
 msgid "Grant the user the permission to create courses in ALL organizations"
 msgstr "Kullanıcıya TÜM kuruluşlarda ders oluşturma izni verin"
 
-#: cms/djangoapps/import_from_modulestore/data.py:17
-msgid "Waiting to stage content"
-msgstr "İçeriğin sahnelenmesini bekliyorum"
-
-#: cms/djangoapps/import_from_modulestore/data.py:18
-msgid "Staging content for import"
-msgstr "İçeriği içe aktarma için hazırlanıyor"
-
-#: cms/djangoapps/import_from_modulestore/data.py:19
-msgid "Failed to stage content"
-msgstr "İçerik sahnelemedi"
-
-#: cms/djangoapps/import_from_modulestore/data.py:20
-msgid "Content is staged and ready for import"
-msgstr "İçerik hazırlandı ve içe aktarmaya hazır"
-
-#: cms/djangoapps/import_from_modulestore/data.py:21
-msgid "Importing staged content"
-msgstr "Aşamalı içerik içe aktarılıyor"
-
-#: cms/djangoapps/import_from_modulestore/data.py:22
-msgid "Failed to import staged content"
-msgstr "Aşamalı içerik içe aktarılamadı"
-
-#: cms/djangoapps/import_from_modulestore/data.py:23
-msgid "Successfully imported content"
-msgstr "İçerik başarıyla içe aktarıldı"
-
-#: cms/djangoapps/import_from_modulestore/data.py:24
-msgid "Canceled"
-msgstr "İptal edildi"
-
-#: cms/djangoapps/import_from_modulestore/models.py:42
-msgid "Import from modulestore"
-msgstr "Modulestore'dan içe aktar"
-
-#: cms/djangoapps/import_from_modulestore/models.py:43
-msgid "Imports from modulestore"
-msgstr "modulesstore'dan içe aktarmalar"
-
-#: cms/djangoapps/import_from_modulestore/models.py:72
-msgid "Original usage key/ID of the thing that has been imported."
-msgstr "İçe aktarılan şeyin özgün kullanım anahtarı/ID'si."
-
-#: cms/djangoapps/import_from_modulestore/models.py:129
-msgid ""
-"The original Usage key of the highest-level component that was saved in "
-"StagedContent."
-msgstr ""
-"StagedContent'te kaydedilen en üst düzey bileşenin özgün Kullanım anahtarı."
-
 #: cms/djangoapps/maintenance/views.py:32
 msgid "Edit Announcements"
 msgstr "Duyuruları Düzenle"
@@ -1231,7 +1186,7 @@ msgstr "Geçersiz ders anahtarı."
 msgid "No matching course found."
 msgstr "Eşleşen ders bulunamadı."
 
-#: cms/djangoapps/models/settings/course_metadata.py:225
+#: cms/djangoapps/models/settings/course_metadata.py:229
 #, python-brace-format
 msgid "Incorrect format for field '{name}'. {detailed_message}"
 msgstr "'{name}' alanı için yanlış format. {detailed_message} "
@@ -1240,23 +1195,23 @@ msgstr "'{name}' alanı için yanlış format. {detailed_message} "
 msgid "Dictionary with the available tags"
 msgstr "Mevcut etiketlerle sözlük"
 
-#: cms/lib/xblock/upstream_sync.py:70
+#: cms/lib/xblock/upstream_sync.py:72
 msgid "Content is not linked to a Content Library."
 msgstr "İçerik, bir İçerik Kütüphanesine bağlı değil."
 
-#: cms/lib/xblock/upstream_sync.py:164
+#: cms/lib/xblock/upstream_sync.py:244
 msgid "Downstream is not an XBlock or is missing required UpstreamSyncMixin"
 msgstr "Downstream bir XBlock değil veya gerekli UpstreamSyncMixin eksik"
 
-#: cms/lib/xblock/upstream_sync.py:168
+#: cms/lib/xblock/upstream_sync.py:248
 msgid "Cannot update content because it does not belong to a course."
 msgstr "İçerik bir derse ait olmadığı için güncellenemiyor."
 
-#: cms/lib/xblock/upstream_sync.py:178
+#: cms/lib/xblock/upstream_sync.py:258
 msgid "Reference to linked library item is malformed"
 msgstr "Bağlantılı kütüphane öğesine yapılan referans hatalı biçimlendirilmiş"
 
-#: cms/lib/xblock/upstream_sync.py:184
+#: cms/lib/xblock/upstream_sync.py:264
 msgid ""
 "Updating content with children is not yet supported unless the upstream is a"
 " container."
@@ -1264,15 +1219,19 @@ msgstr ""
 "Upstream bir kapsayıcı olmadığı sürece içeriğin alt öğelerle güncellenmesi "
 "henüz desteklenmemektedir."
 
-#: cms/lib/xblock/upstream_sync.py:190
+#: cms/lib/xblock/upstream_sync.py:270
 msgid "Linked upstream library block was not found in the system"
 msgstr "Bağlantılı upstream kütüphane block'u sistemde bulunamadı"
 
-#: cms/lib/xblock/upstream_sync.py:198
+#: cms/lib/xblock/upstream_sync.py:277
 msgid "Linked upstream library container was not found in the system"
 msgstr "Bağlantılı upstream kütüphane konteyneri sistemde bulunamadı"
 
-#: cms/lib/xblock/upstream_sync.py:209
+#: cms/lib/xblock/upstream_sync.py:281
+msgid "Linked `upstream_key` is not a valid key"
+msgstr "Bağlı `upstream_key` geçerli bir anahtar değil"
+
+#: cms/lib/xblock/upstream_sync.py:290
 #, python-brace-format
 msgid ""
 "Content type mismatch: {downstream_id} ({downstream_type}) cannot be linked "
@@ -1281,7 +1240,7 @@ msgstr ""
 "İçerik türü uyuşmazlığı: {downstream_id} ( {downstream_type} ) {upstream_id}"
 " öğesine bağlanamaz."
 
-#: cms/lib/xblock/upstream_sync_block.py:79
+#: cms/lib/xblock/upstream_sync_block.py:108
 msgid "Linked library item could not be loaded: {}"
 msgstr "Bağlantılı kitaplık öğesi yüklenemedi: {}"
 
@@ -1349,7 +1308,7 @@ msgstr "Onur öğrencisi olarak kaydoldunuz"
 
 #: common/djangoapps/course_modes/helpers.py:48
 #: lms/djangoapps/branding/api.py:329 lms/djangoapps/branding/api.py:404
-#: lms/djangoapps/courseware/views/views.py:2264
+#: lms/djangoapps/courseware/views/views.py:2286
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:1009
 #: lms/templates/static_templates/honor.html:5
 #: lms/templates/static_templates/honor.html:10
@@ -1369,7 +1328,7 @@ msgstr "Profesyonel Eğitim"
 #: common/djangoapps/course_modes/models.py:63 xmodule/annotatable_block.py:69
 #: xmodule/capa_block.py:178 xmodule/conditional_block.py:88
 #: xmodule/discussion_block.py:49 xmodule/html_block.py:56
-#: xmodule/html_block.py:393 xmodule/item_bank_block.py:454
+#: xmodule/html_block.py:407 xmodule/item_bank_block.py:454
 #: xmodule/library_content_block.py:77 xmodule/lti_block.py:131
 #: xmodule/split_test_block.py:82 xmodule/unit_block.py:38
 #: xmodule/word_cloud_block.py:63 xmodule/x_module.py:226
@@ -1378,7 +1337,7 @@ msgid "Display Name"
 msgstr "Görünen Ad"
 
 #: common/djangoapps/course_modes/models.py:69
-#: lms/templates/courseware/course_about.html:214
+#: lms/templates/courseware/course_about.html:225
 msgid "Price"
 msgstr "Ücret"
 
@@ -1436,7 +1395,7 @@ msgid ""
 "course.  Leave this blank if the course has not yet been migrated to the "
 "ecommerce service."
 msgstr ""
-"İSTEĞE BAĞLI: Bu, dersin bu modu için App Store'da kayıtlı olan iOS SKU "
+"İSTEĞE BAĞLI: Bu, kursun bu modu için App Store'da kayıtlı olan iOS SKU "
 "(stok tutma birimi) kodudur. Eğer bu eğitim e-ticaret servisine henüz "
 "geçirilmemişse boş bırakın."
 
@@ -1504,12 +1463,26 @@ msgstr "Geçersiz miktar seçildi."
 msgid "No selected price or selected price is too low."
 msgstr "Ücret seçilmedi veya seçili ücret çok düşük."
 
-#: common/djangoapps/student/admin.py:316
+#: common/djangoapps/student/admin.py:319
+#, python-format
+msgid "Successfully reverted %(count)d selected history entry."
+msgid_plural "Successfully reverted %(count)d selected history entries."
+msgstr[0] "Seçilen %(count)d geçmiş girişi başarıyla geri alındı."
+msgstr[1] "Seçilen %(count)d geçmiş kaydı başarıyla geri alındı."
+
+#: common/djangoapps/student/admin.py:349
+#, python-format
+msgid "Successfully deleted %(count)d selected history entry."
+msgid_plural "Successfully deleted %(count)d selected history entries."
+msgstr[0] "Seçilen %(count)d geçmiş girişi başarıyla silindi."
+msgstr[1] "Seçilen %(count)d geçmiş kaydı başarıyla silindi."
+
+#: common/djangoapps/student/admin.py:520
 msgid "User profile"
 msgstr "Kullanıcı profili"
 
-#: common/djangoapps/student/admin.py:323
-#: common/djangoapps/student/admin.py:324
+#: common/djangoapps/student/admin.py:527
+#: common/djangoapps/student/admin.py:528
 msgid "Account recovery"
 msgstr "Hesap kurtarma"
 
@@ -1518,7 +1491,7 @@ msgstr "Hesap kurtarma"
 #. meant to hold the user's password.
 #. Translators: This label appears above a field on the registration form
 #. meant to hold the user's password.
-#: common/djangoapps/student/admin.py:339
+#: common/djangoapps/student/admin.py:543
 #: openedx/core/djangoapps/user_authn/views/login_form.py:117
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:609
 #: lms/templates/provider_login.html:48 lms/templates/provider_login.html:49
@@ -1528,7 +1501,7 @@ msgstr "Hesap kurtarma"
 msgid "Password"
 msgstr "Parola"
 
-#: common/djangoapps/student/admin.py:341
+#: common/djangoapps/student/admin.py:545
 msgid ""
 "Raw passwords are not stored, so there is no way to see this user's "
 "password."
@@ -1536,14 +1509,14 @@ msgstr ""
 "Maskelenmemiş parolalar tutulmuyor, dolayısıyla bu kullanıcının parolasını "
 "göremezsiniz."
 
-#: common/djangoapps/student/admin.py:441
+#: common/djangoapps/student/admin.py:657
 #, python-format
 msgid "%(count)d student account was unlocked."
 msgid_plural "%(count)d student accounts were unlocked."
 msgstr[0] "%(count)d öğrenci hesabının kilidi açıldı."
 msgstr[1] "%(count)d öğrenci hesabının kilidi açıldı."
 
-#: common/djangoapps/student/admin.py:498
+#: common/djangoapps/student/admin.py:714
 #, python-brace-format
 msgid ""
 "Please add a key/value 'THIRD_PARTY_AUTH_ONLY_DOMAIN/{site_email_domain}' in"
@@ -1553,12 +1526,12 @@ msgstr ""
 "'THIRD_PARTY_AUTH_ONLY_DOMAIN/{site_email_domain}' anahtarını/değerini "
 "ekleyin."
 
-#: common/djangoapps/student/admin.py:503
+#: common/djangoapps/student/admin.py:719
 #, python-brace-format
 msgid "Email doesn't have {allowed_site_email_domain} domain name."
 msgstr "E-posta {allowed_site_email_domain} alan adına sahip değil."
 
-#: common/djangoapps/student/admin.py:506
+#: common/djangoapps/student/admin.py:722
 msgid "User with this email doesn't exist in system."
 msgstr ""
 "Bu e-posta adresiyle kayıtlı herhangi bir kullanıcı sistemde bulunmuyor."
@@ -1587,19 +1560,19 @@ msgstr ""
 msgid "Disabled Account"
 msgstr "Etkin Olmayan Hesap"
 
-#: common/djangoapps/student/models/course_enrollment.py:1658
+#: common/djangoapps/student/models/course_enrollment.py:1656
 msgid "Namespace of enrollment attribute"
 msgstr "Kayıtlanma özelliğinin ad alanı"
 
-#: common/djangoapps/student/models/course_enrollment.py:1662
+#: common/djangoapps/student/models/course_enrollment.py:1660
 msgid "Name of the enrollment attribute"
 msgstr "Kayıtlanma özelliğinin adı"
 
-#: common/djangoapps/student/models/course_enrollment.py:1666
+#: common/djangoapps/student/models/course_enrollment.py:1664
 msgid "Value of the enrollment attribute"
 msgstr "Kayıtlanma özelliğinin değeri"
 
-#: common/djangoapps/student/models/course_enrollment.py:1740
+#: common/djangoapps/student/models/course_enrollment.py:1738
 msgid ""
 "The window of time after enrolling during which users can be granted a "
 "refund, represented in microseconds. The default is 14 days."
@@ -1607,7 +1580,7 @@ msgstr ""
 "Kullanıcıların kayıt yaptıktan sonra geri ödeme alabileceği zaman aralığı, "
 "mikrosaniyeler ile belirtilir. Öntanımlı süre 14 gündür."
 
-#: common/djangoapps/student/models/course_enrollment.py:1762
+#: common/djangoapps/student/models/course_enrollment.py:1760
 msgid ""
 "It expect that the data will be provided in a csv file format with"
 "                     first row being the header and columns will be as "
@@ -1618,7 +1591,7 @@ msgstr ""
 "sağlanması beklenir ve sütunlar şu şekilde olacaktır:            user_id, "
 "username, email, course_id, is_verified, verification_date"
 
-#: common/djangoapps/student/models/course_enrollment.py:1776
+#: common/djangoapps/student/models/course_enrollment.py:1774
 msgid ""
 "It expect that the data will be provided in a csv file format with"
 "                     first row being the header and columns will be as "
@@ -1628,74 +1601,74 @@ msgstr ""
 "sağlanması beklenir ve sütunlar şu şekilde olacaktır:                      "
 "course_id, username, mode"
 
-#: common/djangoapps/student/models/user.py:461
+#: common/djangoapps/student/models/user.py:463
 msgid "Male"
 msgstr "Erkek"
 
-#: common/djangoapps/student/models/user.py:462
+#: common/djangoapps/student/models/user.py:464
 msgid "Female"
 msgstr "Kadın"
 
 #. Translators: 'Other' refers to the student's gender
-#: common/djangoapps/student/models/user.py:464
+#: common/djangoapps/student/models/user.py:466
 msgid "Other/Prefer Not to Say"
 msgstr "Diğer/Söylememeyi Tercih Eder"
 
-#: common/djangoapps/student/models/user.py:475
+#: common/djangoapps/student/models/user.py:477
 msgid "Doctorate"
 msgstr "Doktora derecesi"
 
-#: common/djangoapps/student/models/user.py:476
+#: common/djangoapps/student/models/user.py:478
 msgid "Master's or professional degree"
 msgstr "Yüksek lisans veya profesyonel derece"
 
-#: common/djangoapps/student/models/user.py:477
+#: common/djangoapps/student/models/user.py:479
 msgid "Bachelor's degree"
 msgstr "Lisans derecesi"
 
-#: common/djangoapps/student/models/user.py:478
+#: common/djangoapps/student/models/user.py:480
 msgid "Associate degree"
 msgstr "Ön Lisans derecesi"
 
-#: common/djangoapps/student/models/user.py:479
+#: common/djangoapps/student/models/user.py:481
 msgid "Secondary/high school"
 msgstr "Orta Okul/Lise"
 
-#: common/djangoapps/student/models/user.py:480
+#: common/djangoapps/student/models/user.py:482
 msgid "Junior secondary/junior high/middle school"
 msgstr "Üçüncü sınıf ortaokul/üçüncü sınıf lise/orta okul"
 
-#: common/djangoapps/student/models/user.py:481
+#: common/djangoapps/student/models/user.py:483
 msgid "Elementary/primary school"
 msgstr "Temel/İlkokul"
 
 #. Translators: 'None' refers to the student's level of education
-#: common/djangoapps/student/models/user.py:483
+#: common/djangoapps/student/models/user.py:485
 msgid "No formal education"
 msgstr "Örgün olmayan eğitim"
 
 #. Translators: 'Other' refers to the student's level of education
-#: common/djangoapps/student/models/user.py:485
+#: common/djangoapps/student/models/user.py:487
 msgid "Other education"
 msgstr "Diğer eğitim"
 
-#: common/djangoapps/student/models/user.py:1331
+#: common/djangoapps/student/models/user.py:1364
 #, python-brace-format
 msgid "{platform_name} Honor Code Certificate for {course_name}"
 msgstr "{course_name} eğitimi için {platform_name} Onur Öğrencisi Sertifikası"
 
-#: common/djangoapps/student/models/user.py:1332
+#: common/djangoapps/student/models/user.py:1365
 #, python-brace-format
 msgid "{platform_name} Verified Certificate for {course_name}"
 msgstr "{course_name} dersi için {platform_name} Onaylı Sertifika"
 
-#: common/djangoapps/student/models/user.py:1333
-#: common/djangoapps/student/models/user.py:1334
+#: common/djangoapps/student/models/user.py:1366
+#: common/djangoapps/student/models/user.py:1367
 #, python-brace-format
 msgid "{platform_name} Professional Certificate for {course_name}"
 msgstr "{course_name} için {platform_name} Profesyonel Sertifika"
 
-#: common/djangoapps/student/models/user.py:1340
+#: common/djangoapps/student/models/user.py:1373
 msgid ""
 "Your organization ID (if your organization has an existing page on LinkedIn)"
 " e.g 1337. If not provided, will default to sending Platform Name (e.g. edX)"
@@ -1705,41 +1678,41 @@ msgstr ""
 "1337. Sağlanmazsa, bunun yerine öntanımlı olarak Platform Adı (ör. edX) "
 "gönderilecektir."
 
-#: common/djangoapps/student/models/user.py:1396
+#: common/djangoapps/student/models/user.py:1429
 #, python-brace-format
 msgid "{platform_name} Certificate for {course_name}"
 msgstr "{platform_name} {course_name} için Sertifika"
 
-#: common/djangoapps/student/models/user.py:1473
-#: common/djangoapps/student/models/user.py:1505
+#: common/djangoapps/student/models/user.py:1506
+#: common/djangoapps/student/models/user.py:1538
 msgid "The ISO 639-1 language code for this language."
 msgstr "Bu dil için ISO 639-1 dil kodu."
 
-#: common/djangoapps/student/models/user.py:1536
+#: common/djangoapps/student/models/user.py:1569
 msgid "Name of the UTM cookie"
 msgstr "UTM çerezinin adı"
 
-#: common/djangoapps/student/models/user.py:1541
+#: common/djangoapps/student/models/user.py:1574
 msgid "Name of the affiliate cookie"
 msgstr "Satış ortağı çerezinin adı"
 
-#: common/djangoapps/student/models/user.py:1564
+#: common/djangoapps/student/models/user.py:1597
 msgid "Name of this user attribute."
 msgstr "Bu kullanıcı özelliğinin adı"
 
-#: common/djangoapps/student/models/user.py:1565
+#: common/djangoapps/student/models/user.py:1598
 msgid "Value of this user attribute."
 msgstr "Bu kullanıcı özelliğinin değeri"
 
-#: common/djangoapps/student/models/user.py:1630
+#: common/djangoapps/student/models/user.py:1663
 msgid "Secondary email address"
 msgstr "İkincil e-posta adresi"
 
-#: common/djangoapps/student/models/user.py:1631
+#: common/djangoapps/student/models/user.py:1664
 msgid "Secondary email address to recover linked account."
 msgstr "Bağlı hesabı kurtarmak için ikincil e-posta adresi."
 
-#: common/djangoapps/student/models/user.py:1678
+#: common/djangoapps/student/models/user.py:1711
 msgid ""
 "An employee (a user whose email has current site's domain name) whose email "
 "exists in this model, can be able to login from login screen through email "
@@ -1752,7 +1725,7 @@ msgstr ""
 "yoksa, o çalışan yalnızca üçüncü taraf kimlik doğrulama arka ucu "
 "aracılığıyla oturum açabilir."
 
-#: common/djangoapps/student/models/user.py:1693
+#: common/djangoapps/student/models/user.py:1726
 msgid ""
 "It expect that the data will be provided in a csv file format with"
 "                     first row being the header and columns will be as "
@@ -1762,47 +1735,47 @@ msgstr ""
 "beklenir ve sütunlar şu şekilde olacaktır:                      username, "
 "current_email, desired_email"
 
-#: common/djangoapps/student/models/user.py:1833
+#: common/djangoapps/student/models/user.py:1908
 msgid "Add a reason"
 msgstr "Bir gerekçe ekleyin"
 
-#: common/djangoapps/student/views/dashboard.py:142
+#: common/djangoapps/student/views/dashboard.py:143
 msgid " and "
 msgstr " ve "
 
-#: common/djangoapps/student/views/dashboard.py:285
+#: common/djangoapps/student/views/dashboard.py:286
 msgid "Photos are mismatched"
 msgstr "Fotoğraflar eşleşmiyor"
 
-#: common/djangoapps/student/views/dashboard.py:286
+#: common/djangoapps/student/views/dashboard.py:287
 msgid "Name missing from ID photo"
 msgstr "Kimlik fotoğrafındaki isim okunamıyor"
 
-#: common/djangoapps/student/views/dashboard.py:287
+#: common/djangoapps/student/views/dashboard.py:288
 msgid "ID photo not provided"
 msgstr "Kimlik fotoğrafı verilmemiş"
 
-#: common/djangoapps/student/views/dashboard.py:288
+#: common/djangoapps/student/views/dashboard.py:289
 msgid "ID is invalid"
 msgstr "Kimlik geçersiz"
 
-#: common/djangoapps/student/views/dashboard.py:289
+#: common/djangoapps/student/views/dashboard.py:290
 msgid "Learner photo is blurry"
 msgstr "Öğrenci fotoğrafı bulanık"
 
-#: common/djangoapps/student/views/dashboard.py:290
+#: common/djangoapps/student/views/dashboard.py:291
 msgid "Name on ID does not match name on account"
 msgstr "Kimlikteki ad hesaptaki ad ile eşleşmiyor"
 
-#: common/djangoapps/student/views/dashboard.py:291
+#: common/djangoapps/student/views/dashboard.py:292
 msgid "Learner photo not provided"
 msgstr "Öğrenci fotoğrafı tedarik edilmedi"
 
-#: common/djangoapps/student/views/dashboard.py:292
+#: common/djangoapps/student/views/dashboard.py:293
 msgid "ID photo is blurry"
 msgstr "Kimlik fotoğrafı bulanık"
 
-#: common/djangoapps/student/views/dashboard.py:597
+#: common/djangoapps/student/views/dashboard.py:607
 #, python-brace-format
 msgid ""
 "Check your {email_start}{email}{email_end} inbox for an account activation "
@@ -1813,7 +1786,7 @@ msgstr ""
 "platformu hesap etkinleştirme bağlantısı için kontrol edin. Yardım için, "
 "{link_start}{platform_name} Destek{link_end} ile iletişime geçin. "
 
-#: common/djangoapps/student/views/dashboard.py:622
+#: common/djangoapps/student/views/dashboard.py:632
 #, python-brace-format
 msgid ""
 "Add a recovery email to retain access when single-sign on is not available. "
@@ -1822,7 +1795,7 @@ msgstr ""
 "Single-sign mevcut olmadığında erişimi sağlamak için bir kurtarma e-posta "
 "adresi ekleyin. {link_start}Hesap Ayarları{link_end} sayfasına gidin."
 
-#: common/djangoapps/student/views/dashboard.py:633
+#: common/djangoapps/student/views/dashboard.py:643
 msgid ""
 "Recovery email is not activated yet. Kindly visit your email and follow the "
 "instructions to activate it."
@@ -1830,12 +1803,12 @@ msgstr ""
 "Kurtarma e-postası henüz etkinleştirilmedi. Lütfen e-posta kutunuzu ziyaret "
 "edin ve etkinleştirmek için gerekli yönergeleri takip edin."
 
-#: common/djangoapps/student/views/dashboard.py:755
+#: common/djangoapps/student/views/dashboard.py:765
 #, python-brace-format
 msgid "The course you are looking for does not start until {date}."
 msgstr "Aradığınız ders {date} tarihine kadar başlamayacak."
 
-#: common/djangoapps/student/views/dashboard.py:759
+#: common/djangoapps/student/views/dashboard.py:769
 #, python-brace-format
 msgid "The course you are looking for is closed for enrollment as of {date}."
 msgstr ""
@@ -3390,12 +3363,13 @@ msgstr "yeniden oluşturuldu"
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
 #: lms/djangoapps/certificates/models.py:567
-#: lms/djangoapps/instructor_task/tasks.py:178
-#: lms/djangoapps/instructor_task/tasks.py:226
-#: lms/djangoapps/instructor_task/tasks.py:239
-#: lms/djangoapps/instructor_task/tasks.py:265
-#: lms/djangoapps/instructor_task/tasks.py:319
-#: lms/djangoapps/instructor_task/tasks.py:342
+#: lms/djangoapps/instructor_task/tasks.py:182
+#: lms/djangoapps/instructor_task/tasks.py:230
+#: lms/djangoapps/instructor_task/tasks.py:243
+#: lms/djangoapps/instructor_task/tasks.py:269
+#: lms/djangoapps/instructor_task/tasks.py:283
+#: lms/djangoapps/instructor_task/tasks.py:337
+#: lms/djangoapps/instructor_task/tasks.py:360
 msgid "generated"
 msgstr "oluşturuldu"
 
@@ -3642,7 +3616,10 @@ msgstr ""
 #. Translators:  'All rights reserved' is a legal term used in copyrighting to
 #. protect published content
 #: lms/djangoapps/certificates/views/webview.py:176
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:176
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:231
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:50
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:176
 #: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:174
 msgid "All rights reserved"
 msgstr "Tüm hakları saklıdır"
@@ -3891,36 +3868,47 @@ msgstr "Zamanlanmış Sınav"
 msgid "Exam"
 msgstr "Sınav"
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:55
-#, python-format, python-brace-format
-msgid ""
-"\n"
-"                                You set a goal of learning {start_bold}%(days_per_week)s time a week in %(course_name)s{end_bold}. You’re not quite there, but there's still time to reach that goal!\n"
-"                                "
-msgid_plural ""
-"\n"
-"                                You set a goal of learning {start_bold}%(days_per_week)s times a week in %(course_name)s{end_bold}. You're not quite there, but there's still time to reach that goal!\n"
-"                            "
-msgstr[0] ""
-"\n"
-"                                {start_bold}%(course_name)s dersi için haftada %(days_per_week)s kez{end_bold} öğrenme hedefi belirlediniz. Tam olarak orada değilsiniz, ancak bu hedefe ulaşmak için hala zamanınız var!\n"
-"                                "
-msgstr[1] ""
-"\n"
-"                                {start_bold}%(course_name)s dersi için haftada %(days_per_week)s kez{end_bold} öğrenme hedefi belirlediniz. Tam olarak orada değilsiniz, ancak bu hedefe ulaşmak için hala zamanınız var!\n"
-"                            "
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:33
+msgid "There’s still time to reach your goal"
+msgstr "Hedefinize ulaşmak için hala zamanınız var"
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:90
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:41
+#, python-format
 msgid ""
 "\n"
-"                            Remember, you can always change your learning goal. The best goal is one that you can stick to.\n"
-"                        "
+"            You’re almost there, %(user_name)s!\n"
+"        "
 msgstr ""
 "\n"
-"                            Unutmayın, öğrenme hedefinizi her zaman değiştirebilirsiniz. En iyi hedef, sadık kalabileceğiniz hedeftir.\n"
-"                        "
+"            Neredeyse başardın, %(user_name)s!\n"
+"        "
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:129
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:79
+msgid ""
+"\n"
+"                        Jump back in\n"
+"                    "
+msgstr ""
+"\n"
+"                         Geri atlayın\n"
+"                    "
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:98
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:117
+msgid "Remember: the best goal is one that you can stick to. "
+msgstr "Unutmayın: En iyi hedef, sadık kalabileceğiniz hedeftir. "
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:99
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:118
+msgid "You can always"
+msgstr "Her zaman yapabilirsin"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:101
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:120
+msgid "if you need to."
+msgstr "Eğer ihtiyacın varsa."
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:144
 msgid ""
 "\n"
 "                            Unsubscribe from goal reminder emails for this course\n"
@@ -3929,6 +3917,16 @@ msgstr ""
 "\n"
 "                            Bu dersin hatırlatma e-postaları aboneliğinden çık\n"
 "                    "
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:158
+msgid ""
+"\n"
+"                                Unsubscribe from goal reminder emails for this course\n"
+"                                "
+msgstr ""
+"\n"
+"                                Bu dersin hedef hatırlatma e-postaları aboneliğinden çık\n"
+"                                "
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.txt:2
 msgid "You're almost there!"
@@ -3956,6 +3954,75 @@ msgid ""
 msgstr ""
 "Unutmayın, öğrenme hedefinizi her zaman değiştirebilirsiniz. En iyi hedef, "
 "sadık kalabileceğiniz hedeftir."
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:47
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/head.html:24
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:82
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:47
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/head.html:24
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:67
+#, python-format
+msgid "Go to %(platform_name)s Home Page"
+msgstr "%(platform_name)s Ana Sayfasına Git"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:63
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:71
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:172
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:63
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:71
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:116
+#, python-format
+msgid "%(platform_name)s on Facebook"
+msgstr "Facebook'ta %(platform_name)s"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:79
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:156
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:79
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:100
+#, python-format
+msgid "%(platform_name)s on LinkedIn"
+msgstr "LinkedIn'de %(platform_name)s"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:87
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:164
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:87
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:108
+#, python-format
+msgid "%(platform_name)s on Twitter"
+msgstr "Twitter'da %(platform_name)s"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:95
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:188
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:95
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:132
+#, python-format
+msgid "%(platform_name)s on Reddit"
+msgstr "Reddit'de %(platform_name)s"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:137
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:202
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:137
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:146
+msgid "Download the iOS app on the Apple Store"
+msgstr "Apple Mağazası'ndan iOS uygulamasını indir"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:147
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:209
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:147
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:153
+msgid "Download the Android app on the Google Play Store"
+msgstr "Google Play Mağazası'ndan Android uygulamasını indir"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:174
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:174
+msgid "edX is the trusted platform for education and learning"
+msgstr "edX, eğitim ve öğrenme için güvenilir bir platformdur"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:180
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:240
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:180
+msgid "Unsubscribe from these emails."
+msgstr "Bu e-postaların aboneliğinden ayrıl."
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/subject.txt:3
 #, python-format
@@ -4006,7 +4073,7 @@ msgid_plural "({number} Questions)"
 msgstr[0] "( {number} Soru)"
 msgstr[1] "( {number} Soru)"
 
-#: lms/djangoapps/course_home_api/outline/views.py:291
+#: lms/djangoapps/course_home_api/outline/views.py:293
 #, python-brace-format
 msgid ""
 "Please contact your degree administrator or {platform_name} Support if you "
@@ -4015,28 +4082,28 @@ msgstr ""
 "Eğer herhangi bir sorunuz varsa lütfen akademik yöneticiniz ya da "
 "{platform_name} destek ekibiyle iletişime geçiniz."
 
-#: lms/djangoapps/course_home_api/outline/views.py:298
-#: lms/templates/courseware/course_about.html:86
+#: lms/djangoapps/course_home_api/outline/views.py:300
+#: lms/templates/courseware/course_about.html:97
 msgid "Course is full"
 msgstr "Ders dolu"
 
-#: lms/djangoapps/course_home_api/outline/views.py:635
+#: lms/djangoapps/course_home_api/outline/views.py:654
 msgid "'course_id' is required."
 msgstr "'course_id' gerekli."
 
-#: lms/djangoapps/course_home_api/outline/views.py:639
+#: lms/djangoapps/course_home_api/outline/views.py:658
 msgid "Only 'course_id' is expected."
 msgstr "Sadece 'course_id' isteniyor."
 
-#: lms/djangoapps/course_home_api/outline/views.py:645
+#: lms/djangoapps/course_home_api/outline/views.py:664
 msgid "Welcome message successfully dismissed."
 msgstr "Hoş geldiniz iletisi başarıyla kaldırıldı."
 
-#: lms/djangoapps/course_home_api/outline/views.py:675
+#: lms/djangoapps/course_home_api/outline/views.py:694
 msgid "Your course goal has been successfully set."
 msgstr "Ders hedefiniz başarıyla belirlendi."
 
-#: lms/djangoapps/course_home_api/outline/views.py:676
+#: lms/djangoapps/course_home_api/outline/views.py:695
 msgid "Course goal updated successfully."
 msgstr "Ders hedefiniz başarıyla güncellendi."
 
@@ -4326,31 +4393,31 @@ msgstr ""
 "Belirli bir öğrenci olarak dersi görüntülerken bu tür bileşenler "
 "gösterilemez."
 
-#: lms/djangoapps/courseware/models.py:458
-#: lms/djangoapps/courseware/models.py:494
-#: lms/djangoapps/courseware/models.py:521
+#: lms/djangoapps/courseware/models.py:468
+#: lms/djangoapps/courseware/models.py:504
+#: lms/djangoapps/courseware/models.py:531
 msgid ""
 "Number of days a learner has to upgrade after content is made available"
 msgstr ""
 "İçerik hazırlandıktan sonra öğrencinin yükseltme yapması gereken gün sayısı"
 
-#: lms/djangoapps/courseware/models.py:499
+#: lms/djangoapps/courseware/models.py:509
 msgid "Disable the dynamic upgrade deadline for this course run."
 msgstr "Bu ders yayını için dinamik yükseltme işlemini devre dışı bırak."
 
-#: lms/djangoapps/courseware/models.py:526
+#: lms/djangoapps/courseware/models.py:536
 msgid "Disable the dynamic upgrade deadline for this organization."
 msgstr "Bu kurum için dinamik yükseltme işlemini devre dışı bırak."
 
-#: lms/djangoapps/courseware/models.py:553
+#: lms/djangoapps/courseware/models.py:563
 msgid "Internal API Base URL"
 msgstr "Dahili Hizmet Tabanı URL'si"
 
-#: lms/djangoapps/courseware/models.py:554
+#: lms/djangoapps/courseware/models.py:564
 msgid "Financial Assistance Backend API Base URL."
 msgstr "Mali Yardım Backend API Tabanı URL'si"
 
-#: lms/djangoapps/courseware/models.py:562
+#: lms/djangoapps/courseware/models.py:572
 msgid ""
 "Username created for Financial Assistance Backend, e.g. "
 "financial_assistance_service_user."
@@ -4358,7 +4425,7 @@ msgstr ""
 "Mali Yardım Backend'i için oluşturulan kullanıcı adı, örn. "
 "financial_assistance_service_user."
 
-#: lms/djangoapps/courseware/models.py:567
+#: lms/djangoapps/courseware/models.py:577
 msgid "Percentage of courses allowed to use edx-financial-assistance"
 msgstr "edx-mali-yardım kullanmaya izin verilen derslerin yüzdesel oranı"
 
@@ -4431,13 +4498,11 @@ msgstr ""
 " ayarları."
 
 #: lms/djangoapps/courseware/tabs.py:36
-#: lms/djangoapps/courseware/views/views.py:2217
+#: lms/djangoapps/courseware/views/views.py:2239
 #: openedx/features/course_experience/__init__.py:91 xmodule/tabs.py:490
 #: cms/templates/widgets/header.html:89 cms/templates/widgets/header.html:93
 #: cms/templates/widgets/header.html:164 cms/templates/widgets/header.html:292
 #: lms/templates/courseware/course_navigation.html:49
-#: lms/templates/courseware/courseware.html:201
-#: lms/templates/courseware/courseware.html:215
 #: lms/templates/ux/reference/bootstrap/course-skeleton.html:21
 msgid "Course"
 msgstr "Ders"
@@ -4451,33 +4516,11 @@ msgstr "Ders Programı"
 msgid "Dates"
 msgstr "Tarihler"
 
-#: lms/djangoapps/courseware/views/index.py:233
-#, python-brace-format
-msgid ""
-"You are not signed in. To see additional course content, {sign_in_link} or "
-"{register_link}, and enroll in this course."
-msgstr ""
-"Giriş yapmadınız. Daha fazla ders içeriği görmek için {sign_in_link} ya da "
-"{register_link}, ve bu derse kaydolun."
-
-#: lms/djangoapps/courseware/views/index.py:236
-#: lms/djangoapps/courseware/views/views.py:561
-#: xmodule/discussion_block.py:187
-msgid "sign in"
-msgstr "giriş yap"
-
-#: lms/djangoapps/courseware/views/index.py:240
-#: lms/djangoapps/courseware/views/views.py:565
-#: lms/djangoapps/courseware/views/views.py:580
-#: xmodule/discussion_block.py:191
-msgid "register"
-msgstr "kaydol"
-
-#: lms/djangoapps/courseware/views/views.py:174
+#: lms/djangoapps/courseware/views/views.py:178
 msgid "Your enrollment: Audit track"
 msgstr "Kayıtlanmanız: Gözlemci"
 
-#: lms/djangoapps/courseware/views/views.py:175
+#: lms/djangoapps/courseware/views/views.py:179
 msgid ""
 "You are enrolled in the audit track for this course. The audit track does "
 "not include a certificate."
@@ -4485,11 +4528,11 @@ msgstr ""
 "Bu derse gözlemci kayıtlanma yoluyla kaydoldunuz. Gözlemci kayıtlanma yolu "
 "sertifika içermez."
 
-#: lms/djangoapps/courseware/views/views.py:183
+#: lms/djangoapps/courseware/views/views.py:187
 msgid "Your enrollment: Honor track"
 msgstr "Kayıtlanmanız: Onur öğrencisi"
 
-#: lms/djangoapps/courseware/views/views.py:184
+#: lms/djangoapps/courseware/views/views.py:188
 msgid ""
 "You are enrolled in the honor track for this course. The honor track does "
 "not include a certificate."
@@ -4497,11 +4540,11 @@ msgstr ""
 "Bu derse onur öğrencisi kayıtlanma yoluyla kaydoldunuz. Onur öğrencisi "
 "kayıtlanma yolu sertifika içermez."
 
-#: lms/djangoapps/courseware/views/views.py:197
+#: lms/djangoapps/courseware/views/views.py:201
 msgid "We're working on it..."
 msgstr "Üzerinde çalışıyoruz..."
 
-#: lms/djangoapps/courseware/views/views.py:199
+#: lms/djangoapps/courseware/views/views.py:203
 msgid ""
 "We're creating your certificate. You can keep working in your courses and a "
 "link to it will appear here and on your Dashboard when it is ready."
@@ -4510,29 +4553,30 @@ msgstr ""
 "edebilirsiniz ve sertifika hazır olduğunda ona olan bağlantı burada ve Ana "
 "Panelinizde belirecek."
 
-#: lms/djangoapps/courseware/views/views.py:209
+#: lms/djangoapps/courseware/views/views.py:213
 msgid "Your certificate has been invalidated"
 msgstr "Sertifikanız geçersizleştirildi"
 
-#: lms/djangoapps/courseware/views/views.py:210
+#: lms/djangoapps/courseware/views/views.py:214
 msgid "Please contact your course team if you have any questions."
 msgstr ""
 "Eğer herhangi bir sorunuz varsa lütfen ders ekibiyle iletişime geçiniz."
 
-#: lms/djangoapps/courseware/views/views.py:218
+#: lms/djangoapps/courseware/views/views.py:222
 msgid "Congratulations, you qualified for a certificate!"
 msgstr "Tebrikler, siz bir sertifika için niteliklisiniz!"
 
-#: lms/djangoapps/courseware/views/views.py:219
-#: lms/djangoapps/courseware/views/views.py:241
+#: lms/djangoapps/courseware/views/views.py:223
+#: lms/djangoapps/courseware/views/views.py:256
 msgid "You've earned a certificate for this course."
 msgstr "Bu ders için sertifikaya hak kazandınız."
 
-#: lms/djangoapps/courseware/views/views.py:229
+#: lms/djangoapps/courseware/views/views.py:233
 msgid "Your certificate will be available soon!"
 msgstr "Sertifikanız yakında hazır olacak!"
 
-#: lms/djangoapps/courseware/views/views.py:230
+#: lms/djangoapps/courseware/views/views.py:234
+#: lms/djangoapps/courseware/views/views.py:245
 msgid ""
 "After this course officially ends, you will receive an email notification "
 "with your certificate."
@@ -4540,15 +4584,15 @@ msgstr ""
 "Bu ders resmen sona erdikten sonra, sertifikanızla birlikte bir e-posta "
 "bildirimi alacaksınız. "
 
-#: lms/djangoapps/courseware/views/views.py:240
+#: lms/djangoapps/courseware/views/views.py:255
 msgid "Your certificate is available"
 msgstr "Sertifikanız hazır"
 
-#: lms/djangoapps/courseware/views/views.py:254
+#: lms/djangoapps/courseware/views/views.py:269
 msgid "Certificate unavailable"
 msgstr "Sertifika mevcut değil"
 
-#: lms/djangoapps/courseware/views/views.py:256
+#: lms/djangoapps/courseware/views/views.py:271
 #, python-brace-format
 msgid ""
 "You have not received a certificate because you do not have a current "
@@ -4556,17 +4600,28 @@ msgid ""
 msgstr ""
 "Sertifika alamazsınız çünkü {platform_name} kimliğiniz doğrulanmış değil."
 
-#: lms/djangoapps/courseware/views/views.py:559
+#: lms/djangoapps/courseware/views/views.py:574
 #, python-brace-format
 msgid "To see course content, {sign_in_link} or {register_link}."
 msgstr "Ders içeriğini görmek için, {sign_in_link} ya da {register_link}."
 
-#: lms/djangoapps/courseware/views/views.py:574
+#: lms/djangoapps/courseware/views/views.py:576
+#: xmodule/discussion_block.py:187
+msgid "sign in"
+msgstr "giriş yap"
+
+#: lms/djangoapps/courseware/views/views.py:580
+#: lms/djangoapps/courseware/views/views.py:595
+#: xmodule/discussion_block.py:191
+msgid "register"
+msgstr "kaydol"
+
+#: lms/djangoapps/courseware/views/views.py:589
 #, python-brace-format
 msgid "{sign_in_link} or {register_link}."
 msgstr "{sign_in_link} ya da {register_link}."
 
-#: lms/djangoapps/courseware/views/views.py:576
+#: lms/djangoapps/courseware/views/views.py:591
 #: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordresetsuccess/email/body.html:25
 #: lms/templates/header/navbar-not-authenticated.html:63
 #: lms/templates/header/navbar-not-authenticated.html:67
@@ -4575,7 +4630,7 @@ msgstr "{sign_in_link} ya da {register_link}."
 msgid "Sign in"
 msgstr "Giriş Yap"
 
-#: lms/djangoapps/courseware/views/views.py:590
+#: lms/djangoapps/courseware/views/views.py:605
 #, python-brace-format
 msgid ""
 "You must be enrolled in the course to see course content. "
@@ -4584,46 +4639,46 @@ msgstr ""
 "Ders içeriğini görmek için derse kaydolmalısınız.                           "
 "{enroll_link_start}Şimdi kaydol{enroll_link_end}."
 
-#: lms/djangoapps/courseware/views/views.py:603
+#: lms/djangoapps/courseware/views/views.py:618
 msgid "You must be enrolled in the course to see course content."
 msgstr "Ders içeriğini görmek için önce derse kayıt olmalısınız."
 
-#: lms/djangoapps/courseware/views/views.py:1219
-#: lms/djangoapps/instructor/views/api.py:173
+#: lms/djangoapps/courseware/views/views.py:1240
+#: lms/djangoapps/instructor/views/api.py:171
 msgid "User does not exist."
 msgstr "Böyle bir kullanıcı yok."
 
-#: lms/djangoapps/courseware/views/views.py:1226
+#: lms/djangoapps/courseware/views/views.py:1247
 msgid "Invalid location."
 msgstr "Geçersiz konum."
 
-#: lms/djangoapps/courseware/views/views.py:1240
+#: lms/djangoapps/courseware/views/views.py:1261
 #, python-brace-format
 msgid "User {username} has never accessed problem {location}"
 msgstr "{username} kullanıcısı {location} problemine henüz erişmedi "
 
-#: lms/djangoapps/courseware/views/views.py:1437
+#: lms/djangoapps/courseware/views/views.py:1458
 #, python-brace-format
 msgid "You must be signed in to {platform_name} to create a certificate."
 msgstr "Sertifika oluşturmak için {platform_name}'a koydolmalısınız."
 
-#: lms/djangoapps/courseware/views/views.py:1447
+#: lms/djangoapps/courseware/views/views.py:1468
 msgid "Course is not valid"
 msgstr "Ders geçersiz"
 
-#: lms/djangoapps/courseware/views/views.py:1463
+#: lms/djangoapps/courseware/views/views.py:1484
 msgid "Your certificate will be available when you pass the course."
 msgstr "Dersi geçtiğinizde sertifikanız kullanılabilir olacak."
 
-#: lms/djangoapps/courseware/views/views.py:1476
+#: lms/djangoapps/courseware/views/views.py:1497
 msgid "Certificate has already been created."
 msgstr "Sertifika zaten oluşturuldu."
 
-#: lms/djangoapps/courseware/views/views.py:1478
+#: lms/djangoapps/courseware/views/views.py:1499
 msgid "Certificate is being created."
 msgstr "Sertifikanız oluşturuluyor."
 
-#: lms/djangoapps/courseware/views/views.py:2030
+#: lms/djangoapps/courseware/views/views.py:2051
 msgid ""
 "We plan to use this information to evaluate your application for financial assistance and to further develop our financial assistance program. \n"
 "Please note that while assistance is available in most courses that offer verified certificates, a few courses and programs are not eligible. You must complete a separate application for each course you take. You may be approved for financial assistance five (5) times each year (based on 12-month period from you first approval). \n"
@@ -4639,7 +4694,7 @@ msgstr ""
 "2. Bu başvuruyu tamamlayın.\n"
 "3. E-postanızı kontrol edin, başvurunuzun işleme alınması için lütfen 4 hafta bekleyin."
 
-#: lms/djangoapps/courseware/views/views.py:2224
+#: lms/djangoapps/courseware/views/views.py:2246
 msgid ""
 "Select the course for which you want to earn a verified certificate. If the "
 "course does not appear in the list, make sure that you have enrolled in the "
@@ -4648,11 +4703,11 @@ msgstr ""
 "Onaylı sertifika almak istediğiniz dersi seçin. İstediğiniz ders listede "
 "bulunmuyorsa derse gözlemci olarak katılmış olduğunuzdan emin olun."
 
-#: lms/djangoapps/courseware/views/views.py:2231
+#: lms/djangoapps/courseware/views/views.py:2253
 msgid "I certify that: "
 msgstr "Şunu onaylıyorum: "
 
-#: lms/djangoapps/courseware/views/views.py:2238
+#: lms/djangoapps/courseware/views/views.py:2260
 msgid ""
 "Paying the verified certificate fee for the above course would cause me "
 "economic hardship"
@@ -4660,60 +4715,60 @@ msgstr ""
 "Yukarıdaki ders için onaylanmış sertifika ücretini ödemek, beni ekonomik "
 "olarak zor durumda bırakacaktır"
 
-#: lms/djangoapps/courseware/views/views.py:2250
+#: lms/djangoapps/courseware/views/views.py:2272
 msgid ""
 "I will work diligently to complete the course work and receive a certificate"
 msgstr "Ders çalışmasını tamamlayıp sertifika almak için özenle çalışacağım"
 
-#: lms/djangoapps/courseware/views/views.py:2262
+#: lms/djangoapps/courseware/views/views.py:2284
 #, python-brace-format
 msgid ""
 "I have read, understand, and will abide by the {honor_code_link} for the edX"
 " Site"
 msgstr "EdX Sitesi için {honor_code_link} okudum, anladım ve uyacağım"
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:545
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:610
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:558
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:623
 msgid "Title can't be empty"
 msgstr "Başlık boş bırakılamaz"
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:547
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:612
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:654
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:737
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:560
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:625
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:667
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:750
 msgid "Body can't be empty"
 msgstr "Gövde boş bırakılamaz"
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:629
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:642
 msgid "Topic doesn't exist"
 msgstr "Konu yok"
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:703
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:802
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:716
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:815
 msgid "Comment level too deep"
 msgstr "Yorum seviyesi fazla derin"
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:1091
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:1104
 msgid ""
 "Error uploading file. Please contact the site administrator. Thank you."
 msgstr ""
 "Dosya yükleme hatası. Lütfen site yöneticinizle iletişime geçin. "
 "Teşekkürler."
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:1094
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:1107
 msgid "Good"
 msgstr "İyi"
 
 #. Translators: Replier commented on "your" response to your post
-#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:147
+#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:152
 msgid "your"
 msgstr "size"
 
 #. Translators: Replier commented on "their" response to your post
 #. Translators: Replier commented on "their" response in a post you're
 #. following
-#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:151
-#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:240
+#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:156
+#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:245
 msgid "their"
 msgstr "onlara"
 
@@ -4789,22 +4844,22 @@ msgstr ""
 msgid "Access to this discussion is restricted to team members and staff."
 msgstr "Bu tartışmaya erişim, ekip üyeleri ve personel ile sınırlıdır."
 
-#: lms/djangoapps/edxnotes/helpers.py:116
-#: lms/djangoapps/edxnotes/helpers.py:147
+#: lms/djangoapps/edxnotes/helpers.py:117
+#: lms/djangoapps/edxnotes/helpers.py:148
 msgid "EdxNotes Service is unavailable. Please try again in a few minutes."
 msgstr ""
 "EdxNotes Servisi kullanılabilir değil. Lütfen birkaç dakika içinde tekrar "
 "deneyin."
 
-#: lms/djangoapps/edxnotes/helpers.py:348
+#: lms/djangoapps/edxnotes/helpers.py:341
 msgid "Invalid JSON response received from notes api."
 msgstr "notes api'den geçersiz JSON cevabı alındı."
 
-#: lms/djangoapps/edxnotes/helpers.py:355
+#: lms/djangoapps/edxnotes/helpers.py:348
 msgid "Incorrect data received from notes api."
 msgstr "notes api'den hatalı veri alındı."
 
-#: lms/djangoapps/edxnotes/helpers.py:398
+#: lms/djangoapps/edxnotes/helpers.py:391
 msgid "No endpoint was provided for EdxNotes."
 msgstr "EdxNotes için bitiş noktası sağlanmadı."
 
@@ -4846,7 +4901,7 @@ msgstr ""
 msgid "Your Platform Insights"
 msgstr "Platform Analitikleriniz"
 
-#: lms/djangoapps/instructor/views/api.py:157
+#: lms/djangoapps/instructor/views/api.py:155
 #, python-brace-format
 msgid ""
 "The {report_type} report is being created. To view the status of the report,"
@@ -4855,15 +4910,15 @@ msgstr ""
 "{report_type} raporu oluşturuluyor. Raporun durumunu görmek için aşağıda "
 "bulunan Beklemedeki Görevler'e bakın."
 
-#: lms/djangoapps/instructor/views/api.py:175
+#: lms/djangoapps/instructor/views/api.py:173
 msgid ""
 "Found a conflict with given identifier. Please try an alternative identifier"
 msgstr ""
 "Verilen tanımlayıcı ile çakışma bulundu. Lütfen alternatif bir tanımlayıcı "
 "ile tekrar deneyin"
 
-#: lms/djangoapps/instructor/views/api.py:366
-#: lms/djangoapps/instructor/views/api.py:3706
+#: lms/djangoapps/instructor/views/api.py:364
+#: lms/djangoapps/instructor/views/api.py:3839
 msgid ""
 "Make sure that the file you upload is in CSV format with no extraneous "
 "characters or rows."
@@ -4871,12 +4926,12 @@ msgstr ""
 "Yükleyeceğiniz dosyanın dışarıdan gelen karakter ya da satırlar olmadan CSV "
 "formatında olduğundan emin olun."
 
-#: lms/djangoapps/instructor/views/api.py:372
-#: lms/djangoapps/instructor/views/api.py:3709
+#: lms/djangoapps/instructor/views/api.py:370
+#: lms/djangoapps/instructor/views/api.py:3842
 msgid "Could not read uploaded file."
 msgstr "Yüklenen dosya okunamadı."
 
-#: lms/djangoapps/instructor/views/api.py:397
+#: lms/djangoapps/instructor/views/api.py:395
 #, python-brace-format
 msgid ""
 "Data in row #{row_num} must have between four and six columns: email, "
@@ -4887,7 +4942,7 @@ msgstr ""
 "kullanıcı adı, tam ad, ülke, kohort ve ders modu. Son iki sütun isteğe "
 "bağlıdır."
 
-#: lms/djangoapps/instructor/views/api.py:402
+#: lms/djangoapps/instructor/views/api.py:400
 #, python-brace-format
 msgid ""
 "Data in row #{row_num} must have exactly four columns: email, username, full"
@@ -4896,7 +4951,7 @@ msgstr ""
 "#{row_num} numaralı satırdaki veriler tam olarak dört sütuna sahip "
 "olmalıdır: e-posta, kullanıcı adı, tam isim ve ülke."
 
-#: lms/djangoapps/instructor/views/api.py:431
+#: lms/djangoapps/instructor/views/api.py:429
 msgid ""
 "Course is not cohorted but cohort provided. Ignoring cohort assignment for "
 "all users."
@@ -4904,7 +4959,7 @@ msgstr ""
 "Ders kohortlu değildir, ancak kohort sağlanır. Tüm kullanıcılar için kohort "
 "ataması yok sayılıyor."
 
-#: lms/djangoapps/instructor/views/api.py:446
+#: lms/djangoapps/instructor/views/api.py:444
 #, python-brace-format
 msgid ""
 "Cohort name not found: {cohort}. Ignoring cohort assignment for all users."
@@ -4912,7 +4967,7 @@ msgstr ""
 "Kohort adı bulunamadı: {cohort}. Tüm kullanıcılar için kohort ataması yok "
 "sayılıyor."
 
-#: lms/djangoapps/instructor/views/api.py:463
+#: lms/djangoapps/instructor/views/api.py:461
 #, python-brace-format
 msgid ""
 "Invalid course mode: {mode}. Falling back to the default mode, or keeping "
@@ -4921,7 +4976,7 @@ msgstr ""
 "Geçersiz ders modu: {mode}. Varsayılan moda geri dönmek veya kullanıcının "
 "zaten kayıtlı olması durumunda mevcut modu korumak."
 
-#: lms/djangoapps/instructor/views/api.py:469
+#: lms/djangoapps/instructor/views/api.py:467
 #, python-brace-format
 msgid ""
 "Invalid course mode: {mode}.  Failling back to {default_mode}, or resetting "
@@ -4930,14 +4985,14 @@ msgstr ""
 "Geçersiz ders modu: {mode}. {default_mode} moda geri dönmek veya "
 "kullanıcının zaten kayıtlı olması durumunda {default_mode} moda sıfırlamak."
 
-#: lms/djangoapps/instructor/views/api.py:487
-#: lms/djangoapps/instructor/views/api.py:549
-#: lms/djangoapps/instructor/views/api.py:584
+#: lms/djangoapps/instructor/views/api.py:485
+#: lms/djangoapps/instructor/views/api.py:547
+#: lms/djangoapps/instructor/views/api.py:582
 #, python-brace-format
 msgid "Invalid email {email_address}."
 msgstr "Geçersiz e-posta {email_address}."
 
-#: lms/djangoapps/instructor/views/api.py:499
+#: lms/djangoapps/instructor/views/api.py:497
 #, python-brace-format
 msgid ""
 "An account with email {email} exists but the provided username {username} is"
@@ -4946,17 +5001,17 @@ msgstr ""
 "{email} e-postasına sahip bir hesap mevcut ancak belirtilen {username} "
 "kullanıcı adı farklı. Yine de {email} ile kayıt olabilirsiniz."
 
-#: lms/djangoapps/instructor/views/api.py:589
-#: lms/djangoapps/instructor/views/api.py:3751
+#: lms/djangoapps/instructor/views/api.py:587
+#: lms/djangoapps/instructor/views/api.py:3884
 msgid "File is not attached."
 msgstr "Dosya ekli değil."
 
-#: lms/djangoapps/instructor/views/api.py:723
+#: lms/djangoapps/instructor/views/api.py:721
 #, python-brace-format
 msgid "Username {user} already exists."
 msgstr "Kullanıcı adı {user} zaten var."
 
-#: lms/djangoapps/instructor/views/api.py:750
+#: lms/djangoapps/instructor/views/api.py:748
 #, python-brace-format
 msgid ""
 "Error '{error}' while sending email to new user (user email={email}). "
@@ -4967,7 +5022,7 @@ msgstr ""
 "e-postası={email}). E-posta olmadan öğrenci oturum açamaz. Daha fazla bilgi "
 "için lütfen desteğe başvurun."
 
-#: lms/djangoapps/instructor/views/api.py:1154
+#: lms/djangoapps/instructor/views/api.py:1147
 msgid ""
 "A usage key location for a section or a problem. If the location is a block "
 "that contains other blocks, (such as the course, section, subsection, or "
@@ -4978,11 +5033,11 @@ msgstr ""
 " içeren bir block ise (ders, bölüm, alt bölüm veya ünite blockları gibi), o "
 "blockun altındaki tüm blocklar rapora dahil edilecektir."
 
-#: lms/djangoapps/instructor/views/api.py:1163
+#: lms/djangoapps/instructor/views/api.py:1156
 msgid "A list of usage keys for the blocks to include in the report. "
 msgstr "Rapora dahil edilecek xblocklar için kullanım anahtarlarının listesi."
 
-#: lms/djangoapps/instructor/views/api.py:1171
+#: lms/djangoapps/instructor/views/api.py:1164
 msgid ""
 "A list of problem/block types to generate the report for. This field can be "
 "omitted if the report should include details of allblock types. "
@@ -4990,11 +5045,11 @@ msgstr ""
 "Raporun oluşturulacağı problem/block türlerinin listesi. Raporun tüm block "
 "türlerinin ayrıntılarını içermesi gerekiyorsa bu alan atlanabilir."
 
-#: lms/djangoapps/instructor/views/api.py:1182
+#: lms/djangoapps/instructor/views/api.py:1175
 msgid "User-friendly text describing current status of report generation."
 msgstr "Rapor oluşturmanın mevcut durumunu açıklayan kullanıcı dostu metin."
 
-#: lms/djangoapps/instructor/views/api.py:1185
+#: lms/djangoapps/instructor/views/api.py:1178
 msgid ""
 "A unique id for the report generation task. It can be used to query the "
 "latest report generation status."
@@ -5002,7 +5057,7 @@ msgstr ""
 "Rapor oluşturma görevi için benzersiz bir kimlik. En son rapor oluşturma "
 "durumunu sorgulamak için kullanılabilir."
 
-#: lms/djangoapps/instructor/views/api.py:1211
+#: lms/djangoapps/instructor/views/api.py:1204
 msgid ""
 "The provided parameters were invalid. Make sure you've provided at least one"
 " valid usage key for `problem_locations`."
@@ -5010,53 +5065,53 @@ msgstr ""
 "Sağlanan parametreler geçersizdi. `problem_locations` için en az bir geçerli"
 " kullanım anahtarı sağladığınızdan emin olun."
 
-#: lms/djangoapps/instructor/views/api.py:1214
-#: lms/djangoapps/instructor/views/api.py:2406
-#: lms/djangoapps/instructor/views/api.py:2616
+#: lms/djangoapps/instructor/views/api.py:1207
+#: lms/djangoapps/instructor/views/api.py:2498
+#: lms/djangoapps/instructor/views/api.py:2708
 msgid "The requesting user is not authenticated."
 msgstr "İstekte bulunan kullanıcının kimliği doğrulanmadı."
 
-#: lms/djangoapps/instructor/views/api.py:1215
-#: lms/djangoapps/instructor/views/api.py:2407
-#: lms/djangoapps/instructor/views/api.py:2617
+#: lms/djangoapps/instructor/views/api.py:1208
+#: lms/djangoapps/instructor/views/api.py:2499
+#: lms/djangoapps/instructor/views/api.py:2709
 msgid "The requesting user lacks access to the course."
 msgstr "İstekte bulunan kullanıcının derse erişimi yok."
 
-#: lms/djangoapps/instructor/views/api.py:1350
+#: lms/djangoapps/instructor/views/api.py:1354
 #: lms/djangoapps/instructor_task/api_helper.py:109
 msgid "problem responses"
 msgstr "problem cevapları"
 
-#: lms/djangoapps/instructor/views/api.py:1356
+#: lms/djangoapps/instructor/views/api.py:1360
 msgid "Could not find problem with this location."
 msgstr "Bu konumla ilgili sorun bulunamadı."
 
-#: lms/djangoapps/instructor/views/api.py:1422
+#: lms/djangoapps/instructor/views/api.py:1426
 msgid "CourseID"
 msgstr "DersNo"
 
-#: lms/djangoapps/instructor/views/api.py:1423
+#: lms/djangoapps/instructor/views/api.py:1427
 msgid "Certificate Type"
 msgstr "Sertifika Türü"
 
-#: lms/djangoapps/instructor/views/api.py:1424
+#: lms/djangoapps/instructor/views/api.py:1428
 msgid "Total Certificates Issued"
 msgstr "Verilen Sertifikaların Toplamı"
 
-#: lms/djangoapps/instructor/views/api.py:1425
+#: lms/djangoapps/instructor/views/api.py:1429
 msgid "Date Report Run"
 msgstr "Tarih Raporunu Çalıştır"
 
-#: lms/djangoapps/instructor/views/api.py:1475
+#: lms/djangoapps/instructor/views/api.py:1479
 #: lms/djangoapps/instructor_task/api_helper.py:110
 msgid "enrolled learner profile"
 msgstr "kayıtlı öğrenci profili"
 
-#: lms/djangoapps/instructor/views/api.py:1500
+#: lms/djangoapps/instructor/views/api.py:1503
 msgid "User ID"
 msgstr "Kullanıcı No"
 
-#: lms/djangoapps/instructor/views/api.py:1501
+#: lms/djangoapps/instructor/views/api.py:1504
 #: lms/djangoapps/instructor/views/tools.py:221
 #: lms/djangoapps/instructor/views/tools.py:226
 #: openedx/core/djangoapps/schedules/admin.py:148
@@ -5073,8 +5128,8 @@ msgstr "Kullanıcı adı"
 #. form meant to hold the user's email address.
 #. Translators: This label appears above a field on the registration form
 #. meant to hold the user's email address.
-#: lms/djangoapps/instructor/views/api.py:1503
-#: lms/djangoapps/instructor/views/instructor_dashboard.py:714
+#: lms/djangoapps/instructor/views/api.py:1506
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:717
 #: openedx/core/djangoapps/user_authn/views/login_form.py:96
 #: openedx/core/djangoapps/user_authn/views/password_reset.py:90
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:506
@@ -5084,11 +5139,11 @@ msgstr "Kullanıcı adı"
 msgid "Email"
 msgstr "E-posta"
 
-#: lms/djangoapps/instructor/views/api.py:1504
+#: lms/djangoapps/instructor/views/api.py:1507
 msgid "Language"
 msgstr "Dil"
 
-#: lms/djangoapps/instructor/views/api.py:1505
+#: lms/djangoapps/instructor/views/api.py:1508
 msgid "Location"
 msgstr "Yer"
 
@@ -5097,7 +5152,7 @@ msgstr "Yer"
 #. the user's gender.
 #. Translators: This label appears above a dropdown menu on the registration
 #. form used to select the user's gender.
-#: lms/djangoapps/instructor/views/api.py:1508
+#: lms/djangoapps/instructor/views/api.py:1510
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:117
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:659
 #: lms/templates/signup_modal.html:94
@@ -5105,41 +5160,41 @@ msgstr "Yer"
 msgid "Gender"
 msgstr "Cinsiyet"
 
-#: lms/djangoapps/instructor/views/api.py:1509
+#: lms/djangoapps/instructor/views/api.py:1511
 msgid "Level of Education"
 msgstr "Eğitim Seviyesi"
 
-#: lms/djangoapps/instructor/views/api.py:1510
+#: lms/djangoapps/instructor/views/api.py:1512
 #: themes/stanford-style/lms/templates/register-form.html:223
 msgid "Mailing Address"
 msgstr "Adres"
 
-#: lms/djangoapps/instructor/views/api.py:1511
+#: lms/djangoapps/instructor/views/api.py:1513
 msgid "Goals"
 msgstr "Hedefler"
 
-#: lms/djangoapps/instructor/views/api.py:1512
+#: lms/djangoapps/instructor/views/api.py:1514
 msgid "Enrollment Mode"
 msgstr "Kayıt Modu"
 
-#: lms/djangoapps/instructor/views/api.py:1513
+#: lms/djangoapps/instructor/views/api.py:1515
 msgid "Last Login"
 msgstr "Son Görülme"
 
-#: lms/djangoapps/instructor/views/api.py:1514
+#: lms/djangoapps/instructor/views/api.py:1516
 msgid "Date Joined"
 msgstr "Katılma Tarihi"
 
-#: lms/djangoapps/instructor/views/api.py:1515
+#: lms/djangoapps/instructor/views/api.py:1517
 msgid "External User Key"
 msgstr "Harici Kullanıcı Anahtarı"
 
-#: lms/djangoapps/instructor/views/api.py:1521
+#: lms/djangoapps/instructor/views/api.py:1527
 msgid "Cohort"
 msgstr "Kohort"
 
-#: lms/djangoapps/instructor/views/api.py:1525
-#: lms/djangoapps/instructor/views/instructor_dashboard.py:770
+#: lms/djangoapps/instructor/views/api.py:1531
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:773
 msgid "Team"
 msgstr "Takım"
 
@@ -5148,7 +5203,7 @@ msgstr "Takım"
 #. which allows the user to input the city in which they live.
 #. Translators: This label appears above a field on the registration form
 #. which allows the user to input the city in which they live.
-#: lms/djangoapps/instructor/views/api.py:1529
+#: lms/djangoapps/instructor/views/api.py:1535
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:290
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:844
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:88
@@ -5156,124 +5211,125 @@ msgstr "Takım"
 msgid "City"
 msgstr "Şehir"
 
-#: lms/djangoapps/instructor/views/api.py:1531
+#: lms/djangoapps/instructor/views/api.py:1537
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:103
 #: themes/stanford-style/lms/templates/register-form.html:167
 msgid "Country"
 msgstr "Ülke"
 
-#: lms/djangoapps/instructor/views/api.py:1580
+#: lms/djangoapps/instructor/views/api.py:1586
 #: lms/djangoapps/instructor_task/api_helper.py:111
 msgid "enrollment"
 msgstr "kayıtlanma"
 
-#: lms/djangoapps/instructor/views/api.py:1606
+#: lms/djangoapps/instructor/views/api.py:1652
 msgid "The file must contain a 'cohort' column containing cohort names."
 msgstr "Dosyada kohort isimlerinin bulunduğu 'kohort' sütunu bulunmalıdır."
 
-#: lms/djangoapps/instructor/views/api.py:1608
+#: lms/djangoapps/instructor/views/api.py:1654
 msgid "The file must contain a 'username' column, an 'email' column, or both."
 msgstr ""
 "Dosyada bir 'kullanıcı adı' sütunu, bir 'e-posta' sütunu ya da iki sütun "
 "birden bulunmalıdır."
 
-#: lms/djangoapps/instructor/views/api.py:1711
+#: lms/djangoapps/instructor/views/api.py:1757
 #: lms/djangoapps/instructor_task/api_helper.py:113
 msgid "survey"
 msgstr "anket"
 
-#: lms/djangoapps/instructor/views/api.py:1736
+#: lms/djangoapps/instructor/views/api.py:1782
 #: lms/djangoapps/instructor_task/api_helper.py:114
 msgid "proctored exam results"
 msgstr "gözetimli sınav sonuçları"
 
-#: lms/djangoapps/instructor/views/api.py:1766
+#: lms/djangoapps/instructor/views/api.py:1812
 msgid "Anonymized User IDs"
 msgstr "Anonimleştirilmiş Kullanıcı Kimlikleri"
 
-#: lms/djangoapps/instructor/views/api.py:1803
+#: lms/djangoapps/instructor/views/api.py:1849
 #, python-brace-format
 msgid "Enrollment status for {student}: active"
 msgstr "{student} için kayıtlanma durumu: etkin"
 
-#: lms/djangoapps/instructor/views/api.py:1805
+#: lms/djangoapps/instructor/views/api.py:1851
 #, python-brace-format
 msgid "Enrollment status for {student}: inactive"
 msgstr "{student} için kayıtlanma durumu: geçersiz"
 
-#: lms/djangoapps/instructor/views/api.py:1810
+#: lms/djangoapps/instructor/views/api.py:1856
 #, python-brace-format
 msgid "Enrollment status for {student}: pending"
 msgstr "{student} için kayıtlanma durumu: bekliyor"
 
-#: lms/djangoapps/instructor/views/api.py:1812
+#: lms/djangoapps/instructor/views/api.py:1858
 #, python-brace-format
 msgid "Enrollment status for {student}: never enrolled"
 msgstr "{student} için kayıtlanma durumu: hiç kaydolmadı"
 
-#: lms/djangoapps/instructor/views/api.py:1958
+#: lms/djangoapps/instructor/views/api.py:2004
 msgid "Module does not exist."
 msgstr "Modül mevcut değil."
 
-#: lms/djangoapps/instructor/views/api.py:1961
+#: lms/djangoapps/instructor/views/api.py:2007
 msgid "An error occurred while deleting the score."
 msgstr "Skoru silerken bir hata oluştu."
 
-#: lms/djangoapps/instructor/views/api.py:1971
+#: lms/djangoapps/instructor/views/api.py:2017
 msgid "An error occurred while attempting to reset for all students."
 msgstr "Tüm öğrenciler için sıfırlama işlemi yapılırken bir hata oluştu."
 
-#: lms/djangoapps/instructor/views/api.py:2008
-#: lms/djangoapps/instructor/views/api.py:2236
+#: lms/djangoapps/instructor/views/api.py:2077
+#: lms/djangoapps/instructor/views/api.py:2316
 msgid "Course has no entrance exam section."
 msgstr "Dersin giriş sınavı bölümü bulunmuyor."
 
-#: lms/djangoapps/instructor/views/api.py:2023
-msgid "all_students and unique_student_identifier are mutually exclusive."
-msgstr "tüm_öğrenciler ve benzersiz_öğrenci_tanımlayıcı birbirini dışlar."
-
-#: lms/djangoapps/instructor/views/api.py:2027
-msgid "all_students and delete_module are mutually exclusive."
-msgstr "tüm_öğrenciler ve modül_sil birbirini dışlar."
-
-#: lms/djangoapps/instructor/views/api.py:2033
+#: lms/djangoapps/instructor/views/api.py:2088
 msgid "Requires instructor access."
 msgstr "Eğitmen girişi gerektirir."
 
-#: lms/djangoapps/instructor/views/api.py:2050
-#: lms/djangoapps/instructor/views/api.py:2247
-#: lms/djangoapps/instructor/views/api.py:2555
+#: lms/djangoapps/instructor/views/api.py:2105
+#: lms/djangoapps/instructor/views/api.py:2338
+#: lms/djangoapps/instructor/views/api.py:2647
 msgid "Course has no valid entrance exam section."
 msgstr "Dersin geçerli giriş sınav bölümü yok."
 
-#: lms/djangoapps/instructor/views/api.py:2052
-#: lms/djangoapps/instructor/views/api.py:2253
+#: lms/djangoapps/instructor/views/api.py:2107
+#: lms/djangoapps/instructor/views/api.py:2343
 msgid "All Students"
 msgstr "Tüm Öğrenciler"
 
-#: lms/djangoapps/instructor/views/api.py:2241
+#: lms/djangoapps/instructor/views/api.py:2253
+#, python-brace-format
+msgid ""
+"User {user_id} does not have permission to override scores for problem "
+"{problem_to_reset}."
+msgstr ""
+"Kullanıcı {user_id}, {problem_to_reset} sorunu için puanları değiştirme "
+"iznine sahip değil."
+
+#: lms/djangoapps/instructor/views/api.py:2330
 msgid "Cannot rescore with all_students and unique_student_identifier."
 msgstr ""
 "tüm_öğrenciler ve benzersiz_öğrenci_tanımlayıcı ile yeniden "
 "puanlandıramıyor."
 
-#: lms/djangoapps/instructor/views/api.py:2324
+#: lms/djangoapps/instructor/views/api.py:2416
 msgid "Current status of task."
 msgstr "Görevin mevcut durumu."
 
-#: lms/djangoapps/instructor/views/api.py:2325
+#: lms/djangoapps/instructor/views/api.py:2417
 msgid "Identifies the kind of task being performed, e.g. rescoring."
 msgstr "Gerçekleştirilen görevin türünü tanımlar, örn. yeniden puanlama."
 
-#: lms/djangoapps/instructor/views/api.py:2326
+#: lms/djangoapps/instructor/views/api.py:2418
 msgid "The celery ID for the task."
 msgstr "Görev için celery kimliği."
 
-#: lms/djangoapps/instructor/views/api.py:2327
+#: lms/djangoapps/instructor/views/api.py:2419
 msgid "The date and time when the task was created."
 msgstr "Görevin oluşturulduğu tarih ve saat."
 
-#: lms/djangoapps/instructor/views/api.py:2330
+#: lms/djangoapps/instructor/views/api.py:2422
 msgid ""
 "The input parameters for the task. The format and content of this data will "
 "depend on the kind of task being performed. For instanceit may contain the "
@@ -5283,52 +5339,52 @@ msgstr ""
 "gerçekleştirilen görevin türüne bağlı olacaktır. Örneğin, problem kaynakları"
 " görevi için problem konumlarını içerebilir."
 
-#: lms/djangoapps/instructor/views/api.py:2334
+#: lms/djangoapps/instructor/views/api.py:2426
 msgid "The username of the user who initiated this task."
 msgstr "Bu görevi başlatan kişinin kullanıcı adı."
 
-#: lms/djangoapps/instructor/views/api.py:2335
+#: lms/djangoapps/instructor/views/api.py:2427
 msgid "The last knows state of the celery task."
 msgstr "Celery görevinin bilinen son durumu."
 
-#: lms/djangoapps/instructor/views/api.py:2336
+#: lms/djangoapps/instructor/views/api.py:2428
 msgid "Task duration information, if known"
 msgstr "Eğer biliniyorsa, işlem süresi bilgisi"
 
-#: lms/djangoapps/instructor/views/api.py:2337
+#: lms/djangoapps/instructor/views/api.py:2429
 msgid "User-friendly task status information, if available."
 msgstr "Eğer mevcutsa, kullanıcı dostu işlem durum bilgisi"
 
-#: lms/djangoapps/instructor/views/api.py:2346
+#: lms/djangoapps/instructor/views/api.py:2438
 msgid "List of instructor tasks."
 msgstr "Eğitmen görevlerinin listesi."
 
-#: lms/djangoapps/instructor/views/api.py:2408
-#: lms/djangoapps/instructor/views/api.py:2618
+#: lms/djangoapps/instructor/views/api.py:2500
+#: lms/djangoapps/instructor/views/api.py:2710
 msgid "The requested course does not exist."
 msgstr "İstenen ders mevcut değil."
 
-#: lms/djangoapps/instructor/views/api.py:2580
+#: lms/djangoapps/instructor/views/api.py:2672
 msgid "URL from which report can be downloaded."
 msgstr "Raporların indirilebileceği URL adresi."
 
-#: lms/djangoapps/instructor/views/api.py:2581
+#: lms/djangoapps/instructor/views/api.py:2673
 msgid "Name of report."
 msgstr "Rapor adı."
 
-#: lms/djangoapps/instructor/views/api.py:2582
+#: lms/djangoapps/instructor/views/api.py:2674
 msgid "HTML anchor tag that contains the name and link."
 msgstr "Adı ve bağlantıyı içeren HTML çapası etiketi."
 
-#: lms/djangoapps/instructor/views/api.py:2591
+#: lms/djangoapps/instructor/views/api.py:2683
 msgid "List of report downloads"
 msgstr "Rapor indirmeleri listesi"
 
-#: lms/djangoapps/instructor/views/api.py:2605
+#: lms/djangoapps/instructor/views/api.py:2697
 msgid "ID for the course whose reports need to be listed."
 msgstr "Raporlarının listelenmesi gereken dersin kimliği."
 
-#: lms/djangoapps/instructor/views/api.py:2611
+#: lms/djangoapps/instructor/views/api.py:2703
 msgid ""
 "Filter results to only return details of for the report with the specified "
 "name."
@@ -5336,57 +5392,57 @@ msgstr ""
 "Belirtilen ada sahip raporun yalnızca ayrıntılarını döndürmek için sonuçları"
 " filtreleyin."
 
-#: lms/djangoapps/instructor/views/api.py:2724
+#: lms/djangoapps/instructor/views/api.py:2827
 #: lms/djangoapps/instructor_task/api_helper.py:115
 msgid "ORA data"
 msgstr "ORA verisi"
 
-#: lms/djangoapps/instructor/views/api.py:2742
+#: lms/djangoapps/instructor/views/api.py:2859
 msgid "ORA summary"
 msgstr "ORA özeti"
 
-#: lms/djangoapps/instructor/views/api.py:2766
+#: lms/djangoapps/instructor/views/api.py:2888
 msgid "Attachments archive is being created."
 msgstr "Ekler arşivi oluşturuluyor."
 
-#: lms/djangoapps/instructor/views/api.py:2781
+#: lms/djangoapps/instructor/views/api.py:2909
 #: lms/djangoapps/instructor_task/api_helper.py:116
 msgid "grade"
 msgstr "puanlama"
 
-#: lms/djangoapps/instructor/views/api.py:2809
+#: lms/djangoapps/instructor/views/api.py:2937
 #: lms/djangoapps/instructor_task/api_helper.py:108
 msgid "problem grade"
 msgstr "problem notu"
 
-#: lms/djangoapps/instructor/views/api.py:3113
+#: lms/djangoapps/instructor/views/api.py:3230
 #, python-brace-format
 msgid "Successfully changed due date for student {0} for {1} to {2}"
 msgstr "Öğrenci {0} için son tarih {1}'den {2}'ye başarıyla değiştirildi"
 
-#: lms/djangoapps/instructor/views/api.py:3160
+#: lms/djangoapps/instructor/views/api.py:3277
 msgid ""
 "Successfully removed invalid due date extension (unit has no due date)."
 msgstr ""
 "Geçersiz bitiş tarihi uzatımı başarıyla kaldırıldı (ünitenin bitiş tarihi "
 "yok)."
 
-#: lms/djangoapps/instructor/views/api.py:3165
+#: lms/djangoapps/instructor/views/api.py:3282
 #, python-brace-format
 msgid "Successfully reset due date for student {0} for {1} to {2}"
 msgstr "Öğrenci {0} için teslim tarihi {1}'dan {2}'ye sıfırlandı"
 
-#: lms/djangoapps/instructor/views/api.py:3317
+#: lms/djangoapps/instructor/views/api.py:3450
 #, python-format
 msgid "This student (%s) will skip the entrance exam."
 msgstr "Bu öğrenci (%s) giriş sınavını atlayacaktır."
 
-#: lms/djangoapps/instructor/views/api.py:3319
+#: lms/djangoapps/instructor/views/api.py:3452
 #, python-format
 msgid "This student (%s) is already allowed to skip the entrance exam."
 msgstr "Bu öğrencinin (%s) giriş sınavını atlamasına zaten izin verilmiş."
 
-#: lms/djangoapps/instructor/views/api.py:3343
+#: lms/djangoapps/instructor/views/api.py:3476
 msgid ""
 "Certificate generation task for all students of this course has been "
 "started. You can view the status of the generation task in the \"Pending "
@@ -5395,11 +5451,11 @@ msgstr ""
 "Tüm öğrenciler için sertifika oluşturulmaya başlandı. \"Bekleyen Görevler\" "
 "bölümünden sertifika oluşturma görevinin durumunu görebilirsiniz."
 
-#: lms/djangoapps/instructor/views/api.py:3376
+#: lms/djangoapps/instructor/views/api.py:3509
 msgid "Please select certificate statuses from the list only."
 msgstr "Lütfen sertifika durumlarını yalnızca listeden seçin."
 
-#: lms/djangoapps/instructor/views/api.py:3383
+#: lms/djangoapps/instructor/views/api.py:3516
 msgid ""
 "Certificate regeneration task has been started. You can view the status of "
 "the generation task in the \"Pending Tasks\" section."
@@ -5407,8 +5463,8 @@ msgstr ""
 "Yeniden sertifika oluşturma görevi başladı. \"Bekleyen Görevler\" kısmından "
 "oluşturma sürecinin durumunu görebilirsiniz."
 
-#: lms/djangoapps/instructor/views/api.py:3429
-#: lms/djangoapps/instructor/views/api.py:3579
+#: lms/djangoapps/instructor/views/api.py:3562
+#: lms/djangoapps/instructor/views/api.py:3712
 msgid ""
 "The record is not in the correct format. Please add a valid username or "
 "email address."
@@ -5416,7 +5472,7 @@ msgstr ""
 "Kayıt doğru formatta değil. Lütfen geçerli bir kullanıcı adı veya e-posta "
 "adresi ekleyin."
 
-#: lms/djangoapps/instructor/views/api.py:3495
+#: lms/djangoapps/instructor/views/api.py:3628
 #, python-brace-format
 msgid ""
 "Student {user} is not enrolled in this course. Please check your spelling "
@@ -5425,7 +5481,7 @@ msgstr ""
 "Öğrenci {user} bu derse kayıtlı değil. Lütfen doğru yazdığınızdan emin olun "
 "ve yeniden deneyin."
 
-#: lms/djangoapps/instructor/views/api.py:3502
+#: lms/djangoapps/instructor/views/api.py:3635
 #, python-brace-format
 msgid ""
 "Student {user} is already on the certificate invalidation list and cannot be"
@@ -5434,12 +5490,12 @@ msgstr ""
 "Öğrenci {user} zaten sertifika geçersiz kılma listesinde ve sertifika "
 "istisna listesine eklenemez. "
 
-#: lms/djangoapps/instructor/views/api.py:3508
+#: lms/djangoapps/instructor/views/api.py:3641
 #, python-brace-format
 msgid "Student (username/email={user}) already in certificate exception list."
 msgstr "Öğrenci (username/email={user}) zaten sertifika istisna listesinde."
 
-#: lms/djangoapps/instructor/views/api.py:3544
+#: lms/djangoapps/instructor/views/api.py:3677
 #, python-brace-format
 msgid ""
 "Error occurred removing the allowlist entry for student {student}. Please "
@@ -5448,7 +5504,7 @@ msgstr ""
 "{student} öğrencisi için izin verilenler listesi girişi kaldırılırken hata "
 "oluştu. Lütfen sayfayı yenileyin ve tekrar deneyin "
 
-#: lms/djangoapps/instructor/views/api.py:3562
+#: lms/djangoapps/instructor/views/api.py:3695
 msgid ""
 "Student username/email field is required and can not be empty. Kindly fill "
 "in username/email and then press \"Add to Exception List\" button."
@@ -5457,7 +5513,7 @@ msgstr ""
 "bırakılamaz. Lütfen kullanıcı adı/e-posta alanını doldurun ve ardından "
 "\"İstisna Listesine Ekle\" tuşuna basın."
 
-#: lms/djangoapps/instructor/views/api.py:3596
+#: lms/djangoapps/instructor/views/api.py:3729
 #, python-brace-format
 msgid ""
 "{user} does not exist in the LMS. Please check your spelling and retry."
@@ -5465,25 +5521,25 @@ msgstr ""
 "{user} LMS'de mevcut değil. Lütfen doğru yazdığınızdan emin olun ve yeniden "
 "deneyin."
 
-#: lms/djangoapps/instructor/views/api.py:3637
+#: lms/djangoapps/instructor/views/api.py:3770
 msgid "Invalid data, generate_for must be \"new\" or \"all\"."
 msgstr "Geçersiz veri, generate_for değeri \"new\" veya \"all\" olmalı."
 
-#: lms/djangoapps/instructor/views/api.py:3645
+#: lms/djangoapps/instructor/views/api.py:3778
 msgid "Certificate generation started for students on the allowlist."
 msgstr "İzinliler listesindeki öğrenciler için sertifika oluşturma başladı."
 
-#: lms/djangoapps/instructor/views/api.py:3698
+#: lms/djangoapps/instructor/views/api.py:3831
 #, python-brace-format
 msgid "user \"{user}\" in row# {row}"
 msgstr "{row} numaralı satırdaki kullanıcı \"{user}\""
 
-#: lms/djangoapps/instructor/views/api.py:3749
+#: lms/djangoapps/instructor/views/api.py:3882
 #, python-brace-format
 msgid "user \"{username}\" in row# {row}"
 msgstr "{row} numaralı satırdaki \"{username}\" kullanıcısı"
 
-#: lms/djangoapps/instructor/views/api.py:3809
+#: lms/djangoapps/instructor/views/api.py:3942
 #, python-brace-format
 msgid ""
 "The student {student} appears on the Certificate Exception list in course "
@@ -5494,7 +5550,7 @@ msgstr ""
 "görünüyor. Lütfen sertifikalarını geçersiz kılmaya çalışmadan önce bunları "
 "Sertifika İstisnası listesinden kaldırın. "
 
-#: lms/djangoapps/instructor/views/api.py:3870
+#: lms/djangoapps/instructor/views/api.py:4003
 #, python-brace-format
 msgid ""
 "Certificate of {user} has already been invalidated. Please check your "
@@ -5503,7 +5559,7 @@ msgstr ""
 "{user} kullanıcısının sertifikası zaten geçersizleştirildi. Lütfen doğru "
 "yazdığınızdan emin olun ve yeniden deneyin."
 
-#: lms/djangoapps/instructor/views/api.py:3878
+#: lms/djangoapps/instructor/views/api.py:4011
 #, python-brace-format
 msgid ""
 "Certificate for student {user} is already invalid, kindly verify that "
@@ -5512,7 +5568,7 @@ msgstr ""
 "{user} öğrencisinin sertifikası zaten geçersiz, lütfen bu sertifikanın bu "
 "öğrenci için oluşturulduğunu doğrulayın ve işleme devam edin."
 
-#: lms/djangoapps/instructor/views/api.py:3915
+#: lms/djangoapps/instructor/views/api.py:4048
 msgid ""
 "Certificate Invalidation does not exist, Please refresh the page and try "
 "again."
@@ -5520,7 +5576,7 @@ msgstr ""
 "Sertifika Geçersizleştirme mevcut değil. Lütfen sayfayı yenileyin ve tekrar "
 "deneyin."
 
-#: lms/djangoapps/instructor/views/api.py:3951
+#: lms/djangoapps/instructor/views/api.py:4084
 msgid ""
 "Student username/email field is required and can not be empty. Kindly fill "
 "in username/email and then press \"Invalidate Certificate\" button."
@@ -5529,7 +5585,7 @@ msgstr ""
 "bırakılamaz. Lütfen kullanıcı adı/e-posta alanını doldurun ve ardından "
 "\"Sertifikayı Geçersizleştir\" tuşuna basın."
 
-#: lms/djangoapps/instructor/views/api.py:3969
+#: lms/djangoapps/instructor/views/api.py:4102
 #, python-brace-format
 msgid ""
 "The student {student} does not have certificate for the course {course}. "
@@ -5614,11 +5670,11 @@ msgstr "Eklentiler"
 msgid "Data Download"
 msgstr "Veri İndir"
 
-#: lms/djangoapps/instructor/views/instructor_dashboard.py:751
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:754
 msgid "Analytics"
 msgstr "İstatistikler"
 
-#: lms/djangoapps/instructor/views/instructor_dashboard.py:799
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:802
 msgid "Open Responses"
 msgstr "Açık Cevaplar"
 
@@ -5649,29 +5705,65 @@ msgstr "Tamamlanmış"
 msgid "Incomplete"
 msgstr "Eksik"
 
-#: lms/djangoapps/instructor/views/serializer.py:20
+#: lms/djangoapps/instructor/views/serializer.py:31
+#: lms/djangoapps/instructor/views/serializer.py:89
 msgid "Role name"
 msgstr "Rol adı"
 
-#: lms/djangoapps/instructor/views/serializer.py:27
+#: lms/djangoapps/instructor/views/serializer.py:38
+#: lms/djangoapps/instructor/views/serializer.py:99
 msgid "Invalid role name."
 msgstr "Geçersiz rol adı."
 
-#: lms/djangoapps/instructor/views/serializer.py:241
+#: lms/djangoapps/instructor/views/serializer.py:344
 msgid "The URL name of the problem to reset."
 msgstr "Sıfırlanacak problemin URL adı."
 
-#: lms/djangoapps/instructor/views/serializer.py:243
+#: lms/djangoapps/instructor/views/serializer.py:346
+#: lms/djangoapps/instructor/views/serializer.py:567
 msgid "Problem URL name cannot be blank."
 msgstr "Problem URL adı boş bırakılamaz."
 
-#: lms/djangoapps/instructor/views/serializer.py:248
+#: lms/djangoapps/instructor/views/serializer.py:351
 msgid "Whether to reset the problem for all students."
 msgstr "Problemin tüm öğrenciler için sıfırlanması isteniyor mu?"
 
-#: lms/djangoapps/instructor/views/serializer.py:258
+#: lms/djangoapps/instructor/views/serializer.py:361
+#: lms/djangoapps/instructor/views/serializer.py:508
 msgid "unique student identifier."
 msgstr "benzersiz öğrenci tanımlayıcısı."
+
+#: lms/djangoapps/instructor/views/serializer.py:496
+msgid "Whether to reset for all students."
+msgstr "Tüm öğrenciler için sıfırlanıp sıfırlanmayacağı."
+
+#: lms/djangoapps/instructor/views/serializer.py:501
+msgid "Whether to delete entrance exam state for the student."
+msgstr "Öğrencinin giriş sınavı durumunu silip silmeyeceğiniz."
+
+#: lms/djangoapps/instructor/views/serializer.py:535
+msgid "all_students and unique_student_identifier are mutually exclusive."
+msgstr "tüm_öğrenciler ve benzersiz_öğrenci_tanımlayıcı birbirini dışlar."
+
+#: lms/djangoapps/instructor/views/serializer.py:539
+msgid "all_students and delete_module are mutually exclusive."
+msgstr "tüm_öğrenciler ve modül_sil birbirini dışlar."
+
+#: lms/djangoapps/instructor/views/serializer.py:543
+msgid ""
+"You must provide either unique_student_identifier or set all_students to "
+"True."
+msgstr ""
+"Ya benzersiz_öğrenci_kimliği sağlamalısınız ya da tüm_öğrenciler'i true "
+"olarak ayarlamalısınız."
+
+#: lms/djangoapps/instructor/views/serializer.py:565
+msgid "The URL name of the problem to override the score for."
+msgstr "Sorunun puanını geçersiz kılmak için URL adı."
+
+#: lms/djangoapps/instructor/views/serializer.py:571
+msgid "The overriding score to set."
+msgstr "Belirlenecek geçersiz kılma puanı."
 
 #: lms/djangoapps/instructor/views/tools.py:79
 #, python-brace-format
@@ -5771,29 +5863,29 @@ msgstr "Bir hata gerçekleşti. Görev oluşturulamadı."
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:78
+#: lms/djangoapps/instructor_task/tasks.py:82
 msgid "rescored"
 msgstr "yeniden notlandırıldı"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:92
+#: lms/djangoapps/instructor_task/tasks.py:96
 #: lms/djangoapps/instructor_task/tasks_helper/module_state.py:67
 msgid "overridden"
 msgstr "geçersizleştirilmiş"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:116
+#: lms/djangoapps/instructor_task/tasks.py:120
 msgid "reset"
 msgstr "sıfırla"
 
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:139
+#: lms/djangoapps/instructor_task/tasks.py:143
 #: lms/templates/wiki/plugins/attachments/index.html:74
-#: wiki/models/article.py:245
+#: wiki/models/article.py:257
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/history.html:22
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:20
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html:39
@@ -5803,25 +5895,25 @@ msgstr "silindi"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:162
+#: lms/djangoapps/instructor_task/tasks.py:166
 msgid "emailed"
 msgstr "e-posta gönderilen"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:190
+#: lms/djangoapps/instructor_task/tasks.py:194
 msgid "graded"
 msgstr "notlandırıldı"
 
 #. Translators: This is a past-tense phrase that is inserted into task
 #. progress messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:208
+#: lms/djangoapps/instructor_task/tasks.py:212
 msgid "problem distribution graded"
 msgstr "problem dağılımı notlandırıldı"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:277
+#: lms/djangoapps/instructor_task/tasks.py:295
 msgid "certificates generated"
 msgstr "oluşturulan sertifikalar"
 
@@ -5829,7 +5921,7 @@ msgstr "oluşturulan sertifikalar"
 #. messages as {action}.
 #. An example of such a message is: "Progress: {action} {succeeded} of
 #. {attempted} so far"
-#: lms/djangoapps/instructor_task/tasks.py:295
+#: lms/djangoapps/instructor_task/tasks.py:313
 msgid "cohorted"
 msgstr "kohorta alındı"
 
@@ -5837,11 +5929,11 @@ msgstr "kohorta alındı"
 #. messages as {action}.
 #. An example of such a message is: "Progress: {action} {succeeded} of
 #. {attempted} so far"
-#: lms/djangoapps/instructor_task/tasks.py:308
+#: lms/djangoapps/instructor_task/tasks.py:326
 msgid "generate_anonymized_id"
 msgstr "anonimleştirilmiş_kimlik_oluşturuldu"
 
-#: lms/djangoapps/instructor_task/tasks.py:331
+#: lms/djangoapps/instructor_task/tasks.py:349
 msgid "compressed"
 msgstr "sıkıştırıldı"
 
@@ -6152,6 +6244,16 @@ msgstr ""
 "bağlamak için gereklidir. Daha fazla ayrıntı için Open edX LTI Sağlayıcı "
 "belgelerine bakın."
 
+#: lms/djangoapps/lti_provider/models.py:44
+msgid ""
+"When checked, the platform will automatically use any personal information "
+"provided via LTI to create an account. Otherwise an anonymous account will "
+"be created."
+msgstr ""
+"LTI aracılığıyla sağlanan kişisel bilgileri kullanarak platformun otomatik "
+"olarak bir hesap oluşturmasını istiyorsanız, bu seçeneği işaretleyin. Aksi "
+"takdirde anonim bir hesap oluşturulacaktır."
+
 #: lms/djangoapps/program_enrollments/models.py:57
 msgid "One of user or external_user_key must not be null."
 msgstr "Kullanıcı veya harici_kullanıcı_anahtarından biri boş olmamalıdır."
@@ -6215,34 +6317,34 @@ msgstr "Program Kayıtlanma Denetçi Aracı"
 msgid "Find information related to a learner's program enrollments"
 msgstr "Bir öğrencinin program kayıtlarıyla ilgili bilgileri bul"
 
-#: lms/djangoapps/support/views/manage_user.py:34
+#: lms/djangoapps/support/views/manage_user.py:35
 #: lms/templates/tracking_log.html:6
 msgid "username"
 msgstr "kullanıcıadı"
 
-#: lms/djangoapps/support/views/manage_user.py:35
+#: lms/djangoapps/support/views/manage_user.py:36
 msgid "user_support_url"
 msgstr "kullanıcı_destek_url"
 
-#: lms/djangoapps/support/views/manage_user.py:36
+#: lms/djangoapps/support/views/manage_user.py:37
 msgid "user_detail_url"
 msgstr "kullanıcı_detay_url"
 
-#: lms/djangoapps/support/views/manage_user.py:61
-#: lms/djangoapps/support/views/manage_user.py:87
+#: lms/djangoapps/support/views/manage_user.py:62
+#: lms/djangoapps/support/views/manage_user.py:90
 msgid "Usable"
 msgstr "Kullanılabilir"
 
-#: lms/djangoapps/support/views/manage_user.py:61
-#: lms/djangoapps/support/views/manage_user.py:90
+#: lms/djangoapps/support/views/manage_user.py:62
+#: lms/djangoapps/support/views/manage_user.py:93
 msgid "Unusable"
 msgstr "Kullanılamaz"
 
-#: lms/djangoapps/support/views/manage_user.py:88
+#: lms/djangoapps/support/views/manage_user.py:91
 msgid "User Enabled Successfully"
 msgstr "Kullanıcı Başarıyla Etkinleştirildi"
 
-#: lms/djangoapps/support/views/manage_user.py:91
+#: lms/djangoapps/support/views/manage_user.py:94
 msgid "User Disabled Successfully"
 msgstr "Kullanıcı Başarıyla Devre Dışı Bırakıldı"
 
@@ -6378,11 +6480,11 @@ msgstr "Kullanıcı turunu gösterme"
 msgid "Your {platform_name} ID verification was approved!"
 msgstr "{platform_name} platformu kimlik doğrulamanız onaylandı!"
 
-#: lms/djangoapps/verify_student/models.py:1093
+#: lms/djangoapps/verify_student/models.py:1097
 msgid "The course for which this deadline applies"
 msgstr "Bu son tarihin uygulandığı ders"
 
-#: lms/djangoapps/verify_student/models.py:1098
+#: lms/djangoapps/verify_student/models.py:1102
 msgid ""
 "The datetime after which users are no longer allowed to submit photos for "
 "verification."
@@ -6451,7 +6553,7 @@ msgstr "Resim verisi desteklenmeyen bir biçimde."
 msgid "Image data is not valid."
 msgstr "Resim verisi geçerli değil."
 
-#: lms/djangoapps/verify_student/views.py:1135
+#: lms/djangoapps/verify_student/views.py:1136
 #, python-brace-format
 msgid "Your {platform_name} Verification Has Been Denied"
 msgstr "{platform_name} Platformu Doğrulamanız Reddedildi"
@@ -7120,7 +7222,7 @@ msgid "Allow"
 msgstr "İzin ver"
 
 #: lms/templates/oauth2_provider/authorize.html:54
-#: openedx/core/djangoapps/content_staging/data.py:23
+#: openedx/core/djangoapps/content_staging/data.py:25
 #: lms/templates/ccx/schedule.html:78
 msgid "Error"
 msgstr "Hata"
@@ -7333,7 +7435,7 @@ msgstr "Maddeyi sil"
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/delete.html:9
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:35
 #: wiki/templates/wiki/delete.html:7 cms/templates/component.html:32
-#: cms/templates/studio_xblock_wrapper.html:202
+#: cms/templates/studio_xblock_wrapper.html:214
 msgid "Delete"
 msgstr "Sil"
 
@@ -7373,7 +7475,7 @@ msgstr "Bir yazıyı silmek üzeresiniz. Lütfen onaylayın."
 #: lms/templates/wiki/edit.html:4 wiki/templates/wiki/edit.html:4
 #: wiki/templates/wiki/includes/article_menu.html:34
 #: cms/templates/component.html:13 cms/templates/container.html:201
-#: cms/templates/studio_xblock_wrapper.html:157
+#: cms/templates/studio_xblock_wrapper.html:169
 #: lms/templates/wiki/includes/article_menu.html:22
 msgid "Edit"
 msgstr "Düzenle"
@@ -7670,10 +7772,8 @@ msgstr ""
 #: lms/templates/wiki/plugins/attachments/index.html:39
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:117
 #: lms/templates/api_admin/catalogs/search.html:23
-#: lms/templates/courseware/courses.html:44
-#: lms/templates/courseware/courseware.html:189
-#: lms/templates/dashboard.html:286 lms/templates/edxnotes/edxnotes.html:39
-#: lms/templates/index.html:30
+#: lms/templates/courseware/courses.html:44 lms/templates/dashboard.html:286
+#: lms/templates/edxnotes/edxnotes.html:39 lms/templates/index.html:30
 #: lms/templates/ux/reference/bootstrap/course-skeleton.html:47
 #: themes/stanford-style/lms/templates/index.html:26
 msgid "Search"
@@ -7780,12 +7880,6 @@ msgstr "LMS Yönetimi"
 msgid "ACE Common"
 msgstr "ACE Common"
 
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:82
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:67
-#, python-format
-msgid "Go to %(platform_name)s Home Page"
-msgstr "%(platform_name)s Ana Sayfasına Git"
-
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:97
 #: cms/templates/index.html:335 cms/templates/index.html:337
 #: lms/templates/courseware/courses.html:33
@@ -7801,53 +7895,15 @@ msgstr "Dersler"
 msgid "My Account"
 msgstr "Hesabım"
 
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:156
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:100
-#, python-format
-msgid "%(platform_name)s on LinkedIn"
-msgstr "LinkedIn'de %(platform_name)s"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:164
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:108
-#, python-format
-msgid "%(platform_name)s on Twitter"
-msgstr "Twitter'da %(platform_name)s"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:172
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:116
-#, python-format
-msgid "%(platform_name)s on Facebook"
-msgstr "Facebook'ta %(platform_name)s"
-
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:180
 #: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:124
 #, python-format
 msgid "%(platform_name)s on Google Plus"
 msgstr "Google Plus'da %(platform_name)s"
 
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:188
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:132
-#, python-format
-msgid "%(platform_name)s on Reddit"
-msgstr "Reddit'de %(platform_name)s"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:202
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:146
-msgid "Download the iOS app on the Apple Store"
-msgstr "Apple Mağazası'ndan iOS uygulamasını indir"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:209
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:153
-msgid "Download the Android app on the Google Play Store"
-msgstr "Google Play Mağazası'ndan Android uygulamasını indir"
-
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:233
 msgid "Our mailing address is:"
 msgstr "E-posta adresimiz şöyle: "
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:240
-msgid "Unsubscribe from these emails."
-msgstr "Bu e-postaların aboneliğinden ayrıl."
 
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_head.html:7
 #, python-format
@@ -7956,7 +8012,6 @@ msgstr "'%s' geçerli bir hedef değil."
 #: openedx/core/djangoapps/bookmarks/apps.py:18
 #: openedx/features/course_bookmarks/plugins.py:39
 #: openedx/features/course_bookmarks/views/course_bookmarks.py:93
-#: lms/templates/courseware/courseware.html:179
 #: openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html:43
 #: openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html:50
 msgid "Bookmarks"
@@ -8158,11 +8213,11 @@ msgstr ""
 "filtrelerinde daha fazla ders ve kütüphanenin temsil edilmesine olanak "
 "tanır."
 
-#: openedx/core/djangoapps/content_libraries/api/blocks.py:265
+#: openedx/core/djangoapps/content_libraries/api/blocks.py:268
 msgid "Library cannot have more than {} Components"
 msgstr "Kitaplık en fazla {} Bileşene sahip olabilir"
 
-#: openedx/core/djangoapps/content_libraries/api/libraries.py:508
+#: openedx/core/djangoapps/content_libraries/api/libraries.py:510
 msgid "Cannot change or remove the access level for the only admin."
 msgstr "Tek yönetici için erişim düzeyi değiştirilemez veya kaldırılamaz."
 
@@ -8321,7 +8376,7 @@ msgstr "Bu e-posta adresine sahip bir kullanıcıyı bulamadık."
 msgid "This user already has access to this library."
 msgstr "Bu kullanıcının bu kütüphaneye zaten erişimi var."
 
-#: openedx/core/djangoapps/content_staging/data.py:17
+#: openedx/core/djangoapps/content_staging/data.py:19
 #: cms/templates/certificates.html:82 cms/templates/container.html:232
 #: cms/templates/container_chromeless.html:159
 #: cms/templates/course_outline.html:293
@@ -8335,15 +8390,15 @@ msgstr "Bu kullanıcının bu kütüphaneye zaten erişimi var."
 msgid "Loading"
 msgstr "Yükleniyor"
 
-#: openedx/core/djangoapps/content_staging/data.py:21
+#: openedx/core/djangoapps/content_staging/data.py:23
 msgid "Expired"
 msgstr "Sona Erdi"
 
-#: openedx/core/djangoapps/content_staging/models.py:42
+#: openedx/core/djangoapps/content_staging/models.py:43
 msgid "Staged Content"
 msgstr "Aşamalı İçerik"
 
-#: openedx/core/djangoapps/content_staging/models.py:54
+#: openedx/core/djangoapps/content_staging/models.py:55
 msgid ""
 "\n"
 "            What type of content is staged. Only OLX content is supported, and\n"
@@ -8357,16 +8412,16 @@ msgstr ""
 "            örn: bir video gösteriliyorsa \"video\" veya bir ünite için \"vertical\".\n"
 "        "
 
-#: openedx/core/djangoapps/content_staging/models.py:71
+#: openedx/core/djangoapps/content_staging/models.py:72
 msgid "Content tags applied to these blocks"
 msgstr "Bu bloklara uygulanan içerik etiketleri"
 
-#: openedx/core/djangoapps/content_staging/models.py:115
+#: openedx/core/djangoapps/content_staging/models.py:116
 msgid "Original usage key/ID of the thing that is in the clipboard."
 msgstr "Panodaki şeyin özgün kullanım anahtarı/kimliği."
 
 #: openedx/core/djangoapps/content_tagging/models/base.py:24
-#: wiki/models/article.py:32
+#: wiki/models/article.py:34
 msgid "owner"
 msgstr "sahip"
 
@@ -8394,7 +8449,7 @@ msgstr "Öntanımlı Grup"
 msgid "You cannot create two cohorts with the same name"
 msgstr "Aynı isimle iki kohort oluşturamazsınız"
 
-#: openedx/core/djangoapps/course_groups/cohorts.py:549
+#: openedx/core/djangoapps/course_groups/cohorts.py:553
 msgid ""
 "There must be one cohort to which students can automatically be assigned."
 msgstr "Öğrencilerin otomatik olarak atanabildiği bir tane kohort olmalıdır."
@@ -8463,17 +8518,17 @@ msgstr ""
 "Studio'da Kimlik Doğrulama Servisi kimlik bilgilerinin yazılmasını "
 "etkinleştirin."
 
-#: openedx/core/djangoapps/credit/email_utils.py:91
+#: openedx/core/djangoapps/credit/email_utils.py:92
 msgid "Course Credit Eligibility"
 msgstr "Ders Kredisi Uygunluğu"
 
-#: openedx/core/djangoapps/credit/email_utils.py:94
+#: openedx/core/djangoapps/credit/email_utils.py:95
 #, python-brace-format
 msgid "You are eligible for credit from {providers_string}"
 msgstr "{providers_string} sağlayıcısından kredi almaya uygunsunuz"
 
 #. Translators: The join of two university names (e.g., Harvard and MIT).
-#: openedx/core/djangoapps/credit/email_utils.py:276
+#: openedx/core/djangoapps/credit/email_utils.py:295
 #, python-brace-format
 msgid "{first_provider} and {second_provider}"
 msgstr "{first_provider} ve {second_provider}"
@@ -8481,7 +8536,7 @@ msgstr "{first_provider} ve {second_provider}"
 #. Translators: The join of three or more university names. The first of these
 #. formatting strings
 #. represents a comma-separated list of names (e.g., MIT, Harvard, Dartmouth).
-#: openedx/core/djangoapps/credit/email_utils.py:283
+#: openedx/core/djangoapps/credit/email_utils.py:302
 #, python-brace-format
 msgid "{first_providers}, and {last_provider}"
 msgstr "{first_providers}, ve {last_provider}"
@@ -8920,7 +8975,7 @@ msgstr ""
 msgid "<{p}><{strong}>{course_update_content}</{strong}></{p}>"
 msgstr "<{p}><{strong}>{course_update_content}</{strong}></{p}>"
 
-#: openedx/core/djangoapps/notifications/base_notification.py:238
+#: openedx/core/djangoapps/notifications/base_notification.py:256
 msgid ""
 "Notifications for responses and comments on your posts, and the ones you’re "
 "following, including endorsements to your responses and on your posts."
@@ -8929,13 +8984,55 @@ msgstr ""
 "gönderileriniz ve takip ettiklerinizle ilgili yanıtlar ve yorumlar için "
 "bildirimler."
 
-#: openedx/core/djangoapps/notifications/base_notification.py:248
+#: openedx/core/djangoapps/notifications/base_notification.py:266
 msgid "Notifications for new announcements and updates from the course team."
 msgstr "Ders ekibinden yeni duyurular ve güncellemeler için bildirimler."
 
-#: openedx/core/djangoapps/notifications/base_notification.py:257
+#: openedx/core/djangoapps/notifications/base_notification.py:275
 msgid "Notifications for submission grading."
 msgstr "Gönderim notlandırma bildirimleri."
+
+#: openedx/core/djangoapps/notifications/email/tasks.py:144
+msgid "New Course Update"
+msgstr "Yeni Ders Güncellemesi"
+
+#: openedx/core/djangoapps/notifications/email/tasks.py:152
+msgid ""
+"You are receiving this email because you are enrolled in the edX course "
+msgstr "Bu e-postayı edX dersine kayıtlı olduğunuz için alıyorsunuz "
+
+#: openedx/core/djangoapps/notifications/email/utils.py:136
+msgid "Total Notifications"
+msgstr "Toplam Bildirimler"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:212
+msgid "Today"
+msgstr "Bugün"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:441
+#: openedx/features/course_experience/plugins.py:34
+#: cms/templates/widgets/header.html:115 cms/templates/widgets/header.html:120
+#: lms/templates/api_admin/terms_of_service.html:66
+#: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html:18
+#: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html:25
+msgid "Updates"
+msgstr "Güncellemeler"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:442
+msgid "Grades"
+msgstr "Notlar"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:463
+msgid "discussion"
+msgstr "tartışma"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:464
+msgid "update"
+msgstr "güncelleme"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:465
+msgid "assessment"
+msgstr "değerlendirme"
 
 #: openedx/core/djangoapps/notifications/email_notifications.py:16
 msgid "Daily"
@@ -8955,6 +9052,61 @@ msgstr "Hemen"
 msgid "Never"
 msgstr "Asla"
 
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:15
+msgid "View all"
+msgstr "Tümünü görüntüle"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:50
+#: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:27
+#: wiki/templates/wiki/includes/article_menu.html:49
+#: lms/templates/wiki/includes/article_menu.html:13
+msgid "View"
+msgstr "Görüntüle"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:63
+msgid "more"
+msgstr "daha fazlası"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:38
+msgid ""
+"You are receiving this email because you have subscribed to email digest"
+msgstr "Bu e-postayı, e-posta özetine abone olduğunuz için alıyorsunuz"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:43
+msgid "Notification Settings"
+msgstr "Bildirim Ayarları"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:46
+msgid "Unsubscribe from email digest for learning activity"
+msgstr "Öğrenme etkinliği için e-posta özeti aboneliğini iptal et"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:12
+#: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:8
+#: lms/templates/bulk_email/confirm_unsubscribe.html:11
+#: lms/templates/bulk_email/confirm_unsubscribe.html:17
+#: lms/templates/bulk_email/unsubscribe_success.html:12
+#: lms/templates/bulk_email/unsubscribe_success.html:18
+msgid "Unsubscribe"
+msgstr "Abonelik iptali"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:25
+msgid "Weekly Notifications Digest"
+msgstr "Haftalık Bildirim Özeti"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:27
+msgid "Daily Notifications Digest"
+msgstr "Günlük Bildirim Özeti"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/body.txt:4
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/subject.txt:4
+msgid "Weekly Notifications Digest for the Week of"
+msgstr "Haftalık Bildirim Özeti - Hafta"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/body.txt:6
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/subject.txt:6
+msgid "Daily Notifications Digest for"
+msgstr "Günlük Bildirim Özeti - Gün"
+
 #: openedx/core/djangoapps/notifications/templates/notifications/email_digest_preference_update.html:5
 msgid "Email Digest Preferences Updated"
 msgstr "E-posta Özeti Tercihleri Güncellendi"
@@ -8966,27 +9118,23 @@ msgstr ""
 "Öğrenme etkinliği için e-posta özetinden aboneliğinizi başarıyla iptal "
 "ettiniz"
 
-#: openedx/core/djangoapps/notifications/views.py:220
-msgid "The notification preference config version is not up to date."
-msgstr "Bildirim tercihi yapılandırma sürümü güncel değil."
-
-#: openedx/core/djangoapps/notifications/views.py:380
+#: openedx/core/djangoapps/notifications/views.py:174
 msgid "Invalid app name."
 msgstr "Geçersiz uygulama adı."
 
-#: openedx/core/djangoapps/notifications/views.py:390
+#: openedx/core/djangoapps/notifications/views.py:184
 msgid "Notifications marked as seen."
 msgstr "Bildirimler görüldü olarak işaretlendi."
 
-#: openedx/core/djangoapps/notifications/views.py:429
+#: openedx/core/djangoapps/notifications/views.py:223
 msgid "Notification marked read."
 msgstr "Bildirim okundu olarak işaretlendi."
 
-#: openedx/core/djangoapps/notifications/views.py:441
+#: openedx/core/djangoapps/notifications/views.py:235
 msgid "Notifications marked read."
 msgstr "Bildirimler okundu olarak işaretlendi."
 
-#: openedx/core/djangoapps/notifications/views.py:443
+#: openedx/core/djangoapps/notifications/views.py:237
 msgid "Invalid app_name or notification_id."
 msgstr "Geçersiz uyg_adı ya da bildirim_id."
 
@@ -9165,37 +9313,33 @@ msgstr "Takvim"
 msgid " By %(filter_title)s "
 msgstr "%(filter_title)s İle"
 
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:7
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:9
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/instructorledcourseupdate/email/body.html:7
 #, python-format
 msgid "Welcome to week %(week_num)s of %(course_name)s!"
 msgstr "%(course_name)s dersinin %(week_num)s. haftasına hoş geldiniz!"
 
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:18
-#, python-brace-format
-msgid ""
-"We hope you're enjoying {start_strong}{course_name}{end_strong}! We want to "
-"let you know what you can look forward to in week {week_num}:"
-msgstr ""
-"{start_strong}{course_name}{end_strong} dersinden keyif aldığınızı umut "
-"ediyoruz! {week_num}. hafta içinde neler bekleyebileceğinizi size bildirmek "
-"istiyoruz:"
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:36
+msgid "Welcome to edX. It’s time for your next career move"
+msgstr "edX'e hoş geldiniz. Bir sonraki kariyer hamlenizin zamanı geldi"
 
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:31
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:13
-msgid ""
-"With self-paced courses, you learn on your own schedule. We encourage you to"
-" spend time with the course each week. Your focused attention will pay off "
-"in the end!"
-msgstr ""
-"Kendi hızınızda ilerleyebileceğiniz derslerle kendi programınıza göre "
-"öğrenirsiniz. Her hafta derste zaman geçirmenizi öneririz. Odaklanmış "
-"dikkatiniz sonunda karşılığını alacaktır!"
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:40
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/instructorledcourseupdate/email/body.html:39
-msgid "Resume your course now"
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:62
+msgid "Resume your course "
 msgstr "Dersinize devam edin"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:82
+msgid "Your focused attention will pay off in the end!"
+msgstr "Odaklanmanızın karşılığını elbette alacaksınız!"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:84
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:101
+msgid ""
+"With self-paced courses, you learn on your own schedule. It’s a good idea to"
+" spend time with the course each week and check in with your goals often."
+msgstr ""
+"Kendi hızınızda ilerleyen derslerle kendi programınıza göre öğrenirsiniz. "
+"Her hafta derse vakit ayırmak ve hedeflerinizi sık sık kontrol etmek, iyi "
+"bir yöntemdir."
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:4
 #, python-format
@@ -9205,6 +9349,16 @@ msgid ""
 msgstr ""
 "%(course_name)s dersinden keyif aldığınızı umut ediyoruz! %(week_num)s. "
 "hafta içinde neler bekleyebileceğinizi size bildirmek istiyoruz:"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:13
+msgid ""
+"With self-paced courses, you learn on your own schedule. We encourage you to"
+" spend time with the course each week. Your focused attention will pay off "
+"in the end!"
+msgstr ""
+"Kendi hızınızda ilerleyebileceğiniz derslerle kendi programınıza göre "
+"öğrenirsiniz. Her hafta derste zaman geçirmenizi öneririz. Odaklanmış "
+"dikkatiniz sonunda karşılığını alacaktır!"
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/subject.txt:4
 #, python-format
@@ -9229,6 +9383,10 @@ msgid ""
 msgstr ""
 "Her hafta derste zaman geçirmenizi öneririz. Odaklanmış dikkatiniz sonunda "
 "karşılığını alacaktır!"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/instructorledcourseupdate/email/body.html:39
+msgid "Resume your course now"
+msgstr "Dersinize devam edin"
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/instructorledcourseupdate/email/body.txt:4
 #, python-format
@@ -9657,7 +9815,7 @@ msgstr ""
 " emin olun. Bağlantıyı {platform_name} profilinizden kaldırmak için bu alanı"
 " boş bırakın."
 
-#: openedx/core/djangoapps/user_api/accounts/views.py:644
+#: openedx/core/djangoapps/user_api/accounts/views.py:637
 msgid ""
 "This account has been temporarily locked due to excessive login failures. "
 "Try again later."
@@ -9665,7 +9823,7 @@ msgstr ""
 "Bu hesap çok sayıda ardışık giriş hatası yapıldığından geçici olarak "
 "kilitlidir. Bir süre sonra tekrar deneyin."
 
-#: openedx/core/djangoapps/user_api/accounts/views.py:654
+#: openedx/core/djangoapps/user_api/accounts/views.py:647
 #: openedx/core/djangoapps/user_authn/views/login.py:311
 #: lms/templates/provider_login.html:43
 msgid "Email or password is incorrect."
@@ -9686,13 +9844,13 @@ msgid "Success"
 msgstr "Başarı"
 
 #: openedx/core/djangoapps/user_api/admin.py:118
-#: cms/templates/studio_xblock_wrapper.html:162
-#: cms/templates/studio_xblock_wrapper.html:164
+#: cms/templates/studio_xblock_wrapper.html:174
+#: cms/templates/studio_xblock_wrapper.html:176
 #: lms/templates/staff_problem_info.html:66
 msgid "Actions"
 msgstr "Eylemler"
 
-#: openedx/core/djangoapps/user_api/models.py:437
+#: openedx/core/djangoapps/user_api/models.py:444
 msgid ""
 "Comma separated file that have username and user_email of the users that "
 "needs to be retired"
@@ -9996,7 +10154,7 @@ msgid "Account modification not allowed."
 msgstr "Hesap düzenlemesine izin verilmiyor."
 
 #: openedx/core/djangoapps/user_authn/views/auto_auth.py:125
-#: openedx/core/djangoapps/user_authn/views/register.py:710
+#: openedx/core/djangoapps/user_authn/views/register.py:713
 msgid "Account creation not allowed."
 msgstr "Hesap oluşturmaya izin verilmiyor."
 
@@ -10615,14 +10773,6 @@ msgstr ""
 msgid "Deadlines successfully reset."
 msgstr "Bitiş tarihleri başarıyla sıfırlandı."
 
-#: openedx/features/course_experience/plugins.py:34
-#: cms/templates/widgets/header.html:115 cms/templates/widgets/header.html:120
-#: lms/templates/api_admin/terms_of_service.html:66
-#: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html:18
-#: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html:25
-msgid "Updates"
-msgstr "Güncellemeler"
-
 #: openedx/features/discounts/admin.py:22
 msgid ""
 "These define the context to disable lms-controlled discounts on. If no "
@@ -10821,8 +10971,8 @@ msgstr "Bilgi notu için XML verisi"
 
 #: xmodule/annotatable_block.py:70 xmodule/capa_block.py:179
 #: xmodule/conditional_block.py:89 xmodule/discussion_block.py:50
-#: xmodule/html_block.py:57 xmodule/html_block.py:368
-#: xmodule/html_block.py:394 xmodule/item_bank_block.py:455
+#: xmodule/html_block.py:57 xmodule/html_block.py:382
+#: xmodule/html_block.py:408 xmodule/item_bank_block.py:455
 #: xmodule/library_content_block.py:78 xmodule/library_root_xblock.py:30
 #: xmodule/poll_block.py:52 xmodule/unit_block.py:39
 #: xmodule/video_block/video_xfields.py:20 xmodule/word_cloud_block.py:64
@@ -11154,43 +11304,43 @@ msgstr "hata"
 msgid "Custom Evaluated Script"
 msgstr "Özel Değerlendirilmiş Senaryo"
 
-#: xmodule/capa/responsetypes.py:2184
+#: xmodule/capa/responsetypes.py:2187
 #, python-brace-format
 msgid "error getting student answer from {student_answers}"
 msgstr "{student_answers}'dan öğrenci cevabı alırken hata"
 
-#: xmodule/capa/responsetypes.py:2208
+#: xmodule/capa/responsetypes.py:2211
 msgid "No answer entered!"
 msgstr "Hiç cevap girilmedi!"
 
-#: xmodule/capa/responsetypes.py:2432
+#: xmodule/capa/responsetypes.py:2438
 msgid "CustomResponse: check function returned an invalid dictionary!"
 msgstr "ÖzelYanıt: kontrol fonksiyonu geçersiz sözlük döndü!"
 
-#: xmodule/capa/responsetypes.py:2525
+#: xmodule/capa/responsetypes.py:2531
 msgid "Symbolic Math Input"
 msgstr "Sembolik Matematiksel Girdi"
 
 #. Translators: 'SymbolicResponse' is a problem type and should not be
 #. translated.
-#: xmodule/capa/responsetypes.py:2556
+#: xmodule/capa/responsetypes.py:2562
 #, python-brace-format
 msgid "An error occurred with SymbolicResponse. The error was: {error_msg}"
 msgstr "SymbolicResponse ile oluşan bir hata. Hata şöyleydi: {error_msg}"
 
-#: xmodule/capa/responsetypes.py:2594
+#: xmodule/capa/responsetypes.py:2600
 msgid "Code Input"
 msgstr "Kod Girişi"
 
-#: xmodule/capa/responsetypes.py:2652
+#: xmodule/capa/responsetypes.py:2658
 msgid "No answer provided."
 msgstr "Cevap verilmedi."
 
-#: xmodule/capa/responsetypes.py:2671
+#: xmodule/capa/responsetypes.py:2677
 msgid "Error: No grader has been set up for this problem."
 msgstr "Hata: Bu problem için herhangi bir puanlayıcı atanmadı."
 
-#: xmodule/capa/responsetypes.py:2732
+#: xmodule/capa/responsetypes.py:2738
 #, python-brace-format
 msgid ""
 "Unable to deliver your submission to grader (Reason: {error_msg}). Please "
@@ -11200,20 +11350,20 @@ msgstr ""
 "tekrar deneyin."
 
 #. Translators: 'grader' refers to the edX automatic code grader.
-#: xmodule/capa/responsetypes.py:2755
+#: xmodule/capa/responsetypes.py:2761
 msgid "Invalid grader reply. Please contact the course staff."
 msgstr ""
 "Geçersiz notlandırıcı yanıtı. Lütfen ders personeliyle iletişime geçiniz."
 
-#: xmodule/capa/responsetypes.py:2868
+#: xmodule/capa/responsetypes.py:2874
 msgid "External Grader"
 msgstr "Harici Notlayıcı"
 
-#: xmodule/capa/responsetypes.py:3026
+#: xmodule/capa/responsetypes.py:3032
 msgid "Math Expression Input"
 msgstr "Matematiksel İfade Girdisi"
 
-#: xmodule/capa/responsetypes.py:3125
+#: xmodule/capa/responsetypes.py:3131
 #, python-brace-format
 msgid ""
 "Factorial function not permitted in answer for this problem. Provided answer"
@@ -11222,61 +11372,61 @@ msgstr ""
 "Bu problemin sonucu için faktöriyel fonksiyonunun kullanımına izin "
 "verilmedi. Sağlanan cevap: {bad_input}"
 
-#: xmodule/capa/responsetypes.py:3132
+#: xmodule/capa/responsetypes.py:3138
 #, python-brace-format
 msgid "Invalid input: Could not parse '{bad_input}' as a formula."
 msgstr "Geçersiz giriş: '{bad_input}' formül olarak okunamadı."
 
-#: xmodule/capa/responsetypes.py:3140
+#: xmodule/capa/responsetypes.py:3146
 #, python-brace-format
 msgid "Invalid input: Could not parse '{bad_input}' as a formula"
 msgstr "Geçersiz giriş: '{bad_input}' formül olarak okunamadı"
 
-#: xmodule/capa/responsetypes.py:3247
+#: xmodule/capa/responsetypes.py:3253
 msgid "Circuit Schematic Builder"
 msgstr "Devre Şeması Oluşturucusu"
 
 #. Translators: 'SchematicResponse' is a problem type and should not be
 #. translated.
-#: xmodule/capa/responsetypes.py:3284
+#: xmodule/capa/responsetypes.py:3293
 #, python-brace-format
 msgid "Error in evaluating SchematicResponse. The error was: {error_msg}"
 msgstr ""
 "SchematicResponse değerlendirmesinde oluşan hata. Hata şöyleydi: {error_msg}"
 
-#: xmodule/capa/responsetypes.py:3325
+#: xmodule/capa/responsetypes.py:3334
 msgid "Image Mapped Input"
 msgstr "Eşlenmiş Görüntü Girdisi"
 
-#: xmodule/capa/responsetypes.py:3350
+#: xmodule/capa/responsetypes.py:3359
 #, python-brace-format
 msgid "error grading {image_input_id} (input={user_input})"
 msgstr "notlamada hata {image_input_id} (girdi={user_input})"
 
 #. Translators: {sr_coords} are the coordinates of a rectangle
-#: xmodule/capa/responsetypes.py:3371
+#: xmodule/capa/responsetypes.py:3380
 #, python-brace-format
 msgid "Error in problem specification! Cannot parse rectangle in {sr_coords}"
 msgstr "Problem belirlemede hata! {sr_coords} dikdörtgen ayrıştırılamıyor."
 
-#: xmodule/capa/responsetypes.py:3444
+#: xmodule/capa/responsetypes.py:3453
 msgid "Annotation Input"
 msgstr "Bilgi Notu Girdisi"
 
-#: xmodule/capa/responsetypes.py:3571
+#: xmodule/capa/responsetypes.py:3580
 msgid "Checkboxes With Text Input"
 msgstr "Metin Girişli Onay Kutucukları"
 
-#: xmodule/capa/responsetypes.py:3624
+#: xmodule/capa/responsetypes.py:3633
 #, python-brace-format
 msgid "Answer not provided for {input_type}"
 msgstr "{input_type} için cevap sağlanmadı."
 
-#: xmodule/capa/responsetypes.py:3870
+#: xmodule/capa/responsetypes.py:3879
 msgid "The Staff answer could not be interpreted as a number."
 msgstr "Personelin cevabı bir sayı olarak algılanamadı."
 
-#: xmodule/capa/responsetypes.py:3884
+#: xmodule/capa/responsetypes.py:3893
 #, python-brace-format
 msgid "Could not interpret '{given_answer}' as a number."
 msgstr "'{given_answer}' bir sayı olarak algılanamadı."
@@ -11550,7 +11700,7 @@ msgid ""
 msgstr ""
 "LaTeX ve Word problemleri için kaynak kodu. Bu özellik tam desteklenmiyor."
 
-#: xmodule/capa_block.py:330 xmodule/html_block.py:69
+#: xmodule/capa_block.py:330 xmodule/html_block.py:76
 msgid "Enable LaTeX templates?"
 msgstr "LaTeX şablonlarını etkinleştir?"
 
@@ -12912,24 +13062,24 @@ msgstr "Oluşturuldu"
 
 #. Translators: "Homework 1 - Unreleased - 0% (?/?)" The section has not been
 #. released for viewing.
-#: xmodule/graders.py:402
+#: xmodule/graders.py:403
 #, python-brace-format
 msgid "{section_type} {index} Unreleased - 0% (?/?)"
 msgstr "{section_type} {index} Yayınlanmamış - %0 (?/?)"
 
-#: xmodule/graders.py:415
+#: xmodule/graders.py:417
 #, python-brace-format
 msgid "The lowest {drop_count} {section_type} scores are dropped."
 msgstr "En düşük {drop_count} {section_type} not göz ardı edildi."
 
 #. Translators: "Homework Average = 0%"
-#: xmodule/graders.py:433
+#: xmodule/graders.py:436
 #, python-brace-format
 msgid "{section_type} Average = {percent:.2%}"
 msgstr "{section_type} Ortalama = {percent:.2%}"
 
 #. Translators: Avg is short for Average
-#: xmodule/graders.py:438
+#: xmodule/graders.py:441
 #, python-brace-format
 msgid "{short_label} Avg"
 msgstr "{short_label} Ort."
@@ -12943,17 +13093,21 @@ msgstr ""
 "HATA: \"{block_type}\" bilinmeyen bir bileşen türü. Bu bileşen LMS'de "
 "gizlenecek."
 
-#: xmodule/html_block.py:63 xmodule/html_block.py:373
-#: xmodule/html_block.py:433
+#: xmodule/html_block.py:63 xmodule/html_block.py:387
+#: xmodule/html_block.py:447
 msgid "Html contents to display for this block"
 msgstr "Bu block için gösterilecek Html içerikleri"
 
 #: xmodule/html_block.py:65
+msgid "Upstream html contents to store upstream data field"
+msgstr "Yukarı akış veri alanını depolamak için yukarı akış HTML içerikleri"
+
+#: xmodule/html_block.py:72
 msgid "Source code for LaTeX documents. This feature is not well-supported."
 msgstr ""
 "LaTeX belgeleri için kaynak kodu. Bu özellik tam olarak desteklenmemektedir."
 
-#: xmodule/html_block.py:75
+#: xmodule/html_block.py:82
 msgid ""
 "Select Visual to enter content and have the editor automatically create the "
 "HTML. Select Raw to edit HTML directly. If you change this setting, you must"
@@ -12963,23 +13117,23 @@ msgstr ""
 "için Görsel'i seçin. HTML'yi doğrudan düzenlemek için Ham'ı seçin. Bu ayarı "
 "değiştirirseniz bileşeni kaydetmeli ve düzenlemek için yeniden açmalısınız. "
 
-#: xmodule/html_block.py:78
+#: xmodule/html_block.py:85
 msgid "Editor"
 msgstr "Editör"
 
-#: xmodule/html_block.py:81
+#: xmodule/html_block.py:88
 msgid "Visual"
 msgstr "Görsel"
 
-#: xmodule/html_block.py:82
+#: xmodule/html_block.py:89
 msgid "Raw"
 msgstr "Ham"
 
-#: xmodule/html_block.py:399
+#: xmodule/html_block.py:413
 msgid "Hide Page From Learners"
 msgstr "Sayfayı Öğrencilerden Gizle"
 
-#: xmodule/html_block.py:400
+#: xmodule/html_block.py:414
 msgid ""
 "If you select this option, only course team members with the Staff or Admin "
 "role see this page."
@@ -12987,11 +13141,11 @@ msgstr ""
 "Bu ayarı seçtiğinizde, sadece Personel ve Yönetici yetki grubundaki "
 "kullanıcılar bu sayfayı görebilecek."
 
-#: xmodule/html_block.py:410
+#: xmodule/html_block.py:424
 msgid "HTML for the additional pages"
 msgstr "Ek sayfalar için HTML"
 
-#: xmodule/html_block.py:428
+#: xmodule/html_block.py:442
 msgid "List of course update items"
 msgstr "Ders güncelleme öğelerinin listesi"
 
@@ -13791,7 +13945,7 @@ msgstr ""
 "Bu bölüm bir önkoşuldur. Ek içeriklerin kilidini açmak için bu bölümü "
 "tamamlamanız gerekiyor."
 
-#: xmodule/seq_block.py:984
+#: xmodule/seq_block.py:996
 msgid ""
 "A list summarizing what students should look forward to in this section."
 msgstr "Bu bölümde öğrencilerin neler göreceğine dair özet liste."
@@ -14400,7 +14554,7 @@ msgstr ""
 "{display_name} sadece kayıtlanmış öğrencilere görünür. Görmek için, bu derse"
 " giriş yapın ve derse kayıtlanın."
 
-#: wiki/admin.py:77 wiki/models/article.py:28
+#: wiki/admin.py:77 wiki/models/article.py:30
 msgid "created"
 msgstr "oluşturuldu"
 
@@ -14589,12 +14743,12 @@ msgstr "Filtrele"
 msgid "Settings for plugin"
 msgstr "Eklenti için ayarlar"
 
-#: wiki/models/article.py:23 wiki/models/pluginbase.py:158
+#: wiki/models/article.py:25 wiki/models/pluginbase.py:167
 #: wiki/plugins/attachments/models.py:20
 msgid "current revision"
 msgstr "güncel revizyon"
 
-#: wiki/models/article.py:25
+#: wiki/models/article.py:27
 msgid ""
 "The revision being displayed for this article. If you need to do a roll-"
 "back, simply change the value of this field."
@@ -14602,15 +14756,15 @@ msgstr ""
 "Bu madde için görüntülenen revizyon. Geri almak isterseniz, basitçe bu "
 "alanın değerini değiştirin."
 
-#: wiki/models/article.py:29
+#: wiki/models/article.py:31
 msgid "modified"
 msgstr "değiştirilmiş"
 
-#: wiki/models/article.py:30
+#: wiki/models/article.py:32
 msgid "Article properties last modified"
 msgstr "Madde özellikleri şu tarihte güncellendi"
 
-#: wiki/models/article.py:34
+#: wiki/models/article.py:36
 msgid ""
 "The owner of the article, usually the creator. The owner always has both "
 "read and write access."
@@ -14618,11 +14772,11 @@ msgstr ""
 "Bu maddenin sahibi, genellikle ilk oluşturan kişi. Eser sahibi aynı zamanda "
 "okuma ve yazma erişimine sahiptir."
 
-#: wiki/models/article.py:36
+#: wiki/models/article.py:38
 msgid "group"
 msgstr "grup"
 
-#: wiki/models/article.py:38
+#: wiki/models/article.py:40
 msgid ""
 "Like in a UNIX file system, permissions can be given to a user according to "
 "group membership. Groups are handled through the Django auth system."
@@ -14630,92 +14784,92 @@ msgstr ""
 "UNIX dosya sistemindeki gibi, izinler kullanıcıya grup üyeliğine göre "
 "verilebilir. Gruplar Django kimlik denetimi sistemiyle ayarlanır."
 
-#: wiki/models/article.py:40
+#: wiki/models/article.py:42
 msgid "group read access"
 msgstr "grup okuma erişimi"
 
-#: wiki/models/article.py:41
+#: wiki/models/article.py:43
 msgid "group write access"
 msgstr "grup yazma erişimi"
 
-#: wiki/models/article.py:42
+#: wiki/models/article.py:44
 msgid "others read access"
 msgstr "diğerlerinin okuma erişimi"
 
-#: wiki/models/article.py:43
+#: wiki/models/article.py:45
 msgid "others write access"
 msgstr "diğerlerinin yazma erişimi"
 
-#: wiki/models/article.py:173
+#: wiki/models/article.py:175
 #, python-format
 msgid "Article without content (%(id)d)"
 msgstr "İçeriksiz madde (%(id)d)"
 
-#: wiki/models/article.py:201
+#: wiki/models/article.py:205
 msgid "content type"
 msgstr "içerik çeşidi"
 
-#: wiki/models/article.py:203
+#: wiki/models/article.py:207
 msgid "object ID"
 msgstr "nesne ID"
 
-#: wiki/models/article.py:209
+#: wiki/models/article.py:213
 msgid "Article for object"
 msgstr "Nesne için madde"
 
-#: wiki/models/article.py:210
+#: wiki/models/article.py:214
 msgid "Articles for object"
 msgstr "Nesne için maddeler"
 
-#: wiki/models/article.py:219
+#: wiki/models/article.py:231
 msgid "revision number"
 msgstr "revizyon numarası"
 
-#: wiki/models/article.py:225
+#: wiki/models/article.py:237
 msgid "IP address"
 msgstr "IP adresi"
 
-#: wiki/models/article.py:232
+#: wiki/models/article.py:244
 msgid "user"
 msgstr "kullanıcı"
 
-#: wiki/models/article.py:246 wiki/templates/wiki/article.html:22
+#: wiki/models/article.py:258 wiki/templates/wiki/article.html:22
 #: wiki/templates/wiki/includes/revision_info.html:21
 msgid "locked"
 msgstr "kilitli"
 
-#: wiki/models/article.py:265 wiki/models/pluginbase.py:38
+#: wiki/models/article.py:283 wiki/models/pluginbase.py:40
 msgid "article"
 msgstr "madde"
 
-#: wiki/models/article.py:268
+#: wiki/models/article.py:286
 msgid "article contents"
 msgstr "madde içeriği"
 
-#: wiki/models/article.py:272
+#: wiki/models/article.py:290
 msgid "article title"
 msgstr "madde başlığı"
 
-#: wiki/models/article.py:273
+#: wiki/models/article.py:291
 msgid ""
 "Each revision contains a title field that must be filled out, even if the "
 "title has not changed"
 msgstr ""
 "Başlığı değişmese bile, her revizyon doldurulması gereken bir başlık içerir"
 
-#: wiki/models/pluginbase.py:74
+#: wiki/models/pluginbase.py:79
 msgid "original article"
 msgstr "orijinal madde"
 
-#: wiki/models/pluginbase.py:75
+#: wiki/models/pluginbase.py:80
 msgid "Permissions are inherited from this article"
 msgstr "Bu maddeden izinler miras alındı"
 
-#: wiki/models/pluginbase.py:133
+#: wiki/models/pluginbase.py:140
 msgid "A plugin was changed"
 msgstr "Bir eklenti değişmiş"
 
-#: wiki/models/pluginbase.py:160
+#: wiki/models/pluginbase.py:169
 msgid ""
 "The revision being displayed for this plugin.If you need to do a roll-back, "
 "simply change the value of this field."
@@ -14723,40 +14877,40 @@ msgstr ""
 "Bu eklenti için görüntülenen revizyon. Geri almak için, basitçe bu alandaki "
 "değeri değiştirin."
 
-#: wiki/models/urlpath.py:40
+#: wiki/models/urlpath.py:42
 msgid "Cache lookup value for articles"
 msgstr "Madde için önbellek gözatma değeri"
 
-#: wiki/models/urlpath.py:46
+#: wiki/models/urlpath.py:48
 msgid "slug"
 msgstr "URL"
 
-#: wiki/models/urlpath.py:136
+#: wiki/models/urlpath.py:138
 msgid "(root)"
 msgstr "(kök)"
 
-#: wiki/models/urlpath.py:146
+#: wiki/models/urlpath.py:148
 msgid "URL path"
 msgstr "URL yolu"
 
-#: wiki/models/urlpath.py:147
+#: wiki/models/urlpath.py:149
 msgid "URL paths"
 msgstr "URL yolları"
 
-#: wiki/models/urlpath.py:152
+#: wiki/models/urlpath.py:154
 msgid "Sorry but you cannot have a root article with a slug."
 msgstr "Özür dileriz ama kök maddenin kısaadı olamaz."
 
-#: wiki/models/urlpath.py:154
+#: wiki/models/urlpath.py:156
 msgid "A non-root note must always have a slug."
 msgstr "Kök olmayan not her zaman URL'ye sahip olmalı."
 
-#: wiki/models/urlpath.py:157
+#: wiki/models/urlpath.py:159
 #, python-format
 msgid "There is already a root node on %s"
 msgstr "%s üzerinde zaten bir kök düğümü var"
 
-#: wiki/models/urlpath.py:262
+#: wiki/models/urlpath.py:264
 msgid ""
 "Articles who lost their parents\n"
 "===============================\n"
@@ -14768,7 +14922,7 @@ msgstr ""
 "\n"
 "Bu maddenin çocuklarının ataları silinmiş. Bunlar için yeni bir yuva bulman gerekecek."
 
-#: wiki/models/urlpath.py:265
+#: wiki/models/urlpath.py:267
 msgid "Lost and found"
 msgstr "Kaybolmuş ve bulunmuş"
 
@@ -15502,11 +15656,6 @@ msgstr "Değişiklikler"
 msgid "View Source"
 msgstr "Kaynağı Göster"
 
-#: wiki/templates/wiki/includes/article_menu.html:49
-#: lms/templates/wiki/includes/article_menu.html:13
-msgid "View"
-msgstr "Görüntüle"
-
 #: wiki/templates/wiki/includes/breadcrumbs.html:16
 #: wiki/templates/wiki/includes/breadcrumbs.html:42
 msgid "Sub-articles for"
@@ -15860,7 +16009,7 @@ msgid "Tools"
 msgstr "Araçlar"
 
 #: cms/templates/component.html:17
-#: cms/templates/studio_xblock_wrapper.html:196
+#: cms/templates/studio_xblock_wrapper.html:208
 msgid "Duplicate"
 msgstr "Kopyasını Çıkar"
 
@@ -15869,7 +16018,7 @@ msgid "Duplicate this component"
 msgstr "Bu bileşenin kopyasını çıkarın"
 
 #: cms/templates/component.html:23 cms/templates/component.html:28
-#: cms/templates/studio_xblock_wrapper.html:177
+#: cms/templates/studio_xblock_wrapper.html:189
 msgid "Move"
 msgstr "Taşı"
 
@@ -15879,7 +16028,7 @@ msgstr "Bu bileşeni sil"
 
 #: cms/templates/component.html:39 cms/templates/edit-tabs.html:146
 #: cms/templates/edit-tabs.html:147
-#: cms/templates/studio_xblock_wrapper.html:211
+#: cms/templates/studio_xblock_wrapper.html:228
 msgid "Drag to reorder"
 msgstr "Tekrar düzenlemek için sürükle"
 
@@ -16069,7 +16218,7 @@ msgstr "Not: Boşluk veya özel karakter olmamalıdır."
 
 #: cms/templates/course-create-rerun.html:95 cms/templates/index.html:101
 #: cms/templates/settings.html:78
-#: lms/templates/courseware/course_about.html:164
+#: lms/templates/courseware/course_about.html:175
 msgid "Course Number"
 msgstr "Ders Numarası"
 
@@ -18759,7 +18908,7 @@ msgid "Add Instructor"
 msgstr "Eğitmen Ekle"
 
 #: cms/templates/settings.html:617
-#: lms/templates/courseware/course_about.html:239
+#: lms/templates/courseware/course_about.html:250
 msgid "Requirements"
 msgstr "Gereklilikler"
 
@@ -19027,57 +19176,71 @@ msgstr ""
 "her bir görevin öğrencinin notuna ne kadar katkıda bulunacağını "
 "belirleyebilirsiniz."
 
-#: cms/templates/studio_xblock_wrapper.html:75
+#: cms/templates/studio_xblock_wrapper.html:76
 msgid "Importing components"
 msgstr "Bileşenlerin içe aktarımı"
 
-#: cms/templates/studio_xblock_wrapper.html:99
-#: cms/templates/studio_xblock_wrapper.html:101
+#: cms/templates/studio_xblock_wrapper.html:100
+#: cms/templates/studio_xblock_wrapper.html:102
 msgid "Expand or Collapse"
 msgstr "Genişlet veya Daralt"
 
-#: cms/templates/studio_xblock_wrapper.html:109
+#: cms/templates/studio_xblock_wrapper.html:110
 msgid "Select this problem"
 msgstr "Bu problemi seçin"
 
-#: cms/templates/studio_xblock_wrapper.html:116
-#: cms/templates/studio_xblock_wrapper.html:119
+#: cms/templates/studio_xblock_wrapper.html:117
+#: cms/templates/studio_xblock_wrapper.html:120
 msgid "Sourced from a library - but the upstream link is broken/invalid."
 msgstr ""
 "Bir kütüphaneden alınmıştır - ancak upstream bağlantısı bozuk/geçersizdir."
 
-#: cms/templates/studio_xblock_wrapper.html:122
-#: cms/templates/studio_xblock_wrapper.html:125
+#: cms/templates/studio_xblock_wrapper.html:123
+msgid ""
+"Sourced from a library - but has been modified locally.Sourced from a "
+"library."
+msgstr ""
+"Bir kütüphaneden alınmış - ancak yerel olarak değiştirilmiş. Bir "
+"kütüphaneden alınmış."
+
+#: cms/templates/studio_xblock_wrapper.html:127
+msgid "Sourced from a library - but has been modified locally."
+msgstr "Bir kütüphaneden alındı - ancak yerel olarak değiştirildi."
+
+#: cms/templates/studio_xblock_wrapper.html:129
 msgid "Sourced from a library."
 msgstr "Bir kütüphaneden alınmıştır."
 
-#: cms/templates/studio_xblock_wrapper.html:143
+#: cms/templates/studio_xblock_wrapper.html:144
+#: cms/templates/studio_xblock_wrapper.html:146
+msgid "Edit Title"
+msgstr "Başlığı Düzenle"
+
+#: cms/templates/studio_xblock_wrapper.html:155
 msgid "Update available - click to sync"
 msgstr "Güncelleme mevcut - eşitlemek için tıklayın"
 
-#: cms/templates/studio_xblock_wrapper.html:146
+#: cms/templates/studio_xblock_wrapper.html:158
 msgid "Update available"
 msgstr "Güncelleme mevcut"
 
-#: cms/templates/studio_xblock_wrapper.html:172
+#: cms/templates/studio_xblock_wrapper.html:184
 msgid "Manage Access"
 msgstr "Erişimi Yönet"
 
-#: cms/templates/studio_xblock_wrapper.html:182
+#: cms/templates/studio_xblock_wrapper.html:194
 msgid "Manage Tags"
 msgstr "Etiketleri Yönet"
 
-#: cms/templates/studio_xblock_wrapper.html:191
+#: cms/templates/studio_xblock_wrapper.html:203
 msgid "Copy to Clipboard"
 msgstr "Panoya Kopyala"
 
-#: cms/templates/studio_xblock_wrapper.html:217
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html:169
-#: lms/templates/module-error.html:20
-msgid "Details"
-msgstr "Ayrıntılar"
+#: cms/templates/studio_xblock_wrapper.html:219
+msgid "Unlink from Library"
+msgstr "Kütüphaneden Bağlantıyı Kaldır"
 
-#: cms/templates/studio_xblock_wrapper.html:230
+#: cms/templates/studio_xblock_wrapper.html:239
 msgid "This block contains multiple components."
 msgstr "Bu blok çoklu bileşen içermektedir."
 
@@ -19775,7 +19938,7 @@ msgid ""
 msgstr "Forumda bakım yapılıyor. En kısa zamanda çalışır hale getireceğiz!"
 
 #: lms/templates/_gated_content.html:11 lms/templates/_gated_content.html:15
-#: lms/templates/seq_block.html:43 lms/templates/seq_block.html:110
+#: lms/templates/seq_block.html:60 lms/templates/seq_block.html:130
 msgid "Content Locked"
 msgstr "İçerik Kilitlendi"
 
@@ -19804,7 +19967,7 @@ msgstr "Rehberli Tartışma"
 msgid "Hide Annotations"
 msgstr "İpuçlarını Gizle"
 
-#: lms/templates/bookmark_button.html:13 lms/templates/seq_block.html:82
+#: lms/templates/bookmark_button.html:13 lms/templates/seq_block.html:99
 msgid "Bookmarked"
 msgstr "Yer imi kondu"
 
@@ -19872,7 +20035,6 @@ msgstr "Ders-yükleme hataları"
 msgid "Search Your Courses"
 msgstr "Derslerimde Ara"
 
-#: lms/templates/courseware/courseware.html:190
 #: lms/templates/dashboard.html:289
 msgid "Clear search"
 msgstr "Aramayı temizle"
@@ -19957,7 +20119,7 @@ msgstr "Yeni e-posta adresiyle bağlantılı bir hesap zaten mevcut."
 msgid "You should Register before trying to access the Unit"
 msgstr "Üniteye erişmeyi denemeden önce Kayıt olmalısınız"
 
-#: lms/templates/courseware/course_about.html:281
+#: lms/templates/courseware/course_about.html:292
 #: lms/templates/enroll_staff.html:34
 msgctxt "self"
 msgid "Enroll"
@@ -20224,6 +20386,11 @@ msgstr ""
 "Üzgünüz, bu modül geçici olarak devre dışı. Ekibimiz sorunu bir an önce "
 "çözmek için çalışıyor. "
 
+#: lms/templates/instructor/instructor_dashboard_2/certificates.html:169
+#: lms/templates/module-error.html:20
+msgid "Details"
+msgstr "Ayrıntılar"
+
 #: lms/templates/module-error.html:28
 msgid "Raw data:"
 msgstr "Ham veri:"
@@ -20371,7 +20538,6 @@ msgid "Enroll in this course"
 msgstr "Bu derse kaydol"
 
 #: lms/templates/courseware/courseware-chromeless.html:12
-#: lms/templates/courseware/courseware.html:28
 #: lms/templates/public_video_share_embed.html:18
 #: openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html:10
 #, python-brace-format
@@ -20413,31 +20579,31 @@ msgstr ""
 "İkincil e-posta adresiniz etkinleştirildi. Lütfen dersler için "
 "{link_start}ana paneli{link_end} ziyaret edin."
 
-#: lms/templates/seq_block.html:18
+#: lms/templates/seq_block.html:35
 msgid "Important!"
 msgstr "Önemli!"
 
 #. Translators: A button for showing the Previous Unit
-#: lms/templates/seq_block.html:32 lms/templates/seq_block.html:140
+#: lms/templates/seq_block.html:49 lms/templates/seq_block.html:160
 msgctxt "unit"
 msgid "Previous"
 msgstr "Önceki"
 
 #. Translators: A button for showing the Next Unit
-#: lms/templates/seq_block.html:36 lms/templates/seq_block.html:144
+#: lms/templates/seq_block.html:53 lms/templates/seq_block.html:164
 msgctxt "unit"
 msgid "Next"
 msgstr "Sonraki"
 
-#: lms/templates/seq_block.html:39
+#: lms/templates/seq_block.html:56
 msgid "Sequence"
 msgstr "Sıralı"
 
-#: lms/templates/seq_block.html:91
+#: lms/templates/seq_block.html:108
 msgid "New Unit"
 msgstr "Yeni Ünite"
 
-#: lms/templates/seq_block.html:97
+#: lms/templates/seq_block.html:114
 msgid "Paste as new unit"
 msgstr "Yeni ünite olarak yapıştır"
 
@@ -20789,41 +20955,41 @@ msgstr "İndirmeler ve altyazılar"
 msgid "Download video file"
 msgstr "Video dosyasını indir"
 
-#: lms/templates/video.html:74 lms/templates/video.html:81
+#: lms/templates/video.html:71 lms/templates/video.html:74
 msgid "Share this video"
 msgstr "Bu videoyu paylaş"
 
-#: lms/templates/video.html:110
+#: lms/templates/video.html:102
 #, python-brace-format
 msgid "Share on {site}"
 msgstr "{site} sitesinde paylaş"
 
-#: lms/templates/video.html:127
+#: lms/templates/video.html:111
 msgid "Copy"
 msgstr "Kopyala"
 
-#: lms/templates/video.html:138
+#: lms/templates/video.html:121
 msgid "Transcripts"
 msgstr "Altyazılar"
 
-#: lms/templates/video.html:144
+#: lms/templates/video.html:127
 #, python-brace-format
 msgid "Download {file}"
 msgstr "{file} dosyasını indir"
 
-#: lms/templates/video.html:150
+#: lms/templates/video.html:133
 msgid "Download transcript"
 msgstr "Altyazı indir"
 
-#: lms/templates/video.html:156
+#: lms/templates/video.html:139
 msgid "Handouts"
 msgstr "Kullanıcı notları"
 
-#: lms/templates/video.html:157
+#: lms/templates/video.html:140
 msgid "Download Handout"
 msgstr "Kullanıcı Notu İndir"
 
-#: lms/templates/video.html:170
+#: lms/templates/video.html:153
 msgid "How is the transcript quality ?"
 msgstr "Çeviri kalitesi nasıl?"
 
@@ -21594,13 +21760,6 @@ msgstr "Katalog Ara"
 msgid "Enter a username to view catalogs belonging to that user."
 msgstr "Bu kullanıcıya ait katalogları görmek için kullanıcı adını girin."
 
-#: lms/templates/bulk_email/confirm_unsubscribe.html:11
-#: lms/templates/bulk_email/confirm_unsubscribe.html:17
-#: lms/templates/bulk_email/unsubscribe_success.html:12
-#: lms/templates/bulk_email/unsubscribe_success.html:18
-msgid "Unsubscribe"
-msgstr "Abonelik iptali"
-
 #: lms/templates/bulk_email/confirm_unsubscribe.html:27
 #, python-brace-format
 msgid "confirm unsubscribe from {org} {course} emails."
@@ -22070,11 +22229,11 @@ msgstr "{platform_name} Ana Sayfa"
 msgid "Noted by"
 msgstr "Bildiren"
 
-#: lms/templates/certificates/_accomplishment-rendering.html:69
+#: lms/templates/certificates/_accomplishment-rendering.html:68
 msgid "Supported by the following organizations"
 msgstr "Aşağıdaki kuruluşlar tarafından desteklenmiştir"
 
-#: lms/templates/certificates/_accomplishment-rendering.html:96
+#: lms/templates/certificates/_accomplishment-rendering.html:95
 msgid "Awarded to:"
 msgstr "Ödüllendirilen:"
 
@@ -22275,78 +22434,53 @@ msgstr "Bu derse erişin"
 msgid "Get access to the course material, including videos and readings"
 msgstr "Videolar ve okumalar dahil olmak üzere ders materyallerine erişin"
 
-#: lms/templates/courseware/accordion.html:13
-#, python-brace-format
-msgid "{chapter} current chapter"
-msgstr "{chapter} şu anki bölüm"
-
-#: lms/templates/courseware/accordion.html:30
-#, python-brace-format
-msgid "{span_start}current section{span_end}"
-msgstr "{span_start}şu anki bölüm{span_end}"
-
-#: lms/templates/courseware/accordion.html:46
-#: lms/templates/courseware/progress.html:208
-#, python-brace-format
-msgid "due {date}"
-msgstr "teslim {date}"
-
-#: lms/templates/courseware/accordion.html:48
-#, python-brace-format
-msgid "{section_format} due {{date}}"
-msgstr "{section_format} son tarihi {{date}}"
-
-#: lms/templates/courseware/accordion.html:69
-msgid "This content is graded"
-msgstr "Bu içerik puanlandı"
-
-#: lms/templates/courseware/course_about.html:44
+#: lms/templates/courseware/course_about.html:55
 msgid "An error occurred. Please try again later."
 msgstr "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
 
-#: lms/templates/courseware/course_about.html:77
+#: lms/templates/courseware/course_about.html:88
 msgid "You are enrolled in this course"
 msgstr "Bu derse kaydoldunuz"
 
-#: lms/templates/courseware/course_about.html:80
-#: lms/templates/courseware/course_about.html:98
+#: lms/templates/courseware/course_about.html:91
+#: lms/templates/courseware/course_about.html:109
 #: lms/templates/dashboard/_dashboard_course_resume.html:21
 msgid "View Course"
 msgstr "Derse Gözat"
 
-#: lms/templates/courseware/course_about.html:89
+#: lms/templates/courseware/course_about.html:100
 msgid "Enrollment in this course is by invitation only"
 msgstr "Bu derse sadece davet ile kayıtlanılır"
 
-#: lms/templates/courseware/course_about.html:94
+#: lms/templates/courseware/course_about.html:105
 msgid "Enrollment is Closed"
 msgstr "Kayıtlanma Kapalıdır"
 
-#: lms/templates/courseware/course_about.html:113
+#: lms/templates/courseware/course_about.html:124
 msgid "Enroll Now"
 msgstr "Hemen Kaydol"
 
-#: lms/templates/courseware/course_about.html:145
+#: lms/templates/courseware/course_about.html:156
 msgid "View About Page in studio"
 msgstr "Hakkında Sayfasını Studio'da Göster"
 
-#: lms/templates/courseware/course_about.html:173
+#: lms/templates/courseware/course_about.html:184
 msgid "Classes Start"
 msgstr "Derslerin Başlangıcı"
 
-#: lms/templates/courseware/course_about.html:193
+#: lms/templates/courseware/course_about.html:204
 msgid "Classes End"
 msgstr "Derslerin Sonu"
 
-#: lms/templates/courseware/course_about.html:206
+#: lms/templates/courseware/course_about.html:217
 msgid "Estimated Effort"
 msgstr "Tahmini Çaba"
 
-#: lms/templates/courseware/course_about.html:223
+#: lms/templates/courseware/course_about.html:234
 msgid "Prerequisites"
 msgstr "Gereklilikler"
 
-#: lms/templates/courseware/course_about.html:227
+#: lms/templates/courseware/course_about.html:238
 #: lms/templates/dashboard/_dashboard_course_listing.html:425
 #, python-brace-format
 msgid ""
@@ -22356,11 +22490,11 @@ msgstr ""
 "Bu derse başlamadan önce {link_start}{prc_display}{link_end} dersini "
 "başarıyla tamamlamış olmanız gerekmektedir."
 
-#: lms/templates/courseware/course_about.html:251
+#: lms/templates/courseware/course_about.html:262
 msgid "Additional Resources"
 msgstr "Ek Kaynaklar"
 
-#: lms/templates/courseware/course_about.html:286
+#: lms/templates/courseware/course_about.html:297
 msgctxt "self"
 msgid "enroll"
 msgstr "kaydol"
@@ -22438,7 +22572,6 @@ msgid "Refine Your Search"
 msgstr "Aramanızı Sınırlandırın"
 
 #: lms/templates/courseware/courseware-chromeless.html:100
-#: lms/templates/courseware/courseware.html:307
 msgid "Course Utilities"
 msgstr "Ders Uygulamaları"
 
@@ -22454,28 +22587,6 @@ msgid ""
 msgstr ""
 "Üzgünüz, bu modül geçici olarak devre dışı. Ekibimiz sorunu bir an önce "
 "çözmek için çalışıyor."
-
-#: lms/templates/courseware/courseware.html:186
-msgid "Course Search"
-msgstr "Ders Ara"
-
-#: lms/templates/courseware/courseware.html:205
-msgid "No content has been added to this course"
-msgstr "Bu derse henüz bir içerik eklenmemiştir"
-
-#: lms/templates/courseware/courseware.html:257
-#, python-format, python-brace-format
-msgid ""
-"To access course materials, you must score {required_score}% or higher on "
-"this                     exam. Your current score is {current_score}%."
-msgstr ""
-"Ders materyallerine erişmek için, bu              sınavda en az "
-"{required_score}% puan yapmalısınız. Şu anki puanınız {current_score}%."
-
-#: lms/templates/courseware/courseware.html:275
-#, python-brace-format
-msgid "Your score is {current_score}%. You have passed the entrance exam."
-msgstr "Puanınız {current_score}%. Giriş sınavını geçtiniz."
 
 #: lms/templates/courseware/gradebook.html:44
 msgid "Gradebook"
@@ -22730,6 +22841,11 @@ msgstr "Her bölüm için ayrıntılar"
 #, python-brace-format
 msgid "{earned} of {total} possible points"
 msgstr "{total} alınabilir puan üzerinden {earned}"
+
+#: lms/templates/courseware/progress.html:208
+#, python-brace-format
+msgid "due {date}"
+msgstr "teslim {date}"
 
 #: lms/templates/courseware/progress.html:215
 msgid ""
@@ -23157,7 +23273,7 @@ msgstr "Kredi alma"
 #. Translators: link_to_provider_site is a link to an external webpage. The
 #. text of the link will be the name of a  credit provider, such as 'State
 #. University' or 'Happy Fun Company'.
-#: lms/templates/dashboard/_dashboard_credit_info.html:38
+#: lms/templates/dashboard/_dashboard_credit_info.html:35
 #, python-brace-format
 msgid ""
 "Thank you for your payment. To receive course credit, you must now request "
@@ -23168,11 +23284,11 @@ msgstr ""
 "{link_to_provider_site} sitesinden kredi talep etmelisiniz. Başlamak için "
 "{start_bold}Kredi Talep Et{end_bold}'i seçiniz."
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:45
+#: lms/templates/dashboard/_dashboard_credit_info.html:42
 msgid "Request Credit"
 msgstr "Kredi Talep Et"
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:50
+#: lms/templates/dashboard/_dashboard_credit_info.html:47
 #, python-brace-format
 msgid ""
 "{provider_name} has received your course credit request. We will update you "
@@ -23181,7 +23297,7 @@ msgstr ""
 "{provider_name} ders kredi talebinizi almıştır. Biz kredi işlemi "
 "tamamlandığında sizi güncelleyeceğiz."
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:52
+#: lms/templates/dashboard/_dashboard_credit_info.html:49
 msgid "View Details"
 msgstr "Detayları Göster"
 
@@ -23189,7 +23305,7 @@ msgstr "Detayları Göster"
 #. text of the link will be the name of a credit provider, such as 'State
 #. University' or 'Happy Fun Company'. provider_name is the name of credit
 #. provider.
-#: lms/templates/dashboard/_dashboard_credit_info.html:57
+#: lms/templates/dashboard/_dashboard_credit_info.html:54
 #, python-brace-format
 msgid ""
 "{start_bold}Congratulations!{end_bold} {provider_name} has approved your "
@@ -23200,11 +23316,11 @@ msgstr ""
 "onayladı. Ders kredinize bakmak için, {link_to_provider_site} websitesini "
 "ziyaret ediniz."
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:65
+#: lms/templates/dashboard/_dashboard_credit_info.html:62
 msgid "View Credit"
 msgstr "Kredi Göster"
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:69
+#: lms/templates/dashboard/_dashboard_credit_info.html:66
 #, python-brace-format
 msgid ""
 "{provider_name} did not approve your request for course credit. For more "
@@ -23213,7 +23329,7 @@ msgstr ""
 "{provider_name} ders kredi talebinizi onaylamadı. Daha fazla bilgi için, "
 "{link_to_provider_site} ile doğrudan irtibata geçiniz."
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:80
+#: lms/templates/dashboard/_dashboard_credit_info.html:77
 #, python-brace-format
 msgid ""
 "An error occurred with this transaction. For help, contact {support_email}."
@@ -24145,7 +24261,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html:104
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html:142
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:144
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:148
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:84
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html:117
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:236
@@ -24154,7 +24270,7 @@ msgstr "Bekleyen Görevler"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html:106
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html:144
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:146
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:150
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:86
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:238
 msgid "The status for any active tasks appears in a table below."
@@ -24403,36 +24519,36 @@ msgstr ""
 msgid "Download a CSV of learners who can enroll"
 msgstr "Kayıt olabilecek öğrencilerin CSV dosyasını indir"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:40
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
 msgid "Click to download a CSV of anonymized student IDs:"
 msgstr ""
 "Anonimleştirilmiş öğrenci kimliklerini CSV olarak indirmek için tıklayınız:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:41
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:45
 msgid "Get Student Anonymized IDs CSV"
 msgstr "Anonimleştirilmiş Öğrenci Kimliklerini CSV Olarak Getir"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:48
 msgid ""
 "Click to generate a CSV file of all proctored exam results in this course."
 msgstr ""
 "Bu dersteki tüm gözetmenli sınav sonuçlarının CSV dosyasını oluşturmak için "
 "tıklayın."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:45
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:49
 msgid "Generate Proctored Exam Results Report"
 msgstr "Gözetmenli Sınav Sonuçları Raporunu Oluştur"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:49
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:53
 msgid "Click to generate a CSV file of survey results for this course."
 msgstr ""
 "Bu ders için anket sonuçlarının CSV dosyasını oluşturmak için tıklayın."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:50
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:54
 msgid "Generate Survey Results Report"
 msgstr "Anket sonuçları raporunu oluşturun"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:53
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:57
 msgid ""
 "Select a problem to generate a CSV file that lists all student answers to "
 "the problem. You also select a section or chapter to include results of all "
@@ -24442,12 +24558,12 @@ msgstr ""
 "bir problem seçin. Ayrıca, o bölüm veya başlıktaki tüm problemlerin "
 "sonuçlarını eklemek için bir bölüm veya başlık da seçersiniz. "
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:57
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:61
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/problem_report.html:42
 msgid "NOTE"
 msgstr "NOT"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:58
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:62
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/problem_report.html:43
 #, python-brace-format
 msgid ""
@@ -24461,20 +24577,20 @@ msgstr ""
 "oluşturmayı deneyin ya da sınırı artırmak için site yöneticinizle iletişime "
 "geçin. "
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:80
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:84
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/certificates.html:31
 msgid "Click to list certificates that are issued for this course:"
 msgstr "Bu ders için verilen sertifikaları listelemek için tıklayın:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:82
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:86
 msgid "View Certificates Issued"
 msgstr "Verilen Sertifikaları Görüntüleyin"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:83
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:87
 msgid "Download CSV of Certificates Issued"
 msgstr "Verilmiş Sertifikaların CSV Dosyasını İndirin"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:90
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:94
 msgid ""
 "For smaller courses, click to list profile information for enrolled students"
 " directly on this page:"
@@ -24482,34 +24598,34 @@ msgstr ""
 "Küçük dersler için, kayıtlı öğrencilerin bilgilerini bu sayfa üzerinde "
 "doğrudan listelemek için tıklayın:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:91
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:95
 msgid "List enrolled students' profile information"
 msgstr "Kayıtlı öğrencilerin profil bilgisini listele"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:96
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:100
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/grading.html:25
 msgid ""
 "Click to generate a CSV grade report for all currently enrolled students."
 msgstr ""
 "Mevcut kayıtlı tüm öğrencilerin CSV not raporunu oluşturmak için tıklayın."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:98
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:102
 msgid "Generate Grade Report"
 msgstr "Notlandırma Raporu Oluşturun"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:99
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:103
 msgid "Generate Problem Grade Report"
 msgstr "Problem Notlandırma Raporu Oluşturun"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:100
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:104
 msgid "Generate ORA Data Report"
 msgstr "ORA Veri Raporu Oluştur"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:101
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:105
 msgid "Generate ORA Summary Report"
 msgstr "ORA Özet Raporunu Oluştur"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:104
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:108
 msgid ""
 "Click to generate a ZIP file that contains all submission texts and "
 "attachments."
@@ -24517,16 +24633,16 @@ msgstr ""
 "Tüm gönderimleri metin ve ekleriyle birlikte içeren bir ZIP dosyası "
 "oluşturmak için tıklayın."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:106
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:110
 msgid "Generate Submission Files Archive"
 msgstr "Gönderim Dosyaları Arşivi Oluştur"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:114
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:118
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:48
 msgid "Reports Available for Download"
 msgstr "İndirme için Hazır Raporlar"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:116
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:120
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:50
 msgid ""
 "The reports listed below are available for download, identified by UTC date "
@@ -24535,7 +24651,7 @@ msgstr ""
 "Aşağıda listelenen raporlar, UTC zamanı ve üretim saatine göre tanımlanmış "
 "olarak indirilmeye uygundur."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:121
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:125
 msgid ""
 "The answer distribution report listed below is generated periodically by an "
 "automated background process. The report is cumulative, so answers submitted"
@@ -24547,7 +24663,7 @@ msgstr ""
 "yüzden işlem başladıktan sonra gönderilen cevaplar bir sonraki raporda yer "
 "alır. Rapor günde birkaç kez üretilir."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:127
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:131
 #, python-brace-format
 msgid ""
 "{strong_start}Note{strong_end}: {ul_start}{li_start}To keep student data "
@@ -25535,7 +25651,7 @@ msgstr ""
 "problemlerin            sonuçlarını eklemek için bir bölüm veya başlık da "
 "seçersiniz."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:70
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:74
 msgid ""
 "Click to display the grading configuration for the                 course. "
 "The grading configuration is the breakdown of graded subsections of the "
@@ -25548,13 +25664,13 @@ msgstr ""
 "Studio'daki 'Notlandırma'                sayfası ('Ayarlar' altında) "
 "üzerinde değiştirilebilir."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:74
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:78
 msgid "Click to download a CSV of                 anonymized student IDs:"
 msgstr ""
 "Anonimleştirilmiş              öğrenci kimliklerini CSV olarak indirmek için"
 " tıklayınız:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:77
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:81
 msgid ""
 "For large courses, generating some reports can take                 several "
 "hours. When report generation is complete, a                 link that "
@@ -25568,7 +25684,7 @@ msgstr ""
 "bağlantı aşağıdaki tabloda görünür. Bu raporlar arka planda oluşturulur, "
 "raporunuz oluşturulurken rahatlıkla başka sayfalarda gezinebilirsiniz."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:83
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:87
 msgid ""
 "Please be patient and do not click these buttons                 multiple "
 "times. Clicking these buttons multiple times will significantly slow the "
@@ -25577,7 +25693,7 @@ msgstr ""
 "Lütfen sabırlı olun ve bu düğmelere               üst üste tıklamayın. Bu "
 "düğmelere üst üste tıklamak, oluşturma işlemini yavaşlatacaktır.  "
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:88
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:92
 msgid ""
 "For smaller courses, click to list                 profile information for "
 "enrolled students directly on this page:"
@@ -25585,7 +25701,7 @@ msgstr ""
 "Küçük dersler için, kayıtlı öğrencilerin bilgilerini                bu sayfa"
 " üzerinde doğrudan listelemek için tıklayın:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:91
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:95
 msgid ""
 "Click to generate a CSV file of                 all students enrolled in "
 "this course, along with profile information such as email address and"
@@ -25595,7 +25711,7 @@ msgstr ""
 "kayıtlı tüm               öğrencilerin CSV dosyasını oluşturmak için "
 "tıklayın:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:95
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:99
 msgid ""
 "Click to generate a CSV file                 that lists learners who can "
 "enroll in the course but have not yet done so."
@@ -25603,7 +25719,7 @@ msgstr ""
 "Bu derse kaydolabilecek ama henüz kaydolmayan öğrencileri listeleyen"
 "                          CSV dosyasını oluşturmak için tıklayın."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:98
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:105
 msgid ""
 "Click to generate a CSV file                 of all proctored exam results "
 "in this course."
@@ -25611,7 +25727,7 @@ msgstr ""
 "Bu dersteki tüm gözetmenli sınav sonuçlarının                   CSV "
 "dosyasını oluşturmak için tıklayın."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:101
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:108
 msgid ""
 "Click to generate a CSV file of                 survey results for this "
 "course."
@@ -25619,7 +25735,7 @@ msgstr ""
 "Bu ders için anket sonuçlarının                        CSV dosyasını "
 "oluşturmak için tıklayın."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:103
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:110
 msgid ""
 "Click to generate a CSV                 ORA grade report for all currently "
 "enrolled students."
@@ -25627,7 +25743,7 @@ msgstr ""
 "Mevcut kayıtlı tüm öğrencilerin ORA not raporunun                   CSV "
 "dosyasını oluşturmak için tıklayın."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:105
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:112
 msgid ""
 "Click to generate a CSV                 problem grade report for all "
 "currently enrolled students."

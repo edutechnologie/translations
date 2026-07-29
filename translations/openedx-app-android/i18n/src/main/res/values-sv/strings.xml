@@ -1,9 +1,44 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-	<string name="whatsnew.whats_new_title">Vad är nytt</string>
-	<string name="whatsnew.whats_new_navigation_previous">Tidigare</string>
-	<string name="whatsnew.whats_new_navigation_next">Nästa</string>
-	<string name="auth.auth_sign_up">Registrering</string>
+	<string name="dashboard.dashboard_courses">Kurser</string>
+	<string name="dashboard.dashboard_you_are_not_enrolled">Du är inte anmäld till några kurser än.</string>
+	<string name="dashboard.dashboard_learn">Lär</string>
+	<string name="dashboard.dashboard_programs">Program</string>
+	<string name="dashboard.dashboard_start_course">Starta kursen</string>
+	<string name="dashboard.dashboard_resume_course">Återuppta kursen</string>
+	<string name="dashboard.dashboard_view_all_with_count">Visa alla kurser (%1$d)</string>
+	<string name="dashboard.dashboard_view_all">Visa alla</string>
+	<string name="dashboard.dashboard_course_filter_all">Alla</string>
+	<string name="dashboard.dashboard_course_filter_in_progress">Pågående</string>
+	<string name="dashboard.dashboard_course_filter_completed">Avslutad</string>
+	<string name="dashboard.dashboard_course_filter_expired">Utgånget</string>
+	<string name="dashboard.dashboard_all_courses">Alla kurser</string>
+	<string name="dashboard.dashboard_all_courses_empty_title">Inga kurser</string>
+	<string name="dashboard.dashboard_all_courses_empty_description">Du är inte för närvarande inskriven i några kurser, vill du utforska kurskatalogen\?</string>
+	<string name="dashboard.dashboard_find_a_course">Hitta en kurs</string>
+	<string name="dashboard.dashboard_no_status_courses">Inga %1$s kurser</string>
+	<string name="dashboard.dashboard_pull_to_refresh">Svep nedåt för att uppdatera</string>
+	<plurals name="dashboard.dashboard_past_due_assignment">
+        <item quantity="one">%1$d Försenad uppgift</item>
+        <item quantity="other">%1$d Försenade uppgifter</item>
+    </plurals>
+
+	<string name="downloads.downloads">Nedladdningar</string>
+	<string name="downloads.downloads_download_course">Ladda ner kurs</string>
+	<string name="downloads.downloads_remove_course_downloads">Ta bort kursnedladdningar</string>
+	<string name="downloads.downloads_cancel_download">Avbryt nedladdning</string>
+	<string name="downloads.downloads_empty_state_title">Inga kurser med nedladdningsbart innehåll</string>
+	<string name="downloads.downloads_empty_state_description">Du har för närvarande inga kurser med nedladdningsbart innehåll.</string>
+	<string name="downloads.downloaded_downloaded_size">%1$s nedladdad</string>
+	<string name="downloads.downloaded_available_size">%1$s tillgänglig</string>
+	<string name="downloads.downloads_accessibility_stop_downloading_course">Stoppa nedladdning av kurs</string>
+	<string name="downloads.downloads_loading_course_structure">Laddar kursstruktur…</string>
+
+	<string name="app.app_navigation_discovery">Upptäck</string>
+	<string name="app.app_navigation_learn">Lär</string>
+	<string name="app.app_navigation_profile">Profil</string>
+	<string name="app.app_navigation_downloads">Nedladdningar</string>
+
 	<string name="auth.auth_forgot_password">Glömt lösenordet\?</string>
 	<string name="auth.auth_email">E-post</string>
 	<string name="auth.auth_invalid_email">Ogiltig e-postadress</string>
@@ -26,102 +61,9 @@
 	<string name="auth.auth_accessibility_show_password">Visa lösenord</string>
 	<string name="auth.auth_accessibility_hide_password">Dölj lösenord</string>
 
-	<string name="discovery.discovery_Discovery">Upptäck</string>
-	<string name="discovery.discovery_discovery_new">Upptäck nya</string>
-	<string name="discovery.discovery_lets_find">Låt oss hitta något nytt för dig</string>
-	<string name="discovery.discovery_search_results">Sökresultat</string>
-	<string name="discovery.discovery_start_typing_to_find">Börja skriva för att hitta kursen</string>
-	<string name="discovery.discovery_course_details">kursinnehåll</string>
-	<string name="discovery.discovery_enroll_now">Anmäl dig nu</string>
-	<string name="discovery.discovery_view_course">Visa kurs</string>
-	<string name="discovery.discovery_you_cant_enroll">Du kan inte anmäla dig till den här kursen eftersom anmälningsdatumet har passerat.</string>
-	<string name="discovery.discovery_no_internet_label">För att registrera dig i denna kurs, se till att du är ansluten till internet.</string>
-	<string name="discovery.discovery_enrolled_successfully">Du har registrerat dig på kursen!</string>
-	<string name="discovery.discovery_you_are_already_enrolled">Du är redan registrerad på den här kursen.</string>
-	<plurals name="discovery.discovery_found_courses">
-        <item quantity="one">Hittade %s kurs på din begäran</item>
-        <item quantity="other">Hittade %s kurser på din förfrågan</item>
-    </plurals>
-	<!-- Accessibility -->
-	<string name="discovery.discovery_accessibility_play_video">Spela filmen</string>
-
-	<string name="course.course_outline">Kursplan</string>
-	<string name="course.course_content">Kursinnehåll</string>
-	<string name="course.course_units">Kursenheter</string>
-	<string name="course.course_subsections">Kursavsnitt</string>
-	<string name="course.course_videos">videoklipp</string>
-	<string name="course.course_you_earned_certificate">Grattis, du har tjänat detta kurscertifikat i \"%s\".</string>
-	<string name="course.course_view_certificate">Se certifikat</string>
-	<string name="course.course_navigation_prev">Prev</string>
-	<string name="course.course_navigation_prev_unit">Föregående enhet</string>
-	<string name="course.course_navigation_next">Nästa</string>
-	<string name="course.course_navigation_next_unit">Nästa enhet</string>
-	<string name="course.course_navigation_finish">Avsluta</string>
-	<string name="course.course_resume_unit_title">Senaste enhet:</string>
-	<string name="course.course_discussion">Diskussion</string>
-	<string name="course.course_handouts">Handouts</string>
-	<string name="course.course_announcements">Meddelanden</string>
-	<string name="course.course_find_important_info">Hitta viktig kursinformation</string>
-	<string name="course.course_latest_news">Håll dig uppdaterad med de senaste nyheterna</string>
-	<string name="course.course_good_job">Bra jobbat!</string>
-	<string name="course.course_section_finished">Du har slutfört \"%s\".</string>
-	<string name="course.course_back_to_outline">Tillbaka till översikten</string>
-	<string name="course.course_next_section">Nästa avsnitt</string>
-	<string name="course.course_not_started">Kursen har inte startat än.</string>
-	<string name="course.course_not_connected_to_internet">Du är inte ansluten till internet. Kontrollera din internetanslutning.</string>
-	<string name="course.course_can_download_only_with_wifi">Du kan bara ladda ner innehåll via Wi-fi</string>
-	<string name="course.course_this_interactive_component">Denna interaktiva komponent är ännu inte tillgänglig</string>
-	<string name="course.course_explore_other_parts_on_web">Utforska andra delar av den här kursen eller visa detta på webben.</string>
-	<string name="course.course_open_in_browser">Öppna i webbläsare</string>
-	<string name="course.course_subtitles">Undertexter</string>
-	<string name="course.course_continue_with">Fortsätt med:</string>
-	<string name="course.course_to_proceed">För att fortsätta med \"%s\" tryck på \"Nästa avsnitt\".</string>
-	<string name="course.course_gated_content_label">Vissa delar av kursen är låsta och endast tillgängliga för uppgraderade användare.</string>
-	<string name="course.course_change_quality_when_downloading">Du kan inte ändra nedladdningskvaliteten för videor när alla videor laddas ner</string>
-	<string name="course.course_container_nav_home">Hem</string>
-	<string name="course.course_container_nav_videos">videoklipp</string>
-	<string name="course.course_container_nav_discussions">Diskussioner</string>
-	<string name="course.course_container_nav_more">Mer</string>
-	<string name="course.course_container_nav_dates">datum</string>
-	<string name="course.course_container_nav_downloads">Nedladdningar</string>
-	<!-- Accessibility -->
-	<string name="course.course_accessibility_video_player">Videospelare</string>
-	<string name="course.course_accessibility_remove_course_section">Ta bort kursavsnitt</string>
-	<string name="course.course_accessibility_download_course_section">Ladda ner kursavsnitt</string>
-	<string name="course.course_accessibility_stop_downloading_course_section">Stoppa nedladdning av kursavsnitt</string>
-	<string name="course.course_accessibility_section_completed">Avsnitt slutfört</string>
-	<string name="course.course_accessibility_section_uncompleted">Avsnitt ej slutfört</string>
-	<string name="course.course_label_back">Tillbaka</string>
-	<string name="course.course_error_expired_not_upgradeable_title" formatted="false">Din fria granskningstillgång till denna kurs gick ut den %s.</string>
-	<string name="course.course_find_new_course_button">Hitta en ny kurs</string>
-	<string name="course.course_error_not_started_title">Den här kursen börjar den %s. Kom tillbaka då för att börja lära dig!</string>
-	<string name="downloads.downloads">Nedladdningar</string>
-	<string name="downloads.downloads_download_course">Ladda ner kurs</string>
-	<string name="downloads.downloads_remove_course_downloads">Ta bort kursnedladdningar</string>
-	<string name="downloads.downloads_cancel_download">Avbryt nedladdning</string>
-	<string name="downloads.downloads_empty_state_title">Inga kurser med nedladdningsbart innehåll</string>
-	<string name="downloads.downloads_empty_state_description">Du har för närvarande inga kurser med nedladdningsbart innehåll.</string>
-	<string name="downloads.downloaded_downloaded_size">%1$s nedladdad</string>
-	<string name="downloads.downloaded_available_size">%1$s tillgänglig</string>
-	<string name="downloads.downloads_loading_course_structure">Laddar kursstruktur…</string>
-
-	<string name="app.action_settings">Inställningar</string>
-	<string name="app.next">Nästa</string>
-	<string name="app.previous">Tidigare</string>
-	<string name="app.app_navigation_discovery">Upptäck</string>
-	<string name="app.app_navigation_learn">Lär</string>
-	<string name="app.app_navigation_programs">Program</string>
-	<string name="app.app_navigation_profile">Profil</string>
-	<string name="app.app_navigation_downloads">Nedladdningar</string>
-
-	<string name="profile.profile_prof_info">Profilinfo</string>
-	<string name="profile.profile_bio">Bio: %1$s</string>
-	<string name="profile.profile_year_of_birth">Födelseår: %1$s</string>
 	<string name="profile.profile_full_profile">Full profil</string>
 	<string name="profile.profile_limited_profile">Begränsad profil</string>
 	<string name="profile.profile_edit_profile">Redigera profil</string>
-	<string name="profile.profile_edit">Redigera</string>
-	<string name="profile.profile_save">Spara</string>
 	<string name="profile.profile_delete_profile">Ta bort konto</string>
 	<string name="profile.profile_must_be_over">Du måste vara över 13 år gammal för att ha en profil med fullständig tillgång till information.</string>
 	<string name="profile.profile_year">Födelseår</string>
@@ -137,10 +79,10 @@
 	<string name="profile.profile_yes_delete_account">Ja, ta bort konto</string>
 	<string name="profile.profile_password_is_incorrect">Lösenordet är felaktigt. Försök igen.</string>
 	<string name="profile.profile_invalid_password">Lösenordet är för kort</string>
+	<string name="profile.profile_done">Klar</string>
 	<string name="profile.profile_change_image">Byt profilbild</string>
 	<string name="profile.profile_select_from_gallery">Välj från galleriet</string>
 	<string name="profile.profile_remove_photo">Ta bort foto</string>
-	<string name="profile.profile_settings">Inställningar</string>
 	<string name="profile.profile_leave_profile">Lämna utan att spara\?</string>
 	<string name="profile.profile_leave">Lämna</string>
 	<string name="profile.profile_keep_editing">Fortsätt redigera</string>
@@ -151,12 +93,14 @@
 	<string name="profile.profile_support_info">Stöd</string>
 	<string name="profile.profile_video">Video</string>
 	<string name="profile.profile_dates_and_calendar">Datum &amp; Kalender</string>
+	<string name="profile.profile_wifi_only_download">Endast nedladdning via Wi-Fi</string>
 	<string name="profile.profile_only_download_when_wifi_turned_on">Ladda bara ner innehåll när wi-fi är påslaget</string>
 	<string name="profile.profile_calendar_sync">Kalendersynkronisering</string>
 	<string name="profile.profile_calendar_sync_description">Ställ in kalendersynkronisering för att visa dina kommande uppgifter och kursmilstolpar i din kalender. Nya uppgifter och ändrade kursdatum synkroniseras automatiskt.</string>
 	<string name="profile.profile_set_up_calendar_sync">Ställ in kalendersynkronisering</string>
 	<string name="profile.profile_calendar_access_dialog_title">Kalenderåtkomst</string>
 	<string name="profile.profile_calendar_access_dialog_description">För att visa kommande uppgifter och kursmilstolpar i din kalender behöver vi tillåtelse att få åtkomst till din kalender.</string>
+	<string name="profile.profile_grant_access_calendar">Bevilja kalenderåtkomst</string>
 	<string name="profile.profile_new_calendar">Ny kalender</string>
 	<string name="profile.profile_new_calendar_description">Kommande uppgifter för aktiva kurser kommer att visas i den här kalendern</string>
 	<string name="profile.profile_begin_syncing">Börja synkronisera</string>
@@ -171,7 +115,8 @@
 	<string name="profile.calendar_color_accent">Accent</string>
 	<string name="profile.profile_course_dates">Kursdatum</string>
 	<string name="profile.profile_color">Färg</string>
-	<string name="profile.profile_currently_syncing_events">Synkroniserar för närvarande händelser till din kalender</string>
+	<string name="profile.profile_course_calendar_sync">Synkronisering av kurskalender</string>
+	<string name="profile.profile_currently_syncing_events">För närvarande synkroniseras händelser till din kalender</string>
 	<string name="profile.profile_change_sync_options">Ändra synkroniseringsalternativ</string>
 	<string name="profile.profile_courses_to_sync">Kurser att synkronisera</string>
 	<string name="profile.profile_syncing_courses">Synkroniserar %1$s kurser</string>
@@ -190,68 +135,6 @@
 	<string name="profile.profile_no_courses_with_current_filter">Inga kurser matchar det aktuella filtret.</string>
 	<string name="profile.profile_show_full_dates">Visa hela datum som “%1$s”</string>
 
-	<string name="discussion.discussion_discussions">Diskussioner</string>
-	<string name="discussion.discussion_all_posts">Alla inlägg</string>
-	<string name="discussion.discussion_unread">Olästa</string>
-	<string name="discussion.discussion_unanswered">Obesvarad</string>
-	<string name="discussion.discussion_posts_following">Inlägg jag följer</string>
-	<string name="discussion.discussion_refine">Förfina:</string>
-	<string name="discussion.discussion_recent_activity">Senaste aktivitet</string>
-	<string name="discussion.discussion_most_activity">Mest aktivitet</string>
-	<string name="discussion.discussion_most_votes">Flest röster</string>
-	<string name="discussion.discussion_create_post">Skapa diskussion</string>
-	<string name="discussion.discussion_create_question">Skapa fråga</string>
-	<string name="discussion.discussion_add_response">Lägga till ett svar</string>
-	<string name="discussion.discussion_last_post">Senaste inlägg: %1$s</string>
-	<string name="discussion.discussion_follow">Följ</string>
-	<string name="discussion.discussion_report">Rapportera</string>
-	<string name="discussion.discussion_unreport">Avrapportera</string>
-	<string name="discussion.discussion_add_comment">Lägga till en kommentar</string>
-	<string name="discussion.discussion_comments_title">Kommentar</string>
-	<string name="discussion.discussion_comment_added">Kommentar tillagd framgångsrikt</string>
-	<string name="discussion.discussion_discussion">Diskussion</string>
-	<string name="discussion.discussion_question">Fråga</string>
-	<string name="discussion.discussion_title">Titel</string>
-	<string name="discussion.discussion_follow_discussion">Följ denna diskussion</string>
-	<string name="discussion.discussion_follow_question">Följ den här frågan</string>
-	<string name="discussion.discussion_post_question">Posta fråga</string>
-	<string name="discussion.discussion_general">Allmän</string>
-	<string name="discussion.discussion_search_all_posts">Sök bland alla inlägg</string>
-	<string name="discussion.discussion_main_categories">Huvudkategorier</string>
-	<string name="discussion.discussion_select_post_type">Välj inläggstyp</string>
-	<string name="discussion.discussion_topic">Ämne</string>
-	<string name="discussion.discussion_search_results">Sökresultat</string>
-	<string name="discussion.discussion_start_typing_to_find">Börja skriva för att hitta tråden</string>
-	<string name="discussion.discussion_anonymous">anonym</string>
-	<string name="discussion.discussion_no_yet">Inga diskussioner ännu</string>
-	<string name="discussion.discussion_click_button_create_discussion">Klicka på knappen nedan för att skapa din första diskussion.</string>
-	<string name="discussion.discussion_unnamed_subcategory">Namnlös underkategori</string>
-	<plurals name="discussion.discussion_votes">
-        <item quantity="one">%1$d röst</item>
-        <item quantity="other">%1$d röster</item>
-    </plurals>
-	<plurals name="discussion.discussion_comments">
-        <item quantity="one">%1$d kommentar</item>
-        <item quantity="other">%1$d kommentarer</item>
-    </plurals>
-	<plurals name="discussion.discussion_missed_posts">
-        <item quantity="one">%1$d Missat inlägg</item>
-        <item quantity="other">%1$d Missade inlägg</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses">
-        <item quantity="one">%1$d svar</item>
-        <item quantity="other">%1$d svar</item>
-    </plurals>
-	<plurals name="discussion.discussion_responses_capitalized">
-        <item quantity="one">%1$d svar</item>
-        <item quantity="other">%1$d svar</item>
-    </plurals>
-	<plurals name="discussion.discussion_found_threads">
-        <item quantity="one">Hittade %s inlägg</item>
-        <item quantity="other">Hittade %s inlägg</item>
-    </plurals>
-
-	<string name="core.core_results">Resultat</string>
 	<string name="core.core_error_invalid_grant">Ogiltiga inloggningsuppgifter</string>
 	<string name="core.core_error_no_connection">Långsam eller ingen internetanslutning</string>
 	<string name="core.core_error_unknown_error">Något gick fel</string>
@@ -296,8 +179,8 @@
 	<string name="core.core_settings">Inställningar</string>
 	<string name="core.core_app_update_required_title">Appuppdatering krävs</string>
 	<string name="core.core_app_update_required_description">Denna version av OpenEdX-appen är föråldrad. För att fortsätta lära och få de senaste funktionerna och korrigeringarna, uppgradera till den senaste versionen.</string>
-	<string name="core.core_why_do_you_need_update">Varför behöver jag uppdatera\?</string>
 	<string name="core.core_version">Version: %1$s</string>
+	<string name="core.core_up_to_date">Uppdaterad</string>
 	<string name="core.core_tap_to_update_to_version">Tryck för att uppdatera till version %1$s</string>
 	<string name="core.core_tap_to_install_required_app_update">Tryck för att installera nödvändig appuppdatering</string>
 	<string name="core.core_submit">Skicka</string>
@@ -322,20 +205,21 @@
 	<string name="core.core_accessibility_header_image_for">Headerbild för %1$s</string>
 	<string name="core.core_accessibility_settings">Inställningar</string>
 	<string name="core.core_accessibility_btn_back">Tillbaka</string>
+	<string name="core.core_accessibility_expandable_arrow">Utökningsbar pil</string>
 	<string name="core.core_video_download_to_device">Ladda ner till enhet</string>
 	<string name="core.core_video_downloading_to_device">Laddar ner videor…</string>
 	<string name="core.core_video_downloaded_to_device">Alla videor nedladdade</string>
 	<string name="core.core_video_remaining_to_download" formatted="false">Återstående %d, %s Totalt</string>
+	<string name="core.core_video_downloaded_subtitle" formatted="false">Videor %d, %s Totalt</string>
+	<string name="core.core_video_streaming_quality">Videoströmningskvalitet</string>
 	<string name="core.core_video_download_quality">Videonedladdningskvalitet</string>
 	<string name="core.core_manage_account">Hantera konto</string>
 	<!-- endregion -->
-	<string name="core.core_course_container_nav_home">Hem</string>
-	<string name="core.core_course_container_nav_videos">videoklipp</string>
-	<string name="core.core_course_container_nav_discussions">Diskussioner</string>
-	<string name="core.core_course_container_nav_more">Mer</string>
 	<string name="core.core_no_course_content">Inget kursinnehåll är för närvarande tillgängligt.</string>
-	<string name="core.core_no_videos">Det finns för närvarande inga videor för denna kurs.</string>
+	<string name="core.core_no_videos">Inga videor tillgängliga för den här kursen.</string>
 	<string name="core.core_no_dates">Kursdatum är för närvarande inte tillgängliga.</string>
+	<string name="core.core_no_progress">Denna kurs innehåller inga prov eller betygsatta uppgifter.</string>
+	<string name="core.core_no_assignments">Inga uppgifter tillgängliga för denna kurs.</string>
 	<string name="core.core_no_discussion">Det går inte att ladda diskussioner.\n Försök igen senare.</string>
 	<string name="core.core_no_handouts">Det finns för närvarande inga utdelningar för denna kurs.</string>
 	<string name="core.core_no_announcements">Det finns för närvarande inga meddelanden för denna kurs.</string>
@@ -350,7 +234,9 @@
 	<string name="core.core_not_synced">Inte synkroniserad</string>
 	<string name="core.core_syncing_to_calendar">Synkroniserar med kalender…</string>
 	<string name="core.core_next">Nästa</string>
+	<string name="core.core_previous">Tidigare</string>
 	<string name="core.core_download_queue_title">Nedladdningar</string>
+	<string name="core.core_download_untitled">(Untitled)</string>
 	<string name="core.core_download_big_files_confirmation_title">Ladda ner</string>
 	<string name="core.core_download_big_files_confirmation_text">De videor du har valt är större än 1 GB. Vill du ladda ner dessa videor\?</string>
 	<string name="core.core_delete_in_process_confirmation" formatted="false">Att stänga av strömbrytaren kommer att stoppa nedladdningen och radera alla nedladdade videor för \"%s\"\?</string>
@@ -367,6 +253,7 @@
 	<string name="core.core_download_remove_offline_content">Ta bort offlineinnehåll\?</string>
 	<string name="core.core_download_remove_dialog_description">Att ta bort detta innehåll frigör %1$s.</string>
 	<string name="core.core_download">Ladda ner</string>
+	<string name="core.core_remove">ta bort</string>
 	<string name="core.core_device_storage_full">Enhetens lagring är full</string>
 	<string name="core.core_download_device_storage_full_dialog_description">Din enhet har inte tillräckligt med ledigt utrymme för att ladda ner detta innehåll. Vänligen frigör lite utrymme och försök igen.</string>
 	<string name="core.core_used_free_storage">%1$s använt, %2$s ledigt</string>
@@ -385,29 +272,33 @@
 	<string name="core.core_explore_other_parts_when_reconnect">Utforska andra delar av den här kursen eller titta på detta när du återansluter.</string>
 	<string name="core.core_not_downloaded">Denna komponent är inte nedladdad</string>
 	<string name="core.core_explore_other_parts_when_reconnect_or_download">Utforska andra delar av den här kursen eller ladda ner detta när du återansluter.</string>
+	<string name="core.core_authorization">Behörighet</string>
 	<string name="core.core_authorization_request">Vänligen logga in i systemet för att fortsätta med kursregistreringen.</string>
 
-	<string name="dashboard.dashboard_courses">Kurser</string>
-	<string name="dashboard.dashboard_you_are_not_enrolled">Du är inte anmäld till några kurser än.</string>
-	<string name="dashboard.dashboard_learn">Lär</string>
-	<string name="dashboard.dashboard_programs">Program</string>
-	<string name="dashboard.dashboard_course_date">Kurs %1$s</string>
-	<string name="dashboard.dashboard_start_course">Starta kursen</string>
-	<string name="dashboard.dashboard_resume_course">Återuppta kursen</string>
-	<string name="dashboard.dashboard_view_all_with_count">Visa alla kurser (%1$d)</string>
-	<string name="dashboard.dashboard_view_all">Visa alla</string>
-	<string name="dashboard.dashboard_course_filter_all">Alla</string>
-	<string name="dashboard.dashboard_course_filter_in_progress">Pågående</string>
-	<string name="dashboard.dashboard_course_filter_completed">Avslutad</string>
-	<string name="dashboard.dashboard_course_filter_expired">Utgånget</string>
-	<string name="dashboard.dashboard_all_courses">Alla kurser</string>
-	<string name="dashboard.dashboard_all_courses_empty_title">Inga kurser</string>
-	<string name="dashboard.dashboard_all_courses_empty_description">Du är inte för närvarande inskriven i några kurser, vill du utforska kurskatalogen\?</string>
-	<string name="dashboard.dashboard_find_a_course">Hitta en kurs</string>
-	<string name="dashboard.dashboard_no_status_courses">Inga %1$s kurser</string>
-	<string name="dashboard.dashboard_pull_to_refresh">Svep nedåt för att uppdatera</string>
-	<plurals name="dashboard.dashboard_past_due_assignment">
-        <item quantity="one">%1$d Försenad uppgift</item>
-        <item quantity="other">%1$d Försenade uppgifter</item>
-    </plurals>
-</resources>
+	<string name="course.course_you_earned_certificate">Grattis, du har tjänat detta kurscertifikat i \"%s\".</string>
+	<string name="course.course_view_certificate">Se certifikat</string>
+	<string name="course.course_navigation_prev">Prev</string>
+	<string name="course.course_navigation_next">Nästa</string>
+	<string name="course.course_navigation_finish">Avsluta</string>
+	<string name="course.course_handouts">Handouts</string>
+	<string name="course.course_announcements">Meddelanden</string>
+	<string name="course.course_find_important_info">Hitta viktig kursinformation</string>
+	<string name="course.course_latest_news">Håll dig uppdaterad med de senaste nyheterna</string>
+	<string name="course.course_good_job">Bra jobbat!</string>
+	<string name="course.course_section_finished">Du har slutfört \"%s\".</string>
+	<string name="course.course_back_to_outline">Tillbaka till översikten</string>
+	<string name="course.course_next_section">Nästa avsnitt</string>
+	<string name="course.course_not_started">Kursen har inte startat än.</string>
+	<string name="course.course_can_download_only_with_wifi">Du kan bara ladda ner innehåll via Wi-fi</string>
+	<string name="course.course_this_interactive_component">Denna interaktiva komponent är ännu inte tillgänglig</string>
+	<string name="course.course_explore_other_parts_on_web">Utforska andra delar av den här kursen eller visa detta på webben.</string>
+	<string name="course.course_open_in_browser">Öppna i webbläsare</string>
+	<string name="course.course_subtitles">Undertexter</string>
+	<string name="course.course_to_proceed">För att fortsätta med \"%s\" tryck på \"Nästa avsnitt\".</string>
+	<string name="course.course_gated_content_label">Vissa delar av kursen är låsta och endast tillgängliga för uppgraderade användare.</string>
+	<string name="course.course_change_quality_when_downloading">Du kan inte ändra nedladdningskvaliteten för videor när alla videor laddas ner</string>
+	<string name="course.course_dates_shifted_message">Datum ändrade</string>
+	<string name="course.course_progress_completion_title">Kursavslutning</string>
+	<string name="course.course_progress_completion_description">Detta representerar hur mycket av kursinnehållet du har genomfört. Observera att visst innehåll kanske inte har släppts ännu.</string>
+	<string name="course.course_progress_overall_title">Övergripande betyg</string>
+	</resources>

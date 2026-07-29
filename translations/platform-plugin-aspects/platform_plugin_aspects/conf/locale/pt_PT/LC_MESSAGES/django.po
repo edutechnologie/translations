@@ -4,15 +4,18 @@
 # EdX Team <info@edx.org>, 2024.
 # 
 # Translators:
-# Brian Smith, 2025
+# Brian Smith, 2024
+# Ivo Branco <ivo.branco@fccn.pt>, 2024
+# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
+# Cátia Lopes <catia.lopes@bridgelk.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:40+0000\n"
-"PO-Revision-Date: 2025-07-23 17:31+0000\n"
-"Last-Translator: Brian Smith, 2025\n"
+"POT-Creation-Date: 2025-10-16 00:58+0000\n"
+"PO-Revision-Date: 2024-04-20 01:08+0000\n"
+"Last-Translator: Cátia Lopes <catia.lopes@bridgelk.com>, 2025\n"
 "Language-Team: Portuguese (Portugal) (https://app.transifex.com/open-edx/teams/6205/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,6 +39,22 @@ msgstr "Painel de controlo individual do aluno"
 msgid "At-Risk Learners Dashboard"
 msgstr "Painel de controlo dos alunos em risco"
 
+#: settings/common.py:114
+msgid "Course"
+msgstr "Curso"
+
+#: settings/common.py:122
+msgid "Graded Subsection"
+msgstr "Subsecção classificada"
+
+#: settings/common.py:130
+msgid "Problem"
+msgstr "Exercício"
+
+#: settings/common.py:138
+msgid "Video"
+msgstr "Vídeo"
+
 #: static/html/superset.html:9
 msgid ""
 "Superset is not configured properly. Please contact your system "
@@ -52,23 +71,6 @@ msgstr ""
 "O Superset só é visível para os funcionários e instrutores do curso. "
 "Contacte o administrador do sistema."
 
-#: utils.py:165
-#, python-brace-format
-msgid ""
-"Unable to fetch Superset guest token, Superset server error "
-"{server_response}"
-msgstr ""
-"Não foi possível obter o token de convidado Superset, erro do servidor "
-"Superset {server_response}"
-
-#: utils.py:174
-msgid ""
-"Unable to fetch Superset guest token, mostly likely due to invalid "
-"settings.SUPERSET_CONFIG"
-msgstr ""
-"Não foi possível obter o token de convidado do Superset, muito provavelmente"
-" devido à definição inválida settings.SUPERSET_CONFIG"
-
 #: views.py:87
 #, python-brace-format
 msgid "Course not found: '{course_id}'"
@@ -78,6 +80,16 @@ msgstr "Curso não encontrado: '{course_id}'"
 #, python-brace-format
 msgid "Invalid course id: '{course_id}'"
 msgstr "ID de curso inválido: '{course_id}'"
+
+#: views.py:179
+#, python-brace-format
+msgid "Invalid usage id: '{usage_id}'"
+msgstr "ID de utilização inválido: '{usage_id}'"
+
+#: views.py:208
+#, python-brace-format
+msgid "No dashboard for block type: '{block_type}'"
+msgstr "Não existe painel para o tipo de bloco: '{block_type}'"
 
 #: xblock.py:48 xblock.py:49
 msgid "Display name"

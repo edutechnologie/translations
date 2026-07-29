@@ -6,25 +6,20 @@
 # 
 # Translators:
 # Brian Smith, 2025
-# Eden Huthmacher, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-25 00:37+0000\n"
-"PO-Revision-Date: 2025-07-23 17:42+0000\n"
-"Last-Translator: Eden Huthmacher, 2025\n"
+"POT-Creation-Date: 2025-10-30 00:49+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Indonesian (https://app.transifex.com/open-edx/teams/6205/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: admin.py:121
-msgid "All Unreviewed"
-msgstr "Semua Belum Ditinjau"
 
 #: admin.py:142
 msgid "active proctored exams"
@@ -40,11 +35,11 @@ msgstr "Id pelatihan"
 
 #: admin.py:392
 msgid "Created"
-msgstr "Created"
+msgstr "Telah dibuat"
 
 #: admin.py:393
 msgid "Download Software Clicked"
-msgstr "Download Software Clicked"
+msgstr "Mengunduh software yang dipilih"
 
 #: admin.py:394
 msgid "Ready To Start"
@@ -60,7 +55,7 @@ msgstr "Siap untuk mengirimkan"
 
 #: admin.py:397
 msgid "Declined"
-msgstr "Declined"
+msgstr "Ditolak"
 
 #: admin.py:398
 msgid "Timed Out"
@@ -68,11 +63,11 @@ msgstr "Waktu habis"
 
 #: admin.py:399
 msgid "Submitted"
-msgstr "Dikirimkan"
+msgstr "Terkirim"
 
 #: admin.py:400
 msgid "Second Review Required"
-msgstr "Second Review Required"
+msgstr "Diperlukan ulasan kedua"
 
 #: admin.py:401
 msgid "Verified"
@@ -85,22 +80,6 @@ msgstr "Ditolak"
 #: admin.py:403
 msgid "Error"
 msgstr "Kesalahan"
-
-#: admin.py:407
-msgid "Onboarding Missing"
-msgstr "Onboarding Missing"
-
-#: admin.py:408
-msgid "Onboarding Failed"
-msgstr "Onboarding Failed"
-
-#: admin.py:409
-msgid "Onboarding Pending"
-msgstr "Onboarding Pending"
-
-#: admin.py:410
-msgid "Onboarding Expired"
-msgstr "Onboarding Expired"
 
 #: api.py:824 views.py:1297
 #, python-brace-format
@@ -123,6 +102,10 @@ msgstr "Mengambil ujian terbuka"
 msgid "Pending Session Review"
 msgstr "Ulasan sesi yang tertunda"
 
+#: api.py:2263
+msgid "Passed Proctoring"
+msgstr "Lulus proktoring"
+
 #: api.py:2268 api.py:2273
 msgid "Failed Proctoring"
 msgstr "Gagal dalam proses proktoring"
@@ -133,7 +116,7 @@ msgstr "Pilihan proktor tidak tersedia lagi"
 
 #: api.py:2287
 msgid "Ungraded Practice Exam"
-msgstr "Ujian Latihan Tidak Dinilai"
+msgstr "Ujian sesi latihan yang tidak masuk dalam penilaian"
 
 #: api.py:2292
 msgid "Practice Exam Completed"
@@ -145,671 +128,33 @@ msgstr "Gagal dalam ujian sesi latihan"
 
 #: api.py:2305
 msgid "Timed Exam"
-msgstr "Timed Exam"
-
-#: api.py:2888
-msgid "Onboarding status question"
-msgstr "Onboarding status question"
-
-#: models.py:413
-msgid "Is Resumable"
-msgstr "Is Resumable"
-
-#: models.py:524
-msgid "Additional Time (minutes)"
-msgstr "Additional Time (minutes)"
+msgstr "Ujian Terjadwal"
 
 #: models.py:525
 msgid "Review Policy Exception"
-msgstr "Review Policy Exception"
-
-#: templates/common/waiting_banner.html:3
-msgid ""
-"\n"
-"        The result will be visible after <strong id=\"wait_deadline\"> Loading... </strong>\n"
-"    "
-msgstr ""
-"\n"
-"        Hasilnya akan terlihat setelah <strong id=\"wait_deadline\"> Loading... </strong>\n"
-"    "
-
-#: templates/emails/proctoring_attempt_submitted_email.html:12
-#, python-format
-msgid ""
-"\n"
-"        Your proctored exam \"%(exam_name)s\" in\n"
-"        <a href=\"%(course_url)s\">%(course_name)s</a> was submitted\n"
-"        successfully and will now be reviewed to ensure all exam\n"
-"        rules were followed. You should receive an email with your exam\n"
-"        status within 5 business days. Final grades may take longer.\n"
-"    "
-msgstr ""
-"\n"
-"        Ujian diawasi Anda \"%(exam_name)s\" dalam\n"
-"        <a href=\"%(course_url)s\">%(course_name)s</a> telah berhasil dikirim\n"
-"        dan sekarang akan ditinjau untuk memastikan semua aturan ujian\n"
-"        telah diikuti. Anda akan menerima email dengan status ujian Anda\n"
-"        dalam waktu 5 hari kerja. Nilai akhir mungkin memerlukan waktu lebih lama.\n"
-"    "
-
-#: templates/emails/proctoring_attempt_unsatisfactory_email.html:12
-#, python-format
-msgid ""
-"\n"
-"        Your proctored exam \"%(exam_name)s\" in\n"
-"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and the\n"
-"        course team has identified one or more violations of the proctored exam rules. Examples\n"
-"        of issues that may result in a rules violation include browsing\n"
-"        the internet, blurry or missing photo identification, using a phone,\n"
-"        or getting help from another person. As a result of the identified issue(s),\n"
-"        you did not successfully meet the proctored exam requirements.\n"
-"    "
-msgstr ""
-"\n"
-"        Ujian proktor Anda \"%(exam_name)s\" dalam\n"
-"        <a href=\"%(course_url)s\">%(course_name)s</a> telah ditinjau dan\n"
-"        tim kursus telah mengidentifikasi satu atau lebih pelanggaran terhadap aturan ujian proktor. Contoh\n"
-"        masalah yang dapat mengakibatkan pelanggaran aturan termasuk menjelajahi\n"
-"        internet, foto identifikasi yang buram atau hilang, menggunakan telepon,\n"
-"        atau mendapatkan bantuan dari orang lain. Sebagai akibat dari masalah yang diidentifikasi,\n"
-"        Anda tidak berhasil memenuhi persyaratan ujian proktor.\n"
-"    "
-
-#: templates/onboarding_exam/entrance.html:12
-msgid ""
-"\n"
-"      Why this is important to you:\n"
-"    "
-msgstr ""
-"\n"
-"      Mengapa ini penting bagi Anda:\n"
-"    "
-
-#: templates/onboarding_exam/entrance.html:34
-#, python-format
-msgid ""
-"\n"
-"      Proctoring for this course is provided via %(provider_name)s.  Onboarding review, including identity verification, can take 2+ business days.\n"
-"    "
-msgstr ""
-"\n"
-"      Proctoring untuk kursus ini disediakan melalui %(provider_name)s.  Tinjauan onboarding, termasuk verifikasi identitas, dapat memakan waktu 2+ hari kerja.\n"
-"    "
-
-#: templates/onboarding_exam/entrance.html:40
-#, python-format
-msgid ""
-"\n"
-"        Once your profile has been reviewed, you will receive an email with review results. The email will come from\n"
-"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
-"        Make sure this email has been added to your inbox filter.\n"
-"      "
-msgstr ""
-"\n"
-"        Setelah profil Anda ditinjau, Anda akan menerima email dengan hasil tinjauan. Email tersebut akan datang dari\n"
-"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
-"        Pastikan email ini telah ditambahkan ke filter kotak masuk Anda.\n"
-"      "
-
-#: templates/onboarding_exam/entrance.html:58
-msgid "Continue to onboarding"
-msgstr "Continue to onboarding"
-
-#: templates/onboarding_exam/error.html:13
-msgid ""
-"\n"
-"    Your proctoring session ended before you completed this onboarding exam.\n"
-"    You should retry this onboarding exam.\n"
-"  "
-msgstr ""
-"\n"
-"    Sesi pengawasan Anda berakhir sebelum Anda menyelesaikan ujian orientasi ini.\n"
-"Anda harus mencoba kembali ujian orientasi ini.\n"
-"  "
-
-#: templates/onboarding_exam/ready_to_submit.html:6
-#, python-format
-msgid ""
-"\n"
-"      You are taking \"%(exam_display_name)s\" as an onboarding exam. You must click “Yes, end my proctored exam” and submit your proctoring session to complete onboarding.\n"
-"    "
-msgstr ""
-"\n"
-"      Anda sedang mengikuti \"%(exam_display_name)s\" sebagai ujian orientasi. Anda harus mengklik \"Ya, akhiri ujian diawasi saya\" dan menyerahkan sesi pengawasan Anda untuk menyelesaikan orientasi.\n"
-"    "
-
-#: templates/onboarding_exam/rejected.html:20
-#: templates/onboarding_exam/submitted.html:47
-#: templates/practice_exam/error.html:29
-#: templates/practice_exam/submitted.html:18
-msgid "Retry my exam"
-msgstr "Retry my exam"
-
-#: templates/onboarding_exam/rejected.html:21
-#: templates/practice_exam/error.html:30
-#: templates/practice_exam/submitted.html:19
-msgid "Resetting Onboarding Exam"
-msgstr "Resetting Onboarding Exam"
-
-#: templates/onboarding_exam/submitted.html:19
-#, python-format
-msgid ""
-"\n"
-"      Once your profile has been reviewed, you will receive an email\n"
-"      with review results. The email will come from\n"
-"      <a href=\"mailto:%(learner_notification_from_email)s\">\n"
-"        %(learner_notification_from_email)s\n"
-"      </a>,\n"
-"      so make sure this email has been added to your inbox filter.\n"
-"    "
-msgstr ""
-"\n"
-"      Setelah profil Anda ditinjau, Anda akan menerima email\n"
-"      dengan hasil tinjauan. Email akan datang dari\n"
-"      <a href=\"mailto:%(learner_notification_from_email)s\">\n"
-"        %(learner_notification_from_email)s\n"
-"      </a>,\n"
-"      jadi pastikan email ini telah ditambahkan ke filter kotak masuk Anda.\n"
-"    "
-
-#: templates/onboarding_exam/submitted.html:41
-msgid "I understand and want to reset this onboarding exam."
-msgstr "I understand and want to reset this onboarding exam."
+msgstr "Tinjau kebijakan pengecualian"
 
 #: templates/practice_exam/entrance.html:20
 msgid "Continue to my practice exam"
-msgstr "Lanjut ke ujian sesi latihan saya"
-
-#: templates/practice_exam/entrance.html:25
-msgid ""
-"\n"
-"          You will be guided through steps to set up online proctoring software and verify your identity.\n"
-"        "
-msgstr ""
-"\n"
-"          Anda akan dipandu melalui langkah-langkah untuk mengatur perangkat lunak pengawas online dan memverifikasi identitas Anda.\n"
-"        "
-
-#: templates/practice_exam/error.html:5
-msgid ""
-"\n"
-"        There was a problem with your practice proctoring session\n"
-"      "
-msgstr ""
-"\n"
-"        Ada masalah dengan sesi pengawasan latihan Anda\n"
-"      "
-
-#: templates/practice_exam/error.html:13
-msgid ""
-"\n"
-"      Your practice proctoring results: <b class=\"failure\"> Unsatisfactory </b>\n"
-"    "
-msgstr ""
-"\n"
-"      Hasil pengawasan praktik Anda: <b class=\"failure\"> Tidak Memuaskan </b>\n"
-"    "
-
-#: templates/practice_exam/error.html:21
-msgid ""
-"\n"
-"        Your proctoring session ended before you completed this practice exam.\n"
-"        You can retry this practice exam if you had problems setting up the online proctoring software.\n"
-"      "
-msgstr ""
-"\n"
-"        Sesi pengawasan Anda berakhir sebelum Anda menyelesaikan ujian latihan ini.\n"
-"        Anda dapat mencoba kembali ujian latihan ini jika Anda mengalami masalah dalam mengatur perangkat lunak pengawasan online.\n"
-"      "
-
-#: templates/practice_exam/submitted.html:5
-msgid ""
-"\n"
-"        You have submitted this practice proctored exam\n"
-"      "
-msgstr ""
-"\n"
-"        Anda telah mengumpulkan ujian praktik yang diawasi ini\n"
-"      "
-
-#: templates/proctored_exam/confirm-decline.html:16
-msgid "Continue Exam Without Proctoring"
-msgstr "Continue Exam Without Proctoring"
+msgstr "Lanjut ke ujian sesi latihan"
 
 #: templates/proctored_exam/confirm-decline.html:19
 msgid "Go Back"
-msgstr "Go Back"
-
-#: templates/proctored_exam/entrance.html:9
-msgid ""
-"\n"
-"      To be eligible for credit or the program credential associated with this course, you must pass the proctoring review for this exam.\n"
-"\n"
-"    "
-msgstr ""
-"\n"
-"      Untuk memenuhi syarat mendapatkan kredit atau kredensial program yang terkait dengan kursus ini, Anda harus lulus tinjauan pengawasan untuk ujian ini.\n"
-"\n"
-"    "
-
-#: templates/proctored_exam/entrance.html:18
-#: templates/proctored_exam/ready_to_resume.html:22
-msgid ""
-"\n"
-"        You will be guided through steps to set up online proctoring software and verify your identity.</br>\n"
-"      "
-msgstr ""
-"\n"
-"        Anda akan dipandu melalui langkah-langkah untuk mengatur perangkat lunak pengawas online dan memverifikasi identitas Anda.</br>\n"
-"      "
-
-#: templates/proctored_exam/error.html:17
-#, python-format
-msgid ""
-"\n"
-"        A system error has occurred with your proctored exam. Please reach out to \n"
-"        <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">%(platform_name)s Support</a> for \n"
-"        assistance, and return to the exam once you receive further instructions.\n"
-"      "
-msgstr ""
-"\n"
-"        Terjadi kesalahan sistem pada ujian yang diawasi Anda. Silakan hubungi \n"
-"        <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">Dukungan %(platform_name)s</a> untuk \n"
-"        mendapatkan bantuan, dan kembali ke ujian setelah Anda menerima instruksi lebih lanjut.\n"
-"      "
+msgstr "Kembali"
 
 #: templates/proctored_exam/error_modal.html:7
 msgid "Close"
-msgstr "Close"
-
-#: templates/proctored_exam/error_wrong_browser.html:22
-msgid "End My Exam"
-msgstr "End My Exam"
-
-#: templates/proctored_exam/expired.html:9 templates/timed_exam/expired.html:9
-msgid ""
-"\n"
-"      Because the due date has passed, you are no longer able to take this exam.\n"
-"    "
-msgstr ""
-"\n"
-"      Karena tanggal jatuh tempo telah berlalu, Anda tidak dapat lagi mengikuti ujian ini.\n"
-"    "
-
-#: templates/proctored_exam/failed-prerequisites.html:32
-msgid ""
-"\n"
-"        Due to unsatisfied prerequisites, you can only take this exam without proctoring.\n"
-"      "
-msgstr ""
-"\n"
-"        Karena prasyarat yang tidak terpenuhi, Anda hanya dapat mengikuti ujian ini tanpa pengawasan.\n"
-"      "
-
-#: templates/proctored_exam/failed-prerequisites.html:40
-#, python-format
-msgid ""
-"\n"
-"      If you have questions about the status of your requirements, contact %(platform_name)s Support.\n"
-"    "
-msgstr ""
-"\n"
-"      Jika Anda memiliki pertanyaan tentang status persyaratan Anda, hubungi Dukungan %(platform_name)s.\n"
-"    "
-
-#: templates/proctored_exam/inactive_account.html:4
-msgid ""
-"\n"
-"      You have not activated your account.\n"
-"    "
-msgstr ""
-"\n"
-"      Anda belum mengaktifkan akun Anda.\n"
-"    "
-
-#: templates/proctored_exam/inactive_account.html:21
-#, python-format
-msgid ""
-"\n"
-"        If you cannot find this email, you can <a href=\"%(reset_link)s\" target=\"_blank\">reset your password</a> to\n"
-"        activate your account.\n"
-"      "
-msgstr ""
-"\n"
-"        ```\n"
-"Jika Anda tidak dapat menemukan email ini, Anda dapat <a href=\"%(reset_link)s\" target=\"_blank\">mengatur ulang kata sandi Anda</a> untuk\n"
-"mengaktifkan akun Anda.\n"
-"```\n"
-"      "
-
-#: templates/proctored_exam/inactive_account.html:26
-msgid ""
-"\n"
-"        If you cannot find this email, you can reset your password to activate your account.\n"
-"      "
-msgstr ""
-"\n"
-"        Jika Anda tidak dapat menemukan email ini, Anda dapat mengatur ulang kata sandi Anda untuk mengaktifkan akun Anda.\n"
-"      "
-
-#: templates/proctored_exam/instructions.html:27
-#, python-format
-msgid ""
-"\n"
-"            If you have issues relating to proctoring, you can contact %(provider_name)s technical support by emailing %(provider_tech_support_email)s  or by calling %(provider_tech_support_phone)s.\n"
-"          "
-msgstr ""
-"\n"
-"            Jika Anda mengalami masalah terkait pengawasan ujian, Anda dapat menghubungi dukungan teknis %(provider_name)s dengan mengirim email ke %(provider_tech_support_email)s atau dengan menelepon %(provider_tech_support_phone)s.\n"
-"          "
-
-#: templates/proctored_exam/instructions.html:33
-#: templates/proctored_exam/instructions.html:78
-msgid "Start System Check"
-msgstr "Start System Check"
-
-#: templates/proctored_exam/instructions.html:36
-msgid "Start Exam"
-msgstr "Start Exam"
-
-#: templates/proctored_exam/instructions.html:45
-msgid ""
-"\n"
-"          Copy this unique exam code. You will be prompted to paste this code later before you start the exam.\n"
-"        "
-msgstr ""
-"\n"
-"          Salin kode ujian unik ini. Anda akan diminta untuk menempelkan kode ini nanti sebelum memulai ujian.\n"
-"        "
-
-#: templates/proctored_exam/instructions.html:54
-msgid ""
-"\n"
-"        Select the exam code, then copy it using Control + C (Windows) or Command + C (Mac).\n"
-"      "
-msgstr ""
-"\n"
-"        Pilih kode ujian, lalu salin menggunakan Control + C (Windows) atau Command + C (Mac).\n"
-"      "
-
-#: templates/proctored_exam/instructions.html:64
-msgid ""
-"\n"
-"        Start your system check now. A new window will open for this step and you will verify your identity.\n"
-"      "
-msgstr ""
-"\n"
-"        Mulai pemeriksaan sistem Anda sekarang. Jendela baru akan terbuka untuk langkah ini dan Anda akan memverifikasi identitas Anda.\n"
-"      "
-
-#: templates/proctored_exam/instructions.html:74
-msgid "Have a computer with a functioning webcam"
-msgstr "Have a computer with a functioning webcam"
-
-#: templates/proctored_exam/instructions.html:75
-msgid "Have your valid photo ID (e.g. driver's license or passport) ready"
-msgstr "Have your valid photo ID (e.g. driver's license or passport) ready"
-
-#: templates/proctored_exam/instructions.html:100
-#: templates/proctored_exam/proctoring_opt_out_button.html:5
-msgid "Take this exam without proctoring."
-msgstr "Take this exam without proctoring."
-
-#: templates/proctored_exam/onboarding_error.html:4
-msgid ""
-"\n"
-"      You must complete an onboarding exam before taking this proctored exam\n"
-"    "
-msgstr ""
-"\n"
-"      Anda harus menyelesaikan ujian orientasi sebelum mengikuti ujian yang diawasi ini\n"
-"    "
-
-#: templates/proctored_exam/onboarding_error.html:17
-#: templates/proctored_exam/onboarding_error.html:32
-msgid "Navigate to onboarding exam"
-msgstr "Navigate to onboarding exam"
-
-#: templates/proctored_exam/pending-prerequisites.html:9
-msgid ""
-"\n"
-"    You have not completed the prerequisites for this exam. All requirements must be satisfied before you can take this proctored exam.\n"
-"    "
-msgstr ""
-"\n"
-"    Anda belum menyelesaikan prasyarat untuk ujian ini. Semua persyaratan harus dipenuhi sebelum Anda dapat mengikuti ujian yang diawasi ini.\n"
-"    "
-
-#: templates/proctored_exam/pending-prerequisites.html:14
-msgid ""
-"\n"
-"    The following prerequisites are in a <strong>pending</strong> state and must be successfully completed before you can proceed:\n"
-"    "
-msgstr ""
-"\n"
-"    Prasyarat berikut berada dalam keadaan <strong>tertunda</strong> dan harus diselesaikan dengan sukses sebelum Anda dapat melanjutkan:\n"
-"    "
-
-#: templates/proctored_exam/pending-prerequisites.html:30
-msgid ""
-"\n"
-"    You can take this exam with proctoring only when all prerequisites have been successfully completed.\n"
-"    "
-msgstr ""
-"\n"
-"    Anda dapat mengikuti ujian ini dengan pengawasan hanya ketika semua prasyarat telah berhasil diselesaikan.\n"
-"    "
-
-#: templates/proctored_exam/proctoring_launch_callback.html:165
-#, python-format
-msgid ""
-" From this point in time, you must follow the <a "
-"href=\"%(link_urls.online_proctoring_rules)s\" target=\"_blank\">online "
-"proctoring rules</a> to pass the proctoring review for your exam. "
-msgstr ""
-" Mulai saat ini, Anda harus mengikuti <a "
-"href=\"%(link_urls.online_proctoring_rules)s\" target=\"_blank\">aturan "
-"pengawasan online</a> untuk lulus tinjauan pengawasan ujian Anda. "
-
-#: templates/proctored_exam/ready_to_resume.html:9
-#, python-format
-msgid ""
-"\n"
-"        You will have %(total_time)s to complete your exam.\n"
-"    "
-msgstr ""
-"\n"
-"        Anda akan memiliki %(total_time)s untuk menyelesaikan ujian Anda.\n"
-"    "
-
-#: templates/proctored_exam/ready_to_resume.html:14
-msgid ""
-"\n"
-"        To be eligible for credit or the program credential associated with this course, you must pass the proctoring review for this exam.\n"
-"    "
-msgstr ""
-"\n"
-"        Untuk memenuhi syarat mendapatkan kredit atau kredensial program yang terkait dengan kursus ini, Anda harus lulus tinjauan pengawasan untuk ujian ini.\n"
-"    "
-
-#: templates/proctored_exam/ready_to_start.html:5
-msgid ""
-"\n"
-"      Important\n"
-"    "
-msgstr ""
-"\n"
-"      Penting\n"
-"    "
-
-#: templates/proctored_exam/ready_to_start.html:23
-msgid ""
-"\n"
-"         You must adhere to the following rules while you complete this exam.\n"
-"         <strong>If you violate these rules, you will receive a score of 0 on the exam, and you will not be eligible for academic course credit.\n"
-"         </strong></br>\n"
-"      "
-msgstr ""
-"\n"
-"         Anda harus mematuhi aturan berikut saat menyelesaikan ujian ini.\n"
-"         <strong>Jika Anda melanggar aturan ini, Anda akan mendapatkan nilai 0 pada ujian, dan Anda tidak akan memenuhi syarat untuk mendapatkan kredit akademik.\n"
-"         </strong></br>\n"
-"      "
-
-#: templates/proctored_exam/ready_to_start.html:49
-msgid "Start my exam"
-msgstr "Mulai ujian saya"
-
-#: templates/proctored_exam/ready_to_submit.html:10
-msgid ""
-"Make sure that you have selected \"Submit\" for each answer before you "
-"submit your exam."
-msgstr ""
-"Make sure that you have selected \"Submit\" for each answer before you "
-"submit your exam."
-
-#: templates/proctored_exam/ready_to_submit.html:12
-msgid ""
-"Once you click \"Yes, end my proctored exam\", the exam will be closed, and "
-"your proctoring session will be submitted for review."
-msgstr ""
-"Once you click \"Yes, end my proctored exam\", the exam will be closed, and "
-"your proctoring session will be submitted for review."
-
-#: templates/proctored_exam/ready_to_submit.html:15
-msgid "Yes, end my proctored exam"
-msgstr "Yes, end my proctored exam"
-
-#: templates/proctored_exam/rejected.html:5
-msgid ""
-"\n"
-"        Your proctoring session was reviewed, but did not pass all requirements\n"
-"      "
-msgstr ""
-"\n"
-"        Sesi pengawasan Anda telah ditinjau, tetapi tidak memenuhi semua persyaratan\n"
-"      "
-
-#: templates/proctored_exam/rejected.html:13
-#, python-format
-msgid ""
-"\n"
-"        If you have questions about the status of your proctoring session results, contact %(platform_name)s Support.\n"
-"      "
-msgstr ""
-"\n"
-"        Jika Anda memiliki pertanyaan tentang status hasil sesi pengawasan Anda, hubungi Dukungan %(platform_name)s.\n"
-"      "
-
-#: templates/proctored_exam/submitted.html:4
-msgid ""
-"\n"
-"      You have submitted this proctored exam for review\n"
-"    "
-msgstr ""
-"\n"
-"      Anda telah mengirimkan ujian yang diawasi ini untuk ditinjau\n"
-"    "
-
-#: templates/proctored_exam/submitted.html:9
-msgid "Your recorded data should now be uploaded for review."
-msgstr "Your recorded data should now be uploaded for review."
-
-#: templates/proctored_exam/submitted.html:11
-msgid ""
-"If the proctoring software window is still open, close it now and confirm "
-"that you want to quit the application."
-msgstr ""
-"If the proctoring software window is still open, close it now and confirm "
-"that you want to quit the application."
-
-#: templates/proctored_exam/submitted.html:13
-msgid ""
-"Proctoring results are usually available within 5 business days after you "
-"submit your exam."
-msgstr ""
-"Hasil proctoring biasanya tersedia dalam waktu 5 hari kerja setelah Anda "
-"mengirimkan ujian Anda."
-
-#: templates/proctored_exam/submitted.html:19
-#, python-format
-msgid ""
-"\n"
-"      If you have questions about the status of your proctored exam results, contact %(platform_name)s Support.\n"
-"    "
-msgstr ""
-"\n"
-"      Jika Anda memiliki pertanyaan tentang status hasil ujian yang diawasi, hubungi Dukungan %(platform_name)s.\n"
-"    "
-
-#: templates/proctored_exam/verified.html:5
-msgid ""
-"\n"
-"                Your proctoring session was reviewed successfully. Go to your progress page to view your exam grade.\n"
-"            "
-msgstr ""
-"\n"
-"                Sesi pengawasan Anda telah berhasil ditinjau. Pergi ke halaman kemajuan Anda untuk melihat nilai ujian Anda.\n"
-"            "
-
-#: templates/proctored_exam/visit_exam_content.html:5
-msgid ""
-"\n"
-"      To view your exam questions and responses, select <strong>View my exam</strong>. The exam's review status is shown in the left navigation pane.\n"
-"    "
-msgstr ""
-"\n"
-"      Untuk melihat pertanyaan dan jawaban ujian Anda, pilih <strong>Lihat ujian saya</strong>. Status tinjauan ujian ditampilkan di panel navigasi kiri.\n"
-"    "
-
-#: templates/proctored_exam/visit_exam_content.html:11
-msgid "View my exam"
-msgstr "Lihat ujian saya"
+msgstr "Tutup"
 
 #: templates/timed_exam/entrance.html:9
 msgid "This exam has a time limit associated with it."
-msgstr "This exam has a time limit associated with it."
+msgstr "Ujian ini memiliki batas waktu yang berkaitan dengan hal ini."
 
 #: templates/timed_exam/entrance.html:11
 msgid "To pass this exam, you must complete the problems in the time allowed."
 msgstr ""
-"To pass this exam, you must complete the problems in the time allowed."
-
-#: templates/timed_exam/entrance.html:13
-msgid "After you select "
-msgstr "Setelah Anda memilih "
-
-#: templates/timed_exam/entrance.html:17
-msgid "you will have "
-msgstr "Anda akan memiliki "
-
-#: templates/timed_exam/entrance.html:17
-msgid " to complete and submit the exam."
-msgstr " untuk menyelesaikan dan mengumpulkan ujian."
-
-#: templates/timed_exam/entrance.html:21
-msgid ""
-"\n"
-"        I am ready to start this timed exam.\n"
-"      "
-msgstr ""
-"\n"
-"        Saya siap memulai ujian dengan batas waktu ini.\n"
-"      "
-
-#: templates/timed_exam/footer.html:3
-msgid "Can I request additional time to complete my exam?"
-msgstr "Can I request additional time to complete my exam?"
-
-#: templates/timed_exam/ready_to_submit.html:9
-msgid ""
-"\n"
-"      Make sure that you have selected \"Submit\" for each problem before you submit your exam.\n"
-"    "
-msgstr ""
-"\n"
-"      Pastikan Anda telah memilih \"Submit\" untuk setiap masalah sebelum Anda mengirimkan ujian Anda.\n"
-"    "
+"Untuk lulus ujian, Anda harus menyelesaikan masalah dalam waktu yang telah "
+"ditentukan."
 
 #: templates/timed_exam/ready_to_submit.html:14
 msgid ""
@@ -818,38 +163,16 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Setelah Anda mengirimkan jawaban ujian, jawaban Anda akan dinilai.\n"
-"    "
+"Setelah Anda mengirimkan jawaban ujian,  jawaban Anda akan dinilai."
 
-#: templates/timed_exam/submitted.html:11
+#: templates/timed_exam/ready_to_submit.html:25
 msgid ""
 "\n"
-"                You have submitted your timed exam.\n"
-"            "
+"        No, I want to continue working.\n"
+"      "
 msgstr ""
 "\n"
-"                Anda telah mengumpulkan ujian berjangka waktu Anda.\n"
-"            "
-
-#: templates/timed_exam/submitted.html:21
-msgid ""
-"\n"
-"                After the due date has passed, you can review the exam, but you cannot change your answers.\n"
-"            "
-msgstr ""
-"\n"
-"                Setelah tanggal jatuh tempo berlalu, Anda dapat meninjau ujian, tetapi Anda tidak dapat mengubah jawaban Anda.\n"
-"            "
-
-#: utils.py:90
-#, python-brace-format
-msgid "{num_of_hours} hours"
-msgstr "{num_of_hours} hours"
-
-#: utils.py:98 utils.py:108
-#, python-brace-format
-msgid "{num_of_minutes} minutes"
-msgstr "{num_of_minutes} minutes"
+"Tidak, saya ingin lanjut bekerja."
 
 #: utils.py:103
 #, python-brace-format
@@ -859,11 +182,7 @@ msgstr "{num_of_minutes} menit"
 #: utils.py:106
 #, python-brace-format
 msgid " and {num_of_minutes} minutes"
-msgstr " dan {num_of_minutes} menit"
-
-#: utils.py:345
-msgid "a timed exam"
-msgstr "ujian berwaktu"
+msgstr "dan {num_of_minutes} menit"
 
 #: views.py:152
 msgid "could not determine the course_id"
@@ -873,32 +192,6 @@ msgstr "tidak dapat menentukan course_id"
 msgid "Must be a Staff User to Perform this request."
 msgstr "Harus menjadi Staf untuk melakukan permintaan ini."
 
-#: views.py:925
-msgid ""
-"The onboarding service is temporarily unavailable. Please try again later."
-msgstr "Layanan onboarding sementara tidak tersedia. Silakan coba lagi nanti."
-
 #: views.py:1303
 msgid "you have less than a minute remaining"
 msgstr "Anda hanya memiliki sisa waktu kurang dari satu menit."
-
-#: views.py:1758
-msgid "Enter a valid username or email"
-msgstr "Masukkan nama pengguna atau email yang valid"
-
-#: views.py:1758
-msgid "user_info"
-msgstr "user_info"
-
-#: views.py:1771
-msgid "Enter a valid positive value number"
-msgstr "Masukkan nilai positif yang valid"
-
-#: views.py:1771
-msgid "allowance_value"
-msgstr "allowance_value"
-
-#: views.py:2158
-#, python-brace-format
-msgid "No exams in course {course_id}."
-msgstr "Tidak ada ujian dalam kursus {course_id}."
