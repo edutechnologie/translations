@@ -15,9 +15,11 @@ from typing import Iterator
 
 import yaml
 
+from .config import REPO_ROOT, SUPPORTED_FORMATS, TRANSIFEX_YML_PATH, TARGET_LANG_CODE
+
 logger = logging.getLogger("transifex_parser")
 
-SUPPORTED_FORMATS = {"PO", "KEYVALUEJSON"}
+
 
 
 @dataclass
@@ -91,7 +93,7 @@ def _resolve_file_json(
 def parse_transifex_yml(
     yml_path: str | Path,
     repo_root: str | Path,
-    lang: str = "pl",
+    lang: str = TARGET_LANG_CODE,
 ) -> list[ResourceFile]:
     """
     Main entrypoint. Returns a flat list of ResourceFile, one per actual
@@ -152,12 +154,12 @@ if __name__ == "__main__":
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
-    yml = sys.argv[1] if len(sys.argv) > 1 else "../transifex.yml"
-    root = sys.argv[2] if len(sys.argv) > 2 else "../"
+    yml = sys.argv[1] if len(sys.argv) > 1 else TRANSIFEX_YML_PATH
+    root = sys.argv[2] if len(sys.argv) > 2 else REPO_ROOT
 
-    files = parse_transifex_yml(yml, root, lang="pl")
+    files = parse_transifex_yml(yml, root, lang=TARGET_LANG_CODE)
     print(f"\nResolved {len(files)} translatable files:\n")
     for rf in files:
         print(f"  [{rf.file_format:14}] {rf.resource_name}")
         print(f"      EN: {rf.en_path}")
-        print(f"      PL: {rf.pl_path}\n")
+        print(f"      {TARGET_LANG_CODE.upper()}: {rf.pl_path}\n")

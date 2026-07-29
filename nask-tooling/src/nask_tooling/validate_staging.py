@@ -29,9 +29,18 @@ import subprocess
 import sys
 from pathlib import Path
 import shutil
+import click
+import logging
+from .config import (
+    MSGFMT_ARGS,
+    MSGFMT_BIN,
+    PLACEHOLDER_RE_PATTERN,
+    TARGET_LANG_CODE,
+    TARGET_LANGUAGE_NAME,
+    STAGING_ROOT
+)
 
-
-PLACEHOLDER_RE = re.compile(r"%\([a-zA-Z0-9_]+\)[sd]|%[sd]|\{\{?[a-zA-Z0-9_]+\}?\}")
+logger = logging.getLogger("validate_staging")
 
 
 # ---------------------------------------------------------------------------
@@ -54,8 +63,8 @@ def infer_en_counterpart(pl_path: Path) -> Path | None:
     # best effort, translation layouts vary. try the common patterns, if
     # none exist just skip the cross-file checks for this file
     candidates = [
-        Path(str(pl_path).replace("/pl/", "/en/")),
-        Path(str(pl_path).replace("/pl.json", "/en.json")),
+        Path(str(pl_path).replace(f"/{TARGET_LANG_CODE}/", "/en/")),
+        Path(str(pl_path).replace(f"/{TARGET_LANG_CODE}.json", "/en.json")),
         pl_path.parent / "en.json",
     ]
     for c in candidates:
@@ -92,7 +101,7 @@ def validate_po_file(po_file: Path) -> dict:
     # catches syntax/compile errors and (with the po-format flag) percent-format
     # mismatches between msgid and msgstr
     result = subprocess.run(
-        ["msgfmt", "-v", "--strict", "--check", str(po_file)],
+        [MSGFMT_BIN, *MSGFMT_ARGS, str(po_file)],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
     )
@@ -167,11 +176,11 @@ def validate_json_file(json_file: Path) -> dict:
             en_val, pl_val = en_data[key], data[key]
             if not isinstance(en_val, str) or not isinstance(pl_val, str):
                 continue
-            en_tokens = set(PLACEHOLDER_RE.findall(en_val))
-            pl_tokens = set(PLACEHOLDER_RE.findall(pl_val))
+            en_tokens = set(PLACEHOLDER_RE_PATTERN.findall(en_val))
+            pl_tokens = set(PLACEHOLDER_RE_PATTERN.findall(pl_val))
             if en_tokens != pl_tokens:
                 problems.append(
-                    f"key {key!r}: placeholder mismatch, english has {en_tokens}, polish has {pl_tokens}"
+                    f"key {key!r}: placeholder mismatch, english has {en_tokens}, {TARGET_LANGUAGE_NAME} has {pl_tokens}"
                 )
 
     # only count real problems as failures, the "(info)" line above is just a note
@@ -188,8 +197,9 @@ def validate_json_file(json_file: Path) -> dict:
 # ---------------------------------------------------------------------------
 
 
-def run(translations_dir: str):
+def run(translations_dir: Path = STAGING_ROOT) -> bool:
     root = Path(translations_dir)
+
     po_files = find_po_files(root)
     json_files = find_json_files(root)
 
@@ -198,8 +208,10 @@ def run(translations_dir: str):
     )
 
     results = []
+
     for f in po_files:
         results.append(validate_po_file(f))
+
     for f in json_files:
         results.append(validate_json_file(f))
 
@@ -211,6 +223,7 @@ def run(translations_dir: str):
 
     if failed:
         print(f"\n{len(failed)} file(s) failed validation:\n", file=sys.stderr)
+
         for r in failed:
             print(f"--- {r['file']} ---", file=sys.stderr)
             print(r["output"], file=sys.stderr)
@@ -219,14 +232,31 @@ def run(translations_dir: str):
         print("---------------------------------------", file=sys.stderr)
         print("FAILURE: some translations are invalid.", file=sys.stderr)
         print("---------------------------------------", file=sys.stderr)
-        return 1
+
+        return False
 
     print("\n-----------------------------------------")
     print("SUCCESS: all translation files are valid.")
     print("-----------------------------------------")
-    return 0
+
+    return True
+
+
+@click.command()
+@click.option(
+    "--staging-dir",
+    type=click.Path(exists=True, file_okay=False, path_type=Path),
+    default=STAGING_ROOT,
+    show_default=True,
+    help=(
+        "Root staging directory to validate. "
+        "This should contain the merged translations before publishing."
+    ),
+)
+def main(staging_dir: Path):
+    if not run(staging_dir):
+        raise click.ClickException("Staging validation failed.")
 
 
 if __name__ == "__main__":
-    translations_dir = sys.argv[1] if len(sys.argv) > 1 else "translations"
-    sys.exit(run(translations_dir))
+    main()

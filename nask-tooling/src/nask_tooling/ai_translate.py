@@ -27,8 +27,10 @@ re-sending long PO msgids as both key and payload.
 import json
 import time
 import hashlib
+import re
 import threading
 import os
+import click
 from dotenv import load_dotenv
 from pathlib import Path
 from dataclasses import dataclass, field
@@ -39,44 +41,27 @@ from pydantic import BaseModel
 from google import genai
 from google.genai import types
 
-
-# ---------------------------------------------------------------------------
-# config
-# ---------------------------------------------------------------------------
-
-MODEL_NAME = "gemini-3.5-flash-lite"
-TARGET_LANGUAGE = "Polish"
-
-TEMPERATURE = 0.3  # low, we want consistent literal translation, not creative variance
-MAX_ITEMS_PER_CHUNK = 40  # hard cap on item count per call
-MAX_CHARS_PER_CHUNK = (
-    6000  # secondary cap, so a chunk of a few long PO strings doesn't balloon
+from .config import (
+    AI_OUTPUTS_DIR,
+    BATCH_CHUNKS_DIR,
+    GEMINI_API_KEY_ENV,
+    MAX_CHARS_PER_CHUNK,
+    MAX_CONCURRENT_CALLS,
+    MAX_ITEMS_PER_CHUNK,
+    MAX_RETRIES,
+    MODEL_NAME,
+    RAW_DIR,
+    REQUEST_TIMEOUT_SECONDS,
+    RESULTS_DIR,
+    RETRY_BACKOFF_SECONDS,
+    SAFE_RPD,
+    SAFE_RPM,
+    TARGET_LANGUAGE_NAME,
+    TARGET_LANGUAGE_N_OF_PLURAL_FORMS,
+    TARGET_LANGUAGE_PLURAL_FORMS_PROMPT_EXPLANATION,
+    TEMPERATURE,
+    BATCH_TODO_PATH
 )
-
-MAX_RETRIES = 3
-RETRY_BACKOFF_SECONDS = 5  # multiplied by attempt number
-
-MAX_CONCURRENT_CALLS = (
-    5  # this is network IO bound, GIL is released during the request,
-)
-# so threads are fine here - keep this modest to respect rate limits
-
-# the sdk's default http timeout is None, meaning no timeout at all - there are known
-# reports of generate_content stalling for minutes with no error raised. set one explicitly,
-# a genuine hang will now raise instead of parking a worker thread forever, and our normal
-# retry loop already treats any exception the same way
-REQUEST_TIMEOUT_SECONDS = 120
-
-# flash-lite free tier: 15 rpm, 500 rpd. never actually call at the real limit,
-# leave headroom in case of clock drift, other processes using the same key, etc.
-RPM_LIMIT = 15
-RPD_LIMIT = 500
-SAFETY_MARGIN = 0.9
-SAFE_RPM = int(RPM_LIMIT * SAFETY_MARGIN)  # floored
-SAFE_RPD = int(RPD_LIMIT * SAFETY_MARGIN)  # floored
-
-AI_OUTPUTS_DIR = Path("ai-outputs")
-
 
 class RateLimiter:
     """shared across all worker threads, so concurrency never lets us burst
@@ -161,6 +146,7 @@ class ChunkItem:
     source_plural: str = (
         ""  # only set for format == PO_PLURAL, the english plural form for context
     )
+    developer_comment: str = ""
 
 
 @dataclass
@@ -189,6 +175,43 @@ def group_by_format(batch: List[dict]) -> Dict[str, List[dict]]:
         grouped.setdefault(item["format"], []).append(item)
     return grouped
 
+def save_chunk_todo(chunk: Chunk):
+    """
+    Dump this chunk's items back out in batch_todo.json format, so a failed/
+    partial chunk can be re-fed into the pipeline standalone without rerunning
+    the whole 10k-line batch.
+    """
+    BATCH_CHUNKS_DIR.mkdir(parents=True, exist_ok=True)
+    entries = [
+        {
+            "resource": it.resource,
+            "format": it.format,
+            "staging_path": it.staging_path,
+            "key": it.key,
+            "source": it.source,
+            **({"source_plural": it.source_plural} if it.source_plural else {}),
+            **({"developer_comment": it.developer_comment} if it.developer_comment else {}),
+        }
+        for it in chunk.items
+    ]
+    
+    fname = f"{chunk.chunk_id}.json"
+    (BATCH_CHUNKS_DIR / fname).write_text(
+        json.dumps(entries, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+def normalize_source(raw: dict) -> dict:
+    """
+    Some KEYVALUEJSON entries carry source as {"string": ..., "developer_comment": ...}
+    instead of a plain string (paragon does this for a11y strings). Flatten it here,
+    once, so everything downstream (build_chunks, match_whitespace, payload) only
+    ever sees raw["source"] as a str. Comment is kept for prompt context, not
+    translated, not given its own key.
+    """
+    source = raw["source"]
+    if isinstance(source, dict):
+        raw = {**raw, "source": source["string"], "developer_comment": source.get("developer_comment", "")}
+    return raw
 
 def build_chunks(format_name: str, items: List[dict]) -> List[Chunk]:
     """Pack items of one format into chunks up to the count/char caps,
@@ -230,6 +253,7 @@ def build_chunks(format_name: str, items: List[dict]) -> List[Chunk]:
                 resource=raw["resource"],
                 staging_path=raw["staging_path"],
                 source_plural=raw.get("source_plural", ""),
+                developer_comment=raw.get("developer_comment", ""),
             )
         )
         next_local_id += 1
@@ -253,7 +277,7 @@ def build_prompt(chunk: Chunk, strict: bool = False) -> str:
 def _build_singular_prompt(chunk: Chunk, strict: bool) -> str:
     payload = [{"id": it.local_id, "source": it.source} for it in chunk.items]
 
-    instructions = f"""You are translating UI/software strings from English to {TARGET_LANGUAGE}.
+    instructions = f"""You are translating UI/software strings from English to {TARGET_LANGUAGE_NAME}.
 
 Rules:
 - Translate the "source" text of every item, keep the meaning natural for a software UI, not a literal word-for-word translation.
@@ -285,14 +309,12 @@ def _build_plural_prompt(chunk: Chunk, strict: bool) -> str:
         for it in chunk.items
     ]
 
-    instructions = f"""You are translating gettext plural strings from English to {TARGET_LANGUAGE}.
+    instructions = f"""You are translating gettext plural strings from English to {TARGET_LANGUAGE_NAME}.
 
 Each item has an english "singular" and "plural" source form (both english, this is just gettext convention,
-not the translation). For each item, return three {TARGET_LANGUAGE} forms following the standard Polish
-gettext plural rule (nplurals=3):
-- "one": used when count == 1
-- "few": used when count%10 is 2..4, and count%100 is NOT 10..20 (e.g. 2, 3, 4, 22, 23, 24)
-- "many": used for everything else (0, 5..21, 25..31, etc)
+not the translation). For each item, return {TARGET_LANGUAGE_N_OF_PLURAL_FORMS} {TARGET_LANGUAGE_NAME} forms following the standard Polish
+gettext plural rule (nplurals={TARGET_LANGUAGE_N_OF_PLURAL_FORMS}):
+{TARGET_LANGUAGE_PLURAL_FORMS_PROMPT_EXPLANATION}
 
 Rules:
 - Preserve placeholders exactly as they appear: %(count)d, %(count)s, {{count}}, etc. Do not translate or alter these.
@@ -371,10 +393,9 @@ def validate_response(raw_text: str, chunk: Chunk):
 
 
 def save_raw_output(chunk: Chunk, attempt: int, raw_text: str, ok: bool):
-    outputs_dir = AI_OUTPUTS_DIR / "raw"
-    outputs_dir.mkdir(parents=True, exist_ok=True)
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
     fname = f"{chunk.chunk_id}__attempt{attempt}__{'ok' if ok else 'fail'}.json"
-    (outputs_dir / fname).write_text(raw_text, encoding="utf-8")
+    (RAW_DIR / fname).write_text(raw_text, encoding="utf-8")
 
 def match_whitespace(source: str, translated: str) -> str:
     """
@@ -387,6 +408,14 @@ def match_whitespace(source: str, translated: str) -> str:
     strip whatever the model gave us, wrap it in source's real edges.
     Internal whitespace (mid-string \n) isn't part of this check - left as-is.
     """
+    if not isinstance(source, str):
+        raise TypeError(
+            f"match_whitespace: source is {type(source).__name__}, not str: {source!r}"
+        )
+    if not isinstance(translated, str):
+        raise TypeError(
+            f"match_whitespace: translated is {type(translated).__name__}, not str: {translated!r}"
+        )
 
     leading = source[: len(source) - len(source.lstrip())]
     trailing = source[len(source.rstrip()) :] if source.strip() else ""
@@ -397,8 +426,7 @@ def save_chunk_result(chunk: Chunk, parsed):
     key/resource/staging_path info that we deliberately never sent to the model,
     joined back in locally by id."""
 
-    results_dir = AI_OUTPUTS_DIR / "results"
-    results_dir.mkdir(parents=True, exist_ok=True)
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
     is_plural = chunk.format == "PO_PLURAL"
     by_id = {t.id: t for t in parsed.translations}
@@ -411,6 +439,10 @@ def save_chunk_result(chunk: Chunk, parsed):
             "staging_path": it.staging_path,
             "key": it.key,
         }
+        if it.developer_comment:
+            # paragon specific
+            entry["developer_comment"] = it.developer_comment
+
         t = by_id[it.local_id]
         if is_plural:
             # reattach post-validation (parsed.translations confirmed present/shaped),
@@ -424,14 +456,25 @@ def save_chunk_result(chunk: Chunk, parsed):
             entry["translated"] = match_whitespace(it.source, t.translated)
         result_items.append(entry)
 
-    out_path = results_dir / f"{chunk.chunk_id}.json"
+    out_path = RESULTS_DIR / f"{chunk.chunk_id}.json"
     out_path.write_text(
         json.dumps(result_items, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
+def last_attempt_number(chunk_id: str) -> int:
+    pattern = re.compile(rf"^{re.escape(chunk_id)}__attempt(\d+)__(ok|fail)\.json$")
+    nums = [
+        int(m.group(1))
+        for f in RAW_DIR.glob(f"{chunk_id}__attempt*__*.json")
+        if (m := pattern.match(f.name))
+    ]
+    return max(nums, default=0)
 
 def process_chunk(
-    client: genai.Client, chunk: Chunk, rate_limiter: RateLimiter
+    client: genai.Client,
+    chunk: Chunk,
+    rate_limiter: RateLimiter,
+    start_attempt: int = 0,
 ) -> dict:
     """Runs the retry loop for a single chunk. Returns a log record, never raises."""
 
@@ -447,16 +490,17 @@ def process_chunk(
     }
 
     start = time.monotonic()
+    save_chunk_todo(chunk)
 
-    for attempt in range(1, MAX_RETRIES + 1):
+    for i in range(1, MAX_RETRIES + 1):
+        attempt = start_attempt + i
+        strict = i == MAX_RETRIES  # strict on the last try of *this* run
         log_record["attempts"] = attempt
-        strict = attempt == MAX_RETRIES  # only tighten the prompt on the last try
 
         try:
             rate_limiter.acquire()  # blocks until we're under the rpm cap, raises if rpd is used up
             raw_text = call_model(client, chunk, strict=strict)
             parsed = validate_response(raw_text, chunk)
-
 
             save_raw_output(chunk, attempt, raw_text, ok=True)
             save_chunk_result(chunk, parsed)
@@ -536,9 +580,40 @@ def write_summary(logs: List[dict]):
             f.write(json.dumps(l, ensure_ascii=False) + "\n")
 
 
-def run(batch_path: Path):
-    AI_OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
+def execute_chunks(
+    chunks: List[Chunk],
+    client,
+    rate_limiter: RateLimiter,
+    start_attempts: dict[str, int] | None = None,
+) -> List[dict]:
 
+    start_attempts = start_attempts or {}
+    logs: List[dict] = []
+
+    with ThreadPoolExecutor(max_workers=MAX_CONCURRENT_CALLS) as pool:
+        futures = {
+            pool.submit(
+                process_chunk,
+                client,
+                chunk,
+                rate_limiter,
+                start_attempts.get(chunk.chunk_id, 0),
+            ): chunk
+            for chunk in chunks
+        }
+        done = 0
+        for future in as_completed(futures):
+            record = future.result()
+            logs.append(record)
+            done += 1
+            print(
+                f"[{done}/{len(chunks)}] {record['chunk_id']} -> {record['status']} "
+                f"({record['attempts']} attempt(s), {record['duration_seconds']}s)"
+            )
+    return logs
+
+def translate_all(batch_path: Path):
+    AI_OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
     batch = load_batch(batch_path)
     grouped = group_by_format(batch)
 
@@ -547,47 +622,94 @@ def run(batch_path: Path):
         all_chunks.extend(build_chunks(format_name, items))
 
     print(
-        f"loaded {len(batch)} items across {len(grouped)} format(s), "
-        f"packed into {len(all_chunks)} chunks"
+        f"loaded {len(batch)} items across {len(grouped)} format(s), packed into {len(all_chunks)} chunks"
     )
 
     load_dotenv()
     client = genai.Client(
-        api_key=os.getenv("GEMINI_API_KEY"),
-        http_options=types.HttpOptions(timeout=REQUEST_TIMEOUT_SECONDS * 1000),  # ms
+        api_key=os.getenv(GEMINI_API_KEY_ENV),
+        http_options=types.HttpOptions(timeout=REQUEST_TIMEOUT_SECONDS * 1000),
     )
     rate_limiter = RateLimiter(rpm=SAFE_RPM, rpd=SAFE_RPD)
-    logs: List[dict] = []
 
-    with ThreadPoolExecutor(max_workers=MAX_CONCURRENT_CALLS) as pool:
-        futures = {
-            pool.submit(process_chunk, client, chunk, rate_limiter): chunk
-            for chunk in all_chunks
-        }
-        done = 0
-        for future in as_completed(futures):
-            record = future.result()
-            logs.append(record)
-            done += 1
-            status = record["status"]
-            print(
-                f"[{done}/{len(all_chunks)}] {record['chunk_id']} -> {status} "
-                f"({record['attempts']} attempt(s), {record['duration_seconds']}s)"
-            )
+    logs = execute_chunks(all_chunks, client, rate_limiter)
 
     write_summary(logs)
-
     failed_count = sum(1 for l in logs if l["status"] == "failed")
     print(
-        f"\ndone. {len(logs) - failed_count}/{len(logs)} chunks succeeded. "
-        f"see {AI_OUTPUTS_DIR}/summary.md for details."
+        f"\ndone. {len(logs) - failed_count}/{len(logs)} chunks succeeded. see {AI_OUTPUTS_DIR}/summary.md for details."
     )
 
+def retry_chunk(chunk_path: Path):
+    chunk_id = chunk_path.stem
+    raw_items = json.loads(chunk_path.read_text(encoding="utf-8"))
 
-if __name__ == "__main__":
-    import sys
+    items = [
+        ChunkItem(
+            local_id=i,
+            key=r["key"],
+            source=r["source"],
+            format=r["format"],
+            resource=r["resource"],
+            staging_path=r["staging_path"],
+            source_plural=r.get("source_plural", ""),
+            developer_comment=r.get("developer_comment", ""),
+        )
+        for i, r in enumerate(raw_items)
+    ]
+    chunk = Chunk(chunk_id=chunk_id, format=raw_items[0]["format"], items=items)
 
-    if len(sys.argv) != 2:
-        print("usage: python translate_batch.py <path-to-batch.json>")
-        raise SystemExit(1)
-    run(Path(sys.argv[1]))
+    load_dotenv()
+    client = genai.Client(
+        api_key=os.getenv(GEMINI_API_KEY_ENV),
+        http_options=types.HttpOptions(timeout=REQUEST_TIMEOUT_SECONDS * 1000),
+    )
+    rate_limiter = RateLimiter(rpm=SAFE_RPM, rpd=SAFE_RPD)
+    start_attempt = last_attempt_number(chunk_id)
+
+    logs = execute_chunks([chunk], client, rate_limiter, {chunk_id: start_attempt})
+    write_summary(logs)
+
+def run(
+    path: Path = BATCH_TODO_PATH,
+    retry: bool = False,
+):
+    if retry:
+        retry_chunk(path)
+    else:
+        translate_all(path)
+
+
+
+@click.command()
+@click.option(
+    "--path",
+    type=click.Path(exists=True, path_type=Path),
+    default=BATCH_TODO_PATH,
+    show_default="batch_todo.json (generated by prepare_translation_batch)",
+    help=(
+        "Path to the translation batch file. By default this uses "
+        "batch_todo.json generated by prepare_translation_batch and stored "
+        f"at {BATCH_TODO_PATH}. "
+        "When using --retry, this must point to a single chunk file from "
+        "batch_chunks/ instead."
+    ),
+)
+@click.option(
+    "--retry",
+    "-r",
+    is_flag=True,
+    help=(
+        "Retry translation for a single chunk instead of processing the full "
+        "batch. Requires --path to point to a chunk file from batch_chunks/. "
+        "Using --retry with the default batch_todo.json has no effect and is "
+        "equivalent to running without --retry."
+    ),
+)
+def main(path: Path, retry: bool):
+    if retry and path == BATCH_TODO_PATH:
+        raise click.UsageError(
+            "--retry requires --path pointing to a specific chunk file "
+            "from batch_chunks/."
+        )
+    run(path,retry)

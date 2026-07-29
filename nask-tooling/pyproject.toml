@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nask-tooling"
+version = "0.2.0"
+description = "Translation pipeline tooling for Open edX"
+requires-python = ">=3.10"
+
+dependencies = [
+    "google-genai",
+    "python-dotenv",
+    "polib",
+    "edx-i18n-tools",
+    "lxml-html-clean",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+nask-translation-tooling = "nask_tooling.orchestrator:cli"

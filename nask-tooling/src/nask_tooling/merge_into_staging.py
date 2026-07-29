@@ -20,13 +20,13 @@ import json
 import sys
 from pathlib import Path
 from collections import defaultdict
-
+import click
 import polib
 
-
-AI_OUTPUTS_DIR = Path("ai-outputs")
-RESULTS_DIR = AI_OUTPUTS_DIR / "results"
-
+from .config import (
+    AI_OUTPUTS_DIR,
+    RESULTS_DIR
+)
 
 def load_all_results() -> list[dict]:
     items = []
@@ -70,36 +70,38 @@ def merge_json_file(staging_path: str, items: list[dict], errors: list[str]) -> 
     written = 0
 
     for item in items:
-        if item["key"] not in data:
-            errors.append(
-                f"{staging_path}: key not found in staging json: {item['key']!r}"
-            )
+        key = item["key"]
+        if key not in data:
+            errors.append(f"{staging_path}: key not found in staging json: {key!r}")
             continue
-        data[item["key"]] = item["translated"]
+
+        comment = item.get("developer_comment")
+        if comment:
+            data[key] = {"string": item["translated"], "developer_comment": comment}
+        else:
+            data[key] = item["translated"]
         written += 1
 
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     return written
 
 
-def run():
+def run() -> bool:
     if not RESULTS_DIR.exists():
         print(f"no results dir at {RESULTS_DIR}, nothing to merge")
-        return
+        return True
 
     items = load_all_results()
     if not items:
         print("no result items found, nothing to merge")
-        return
+        return True
 
     grouped = group_by_staging_path(items)
     errors: list[str] = []
     total_written = 0
 
     for staging_path, group_items in grouped.items():
-        fmt = group_items[0][
-            "format"
-        ]  # PO and PO_PLURAL both route to the po branch below
+        fmt = group_items[0]["format"]
 
         if fmt in ("PO", "PO_PLURAL"):
             written = merge_po_file(staging_path, group_items, errors)
@@ -113,17 +115,32 @@ def run():
 
     if errors:
         print(
-            f"\n{len(errors)} key(s) could not be matched - this should never happen, "
-            f"investigate before trusting this merge:",
+            f"\n{len(errors)} key(s) could not be matched - "
+            "investigate before trusting this merge:",
             file=sys.stderr,
         )
+
         for e in errors:
             print(f"  - {e}", file=sys.stderr)
 
         (AI_OUTPUTS_DIR / "merge_errors.log").write_text(
-            "\n".join(errors), encoding="utf-8"
+            "\n".join(errors),
+            encoding="utf-8",
+        )
+
+        return False
+
+    return True
+
+
+@click.command()
+def main():
+    """Merge AI translation results into staging."""
+    if not run():
+        raise click.ClickException(
+            "Merge completed with errors. Check ai-outputs/merge_errors.log."
         )
 
 
 if __name__ == "__main__":
-    run()
+    main()
