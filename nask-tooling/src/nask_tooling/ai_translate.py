@@ -713,3 +713,7 @@ def main(path: Path, retry: bool):
             "from batch_chunks/."
         )
     run(path,retry)
+
+
+if __name__ == "__main__":
+    main()
