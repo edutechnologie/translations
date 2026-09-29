@@ -25075,6 +25075,10 @@ msgstr ""
 msgid "Click to list certificates that are issued for this course:"
 msgstr "Kliknij, aby pobrać listę zaświadczen wydanych dla tego kursu:"
 
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html
+msgid "Click to download a CSV of certificates issued for this course:"
+msgstr "Kliknij, aby pobrać plik CSV z wydanymi zaświadczeniami:"
+
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html:86
 msgid "View Certificates Issued"
 msgstr "Wyświetl wydane certyfikaty"
