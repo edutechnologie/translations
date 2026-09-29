@@ -25081,7 +25081,7 @@ msgstr "Wyświetl wydane certyfikaty"
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html:87
 msgid "Download CSV of Certificates Issued"
-msgstr "Pobierz plik CSV z wydanymi certyfikatami"
+msgstr "Pobierz informacje o zaświadczeniach"
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html:94
 msgid ""
